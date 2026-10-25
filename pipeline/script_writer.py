@@ -70,7 +70,10 @@ uplifting stories. Good examples:
 - sports wins, records and achievements
 - movie/series trailers and releases, festivals, culture, travel
 - business success stories, startups, people achieving something great
-Also prefer topics interesting to BOTH Indian and US viewers, with enough news coverage.
+Prefer stories about India, Indian people or the US (Indian achievements, ISRO/NASA,
+Indian or US sports wins, Bollywood/Hollywood, Indian and US tech and startups), with
+enough news coverage. Avoid stories that celebrate a rival of India (e.g. Pakistan) or
+stir national rivalry.
 NEVER pick anything negative: crime, attacks, cyberattacks, hacks, scams, war, conflict,
 disasters, accidents, deaths, illness, lawsuits, arrests, protests, controversies,
 politics/elections, layoffs, market crashes, gossip, rumours, affairs, divorces, or
@@ -144,7 +147,39 @@ Return JSON: {{"title": "<working title>", "script": "<the full longer narration
     if words < 250:
         raise RuntimeError(f"Script too short ({words} words)")
     log.info("Script written: %s (%d words)", result["title"], words)
-    return result
+    return fact_check(result, facts)
+
+
+def fact_check(result: dict, facts: str) -> dict:
+    """Remove or correct claims the news material does not support."""
+    try:
+        checked = llm.chat_json(f"""You are a strict fact-checker for a news video.
+Compare the SCRIPT with the NEWS MATERIAL. Find every claim (names, titles/roles,
+numbers, dates, results, series standings, descriptions of events) that is NOT clearly
+supported by the material. Remove or reword those claims so everything is supported.
+Use exact names from the material where the script is vague (e.g. "a young player").
+Keep the length, structure, positive tone and spoken style. Do not add new facts.
+
+NEWS MATERIAL:
+{facts}
+
+SCRIPT TITLE: {result.get("title", "")}
+SCRIPT:
+{result.get("script", "")}
+
+Return JSON: {{"title": "<title, corrected if needed>", "script": "<corrected script>",
+"changes": ["<short note of each fix>"]}}""", SYSTEM, temperature=0.2, max_tokens=4000,
+                                prefer=llm.WRITER_MODEL)
+    except Exception as exc:
+        log.warning("Fact-check failed, keeping original script: %s", exc)
+        return result
+    words = len(checked.get("script", "").split())
+    if words < 300:
+        log.warning("Fact-checked script too short (%d words), keeping original", words)
+        return result
+    for change in checked.get("changes", []):
+        log.info("Fact-check fix: %s", change)
+    return {"title": checked.get("title") or result["title"], "script": checked["script"]}
 
 
 def create_script() -> dict:

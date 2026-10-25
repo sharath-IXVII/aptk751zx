@@ -1,34 +1,59 @@
 # YouTube Automation
 
-Trending topic → NVIDIA script → NotebookLM cinematic video → edit → thumbnail/title → YouTube.
-Built in parts. **Current: Part 1 (NotebookLM test).**
+Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per day** (India time):
 
-## Part 1 - test on your PC
+1. **Topic** – Google Trends + YouTube trending (India + US), positive topics only
+2. **Script** – news facts → original script (NVIDIA: Nemotron picks, Llama 3.3 70B writes) → fact-check
+3. **Video** – NotebookLM cinematic video (explainer as fallback), 5-hour gap respected
+4. **Edit** – blur NotebookLM watermark, normalise audio, optional music/outro
+5. **Package** – title, description (with sources + AI disclosure), tags, thumbnail
+6. **Upload** – YouTube Data API (private by default)
 
-Needs Python 3.10+ and ffmpeg installed.
+If a run stops halfway (video still generating, upload error), the next run continues from there.
 
-```bash
-pip install -r requirements.txt
-pip install "notebooklm-py[browser]==0.8.5"
-playwright install chromium
+## GitHub secrets (Settings → Secrets and variables → Actions → Secrets)
 
-notebooklm login          # browser opens - sign in with your Google account yourself
-python part1_test.py      # wait 20-40 min
-```
+| Secret | What |
+|---|---|
+| `NOTEBOOKLM_AUTH_JSON` | contents of `storage_state.json` after `notebooklm login` |
+| `NVIDIA_API_KEY` | from build.nvidia.com |
+| `YOUTUBE_API_KEY` | Google Cloud API key (reads trending videos) |
+| `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` | from `tools/get_youtube_token.py` (below) |
+| `NVIDIA_WRITER_MODEL` | optional, e.g. `qwen/qwen3-235b-a22b` |
 
-Success = `output/part1_test.mp4` plays.
+## GitHub variables (same page → Variables tab)
 
-## Part 1 - test on GitHub Actions
+| Variable | Default | What |
+|---|---|---|
+| `YT_PRIVACY` | `private` | `private`, `unlisted` or `public` |
+| `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | watermark area as x,y,width,height fractions (bottom-right) |
 
-1. After `notebooklm login`, find the saved login file:
-   - Windows: `C:\Users\<you>\.notebooklm\profiles\default\storage_state.json`
-   - Mac/Linux: `~/.notebooklm/profiles/default/storage_state.json`
-2. GitHub repo → Settings → Secrets and variables → Actions → New secret
-   - Name: `NOTEBOOKLM_AUTH_JSON`
-   - Value: the full contents of `storage_state.json`
-3. Actions tab → "Part 1 - NotebookLM test" → Run workflow.
-4. When done, download the video from the run's **Artifacts** section.
+Check `watermark_check.jpg` in a run's artifacts: the red box must cover the NotebookLM logo.
 
-If it fails with a login error: run `notebooklm login` again on your PC and update the secret.
+## Optional files
 
-**Never commit `storage_state.json` or `.env`** - they are your login and keys.
+- `assets/music.mp3` – quiet background music (use royalty-free music only)
+- `assets/outro.mp4` – clip added at the end (e.g. "Subscribe")
+
+## YouTube upload setup (one time, on your PC)
+
+1. https://console.cloud.google.com → project **yt-automation**
+2. **APIs & Services → OAuth consent screen**: External, fill app name + your email,
+   add your Gmail as a test user, then click **Publish app** (otherwise login expires every 7 days).
+3. **Credentials → Create credentials → OAuth client ID → Desktop app** → download the JSON.
+4. On your PC:
+   ```
+   pip install google-auth-oauthlib
+   python tools/get_youtube_token.py client_secret.json
+   ```
+   Sign in with the account that owns the channel → Allow → copy the 3 printed values into secrets.
+
+Note: Google keeps API uploads **private** until the project passes a YouTube API audit
+(https://support.google.com/youtube/contact/yt_api_form). Until then, publish videos from YouTube Studio.
+Custom thumbnails need a phone-verified channel (youtube.com/verify).
+
+## Test workflows (Actions tab → Run workflow)
+
+- **Part 1 - NotebookLM test** – makes a test video
+- **Part 2 - Trending topic + script test** – writes a script (tick the box to also make the video)
+- **Daily video** – the full pipeline (tick *force* to make another video today)

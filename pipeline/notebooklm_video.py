@@ -18,53 +18,67 @@ log = logging.getLogger(__name__)
 GENERATION_TIMEOUT = 60 * 60
 
 
-async def make_video(script: str, title: str, out_path: Path, language: str = "en") -> Path:
-    """Create a notebook from the script, generate a cinematic video, download it.
+INSTRUCTIONS = (
+    "Follow the provided script closely. Keep its order, facts and tone. "
+    "Do not add facts that are not in the script."
+)
 
-    Falls back to the normal "explainer" video if cinematic generation fails.
+
+async def start_video(client, script: str, title: str, language: str = "en",
+                      kinds: tuple[str, ...] = ("cinematic", "explainer")) -> dict:
+    """Create a notebook from the script and start video generation.
+
+    Returns {"notebook_id", "task_id", "kind"} so a later run can resume/download.
     """
+    nb = await client.notebooks.create(title[:100])
+    log.info("Created notebook %s", nb.id)
+    await client.sources.add_text(nb.id, title[:100], script, wait=True)
+    log.info("Script added as source")
+
+    starters = {
+        "cinematic": lambda: client.artifacts.generate_cinematic_video(
+            nb.id, language=language, instructions=INSTRUCTIONS),
+        "explainer": lambda: client.artifacts.generate_video(
+            nb.id, language=language, instructions=INSTRUCTIONS,
+            video_format=VideoFormat.EXPLAINER),
+    }
+    for kind in kinds:
+        try:
+            status = await starters[kind]()
+            log.info("Started %s video generation (task %s)", kind, status.task_id)
+            return {"notebook_id": nb.id, "task_id": status.task_id, "kind": kind}
+        except Exception as exc:
+            log.warning("Could not start %s video: %s", kind, exc)
+    raise RuntimeError("NotebookLM refused to start a video (daily/5-hour limit reached?)")
+
+
+async def finish_video(client, job: dict, out_path: Path) -> Path:
+    """Wait for a started video to finish and download it."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    log.info("Waiting for %s video (can take 30+ minutes)", job["kind"])
+    status = await client.artifacts.wait_for_completion(
+        job["notebook_id"], job["task_id"], max_interval=30.0, timeout=GENERATION_TIMEOUT)
+    if not status.is_complete:
+        raise RuntimeError(f"{job['kind']} video ended with status={status.status} "
+                           f"error={status.error}")
+    await client.artifacts.download_video(job["notebook_id"], str(out_path), job["task_id"])
+    check_video(out_path)
+    log.info("Downloaded %s video to %s", job["kind"], out_path)
+    return out_path
 
+
+async def make_video(script: str, title: str, out_path: Path, language: str = "en") -> Path:
+    """One-shot helper: start a cinematic video (explainer as fallback) and download it."""
     async with NotebookLMClient.from_storage(allow_headless=True) as client:
-        nb = await client.notebooks.create(title[:100])
-        log.info("Created notebook %s", nb.id)
-
-        await client.sources.add_text(nb.id, title[:100], script, wait=True)
-        log.info("Script added as source")
-
-        instructions = (
-            "Follow the provided script closely. Keep its order, facts and tone. "
-            "Do not add facts that are not in the script."
-        )
-
-        attempts = [
-            ("cinematic", lambda: client.artifacts.generate_cinematic_video(
-                nb.id, language=language, instructions=instructions)),
-            ("explainer", lambda: client.artifacts.generate_video(
-                nb.id, language=language, instructions=instructions,
-                video_format=VideoFormat.EXPLAINER)),
-        ]
-
-        for name, start in attempts:
-            log.info("Starting %s video generation (can take 30+ minutes)", name)
-            try:
-                status = await start()
-                status = await client.artifacts.wait_for_completion(
-                    nb.id, status.task_id, max_interval=30.0, timeout=GENERATION_TIMEOUT)
-            except Exception as exc:
-                log.warning("%s video failed: %s", name, exc)
-                continue
-            if not status.is_complete:
-                log.warning("%s video ended with status=%s error=%s",
-                            name, status.status, status.error)
-                continue
-
-            await client.artifacts.download_video(nb.id, str(out_path), status.task_id)
-            check_video(out_path)
-            log.info("Downloaded %s video to %s", name, out_path)
-            return out_path
-
-    raise RuntimeError("NotebookLM could not generate a video (cinematic and explainer both failed)")
+        job = await start_video(client, script, title, language)
+        try:
+            return await finish_video(client, job, out_path)
+        except Exception as exc:
+            if job["kind"] != "cinematic":
+                raise
+            log.warning("Cinematic video failed (%s); trying explainer", exc)
+            job = await start_video(client, script, title, language, kinds=("explainer",))
+            return await finish_video(client, job, out_path)
 
 
 def check_video(path: Path) -> float:

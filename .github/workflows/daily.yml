@@ -1,0 +1,58 @@
+name: Daily video
+
+on:
+  # Automatic schedule is OFF until testing is done. To turn it on, remove the # below:
+  # schedule:
+  #   - cron: "17 */6 * * *"   # every 6 hours; run.py makes at most one video per day
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Make another video even if today's is already uploaded"
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-video        # never run two at once
+  cancel-in-progress: false
+
+permissions:
+  contents: write           # to save state/ (history, resume info) back to the repo
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+      - run: pip install -r requirements.txt
+      - name: Make and upload video
+        env:
+          NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_WRITER_MODEL: ${{ secrets.NVIDIA_WRITER_MODEL }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
+          WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
+          VIDEO_LANGUAGE: en
+        run: python run.py ${{ inputs.force && '--force' || '' }}
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git add state/ || true
+          git diff --cached --quiet || (git commit -m "Update pipeline state [skip ci]" && git push)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: video-output
+          path: output/
+          if-no-files-found: ignore
+          retention-days: 7

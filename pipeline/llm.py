@@ -26,7 +26,7 @@ PREFERRED_MODELS = [
 ]
 
 # Better writer for the long script; picking topics uses the fast default list.
-WRITER_MODEL = os.environ.get("NVIDIA_WRITER_MODEL", "meta/llama-3.3-70b-instruct")
+WRITER_MODEL = os.environ.get("NVIDIA_WRITER_MODEL") or "meta/llama-3.3-70b-instruct"
 
 # Give up on a model if it sends nothing for this long, or takes longer than this in total.
 SILENCE_TIMEOUT = 90
