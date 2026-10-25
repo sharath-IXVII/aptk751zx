@@ -1,24 +1,55 @@
 <!doctype html>
 <html lang="en"><head><title>Privacy Policy - yt_ent</title>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222;background:#fff}h1{font-size:1.6em}a{color:#0b57d0}</style></head>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222;background:#fff}
+h1{font-size:1.7em}h2{font-size:1.2em;margin-top:1.6em}a{color:#0b57d0}
+nav{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid #ddd;margin-bottom:20px;font-weight:600}
+.note{background:#f4f6fb;border:1px solid #dde3f0;border-radius:8px;padding:12px 14px}
+footer{margin-top:40px;padding-top:14px;border-top:1px solid #ddd;font-size:.9em;color:#555}</style></head>
 <body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<p>yt_ent is used only by the owner of the connected YouTube channel.</p>
-<h2>Data we access</h2>
-<p>With the owner's permission (Google OAuth), yt_ent uses the YouTube Data API to upload videos,
-set thumbnails and read basic channel information for the owner's own channel.</p>
-<h2>How data is used and stored</h2>
-<p>Access tokens are stored only as encrypted secrets in the owner's GitHub repository and are
-used only to upload the owner's videos. No personal data is collected from other people,
-sold, or shared with anyone.</p>
-<p>yt_ent's use of information received from Google APIs adheres to the
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
-User Data Policy</a>, including the Limited Use requirements. It also uses YouTube API Services:
-see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<h2>Removing access</h2>
-<p>The owner can revoke access at any time at
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
-<p><a href="index.html">Home</a></p>
+<p>Last updated: October 2026</p>
+<p>yt_ent is a private tool used only by the owner of the connected YouTube channel (GetYr).
+This policy explains what data it uses and how it is stored and deleted.</p>
+
+<h2>YouTube API Services</h2>
+<p>yt_ent uses <b>YouTube API Services</b> (the YouTube Data API). By using yt_ent you agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. YouTube is a Google
+service; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+(https://policies.google.com/privacy).</p>
+
+<h2>What data is accessed</h2>
+<ul>
+<li>With the owner's permission (Google OAuth 2.0), yt_ent uploads videos to the owner's own channel,
+sets their thumbnails and reads basic information about the owner's channel (channel name).</li>
+<li>It reads public lists of popular/trending YouTube videos (titles, tags, view counts) only to choose
+a topic for a new video.</li>
+<li>No personal data of other people is collected. There are no other users.</li>
+</ul>
+
+<h2>How data is used</h2>
+<p>Data is used only to prepare and upload the owner's own videos. It is not sold, shared with third
+parties, used for advertising, or combined with other data.</p>
+
+<h2>Storage and deletion</h2>
+<ul>
+<li>The OAuth access token is stored encrypted as a secret in the owner's GitHub account and is used only
+to upload the owner's videos.</li>
+<li>Video IDs of the owner's uploads and short topic notes are kept for at most <b>30 days</b> (to avoid
+repeating topics) and then deleted automatically.</li>
+<li>Trending-video information is used during a run only. Temporary run files are deleted automatically
+after <b>3 days</b>.</li>
+</ul>
+
+<h2>Revoking access</h2>
+<p>The owner can revoke yt_ent's access to their Google/YouTube account at any time on the Google
+security settings page:
+<a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.
+After access is revoked, stored data related to the account is deleted within 7 days. To request
+deletion at any time, email aravindra915@gmail.com.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: aravindra915@gmail.com</p>
+<footer>yt_ent &middot; GetYr &middot; Contact: aravindra915@gmail.com &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></footer>
 </body></html>
