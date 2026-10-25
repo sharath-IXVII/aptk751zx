@@ -3,9 +3,8 @@
 Needs three GitHub secrets, created once with tools/get_youtube_token.py:
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
 Privacy comes from YT_PRIVACY (private / unlisted / public, default private).
-Public videos go live as soon as they are uploaded. Optionally set YT_PUBLISH_TIME (India
-time, e.g. 18:00) to upload as private and schedule them for that time instead; if that time
-has already passed today, the video goes public straight away.
+run.py passes publish_at (the next free slot from pipeline/plan.py): the video is uploaded as
+private and scheduled to go public then. Without it, a public video goes live at once.
 """
 
 import datetime as dt
@@ -40,22 +39,14 @@ def _client():
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
 
-def publish_time(now: dt.datetime | None = None) -> dt.datetime | None:
-    """Today's publish slot (India time), or None (publish now) if no YT_PUBLISH_TIME is set or
-    it is less than 15 minutes away/past."""
-    if not os.getenv("YT_PUBLISH_TIME"):
-        return None
-    now = now or dt.datetime.now(IST)
-    hour, minute = (int(v) for v in os.environ["YT_PUBLISH_TIME"].split(":"))
-    slot = now.astimezone(IST).replace(hour=hour, minute=minute, second=0, microsecond=0)
-    return slot if slot - now > dt.timedelta(minutes=15) else None
-
-
-def upload(video: Path, thumbnail: Path | None, meta: dict) -> str:
-    """Upload and return the YouTube video id."""
+def upload(video: Path, thumbnail: Path | None, meta: dict,
+           publish_at: dt.datetime | None = None) -> str:
+    """Upload and return the YouTube video id. With publish_at (and YT_PRIVACY public), the
+    video is uploaded as private and YouTube makes it public at that time."""
     youtube = _client()
     privacy = os.getenv("YT_PRIVACY") or "private"
-    publish_at = publish_time() if privacy == "public" else None
+    if privacy != "public":
+        publish_at = None
     body = {
         "snippet": {
             "title": meta["title"],
@@ -92,7 +83,7 @@ def upload(video: Path, thumbnail: Path | None, meta: dict) -> str:
                 continue
             raise
     video_id = response["id"]
-    when = f"scheduled to go public at {publish_at:%Y-%m-%d %H:%M} IST" if publish_at else privacy
+    when = f"scheduled to go public at {publish_at.astimezone(IST):%Y-%m-%d %H:%M} IST" if publish_at else privacy
     log.info("Uploaded: https://youtu.be/%s (%s)", video_id, when)
 
     if thumbnail and thumbnail.exists():

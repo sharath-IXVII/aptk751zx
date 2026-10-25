@@ -1,10 +1,10 @@
 """Full pipeline: trending topic -> script -> NotebookLM video -> edit -> thumbnail ->
 YouTube upload. Runs every 6 hours: each run makes one video (NotebookLM needs 5 hours between
-videos) and resumes a video that is still being generated. VIDEOS_PER_DAY sets how many
-videos per India day (default "1,2": 1 one day, 2 the next - see pipeline/plan.py).
+videos) and schedules it into the next free publishing slot (1 video one day, 2 the next, up to
+4 days ahead - see pipeline/plan.py). A video still being generated is resumed by the next run.
 
 Run:  python run.py            (normal scheduled run)
-      python run.py --force    (ignore today's video count; the 5-hour rule still applies)
+      python run.py --force    (make a video even if all slots are filled; 5-hour rule still applies)
 """
 
 import asyncio
@@ -50,11 +50,10 @@ async def main(force: bool) -> None:
     state = load_state()
     today = now().date().isoformat()
 
-    if plan.limit_reached(state) and not force:
-        log.info("Today's %d video(s) are already uploaded - nothing to do", plan.daily_limit())
+    if not state.get("job") and plan.next_slot(state) is None and not force:
+        log.info("Every publishing slot for the next days is already filled - nothing to do")
         return
-    log.info("Today's plan: %d video(s), %d uploaded so far", plan.daily_limit(),
-             plan.uploads_today(state))
+    log.info("Already scheduled: %s", state.get("scheduled", []))
 
     job = state.get("job")
     if job and job.get("date") != today and not job.get("notebook_id"):
@@ -125,7 +124,12 @@ async def main(force: bool) -> None:
         video_id = None
     else:
         from pipeline.youtube_upload import upload
-        video_id = upload(final, thumb, meta)
+        # Schedule into the next free slot (1 video one day, 2 the next...). If every slot is
+        # taken (only with --force), it goes public right away.
+        slot = plan.next_slot(state)
+        video_id = upload(final, thumb, meta, publish_at=slot)
+        if slot:
+            plan.book(state, slot)
 
     save_history({"date": today, "topic": script["topic"], "title": meta["title"],
                   "youtube_id": video_id})

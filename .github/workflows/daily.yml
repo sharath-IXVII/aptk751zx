@@ -1,15 +1,15 @@
 name: Daily video
 
 on:
-  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time). Each run makes one video until
-  # today's count is reached: 1 one day, 2 the next (VIDEOS_PER_DAY, default "1,2").
-  # To stop, put a # in front of the next two lines.
+  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time). Each run makes one video and
+  # schedules it into the next free slot (1 video one day, 2 the next, up to 4 days ahead -
+  # see pipeline/plan.py). To stop, put a # in front of the next two lines.
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       force:
-        description: "Make a video even if today's videos are already done"
+        description: "Make a video even if every slot is already filled"
         type: boolean
         default: false
 
@@ -26,12 +26,14 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
-      # Quick check first: stop in seconds if today's videos are done or NotebookLM's
-      # 5-hour gap has not passed (and nothing is waiting to be finished).
+      # Quick check first: stop in seconds if all slots are filled or NotebookLM's 5-hour gap
+      # has not passed (and nothing is waiting to be finished).
       - name: Anything to do?
         id: check
         env:
           VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
+          YT_PUBLISH_TIMES: ${{ vars.YT_PUBLISH_TIMES }}
+          BUFFER_DAYS: ${{ vars.BUFFER_DAYS }}
         run: python3 pipeline/plan.py >> "$GITHUB_OUTPUT" && cat "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v5
         if: steps.check.outputs.skip != 'true' || inputs.force
@@ -57,8 +59,9 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
-          YT_PUBLISH_TIME: ${{ vars.YT_PUBLISH_TIME }}
+          YT_PUBLISH_TIMES: ${{ vars.YT_PUBLISH_TIMES }}
           VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
+          BUFFER_DAYS: ${{ vars.BUFFER_DAYS }}
           YT_CATEGORY: ${{ vars.YT_CATEGORY }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}

@@ -1,7 +1,8 @@
 # YouTube Automation
 
-Every 6 hours GitHub Actions runs `run.py`. It makes **1 video one day and 2 the next**
-(one per run; NotebookLM allows one video per 5 hours):
+Every 6 hours GitHub Actions runs `run.py`. Each run makes one video (NotebookLM allows one
+per 5 hours) and **schedules** it into the next free slot - 1 video one day (18:00), 2 the next
+(12:00 + 18:00), filled up to 4 days ahead - so the channel keeps posting even if runs fail:
 
 1. **Topic** – trending YouTube videos (India + US) first, any genre (memes, stickman
    animations, gaming, music, trailers...); Google Trends news (positive only) as backup.
@@ -12,7 +13,7 @@ Every 6 hours GitHub Actions runs `run.py`. It makes **1 video one day and 2 the
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
    audio normalised, intro + ending clips, optional music. Thumbnail = sharpest frame of the opening title screen
-6. **Upload** – YouTube Data API, public as soon as it is uploaded
+6. **Upload** – YouTube Data API, scheduled to go public at its slot
 7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
    the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
    Videos on your YouTube channel are never deleted.
@@ -35,7 +36,8 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | Variable | Default | What |
 |---|---|---|
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
-| `YT_PUBLISH_TIME` | – | optional: schedule public videos for this time (India), e.g. `18:00` |
+| `YT_PUBLISH_TIMES` | `12:00,18:00` | slot times (India); 1-video days use the last one |
+| `BUFFER_DAYS` | `4` | how many days ahead to fill with scheduled videos |
 | `VIDEOS_PER_DAY` | `1,2` | videos per day, repeating pattern (`1` = one a day, `0` = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
