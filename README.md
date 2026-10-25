@@ -37,7 +37,7 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |
-| `CHANNEL_NAME` | – | your channel name, shown as a watermark in the bottom-right corner (or add `assets/logo.png`) |
+| `CHANNEL_NAME` | `GetYr_ENT` | text watermark in the bottom-right corner (or add `assets/logo.png`) |
 | `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |
 
 If the website step fails, the blur is used: check `watermark_check.jpg` in the run's artifacts.

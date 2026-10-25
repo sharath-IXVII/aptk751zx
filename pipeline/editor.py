@@ -74,7 +74,7 @@ def _channel_mark(info: dict, inputs: list[str]) -> str:
     """Filter that adds our own channel watermark in the bottom-right corner ([v0] -> [v]).
 
     Uses assets/logo.png if it exists (transparent PNG works best), otherwise the
-    CHANNEL_NAME text. Neither set -> no watermark. It sits where the NotebookLM logo was.
+    CHANNEL_NAME text (default GetYr_ENT). It sits where the NotebookLM logo was.
     """
     w, h = info["width"], info["height"]
     margin = h // 30
@@ -86,14 +86,14 @@ def _channel_mark(info: dict, inputs: list[str]) -> str:
         log.info("Adding channel logo watermark")
         return (f"[{idx}:v]scale=-1:{size},format=rgba,colorchannelmixer=aa=0.85[logo];"
                 f"[v0][logo]overlay=W-w-{margin}:H-h-{margin},format=yuv420p[v]")
-    name = (os.getenv("CHANNEL_NAME") or "").strip()
+    name = (os.getenv("CHANNEL_NAME") or "GetYr_ENT").strip()
     if not name:
         return "[v0]format=yuv420p[v]"
     log.info("Adding channel name watermark: %s", name)
     text = name.replace("\\", "").replace("'", "").replace(":", "\\:").replace("%", "\\%")
-    return (f"[v0]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:"
-            f"text='{text}':fontsize={h // 24}:fontcolor=white@0.9:"
-            f"box=1:boxcolor=black@0.35:boxborderw={h // 90}:"
+    # Small soft-grey text, the same style as the NotebookLM mark it replaces.
+    return (f"[v0]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:"
+            f"text='{text}':fontsize={h // 30}:fontcolor=0xA0A0A0@0.85:"
             f"x=w-tw-{margin}:y=h-th-{margin},format=yuv420p[v]")
 
 
