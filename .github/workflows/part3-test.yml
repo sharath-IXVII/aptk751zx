@@ -22,9 +22,12 @@ jobs:
           python-version: "3.12"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
-      - name: Get a test video
+      - name: NotebookLM login
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
+          NOTEBOOKLM_MASTER_TOKEN: ${{ secrets.NOTEBOOKLM_MASTER_TOKEN }}
+        run: bash tools/notebooklm_auth.sh
+      - name: Get a test video
         run: |
           if [ "${{ inputs.notebooklm_video }}" = "true" ]; then
             python part1_test.py && cp output/part1_test.mp4 /tmp/input.mp4

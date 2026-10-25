@@ -4,7 +4,7 @@ Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per 
 
 1. **Topic** – Google Trends searches + trending YouTube videos (title, channel, tags,
    description) for India + US; positive topics only, India/US stories preferred
-2. **Script** – news facts → original script (NVIDIA: Nemotron picks, Llama 3.3 70B writes) → fact-check
+2. **Script** – news facts → original script (NVIDIA Nemotron, other models as fallback) → fact-check
 3. **Title & description** – SEO title, description, hashtags and tags from the trend research
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
    title screen; 5-hour gap respected
@@ -18,7 +18,8 @@ If a run stops halfway (video still generating, upload error), the next run cont
 
 | Secret | What |
 |---|---|
-| `NOTEBOOKLM_AUTH_JSON` | contents of `storage_state.json` after `notebooklm login` |
+| `NOTEBOOKLM_MASTER_TOKEN` | contents of `master_token.json` (long-lasting login, see below) |
+| `NOTEBOOKLM_AUTH_JSON` | contents of `storage_state.json` (cookies) |
 | `NVIDIA_API_KEY` | from build.nvidia.com |
 | `YOUTUBE_API_KEY` | Google Cloud API key (reads trending videos) |
 | `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` | from `tools/get_youtube_token.py` (below) |
@@ -39,6 +40,21 @@ If the website step fails, the blur is used: check `watermark_check.jpg` in the 
 
 - `assets/music.mp3` – quiet background music (use royalty-free music only)
 - `assets/outro.mp4` – clip added at the end (e.g. "Subscribe")
+
+## NotebookLM login (one time, on your PC)
+
+```
+pip install "notebooklm-py[browser,headless]==0.8.5"
+playwright install chromium
+notebooklm login --master-token --account YOUR_EMAIL@gmail.com
+```
+Then copy these two files from `%USERPROFILE%\.notebooklm\profiles\default\` (Windows) or
+`~/.notebooklm/profiles/default/` into GitHub secrets:
+- `master_token.json` → `NOTEBOOKLM_MASTER_TOKEN`
+- `storage_state.json` → `NOTEBOOKLM_AUTH_JSON`
+
+The master token is a long-lasting key to that Google account - use a separate account
+for this channel, and never share the file.
 
 ## YouTube upload setup (one time, on your PC)
 

@@ -21,18 +21,19 @@ PREFERRED_MODELS = [
     "deepseek-ai/deepseek-v3.1",
     "qwen/qwen3-235b-a22b",
     "moonshotai/kimi-k2-instruct",
-    "meta/llama-3.3-70b-instruct",
-    "meta/llama-3.1-70b-instruct",
+    "meta/llama-4-maverick-17b-128e-instruct",
 ]
 
-# Better writer for the long script; picking topics uses the fast default list.
-WRITER_MODEL = os.environ.get("NVIDIA_WRITER_MODEL") or "meta/llama-3.3-70b-instruct"
+# Optional different model for writing the script (set NVIDIA_WRITER_MODEL); by default the
+# same fast model list is used for everything.
+WRITER_MODEL = os.environ.get("NVIDIA_WRITER_MODEL") or None
 
 # Give up on a model if it sends nothing for this long, or takes longer than this in total.
 SILENCE_TIMEOUT = 90
 TOTAL_TIMEOUT = 600
 
 _chosen_model: str | None = None
+_dead_models: set[str] = set()  # retired/unknown models (HTTP 404/410) - skip for this run
 
 
 class _ModelError(Exception):
@@ -106,7 +107,7 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
     # of tokens and ask them not to think (ignored by models without the option).
     no_thinking = {"chat_template_kwargs": {"thinking": False, "enable_thinking": False}}
     last_error = None
-    for model in models:
+    for model in [m for m in models if m not in _dead_models]:
         extra = dict(no_thinking)
         for attempt in range(4):
             payload = {"messages": messages, "temperature": temperature,
@@ -126,6 +127,8 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
                     continue
                 last_error = f"{model}: {msg}"
                 log.warning(last_error)
+                if msg.startswith(("HTTP 404", "HTTP 410")):
+                    _dead_models.add(model)
                 break
             except Exception as exc:  # timeouts, connection errors
                 last_error = f"{model}: {type(exc).__name__}: {exc}"
