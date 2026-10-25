@@ -45,6 +45,7 @@ jobs:
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
           YT_CATEGORY: ${{ vars.YT_CATEGORY }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
+          CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
           WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}
           THUMBNAIL_AT: ${{ vars.THUMBNAIL_AT }}
           VIDEO_LANGUAGE: en

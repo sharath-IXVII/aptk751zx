@@ -70,6 +70,33 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> boo
         return False
 
 
+def _channel_mark(info: dict, inputs: list[str]) -> str:
+    """Filter that adds our own channel watermark in the bottom-right corner ([v0] -> [v]).
+
+    Uses assets/logo.png if it exists (transparent PNG works best), otherwise the
+    CHANNEL_NAME text. Neither set -> no watermark. It sits where the NotebookLM logo was.
+    """
+    w, h = info["width"], info["height"]
+    margin = h // 30
+    logo = ASSETS / "logo.png"
+    if logo.exists():
+        inputs += ["-i", str(logo)]
+        idx = inputs.count("-i") - 1
+        size = h // 9
+        log.info("Adding channel logo watermark")
+        return (f"[{idx}:v]scale=-1:{size},format=rgba,colorchannelmixer=aa=0.85[logo];"
+                f"[v0][logo]overlay=W-w-{margin}:H-h-{margin},format=yuv420p[v]")
+    name = (os.getenv("CHANNEL_NAME") or "").strip()
+    if not name:
+        return "[v0]format=yuv420p[v]"
+    log.info("Adding channel name watermark: %s", name)
+    text = name.replace("\\", "").replace("'", "").replace(":", "\\:").replace("%", "\\%")
+    return (f"[v0]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:"
+            f"text='{text}':fontsize={h // 24}:fontcolor=white@0.9:"
+            f"box=1:boxcolor=black@0.35:boxborderw={h // 90}:"
+            f"x=w-tw-{margin}:y=h-th-{margin},format=yuv420p[v]")
+
+
 def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
     info = video_info(src)
     inputs = ["-i", str(src)]
@@ -80,16 +107,17 @@ def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
         radius = max(1, min(20, min(w, h) // 4 - 1))  # chroma planes are half size
         vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},"
               f"boxblur=luma_radius={radius}:luma_power=3:chroma_radius={radius}:chroma_power=3[blur];"
-              f"[base][blur]overlay={x}:{y},format=yuv420p[v]")
+              f"[base][blur]overlay={x}:{y}[v0]")
     else:
-        vf = "[0:v]format=yuv420p[v]"
+        vf = "[0:v]null[v0]"
+    vf += ";" + _channel_mark(info, inputs)
 
     music = ASSETS / "music.mp3"
     if not info["has_audio"]:
         audio = None
     elif music.exists():
         inputs += ["-stream_loop", "-1", "-i", str(music)]
-        audio = ("[1:a]volume=0.08[m];[0:a][m]amix=inputs=2:duration=first:"
+        audio = (f"[{inputs.count('-i') - 1}:a]volume=0.08[m];[0:a][m]amix=inputs=2:duration=first:"
                  "dropout_transition=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
         log.info("Adding background music")
     else:
