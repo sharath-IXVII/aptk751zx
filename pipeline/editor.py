@@ -29,12 +29,14 @@ def _run(cmd: list[str]) -> None:
 
 def video_info(path: Path) -> dict:
     out = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height",
+        ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height,avg_frame_rate",
          "-show_entries", "format=duration", "-of", "json", str(path)],
         capture_output=True, text=True, check=True).stdout
     data = json.loads(out)
     video = next(s for s in data["streams"] if s["codec_type"] == "video")
-    return {"width": video["width"], "height": video["height"],
+    num, _, den = video.get("avg_frame_rate", "0/1").partition("/")
+    fps = float(num) / float(den or 1) if float(den or 1) else 0.0
+    return {"width": video["width"], "height": video["height"], "fps": round(fps, 2),
             "duration": float(data["format"]["duration"]),
             "has_audio": any(s["codec_type"] == "audio" for s in data["streams"])}
 
@@ -63,7 +65,11 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> boo
     try:
         from pipeline.watermark_site import remove_watermark as site_remove
         site_remove(src, dst, shots_dir)
-        video_info(dst)  # make sure the download is a real video
+        before, after = video_info(src), video_info(dst)  # make sure it is a real video
+        log.info("Website result: %s (original %s)", after, before)
+        if after["fps"] and after["fps"] < before["fps"] * 0.8:
+            # Its "speed" mode halves the frame rate - choppy. Blur keeps it smooth.
+            raise RuntimeError(f"website lowered the frame rate to {after['fps']} fps")
         return True
     except Exception as exc:
         log.warning("Watermark website failed (%s) - using the blur method instead", exc)

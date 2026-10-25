@@ -18,6 +18,40 @@ TIMEOUT = 25 * 60  # the site takes 5-10 minutes; allow extra on slower machines
 STUCK_AFTER = 8 * 60  # stop if the page shows no change at all for this long
 
 
+MODE = re.compile(r"priority|fps", re.I)
+SMOOTH = re.compile(r"quality|30\s?fps|60\s?fps|original|smooth|best for video", re.I)
+
+
+def _choose_full_fps(page, visible: str, notes: list[str]) -> None:
+    """The site's default 'Speed Priority (15FPS)' mode halves the frame rate, which makes
+    cinematic videos choppy. Switch to its full-frame-rate mode if it offers one."""
+    labels = []
+    for _ in range(10):  # the mode buttons appear a moment after choosing the file
+        labels = [b for b in page.evaluate(visible) if MODE.search(b)]
+        if labels:
+            break
+        page.wait_for_timeout(1000)
+    notes.append(f"mode options: {labels}")
+    for attempt in range(2):
+        smooth = [b for b in labels if SMOOTH.search(b) and not re.search(r"15\s?fps", b, re.I)]
+        if smooth:
+            page.get_by_text(smooth[0], exact=True).first.click()
+            notes.append(f"chose mode '{smooth[0]}'")
+            log.info("Chose site mode '%s'", smooth[0])
+            page.wait_for_timeout(1000)
+            return
+        if attempt == 0 and labels:
+            # Maybe a dropdown/toggle showing the current mode - open it and look again.
+            page.get_by_text(labels[0], exact=True).first.click()
+            page.wait_for_timeout(1500)
+            labels = [t.strip() for t in page.evaluate("""() => [...document.querySelectorAll(
+                'button, a, [role=button], [role=option], [role=menuitem], [role=radio], option, label')]
+                .filter(e => e.offsetParent !== null).map(e => e.innerText || '')""")
+                if MODE.search(t or "")]
+            notes.append(f"after opening mode menu: {labels}")
+    log.warning("No full-frame-rate mode found on the site (options: %s)", labels)
+
+
 def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Path:
     from playwright.sync_api import sync_playwright
 
@@ -43,6 +77,7 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Pat
         log.info("Video selected on %s, waiting for processing", URL)
 
         notes = []
+        _choose_full_fps(page, visible, notes)
         start, last_pct, shot, clicked = time.time(), None, 0, set()
         last_change, last_seen = time.time(), None
 
