@@ -1,14 +1,15 @@
 name: Daily video
 
 on:
-  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time); each run makes and uploads one
-  # video (set the VIDEOS_PER_DAY variable to limit it). To stop, put a # in front of the next two lines.
+  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time). Each run makes one video until
+  # today's count is reached: 1 one day, 2 the next (VIDEOS_PER_DAY, default "1,2").
+  # To stop, put a # in front of the next two lines.
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       force:
-        description: "Make a video even if the VIDEOS_PER_DAY limit is reached"
+        description: "Make a video even if today's videos are already done"
         type: boolean
         default: false
 
@@ -25,20 +26,13 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
-      # Quick check first: if the last NotebookLM video started less than 5 hours ago and
-      # nothing is waiting to be finished, stop in seconds (NotebookLM allows 1 video per 5 h).
+      # Quick check first: stop in seconds if today's videos are done or NotebookLM's
+      # 5-hour gap has not passed (and nothing is waiting to be finished).
       - name: Anything to do?
         id: check
-        run: |
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import datetime as dt, json, pathlib
-          f = pathlib.Path("state/current.json")
-          state = json.loads(f.read_text()) if f.exists() else {}
-          last = state.get("notebooklm_started_at")
-          recent = last and dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(last) < dt.timedelta(hours=5)
-          print("skip=" + ("true" if recent and not state.get("job") else "false"))
-          PY
-          cat "$GITHUB_OUTPUT"
+        env:
+          VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
+        run: python3 pipeline/plan.py >> "$GITHUB_OUTPUT" && cat "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v5
         if: steps.check.outputs.skip != 'true' || inputs.force
         with:

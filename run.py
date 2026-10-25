@@ -1,10 +1,10 @@
 """Full pipeline: trending topic -> script -> NotebookLM video -> edit -> thumbnail ->
 YouTube upload. Runs every 6 hours: each run makes one video (NotebookLM needs 5 hours between
-videos) and resumes a video that is still being generated. VIDEOS_PER_DAY limits the number of
-uploads per India day (default 0 = no limit).
+videos) and resumes a video that is still being generated. VIDEOS_PER_DAY sets how many
+videos per India day (default "1,2": 1 one day, 2 the next - see pipeline/plan.py).
 
 Run:  python run.py            (normal scheduled run)
-      python run.py --force    (ignore VIDEOS_PER_DAY; the 5-hour rule still applies)
+      python run.py --force    (ignore today's video count; the 5-hour rule still applies)
 """
 
 import asyncio
@@ -18,7 +18,7 @@ from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
-from pipeline import editor, packaging
+from pipeline import editor, packaging, plan
 from pipeline.script_writer import create_script, save_history
 
 log = logging.getLogger("run")
@@ -50,11 +50,11 @@ async def main(force: bool) -> None:
     state = load_state()
     today = now().date().isoformat()
 
-    limit = int(os.getenv("VIDEOS_PER_DAY") or 0)
-    done_today = state.get("uploads", {}).get(today, 0)
-    if limit and done_today >= limit and not force:
-        log.info("Already uploaded %d video(s) today (limit %d) - nothing to do", done_today, limit)
+    if plan.limit_reached(state) and not force:
+        log.info("Today's %d video(s) are already uploaded - nothing to do", plan.daily_limit())
         return
+    log.info("Today's plan: %d video(s), %d uploaded so far", plan.daily_limit(),
+             plan.uploads_today(state))
 
     job = state.get("job")
     if job and job.get("date") != today and not job.get("notebook_id"):

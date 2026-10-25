@@ -1,7 +1,7 @@
 # YouTube Automation
 
-Every 6 hours GitHub Actions runs `run.py`, which makes and uploads **one video per run**
-(up to 4 a day; NotebookLM allows one video per 5 hours):
+Every 6 hours GitHub Actions runs `run.py`. It makes **1 video one day and 2 the next**
+(one per run; NotebookLM allows one video per 5 hours):
 
 1. **Topic** – trending YouTube videos (India + US) first, any genre (memes, stickman
    animations, gaming, music, trailers...); Google Trends news (positive only) as backup.
@@ -36,7 +36,7 @@ If a run stops halfway (video still generating, upload error), the next run cont
 |---|---|---|
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
 | `YT_PUBLISH_TIME` | – | optional: schedule public videos for this time (India), e.g. `18:00` |
-| `VIDEOS_PER_DAY` | `0` | max uploads per India day (0 = no limit) |
+| `VIDEOS_PER_DAY` | `1,2` | videos per day, repeating pattern (`1` = one a day, `0` = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |
