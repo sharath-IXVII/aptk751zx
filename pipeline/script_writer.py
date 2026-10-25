@@ -18,6 +18,8 @@ BLOCKED_WORDS = [
     "election", "vote", "poll", "candidate", "dies", "dead", "death", "killed", "murder",
     "suicide", "rape", "assault", "shooting", "terror", "vaccine", "cancer", "cure",
     "child", "minor", "porn", "nude", "betting", "casino",
+    "affair", "divorce", "rumour", "rumours", "rumor", "rumors", "dating", "breakup",
+    "cheating", "scandal", "leaked", "arrested",
 ]
 
 SYSTEM = (
@@ -45,7 +47,8 @@ def _is_safe(name: str) -> bool:
 def pick_topic(topics: list[Topic]) -> tuple[Topic, str]:
     """Ask the LLM to choose the best topic. Returns (topic, news search query)."""
     used = [h["topic"] for h in load_history()[-60:]]
-    candidates = [t for t in topics if _is_safe(t.name)][:80]
+    candidates = [t for t in topics
+                  if _is_safe(t.name) and all(_is_safe(n.title) for n in t.news[:3])][:80]
     listing = "\n".join(
         f"{i}. {t.name} [{t.origin}{', ' + t.traffic if t.traffic else ''}]"
         + (f" - news: {t.news[0].title}" if t.news else "")
@@ -63,9 +66,11 @@ Choose ONE topic for today's explainer video. Prefer:
 - topics interesting to BOTH Indian and US viewers
 - topics with enough factual news coverage to explain properly
 Avoid: elections/politics campaigns, deaths/tragedies/crime victims, medical claims,
-anything involving children, gambling, adult content, and plain music video titles.
+anything involving children, gambling, adult content, plain music video titles, and
+celebrity personal-life gossip (affairs, divorces, dating, rumours, feuds) - only
+verifiable public news, not claims about someone's private life.
 
-Return JSON: {{"index": <number from the list>, "search_query": "<short Google News query>",
+Return JSON: {{"index": <number from the list>, "search_query": "<short Google News query in English>",
 "reason": "<one sentence>"}}"""
     choice = llm.chat_json(prompt, SYSTEM, temperature=0.3, max_tokens=800)
     topic = candidates[int(choice["index"])]

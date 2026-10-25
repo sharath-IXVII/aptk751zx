@@ -138,9 +138,16 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
 
 
 def chat_json(prompt: str, system: str = "", **kwargs) -> dict:
-    """Chat and parse a JSON object out of the reply."""
-    text = chat(prompt + "\n\nReply with ONLY a JSON object, no other text.", system, **kwargs)
-    match = re.search(r"\{.*\}", text, flags=re.S)
-    if not match:
-        raise ValueError(f"No JSON in model reply: {text[:300]}")
-    return json.loads(match.group(0))
+    """Chat and parse a JSON object out of the reply. Asks once more if the reply is broken."""
+    ask = prompt + "\n\nReply with ONLY a JSON object, no other text."
+    for attempt in range(2):
+        text = chat(ask, system, **kwargs)
+        match = re.search(r"\{.*\}", text, flags=re.S)
+        try:
+            if not match:
+                raise ValueError("no JSON object found")
+            # strict=False allows raw line breaks inside strings (common in scripts).
+            return json.loads(match.group(0), strict=False)
+        except ValueError as exc:
+            log.warning("Bad JSON from model (%s): %s", exc, text[:200])
+    raise ValueError(f"Model did not return valid JSON: {text[:300]}")
