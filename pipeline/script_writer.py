@@ -120,6 +120,25 @@ Requirements:
 Return JSON: {{"title": "<working title>", "script": "<the full narration>"}}"""
     result = llm.chat_json(prompt, SYSTEM, temperature=0.7, max_tokens=4000)
     words = len(result.get("script", "").split())
+    # Smaller models often write short scripts - ask them to expand it.
+    for _ in range(2):
+        if words >= 400:
+            break
+        log.info("Script only %d words, asking for a longer version", words)
+        longer = llm.chat_json(f"""This YouTube narration script is too short ({words} words).
+Rewrite it to 500-600 words. Keep the same facts, title and positive tone; add more
+background, explanation and context from the news material. Do not invent facts.
+
+NEWS MATERIAL:
+{facts}
+
+CURRENT SCRIPT:
+{result.get("script", "")}
+
+Return JSON: {{"title": "<working title>", "script": "<the full longer narration>"}}""",
+                               SYSTEM, temperature=0.7, max_tokens=4000)
+        if len(longer.get("script", "").split()) > words:
+            result, words = longer, len(longer["script"].split())
     if words < 250:
         raise RuntimeError(f"Script too short ({words} words)")
     log.info("Script written: %s (%d words)", result["title"], words)
@@ -130,7 +149,8 @@ def create_script() -> dict:
     """Full Part 2: trending topics -> pick -> facts -> script."""
     topic, query = pick_topic(all_trending())
     facts, news = gather_facts(topic, query)
-    result = write_script(topic.name, facts)
+    # Topic names can be vague (e.g. "mlb"); the search query describes the story.
+    result = write_script(f"{query} (trending as: {topic.name})", facts)
     result["topic"] = topic.name
     result["sources"] = [{"title": n.title, "source": n.source, "url": n.url}
                          for n in news[:8] if n.url]
