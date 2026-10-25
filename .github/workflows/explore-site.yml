@@ -3,6 +3,9 @@ name: Explore watermark site
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   explore:
     runs-on: ubuntu-latest
@@ -14,6 +17,19 @@ jobs:
           python-version: "3.12"
       - run: pip install playwright && python -m playwright install --with-deps chromium
       - run: python tools/explore_site.py https://notebooklmremover.com/en
+      - name: Save findings to the site-explore branch
+        if: always()
+        run: |
+          mkdir -p /tmp/site && cp -r output/site/. /tmp/site/
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git checkout --orphan site-explore
+          git rm -rf --cached . > /dev/null
+          rm -rf ./* .github
+          cp -r /tmp/site/. .
+          git add -A
+          git commit -m "Site exploration results"
+          git push -f origin site-explore
       - uses: actions/upload-artifact@v4
         if: always()
         with:
