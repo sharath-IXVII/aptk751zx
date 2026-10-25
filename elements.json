@@ -1,0 +1,442 @@
+[
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "block border-b border-primary/15 bg-primary/10 text-primary transition-colors ho",
+    "text": "NEW\nNotebookLM Short videos (720x1280) are now supported with automatic watermar",
+    "href": "https://notebooklmremover.com/en",
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": null,
+    "name": null,
+    "cls": "inline-flex h-7 w-7 items-center justify-center rounded text-primary/80 transiti",
+    "text": "",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "flex items-center space-x-2",
+    "text": "NotebookLM Remover",
+    "href": "https://notebooklmremover.com/en",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "text-sm font-medium text-muted-foreground hover:text-foreground transition-color",
+    "text": "Home",
+    "href": "https://notebooklmremover.com/en",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "text-sm font-medium text-muted-foreground hover:text-foreground transition-color",
+    "text": "Video Remover",
+    "href": "https://notebooklmremover.com/en/video",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "text-sm font-medium text-muted-foreground hover:text-foreground transition-color",
+    "text": "PDF Slides Remover",
+    "href": "https://notebooklmremover.com/en/slides",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "relative text-sm font-medium text-muted-foreground hover:text-foreground transit",
+    "text": "PPTX Remover",
+    "href": "https://notebooklmremover.com/en/pptx",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "relative text-sm font-medium text-muted-foreground hover:text-foreground transit",
+    "text": "Infographic\nNEW",
+    "href": "https://notebooklmremover.com/en/notebooklm-infographic-watermark-remover",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "relative text-sm font-medium text-muted-foreground hover:text-foreground transit",
+    "text": "Gemini Watermark Remover\nNEW",
+    "href": "https://notebooklmremover.com/en/gemini-image",
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": null,
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium tr",
+    "text": "",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_hecnmivb_",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium tr",
+    "text": "",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "submit",
+    "id": null,
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium tr",
+    "text": "Toggle theme",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_3ecnmivb_",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium tr",
+    "text": "Claude",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_4ecnmivb_",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium tr",
+    "text": "English",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "submit",
+    "id": null,
+    "name": null,
+    "cls": "inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hov",
+    "text": "Open main menu",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-video",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "Video Remover",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-pdf",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "PDF Slides Remover",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-pptx",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "PPTX Remover",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-infographic",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "Infographic\nNEW",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-gemini",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "Gemini Watermark Remover\nNEW",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_1j5fknmivb_-trigger-gemini-video",
+    "name": null,
+    "cls": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ri",
+    "text": "Gemini/Veo Video\nBETA",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "LABEL",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "flex items-center gap-2 text-sm leading-none font-medium select-none group-data-",
+    "text": "Select File",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "INPUT",
+    "type": "file",
+    "id": "video-remover-file-input",
+    "name": null,
+    "cls": "hidden",
+    "text": "",
+    "href": null,
+    "accept": ".mp4"
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": null,
+    "name": null,
+    "cls": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-",
+    "text": "Select File",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "inline-flex items-center gap-2 text-primary font-medium hover:underline group",
+    "text": "Need a detailed step-by-step tutorial with screenshots and video guides? Read ou",
+    "href": "https://notebooklmremover.com/en/how-to-remove-notebooklm-watermark",
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_3b5fknmivb_",
+    "name": null,
+    "cls": "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:u",
+    "text": "How to remove NotebookLM watermark from video?",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_5b5fknmivb_",
+    "name": null,
+    "cls": "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:u",
+    "text": "Can I remove the NotebookLM logo from PDFs and Slides?",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_7b5fknmivb_",
+    "name": null,
+    "cls": "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:u",
+    "text": "Is it free to remove the NotebookLM watermark?",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_9b5fknmivb_",
+    "name": null,
+    "cls": "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:u",
+    "text": "Is this a free Slidesweep alternative?",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "button",
+    "id": "radix-_R_bb5fknmivb_",
+    "name": null,
+    "cls": "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:u",
+    "text": "Does it upload my video to a server?",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Home",
+    "href": "https://notebooklmremover.com/en",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Video Remover",
+    "href": "https://notebooklmremover.com/en/video",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "PDF Slides Remover",
+    "href": "https://notebooklmremover.com/en/slides",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Gemini Watermark Remover",
+    "href": "https://notebooklmremover.com/en/gemini-image",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Gemini/Veo Video",
+    "href": "https://notebooklmremover.com/en/gemini-veo-video",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors font-medium text-primary",
+    "text": "How-to Guide",
+    "href": "https://notebooklmremover.com/en/how-to-remove-notebooklm-watermark",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Features",
+    "href": "https://notebooklmremover.com/en/#features",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "FAQ",
+    "href": "https://notebooklmremover.com/en/#faq",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Changelog",
+    "href": "https://notebooklmremover.com/en/changelog",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Privacy Policy",
+    "href": "https://notebooklmremover.com/en/privacy",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Terms of Service",
+    "href": "https://notebooklmremover.com/en/terms",
+    "accept": null
+  },
+  {
+    "tag": "A",
+    "type": null,
+    "id": null,
+    "name": null,
+    "cls": "hover:text-foreground transition-colors",
+    "text": "Contact Us",
+    "href": "mailto:support@notebooklmremover.com",
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "submit",
+    "id": null,
+    "name": null,
+    "cls": "opacity-0 group-hover:opacity-100 transition-opacity bg-background/80 hover:bg-b",
+    "text": "",
+    "href": null,
+    "accept": null
+  },
+  {
+    "tag": "BUTTON",
+    "type": "submit",
+    "id": null,
+    "name": null,
+    "cls": "bg-primary text-primary-foreground px-4 py-2 rounded-full shadow-lg hover:bg-pri",
+    "text": "Feedback",
+    "href": null,
+    "accept": null
+  }
+]
