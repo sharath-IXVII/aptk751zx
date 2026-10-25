@@ -6,6 +6,7 @@ Sources (all free):
   - Google News RSS search, for extra facts on the chosen topic
 """
 
+import datetime as dt
 import html
 import logging
 import os
@@ -90,19 +91,44 @@ def youtube_trending(country: str, limit: int = 40) -> list[Topic]:
         timeout=30,
     )
     resp.raise_for_status()
+    return _video_topics(resp.json().get("items", []), f"youtube:{country}")
+
+
+def _video_topics(items: list[dict], origin: str) -> list[Topic]:
     topics = []
-    for v in resp.json().get("items", []):
+    for v in items:
         sn = v["snippet"]
         views = int(v.get("statistics", {}).get("viewCount", 0))
         desc = re.sub(r"https?://\S+", "", sn.get("description", ""))
         desc = re.sub(r"\s+", " ", desc).strip()[:500]
-        # Used only to understand what the video's story is about - our script is
-        # written from news facts in our own words, never copied from the video.
+        # Used only to understand what the video/trend is about - our script is written
+        # in our own words, never copied from the video.
         about = (f"channel: {sn.get('channelTitle', '')}; tags: {', '.join(sn.get('tags', [])[:10])}; "
                  f"description: {desc}")
-        topics.append(Topic(name=sn["title"], origin=f"youtube:{country}",
+        topics.append(Topic(name=sn["title"], origin=origin,
                             traffic=f"{views:,} views", about=about))
     return topics
+
+
+def youtube_search(query: str, days: int = 14, limit: int = 10) -> list[Topic]:
+    """Most viewed recent videos for a query - shows how big a trend is."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        return []
+    after = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    resp = httpx.get("https://www.googleapis.com/youtube/v3/search",
+                     params={"part": "id", "q": query, "type": "video", "order": "viewCount",
+                             "publishedAfter": after, "maxResults": limit, "key": key},
+                     timeout=30)
+    resp.raise_for_status()
+    ids = [i["id"]["videoId"] for i in resp.json().get("items", [])]
+    if not ids:
+        return []
+    resp = httpx.get("https://www.googleapis.com/youtube/v3/videos",
+                     params={"part": "snippet,statistics", "id": ",".join(ids), "key": key},
+                     timeout=30)
+    resp.raise_for_status()
+    return _video_topics(resp.json().get("items", []), "youtube-search")
 
 
 def all_trending() -> list[Topic]:

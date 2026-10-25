@@ -2,14 +2,15 @@
 
 Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per day** (India time):
 
-1. **Topic** – Google Trends searches + trending YouTube videos (title, channel, tags,
-   description) for India + US; positive topics only, India/US stories preferred
+1. **Topic** – trending YouTube videos (India + US) first, any genre (memes, stickman
+   animations, gaming, music, trailers...); Google Trends news (positive only) as backup.
+   Hard limits always apply: no adult, hate, violence, politics, gambling or medical claims
 2. **Script** – news facts → original script (NVIDIA Nemotron, other models as fallback) → fact-check
 3. **Title & description** – SEO title, description, hashtags and tags from the trend research
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
-   audio normalised, optional music/outro. Thumbnail = the video's opening title screen
+   audio normalised, optional music/outro. Thumbnail = sharpest frame of the opening title screen
 6. **Upload** – YouTube Data API (private by default)
 
 If a run stops halfway (video still generating, upload error), the next run continues from there.
@@ -32,7 +33,7 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | `YT_PRIVACY` | `private` | `private`, `unlisted` or `public` |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
-| `THUMBNAIL_AT` | `1.5` | second of the video used as the thumbnail |
+| `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |
 
 If the website step fails, the blur is used: check `watermark_check.jpg` in the run's artifacts.
 

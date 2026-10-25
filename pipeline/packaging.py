@@ -9,7 +9,7 @@ import os
 import subprocess
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter, ImageStat
 
 from pipeline import llm
 
@@ -22,8 +22,8 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and the title-screen text, based on the research."""
     research = script.get("research", {})
     headlines = "\n".join(f"- {h}" for h in research.get("headlines", [])[:12])
-    meta = llm.chat_json(f"""You are a YouTube SEO expert for a channel that posts positive,
-uplifting explainer videos for viewers in India and the US.
+    meta = llm.chat_json(f"""You are a YouTube SEO expert for a channel that posts explainer videos
+about what is trending on YouTube for viewers in India and the US.
 
 RESEARCH
 - Trending search/topic: {research.get("trend", script.get("topic", ""))}
@@ -78,22 +78,57 @@ Return JSON: {{"title": "...", "cover_text": "...", "description": "...",
     return meta
 
 
+def _frame(video: Path, at: float, out: Path) -> Image.Image | None:
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{at:.2f}", "-i", str(video),
+                    "-frames:v", "1", str(out)], check=True)
+    if not out.exists():
+        return None
+    img = Image.open(out).convert("RGB")
+    img.load()
+    out.unlink()
+    return img
+
+
+def _detail(img: Image.Image) -> float:
+    """How much clear detail (text edges) a frame has - fades and blank frames score ~0."""
+    small = img.convert("L").resize((320, 180))
+    return ImageStat.Stat(small.filter(ImageFilter.FIND_EDGES)).mean[0]
+
+
 def thumbnail_from_video(video: Path, out: Path) -> Path:
-    """Save the opening title screen of the video as a 1280x720 JPEG thumbnail."""
-    at = os.getenv("THUMBNAIL_AT") or "1.5"  # seconds into the video
-    raw = out.with_suffix(".png")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", at, "-i", str(video),
-                    "-frames:v", "1", str(raw)], check=True)
-    img = Image.open(raw).convert("RGB")
+    """Save the best frame of the opening title screen as a 1280x720 JPEG thumbnail.
+
+    Several frames from the first seconds are compared and the sharpest, most detailed one
+    (the fully shown title, not a fade-in) is used. Set THUMBNAIL_AT to force a second.
+    """
+    tmp = out.with_suffix(".png")
+    if forced := os.getenv("THUMBNAIL_AT"):
+        times = [float(forced)]
+    else:
+        times = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0]
+    best, best_at, best_score = None, 0.0, -1.0
+    for at in times:
+        img = _frame(video, at, tmp)
+        if img is None:
+            continue
+        score = _detail(img)
+        log.info("Thumbnail candidate at %.1fs: detail %.1f", at, score)
+        if score > best_score:
+            best, best_at, best_score = img, at, score
+    if best is None:
+        raise RuntimeError("Could not read any frame from the video for the thumbnail")
+    img = best
     scale = max(SIZE[0] / img.width, SIZE[1] / img.height)
     img = img.resize((round(img.width * scale), round(img.height * scale)), Image.LANCZOS)
     left, top = (img.width - SIZE[0]) // 2, (img.height - SIZE[1]) // 2
     img = img.crop((left, top, left + SIZE[0], top + SIZE[1]))
+    # Small boost so it stays crisp and readable at phone size.
+    img = ImageEnhance.Contrast(img).enhance(1.08)
+    img = img.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=3))
     out.parent.mkdir(parents=True, exist_ok=True)
     for quality in (92, 80, 65):  # YouTube limit is 2 MB
         img.save(out, "JPEG", quality=quality)
         if out.stat().st_size < 2_000_000:
             break
-    raw.unlink(missing_ok=True)
-    log.info("Thumbnail taken from the video at %ss -> %s", at, out)
+    log.info("Thumbnail taken from the video at %.1fs -> %s", best_at, out)
     return out
