@@ -26,34 +26,67 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Pat
         ctx = browser.new_context(viewport={"width": 1366, "height": 900}, accept_downloads=True)
         page = ctx.new_page()
         page.goto(URL, wait_until="networkidle", timeout=90_000)
+
+        downloads = []
+        page.on("download", lambda d: downloads.append(d))  # catches automatic downloads too
+        visible = """() => [...document.querySelectorAll('button, a, [role=button]')]
+            .filter(e => e.offsetParent !== null)
+            .map(e => (e.innerText || e.getAttribute('aria-label') || '').trim())
+            .filter(t => t)"""
+        before_buttons = set(page.evaluate(visible))
+        before_pcts = set(re.findall(r"\d{1,3}\s?%", page.inner_text("body")))
+
         page.set_input_files(FILE_INPUT, str(src))
         log.info("Video selected on %s, waiting for processing", URL)
 
-        start, last_pct, shot = time.time(), None, 0
-        try:
-            while time.time() - start < TIMEOUT:
-                button = page.locator("button:visible, a:visible").filter(
-                    has_text=re.compile(r"download", re.I)).first
-                if button.count():
-                    with page.expect_download(timeout=120_000) as dl:
-                        button.click()
-                    dl.value.save_as(str(dst))
-                    log.info("Downloaded clean video after %ds", time.time() - start)
-                    return dst
-                pct = re.search(r"(\d{1,3})\s?%", page.inner_text("body"))
-                if pct and pct.group(1) != last_pct:
-                    last_pct = pct.group(1)
-                    log.info("Watermark removal: %s%%", last_pct)
-                if shots_dir and (time.time() - start) // 60 >= shot:  # one screenshot a minute
-                    shots_dir.mkdir(parents=True, exist_ok=True)
-                    page.screenshot(path=str(shots_dir / f"site_{shot:02d}.png"))
-                    shot += 1
-                time.sleep(5)
-            raise TimeoutError(f"No Download button after {TIMEOUT // 60} minutes")
-        except Exception:
+        notes = []
+        start, last_pct, shot, clicked = time.time(), None, 0, set()
+
+        def snapshot(name: str) -> None:
             if shots_dir:
                 shots_dir.mkdir(parents=True, exist_ok=True)
-                page.screenshot(path=str(shots_dir / "site_error.png"), full_page=True)
+                page.screenshot(path=str(shots_dir / name), full_page=True)
+                (shots_dir / "log.txt").write_text("\n".join(notes))
+
+        try:
+            while time.time() - start < TIMEOUT:
+                if downloads:
+                    downloads[0].save_as(str(dst))
+                    log.info("Downloaded clean video after %ds", time.time() - start)
+                    return dst
+
+                buttons = page.evaluate(visible)
+                new_buttons = [b for b in buttons if b not in before_buttons]
+                for label in new_buttons:
+                    if label in clicked:
+                        continue
+                    # A start button that appears after choosing the file, or the download button.
+                    if re.search(r"download|save|export|start|process|remove|convert|clean",
+                                 label, re.I):
+                        clicked.add(label)
+                        notes.append(f"t={int(time.time() - start)}s clicking '{label}'")
+                        log.info("Clicking '%s'", label)
+                        page.get_by_text(label, exact=True).first.click()
+                        page.wait_for_timeout(3000)
+                        break
+
+                body = page.inner_text("body")
+                pcts = [p for p in re.findall(r"\d{1,3}\s?%", body) if p not in before_pcts]
+                if pcts and pcts[-1] != last_pct:
+                    last_pct = pcts[-1]
+                    log.info("Watermark removal: %s", last_pct)
+                if re.search(r"\b(error|failed|not supported|unsupported|invalid)\b", body, re.I) \
+                        and not downloads:
+                    notes.append(f"t={int(time.time() - start)}s page mentions an error")
+
+                if (time.time() - start) // 60 >= shot:  # one screenshot a minute
+                    notes.append(f"t={int(time.time() - start)}s new buttons={new_buttons[:15]}")
+                    snapshot(f"site_{shot:02d}.png")
+                    shot += 1
+                page.wait_for_timeout(5000)  # keeps processing browser events
+            raise TimeoutError(f"No download after {TIMEOUT // 60} minutes")
+        except Exception:
+            snapshot("site_error.png")
             raise
         finally:
             browser.close()

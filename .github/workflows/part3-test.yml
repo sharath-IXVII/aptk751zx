@@ -8,6 +8,9 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,6 +33,20 @@ jobs:
               -t 40 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest /tmp/input.mp4
           fi
       - run: python part3_test.py /tmp/input.mp4
+      - name: Save site screenshots to the part3-debug branch
+        if: always()
+        run: |
+          mkdir -p /tmp/dbg && cp -r output/site_screens/. /tmp/dbg/ 2>/dev/null || true
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git checkout --orphan part3-debug
+          git rm -rf --cached . > /dev/null
+          git clean -fdq
+          rm -rf ./*
+          cp -r /tmp/dbg/. . 2>/dev/null || true
+          git add -A
+          git commit -m "Part 3 debug screenshots" || true
+          git push -f origin part3-debug
       - uses: actions/upload-artifact@v4
         if: always()
         with:

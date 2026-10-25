@@ -77,7 +77,9 @@ def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
         x, y, w, h = watermark_box(info["width"], info["height"])
         log.info("Hiding watermark box x=%d y=%d w=%d h=%d", x, y, w, h)
         # Blur the watermark area heavily (looks natural on moving footage).
-        vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},boxblur=20:3[blur];"
+        radius = max(1, min(20, min(w, h) // 4 - 1))  # chroma planes are half size
+        vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},"
+              f"boxblur=luma_radius={radius}:luma_power=3:chroma_radius={radius}:chroma_power=3[blur];"
               f"[base][blur]overlay={x}:{y},format=yuv420p[v]")
     else:
         vf = "[0:v]format=yuv420p[v]"
