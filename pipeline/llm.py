@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 BASE_URL = "https://integrate.api.nvidia.com/v1"
 
-# Tried in order; the first one available on your key is used.
+# Tried in order; models your key lists come first, the rest are tried after.
 # Set NVIDIA_MODEL in env to force a specific model.
 PREFERRED_MODELS = [
     "deepseek-ai/deepseek-v4.1-flash",
@@ -25,7 +25,15 @@ PREFERRED_MODELS = [
     "meta/llama-3.1-70b-instruct",
 ]
 
+# Give up on a model if it sends nothing for this long, or takes longer than this in total.
+SILENCE_TIMEOUT = 90
+TOTAL_TIMEOUT = 600
+
 _chosen_model: str | None = None
+
+
+class _ModelError(Exception):
+    pass
 
 
 def _headers() -> dict:
@@ -36,20 +44,43 @@ def _headers() -> dict:
 
 
 def _candidate_models() -> list[str]:
-    """Preferred models that this key can see, in preference order."""
+    """Preferred models in order, the ones this key lists first."""
     if forced := os.environ.get("NVIDIA_MODEL"):
         return [forced]
     try:
         resp = httpx.get(f"{BASE_URL}/models", headers=_headers(), timeout=30)
         resp.raise_for_status()
         available = {m["id"] for m in resp.json().get("data", [])}
-        found = [m for m in PREFERRED_MODELS if m in available]
-        if found:
-            return found
-        log.warning("None of the preferred models are listed; trying them anyway")
+        listed = [m for m in PREFERRED_MODELS if m in available]
+        return listed + [m for m in PREFERRED_MODELS if m not in available]
     except Exception as exc:
         log.warning("Could not list NVIDIA models (%s); trying preferred list", exc)
     return PREFERRED_MODELS
+
+
+def _stream_reply(model: str, payload: dict) -> tuple[str, str]:
+    """Stream one completion. Returns (content, reasoning). Raises _ModelError on HTTP errors."""
+    content, reasoning = [], []
+    deadline = time.monotonic() + TOTAL_TIMEOUT
+    timeout = httpx.Timeout(SILENCE_TIMEOUT, connect=30)
+    with httpx.stream("POST", f"{BASE_URL}/chat/completions", headers=_headers(),
+                      json={**payload, "model": model, "stream": True}, timeout=timeout) as resp:
+        if resp.status_code >= 400:
+            resp.read()
+            raise _ModelError(f"HTTP {resp.status_code} {resp.text[:300]}")
+        for line in resp.iter_lines():
+            if time.monotonic() > deadline:
+                raise _ModelError(f"no complete answer within {TOTAL_TIMEOUT}s")
+            if not line.startswith("data:"):
+                continue
+            data = line[5:].strip()
+            if data == "[DONE]":
+                break
+            for choice in json.loads(data).get("choices", []):
+                delta = choice.get("delta") or {}
+                content.append(delta.get("content") or "")
+                reasoning.append(delta.get("reasoning_content") or "")
+    return "".join(content), "".join(reasoning)
 
 
 def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 4000) -> str:
@@ -67,46 +98,41 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
     for model in models:
         extra = dict(no_thinking)
         for attempt in range(4):
+            payload = {"messages": messages, "temperature": temperature,
+                       "max_tokens": max(max_tokens, 8000), **extra}
             try:
-                resp = httpx.post(
-                    f"{BASE_URL}/chat/completions",
-                    headers=_headers(),
-                    json={"model": model, "messages": messages, "temperature": temperature,
-                          "max_tokens": max(max_tokens, 8000), **extra},
-                    timeout=300,
-                )
-                if resp.status_code == 429:  # rate limited - wait and retry
+                text, reasoning = _stream_reply(model, payload)
+            except _ModelError as exc:
+                msg = str(exc)
+                if msg.startswith("HTTP 429"):  # rate limited - wait and retry
                     last_error = f"{model}: rate limited (429)"
                     log.warning(last_error)
                     time.sleep(20 * (attempt + 1))
                     continue
-                if resp.status_code == 400 and extra:  # model rejects the no-thinking option
+                if msg.startswith("HTTP 400") and extra:  # rejects the no-thinking option
                     log.warning("%s rejected thinking option, retrying without it", model)
                     extra = {}
                     continue
-                if resp.status_code >= 400:
-                    last_error = f"{model}: HTTP {resp.status_code} {resp.text[:300]}"
-                    log.warning(last_error)
-                    break
-                choice = resp.json()["choices"][0]
-                msg = choice.get("message") or {}
-                text = msg.get("content") or ""
-                # Reasoning models may include their thinking - drop it.
-                text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
-                if not text and "{" in (msg.get("reasoning_content") or ""):
-                    text = msg["reasoning_content"]  # answer ended up in the reasoning
-                if text:
-                    if _chosen_model != model:
-                        log.info("Using NVIDIA model: %s", model)
-                    _chosen_model = model
-                    return text
-                last_error = f"{model}: empty reply (finish_reason={choice.get('finish_reason')})"
+                last_error = f"{model}: {msg}"
                 log.warning(last_error)
                 break
-            except Exception as exc:
-                last_error = f"{model}: {exc}"
-                log.warning("Model %s failed (attempt %d): %s", model, attempt + 1, exc)
+            except Exception as exc:  # timeouts, connection errors
+                last_error = f"{model}: {type(exc).__name__}: {exc}"
+                log.warning(last_error)
                 break
+
+            # Reasoning models may include their thinking - drop it.
+            text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
+            if not text and "{" in reasoning:
+                text = reasoning  # answer ended up in the reasoning
+            if text:
+                if _chosen_model != model:
+                    log.info("Using NVIDIA model: %s", model)
+                _chosen_model = model
+                return text
+            last_error = f"{model}: empty reply"
+            log.warning(last_error)
+            break
         _chosen_model = None
     raise RuntimeError(f"All NVIDIA models failed. Last error: {last_error}")
 
