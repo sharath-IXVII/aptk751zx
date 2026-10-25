@@ -24,8 +24,18 @@ INSTRUCTIONS = (
 )
 
 
+def instructions_for(cover_text: str) -> str:
+    """Ask for an opening title screen; its first frame becomes the YouTube thumbnail."""
+    if not cover_text:
+        return INSTRUCTIONS
+    return (f'Open the video with a clean title screen: a simple plain background showing only '
+            f'the words "{cover_text}" in large, bold, centred text, held for about 3 seconds. '
+            + INSTRUCTIONS)
+
+
 async def start_video(client, script: str, title: str, language: str = "en",
-                      kinds: tuple[str, ...] = ("cinematic", "explainer")) -> dict:
+                      kinds: tuple[str, ...] = ("cinematic", "explainer"),
+                      cover_text: str = "") -> dict:
     """Create a notebook from the script and start video generation.
 
     Returns {"notebook_id", "task_id", "kind"} so a later run can resume/download.
@@ -37,9 +47,9 @@ async def start_video(client, script: str, title: str, language: str = "en",
 
     starters = {
         "cinematic": lambda: client.artifacts.generate_cinematic_video(
-            nb.id, language=language, instructions=INSTRUCTIONS),
+            nb.id, language=language, instructions=instructions_for(cover_text)),
         "explainer": lambda: client.artifacts.generate_video(
-            nb.id, language=language, instructions=INSTRUCTIONS,
+            nb.id, language=language, instructions=instructions_for(cover_text),
             video_format=VideoFormat.EXPLAINER),
     }
     for kind in kinds:

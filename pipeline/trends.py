@@ -37,6 +37,7 @@ class Topic:
     origin: str               # e.g. "google-trends:IN" or "youtube:US"
     traffic: str = ""
     news: list[NewsItem] = field(default_factory=list)
+    about: str = ""           # YouTube trending videos: channel, description, tags
 
 
 def _local(tag: str) -> str:
@@ -78,7 +79,7 @@ def google_trends(country: str) -> list[Topic]:
     return parse_google_trends(resp.text, country)
 
 
-def youtube_trending(country: str, limit: int = 25) -> list[Topic]:
+def youtube_trending(country: str, limit: int = 40) -> list[Topic]:
     key = os.environ.get("YOUTUBE_API_KEY")
     if not key:
         return []
@@ -91,10 +92,16 @@ def youtube_trending(country: str, limit: int = 25) -> list[Topic]:
     resp.raise_for_status()
     topics = []
     for v in resp.json().get("items", []):
+        sn = v["snippet"]
         views = int(v.get("statistics", {}).get("viewCount", 0))
-        # Only the title is used, to understand the topic - never the content.
-        topics.append(Topic(name=v["snippet"]["title"], origin=f"youtube:{country}",
-                            traffic=f"{views:,} views"))
+        desc = re.sub(r"https?://\S+", "", sn.get("description", ""))
+        desc = re.sub(r"\s+", " ", desc).strip()[:500]
+        # Used only to understand what the video's story is about - our script is
+        # written from news facts in our own words, never copied from the video.
+        about = (f"channel: {sn.get('channelTitle', '')}; tags: {', '.join(sn.get('tags', [])[:10])}; "
+                 f"description: {desc}")
+        topics.append(Topic(name=sn["title"], origin=f"youtube:{country}",
+                            traffic=f"{views:,} views", about=about))
     return topics
 
 

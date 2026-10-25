@@ -2,11 +2,14 @@
 
 Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per day** (India time):
 
-1. **Topic** – Google Trends + YouTube trending (India + US), positive topics only
+1. **Topic** – Google Trends searches + trending YouTube videos (title, channel, tags,
+   description) for India + US; positive topics only, India/US stories preferred
 2. **Script** – news facts → original script (NVIDIA: Nemotron picks, Llama 3.3 70B writes) → fact-check
-3. **Video** – NotebookLM cinematic video (explainer as fallback), 5-hour gap respected
-4. **Edit** – blur NotebookLM watermark, normalise audio, optional music/outro
-5. **Package** – title, description (with sources + AI disclosure), tags, thumbnail
+3. **Title & description** – SEO title, description, hashtags and tags from the trend research
+4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
+   title screen; 5-hour gap respected
+5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
+   audio normalised, optional music/outro. Thumbnail = the video's opening title screen
 6. **Upload** – YouTube Data API (private by default)
 
 If a run stops halfway (video still generating, upload error), the next run continues from there.
@@ -26,9 +29,11 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | Variable | Default | What |
 |---|---|---|
 | `YT_PRIVACY` | `private` | `private`, `unlisted` or `public` |
-| `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | watermark area as x,y,width,height fractions (bottom-right) |
+| `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
+| `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
+| `THUMBNAIL_AT` | `1.5` | second of the video used as the thumbnail |
 
-Check `watermark_check.jpg` in a run's artifacts: the red box must cover the NotebookLM logo.
+If the website step fails, the blur is used: check `watermark_check.jpg` in the run's artifacts.
 
 ## Optional files
 

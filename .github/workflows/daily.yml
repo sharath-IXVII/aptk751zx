@@ -40,6 +40,8 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
+          WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}
+          THUMBNAIL_AT: ${{ vars.THUMBNAIL_AT }}
           VIDEO_LANGUAGE: en
         run: python run.py ${{ inputs.force && '--force' || '' }}
       - name: Save state

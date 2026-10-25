@@ -50,14 +50,25 @@ def _is_safe(name: str) -> bool:
 def pick_topic(topics: list[Topic]) -> tuple[Topic, str]:
     """Ask the LLM to choose the best topic. Returns (topic, news search query)."""
     used = [h["topic"] for h in load_history()[-60:]]
-    candidates = [t for t in topics
-                  if _is_safe(t.name) and all(_is_safe(n.title) for n in t.news[:3])][:80]
+    safe = [t for t in topics
+            if _is_safe(t.name) and _is_safe(t.about[:300])
+            and all(_is_safe(n.title) for n in t.news[:3])]
+    # Mix both sources so YouTube videos are always well represented in the list.
+    google = [t for t in safe if not t.origin.startswith("youtube")]
+    youtube = [t for t in safe if t.origin.startswith("youtube")]
+    candidates = (google[:30] + youtube[:50])[:80]
     listing = "\n".join(
         f"{i}. {t.name} [{t.origin}{', ' + t.traffic if t.traffic else ''}]"
         + (f" - news: {t.news[0].title}" if t.news else "")
+        + (f" - about: {t.about[:220]}" if t.about else "")
         for i, t in enumerate(candidates)
     )
-    prompt = f"""Today's trending topics in India and the US:
+    prompt = f"""Today's trending topics in India and the US. They come from two sources:
+Google Trends searches [google-trends] and trending YouTube videos [youtube]. Treat both
+equally: a trending YouTube video is a great pick when the STORY behind it (a launch,
+trailer, match, achievement, new tech) is real news we can explain - we cover the story,
+not the other creator's video itself.
+
 {listing}
 
 Topics we already made videos about (do NOT repeat these or close variants):
@@ -91,6 +102,9 @@ def gather_facts(topic: Topic, query: str) -> tuple[str, list[NewsItem]]:
     """Collect news headlines, snippets and some article text for the topic."""
     news = topic.news + google_news(query)
     blocks = []
+    if topic.about:
+        blocks.append(f"WHAT THE TRENDING YOUTUBE VIDEO IS ABOUT (context only, do not copy): "
+                      f"{topic.name} - {topic.about}")
     for n in news[:15]:
         blocks.append(f"- {n.title} ({n.source}) {n.snippet}".strip())
     # Full text from a few direct article links (Google News links are redirects).
@@ -191,5 +205,8 @@ def create_script() -> dict:
     result["topic"] = topic.name
     result["sources"] = [{"title": n.title, "source": n.source, "url": n.url}
                          for n in news[:8] if n.url]
+    result["research"] = {"trend": topic.name, "origin": topic.origin, "traffic": topic.traffic,
+                          "query": query, "headlines": [n.title for n in news[:12]],
+                          "youtube_video": topic.about}
     result["date"] = dt.date.today().isoformat()
     return result

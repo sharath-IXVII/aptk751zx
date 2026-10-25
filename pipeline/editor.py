@@ -58,7 +58,7 @@ def save_watermark_check(video: Path, out_jpg: Path) -> None:
 
 def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> bool:
     """Try notebooklmremover.com. Returns True if it worked (dst written)."""
-    if os.getenv("WATERMARK_SITE", "on") == "off":
+    if (os.getenv("WATERMARK_SITE") or "on") == "off":
         return False
     try:
         from pipeline.watermark_site import remove_watermark as site_remove

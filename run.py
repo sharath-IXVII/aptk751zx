@@ -64,10 +64,14 @@ async def main(force: bool) -> None:
             log.info("Less than 5 hours since the last NotebookLM video - try again later")
             return
         script = create_script()
-        job = {"date": today, "script": script}
+        job = {"date": today, "script": script, "meta": packaging.make_metadata(script)}
         state["job"] = job
         save_state(state)
     script = job["script"]
+    if not job.get("meta"):
+        job["meta"] = packaging.make_metadata(script)
+        save_state(state)
+    meta = job["meta"]
     (OUT / "script.json").write_text(json.dumps(script, indent=2, ensure_ascii=False))
 
     raw, final, thumb = OUT / "video_raw.mp4", OUT / "video_final.mp4", OUT / "thumbnail.jpg"
@@ -80,7 +84,8 @@ async def main(force: bool) -> None:
                 return
             kinds = ("explainer",) if job.get("retried") else ("cinematic", "explainer")
             job.update(await start_video(client, script["script"], script["title"],
-                                         os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds))
+                                         os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
+                                         cover_text=meta["cover_text"]))
             state["notebooklm_started_at"] = now().isoformat()
             save_state(state)
 
@@ -97,16 +102,15 @@ async def main(force: bool) -> None:
                 save_state(state)
             raise
 
-    # 4. Edit, 5. title/description/thumbnail
+    # 4. Remove watermark + edit, 5. thumbnail = opening title screen of the video
     clean = OUT / "video_clean.mp4"
     if editor.remove_watermark(raw, clean, OUT / "site_screens"):
         editor.edit_video(clean, final, blur_watermark=False)
     else:
         editor.save_watermark_check(raw, OUT / "watermark_check.jpg")
         editor.edit_video(raw, final)
-    meta = packaging.make_metadata(script)
     (OUT / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
-    packaging.make_thumbnail(meta, final, thumb)
+    packaging.thumbnail_from_video(final, thumb)
 
     # 6. Upload
     if not os.getenv("YT_REFRESH_TOKEN"):
