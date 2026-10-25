@@ -36,6 +36,7 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | `YT_PRIVACY` | `private` | `private`, `unlisted` or `public` |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
+| `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |
 | `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |
 
 If the website step fails, the blur is used: check `watermark_check.jpg` in the run's artifacts.
@@ -81,4 +82,5 @@ Custom thumbnails need a phone-verified channel (youtube.com/verify).
 
 - **Part 1 - NotebookLM test** – makes a test video
 - **Part 2 - Trending topic + script test** – writes a script (tick the box to also make the video)
+- **Part 4 - YouTube upload test** – checks the YouTube login and uploads one PRIVATE test video
 - **Daily video** – the full pipeline (tick *force* to make another video today)

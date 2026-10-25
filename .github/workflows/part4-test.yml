@@ -1,0 +1,44 @@
+name: Part 4 - YouTube upload test
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Video to upload (always PRIVATE)"
+        type: choice
+        options:
+          - last-daily-video   # the finished video from the latest Daily video run
+          - sample             # a 15-second test pattern
+        default: last-daily-video
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r requirements.txt
+      - name: Get the last Daily video
+        if: inputs.source == 'last-daily-video'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list --workflow daily.yml --limit 20 --json databaseId,conclusion \
+            --jq '[.[] | select(.conclusion=="success")][0].databaseId')
+          gh run download "$run_id" -n video-output -D /tmp/last \
+            || echo "Files from that run have expired - a sample video will be used"
+      - name: Upload to YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_CATEGORY: ${{ vars.YT_CATEGORY }}
+        run: python part4_test.py /tmp/last
