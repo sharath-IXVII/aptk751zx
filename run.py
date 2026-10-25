@@ -27,6 +27,7 @@ STATE_FILE = Path("state/current.json")
 OUT = Path("output")
 IST = ZoneInfo("Asia/Kolkata")
 NOTEBOOKLM_GAP = dt.timedelta(hours=5)
+MAX_ATTEMPTS = 3  # runs that may work on one video before it is dropped
 
 
 def now() -> dt.datetime:
@@ -58,6 +59,14 @@ async def main(force: bool) -> None:
     job = state.get("job")
     if job and job.get("date") != today and not job.get("notebook_id"):
         job = None  # unfinished script from an earlier day - start fresh
+    if job:
+        job["attempts"] = job.get("attempts", 0) + 1
+        if job["attempts"] > MAX_ATTEMPTS:
+            log.warning("Video '%s' failed %d times - giving up on it and starting a new one",
+                        job["script"].get("title"), MAX_ATTEMPTS)
+            state.pop("job", None)
+            job = None
+        save_state(state)
 
     # 1. Script (reuse today's if a previous run already wrote it)
     if not job:
@@ -77,6 +86,8 @@ async def main(force: bool) -> None:
     (OUT / "script.json").write_text(json.dumps(script, indent=2, ensure_ascii=False))
 
     raw, final, thumb = OUT / "video_raw.mp4", OUT / "video_final.mp4", OUT / "thumbnail.jpg"
+    if job.get("video_id"):  # uploaded by an earlier run that stopped right after
+        return finish_job(state, job, job["video_id"], today)
     async with NotebookLMClient.from_storage(allow_headless=True) as client:
         # 2. Start the NotebookLM video (once), remembering ids so a later run can resume
         if not job.get("notebook_id"):
@@ -130,18 +141,24 @@ async def main(force: bool) -> None:
         video_id = upload(final, thumb, meta, publish_at=slot)
         if slot:
             plan.book(state, slot)
+        job["video_id"] = video_id
+        save_state(state)  # saved at once, so a later error can never upload it twice
 
-    save_history({"date": today, "topic": script["topic"], "title": meta["title"],
+    finish_job(state, job, video_id, today)
+
+    # 7. Clean up: delete the NotebookLM notebooks this pipeline made (the video is on
+    #    YouTube now). Notebooks you created yourself are never touched.
+    await cleanup_notebooks(state)
+
+
+def finish_job(state: dict, job: dict, video_id: str | None, today: str) -> None:
+    save_history({"date": today, "topic": job["script"]["topic"], "title": job["meta"]["title"],
                   "youtube_id": video_id})
     state.pop("job", None)
     state["uploaded_date"] = today
     state["uploads"] = {today: state.get("uploads", {}).get(today, 0) + 1}
     save_state(state)
-    log.info("Done: %s", meta["title"])
-
-    # 7. Clean up: delete the NotebookLM notebooks this pipeline made (the video is on
-    #    YouTube now). Notebooks you created yourself are never touched.
-    await cleanup_notebooks(state)
+    log.info("Done: %s", job["meta"]["title"])
 
 
 async def cleanup_notebooks(state: dict) -> None:

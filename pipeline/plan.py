@@ -20,7 +20,7 @@ from pathlib import Path
 STATE_FILE = Path("state/current.json")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 NOTEBOOKLM_GAP = dt.timedelta(hours=5)
-MIN_LEAD = dt.timedelta(hours=1)  # a slot must be at least this far away when uploading
+MIN_LEAD = dt.timedelta(minutes=30)  # a slot must be at least this far away when uploading
 
 
 def now() -> dt.datetime:

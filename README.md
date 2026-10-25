@@ -12,13 +12,15 @@ per 5 hours) and **schedules** it into the next free slot - 1 video one day (18:
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
-   audio normalised, intro + ending clips, optional music. Thumbnail = sharpest frame of the opening title screen
+   GetYr_ENT text in the corner, audio normalised, intro + ending clips (assets/), optional music.
+   Thumbnail = sharpest frame of the opening title screen
 6. **Upload** – YouTube Data API, scheduled to go public at its slot
 7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
    the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
    Videos on your YouTube channel are never deleted.
 
 If a run stops halfway (video still generating, upload error), the next run continues from there.
+A video that fails 3 more times is dropped and a new one is made; a video is never uploaded twice.
 
 ## GitHub secrets (Settings → Secrets and variables → Actions → Secrets)
 

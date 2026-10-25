@@ -65,7 +65,10 @@ Return JSON: {{"title": "...", "cover_text": "...", "description": "...",
         "This video was made with the help of AI tools (script and visuals).",
         hashtags,
     ] if part)[:4900]
-    meta["title"] = meta.get("title", script["title"]).strip().strip('"')[:100]
+    # YouTube rejects titles/descriptions containing < or >.
+    meta["description"] = meta["description"].replace("<", "").replace(">", "")
+    meta["title"] = (meta.get("title") or script["title"]).replace("<", "").replace(">", "")
+    meta["title"] = meta["title"].strip().strip('"')[:100]
     meta["cover_text"] = (meta.get("cover_text") or meta["title"]).strip().strip('"').upper()[:60]
     tags, total = [], 0
     for tag in meta.get("tags", []):  # YouTube allows ~500 characters of tags

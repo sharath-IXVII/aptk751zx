@@ -104,7 +104,11 @@ wrongdoing.
 Return JSON: {{"index": <number from the list>, "search_query": "<short search query in English
 describing the trend/story>", "reason": "<one sentence>"}}"""
     choice = llm.chat_json(prompt, SYSTEM, temperature=0.3, max_tokens=800)
-    topic = candidates[int(choice["index"])]
+    try:
+        topic = candidates[int(choice["index"])]
+    except (KeyError, TypeError, ValueError, IndexError):
+        log.warning("Model returned an invalid topic number (%s) - using the top trend", choice)
+        topic = candidates[0]
     log.info("Picked topic: %s [%s] (%s)", topic.name, topic.origin, choice.get("reason", ""))
     return topic, choice.get("search_query") or topic.name
 
