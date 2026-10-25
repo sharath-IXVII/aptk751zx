@@ -112,7 +112,9 @@ async def main(force: bool) -> None:
         editor.save_watermark_check(raw, OUT / "watermark_check.jpg")
         editor.edit_video(raw, final)
     (OUT / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
-    packaging.thumbnail_from_video(final, thumb)
+    # Thumbnail from the NotebookLM title screen, not from our intro clip.
+    body = editor.main_part(final)
+    packaging.thumbnail_from_video(body if body.exists() else final, thumb)
 
     # 6. Upload
     if not os.getenv("YT_REFRESH_TOKEN"):

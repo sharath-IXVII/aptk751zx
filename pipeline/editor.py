@@ -3,7 +3,7 @@
 - Hides the NotebookLM watermark (blur box, position set by WATERMARK_BOX)
 - Normalises loudness for YouTube
 - Optionally mixes in quiet background music (assets/music.mp3)
-- Optionally adds an outro clip (assets/outro.mp4)
+- Optionally adds an intro clip (assets/intro.mp4) and an outro clip (assets/outro.mp4)
 
 WATERMARK_BOX is "x,y,w,h" as fractions of the frame, e.g. "0.84,0.88,0.15,0.10"
 (= bottom-right corner). Check output/watermark_check.jpg after a run to see the box.
@@ -133,25 +133,42 @@ def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
     cmd = ["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", graph, "-map", "[v]"]
     if audio:
         cmd += ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
-    main = dst.with_name(dst.stem + "_main.mp4") if (ASSETS / "outro.mp4").exists() else dst
+    intro, outro = ASSETS / "intro.mp4", ASSETS / "outro.mp4"
+    clips = [c for c in (intro, outro) if c.exists()]
+    main = main_part(dst) if clips else dst
     cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-movflags", "+faststart",
             str(main)]
     _run(cmd)
 
     if main != dst:
-        _append_outro(main, ASSETS / "outro.mp4", dst, info)
+        parts = ([intro] if intro.exists() else []) + [main] + ([outro] if outro.exists() else [])
+        _join(parts, dst, info)
     log.info("Edited video saved to %s", dst)
     return dst
 
 
-def _append_outro(main: Path, outro: Path, dst: Path, info: dict) -> None:
-    """Concatenate an outro clip, scaling it to the main video's size."""
+def main_part(dst: Path) -> Path:
+    """The edited video without intro/outro (kept for the thumbnail)."""
+    return dst.with_name(dst.stem + "_main.mp4")
+
+
+def _join(parts: list[Path], dst: Path, info: dict) -> None:
+    """Join intro + main + outro, scaling every clip to the main video's size and 30 fps.
+    Clips without sound get silence so the audio stays in sync."""
     w, h = info["width"], info["height"]
-    graph = (f"[1:v]scale={w}:{h}:force_original_aspect_ratio=decrease,"
-             f"pad={w}:{h}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,format=yuv420p[ov];"
-             f"[0:v]fps=30,setsar=1[mv];[1:a]aresample=48000[oa];"
-             f"[mv][0:a][ov][oa]concat=n=2:v=1:a=1[v][a]")
-    _run(["ffmpeg", "-y", "-v", "error", "-i", str(main), "-i", str(outro),
-          "-filter_complex", graph, "-map", "[v]", "-map", "[a]",
-          "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-movflags", "+faststart", str(dst)])
-    log.info("Added outro")
+    inputs, graph, chain = [], [], ""
+    for i, part in enumerate(parts):
+        inputs += ["-i", str(part)]
+        graph.append(f"[{i}:v]scale={w}:{h}:force_original_aspect_ratio=decrease,"
+                     f"pad={w}:{h}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,format=yuv420p[v{i}]")
+        part_info = video_info(part)
+        if part_info["has_audio"]:
+            graph.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo[a{i}]")
+        else:
+            graph.append(f"anullsrc=r=48000:cl=stereo,atrim=0:{part_info['duration']}[a{i}]")
+        chain += f"[v{i}][a{i}]"
+    graph.append(f"{chain}concat=n={len(parts)}:v=1:a=1[v][a]")
+    _run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(graph),
+          "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+          "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(dst)])
+    log.info("Added %s", " + ".join(p.stem for p in parts))

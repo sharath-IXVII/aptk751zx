@@ -10,7 +10,7 @@ Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per 
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
-   audio normalised, optional music/outro. Thumbnail = sharpest frame of the opening title screen
+   audio normalised, intro + ending clips, optional music. Thumbnail = sharpest frame of the opening title screen
 6. **Upload** – YouTube Data API (private by default)
 7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
    the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
@@ -47,7 +47,8 @@ If the website step fails, the blur is used: check `watermark_check.jpg` in the 
 - `assets/logo.png` – your channel logo, shown in the bottom-right corner of every video
   (transparent PNG works best; used instead of `CHANNEL_NAME`)
 - `assets/music.mp3` – quiet background music (use royalty-free music only)
-- `assets/outro.mp4` – clip added at the end (e.g. "Subscribe")
+- `assets/intro.mp4` – branding intro added at the start
+- `assets/outro.mp4` – ending added at the end ("Thank you for watching" / Subscribe)
 
 ## NotebookLM login (one time, on your PC)
 
