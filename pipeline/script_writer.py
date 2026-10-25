@@ -19,7 +19,10 @@ BLOCKED_WORDS = [
     "suicide", "rape", "assault", "shooting", "terror", "vaccine", "cancer", "cure",
     "child", "minor", "porn", "nude", "betting", "casino",
     "affair", "divorce", "rumour", "rumours", "rumor", "rumors", "dating", "breakup",
-    "cheating", "scandal", "leaked", "arrested",
+    "cheating", "scandal", "leaked", "arrested", "arrest", "attack", "cyberattack", "hack",
+    "hacked", "scam", "fraud", "war", "strike", "crash", "accident", "flood", "earthquake",
+    "fire", "injured", "injury", "lawsuit", "sued", "protest", "controversy", "layoffs",
+    "fight", "ban", "banned", "police", "court", "jail", "hospital",
 ]
 
 SYSTEM = (
@@ -60,15 +63,18 @@ def pick_topic(topics: list[Topic]) -> tuple[Topic, str]:
 Topics we already made videos about (do NOT repeat these or close variants):
 {json.dumps(used, ensure_ascii=False)}
 
-Choose ONE topic for today's explainer video. Prefer:
-- big real-world stories people want explained (tech, cyberattacks, science, business,
-  space, sports moments, viral events, movies/entertainment news)
-- topics interesting to BOTH Indian and US viewers
-- topics with enough factual news coverage to explain properly
-Avoid: elections/politics campaigns, deaths/tragedies/crime victims, medical claims,
-anything involving children, gambling, adult content, plain music video titles, and
-celebrity personal-life gossip (affairs, divorces, dating, rumours, feuds) - only
-verifiable public news, not claims about someone's private life.
+Choose ONE topic for today's explainer video. The channel ONLY covers POSITIVE,
+uplifting stories. Good examples:
+- new technology, inventions, product launches, AI breakthroughs
+- science discoveries, space missions, nature and wildlife wonders
+- sports wins, records and achievements
+- movie/series trailers and releases, festivals, culture, travel
+- business success stories, startups, people achieving something great
+Also prefer topics interesting to BOTH Indian and US viewers, with enough news coverage.
+NEVER pick anything negative: crime, attacks, cyberattacks, hacks, scams, war, conflict,
+disasters, accidents, deaths, illness, lawsuits, arrests, protests, controversies,
+politics/elections, layoffs, market crashes, gossip, rumours, affairs, divorces, or
+anything involving children. If a topic is mixed, skip it.
 
 Return JSON: {{"index": <number from the list>, "search_query": "<short Google News query in English>",
 "reason": "<one sentence>"}}"""
@@ -109,7 +115,7 @@ Requirements:
   how it works / background, what happens next, a short memorable ending
 - Simple English that Indian and American viewers both understand
 - Completely original wording - do not copy sentences from the material
-- Neutral and factual; say "reportedly" for unconfirmed claims
+- Positive, inspiring and factual tone; say "reportedly" for unconfirmed claims
 
 Return JSON: {{"title": "<working title>", "script": "<the full narration>"}}"""
     result = llm.chat_json(prompt, SYSTEM, temperature=0.7, max_tokens=4000)
