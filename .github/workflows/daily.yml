@@ -1,14 +1,14 @@
 name: Daily video
 
 on:
-  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time); run.py makes at most one video
-  # per day. To stop it, put a # in front of the next two lines.
+  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time); each run makes and uploads one
+  # video (set the VIDEOS_PER_DAY variable to limit it). To stop, put a # in front of the next two lines.
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       force:
-        description: "Make another video even if today's is already uploaded"
+        description: "Make a video even if the VIDEOS_PER_DAY limit is reached"
         type: boolean
         default: false
 
@@ -25,16 +25,18 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
-      # Quick check first, so runs after today's upload finish in seconds (saves Actions minutes).
-      - name: Already uploaded today?
+      # Quick check first: if the last NotebookLM video started less than 5 hours ago and
+      # nothing is waiting to be finished, stop in seconds (NotebookLM allows 1 video per 5 h).
+      - name: Anything to do?
         id: check
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import datetime as dt, json, pathlib
           f = pathlib.Path("state/current.json")
           state = json.loads(f.read_text()) if f.exists() else {}
-          today = dt.datetime.now(dt.timezone(dt.timedelta(hours=5, minutes=30))).date().isoformat()
-          print("skip=" + ("true" if state.get("uploaded_date") == today else "false"))
+          last = state.get("notebooklm_started_at")
+          recent = last and dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(last) < dt.timedelta(hours=5)
+          print("skip=" + ("true" if recent and not state.get("job") else "false"))
           PY
           cat "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v5
@@ -62,6 +64,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
           YT_PUBLISH_TIME: ${{ vars.YT_PUBLISH_TIME }}
+          VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
           YT_CATEGORY: ${{ vars.YT_CATEGORY }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}

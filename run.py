@@ -1,9 +1,10 @@
-"""Full daily pipeline: trending topic -> script -> NotebookLM video -> edit -> thumbnail ->
-YouTube upload. Safe to run every few hours: it makes at most one video per day (India time),
-waits 5 hours between NotebookLM videos, and resumes a video that is still being generated.
+"""Full pipeline: trending topic -> script -> NotebookLM video -> edit -> thumbnail ->
+YouTube upload. Runs every 6 hours: each run makes one video (NotebookLM needs 5 hours between
+videos) and resumes a video that is still being generated. VIDEOS_PER_DAY limits the number of
+uploads per India day (default 0 = no limit).
 
 Run:  python run.py            (normal scheduled run)
-      python run.py --force    (ignore the once-per-day rule; 5-hour rule still applies)
+      python run.py --force    (ignore VIDEOS_PER_DAY; the 5-hour rule still applies)
 """
 
 import asyncio
@@ -49,8 +50,10 @@ async def main(force: bool) -> None:
     state = load_state()
     today = now().date().isoformat()
 
-    if state.get("uploaded_date") == today and not force:
-        log.info("Today's video is already uploaded - nothing to do")
+    limit = int(os.getenv("VIDEOS_PER_DAY") or 0)
+    done_today = state.get("uploads", {}).get(today, 0)
+    if limit and done_today >= limit and not force:
+        log.info("Already uploaded %d video(s) today (limit %d) - nothing to do", done_today, limit)
         return
 
     job = state.get("job")
@@ -128,6 +131,7 @@ async def main(force: bool) -> None:
                   "youtube_id": video_id})
     state.pop("job", None)
     state["uploaded_date"] = today
+    state["uploads"] = {today: state.get("uploads", {}).get(today, 0) + 1}
     save_state(state)
     log.info("Done: %s", meta["title"])
 

@@ -1,6 +1,7 @@
 # YouTube Automation
 
-Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per day** (India time):
+Every 6 hours GitHub Actions runs `run.py`, which makes and uploads **one video per run**
+(up to 4 a day; NotebookLM allows one video per 5 hours):
 
 1. **Topic** – trending YouTube videos (India + US) first, any genre (memes, stickman
    animations, gaming, music, trailers...); Google Trends news (positive only) as backup.
@@ -11,8 +12,7 @@ Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per 
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
    audio normalised, intro + ending clips, optional music. Thumbnail = sharpest frame of the opening title screen
-6. **Upload** – YouTube Data API, public: scheduled for 18:00 India time (published at once if
-   that time has passed)
+6. **Upload** – YouTube Data API, public as soon as it is uploaded
 7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
    the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
    Videos on your YouTube channel are never deleted.
@@ -35,7 +35,8 @@ If a run stops halfway (video still generating, upload error), the next run cont
 | Variable | Default | What |
 |---|---|---|
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
-| `YT_PUBLISH_TIME` | `18:00` | time (India) a public video goes live; later in the day = right away |
+| `YT_PUBLISH_TIME` | – | optional: schedule public videos for this time (India), e.g. `18:00` |
+| `VIDEOS_PER_DAY` | `0` | max uploads per India day (0 = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |

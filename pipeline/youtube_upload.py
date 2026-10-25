@@ -3,9 +3,9 @@
 Needs three GitHub secrets, created once with tools/get_youtube_token.py:
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
 Privacy comes from YT_PRIVACY (private / unlisted / public, default private).
-With public, the video is uploaded as private and scheduled to go public at YT_PUBLISH_TIME
-(India time, default 18:00 - Indian evening prime time, US morning). If that time has
-already passed today, it goes public straight away.
+Public videos go live as soon as they are uploaded. Optionally set YT_PUBLISH_TIME (India
+time, e.g. 18:00) to upload as private and schedule them for that time instead; if that time
+has already passed today, the video goes public straight away.
 """
 
 import datetime as dt
@@ -41,9 +41,12 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
 
 def publish_time(now: dt.datetime | None = None) -> dt.datetime | None:
-    """Today's publish slot (India time), or None if it is less than 15 minutes away/past."""
+    """Today's publish slot (India time), or None (publish now) if no YT_PUBLISH_TIME is set or
+    it is less than 15 minutes away/past."""
+    if not os.getenv("YT_PUBLISH_TIME"):
+        return None
     now = now or dt.datetime.now(IST)
-    hour, minute = (int(v) for v in (os.getenv("YT_PUBLISH_TIME") or "18:00").split(":"))
+    hour, minute = (int(v) for v in os.environ["YT_PUBLISH_TIME"].split(":"))
     slot = now.astimezone(IST).replace(hour=hour, minute=minute, second=0, microsecond=0)
     return slot if slot - now > dt.timedelta(minutes=15) else None
 
