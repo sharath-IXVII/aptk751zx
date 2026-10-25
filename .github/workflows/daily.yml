@@ -1,9 +1,10 @@
 name: Daily video
 
 on:
-  # Automatic schedule is OFF until testing is done. To turn it on, remove the # below:
-  # schedule:
-  #   - cron: "17 */6 * * *"   # every 6 hours; run.py makes at most one video per day
+  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time); run.py makes at most one video
+  # per day. To stop it, put a # in front of the next two lines.
+  schedule:
+    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -42,7 +43,8 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-          YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
+          YT_PUBLISH_TIME: ${{ vars.YT_PUBLISH_TIME }}
           YT_CATEGORY: ${{ vars.YT_CATEGORY }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}

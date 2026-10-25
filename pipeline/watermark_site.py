@@ -34,6 +34,8 @@ def _choose_full_fps(page, visible: str, notes: list[str]) -> None:
     notes.append(f"mode options: {labels}")
     for attempt in range(2):
         smooth = [b for b in labels if SMOOTH.search(b) and not re.search(r"15\s?fps", b, re.I)]
+        # Best first: "Quality Priority (Original FPS, Slow)", then e.g. "Balanced (30FPS)".
+        smooth.sort(key=lambda b: 0 if re.search(r"original|quality", b, re.I) else 1)
         if smooth:
             page.get_by_text(smooth[0], exact=True).first.click()
             notes.append(f"chose mode '{smooth[0]}'")

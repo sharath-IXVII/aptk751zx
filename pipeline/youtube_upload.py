@@ -3,8 +3,12 @@
 Needs three GitHub secrets, created once with tools/get_youtube_token.py:
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
 Privacy comes from YT_PRIVACY (private / unlisted / public, default private).
+With public, the video is uploaded as private and scheduled to go public at YT_PUBLISH_TIME
+(India time, default 18:00 - Indian evening prime time, US morning). If that time has
+already passed today, it goes public straight away.
 """
 
+import datetime as dt
 import logging
 import os
 import time
@@ -33,10 +37,22 @@ def _client():
     return build("youtube", "v3", credentials=creds, cache_discovery=False)
 
 
+IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+
+
+def publish_time(now: dt.datetime | None = None) -> dt.datetime | None:
+    """Today's publish slot (India time), or None if it is less than 15 minutes away/past."""
+    now = now or dt.datetime.now(IST)
+    hour, minute = (int(v) for v in (os.getenv("YT_PUBLISH_TIME") or "18:00").split(":"))
+    slot = now.astimezone(IST).replace(hour=hour, minute=minute, second=0, microsecond=0)
+    return slot if slot - now > dt.timedelta(minutes=15) else None
+
+
 def upload(video: Path, thumbnail: Path | None, meta: dict) -> str:
     """Upload and return the YouTube video id."""
     youtube = _client()
     privacy = os.getenv("YT_PRIVACY") or "private"
+    publish_at = publish_time() if privacy == "public" else None
     body = {
         "snippet": {
             "title": meta["title"],
@@ -47,7 +63,10 @@ def upload(video: Path, thumbnail: Path | None, meta: dict) -> str:
             "defaultAudioLanguage": "en",
         },
         "status": {
-            "privacyStatus": privacy,
+            # Scheduled videos must be uploaded as private; YouTube makes them public at publishAt.
+            "privacyStatus": "private" if publish_at else privacy,
+            **({"publishAt": publish_at.astimezone(dt.timezone.utc)
+                .strftime("%Y-%m-%dT%H:%M:%SZ")} if publish_at else {}),
             "selfDeclaredMadeForKids": False,
             "containsSyntheticMedia": True,  # YouTube's AI-content disclosure
         },
@@ -70,7 +89,8 @@ def upload(video: Path, thumbnail: Path | None, meta: dict) -> str:
                 continue
             raise
     video_id = response["id"]
-    log.info("Uploaded: https://youtu.be/%s (%s)", video_id, privacy)
+    when = f"scheduled to go public at {publish_at:%Y-%m-%d %H:%M} IST" if publish_at else privacy
+    log.info("Uploaded: https://youtu.be/%s (%s)", video_id, when)
 
     if thumbnail and thumbnail.exists():
         try:

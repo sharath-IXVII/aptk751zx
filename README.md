@@ -11,7 +11,8 @@ Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per 
    title screen; 5-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
    audio normalised, intro + ending clips, optional music. Thumbnail = sharpest frame of the opening title screen
-6. **Upload** – YouTube Data API (private by default)
+6. **Upload** – YouTube Data API, public: scheduled for 18:00 India time (published at once if
+   that time has passed)
 7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
    the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
    Videos on your YouTube channel are never deleted.
@@ -33,7 +34,8 @@ If a run stops halfway (video still generating, upload error), the next run cont
 
 | Variable | Default | What |
 |---|---|---|
-| `YT_PRIVACY` | `private` | `private`, `unlisted` or `public` |
+| `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
+| `YT_PUBLISH_TIME` | `18:00` | time (India) a public video goes live; later in the day = right away |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |
