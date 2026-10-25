@@ -118,7 +118,8 @@ Requirements:
 - Positive, inspiring and factual tone; say "reportedly" for unconfirmed claims
 
 Return JSON: {{"title": "<working title>", "script": "<the full narration>"}}"""
-    result = llm.chat_json(prompt, SYSTEM, temperature=0.7, max_tokens=4000)
+    result = llm.chat_json(prompt, SYSTEM, temperature=0.7, max_tokens=4000,
+                           prefer=llm.WRITER_MODEL)
     words = len(result.get("script", "").split())
     # Smaller models often write short scripts - ask them to expand it.
     for _ in range(2):
@@ -136,7 +137,8 @@ CURRENT SCRIPT:
 {result.get("script", "")}
 
 Return JSON: {{"title": "<working title>", "script": "<the full longer narration>"}}""",
-                               SYSTEM, temperature=0.7, max_tokens=4000)
+                               SYSTEM, temperature=0.7, max_tokens=4000,
+                               prefer=llm.WRITER_MODEL)
         if len(longer.get("script", "").split()) > words:
             result, words = longer, len(longer["script"].split())
     if words < 250:

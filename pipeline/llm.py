@@ -25,6 +25,9 @@ PREFERRED_MODELS = [
     "meta/llama-3.1-70b-instruct",
 ]
 
+# Better writer for the long script; picking topics uses the fast default list.
+WRITER_MODEL = os.environ.get("NVIDIA_WRITER_MODEL", "meta/llama-3.3-70b-instruct")
+
 # Give up on a model if it sends nothing for this long, or takes longer than this in total.
 SILENCE_TIMEOUT = 90
 TOTAL_TIMEOUT = 600
@@ -83,10 +86,18 @@ def _stream_reply(model: str, payload: dict) -> tuple[str, str]:
     return "".join(content), "".join(reasoning)
 
 
-def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 4000) -> str:
-    """Send one chat request. Falls back to the next model on errors."""
+def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 4000,
+         prefer: str | None = None) -> str:
+    """Send one chat request. Falls back to the next model on errors.
+
+    prefer: try this model first (falls back to the normal list if it fails).
+    """
     global _chosen_model
-    models = [_chosen_model] if _chosen_model else _candidate_models()
+    if prefer:
+        default = [_chosen_model] if _chosen_model else _candidate_models()
+        models = [prefer] + [m for m in default if m != prefer]
+    else:
+        models = [_chosen_model] if _chosen_model else _candidate_models()
 
     messages = ([{"role": "system", "content": system}] if system else []) + [
         {"role": "user", "content": prompt}
@@ -126,14 +137,15 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
             if not text and "{" in reasoning:
                 text = reasoning  # answer ended up in the reasoning
             if text:
-                if _chosen_model != model:
-                    log.info("Using NVIDIA model: %s", model)
-                _chosen_model = model
+                log.info("Using NVIDIA model: %s", model)
+                if model != prefer:
+                    _chosen_model = model
                 return text
             last_error = f"{model}: empty reply"
             log.warning(last_error)
             break
-        _chosen_model = None
+        if model == _chosen_model:
+            _chosen_model = None
     raise RuntimeError(f"All NVIDIA models failed. Last error: {last_error}")
 
 
