@@ -15,6 +15,7 @@ log = logging.getLogger(__name__)
 URL = "https://notebooklmremover.com/en"
 FILE_INPUT = "#video-remover-file-input"
 TIMEOUT = 25 * 60  # the site takes 5-10 minutes; allow extra on slower machines
+STUCK_AFTER = 8 * 60  # stop if the page shows no change at all for this long
 
 
 def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Path:
@@ -27,8 +28,10 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Pat
         page = ctx.new_page()
         page.goto(URL, wait_until="networkidle", timeout=90_000)
 
-        downloads = []
+        downloads, console = [], []
         page.on("download", lambda d: downloads.append(d))  # catches automatic downloads too
+        page.on("console", lambda m: console.append(f"{m.type}: {m.text[:300]}"))
+        page.on("pageerror", lambda e: console.append(f"pageerror: {str(e)[:300]}"))
         visible = """() => [...document.querySelectorAll('button, a, [role=button]')]
             .filter(e => e.offsetParent !== null)
             .map(e => (e.innerText || e.getAttribute('aria-label') || '').trim())
@@ -41,12 +44,15 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Pat
 
         notes = []
         start, last_pct, shot, clicked = time.time(), None, 0, set()
+        last_change, last_seen = time.time(), None
 
         def snapshot(name: str) -> None:
             if shots_dir:
                 shots_dir.mkdir(parents=True, exist_ok=True)
                 page.screenshot(path=str(shots_dir / name), full_page=True)
                 (shots_dir / "log.txt").write_text("\n".join(notes))
+                (shots_dir / "console.txt").write_text("\n".join(console[-300:]))
+                (shots_dir / "page_text.txt").write_text(page.inner_text("body"))
 
         try:
             while time.time() - start < TIMEOUT:
@@ -78,6 +84,13 @@ def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> Pat
                 if re.search(r"\b(error|failed|not supported|unsupported|invalid)\b", body, re.I) \
                         and not downloads:
                     notes.append(f"t={int(time.time() - start)}s page mentions an error")
+
+                # Give up early if nothing on the page changes for STUCK_AFTER seconds.
+                seen = (tuple(new_buttons), tuple(pcts[-3:]))
+                if seen != last_seen:
+                    last_seen, last_change = seen, time.time()
+                elif time.time() - last_change > STUCK_AFTER:
+                    raise TimeoutError(f"No progress on the page for {STUCK_AFTER // 60} minutes")
 
                 if (time.time() - start) // 60 >= shot:  # one screenshot a minute
                     notes.append(f"t={int(time.time() - start)}s new buttons={new_buttons[:15]}")
