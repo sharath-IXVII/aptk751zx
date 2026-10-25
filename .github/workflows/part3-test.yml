@@ -33,6 +33,12 @@ jobs:
               -t 40 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest /tmp/input.mp4
           fi
       - run: python part3_test.py /tmp/input.mp4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part3-output
+          path: output/
+          if-no-files-found: ignore
       - name: Save site screenshots to the part3-debug branch
         if: always()
         run: |
@@ -47,9 +53,3 @@ jobs:
           git add -A
           git commit -m "Part 3 debug screenshots" || true
           git push -f origin part3-debug
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: part3-output
-          path: output/
-          if-no-files-found: ignore
