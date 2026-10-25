@@ -98,8 +98,12 @@ async def main(force: bool) -> None:
             raise
 
     # 4. Edit, 5. title/description/thumbnail
-    editor.save_watermark_check(raw, OUT / "watermark_check.jpg")
-    editor.edit_video(raw, final)
+    clean = OUT / "video_clean.mp4"
+    if editor.remove_watermark(raw, clean, OUT / "site_screens"):
+        editor.edit_video(clean, final, blur_watermark=False)
+    else:
+        editor.save_watermark_check(raw, OUT / "watermark_check.jpg")
+        editor.edit_video(raw, final)
     meta = packaging.make_metadata(script)
     (OUT / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
     packaging.make_thumbnail(meta, final, thumb)

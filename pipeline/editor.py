@@ -56,15 +56,31 @@ def save_watermark_check(video: Path, out_jpg: Path) -> None:
           "-frames:v", "1", "-vf", f"drawbox=x={x}:y={y}:w={w}:h={h}:color=red:t=4", str(out_jpg)])
 
 
-def edit_video(src: Path, dst: Path) -> Path:
-    info = video_info(src)
-    x, y, w, h = watermark_box(info["width"], info["height"])
-    log.info("Hiding watermark box x=%d y=%d w=%d h=%d", x, y, w, h)
+def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> bool:
+    """Try notebooklmremover.com. Returns True if it worked (dst written)."""
+    if os.getenv("WATERMARK_SITE", "on") == "off":
+        return False
+    try:
+        from pipeline.watermark_site import remove_watermark as site_remove
+        site_remove(src, dst, shots_dir)
+        video_info(dst)  # make sure the download is a real video
+        return True
+    except Exception as exc:
+        log.warning("Watermark website failed (%s) - using the blur method instead", exc)
+        return False
 
+
+def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
+    info = video_info(src)
     inputs = ["-i", str(src)]
-    # Blur the watermark area heavily (looks natural on moving footage).
-    vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},boxblur=20:3[blur];"
-          f"[base][blur]overlay={x}:{y},format=yuv420p[v]")
+    if blur_watermark:
+        x, y, w, h = watermark_box(info["width"], info["height"])
+        log.info("Hiding watermark box x=%d y=%d w=%d h=%d", x, y, w, h)
+        # Blur the watermark area heavily (looks natural on moving footage).
+        vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},boxblur=20:3[blur];"
+              f"[base][blur]overlay={x}:{y},format=yuv420p[v]")
+    else:
+        vf = "[0:v]format=yuv420p[v]"
 
     music = ASSETS / "music.mp3"
     if not info["has_audio"]:
