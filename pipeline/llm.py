@@ -15,8 +15,8 @@ BASE_URL = "https://integrate.api.nvidia.com/v1"
 # Tried in order; models your key lists come first, the rest are tried after.
 # Set NVIDIA_MODEL in env to force a specific model.
 PREFERRED_MODELS = [
-    "deepseek-ai/deepseek-v4.1-flash",
     "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "deepseek-ai/deepseek-v4.1-flash",
     "deepseek-ai/deepseek-v3.2",
     "deepseek-ai/deepseek-v3.1",
     "qwen/qwen3-235b-a22b",
