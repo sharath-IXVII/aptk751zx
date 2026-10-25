@@ -47,9 +47,12 @@ def load_history() -> list[dict]:
 
 
 def save_history(entry: dict) -> None:
-    history = load_history() + [entry]
+    # Keep 30 days only: enough to avoid repeating topics, and YouTube's API policies don't
+    # allow keeping YouTube API data (e.g. trending video titles) for longer.
+    cutoff = (dt.date.today() - dt.timedelta(days=30)).isoformat()
+    history = [h for h in load_history() if h.get("date", "") >= cutoff] + [entry]
     HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
-    HISTORY_FILE.write_text(json.dumps(history[-200:], indent=2, ensure_ascii=False), encoding="utf-8")
+    HISTORY_FILE.write_text(json.dumps(history, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def _is_safe(name: str, words: list[str] = BLOCKED_WORDS) -> bool:
