@@ -1,0 +1,27 @@
+name: Part 1 - NotebookLM test
+
+on:
+  workflow_dispatch:   # run manually from the Actions tab
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r requirements.txt
+      - name: Generate test video
+        env:
+          NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
+          VIDEO_LANGUAGE: en
+        run: python part1_test.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part1-video
+          path: output/
+          if-no-files-found: ignore
