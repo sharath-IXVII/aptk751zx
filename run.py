@@ -87,6 +87,8 @@ async def main(force: bool) -> None:
                                          os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
                                          cover_text=meta["cover_text"]))
             state["notebooklm_started_at"] = now().isoformat()
+            # Remember every notebook we create so it can be deleted after the upload.
+            state.setdefault("notebooks_to_delete", []).append(job["notebook_id"])
             save_state(state)
 
         # 3. Wait for it and download
@@ -126,6 +128,33 @@ async def main(force: bool) -> None:
     state["uploaded_date"] = today
     save_state(state)
     log.info("Done: %s", meta["title"])
+
+    # 7. Clean up: delete the NotebookLM notebooks this pipeline made (the video is on
+    #    YouTube now). Notebooks you created yourself are never touched.
+    await cleanup_notebooks(state)
+
+
+async def cleanup_notebooks(state: dict) -> None:
+    from notebooklm import NotebookLMClient
+
+    ids = state.get("notebooks_to_delete", [])
+    if not ids:
+        return
+    left = []
+    try:
+        async with NotebookLMClient.from_storage(allow_headless=True) as client:
+            for nb_id in ids:
+                try:
+                    await client.notebooks.delete(nb_id)
+                    log.info("Deleted old NotebookLM notebook %s", nb_id)
+                except Exception as exc:
+                    log.warning("Could not delete notebook %s: %s", nb_id, exc)
+                    left.append(nb_id)
+    except Exception as exc:
+        log.warning("NotebookLM cleanup skipped: %s", exc)
+        left = ids
+    state["notebooks_to_delete"] = left[-20:]  # retried next time
+    save_state(state)
 
 
 if __name__ == "__main__":

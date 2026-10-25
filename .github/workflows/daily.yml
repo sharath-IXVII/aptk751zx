@@ -61,4 +61,4 @@ jobs:
           name: video-output
           path: output/
           if-no-files-found: ignore
-          retention-days: 7
+          retention-days: 3       # run files are deleted automatically after 3 days

@@ -12,6 +12,9 @@ Every 6 hours GitHub Actions runs `run.py`, which makes **at most one video per 
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
    audio normalised, optional music/outro. Thumbnail = sharpest frame of the opening title screen
 6. **Upload** – YouTube Data API (private by default)
+7. **Clean up** – the NotebookLM notebooks the pipeline made are deleted after the upload, and
+   the run files (videos in the Actions artifacts) are deleted automatically after 3 days.
+   Videos on your YouTube channel are never deleted.
 
 If a run stops halfway (video still generating, upload error), the next run continues from there.
 
