@@ -41,7 +41,7 @@ A video that fails 3 more times is dropped and a new one is made; a video is nev
 |---|---|---|
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
 | `YT_PUBLISH_TIMES` | `12:00,18:00` | slot times (India); 1-video days use the last one |
-| `BUFFER_DAYS` | `7` | how many days ahead to fill with scheduled videos |
+| `BUFFER_DAYS` | `60` | how many days ahead to fill with scheduled videos |
 | `VIDEOS_PER_DAY` | `2` | videos published per day (or a repeating pattern like `1,2`; `0` = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
