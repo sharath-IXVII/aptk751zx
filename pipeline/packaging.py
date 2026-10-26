@@ -1,4 +1,4 @@
-"""Part 4: YouTube title, description and tags (from the trend research), and the thumbnail.
+"""Part 4: YouTube title, description and tags, and the thumbnail.
 
 The thumbnail is NOT generated separately: NotebookLM is asked to open the video with a
 clean title screen, and that opening frame is saved as the thumbnail.
@@ -22,7 +22,16 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and the title-screen text, based on the research."""
     research = script.get("research", {})
     headlines = "\n".join(f"- {h}" for h in research.get("headlines", [])[:12])
-    meta = llm.chat_json(f"""You are a YouTube SEO expert for a channel that posts explainer videos
+    if script.get("series"):
+        from pipeline import series
+        meta = series.make_metadata(script)
+    else:
+        meta = trend_metadata(script, research, headlines)
+    return finish_metadata(meta, script)
+
+
+def trend_metadata(script: dict, research: dict, headlines: str) -> dict:
+    return llm.chat_json(f"""You are a YouTube SEO expert for a channel that posts explainer videos
 about what is trending on YouTube for viewers in India and the US.
 
 RESEARCH
@@ -55,6 +64,8 @@ Return JSON: {{"title": "...", "cover_text": "...", "description": "...",
 "hashtags": ["#..."], "tags": ["..."]}}""", temperature=0.5, max_tokens=2500,
                          prefer=llm.WRITER_MODEL)
 
+
+def finish_metadata(meta: dict, script: dict) -> dict:
     sources = "\n".join(f"- {s.get('source') or 'Source'}: {s['url']}"
                         for s in script.get("sources", [])[:5] if s.get("url"))
     hashtags = " ".join(h if h.startswith("#") else f"#{h}"

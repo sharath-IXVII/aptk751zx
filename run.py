@@ -98,7 +98,8 @@ async def main(force: bool) -> None:
             kinds = ("explainer",) if job.get("retried") else ("cinematic", "explainer")
             job.update(await start_video(client, script["script"], script["title"],
                                          os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
-                                         cover_text=meta["cover_text"]))
+                                         cover_text=meta["cover_text"],
+                                         style=script.get("visual_style", "")))
             state["notebooklm_started_at"] = now().isoformat()
             # Remember every notebook we create so it can be deleted after the upload.
             state.setdefault("notebooks_to_delete", []).append(job["notebook_id"])
@@ -152,6 +153,9 @@ async def main(force: bool) -> None:
 
 
 def finish_job(state: dict, job: dict, video_id: str | None, today: str) -> None:
+    if job["script"].get("word"):
+        from pipeline import series
+        series.mark_used(job["script"]["word"])
     save_history({"date": today, "topic": job["script"]["topic"], "title": job["meta"]["title"],
                   "youtube_id": video_id})
     state.pop("job", None)

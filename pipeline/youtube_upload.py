@@ -52,7 +52,7 @@ def upload(video: Path, thumbnail: Path | None, meta: dict,
             "title": meta["title"],
             "description": meta["description"],
             "tags": meta.get("tags", []),
-            "categoryId": os.getenv("YT_CATEGORY") or "24",  # 24 = Entertainment, 28 = Science & Tech
+            "categoryId": os.getenv("YT_CATEGORY") or "27",  # 27 = Education, 24 = Entertainment
             "defaultLanguage": "en",
             "defaultAudioLanguage": "en",
         },

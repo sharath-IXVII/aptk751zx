@@ -2,12 +2,13 @@
 
 Every 6 hours GitHub Actions runs `run.py`. Each run makes one video (NotebookLM allows one
 per 5 hours) and **schedules** it into the next free slot - 1 video one day (18:00), 2 the next
-(12:00 + 18:00), filled up to 4 days ahead - so the channel keeps posting even if runs fail:
+(12:00 + 18:00), filled up to 7 days ahead - so the channel keeps posting even if runs fail:
 
-1. **Topic** – trending YouTube videos (India + US) first, any genre (memes, stickman
-   animations, gaming, music, trailers...); Google Trends news (positive only) as backup.
-   Hard limits always apply: no adult, hate, violence, politics, gambling or medical claims
-2. **Script** – news facts → original script (NVIDIA Nemotron, other models as fallback) → fact-check
+1. **Episode** – the series "Diya – Words That Shape You": one meaningful word per video
+   (anger, discipline, trust...), never repeated (`pipeline/series.py`, `state/used_words.json`)
+2. **Script** – the word's meaning → a short story about Diya, a little clay oil lamp whose flame
+   shows its feelings → what it does to us → real-life moments → how to handle/build it
+   (NVIDIA Nemotron, other models as fallback). `CONTENT_MODE=trending` switches back to trending topics
 3. **Title & description** – SEO title, description, hashtags and tags from the trend research
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
    title screen; 5-hour gap respected
@@ -39,11 +40,13 @@ A video that fails 3 more times is dropped and a new one is made; a video is nev
 |---|---|---|
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
 | `YT_PUBLISH_TIMES` | `12:00,18:00` | slot times (India); 1-video days use the last one |
-| `BUFFER_DAYS` | `4` | how many days ahead to fill with scheduled videos |
+| `BUFFER_DAYS` | `7` | how many days ahead to fill with scheduled videos |
 | `VIDEOS_PER_DAY` | `1,2` | videos per day, repeating pattern (`1` = one a day, `0` = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
-| `YT_CATEGORY` | `24` | YouTube category id (24 Entertainment, 28 Science & Tech, 25 News) |
+| `YT_CATEGORY` | `27` | YouTube category id (27 Education, 24 Entertainment, 22 People & Blogs) |
+| `SERIES_CHARACTER` | `Diya` | name of the series' character |
+| `CONTENT_MODE` | `series` | `series` or `trending` |
 | `CHANNEL_NAME` | `GetYr_ENT` | text watermark in the bottom-right corner (or add `assets/logo.png`) |
 | `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |
 

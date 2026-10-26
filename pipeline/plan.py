@@ -5,8 +5,8 @@ channel keeps posting even when some runs fail.
   day, 2 the next).
 - YT_PUBLISH_TIMES: India times of the slots (default "12:00,18:00"). A 1-video day uses the
   last time (18:00), a 2-video day the first two (12:00 and 18:00).
-- BUFFER_DAYS: how many days ahead to fill (default 4). Runs stop making videos when every
-  slot up to then is taken, so topics are never published long after they trended.
+- BUFFER_DAYS: how many days ahead to fill (default 7). Runs stop making videos when every
+  slot up to then is taken. Series episodes are evergreen, so a week of buffer is safe.
 
 Standard library only, so the workflow can check it in seconds before installing anything.
 """
@@ -47,7 +47,7 @@ def next_slot(state: dict, at: dt.datetime | None = None) -> dt.datetime | None:
     """The first free publishing slot, or None if the buffer is full."""
     at = at or now()
     used = taken(state)
-    last_day = at.date() + dt.timedelta(days=int(os.getenv("BUFFER_DAYS") or 4))
+    last_day = at.date() + dt.timedelta(days=int(os.getenv("BUFFER_DAYS") or 7))
     day = at.date()
     while day <= last_day:
         for slot in slots_on(day):

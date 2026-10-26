@@ -3,6 +3,7 @@
 import datetime as dt
 import json
 import logging
+import os
 import re
 from pathlib import Path
 
@@ -227,7 +228,11 @@ Return JSON: {{"title": "<title, corrected if needed>", "script": "<corrected sc
 
 
 def create_script() -> dict:
-    """Full Part 2: trending topics (YouTube first) -> pick -> facts -> script."""
+    """Part 2: the next episode of the series (default), or a trending-topic explainer when
+    CONTENT_MODE=trending."""
+    if (os.getenv("CONTENT_MODE") or "series") != "trending":
+        from pipeline import series
+        return series.create_script()
     topic, query = pick_topic(all_trending())
     facts, news = gather_facts(topic, query)
     # Topic names can be vague (e.g. "mlb"); the search query describes the story.
