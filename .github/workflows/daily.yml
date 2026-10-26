@@ -1,11 +1,12 @@
 name: Daily video
 
 on:
-  # Every 6 hours (05:47, 11:47, 17:47, 23:47 India time). Each run makes one video and
-  # schedules it into the next free slot (1 video one day, 2 the next, up to 4 days ahead -
+  # Every 3 hours (GitHub often starts scheduled runs late or skips some; runs with nothing to
+  # do stop in seconds). A new video is started at most every 5 hours (NotebookLM limit) and
+  # scheduled into the next free slot (1 video one day, 2 the next, up to 4 days ahead -
   # see pipeline/plan.py). To stop, put a # in front of the next two lines.
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */3 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -68,7 +69,9 @@ jobs:
           WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}
           THUMBNAIL_AT: ${{ vars.THUMBNAIL_AT }}
           VIDEO_LANGUAGE: en
-        run: python run.py ${{ inputs.force && '--force' || '' }}
+        run: |
+          set -o pipefail
+          python run.py ${{ inputs.force && '--force' || '' }} 2>&1 | tee run.log
       - name: Save state
         if: always() && (steps.check.outputs.skip != 'true' || inputs.force)
         run: |
@@ -80,6 +83,25 @@ jobs:
           # The repo may have changed during the run - rebase and retry.
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i*5)); done
           exit 1
+      # Save this run's log and the watermark-site screenshots to the run-logs branch
+      # (no videos), so problems can be checked without downloading artifacts.
+      - name: Save run log
+        if: always() && (steps.check.outputs.skip != 'true' || inputs.force)
+        run: |
+          mkdir -p /tmp/logs
+          # Hide keys and tokens (error messages can contain request URLs with the API key).
+          sed -E -e 's/((key|token|access_token|refresh_token|client_secret)=)[^&" ]+/\1REDACTED/Ig' \
+            -e 's/AIza[0-9A-Za-z_-]{20,}/REDACTED/g' -e 's/nvapi-[0-9A-Za-z_-]{10,}/REDACTED/g' \
+            -e 's/GOCSPX-[0-9A-Za-z_-]{10,}/REDACTED/g' -e 's#1//0[0-9A-Za-z_-]{20,}#REDACTED#g' \
+            -e 's/ya29\.[0-9A-Za-z._-]{20,}/REDACTED/g' run.log > /tmp/logs/run.log 2>/dev/null || true
+          cp -r output/site_screens /tmp/logs/ 2>/dev/null || true
+          cp output/watermark_check.jpg output/thumbnail.jpg output/metadata.json /tmp/logs/ 2>/dev/null || true
+          ffprobe -v error -show_entries stream=codec_type,width,height,avg_frame_rate -show_entries format=duration \
+            -of compact output/video_raw.mp4 > /tmp/logs/raw_info.txt 2>/dev/null || true
+          cd /tmp/logs && git init -q && git checkout -q -b run-logs
+          git config user.name "yt-bot" && git config user.email "yt-bot@users.noreply.github.com"
+          git add -A && git commit -qm "Run ${{ github.run_id }} log" || exit 0
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" run-logs || true
       - uses: actions/upload-artifact@v4
         if: always() && (steps.check.outputs.skip != 'true' || inputs.force)
         with:
