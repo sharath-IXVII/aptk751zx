@@ -51,7 +51,17 @@ jobs:
       - run: |
           ffprobe -v error -show_entries stream=codec_type,codec_name,width,height,r_frame_rate \
             -show_entries format=duration,size -of compact /tmp/input.mp4 | tee input_info.txt
-          python part3_test.py /tmp/input.mp4
+          python part3_test.py /tmp/input.mp4 2>&1 | tee part3.log
+          # Still frames before/after (full frame + bottom-right corner) to check the logo.
+          mkdir -p frames
+          for f in /tmp/input.mp4 output/video_clean.mp4 output/video_final.mp4; do
+            [ -f "$f" ] || continue
+            n=$(basename "$f" .mp4)
+            for t in 20 90; do
+              ffmpeg -v error -y -ss $t -i "$f" -frames:v 1 "frames/${n}_${t}s.jpg" || true
+              ffmpeg -v error -y -ss $t -i "$f" -frames:v 1 -vf "crop=iw/3:ih/4:iw*2/3:ih*3/4" "frames/${n}_${t}s_corner.jpg" || true
+            done
+          done
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -62,7 +72,8 @@ jobs:
         if: always()
         run: |
           mkdir -p /tmp/dbg && cp -r output/site_screens/. /tmp/dbg/ 2>/dev/null || true
-          cp input_info.txt /tmp/dbg/ 2>/dev/null || true
+          cp input_info.txt part3.log /tmp/dbg/ 2>/dev/null || true
+          cp -r frames /tmp/dbg/ 2>/dev/null || true
           git config user.name "yt-bot"
           git config user.email "yt-bot@users.noreply.github.com"
           git checkout --orphan part3-debug
