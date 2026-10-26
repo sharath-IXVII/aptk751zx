@@ -10,7 +10,7 @@ import subprocess
 from pathlib import Path
 
 from notebooklm import NotebookLMClient
-from notebooklm.types import VideoFormat
+from notebooklm.types import VideoFormat, VideoStyle
 
 log = logging.getLogger(__name__)
 
@@ -39,7 +39,7 @@ def instructions_for(cover_text: str, style: str = "") -> str:
 
 async def start_video(client, script: str, title: str, language: str = "en",
                       kinds: tuple[str, ...] = ("cinematic", "explainer"),
-                      cover_text: str = "", style: str = "") -> dict:
+                      cover_text: str = "", style: str = "", style_prompt: str = "") -> dict:
     """Create a notebook from the script and start video generation.
 
     Returns {"notebook_id", "task_id", "kind"} so a later run can resume/download.
@@ -52,9 +52,16 @@ async def start_video(client, script: str, title: str, language: str = "en",
     starters = {
         "cinematic": lambda: client.artifacts.generate_cinematic_video(
             nb.id, language=language, instructions=instructions_for(cover_text, style)),
+        # Explainer videos accept a custom visual style (e.g. stickman animation).
         "explainer": lambda: client.artifacts.generate_video(
             nb.id, language=language, instructions=instructions_for(cover_text, style),
-            video_format=VideoFormat.EXPLAINER),
+            video_format=VideoFormat.EXPLAINER,
+            **({"video_style": VideoStyle.CUSTOM, "style_prompt": style_prompt}
+               if style_prompt else {})),
+        # Same, with NotebookLM's built-in whiteboard style if the custom style is refused.
+        "whiteboard": lambda: client.artifacts.generate_video(
+            nb.id, language=language, instructions=instructions_for(cover_text, style),
+            video_format=VideoFormat.EXPLAINER, video_style=VideoStyle.WHITEBOARD),
     }
     for kind in kinds:
         try:

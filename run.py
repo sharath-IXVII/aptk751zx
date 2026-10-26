@@ -95,11 +95,15 @@ async def main(force: bool) -> None:
             if last and now() - dt.datetime.fromisoformat(last) < NOTEBOOKLM_GAP:
                 log.info("Less than 5 hours since the last NotebookLM video - try again later")
                 return
-            kinds = ("explainer",) if job.get("retried") else ("cinematic", "explainer")
+            if script.get("style_prompt"):  # series: drawn style needs the explainer format
+                kinds = ("explainer", "whiteboard")
+            else:
+                kinds = ("explainer",) if job.get("retried") else ("cinematic", "explainer")
             job.update(await start_video(client, script["script"], script["title"],
                                          os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
                                          cover_text=meta["cover_text"],
-                                         style=script.get("visual_style", "")))
+                                         style=script.get("visual_style", ""),
+                                         style_prompt=script.get("style_prompt", "")))
             state["notebooklm_started_at"] = now().isoformat()
             # Remember every notebook we create so it can be deleted after the upload.
             state.setdefault("notebooks_to_delete", []).append(job["notebook_id"])

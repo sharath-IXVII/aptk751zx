@@ -1,9 +1,10 @@
 """The channel's series: "<NAME> – Words That Shape You" (NAME from the SERIES_CHARACTER
-variable, default Diya).
+variable, default Kabir).
 
 Every video takes one meaningful word (anger, discipline, trust...) and explains it through a
-short story about Diya, a little clay oil lamp whose flame shows how it feels:
-steady and golden with trust or discipline, roaring red with anger, small and shaky with fear.
+short stick-figure story about Kabir, a stickman boy with an orange scarf. The look is the
+popular stickman-animation style (black lines on white, expressive body language, one accent
+colour per feeling), made with NotebookLM's explainer video and a custom visual style.
 
 Format: the word and its plain meaning -> a short story -> what it does to us (mind, body,
 relationships) -> 3 real-life moments -> how to handle or build it -> a closing line.
@@ -22,19 +23,28 @@ from pipeline import llm
 
 log = logging.getLogger(__name__)
 
-NAME = os.getenv("SERIES_CHARACTER") or "Diya"
+NAME = os.getenv("SERIES_CHARACTER") or "Kabir"
 SERIES = f"{NAME} – Words That Shape You"
 CHARACTER = (
-    f"{NAME}, a small clay oil lamp (a diya) with a simple, friendly face and two tiny clay "
-    f"feet. {NAME}'s flame shows its feelings: a steady, warm golden flame when calm, kind, "
-    "disciplined or trusting; a wild, roaring red flame that cracks the clay when angry; a "
-    "small, shaky flame when afraid or lazy; a pale blue flame when sad or jealous."
+    f"{NAME}, a stick-figure boy: round head, simple dot eyes and expressive eyebrows, thin "
+    f"black stick body, and a small orange scarf (his signature - always visible). {NAME}'s "
+    "feelings show through big, clear body language and one accent colour: red scribbles and "
+    "clenched fists for anger, a blue rain cloud for sadness, shaking knees for fear, a warm "
+    "gold glow for calm, kindness, trust or discipline."
+)
+# NotebookLM explainer video, VideoStyle.CUSTOM (cinematic videos cannot take a style).
+STYLE_PROMPT = (
+    "Minimalist 2D stick-figure animation, like popular stickman life-lesson videos. Clean "
+    "white background, bold black hand-drawn lines, stick figures with round heads and dot "
+    "eyes, very expressive poses and movement. Props and places drawn as simple black line "
+    "art. Only one accent colour per scene to show the feeling (red anger, blue sadness, "
+    f"gold for good feelings). The main character {NAME} is a stick-figure boy with a small "
+    "orange scarf and looks the same in every scene. No photos, no realistic images, no logos."
 )
 VISUAL_STYLE = (
-    "Visual style for the whole video: warm hand-made paper-cut / clay animation look, soft "
-    "lighting, simple backgrounds. The main character in every scene is " + CHARACTER +
-    f" Keep {NAME} looking the same in every scene. Show feelings through the colour and "
-    "size of the flame. No real people's faces, no logos, no text other than the title."
+    f"Tell the story visually with {NAME} as the main character in every scene: " + CHARACTER +
+    " Show each story moment as a clear, simple scene. Use on-screen text only for the title "
+    "and the word's meaning."
 )
 USED_FILE = Path("state/used_words.json")
 
@@ -123,12 +133,13 @@ Structure (spoken narration only, 450-600 words):
    simple everyday words.
 3. {NAME}'s story (about 40% of the script): a short, original story where {NAME} meets
    {word} in daily life (school, work, friends, family, a market, a journey...). Show the
-   feeling through {NAME}'s flame. A clear beginning, a turning point and an ending.
+   feelings through {NAME}'s body language and actions (it will be drawn as a stickman
+   animation, so describe clear, visual moments). A clear beginning, a turning point and an ending.
 4. What {word} really does to us: to our mind, our body/energy and our relationships.
    General, widely accepted ideas only - no statistics, no studies, no medical claims.
 5. Three short real-life moments where viewers meet {word} (relatable for India and the US).
 6. How to handle it (if it is harmful) or how to build it (if it is good): 3 simple steps.
-7. A short, memorable closing line that ties back to {NAME}'s flame.
+7. A short, memorable closing line that ties back to {NAME}'s story.
 
 Rules: simple English, warm and wise tone, mature (for teens and adults, not a kids'
 show), no scene directions, no [brackets], no emojis, no real people or brands.
@@ -167,6 +178,7 @@ def create_script() -> dict:
         "series": SERIES,
         "word": word,
         "visual_style": VISUAL_STYLE,
+        "style_prompt": STYLE_PROMPT,
         "sources": [],
         "research": {},
         "date": dt.date.today().isoformat(),
@@ -178,8 +190,8 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and title-screen text for a series episode."""
     word = script["word"]
     return llm.chat_json(f"""You are a YouTube SEO expert for the series "{SERIES}": each
-episode explains one meaningful word through a short story about {NAME}, a little clay oil
-lamp whose flame shows its feelings. Audience: teens and adults in India and the US.
+episode explains one meaningful word through a short stick-figure story about {NAME}, a
+stickman boy with an orange scarf. Audience: teens and adults in India and the US.
 
 Episode word: {word}
 Script:
