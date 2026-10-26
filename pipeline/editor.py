@@ -58,22 +58,25 @@ def save_watermark_check(video: Path, out_jpg: Path) -> None:
           "-frames:v", "1", "-vf", f"drawbox=x={x}:y={y}:w={w}:h={h}:color=red:t=4", str(out_jpg)])
 
 
-def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None) -> bool:
-    """Try notebooklmremover.com. Returns True if it worked (dst written)."""
+def remove_watermark(src: Path, dst: Path, shots_dir: Path | None = None,
+                     attempts: int = 2) -> bool:
+    """Try notebooklmremover.com (twice if needed). Returns True if it worked (dst written)."""
     if (os.getenv("WATERMARK_SITE") or "on") == "off":
         return False
-    try:
-        from pipeline.watermark_site import remove_watermark as site_remove
-        site_remove(src, dst, shots_dir)
-        before, after = video_info(src), video_info(dst)  # make sure it is a real video
-        log.info("Website result: %s (original %s)", after, before)
-        if after["fps"] and after["fps"] < before["fps"] * 0.8:
-            # Its "speed" mode halves the frame rate - choppy. Blur keeps it smooth.
-            raise RuntimeError(f"website lowered the frame rate to {after['fps']} fps")
-        return True
-    except Exception as exc:
-        log.warning("Watermark website failed (%s) - using the blur method instead", exc)
-        return False
+    from pipeline.watermark_site import remove_watermark as site_remove
+    for attempt in range(1, attempts + 1):
+        try:
+            site_remove(src, dst, shots_dir)
+            before, after = video_info(src), video_info(dst)  # make sure it is a real video
+            log.info("Website result: %s (original %s)", after, before)
+            if after["fps"] and after["fps"] < before["fps"] * 0.8:
+                # Its "speed" mode halves the frame rate - choppy. Blur keeps it smooth.
+                raise RuntimeError(f"website lowered the frame rate to {after['fps']} fps")
+            return True
+        except Exception as exc:
+            log.warning("Watermark website attempt %d/%d failed: %s", attempt, attempts, exc)
+    log.warning("Watermark website failed - using the blur method and cutting the ending instead")
+    return False
 
 
 def _channel_mark(info: dict, inputs: list[str]) -> str:
@@ -104,8 +107,15 @@ def _channel_mark(info: dict, inputs: list[str]) -> str:
 
 
 def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
+    """blur_watermark=True is the fallback when the website failed: it also cuts off
+    NotebookLM's logo screen at the end (END_TRIM seconds, default 3.1)."""
     info = video_info(src)
     inputs = ["-i", str(src)]
+    if blur_watermark:
+        trim = float(os.getenv("END_TRIM") or 3.1)
+        if info["duration"] > trim + 10:
+            inputs = ["-t", f"{info['duration'] - trim:.3f}", "-i", str(src)]
+            log.info("Cutting NotebookLM's ending (last %.1fs)", trim)
     if blur_watermark:
         x, y, w, h = watermark_box(info["width"], info["height"])
         log.info("Hiding watermark box x=%d y=%d w=%d h=%d", x, y, w, h)
