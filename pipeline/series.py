@@ -49,6 +49,16 @@ VISUAL_STYLE = (
     "moment as a clear, moving animated scene. Use on-screen text only for the title and the "
     "word's meaning."
 )
+# Appended to the instructions so scenes move instead of looking like still pictures.
+MOTION = (
+    f"IMPORTANT - full motion animation, never a slideshow of still images: in every scene "
+    f"{NAME} and the other characters are always moving - walking, running, turning, "
+    "gesturing, reacting, breathing; objects move too (doors open, phones buzz, leaves fall, "
+    "rain falls). Use smooth camera movement (slow pans, push-ins, follows) and quick, short "
+    "scenes (about 3-6 seconds each) that flow into each other with motion. Avoid holding any "
+    "static frame, except the opening title screen."
+)
+
 USED_FILE = Path("state/used_words.json")
 
 # Grouped only for readability; one word per video, in a shuffled order.
@@ -161,7 +171,8 @@ Structure (spoken narration only, 500-650 words):
 1. Hook (1-2 sentences): a question or truth about {word} that makes the viewer stop.
 2. {NAME}'s story (about 50% of the script): tell the outline as a gripping little story,
    in present tense, with small real details, one or two short lines of dialogue, and the
-   feeling shown through what {NAME} does (it is animated, so describe visible moments).
+   feeling shown through what {NAME} does (it is animated, so describe visible ACTIONS -
+   walking, running, slamming, reaching, turning away - not still moments).
 3. The meaning: what "{word}" means, in one plain, dictionary-style sentence, then in simple
    everyday words - connected to what just happened in the story.
 4. What {word} really does to us: our mind, our energy and our relationships. General, widely
@@ -233,7 +244,7 @@ def create_script() -> dict:
         "topic": word,
         "series": SERIES,
         "word": word,
-        "visual_style": VISUAL_STYLE,
+        "visual_style": VISUAL_STYLE + " " + MOTION,
         "style_prompt": STYLE_PROMPT,
         "sources": [],
         "research": {},
