@@ -28,20 +28,24 @@ log = logging.getLogger(__name__)
 NAME = os.getenv("SERIES_CHARACTER") or "Arjun"
 SERIES = f"{NAME} – Words That Shape You"
 CHARACTER = (
-    f"{NAME}, a stick-figure boy: round head, simple dot eyes and expressive eyebrows, thin "
-    f"black stick body, and a small orange scarf (his signature - always visible). {NAME}'s "
-    "feelings show through big, clear body language and one accent colour: red scribbles and "
-    "clenched fists for anger, a blue rain cloud for sadness, shaking knees for fear, a warm "
-    "gold glow for calm, kindness, trust or discipline."
+    f"{NAME}, a classic stick figure: a large, perfectly round white head with a thick black "
+    "outline, small dot eyes, bold expressive eyebrows and a simple mouth; a thin black line "
+    f"body with line arms and legs and small rounded feet; a small orange scarf (his "
+    f"signature - always visible). {NAME}'s feelings show through big, dynamic poses and his "
+    "face: angled eyebrows and gritted teeth for anger, drooping head for sadness, shaking "
+    "knees for fear, a calm smile and upright posture for discipline, trust or kindness."
 )
-# Explainer fallback: VideoStyle.CUSTOM. Cinematic videos get the same text in their instructions.
+# Matches the clean "stickman life lessons" look: greyscale world, one bright accent colour.
 STYLE_PROMPT = (
-    "Minimalist 2D stick-figure animation, like popular stickman life-lesson videos. Clean "
-    "white background, bold black hand-drawn lines, stick figures with round heads and dot "
-    "eyes, very expressive poses and movement. Props and places drawn as simple black line "
-    "art. Only one accent colour per scene to show the feeling (red anger, blue sadness, "
-    f"gold for good feelings). The main character {NAME} is a stick-figure boy with a small "
-    "orange scarf and looks the same in every scene. No photos, no realistic images, no logos."
+    "Clean 2D hand-drawn stickman animation. Very light grey / off-white background with soft "
+    "shadows. Thick, smooth black ink outlines. Stick figures with large round white heads, "
+    "dot eyes and strong eyebrows, thin line bodies, dynamic action poses with small motion "
+    "lines and impact marks. Places and props (rooms, gym equipment, desks, phones, streets) "
+    "drawn in simple flat greyscale with a few soft grey silhouettes in the background. Only "
+    "ONE bright accent colour per scene, on the most important object (for example red boxing "
+    "gloves, a red phone, a gold medal) plus the main character's orange scarf. Short "
+    "on-screen words on a simple framed sign when useful (for example FOCUS / DISCIPLINE). "
+    "Smooth, expressive character movement. No photos, no realistic people, no 3D, no logos."
 )
 VISUAL_STYLE = (
     "Animate the whole video in this style: " + STYLE_PROMPT + f" Tell the story visually "
