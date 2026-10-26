@@ -1,12 +1,12 @@
 name: Daily video
 
 on:
-  # Every 3 hours (GitHub often starts scheduled runs late or skips some; runs with nothing to
+  # Every hour (GitHub often starts scheduled runs late or skips some; runs with nothing to
   # do stop in seconds). A new video is started at most every 5 hours (NotebookLM limit) and
   # scheduled into the next free slot (1 video one day, 2 the next, up to 4 days ahead -
   # see pipeline/plan.py). To stop, put a # in front of the next two lines.
   schedule:
-    - cron: "17 */3 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       force:
