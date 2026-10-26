@@ -27,6 +27,10 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+      # A run uses the code from when it was requested; a queued run can be minutes or hours
+      # old. Always work on the latest code and state.
+      - name: Use the latest code and state
+        run: git fetch -q origin main && git reset -q --hard origin/main && git log --oneline -1
       # Quick check first: stop in seconds if all slots are filled or the 6-hour gap
       # has not passed (and nothing is waiting to be finished).
       - name: Anything to do?

@@ -94,17 +94,22 @@ async def main(force: bool) -> None:
             if last and now() - dt.datetime.fromisoformat(last) < NOTEBOOKLM_GAP:
                 log.info("Less than 6 hours since the last NotebookLM video - try again later")
                 return
-            # Cinematic (animated) first; after a failed cinematic try, the explainer with the
-            # series' custom stickman style (or whiteboard) is used.
-            if job.get("retried"):
-                kinds = ("explainer", "whiteboard") if script.get("style_prompt") else ("explainer",)
-            else:
-                kinds = ("cinematic", "explainer")
-            job.update(await start_video(client, script["script"], script["title"],
+            # Cinematic (animated) videos only - never the explainer format. If NotebookLM is
+            # busy or its limit is reached, the next hourly run simply tries again.
+            kinds = ("cinematic",)
+            try:
+                started = await start_video(client, script["script"], script["title"],
                                          os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
                                          cover_text=meta["cover_text"],
                                          style=script.get("visual_style", ""),
-                                         style_prompt=script.get("style_prompt", "")))
+                                         style_prompt=script.get("style_prompt", ""))
+            except Exception as exc:
+                if "limit" in str(exc).lower() or "quota" in str(exc).lower():
+                    job["attempts"] = 0  # waiting for NotebookLM is not a failure of this video
+                    save_state(state)
+                    log.warning("NotebookLM limit reached - trying again next hour")
+                raise
+            job.update(started)
             state["notebooklm_started_at"] = now().isoformat()
             # Remember every notebook we create so it can be deleted after the upload.
             state.setdefault("notebooks_to_delete", []).append(job["notebook_id"])
@@ -117,10 +122,11 @@ async def main(force: bool) -> None:
             log.warning("Video still generating - the next run will continue waiting for it")
             raise
         except Exception:
-            if job.get("kind") == "cinematic" and not job.get("retried"):
-                log.warning("Cinematic video failed - next run will try the explainer style")
-                job.update({"notebook_id": None, "task_id": None, "retried": True})
-                save_state(state)
+            # The generation failed: start a fresh cinematic video for the same script after
+            # the 6-hour gap (MAX_ATTEMPTS still limits how often).
+            log.warning("Cinematic video failed - it will be made again after the 6-hour gap")
+            job.update({"notebook_id": None, "task_id": None})
+            save_state(state)
             raise
 
     # 4. Remove watermark + edit, 5. thumbnail = opening title screen of the video

@@ -1,6 +1,6 @@
 """Part 3: clean up the NotebookLM video with ffmpeg.
 
-- Hides the NotebookLM watermark (blur box, position set by WATERMARK_BOX)
+- Removes the NotebookLM watermark if the website failed (delogo, position set by WATERMARK_BOX)
 - Normalises loudness for YouTube
 - Optionally mixes in quiet background music (assets/music.mp3)
 - Optionally adds an intro clip (assets/intro.mp4) and an outro clip (assets/outro.mp4)
@@ -18,7 +18,7 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 ASSETS = Path("assets")
-DEFAULT_BOX = "0.84,0.88,0.15,0.10"  # bottom-right corner
+DEFAULT_BOX = "0.894,0.963,0.104,0.035"  # NotebookLM's "All Gemini Notebook" text, bottom-right
 
 
 def _run(cmd: list[str]) -> None:
@@ -87,6 +87,7 @@ def _channel_mark(info: dict, inputs: list[str]) -> str:
     """
     w, h = info["width"], info["height"]
     margin = h // 30
+    bx, by, bw, bh = watermark_box(w, h)  # NotebookLM's logo spot - our mark covers it
     logo = ASSETS / "logo.png"
     if logo.exists():
         inputs += ["-i", str(logo)]
@@ -101,9 +102,12 @@ def _channel_mark(info: dict, inputs: list[str]) -> str:
     log.info("Adding channel name watermark: %s", name)
     text = name.replace("\\", "").replace("'", "").replace(":", "\\:").replace("%", "\\%")
     # Small soft-grey text, the same style as the NotebookLM mark it replaces.
+    # Small soft-grey text, the same size and place as the NotebookLM mark it replaces.
+    right, bottom = w - (bx + bw), h - (by + bh)
     return (f"[v0]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:"
-            f"text='{text}':fontsize={h // 30}:fontcolor=0xA0A0A0@0.85:"
-            f"x=w-tw-{margin}:y=h-th-{margin},format=yuv420p[v]")
+            f"text='{text}':fontsize={max(14, bh * 4 // 5)}:fontcolor=0x9A9A9A@0.9:"
+            f"shadowcolor=white@0.6:shadowx=1:shadowy=1:"
+            f"x=w-tw-{right + 2}:y=h-th-{bottom + 2},format=yuv420p[v]")
 
 
 def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
@@ -118,12 +122,10 @@ def edit_video(src: Path, dst: Path, blur_watermark: bool = True) -> Path:
             log.info("Cutting NotebookLM's ending (last %.1fs)", trim)
     if blur_watermark:
         x, y, w, h = watermark_box(info["width"], info["height"])
-        log.info("Hiding watermark box x=%d y=%d w=%d h=%d", x, y, w, h)
-        # Blur the watermark area heavily (looks natural on moving footage).
-        radius = max(1, min(20, min(w, h) // 4 - 1))  # chroma planes are half size
-        vf = (f"[0:v]split[base][wm];[wm]crop={w}:{h}:{x}:{y},"
-              f"boxblur=luma_radius={radius}:luma_power=3:chroma_radius={radius}:chroma_power=3[blur];"
-              f"[base][blur]overlay={x}:{y}[v0]")
+        log.info("Removing NotebookLM logo box x=%d y=%d w=%d h=%d", x, y, w, h)
+        # delogo rebuilds the area from the surrounding pixels (much cleaner than a blur);
+        # our own channel name is then drawn on the same spot.
+        vf = f"[0:v]delogo=x={x}:y={y}:w={w}:h={h}:show=0[v0]"
     else:
         vf = "[0:v]null[v0]"
     vf += ";" + _channel_mark(info, inputs)

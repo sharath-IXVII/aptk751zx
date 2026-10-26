@@ -13,7 +13,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 src, out = Path(sys.argv[1]), Path("output")
 out.mkdir(exist_ok=True)
 clean = out / "video_clean.mp4"
-if editor.remove_watermark(src, clean, out / "site_screens"):
+# Same call as run.py: in a worker thread started from an asyncio loop.
+import asyncio
+if asyncio.run(asyncio.to_thread(editor.remove_watermark, src, clean, out / "site_screens")):
     print("WEBSITE OK:", editor.video_info(clean))
     editor.edit_video(clean, out / "video_final.mp4", blur_watermark=False)
 else:

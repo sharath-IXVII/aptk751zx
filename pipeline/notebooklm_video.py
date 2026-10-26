@@ -38,7 +38,7 @@ def instructions_for(cover_text: str, style: str = "") -> str:
 
 
 async def start_video(client, script: str, title: str, language: str = "en",
-                      kinds: tuple[str, ...] = ("cinematic", "explainer"),
+                      kinds: tuple[str, ...] = ("cinematic",),
                       cover_text: str = "", style: str = "", style_prompt: str = "") -> dict:
     """Create a notebook from the script and start video generation.
 
@@ -63,6 +63,7 @@ async def start_video(client, script: str, title: str, language: str = "en",
             nb.id, language=language, instructions=instructions_for(cover_text, style),
             video_format=VideoFormat.EXPLAINER, video_style=VideoStyle.WHITEBOARD),
     }
+    errors = []
     for kind in kinds:
         try:
             status = await starters[kind]()
@@ -70,7 +71,12 @@ async def start_video(client, script: str, title: str, language: str = "en",
             return {"notebook_id": nb.id, "task_id": status.task_id, "kind": kind}
         except Exception as exc:
             log.warning("Could not start %s video: %s", kind, exc)
-    raise RuntimeError("NotebookLM refused to start a video (daily/5-hour limit reached?)")
+            errors.append(str(exc))
+    try:  # don't leave an empty notebook behind
+        await client.notebooks.delete(nb.id)
+    except Exception:
+        pass
+    raise RuntimeError("NotebookLM refused to start a video (limit reached?): " + " | ".join(errors))
 
 
 async def finish_video(client, job: dict, out_path: Path) -> Path:
@@ -89,17 +95,10 @@ async def finish_video(client, job: dict, out_path: Path) -> Path:
 
 
 async def make_video(script: str, title: str, out_path: Path, language: str = "en") -> Path:
-    """One-shot helper: start a cinematic video (explainer as fallback) and download it."""
+    """One-shot helper (used by the part tests): make a cinematic video and download it."""
     async with NotebookLMClient.from_storage(allow_headless=True) as client:
         job = await start_video(client, script, title, language)
-        try:
-            return await finish_video(client, job, out_path)
-        except Exception as exc:
-            if job["kind"] != "cinematic":
-                raise
-            log.warning("Cinematic video failed (%s); trying explainer", exc)
-            job = await start_video(client, script, title, language, kinds=("explainer",))
-            return await finish_video(client, job, out_path)
+        return await finish_video(client, job, out_path)
 
 
 def check_video(path: Path) -> float:
