@@ -4,9 +4,9 @@ Every hour GitHub Actions runs `run.py`. A new video is made every 6 hours (4 a 
 **scheduled** into the next free slot - 2 videos a day (12:00 + 18:00 India time), filled up to
 7 days ahead - so the channel keeps posting even if runs fail:
 
-1. **Episode** – the series "Arjun – Words That Shape You": one meaningful word per video
+1. **Episode** – the series "Words That Shape You": one meaningful word per video
    (anger, discipline, trust...), never repeated (`pipeline/series.py`, `state/used_words.json`)
-2. **Script** – a planned, editor-reviewed story about Arjun (stick-figure boy with an orange scarf)
+2. **Script** – a planned, editor-reviewed story with its own cast (any people, stick-figure style)
    → the word's meaning → what it does to us → real-life moments → how to handle/build it
    (NVIDIA Nemotron, other models as fallback). `CONTENT_MODE=trending` switches back to trending topics
 3. **Title & description** – SEO title, description, hashtags and tags from the trend research
@@ -46,7 +46,7 @@ A video that fails 3 more times is dropped and a new one is made; a video is nev
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `27` | YouTube category id (27 Education, 24 Entertainment, 22 People & Blogs) |
-| `SERIES_CHARACTER` | `Arjun` | name of the series' character |
+| `SERIES_CHARACTER` | – | optional: one fixed main character for every episode |
 | `CONTENT_MODE` | `series` | `series` or `trending` |
 | `CHANNEL_NAME` | `GetYr_ENT` | text watermark in the bottom-right corner (or add `assets/logo.png`) |
 | `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |

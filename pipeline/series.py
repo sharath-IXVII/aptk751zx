@@ -1,14 +1,15 @@
-"""The channel's series: "<NAME> – Words That Shape You" (NAME from the SERIES_CHARACTER
-variable, default Arjun).
+"""The channel's series: "Words That Shape You".
 
 Every video takes one meaningful word (anger, discipline, trust...) and explains it through a
-short, meaningful animated story about Arjun, a stick-figure boy with an orange scarf
-(stickman-animation look: black lines on white, expressive body language, one accent colour
-per feeling). Made as a NotebookLM cinematic video (explainer + custom style as fallback).
+short, meaningful animated story. Each episode has its own cast - a child, a student, a
+parent, a grandmother, a shopkeeper, friends, colleagues - whatever tells that word's story
+best. Everyone is drawn in the same stick-figure animation style (black lines on white,
+expressive body language, one accent colour per feeling). Made as NotebookLM cinematic videos.
 The story comes first: it is planned, written and then reviewed by an editor pass so every
 episode leaves the viewer with something that truly matters to them.
+(Set SERIES_CHARACTER to use one fixed main character in every episode instead.)
 
-Format: the word and its plain meaning -> a short story -> what it does to us (mind, body,
+Format: a story -> the word and its plain meaning -> what it does to us (mind, body,
 relationships) -> 3 real-life moments -> how to handle or build it -> a closing line.
 
 Words are never repeated (state/used_words.json is kept permanently).
@@ -25,14 +26,20 @@ from pipeline import llm
 
 log = logging.getLogger(__name__)
 
-NAME = os.getenv("SERIES_CHARACTER") or "Arjun"
-SERIES = f"{NAME} – Words That Shape You"
+FIXED = os.getenv("SERIES_CHARACTER") or ""  # optional: one main character for every episode
+SERIES = "Words That Shape You"
+NAME = FIXED or "the main character"
 CHARACTER = (
-    f"{NAME}, a stick-figure boy: round head, simple dot eyes and expressive eyebrows, thin "
-    f"black stick body, and a small orange scarf (his signature - always visible). {NAME}'s "
-    "feelings show through big, clear body language and one accent colour: red scribbles and "
-    "clenched fists for anger, a blue rain cloud for sadness, shaking knees for fear, a warm "
-    "gold glow for calm, kindness, trust or discipline."
+    (f"{FIXED}, a stick-figure character who appears in every episode. " if FIXED else
+     "Choose the characters that tell this word's story best - a child, a teenager, a student, "
+     "a parent, a grandparent, a teacher, a shopkeeper, friends, colleagues - with simple names "
+     "that feel natural in India or the US. ")
+    + "Everyone is a stick figure: round head, dot eyes and expressive eyebrows, thin black "
+    "stick body; give each person one small detail so they are easy to tell apart (a scarf, "
+    "glasses, a school bag, a walking stick, a hair bun). Feelings show through big, clear body "
+    "language and one accent colour: red scribbles and clenched fists for anger, a blue rain "
+    "cloud for sadness, shaking knees for fear, a warm gold glow for calm, kindness, trust or "
+    "discipline."
 )
 # Explainer fallback: VideoStyle.CUSTOM. Cinematic videos get the same text in their instructions.
 STYLE_PROMPT = (
@@ -40,19 +47,19 @@ STYLE_PROMPT = (
     "white background, bold black hand-drawn lines, stick figures with round heads and dot "
     "eyes, very expressive poses and movement. Props and places drawn as simple black line "
     "art. Only one accent colour per scene to show the feeling (red anger, blue sadness, "
-    f"gold for good feelings). The main character {NAME} is a stick-figure boy with a small "
-    "orange scarf and looks the same in every scene. No photos, no realistic images, no logos."
+    "gold for good feelings). Each character keeps the same look in every scene. No photos, "
+    "no realistic images, no logos."
 )
 VISUAL_STYLE = (
     "Animate the whole video in this style: " + STYLE_PROMPT + f" Tell the story visually "
-    f"with {NAME} as the main character in every scene: " + CHARACTER + " Show each story "
+    "with these characters: " + CHARACTER + " Show each story "
     "moment as a clear, moving animated scene. Use on-screen text only for the title and the "
     "word's meaning."
 )
 # Appended to the instructions so scenes move instead of looking like still pictures.
 MOTION = (
     f"IMPORTANT - full motion animation, never a slideshow of still images: in every scene "
-    f"{NAME} and the other characters are always moving - walking, running, turning, "
+    "the characters are always moving - walking, running, turning, "
     "gesturing, reacting, breathing; objects move too (doors open, phones buzz, leaves fall, "
     "rain falls). Use smooth camera movement (slow pans, push-ins, follows) and quick, short "
     "scenes (about 3-6 seconds each) that flow into each other with motion. Avoid holding any "
@@ -199,20 +206,21 @@ def next_word() -> str:
 def plan_story(word: str) -> dict:
     """Think of several stories first and keep the one that will mean the most to viewers."""
     return llm.chat_json(f"""Plan the story for an episode of "{SERIES}" about the word {word.upper()}.
-The main character is {CHARACTER}
+Characters: {CHARACTER}
 
-Think of 3 different original story ideas where {NAME} meets {word} in real life (home,
+Think of 3 different original story ideas where someone meets {word} in real life (home,
 school, college, first job, friendship, family, money, a journey, a small town, a big city).
 Then choose the ONE that is most meaningful: the one a viewer will recognise from their own
 life, feel something about, and remember the next time {word} shows up for them.
 
 A great story here has: a real, relatable situation; a moment of choice; a consequence the
-viewer can feel (not preachy); a turning point where {NAME} understands something true about
+viewer can feel (not preachy); a turning point where the main character understands something true about
 {word}; and a quiet, hopeful ending. Visual moments that a stickman animation can show
 clearly (actions, faces, gestures, places).
 
 Return JSON: {{"ideas": ["<one line each>"], "chosen": <index>, "why": "<why it is the most
-meaningful>", "outline": {{"setup": "...", "choice": "...", "consequence": "...",
+meaningful>", "outline": {{"characters": "<who is in the story: name, age, one look detail>",
+"setup": "...", "choice": "...", "consequence": "...",
 "turning_point": "...", "ending": "...", "lesson": "<the one true sentence viewers should
 remember>"}}}}""", SYSTEM, temperature=0.9, max_tokens=2500, prefer=llm.WRITER_MODEL)
 
@@ -224,16 +232,16 @@ def write_script(word: str) -> dict:
     prompt = f"""Write the narration for one episode of the series "{SERIES}".
 Today's word: {word.upper()}
 
-The main character is {CHARACTER}
+Characters: {CHARACTER}
 
 STORY OUTLINE (use it - this is the heart of the episode):
 {outline}
 
 Structure (spoken narration only, 500-650 words):
 1. Hook (1-2 sentences): a question or truth about {word} that makes the viewer stop.
-2. {NAME}'s story (about 50% of the script): tell the outline as a gripping little story,
+2. The story (about 50% of the script): tell the outline as a gripping little story,
    in present tense, with small real details, one or two short lines of dialogue, and the
-   feeling shown through what {NAME} does (it is animated, so describe visible ACTIONS -
+   feeling shown through what the characters do (it is animated, so describe visible ACTIONS -
    walking, running, slamming, reaching, turning away - not still moments).
 3. The meaning: what "{word}" means, in one plain, dictionary-style sentence, then in simple
    everyday words - connected to what just happened in the story.
@@ -241,7 +249,7 @@ Structure (spoken narration only, 500-650 words):
    accepted ideas only - no statistics, no studies, no medical claims.
 5. Three short real-life moments where viewers meet {word} (relatable in India and the US).
 6. How to handle it (if harmful) or how to build it (if good): 3 simple, practical steps.
-7. A closing line that returns to {NAME}'s story and leaves the viewer with the lesson:
+7. A closing line that returns to the story and leaves the viewer with the lesson:
    "{plan.get("outline", {}).get("lesson", "")}"
 
 Rules: simple English, warm, honest and wise - never preachy; mature (teens and adults, not a
@@ -280,7 +288,7 @@ def review_script(word: str, result: dict) -> dict:
 {word.upper()} and score it 1-10 on: (a) is the story emotionally real and relatable,
 (b) does the viewer learn something true and useful about {word}, (c) is the ending
 memorable, (d) is it free of clichés and preaching. If any score is below 8, rewrite the
-script to fix it, keeping the structure, length (500-650 words), {NAME} and the spoken style.
+script to fix it, keeping the structure, length (500-650 words), the characters and the spoken style.
 
 SCRIPT:
 {result["script"]}
@@ -319,8 +327,8 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and title-screen text for a series episode."""
     word = script["word"]
     return llm.chat_json(f"""You are a YouTube SEO expert for the series "{SERIES}": each
-episode explains one meaningful word through a short stick-figure story about {NAME}, a
-stickman boy with an orange scarf. Audience: teens and adults in India and the US.
+episode explains one meaningful word through a short, meaningful stick-figure story.
+Audience: teens and adults in India and the US.
 
 Episode word: {word}
 Script:
