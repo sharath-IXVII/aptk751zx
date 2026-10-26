@@ -1,10 +1,9 @@
 """Full pipeline: trending topic -> script -> NotebookLM video -> edit -> thumbnail ->
-YouTube upload. Runs every 6 hours: each run makes one video (NotebookLM needs 5 hours between
-videos) and schedules it into the next free publishing slot (1 video one day, 2 the next, up to
-4 days ahead - see pipeline/plan.py). A video still being generated is resumed by the next run.
+YouTube upload. Runs every hour; a new video is started every 6 hours (4 a day) and scheduled
+into the next free publishing slot (2 a day, up to 7 days ahead - see pipeline/plan.py). A video still being generated is resumed by the next run.
 
 Run:  python run.py            (normal scheduled run)
-      python run.py --force    (make a video even if all slots are filled; 5-hour rule still applies)
+      python run.py --force    (make a video even if all slots are filled; 6-hour rule still applies)
 """
 
 import asyncio
@@ -26,7 +25,7 @@ log = logging.getLogger("run")
 STATE_FILE = Path("state/current.json")
 OUT = Path("output")
 IST = ZoneInfo("Asia/Kolkata")
-NOTEBOOKLM_GAP = dt.timedelta(hours=5)
+NOTEBOOKLM_GAP = plan.NOTEBOOKLM_GAP
 MAX_ATTEMPTS = 3  # runs that may work on one video before it is dropped
 
 
@@ -72,7 +71,7 @@ async def main(force: bool) -> None:
     if not job:
         last = state.get("notebooklm_started_at")
         if last and now() - dt.datetime.fromisoformat(last) < NOTEBOOKLM_GAP:
-            log.info("Less than 5 hours since the last NotebookLM video - try again later")
+            log.info("Less than 6 hours since the last NotebookLM video - try again later")
             return
         script = create_script()
         job = {"date": today, "script": script, "meta": packaging.make_metadata(script)}
@@ -93,12 +92,14 @@ async def main(force: bool) -> None:
         if not job.get("notebook_id"):
             last = state.get("notebooklm_started_at")
             if last and now() - dt.datetime.fromisoformat(last) < NOTEBOOKLM_GAP:
-                log.info("Less than 5 hours since the last NotebookLM video - try again later")
+                log.info("Less than 6 hours since the last NotebookLM video - try again later")
                 return
-            if script.get("style_prompt"):  # series: drawn style needs the explainer format
-                kinds = ("explainer", "whiteboard")
+            # Cinematic (animated) first; after a failed cinematic try, the explainer with the
+            # series' custom stickman style (or whiteboard) is used.
+            if job.get("retried"):
+                kinds = ("explainer", "whiteboard") if script.get("style_prompt") else ("explainer",)
             else:
-                kinds = ("explainer",) if job.get("retried") else ("cinematic", "explainer")
+                kinds = ("cinematic", "explainer")
             job.update(await start_video(client, script["script"], script["title"],
                                          os.getenv("VIDEO_LANGUAGE", "en"), kinds=kinds,
                                          cover_text=meta["cover_text"],
@@ -140,7 +141,7 @@ async def main(force: bool) -> None:
         video_id = None
     else:
         from pipeline.youtube_upload import upload
-        # Schedule into the next free slot (1 video one day, 2 the next...). If every slot is
+        # Schedule into the next free slot (2 a day). If every slot is
         # taken (only with --force), it goes public right away.
         slot = plan.next_slot(state)
         video_id = upload(final, thumb, meta, publish_at=slot)

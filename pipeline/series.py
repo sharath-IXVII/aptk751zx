@@ -1,10 +1,12 @@
 """The channel's series: "<NAME> – Words That Shape You" (NAME from the SERIES_CHARACTER
-variable, default Kabir).
+variable, default Arjun).
 
 Every video takes one meaningful word (anger, discipline, trust...) and explains it through a
-short stick-figure story about Kabir, a stickman boy with an orange scarf. The look is the
-popular stickman-animation style (black lines on white, expressive body language, one accent
-colour per feeling), made with NotebookLM's explainer video and a custom visual style.
+short, meaningful animated story about Arjun, a stick-figure boy with an orange scarf
+(stickman-animation look: black lines on white, expressive body language, one accent colour
+per feeling). Made as a NotebookLM cinematic video (explainer + custom style as fallback).
+The story comes first: it is planned, written and then reviewed by an editor pass so every
+episode leaves the viewer with something that truly matters to them.
 
 Format: the word and its plain meaning -> a short story -> what it does to us (mind, body,
 relationships) -> 3 real-life moments -> how to handle or build it -> a closing line.
@@ -23,7 +25,7 @@ from pipeline import llm
 
 log = logging.getLogger(__name__)
 
-NAME = os.getenv("SERIES_CHARACTER") or "Kabir"
+NAME = os.getenv("SERIES_CHARACTER") or "Arjun"
 SERIES = f"{NAME} – Words That Shape You"
 CHARACTER = (
     f"{NAME}, a stick-figure boy: round head, simple dot eyes and expressive eyebrows, thin "
@@ -32,7 +34,7 @@ CHARACTER = (
     "clenched fists for anger, a blue rain cloud for sadness, shaking knees for fear, a warm "
     "gold glow for calm, kindness, trust or discipline."
 )
-# NotebookLM explainer video, VideoStyle.CUSTOM (cinematic videos cannot take a style).
+# Explainer fallback: VideoStyle.CUSTOM. Cinematic videos get the same text in their instructions.
 STYLE_PROMPT = (
     "Minimalist 2D stick-figure animation, like popular stickman life-lesson videos. Clean "
     "white background, bold black hand-drawn lines, stick figures with round heads and dot "
@@ -42,9 +44,10 @@ STYLE_PROMPT = (
     "orange scarf and looks the same in every scene. No photos, no realistic images, no logos."
 )
 VISUAL_STYLE = (
-    f"Tell the story visually with {NAME} as the main character in every scene: " + CHARACTER +
-    " Show each story moment as a clear, simple scene. Use on-screen text only for the title "
-    "and the word's meaning."
+    "Animate the whole video in this style: " + STYLE_PROMPT + f" Tell the story visually "
+    f"with {NAME} as the main character in every scene: " + CHARACTER + " Show each story "
+    "moment as a clear, moving animated scene. Use on-screen text only for the title and the "
+    "word's meaning."
 )
 USED_FILE = Path("state/used_words.json")
 
@@ -121,39 +124,66 @@ def next_word() -> str:
     return random.choice(left)
 
 
+def plan_story(word: str) -> dict:
+    """Think of several stories first and keep the one that will mean the most to viewers."""
+    return llm.chat_json(f"""Plan the story for an episode of "{SERIES}" about the word {word.upper()}.
+The main character is {CHARACTER}
+
+Think of 3 different original story ideas where {NAME} meets {word} in real life (home,
+school, college, first job, friendship, family, money, a journey, a small town, a big city).
+Then choose the ONE that is most meaningful: the one a viewer will recognise from their own
+life, feel something about, and remember the next time {word} shows up for them.
+
+A great story here has: a real, relatable situation; a moment of choice; a consequence the
+viewer can feel (not preachy); a turning point where {NAME} understands something true about
+{word}; and a quiet, hopeful ending. Visual moments that a stickman animation can show
+clearly (actions, faces, gestures, places).
+
+Return JSON: {{"ideas": ["<one line each>"], "chosen": <index>, "why": "<why it is the most
+meaningful>", "outline": {{"setup": "...", "choice": "...", "consequence": "...",
+"turning_point": "...", "ending": "...", "lesson": "<the one true sentence viewers should
+remember>"}}}}""", SYSTEM, temperature=0.9, max_tokens=2500, prefer=llm.WRITER_MODEL)
+
+
 def write_script(word: str) -> dict:
+    plan = plan_story(word)
+    outline = json.dumps(plan.get("outline", {}), ensure_ascii=False, indent=1)
+    log.info("Story chosen: %s", plan.get("why", ""))
     prompt = f"""Write the narration for one episode of the series "{SERIES}".
 Today's word: {word.upper()}
 
 The main character is {CHARACTER}
 
-Structure (spoken narration only, 450-600 words):
-1. Hook (1-2 sentences): a surprising question or truth about {word}.
-2. The meaning: what "{word}" means, in one plain, dictionary-style sentence, then in
-   simple everyday words.
-3. {NAME}'s story (about 40% of the script): a short, original story where {NAME} meets
-   {word} in daily life (school, work, friends, family, a market, a journey...). Show the
-   feelings through {NAME}'s body language and actions (it will be drawn as a stickman
-   animation, so describe clear, visual moments). A clear beginning, a turning point and an ending.
-4. What {word} really does to us: to our mind, our body/energy and our relationships.
-   General, widely accepted ideas only - no statistics, no studies, no medical claims.
-5. Three short real-life moments where viewers meet {word} (relatable for India and the US).
-6. How to handle it (if it is harmful) or how to build it (if it is good): 3 simple steps.
-7. A short, memorable closing line that ties back to {NAME}'s story.
+STORY OUTLINE (use it - this is the heart of the episode):
+{outline}
 
-Rules: simple English, warm and wise tone, mature (for teens and adults, not a kids'
-show), no scene directions, no [brackets], no emojis, no real people or brands.
+Structure (spoken narration only, 500-650 words):
+1. Hook (1-2 sentences): a question or truth about {word} that makes the viewer stop.
+2. {NAME}'s story (about 50% of the script): tell the outline as a gripping little story,
+   in present tense, with small real details, one or two short lines of dialogue, and the
+   feeling shown through what {NAME} does (it is animated, so describe visible moments).
+3. The meaning: what "{word}" means, in one plain, dictionary-style sentence, then in simple
+   everyday words - connected to what just happened in the story.
+4. What {word} really does to us: our mind, our energy and our relationships. General, widely
+   accepted ideas only - no statistics, no studies, no medical claims.
+5. Three short real-life moments where viewers meet {word} (relatable in India and the US).
+6. How to handle it (if harmful) or how to build it (if good): 3 simple, practical steps.
+7. A closing line that returns to {NAME}'s story and leaves the viewer with the lesson:
+   "{plan.get("outline", {}).get("lesson", "")}"
+
+Rules: simple English, warm, honest and wise - never preachy; mature (teens and adults, not a
+kids' show); no scene directions, no [brackets], no emojis, no real people or brands.
 
 Return JSON: {{"title": "<working title>", "script": "<the full narration>"}}"""
     result = llm.chat_json(prompt, SYSTEM, temperature=0.8, max_tokens=4000,
                            prefer=llm.WRITER_MODEL)
     words = len(result.get("script", "").split())
     for _ in range(2):
-        if words >= 400:
+        if words >= 450:
             break
         log.info("Script only %d words, asking for a longer version", words)
         longer = llm.chat_json(f"""This narration is too short ({words} words). Rewrite it to
-500-600 words with the same structure, story and tone. Expand the story and the real-life
+550-650 words with the same structure, story and tone. Deepen the story and the real-life
 moments.
 
 {result.get("script", "")}
@@ -163,9 +193,35 @@ Return JSON: {{"title": "<working title>", "script": "<the full longer narration
                                prefer=llm.WRITER_MODEL)
         if len(longer.get("script", "").split()) > words:
             result, words = longer, len(longer["script"].split())
-    if words < 250:
+    if words < 300:
         raise RuntimeError(f"Script too short ({words} words)")
-    log.info("Script written for '%s' (%d words)", word, words)
+    result = review_script(word, result)
+    log.info("Script written for '%s' (%d words)", word, len(result["script"].split()))
+    return result
+
+
+def review_script(word: str, result: dict) -> dict:
+    """Editor pass: score how meaningful the episode is and improve it if it is not great."""
+    try:
+        review = llm.chat_json(f"""You are a demanding story editor. Read this episode about
+{word.upper()} and score it 1-10 on: (a) is the story emotionally real and relatable,
+(b) does the viewer learn something true and useful about {word}, (c) is the ending
+memorable, (d) is it free of clichés and preaching. If any score is below 8, rewrite the
+script to fix it, keeping the structure, length (500-650 words), {NAME} and the spoken style.
+
+SCRIPT:
+{result["script"]}
+
+Return JSON: {{"scores": {{"story": n, "lesson": n, "ending": n, "fresh": n}},
+"rewritten": true/false, "script": "<the final script (unchanged if all scores >= 8)>"}}""",
+                                SYSTEM, temperature=0.6, max_tokens=4000, prefer=llm.WRITER_MODEL)
+    except Exception as exc:
+        log.warning("Story review failed, keeping the script: %s", exc)
+        return result
+    log.info("Story review scores: %s (rewritten: %s)", review.get("scores"), review.get("rewritten"))
+    new = review.get("script", "")
+    if len(new.split()) >= 400:
+        result["script"] = new
     return result
 
 

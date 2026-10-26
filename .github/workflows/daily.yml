@@ -2,8 +2,8 @@ name: Daily video
 
 on:
   # Every hour (GitHub often starts scheduled runs late or skips some; runs with nothing to
-  # do stop in seconds). A new video is started at most every 5 hours (NotebookLM limit) and
-  # scheduled into the next free slot (1 video one day, 2 the next, up to 4 days ahead -
+  # do stop in seconds). A new video is started every 6 hours (4 a day) and
+  # scheduled into the next free slot (2 a day at 12:00 and 18:00 IST, up to 7 days ahead -
   # see pipeline/plan.py). To stop, put a # in front of the next two lines.
   schedule:
     - cron: "17 * * * *"
@@ -27,7 +27,7 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
-      # Quick check first: stop in seconds if all slots are filled or NotebookLM's 5-hour gap
+      # Quick check first: stop in seconds if all slots are filled or the 6-hour gap
       # has not passed (and nothing is waiting to be finished).
       - name: Anything to do?
         id: check

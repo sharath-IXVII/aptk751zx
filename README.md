@@ -1,17 +1,18 @@
 # YouTube Automation
 
-Every 6 hours GitHub Actions runs `run.py`. Each run makes one video (NotebookLM allows one
-per 5 hours) and **schedules** it into the next free slot - 1 video one day (18:00), 2 the next
-(12:00 + 18:00), filled up to 7 days ahead - so the channel keeps posting even if runs fail:
+Every hour GitHub Actions runs `run.py`. A new video is made every 6 hours (4 a day) and
+**scheduled** into the next free slot - 2 videos a day (12:00 + 18:00 India time), filled up to
+7 days ahead - so the channel keeps posting even if runs fail:
 
-1. **Episode** – the series "Kabir – Words That Shape You": one meaningful word per video
+1. **Episode** – the series "Arjun – Words That Shape You": one meaningful word per video
    (anger, discipline, trust...), never repeated (`pipeline/series.py`, `state/used_words.json`)
-2. **Script** – the word's meaning → a short stick-figure story about Kabir (stickman boy with an
-   orange scarf; stickman-animation style via NotebookLM explainer + custom style) → what it does to us → real-life moments → how to handle/build it
+2. **Script** – a planned, editor-reviewed story about Arjun (stick-figure boy with an orange scarf)
+   → the word's meaning → what it does to us → real-life moments → how to handle/build it
    (NVIDIA Nemotron, other models as fallback). `CONTENT_MODE=trending` switches back to trending topics
 3. **Title & description** – SEO title, description, hashtags and tags from the trend research
 4. **Video** – NotebookLM cinematic video (explainer as fallback) that opens with a clean
-   title screen; 5-hour gap respected
+   title screen and the series' stickman animation style (explainer + custom style as fallback);
+   6-hour gap respected
 5. **Edit** – watermark + ending removed with notebooklmremover.com (blur as fallback),
    GetYr_ENT text in the corner, audio normalised, intro + ending clips (assets/), optional music.
    Thumbnail = sharpest frame of the opening title screen
@@ -41,11 +42,11 @@ A video that fails 3 more times is dropped and a new one is made; a video is nev
 | `YT_PRIVACY` | `public` | `private`, `unlisted` or `public` |
 | `YT_PUBLISH_TIMES` | `12:00,18:00` | slot times (India); 1-video days use the last one |
 | `BUFFER_DAYS` | `7` | how many days ahead to fill with scheduled videos |
-| `VIDEOS_PER_DAY` | `1,2` | videos per day, repeating pattern (`1` = one a day, `0` = no limit) |
+| `VIDEOS_PER_DAY` | `2` | videos published per day (or a repeating pattern like `1,2`; `0` = no limit) |
 | `WATERMARK_BOX` | `0.84,0.88,0.15,0.10` | blur fallback area as x,y,width,height fractions |
 | `WATERMARK_SITE` | `on` | set to `off` to skip notebooklmremover.com and only blur |
 | `YT_CATEGORY` | `27` | YouTube category id (27 Education, 24 Entertainment, 22 People & Blogs) |
-| `SERIES_CHARACTER` | `Kabir` | name of the series' character |
+| `SERIES_CHARACTER` | `Arjun` | name of the series' character |
 | `CONTENT_MODE` | `series` | `series` or `trending` |
 | `CHANNEL_NAME` | `GetYr_ENT` | text watermark in the bottom-right corner (or add `assets/logo.png`) |
 | `THUMBNAIL_AT` | auto | force a second of the video for the thumbnail (default: best frame of the first 5 s) |
