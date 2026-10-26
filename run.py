@@ -125,7 +125,9 @@ async def main(force: bool) -> None:
 
     # 4. Remove watermark + edit, 5. thumbnail = opening title screen of the video
     clean = OUT / "video_clean.mp4"
-    if editor.remove_watermark(raw, clean, OUT / "site_screens"):
+    # The website step drives a browser with Playwright's sync API, which cannot run inside
+    # this asyncio loop - run it in a worker thread.
+    if await asyncio.to_thread(editor.remove_watermark, raw, clean, OUT / "site_screens"):
         editor.edit_video(clean, final, blur_watermark=False)
     else:
         editor.save_watermark_check(raw, OUT / "watermark_check.jpg")
