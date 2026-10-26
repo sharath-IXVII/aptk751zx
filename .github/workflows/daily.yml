@@ -3,7 +3,7 @@ name: Daily video
 on:
   # Every hour (GitHub often starts scheduled runs late or skips some; runs with nothing to
   # do stop in seconds). A new video is started every 6 hours (4 a day) and
-  # scheduled into the next free slot (2 a day at 12:00 and 18:00 IST, up to 60 days ahead -
+  # scheduled into the next free slot (2 a day at 12:00 and 18:00 IST, with no practical limit -
   # see pipeline/plan.py). To stop, put a # in front of the next two lines.
   schedule:
     - cron: "17 * * * *"
