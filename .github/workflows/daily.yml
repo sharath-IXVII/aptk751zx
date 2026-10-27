@@ -20,6 +20,7 @@ concurrency:
 
 permissions:
   contents: write           # to save state/ (history, resume info) back to the repo
+  actions: write            # to delete old run files (artifacts)
 
 jobs:
   video:
@@ -108,10 +109,24 @@ jobs:
           git config user.name "yt-bot" && git config user.email "yt-bot@users.noreply.github.com"
           git add -A && git commit -qm "Run ${{ github.run_id }} log" || exit 0
           git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" run-logs || true
+      # Only when a run fails: keep the raw video for one day for debugging (logs are on the
+      # run-logs branch). Successful runs keep nothing - videos are on YouTube.
       - uses: actions/upload-artifact@v4
-        if: always() && (steps.check.outputs.skip != 'true' || inputs.force)
+        if: failure() && (steps.check.outputs.skip != 'true' || inputs.force)
         with:
           name: video-output
-          path: output/
+          path: |
+            output/video_raw.mp4
+            output/*.json
           if-no-files-found: ignore
-          retention-days: 3       # run files are deleted automatically after 3 days
+          retention-days: 1
+      # Delete old run files so GitHub's Actions storage never fills up.
+      - name: Delete old run files
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cutoff=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ)
+          gh api --paginate "repos/${{ github.repository }}/actions/artifacts?per_page=100" \
+            --jq ".artifacts[] | select(.created_at < \"$cutoff\") | .id" |
+            while read -r id; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" && echo "deleted $id"; done || true

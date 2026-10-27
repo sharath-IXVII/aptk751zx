@@ -28,4 +28,5 @@ jobs:
         with:
           name: part1-video
           path: output/
+          retention-days: 1       # test files are deleted after 1 day
           if-no-files-found: ignore

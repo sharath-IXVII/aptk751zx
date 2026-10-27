@@ -43,3 +43,4 @@ jobs:
         with:
           name: site-explore
           path: output/site/
+          retention-days: 1       # test files are deleted after 1 day
