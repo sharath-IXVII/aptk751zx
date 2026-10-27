@@ -19,7 +19,9 @@ from pathlib import Path
 
 STATE_FILE = Path("state/current.json")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
-NOTEBOOKLM_GAP = dt.timedelta(hours=6)  # one new video every 6 hours = 4 a day
+# Runs come every hour, so a 5.5-hour minimum gap means a new video starts about every 6
+# hours (4 a day). A full 6-hour minimum would slip to ~7 hours because of the hourly runs.
+NOTEBOOKLM_GAP = dt.timedelta(hours=5, minutes=30)
 MIN_LEAD = dt.timedelta(minutes=30)  # a slot must be at least this far away when uploading
 
 
