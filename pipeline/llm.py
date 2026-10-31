@@ -152,17 +152,52 @@ def chat(prompt: str, system: str = "", temperature: float = 0.7, max_tokens: in
     raise RuntimeError(f"All NVIDIA models failed. Last error: {last_error}")
 
 
+def _parse_json(text: str) -> dict:
+    """Read a JSON object from a model reply, tolerating common model mistakes: text around it,
+    extra data after it, raw line breaks and unescaped quotes inside long text fields."""
+    start = text.find("{")
+    if start < 0:
+        raise ValueError("no JSON object found")
+    decoder = json.JSONDecoder(strict=False)
+    try:  # first complete object, ignore anything after it ("Extra data")
+        obj, _ = decoder.raw_decode(text[start:])
+        if isinstance(obj, dict):
+            return obj
+    except ValueError:
+        pass
+    end = text.rfind("}")
+    try:
+        return json.loads(text[start:end + 1], strict=False)
+    except ValueError:
+        pass
+    # Last resort: pull out the text fields by their keys (quotes inside dialogue break JSON).
+    body = text[start + 1:end]
+    keys = list(re.finditer(r'"([A-Za-z_]+)"\s*:\s*', body))
+    out = {}
+    for i, k in enumerate(keys):
+        chunk = body[k.end():keys[i + 1].start() if i + 1 < len(keys) else len(body)]
+        chunk = chunk.strip().rstrip(",").strip()
+        if chunk.startswith('"') and chunk.endswith('"'):
+            out[k.group(1)] = chunk[1:-1].replace('\\n', '\n').replace('\\"', '"')
+        else:
+            try:
+                out[k.group(1)] = json.loads(chunk, strict=False)
+            except ValueError:
+                pass
+    if not out:
+        raise ValueError("could not read the reply")
+    return out
+
+
 def chat_json(prompt: str, system: str = "", **kwargs) -> dict:
-    """Chat and parse a JSON object out of the reply. Asks once more if the reply is broken."""
-    ask = prompt + "\n\nReply with ONLY a JSON object, no other text."
-    for attempt in range(2):
+    """Chat and parse a JSON object out of the reply. Asks again if the reply is broken."""
+    ask = (prompt + "\n\nReply with ONLY a JSON object, no other text. Inside JSON strings, "
+           "escape double quotes as \\\" (or use single quotes for dialogue).")
+    text = ""
+    for attempt in range(3):
         text = chat(ask, system, **kwargs)
-        match = re.search(r"\{.*\}", text, flags=re.S)
         try:
-            if not match:
-                raise ValueError("no JSON object found")
-            # strict=False allows raw line breaks inside strings (common in scripts).
-            return json.loads(match.group(0), strict=False)
+            return _parse_json(text)
         except ValueError as exc:
             log.warning("Bad JSON from model (%s): %s", exc, text[:200])
     raise ValueError(f"Model did not return valid JSON: {text[:300]}")
