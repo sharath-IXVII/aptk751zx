@@ -1,0 +1,116 @@
+NEW
+NotebookLM Short videos (720x1280) are now supported with automatic watermark removal.
+Try it
+NotebookLM Remover
+Home
+Video Remover
+PDF Slides Remover
+PPTX Remover
+Infographic
+NEW
+Gemini Watermark Remover
+NEW
+Toggle theme
+Claude
+English
+NotebookLM Watermark Remover
+
+Free online tool to instantly remove the watermark from your NotebookLM videos, PDF slides, and PPTX presentations. 100% Client-Side & Privacy-First.
+
+Video Remover
+PDF Slides Remover
+PPTX Remover
+Infographic
+NEW
+Gemini Watermark Remover
+NEW
+Gemini/Veo Video
+BETA
+video_raw.mp4
+
+49.84 MB
+
+Step 2 of 2: Removing watermark and exporting
+93%
+
+Removing watermark and exporting your clean video...
+
+Discover more
+Watermark removal tool
+Video editing software
+PDF editing tools
+How to Remove NotebookLM Watermark
+1
+Upload File
+
+Select your video, PDF, or PPTX file. This tool supports removing NotebookLM watermarks from slides (PDF/PPTX) and videos (MP4).
+
+2
+Auto Process
+
+Our tool automatically detects and removes the NotebookLM logo from PDF/PPTX or cuts the ending from the video.
+
+3
+Download
+
+Get your clean file instantly. Perfect for presentations.
+
+Need a detailed step-by-step tutorial with screenshots and video guides? Read our full guide
+Remove NotebookLM Watermark from Video
+
+Create clean, professional videos by removing the NotebookLM watermark and ending screen. Our video watermark remover processes MP4 files locally in your browser, ensuring your data stays private while delivering high-quality results.
+
+Remove NotebookLM Logo from PDF
+
+Need to clean up your presentation slides? Our tool helps you remove NotebookLM logo from PDF exports easily. Whether it's a single slide or a full deck, we ensure the bottom-right watermark is gone without affecting your content layout.
+
+Remove NotebookLM Watermark from Slides
+
+Presenting professionally requires clean slides. Learn how to remove NotebookLM watermark from slides with our free online tool. It preserves your original quality while eliminating branding marks.
+
+Pixel-Perfect Removal
+
+Pre-configured coordinates for NotebookLM's 720p/1080p layout. Automatically detects and crops the logo.
+
+100% Privacy Safe
+
+Everything happens in your browser using WebAssembly. Your videos never leave your device.
+
+Lossless Quality
+
+Uses Smart CRF 18 encoding to maintain original quality while removing watermarks.
+
+Frequently Asked Questions
+How to remove NotebookLM watermark from video?
+Can I remove the NotebookLM logo from PDFs and Slides?
+Is it free to remove the NotebookLM watermark?
+Is this a free Slidesweep alternative?
+Does it upload my video to a server?
+Discover more
+Watermark remover app
+Self-Publish Books
+Try AI Chatbots
+NotebookLM Remover
+
+A browser-based tool to remove watermarks from NotebookLM videos instantly. Secure, fast, and 100% free. No server uploads required.
+
+Product
+Home
+Video Remover
+PDF Slides Remover
+Gemini Watermark Remover
+Gemini/Veo Video
+How-to Guide
+Features
+FAQ
+Legal & Support
+Changelog
+Privacy Policy
+Terms of Service
+Contact Us
+
+© 2026 NotebookLM Remover. All rights reserved.
+
+Not affiliated with Google.
+
+Feedback

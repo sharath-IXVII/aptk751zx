@@ -1,0 +1,128 @@
+2026-10-31 11:01:39,729 INFO Already scheduled: ['2026-10-31T12:00:00+05:30', '2026-10-31T18:00:00+05:30', '2026-11-01T12:00:00+05:30', '2026-11-01T18:00:00+05:30', '2026-11-02T12:00:00+05:30', '2026-11-02T18:00:00+05:30', '2026-11-03T12:00:00+05:30', '2026-11-03T18:00:00+05:30', '2026-11-04T12:00:00+05:30', '2026-11-04T18:00:00+05:30', '2026-11-05T12:00:00+05:30']
+2026-10-31 11:01:51,477 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-10-31 11:01:51,478 INFO Story (emotional): A lonely elderly man's rigid routine is disrupted by a curious child, forcing him to confront a forgotten chapter of his life.
+2026-10-31 11:02:04,412 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-10-31 11:02:25,022 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-10-31 11:02:25,023 INFO Story review scores: {'hook': 6, 'tension': 5, 'twist': 4, 'ending': 5} (rewritten: True)
+2026-10-31 11:02:25,023 INFO Story written (681 words)
+2026-10-31 11:02:27,302 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-10-31 11:02:27,303 INFO YouTube title: The Girl Who Found His Silence
+2026-10-31 11:02:28,096 INFO Created notebook 7923bd8a-387e-422a-ba5d-b387baf51b8e
+2026-10-31 11:02:29,659 INFO Script added as source
+2026-10-31 11:02:31,165 INFO Started cinematic video generation (task 47798143-a55d-40d9-a604-9797775f24c8)
+2026-10-31 11:02:31,166 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-10-31 11:28:15,412 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-10-31 11:28:17,268 INFO Started NotebookLM Short (task da244c93-cffd-4108-81a8-3b95c12852c5)
+2026-10-31 11:34:12,652 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-10-31 11:34:15,812 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-10-31 11:34:17,468 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-10-31 11:34:18,471 INFO Clicking '🚀 Start Removing Watermark'
+2026-10-31 11:34:41,908 INFO Watermark removal: 1%
+2026-10-31 11:34:46,913 INFO Watermark removal: 2%
+2026-10-31 11:34:51,919 INFO Watermark removal: 4%
+2026-10-31 11:34:56,925 INFO Watermark removal: 6%
+2026-10-31 11:35:01,931 INFO Watermark removal: 8%
+2026-10-31 11:35:06,938 INFO Watermark removal: 9%
+2026-10-31 11:35:11,944 INFO Watermark removal: 11%
+2026-10-31 11:35:16,950 INFO Watermark removal: 13%
+2026-10-31 11:35:21,957 INFO Watermark removal: 14%
+2026-10-31 11:35:27,288 INFO Watermark removal: 15%
+2026-10-31 11:35:32,294 INFO Watermark removal: 16%
+2026-10-31 11:35:37,300 INFO Watermark removal: 18%
+2026-10-31 11:35:42,307 INFO Watermark removal: 20%
+2026-10-31 11:35:47,314 INFO Watermark removal: 22%
+2026-10-31 11:35:52,321 INFO Watermark removal: 24%
+2026-10-31 11:35:57,332 INFO Watermark removal: 25%
+2026-10-31 11:36:02,339 INFO Watermark removal: 27%
+2026-10-31 11:36:07,345 INFO Watermark removal: 28%
+2026-10-31 11:36:12,350 INFO Watermark removal: 29%
+2026-10-31 11:36:17,356 INFO Watermark removal: 30%
+2026-10-31 11:36:22,361 INFO Watermark removal: 32%
+2026-10-31 11:36:27,686 INFO Watermark removal: 34%
+2026-10-31 11:36:32,692 INFO Watermark removal: 36%
+2026-10-31 11:36:37,698 INFO Watermark removal: 38%
+2026-10-31 11:36:42,704 INFO Watermark removal: 40%
+2026-10-31 11:36:47,710 INFO Watermark removal: 41%
+2026-10-31 11:36:52,715 INFO Watermark removal: 43%
+2026-10-31 11:36:57,720 INFO Watermark removal: 45%
+2026-10-31 11:37:02,727 INFO Watermark removal: 46%
+2026-10-31 11:37:07,733 INFO Watermark removal: 48%
+2026-10-31 11:37:12,739 INFO Watermark removal: 50%
+2026-10-31 11:37:17,745 INFO Watermark removal: 52%
+2026-10-31 11:37:22,750 INFO Watermark removal: 54%
+2026-10-31 11:37:28,086 INFO Watermark removal: 56%
+2026-10-31 11:37:33,092 INFO Watermark removal: 58%
+2026-10-31 11:37:38,099 INFO Watermark removal: 59%
+2026-10-31 11:37:43,105 INFO Watermark removal: 61%
+2026-10-31 11:37:48,111 INFO Watermark removal: 62%
+2026-10-31 11:37:53,117 INFO Watermark removal: 63%
+2026-10-31 11:37:58,123 INFO Watermark removal: 65%
+2026-10-31 11:38:03,128 INFO Watermark removal: 66%
+2026-10-31 11:38:08,134 INFO Watermark removal: 68%
+2026-10-31 11:38:13,140 INFO Watermark removal: 70%
+2026-10-31 11:38:18,147 INFO Watermark removal: 72%
+2026-10-31 11:38:23,153 INFO Watermark removal: 73%
+2026-10-31 11:38:28,482 INFO Watermark removal: 75%
+2026-10-31 11:38:33,489 INFO Watermark removal: 77%
+2026-10-31 11:38:38,496 INFO Watermark removal: 79%
+2026-10-31 11:38:43,502 INFO Watermark removal: 81%
+2026-10-31 11:38:48,508 INFO Watermark removal: 83%
+2026-10-31 11:38:53,515 INFO Watermark removal: 85%
+2026-10-31 11:38:58,521 INFO Watermark removal: 87%
+2026-10-31 11:39:03,528 INFO Watermark removal: 88%
+2026-10-31 11:39:08,533 INFO Watermark removal: 90%
+2026-10-31 11:39:13,538 INFO Watermark removal: 92%
+2026-10-31 11:39:18,544 INFO Watermark removal: 93%
+2026-10-31 11:39:23,886 INFO Watermark removal: 94%
+2026-10-31 11:39:28,890 INFO Watermark removal: 95%
+2026-10-31 11:39:33,897 INFO Watermark removal: 97%
+2026-10-31 11:39:38,900 INFO Clicking 'Download Clean Video'
+2026-10-31 11:39:48,438 INFO Downloaded clean video after 329s
+2026-10-31 11:39:48,640 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 305.110204, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 308.152018, 'has_audio': True})
+2026-10-31 11:39:48,703 INFO Adding channel name watermark: GetYr_ENT
+2026-10-31 11:42:31,345 INFO Added intro + video_final_main + outro
+2026-10-31 11:42:31,345 INFO Edited video saved to output/video_final.mp4
+2026-10-31 11:42:31,650 INFO Thumbnail candidate at 0.5s: detail 26.0
+2026-10-31 11:42:31,959 INFO Thumbnail candidate at 1.0s: detail 26.0
+2026-10-31 11:42:32,276 INFO Thumbnail candidate at 1.5s: detail 26.0
+2026-10-31 11:42:32,608 INFO Thumbnail candidate at 2.0s: detail 26.0
+2026-10-31 11:42:32,951 INFO Thumbnail candidate at 2.5s: detail 26.0
+2026-10-31 11:42:33,303 INFO Thumbnail candidate at 3.0s: detail 26.1
+2026-10-31 11:42:33,661 INFO Thumbnail candidate at 3.5s: detail 26.1
+2026-10-31 11:42:34,024 INFO Thumbnail candidate at 4.0s: detail 25.5
+2026-10-31 11:42:34,411 INFO Thumbnail candidate at 5.0s: detail 48.2
+2026-10-31 11:42:34,466 INFO Thumbnail taken from the video at 5.0s -> output/thumbnail.jpg
+2026-10-31 11:42:36,013 INFO Upload 16%
+2026-10-31 11:42:36,233 INFO Upload 33%
+2026-10-31 11:42:36,556 INFO Upload 50%
+2026-10-31 11:42:36,763 INFO Upload 67%
+2026-10-31 11:42:37,007 INFO Upload 84%
+2026-10-31 11:42:37,504 INFO Uploaded: https://youtu.be/8czI6OeSsXY (scheduled to go public at 2026-11-05 18:00 IST)
+2026-10-31 11:42:39,358 INFO Thumbnail set
+2026-10-31 11:42:42,249 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-10-31 11:42:43,911 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-10-31 11:42:44,916 INFO Clicking '🚀 Start Removing Watermark'
+2026-10-31 11:42:53,310 INFO Watermark removal: 4%
+2026-10-31 11:42:58,317 INFO Watermark removal: 12%
+2026-10-31 11:43:03,324 INFO Watermark removal: 19%
+2026-10-31 11:43:08,329 INFO Watermark removal: 26%
+2026-10-31 11:43:13,336 INFO Watermark removal: 32%
+2026-10-31 11:43:18,341 INFO Watermark removal: 40%
+2026-10-31 11:43:23,347 INFO Watermark removal: 48%
+2026-10-31 11:43:28,354 INFO Watermark removal: 55%
+2026-10-31 11:43:33,361 INFO Watermark removal: 61%
+2026-10-31 11:43:38,366 INFO Watermark removal: 65%
+2026-10-31 11:43:43,373 INFO Watermark removal: 72%
+2026-10-31 11:43:48,379 INFO Watermark removal: 79%
+2026-10-31 11:43:53,752 INFO Watermark removal: 86%
+2026-10-31 11:43:58,759 INFO Watermark removal: 93%
+2026-10-31 11:44:03,764 INFO Clicking 'Download Clean Video'
+2026-10-31 11:44:12,120 INFO Downloaded clean video after 87s
+2026-10-31 11:44:12,314 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 72.817778, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 75.859592, 'has_audio': True})
+2026-10-31 11:44:12,314 INFO Using NotebookLM's Short (watermark removed)
+2026-10-31 11:44:13,574 INFO Upload 34%
+2026-10-31 11:44:13,870 INFO Upload 68%
+2026-10-31 11:44:14,410 INFO Uploaded: https://youtu.be/RzpjEPUwVhc (scheduled to go public at 2026-11-05 18:00 IST)
+2026-10-31 11:44:14,411 INFO Short uploaded: https://youtu.be/RzpjEPUwVhc
+2026-10-31 11:44:14,412 INFO Done: The Girl Who Found His Silence
+2026-10-31 11:44:15,448 INFO Deleted old NotebookLM notebook 7923bd8a-387e-422a-ba5d-b387baf51b8e

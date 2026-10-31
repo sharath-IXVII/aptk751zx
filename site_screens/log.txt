@@ -1,0 +1,10 @@
+mode options: ['Speed Priority (15FPS, Best for Slides)']
+after opening mode menu: ['Speed Priority (15FPS, Best for Slides)', 'Speed Priority (15FPS, Best for Slides)', 'Balanced (30FPS, Recommended)', 'Quality Priority (Original FPS, Slow)']
+chose mode 'Quality Priority (Original FPS, Slow)'
+t=0s clicking '🚀 Start Removing Watermark'
+t=3s new buttons=['Quality Priority (Original FPS, Slow)', 'Change File', '🚀 Start Removing Watermark']
+t=63s new buttons=[]
+t=123s new buttons=[]
+t=184s new buttons=[]
+t=244s new buttons=[]
+t=300s new buttons=[]
