@@ -1,12 +1,17 @@
 name: Part 2 - Trending topic + script test
 
 on:
+  push:
+    branches: [debug-part3]   # maintainer debugging
   workflow_dispatch:
     inputs:
       make_video:
         description: "Also make the NotebookLM video (~30 min)"
         type: boolean
         default: false
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -30,6 +35,13 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           VIDEO_LANGUAGE: en
         run: python part2_test.py ${{ inputs.make_video && '--video' || '' }}
+      - name: Save script to the part3-debug branch
+        if: always()
+        run: |
+          mkdir -p /tmp/dbg && cp output/script.json /tmp/dbg/ 2>/dev/null || true
+          cd /tmp/dbg && git init -q && git checkout -q -b part3-debug
+          git config user.name yt-bot && git config user.email yt-bot@users.noreply.github.com
+          git add -A && git commit -qm "Part 2 script" && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" part3-debug
       - uses: actions/upload-artifact@v4
         if: always()
         with:
