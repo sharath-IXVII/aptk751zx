@@ -157,6 +157,7 @@ async def main(force: bool) -> None:
             plan.book(state, slot)
         job["video_id"] = video_id
         save_state(state)  # saved at once, so a later error can never upload it twice
+        upload_short(state, body if body.exists() else final, meta, video_id, slot)
 
     finish_job(state, job, video_id, today)
 
@@ -165,7 +166,36 @@ async def main(force: bool) -> None:
     await cleanup_notebooks(state)
 
 
+def upload_short(state: dict, episode: Path, meta: dict, video_id: str, slot) -> None:
+    """A vertical Short from the episode, published together with it (it links to it).
+    At most SHORTS_PER_DAY a day (default 2): 4 episodes + 2 Shorts fit YouTube's daily
+    upload quota. Never stops the run - a Short is a bonus."""
+    if (os.getenv("SHORTS") or "on") == "off":
+        return
+    from zoneinfo import ZoneInfo
+    from pipeline import shorts
+    from pipeline.youtube_upload import upload
+    quota_day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()  # YouTube's quota day
+    done = state.get("shorts", {}).get(quota_day, 0)
+    if done >= int(os.getenv("SHORTS_PER_DAY") or 2):
+        log.info("Shorts limit for today reached - no Short for this episode")
+        return
+    try:
+        short = shorts.make_short(episode, OUT / "short.mp4", meta.get("short_hook") or meta["title"])
+        short_id = upload(short, None, {**meta, **shorts.short_metadata(meta, video_id)},
+                          publish_at=slot)
+        state["shorts"] = {quota_day: done + 1}
+        save_state(state)
+        log.info("Short uploaded: https://youtu.be/%s", short_id)
+    except Exception as exc:
+        log.warning("Short skipped: %s", exc)
+
+
 def finish_job(state: dict, job: dict, video_id: str | None, today: str) -> None:
+    if job["script"].get("genre"):
+        from pipeline import stories
+        stories.mark_used(job["meta"]["title"], job["script"].get("premise", ""),
+                          job["script"]["genre"])
     if job["script"].get("word"):
         from pipeline import series
         series.mark_used(job["script"]["word"])

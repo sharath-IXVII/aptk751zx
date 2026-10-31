@@ -22,7 +22,10 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and the title-screen text, based on the research."""
     research = script.get("research", {})
     headlines = "\n".join(f"- {h}" for h in research.get("headlines", [])[:12])
-    if script.get("series"):
+    if script.get("genre"):
+        from pipeline import stories
+        meta = stories.make_metadata(script)
+    elif script.get("series"):
         from pipeline import series
         meta = series.make_metadata(script)
     else:
@@ -73,7 +76,7 @@ def finish_metadata(meta: dict, script: dict) -> dict:
     meta["description"] = "\n\n".join(part for part in [
         meta.get("description", "").strip(),
         f"Sources:\n{sources}" if sources else "",
-        "This video was made with the help of AI tools (script and visuals).",
+        "An original story. This video was made with the help of AI tools (script and visuals).",
         hashtags,
     ] if part)[:4900]
     # YouTube rejects titles/descriptions containing < or >.

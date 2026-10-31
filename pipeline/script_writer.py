@@ -228,9 +228,13 @@ Return JSON: {{"title": "<title, corrected if needed>", "script": "<corrected sc
 
 
 def create_script() -> dict:
-    """Part 2: the next episode of the series (default), or a trending-topic explainer when
-    CONTENT_MODE=trending."""
-    if (os.getenv("CONTENT_MODE") or "series") != "trending":
+    """Part 2: the next episode. CONTENT_MODE: stories (default, twist stories), series
+    (Words That Shape You) or trending."""
+    mode = os.getenv("CONTENT_MODE") or "stories"
+    if mode == "stories":  # original animated stories with a twist (default)
+        from pipeline import stories
+        return stories.create_script()
+    if mode == "series":  # "Words That Shape You"
         from pipeline import series
         return series.create_script()
     topic, query = pick_topic(all_trending())
