@@ -129,6 +129,19 @@ async def main(force: bool) -> None:
             save_state(state)
             raise
 
+        # 3b. NotebookLM's own vertical Short from the same notebook (if today's Shorts limit
+        #     is not reached). Any problem -> the Short is cut from the episode instead.
+        short_raw = OUT / "short_raw.mp4"
+        if shorts_left(state) and (os.getenv("SHORTS_SOURCE") or "notebooklm") == "notebooklm":
+            try:
+                from pipeline.notebooklm_video import make_short_video
+                await make_short_video(client, job["notebook_id"], short_raw,
+                                       os.getenv("VIDEO_LANGUAGE", "en"),
+                                       meta.get("short_hook", ""))
+            except Exception as exc:
+                log.warning("NotebookLM Short failed (%s) - will cut the Short from the episode", exc)
+                short_raw.unlink(missing_ok=True)
+
     # 4. Remove watermark + edit, 5. thumbnail = opening title screen of the video
     clean = OUT / "video_clean.mp4"
     # The website step drives a browser with Playwright's sync API, which cannot run inside
@@ -157,7 +170,8 @@ async def main(force: bool) -> None:
             plan.book(state, slot)
         job["video_id"] = video_id
         save_state(state)  # saved at once, so a later error can never upload it twice
-        upload_short(state, body if body.exists() else final, meta, video_id, slot)
+        await upload_short(state, body if body.exists() else final, short_raw, meta,
+                           video_id, slot)
 
     finish_job(state, job, video_id, today)
 
@@ -166,25 +180,43 @@ async def main(force: bool) -> None:
     await cleanup_notebooks(state)
 
 
-def upload_short(state: dict, episode: Path, meta: dict, video_id: str, slot) -> None:
-    """A vertical Short from the episode, published together with it (it links to it).
-    At most SHORTS_PER_DAY a day (default 2): 4 episodes + 2 Shorts fit YouTube's daily
-    upload quota. Never stops the run - a Short is a bonus."""
+def shorts_left(state: dict) -> bool:
+    """At most SHORTS_PER_DAY Shorts a day (default 2): 4 episodes + 2 Shorts fit YouTube's
+    daily upload quota. YouTube's quota day runs on Pacific time."""
     if (os.getenv("SHORTS") or "on") == "off":
+        return False
+    from zoneinfo import ZoneInfo
+    day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
+    return state.get("shorts", {}).get(day, 0) < int(os.getenv("SHORTS_PER_DAY") or 2)
+
+
+async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
+                       video_id: str, slot) -> None:
+    """Upload a vertical Short, published together with its episode (it links to it).
+    Preferred: NotebookLM's own Short, watermark removed by the website. Otherwise a clip cut
+    from the episode. Never stops the run - a Short is a bonus."""
+    if not shorts_left(state):
+        log.info("Shorts limit for today reached - no Short for this episode")
         return
     from zoneinfo import ZoneInfo
     from pipeline import shorts
     from pipeline.youtube_upload import upload
-    quota_day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()  # YouTube's quota day
-    done = state.get("shorts", {}).get(quota_day, 0)
-    if done >= int(os.getenv("SHORTS_PER_DAY") or 2):
-        log.info("Shorts limit for today reached - no Short for this episode")
-        return
+    short = None
+    if short_raw.exists():
+        clean = OUT / "short_clean.mp4"
+        if await asyncio.to_thread(editor.remove_watermark, short_raw, clean, OUT / "short_screens"):
+            short = clean
+            log.info("Using NotebookLM's Short (watermark removed)")
+        else:
+            log.warning("Watermark website failed for the Short - cutting it from the episode")
     try:
-        short = shorts.make_short(episode, OUT / "short.mp4", meta.get("short_hook") or meta["title"])
+        if short is None:
+            short = shorts.make_short(episode, OUT / "short.mp4",
+                                      meta.get("short_hook") or meta["title"])
         short_id = upload(short, None, {**meta, **shorts.short_metadata(meta, video_id)},
                           publish_at=slot)
-        state["shorts"] = {quota_day: done + 1}
+        day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
+        state["shorts"] = {day: state.get("shorts", {}).get(day, 0) + 1}
         save_state(state)
         log.info("Short uploaded: https://youtu.be/%s", short_id)
     except Exception as exc:

@@ -94,6 +94,27 @@ async def finish_video(client, job: dict, out_path: Path) -> Path:
     return out_path
 
 
+async def make_short_video(client, notebook_id: str, out_path: Path, language: str = "en",
+                           hook: str = "") -> Path:
+    """NotebookLM's own vertical Short (720x1280) from the same notebook as the episode."""
+    instructions = ("A gripping vertical short that teases this story: open on its most "
+                    "dramatic moment, build curiosity, and do NOT reveal the twist. "
+                    + (f'Start with: "{hook}". ' if hook else "")
+                    + "End by telling viewers the full story is on the channel.")
+    status = await client.artifacts.generate_video(
+        notebook_id, language=language, instructions=instructions,
+        video_format=VideoFormat.SHORT)
+    log.info("Started NotebookLM Short (task %s)", status.task_id)
+    done = await client.artifacts.wait_for_completion(
+        notebook_id, status.task_id, max_interval=20.0, timeout=40 * 60)
+    if not done.is_complete:
+        raise RuntimeError(f"NotebookLM Short ended with status={done.status}")
+    await client.artifacts.download_video(notebook_id, str(out_path), status.task_id)
+    check_video(out_path)
+    log.info("Downloaded NotebookLM Short to %s", out_path)
+    return out_path
+
+
 async def make_video(script: str, title: str, out_path: Path, language: str = "en") -> Path:
     """One-shot helper (used by the part tests): make a cinematic video and download it."""
     async with NotebookLMClient.from_storage(allow_headless=True) as client:
