@@ -62,7 +62,6 @@ def upload(video: Path, thumbnail: Path | None, meta: dict,
             **({"publishAt": publish_at.astimezone(dt.timezone.utc)
                 .strftime("%Y-%m-%dT%H:%M:%SZ")} if publish_at else {}),
             "selfDeclaredMadeForKids": False,
-            "containsSyntheticMedia": True,  # YouTube's AI-content disclosure
         },
     }
     request = youtube.videos().insert(

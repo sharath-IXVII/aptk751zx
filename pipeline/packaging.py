@@ -6,6 +6,7 @@ clean title screen, and that opening frame is saved as the thumbnail.
 
 import logging
 import os
+import re
 import subprocess
 from pathlib import Path
 
@@ -68,16 +69,28 @@ Return JSON: {{"title": "...", "cover_text": "...", "description": "...",
                          prefer=llm.WRITER_MODEL)
 
 
+def hashtag_line(meta: dict, channel: str, limit: int = 15) -> str:
+    """Many relevant hashtags (YouTube ignores all of them above 60): the video's own ones,
+    then ones made from its tags, then the brand."""
+    out = []
+    words = list(meta.get("hashtags", [])) + list(meta.get("tags", [])) + [channel, "GetYr"]
+    for w in words:
+        tag = "#" + re.sub(r"[^0-9A-Za-z]", "", str(w).title() if " " in str(w) else str(w).lstrip("#"))
+        if len(tag) > 2 and tag.lower() not in {t.lower() for t in out}:
+            out.append(tag)
+    return " ".join(out[:limit])
+
+
 def finish_metadata(meta: dict, script: dict) -> dict:
     sources = "\n".join(f"- {s.get('source') or 'Source'}: {s['url']}"
                         for s in script.get("sources", [])[:5] if s.get("url"))
-    hashtags = " ".join(h if h.startswith("#") else f"#{h}"
-                        for h in meta.get("hashtags", [])[:3]).replace(" #", " #")
+    channel = os.getenv("CHANNEL_NAME") or "GetYr_ENT"
+    about = os.getenv("BRAND_TEXT") or "original animated stories with twists you will not see coming - mystery, emotion, suspense, drama and more. New stories every day."
     meta["description"] = "\n\n".join(part for part in [
         meta.get("description", "").strip(),
         f"Sources:\n{sources}" if sources else "",
-        "An original story. This video was made with the help of AI tools (script and visuals).",
-        hashtags,
+        f"About {channel}: {about}\nSubscribe and turn on notifications so you never miss a video.",
+        hashtag_line(meta, channel),
     ] if part)[:4900]
     # YouTube rejects titles/descriptions containing < or >.
     meta["description"] = meta["description"].replace("<", "").replace(">", "")
