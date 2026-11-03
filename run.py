@@ -206,6 +206,10 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
         clean = OUT / "short_clean.mp4"
         if await asyncio.to_thread(editor.remove_watermark, short_raw, clean, OUT / "short_screens"):
             short = clean
+            try:  # our own small watermark, like on the long videos
+                short = shorts.add_mark(clean, OUT / "short_marked.mp4")
+            except Exception as exc:
+                log.warning("Could not add the watermark to the Short: %s", exc)
             log.info("Using NotebookLM's Short (watermark removed)")
         else:
             log.warning("Watermark website failed for the Short - cutting it from the episode")

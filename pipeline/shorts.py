@@ -52,7 +52,8 @@ def make_short(episode: Path, out: Path, hook: str, start: float = 3.5,
         f"[b]scale=-2:1000,crop=min(iw\\,{W}):1000[fg];"  # bigger, centre of the scene
         f"[bg][fg]overlay=(W-w)/2:(H-h)/2{texts},"
         f"drawtext=fontfile={FONT}:text='{footer}':fontsize=48:fontcolor=white:"
-        f"box=1:boxcolor=black@0.55:boxborderw=18:x=(w-tw)/2:y=h-250,format=yuv420p[v]"
+        f"box=1:boxcolor=black@0.55:boxborderw=18:x=(w-tw)/2:y=h-250,"
+        f"{_mark(H)},format=yuv420p[v]"
     )
     out.parent.mkdir(parents=True, exist_ok=True)
     cmd = ["ffmpeg", "-y", "-v", "error", "-ss", f"{start:.2f}", "-t", f"{length:.2f}",
@@ -64,6 +65,28 @@ def make_short(episode: Path, out: Path, hook: str, start: float = 3.5,
         raise RuntimeError(f"ffmpeg failed: {result.stderr[-800:]}")
     log.info("Short made (%.0fs) -> %s", length, out)
     return out
+
+
+def _mark(h: int) -> str:
+    """drawtext for the small channel watermark, like on the long videos."""
+    name = _text((os.getenv("CHANNEL_NAME") or "GetYr_ENT").strip())
+    return (f"drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='{name}':"
+            f"fontsize={max(16, h // 48)}:fontcolor=white@0.75:shadowcolor=black@0.6:"
+            f"shadowx=1:shadowy=1:x=w-tw-{h // 40}:y=h-th-{h // 22}")
+
+
+def add_mark(src: Path, dst: Path) -> Path:
+    """Add the channel watermark to a finished Short (e.g. NotebookLM's own Short)."""
+    h = int(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                            "stream=height", "-of", "csv=p=0", str(src)],
+                           capture_output=True, text=True, check=True).stdout.strip())
+    r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf",
+                        _mark(h) + ",format=yuv420p", "-c:v", "libx264", "-crf", "20",
+                        "-c:a", "copy", "-movflags", "+faststart", str(dst)],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed: {r.stderr[-500:]}")
+    return dst
 
 
 def short_metadata(meta: dict, episode_id: str | None) -> dict:
