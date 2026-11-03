@@ -219,6 +219,8 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
         state["shorts"] = {day: state.get("shorts", {}).get(day, 0) + 1}
         save_state(state)
         log.info("Short uploaded: https://youtu.be/%s", short_id)
+        from pipeline import social
+        social.post_short(short, meta, video_id)  # Instagram + Facebook Reels (if set up)
     except Exception as exc:
         log.warning("Short skipped: %s", exc)
 
