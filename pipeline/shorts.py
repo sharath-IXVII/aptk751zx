@@ -72,7 +72,7 @@ def _mark(h: int) -> str:
     name = _text((os.getenv("CHANNEL_NAME") or "GetYr_ENT").strip())
     return (f"drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='{name}':"
             f"fontsize={max(16, h // 48)}:fontcolor=white@0.5:shadowcolor=black@0.3:"
-            f"shadowx=1:shadowy=1:x=w-tw-{h // 90}:y=h-th-{h // 90}")  # right in the corner
+            f"shadowx=1:shadowy=1:x=w-tw-(w*0.045):y=h-th-{h // 60}")  # corner, with a safe gap so Instagram never cuts it
 
 
 def add_mark(src: Path, dst: Path) -> Path:
