@@ -71,7 +71,7 @@ def _mark(h: int) -> str:
     """drawtext for the small channel watermark, like on the long videos."""
     name = _text((os.getenv("CHANNEL_NAME") or "GetYr_ENT").strip())
     return (f"drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='{name}':"
-            f"fontsize={max(16, h // 48)}:fontcolor=white@0.75:shadowcolor=black@0.6:"
+            f"fontsize={max(16, h // 48)}:fontcolor=white@0.5:shadowcolor=black@0.3:"
             f"shadowx=1:shadowy=1:x=w-tw-{h // 90}:y=h-th-{h // 90}")  # right in the corner
 
 
