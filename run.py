@@ -242,7 +242,9 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
             log.warning("YouTube Short skipped: %s", exc)
     else:
         log.info("YouTube Shorts limit for today reached - Short goes to Reels only")
-    social.queue_short(state, short, meta, video_id, slot)  # Reels go live with the episode
+    # Reels are posted right away (nothing kept waiting); the temporary link is deleted after.
+    social.queue_short(state, short, meta, video_id, None)
+    social.publish_due(state)
     save_state(state)
 
 
