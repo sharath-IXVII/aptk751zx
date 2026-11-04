@@ -132,7 +132,8 @@ async def main(force: bool) -> None:
         # 3b. NotebookLM's own vertical Short from the same notebook (if today's Shorts limit
         #     is not reached). Any problem -> the Short is cut from the episode instead.
         short_raw = OUT / "short_raw.mp4"
-        if shorts_left(state) and (os.getenv("SHORTS_SOURCE") or "notebooklm") == "notebooklm":
+        want_short = shorts_left(state) or bool(os.getenv("META_PAGE_TOKEN"))  # YouTube or Reels
+        if want_short and (os.getenv("SHORTS_SOURCE") or "notebooklm") == "notebooklm":
             try:
                 from pipeline.notebooklm_video import make_short_video
                 await make_short_video(client, job["notebook_id"], short_raw,
@@ -192,14 +193,18 @@ def shorts_left(state: dict) -> bool:
 
 async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
                        video_id: str, slot) -> None:
-    """Upload a vertical Short, published together with its episode (it links to it).
-    Preferred: NotebookLM's own Short, watermark removed by the website. Otherwise a clip cut
-    from the episode. Never stops the run - a Short is a bonus."""
-    if not shorts_left(state):
+    """Make the vertical Short and publish it: to YouTube (published together with its
+    episode, at most SHORTS_PER_DAY a day because of YouTube's upload quota) and as Instagram
+    and Facebook Reels (every episode - they have no such limit). Preferred: NotebookLM's own
+    Short, watermark removed by the website; otherwise a clip cut from the episode.
+    Never stops the run - a Short is a bonus."""
+    youtube_ok = shorts_left(state)
+    reels_ok = bool(os.getenv("META_PAGE_TOKEN"))
+    if not (youtube_ok or reels_ok):
         log.info("Shorts limit for today reached - no Short for this episode")
         return
     from zoneinfo import ZoneInfo
-    from pipeline import shorts
+    from pipeline import shorts, social
     from pipeline.youtube_upload import upload
     short = None
     if short_raw.exists():
@@ -217,16 +222,22 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
         if short is None:
             short = shorts.make_short(episode, OUT / "short.mp4",
                                       meta.get("short_hook") or meta["title"])
-        short_id = upload(short, None, {**meta, **shorts.short_metadata(meta, video_id)},
-                          publish_at=slot)
-        day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
-        state["shorts"] = {day: state.get("shorts", {}).get(day, 0) + 1}
-        save_state(state)
-        log.info("Short uploaded: https://youtu.be/%s", short_id)
-        from pipeline import social
-        social.post_short(short, meta, video_id)  # Instagram + Facebook Reels (if set up)
     except Exception as exc:
         log.warning("Short skipped: %s", exc)
+        return
+    if youtube_ok:
+        try:
+            short_id = upload(short, None, {**meta, **shorts.short_metadata(meta, video_id)},
+                              publish_at=slot)
+            day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
+            state["shorts"] = {day: state.get("shorts", {}).get(day, 0) + 1}
+            save_state(state)
+            log.info("Short uploaded: https://youtu.be/%s", short_id)
+        except Exception as exc:
+            log.warning("YouTube Short skipped: %s", exc)
+    else:
+        log.info("YouTube Shorts limit for today reached - Short goes to Reels only")
+    social.post_short(short, meta, video_id)  # Instagram + Facebook Reels (if set up)
 
 
 def finish_job(state: dict, job: dict, video_id: str | None, today: str) -> None:
