@@ -50,6 +50,11 @@ async def main(force: bool) -> None:
     state = load_state()
     today = now().date().isoformat()
 
+    # Reels whose time has come (Instagram/Facebook can't schedule, so the robot does it).
+    from pipeline import social
+    social.publish_due(state)
+    save_state(state)
+
     if not state.get("job") and plan.next_slot(state) is None and not force:
         log.info("Every publishing slot for the next days is already filled - nothing to do")
         return
@@ -237,7 +242,8 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
             log.warning("YouTube Short skipped: %s", exc)
     else:
         log.info("YouTube Shorts limit for today reached - Short goes to Reels only")
-    social.post_short(short, meta, video_id)  # Instagram + Facebook Reels (if set up)
+    social.queue_short(state, short, meta, video_id, slot)  # Reels go live with the episode
+    save_state(state)
 
 
 def finish_job(state: dict, job: dict, video_id: str | None, today: str) -> None:

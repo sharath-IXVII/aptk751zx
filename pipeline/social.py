@@ -1,12 +1,16 @@
-"""Post each Short to Instagram (Reel) and Facebook (Reel) - and later Telegram.
+"""Post each Short to Instagram (Reel) and Facebook (Reel), at the same time its YouTube
+episode goes live (2 a day; the rest wait for their day, like on YouTube).
 
 Each platform is used only if its secrets exist; any error is logged and never stops the run.
-Instagram and Facebook download the video from a public link, so the Short is put on a
-temporary GitHub release of this (public) repo and the release is deleted afterwards.
+Instagram and Facebook download the video from a public link, and Instagram's API cannot
+schedule, so each Short waits as a GitHub release asset of this (public) repo
+(state["reels"] holds the queue). An hourly run posts the Reels that are due and deletes
+their releases. Releases don't count towards GitHub Actions storage.
 
 Secrets: META_PAGE_ID, META_PAGE_TOKEN, META_IG_USER_ID
 """
 
+import datetime as dt
 import logging
 import os
 import subprocess
@@ -82,20 +86,51 @@ def _facebook(url: str, caption: str) -> str:
     return start["video_id"]
 
 
-def post_short(short: Path, meta: dict, video_id: str | None) -> None:
+def _release(path: Path, tag: str) -> str:
+    repo = os.environ["GITHUB_REPOSITORY"]
+    subprocess.run(["gh", "release", "create", tag, str(path), "--repo", repo,
+                    "--title", "Reel waiting to be posted", "--notes", "temporary",
+                    "--prerelease"], check=True, capture_output=True, text=True)
+    return f"https://github.com/{repo}/releases/download/{tag}/{path.name}"
+
+
+def _delete_release(tag: str) -> None:
+    subprocess.run(["gh", "release", "delete", tag, "--repo", os.environ["GITHUB_REPOSITORY"],
+                    "--yes", "--cleanup-tag"], capture_output=True, text=True)
+
+
+def queue_short(state: dict, short: Path, meta: dict, video_id: str | None, slot) -> None:
+    """Keep the Short for Instagram/Facebook until its episode's publish time."""
     if not (os.getenv("META_PAGE_TOKEN") and short.exists()):
         return
-    caption = _caption(meta, video_id)
     try:
-        with _PublicLink(short) as url:
-            for name, fn, needs in (("Instagram", _instagram, "META_IG_USER_ID"),
-                                    ("Facebook", _facebook, "META_PAGE_ID")):
-                if not os.getenv(needs):
-                    continue
+        tag = f"reel-{int(time.time())}"
+        url = _release(short, tag)
+        at = slot.isoformat() if slot else dt.datetime.now(dt.timezone.utc).isoformat()
+        state.setdefault("reels", []).append(
+            {"tag": tag, "url": url, "caption": _caption(meta, video_id), "at": at})
+        log.info("Reel queued for %s", at)
+    except Exception as exc:
+        log.warning("Reel not queued (could not make a public link): %s", exc)
+
+
+def publish_due(state: dict) -> None:
+    """Post every queued Reel whose time has come (called at the start of every run)."""
+    if not os.getenv("META_PAGE_TOKEN"):
+        return
+    now = dt.datetime.now(dt.timezone.utc)
+    left = []
+    for reel in state.get("reels", []):
+        if dt.datetime.fromisoformat(reel["at"]) > now:
+            left.append(reel)
+            continue
+        for name, fn, needs in (("Instagram", _instagram, "META_IG_USER_ID"),
+                                ("Facebook", _facebook, "META_PAGE_ID")):
+            if os.getenv(needs):
                 try:
-                    log.info("%s Reel posted (id %s)", name, fn(url, caption))
+                    log.info("%s Reel posted (id %s)", name, fn(reel["url"], reel["caption"]))
                 except Exception as exc:
                     body = getattr(getattr(exc, "response", None), "text", "")[:300]
                     log.warning("%s Reel failed: %s %s", name, exc, body)
-    except Exception as exc:
-        log.warning("Reels skipped (could not make a public link): %s", exc)
+        _delete_release(reel["tag"])
+    state["reels"] = left

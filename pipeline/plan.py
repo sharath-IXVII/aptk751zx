@@ -70,6 +70,8 @@ def nothing_to_do(state: dict) -> bool:
     NotebookLM's 6-hour gap has not passed yet."""
     if state.get("job"):
         return False
+    if any(dt.datetime.fromisoformat(r["at"]) <= now() for r in state.get("reels", [])):
+        return False  # a queued Instagram/Facebook Reel is due
     if next_slot(state) is None:
         return True
     last = state.get("notebooklm_started_at")
