@@ -19,6 +19,28 @@ log = logging.getLogger(__name__)
 SIZE = (1280, 720)
 
 
+def search_suggestions(seed: str, limit: int = 12) -> list[str]:
+    """What people actually type into YouTube search for this topic (YouTube autocomplete)."""
+    import httpx
+    try:
+        r = httpx.get("https://suggestqueries.google.com/complete/search", timeout=15,
+                      params={"client": "firefox", "ds": "yt", "hl": "en", "q": seed})
+        return [x for x in r.json()[1] if isinstance(x, str)][:limit]
+    except Exception as exc:
+        log.warning("Search suggestions failed: %s", exc)
+        return []
+
+
+def _seed(script: dict) -> str:
+    if script.get("course"):
+        return f"{script['course']} {script['lesson']}"
+    if script.get("ece_topic"):
+        return f"how does {script['ece_topic']} work"
+    if script.get("genre"):
+        return f"{script['genre']} story"
+    return script.get("topic") or script["title"]
+
+
 def make_metadata(script: dict) -> dict:
     """Title, description, tags and the title-screen text, based on the research."""
     research = script.get("research", {})
@@ -31,6 +53,11 @@ def make_metadata(script: dict) -> dict:
         meta = series.make_metadata(script)
     else:
         meta = trend_metadata(script, research, headlines)
+    # Put what people really search for first in the tags (more search reach).
+    searches = search_suggestions(_seed(script))
+    if searches:
+        log.info("People search for: %s", "; ".join(searches[:6]))
+        meta["tags"] = searches + [t for t in meta.get("tags", []) if t not in searches]
     return finish_metadata(meta, script)
 
 
