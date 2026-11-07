@@ -19,7 +19,15 @@ if [ -n "${NOTEBOOKLM_MASTER_TOKEN:-}" ]; then
   chmod 600 "$dir/master_token.json"
   echo "Minting fresh NotebookLM cookies from the master token..."
   unset NOTEBOOKLM_AUTH_JSON
-  notebooklm login --master-token-refresh
+  if ! notebooklm login --master-token-refresh; then
+    # Google rejected the master token: carry on with the saved cookies if there are any,
+    # so a run can still work until the master token is renewed.
+    if [ -s "$dir/storage_state.json" ]; then
+      echo "::warning::NotebookLM master token rejected - using the saved cookies. Renew NOTEBOOKLM_MASTER_TOKEN soon."
+    else
+      exit 1
+    fi
+  fi
 else
   echo "No NOTEBOOKLM_MASTER_TOKEN secret - using saved cookies (these expire; see README)."
 fi
