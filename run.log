@@ -1,0 +1,93 @@
+2026-11-07 16:01:50,680 INFO Already scheduled: ['2026-11-07T18:00:00+05:30', '2026-11-08T12:00:00+05:30', '2026-11-08T18:00:00+05:30', '2026-11-09T12:00:00+05:30', '2026-11-09T18:00:00+05:30', '2026-11-10T12:00:00+05:30', '2026-11-10T18:00:00+05:30', '2026-11-11T12:00:00+05:30', '2026-11-11T18:00:00+05:30', '2026-11-12T12:00:00+05:30', '2026-11-12T18:00:00+05:30', '2026-11-13T12:00:00+05:30', '2026-11-13T18:00:00+05:30', '2026-11-14T12:00:00+05:30', '2026-11-14T18:00:00+05:30', '2026-11-15T12:00:00+05:30', '2026-11-15T18:00:00+05:30', '2026-11-16T12:00:00+05:30', '2026-11-16T18:00:00+05:30', '2026-11-17T12:00:00+05:30', '2026-11-17T18:00:00+05:30', '2026-11-18T12:00:00+05:30', '2026-11-18T18:00:00+05:30', '2026-11-19T12:00:00+05:30']
+2026-11-07 16:02:03,395 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 16:02:03,396 INFO Story (spooky): A travel vlogger spends the night in a remote glass house and hears warning sounds that turn out to be his own future self trying to prevent a tragic mistake.
+2026-11-07 16:02:06,933 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 16:02:19,132 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 16:02:27,625 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 16:02:27,625 INFO Story review scores: {'hook': 5, 'tension': 6, 'twist': 4, 'ending': 3} (rewritten: True)
+2026-11-07 16:02:27,625 INFO Story written (408 words)
+2026-11-07 16:02:29,402 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 16:02:29,536 INFO People search for: spooky story; spooky storytime; spooky story for kids; spooky story for preschool; spooky story podcast; spooky story music
+2026-11-07 16:02:29,536 INFO YouTube title: He Chose The Door... But The House Had Other Plans
+2026-11-07 16:02:30,571 INFO Created notebook 8f975935-21a9-42cd-8792-5b7f0482907a
+2026-11-07 16:02:32,486 INFO Script added as source
+2026-11-07 16:02:34,560 INFO Started cinematic video generation (task cc18d806-64ab-4a5c-891b-45c8e99752d5)
+2026-11-07 16:02:34,561 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-07 16:24:22,991 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-07 16:24:25,152 INFO Started NotebookLM Short (task a10c1bfc-2a4a-4721-9bf0-037398dad49b)
+2026-11-07 16:29:02,106 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-07 16:29:06,629 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-07 16:29:08,263 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-07 16:29:09,266 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-07 16:29:22,493 INFO Watermark removal: 2%
+2026-11-07 16:29:27,499 INFO Watermark removal: 5%
+2026-11-07 16:29:32,505 INFO Watermark removal: 8%
+2026-11-07 16:29:37,512 INFO Watermark removal: 12%
+2026-11-07 16:29:42,517 INFO Watermark removal: 16%
+2026-11-07 16:29:47,524 INFO Watermark removal: 20%
+2026-11-07 16:29:52,529 INFO Watermark removal: 25%
+2026-11-07 16:29:57,534 INFO Watermark removal: 29%
+2026-11-07 16:30:02,539 INFO Watermark removal: 33%
+2026-11-07 16:30:07,545 INFO Watermark removal: 38%
+2026-11-07 16:30:12,550 INFO Watermark removal: 42%
+2026-11-07 16:30:17,773 INFO Watermark removal: 46%
+2026-11-07 16:30:22,778 INFO Watermark removal: 49%
+2026-11-07 16:30:27,784 INFO Watermark removal: 51%
+2026-11-07 16:30:32,790 INFO Watermark removal: 54%
+2026-11-07 16:30:37,796 INFO Watermark removal: 59%
+2026-11-07 16:30:42,803 INFO Watermark removal: 63%
+2026-11-07 16:30:47,809 INFO Watermark removal: 67%
+2026-11-07 16:30:52,815 INFO Watermark removal: 71%
+2026-11-07 16:30:57,822 INFO Watermark removal: 75%
+2026-11-07 16:31:02,837 INFO Watermark removal: 79%
+2026-11-07 16:31:07,843 INFO Watermark removal: 82%
+2026-11-07 16:31:12,850 INFO Watermark removal: 85%
+2026-11-07 16:31:18,092 INFO Watermark removal: 89%
+2026-11-07 16:31:23,105 INFO Watermark removal: 93%
+2026-11-07 16:31:28,112 INFO Watermark removal: 97%
+2026-11-07 16:31:33,116 INFO Clicking 'Download Clean Video'
+2026-11-07 16:31:41,722 INFO Downloaded clean video after 152s
+2026-11-07 16:31:41,889 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 207.516735, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 210.558549, 'has_audio': True})
+2026-11-07 16:31:41,932 INFO Adding channel name watermark: GetYr_ENT
+2026-11-07 16:32:59,857 INFO Added intro + video_final_main + outro
+2026-11-07 16:32:59,857 INFO Edited video saved to output/video_final.mp4
+2026-11-07 16:33:00,037 INFO Thumbnail candidate at 0.5s: detail 17.0
+2026-11-07 16:33:00,238 INFO Thumbnail candidate at 1.0s: detail 14.1
+2026-11-07 16:33:00,464 INFO Thumbnail candidate at 1.5s: detail 18.6
+2026-11-07 16:33:00,707 INFO Thumbnail candidate at 2.0s: detail 20.4
+2026-11-07 16:33:00,958 INFO Thumbnail candidate at 2.5s: detail 18.3
+2026-11-07 16:33:01,222 INFO Thumbnail candidate at 3.0s: detail 17.0
+2026-11-07 16:33:01,499 INFO Thumbnail candidate at 3.5s: detail 16.6
+2026-11-07 16:33:01,786 INFO Thumbnail candidate at 4.0s: detail 16.5
+2026-11-07 16:33:02,108 INFO Thumbnail candidate at 5.0s: detail 16.4
+2026-11-07 16:33:02,147 INFO Thumbnail taken from the video at 2.0s -> output/thumbnail.jpg
+2026-11-07 16:33:03,764 INFO Upload 28%
+2026-11-07 16:33:03,989 INFO Upload 57%
+2026-11-07 16:33:04,207 INFO Upload 85%
+2026-11-07 16:33:04,707 INFO Uploaded: https://youtu.be/BpQRTOsar_Y (scheduled to go public at 2026-11-19 18:00 IST)
+2026-11-07 16:33:07,097 INFO Thumbnail set
+2026-11-07 16:33:10,163 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-07 16:33:11,805 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-07 16:33:12,809 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-07 16:33:15,836 INFO Watermark removal: 0%
+2026-11-07 16:33:21,053 INFO Watermark removal: 11%
+2026-11-07 16:33:26,060 INFO Watermark removal: 21%
+2026-11-07 16:33:31,066 INFO Watermark removal: 32%
+2026-11-07 16:33:36,072 INFO Watermark removal: 44%
+2026-11-07 16:33:41,078 INFO Watermark removal: 55%
+2026-11-07 16:33:46,084 INFO Watermark removal: 67%
+2026-11-07 16:33:51,091 INFO Watermark removal: 80%
+2026-11-07 16:33:56,096 INFO Watermark removal: 93%
+2026-11-07 16:34:01,101 INFO Clicking 'Download Clean Video'
+2026-11-07 16:34:09,250 INFO Downloaded clean video after 56s
+2026-11-07 16:34:09,413 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 61.18458, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 64.226395, 'has_audio': True})
+2026-11-07 16:34:18,845 INFO Using NotebookLM's Short (watermark removed)
+2026-11-07 16:34:21,460 INFO Uploaded: https://youtu.be/VMr01YIa15Y (scheduled to go public at 2026-11-19 18:00 IST)
+2026-11-07 16:34:21,461 INFO Short uploaded: https://youtu.be/VMr01YIa15Y
+2026-11-07 16:34:24,122 INFO Reel queued for 2026-11-07T16:34:24.122122+00:00
+2026-11-07 16:34:24,277 WARNING Instagram Reel failed: Client error '400 Bad Request' for url 'https://graph.facebook.com/v21.0/17841426541767285/media'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400 {"error":{"message":"Cannot call API for app 2552202938536576 on behalf of user 122100262593536546","type":"OAuthException","code":200,"fbtrace_id":"Av7MzPgiqBGXHK0ZNFp_039"}}
+2026-11-07 16:34:24,361 WARNING Facebook Reel failed: Client error '400 Bad Request' for url 'https://graph.facebook.com/v21.0/1513724728495936/video_reels'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400 {"error":{"message":"Cannot call API for app 2552202938536576 on behalf of user 122100262593536546","type":"OAuthException","code":200,"fbtrace_id":"AWIWvno2RoDPpj9LzDD10WX"}}
+2026-11-07 16:34:25,662 INFO Done: He Chose The Door... But The House Had Other Plans
+2026-11-07 16:34:27,167 INFO Deleted old NotebookLM notebook 8f975935-21a9-42cd-8792-5b7f0482907a
