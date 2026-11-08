@@ -22,7 +22,16 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 # Runs come every hour, so a 5.5-hour minimum gap means a new video starts about every 6
 # hours (4 a day). A full 6-hour minimum would slip to ~7 hours because of the hourly runs.
 NOTEBOOKLM_GAP = dt.timedelta(hours=5, minutes=30)
-MIN_LEAD = dt.timedelta(minutes=30)  # a slot must be at least this far away when uploading
+MIN_LEAD = dt.timedelta(minutes=30)
+
+
+def gap(state: dict) -> dt.timedelta:
+    """Time between new videos. While more than 2 days of videos are already waiting, make
+    only 2 a day (the queue shrinks, as 3 a day go public); then 3 a day."""
+    sched = [dt.datetime.fromisoformat(x) for x in state.get("scheduled", [])]
+    if sched and max(sched) - now() > dt.timedelta(days=2):
+        return dt.timedelta(hours=11, minutes=30)
+    return dt.timedelta(hours=7, minutes=30)  # a slot must be at least this far away when uploading
 
 
 def now() -> dt.datetime:
@@ -30,12 +39,12 @@ def now() -> dt.datetime:
 
 
 def videos_on(day: dt.date) -> int:
-    pattern = [int(v) for v in (os.getenv("VIDEOS_PER_DAY") or "2").split(",") if v.strip()]
+    pattern = [int(v) for v in (os.getenv("VIDEOS_PER_DAY") or "3").split(",") if v.strip()]
     return pattern[day.toordinal() % len(pattern)]
 
 
 def slots_on(day: dt.date) -> list[dt.datetime]:
-    times = [t.strip() for t in (os.getenv("YT_PUBLISH_TIMES") or "12:00,18:00").split(",")]
+    times = [t.strip() for t in (os.getenv("YT_PUBLISH_TIMES") or "12:00,15:00,18:00").split(",")]
     n = videos_on(day)
     chosen = times[-1:] if n == 1 else times[:n]
     return [dt.datetime.combine(day, dt.time(*map(int, t.split(":"))), IST) for t in chosen]
@@ -75,7 +84,7 @@ def nothing_to_do(state: dict) -> bool:
     if next_slot(state) is None:
         return True
     last = state.get("notebooklm_started_at")
-    return bool(last) and now() - dt.datetime.fromisoformat(last) < NOTEBOOKLM_GAP
+    return bool(last) and now() - dt.datetime.fromisoformat(last) < gap(state)
 
 
 if __name__ == "__main__":  # used by the workflow: prints skip=true/false
