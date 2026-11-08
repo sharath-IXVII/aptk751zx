@@ -58,7 +58,47 @@ def make_metadata(script: dict) -> dict:
     if searches:
         log.info("People search for: %s", "; ".join(searches[:6]))
         meta["tags"] = searches + [t for t in meta.get("tags", []) if t not in searches]
+    meta["title"] = polish_title(meta, searches, script)
     return finish_metadata(meta, script)
+
+
+BANNED = ("explained simply", "for students", "explained for", "(explained)", "simply explained",
+          "for beginners", "easy explanation")
+
+
+def polish_title(meta: dict, searches: list[str], script: dict) -> str:
+    """Rewrite the title like top creators do: the exact phrase people search, a strong
+    curiosity angle, professional wording - no filler such as "Explained Simply"."""
+    title = meta.get("title", "")
+    try:
+        r = llm.chat_json(f"""You write titles for top YouTube channels with millions of views.
+Current title: {title}
+What people actually type into YouTube search for this topic (most popular first):
+{chr(10).join("- " + x for x in searches[:10]) or "- (none)"}
+Video summary: {script.get("script", "")[:1200]}
+
+Write ONE better title, 40-65 characters:
+- Start with (or clearly contain) the most popular search phrase that fits the video.
+- Add a strong, honest curiosity hook: a surprising fact, a number, a question, or a
+  "why/how/what really happens" angle. Sound like a professional channel (Veritasium,
+  Kurzgesagt, Fireship, Mark Rober style), confident and specific.
+- NEVER use filler like "Explained Simply", "for Students", "Explained for", "Easy",
+  "for Beginners", brackets with fluff, emojis, or ALL CAPS sentences.
+- If the current title ends with a series part like "| ... Course #12" or "Part 3", keep it exactly.
+- Only promise what the video really covers.
+
+Return JSON: {{"title": "..."}}""", temperature=0.6, max_tokens=300)
+        new = (r.get("title") or "").strip().strip('"')
+        if 20 <= len(new) <= 100 and not any(b in new.lower() for b in BANNED):
+            log.info("Title polished: %s -> %s", title, new)
+            return new
+    except Exception as exc:
+        log.warning("Title polish failed: %s", exc)
+    for b in BANNED:  # at least strip the filler
+        i = title.lower().find(b)
+        if i >= 0:
+            title = (title[:i] + title[i + len(b):]).replace("()", "").strip(" -:|")
+    return title
 
 
 def trend_metadata(script: dict, research: dict, headlines: str) -> dict:
