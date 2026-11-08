@@ -232,11 +232,8 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
         return
     if youtube_ok:
         try:
-            # The Short goes public right away (fresh Shorts every day). Its link to the
-            # episode is added only when the episode is already public or goes public today.
-            soon = not slot or slot - dt.datetime.now(slot.tzinfo) < dt.timedelta(hours=12)
-            short_id = upload(short, None, {**meta, **shorts.short_metadata(
-                meta, video_id if soon else None)}, publish_at=None)
+            short_id = upload(short, None, {**meta, **shorts.short_metadata(meta, video_id)},
+                              publish_at=slot)  # goes public together with its episode
             day = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
             state["shorts"] = {day: state.get("shorts", {}).get(day, 0) + 1}
             save_state(state)
