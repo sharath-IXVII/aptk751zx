@@ -105,9 +105,57 @@ def _delete_release(tag: str) -> None:
                     "--yes", "--cleanup-tag"], capture_output=True, text=True)
 
 
+def _ig_ready(src: Path) -> Path:
+    """Re-encode to exactly what Instagram Reels accepts: H.264 + AAC 48 kHz, 30 fps, 1080x1920."""
+    dst = src.with_name("reel_ig.mp4")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf",
+                    "scale=1080:1920:force_original_aspect_ratio=decrease,"
+                    "pad=1080:1920:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p",
+                    "-c:v", "libx264", "-profile:v", "high", "-level", "4.1", "-crf", "21",
+                    "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "128k",
+                    "-movflags", "+faststart", "-t", "89", str(dst)], check=True)
+    return dst
+
+
+def _instagram_upload(path: Path, caption: str) -> str:
+    """Instagram Login: upload the file straight to Instagram (no public link needed)."""
+    ig, token = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
+    r = httpx.post(f"{IG_GRAPH}/{ig}/media", timeout=60, data={
+        "media_type": "REELS", "upload_type": "resumable", "caption": caption,
+        "share_to_feed": "true", "access_token": token})
+    r.raise_for_status()
+    container, uri = r.json()["id"], r.json()["uri"]
+    data = path.read_bytes()
+    up = httpx.post(uri, timeout=600, content=data, headers={
+        "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data))})
+    up.raise_for_status()
+    for _ in range(60):
+        time.sleep(10)
+        st = httpx.get(f"{IG_GRAPH}/{container}", timeout=30, params={
+            "fields": "status_code,status", "access_token": token}).json()
+        if st.get("status_code") == "FINISHED":
+            break
+        if st.get("status_code") == "ERROR":
+            raise RuntimeError(f"Instagram could not process the video: {st}")
+    r = httpx.post(f"{IG_GRAPH}/{ig}/media_publish", timeout=60,
+                   data={"creation_id": container, "access_token": token})
+    r.raise_for_status()
+    return r.json()["id"]
+
+
 def queue_short(state: dict, short: Path, meta: dict, video_id: str | None, slot) -> None:
-    """Keep the Short for Instagram/Facebook until its episode's publish time."""
+    """Post the Short as a Reel. Instagram Login: direct upload now. Otherwise (old Facebook
+    method) keep it as a release asset until posted."""
     if not (_enabled() and short.exists()):
+        return
+    if os.getenv("IG_ACCESS_TOKEN"):
+        renew_ig_token(state)
+        try:
+            log.info("Instagram Reel posted (id %s)",
+                     _instagram_upload(_ig_ready(short), _caption(meta, video_id)))
+        except Exception as exc:
+            body = getattr(getattr(exc, "response", None), "text", "")[:300]
+            log.warning("Instagram Reel failed: %s %s", exc, body)
         return
     try:
         tag = f"reel-{int(time.time())}"
