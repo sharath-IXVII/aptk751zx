@@ -7,7 +7,9 @@ schedule, so each Short waits as a GitHub release asset of this (public) repo
 (state["reels"] holds the queue). An hourly run posts the Reels that are due and deletes
 their releases. Releases don't count towards GitHub Actions storage.
 
-Secrets: META_PAGE_ID, META_PAGE_TOKEN, META_IG_USER_ID
+Instagram (preferred, no Facebook needed - "Instagram API with Instagram Login"):
+  IG_USER_ID, IG_ACCESS_TOKEN  (+ optional GH_ADMIN_TOKEN so the robot renews the token itself)
+Old Facebook-Page method (still supported): META_PAGE_ID, META_PAGE_TOKEN, META_IG_USER_ID
 """
 
 import datetime as dt
@@ -21,6 +23,7 @@ import httpx
 
 log = logging.getLogger(__name__)
 GRAPH = "https://graph.facebook.com/v21.0"
+IG_GRAPH = "https://graph.instagram.com/v21.0"
 
 
 def _caption(meta: dict, video_id: str | None) -> str:
@@ -50,21 +53,24 @@ class _PublicLink:
 
 
 def _instagram(url: str, caption: str) -> str:
-    ig, token = os.environ["META_IG_USER_ID"], os.environ["META_PAGE_TOKEN"]
-    r = httpx.post(f"{GRAPH}/{ig}/media", timeout=60, data={
+    if os.getenv("IG_ACCESS_TOKEN"):  # Instagram Login (no Facebook)
+        ig, token, graph = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"], IG_GRAPH
+    else:
+        ig, token, graph = os.environ["META_IG_USER_ID"], os.environ["META_PAGE_TOKEN"], GRAPH
+    r = httpx.post(f"{graph}/{ig}/media", timeout=60, data={
         "media_type": "REELS", "video_url": url, "caption": caption,
         "share_to_feed": "true", "access_token": token})
     r.raise_for_status()
     container = r.json()["id"]
     for _ in range(60):  # Instagram processes the video: up to ~10 minutes
         time.sleep(10)
-        s = httpx.get(f"{GRAPH}/{container}", timeout=30,
+        s = httpx.get(f"{graph}/{container}", timeout=30,
                       params={"fields": "status_code", "access_token": token}).json()
         if s.get("status_code") == "FINISHED":
             break
         if s.get("status_code") == "ERROR":
             raise RuntimeError(f"Instagram could not process the video: {s}")
-    r = httpx.post(f"{GRAPH}/{ig}/media_publish", timeout=60,
+    r = httpx.post(f"{graph}/{ig}/media_publish", timeout=60,
                    data={"creation_id": container, "access_token": token})
     r.raise_for_status()
     return r.json()["id"]
@@ -101,7 +107,7 @@ def _delete_release(tag: str) -> None:
 
 def queue_short(state: dict, short: Path, meta: dict, video_id: str | None, slot) -> None:
     """Keep the Short for Instagram/Facebook until its episode's publish time."""
-    if not (os.getenv("META_PAGE_TOKEN") and short.exists()):
+    if not (_enabled() and short.exists()):
         return
     try:
         tag = f"reel-{int(time.time())}"
@@ -116,17 +122,18 @@ def queue_short(state: dict, short: Path, meta: dict, video_id: str | None, slot
 
 def publish_due(state: dict) -> None:
     """Post every queued Reel whose time has come (called at the start of every run)."""
-    if not os.getenv("META_PAGE_TOKEN"):
+    if not _enabled():
         return
+    renew_ig_token(state)
     now = dt.datetime.now(dt.timezone.utc)
     left = []
     for reel in state.get("reels", []):
         if dt.datetime.fromisoformat(reel["at"]) > now:
             left.append(reel)
             continue
-        for name, fn, needs in (("Instagram", _instagram, "META_IG_USER_ID"),
+        for name, fn, needs in (("Instagram", _instagram, "IG_USER_ID|META_IG_USER_ID"),
                                 ("Facebook", _facebook, "META_PAGE_ID")):
-            if os.getenv(needs):
+            if any(os.getenv(n) for n in needs.split("|")):
                 try:
                     log.info("%s Reel posted (id %s)", name, fn(reel["url"], reel["caption"]))
                 except Exception as exc:
@@ -134,3 +141,40 @@ def publish_due(state: dict) -> None:
                     log.warning("%s Reel failed: %s %s", name, exc, body)
         _delete_release(reel["tag"])
     state["reels"] = left
+
+
+def _enabled() -> bool:
+    return bool(os.getenv("IG_ACCESS_TOKEN") or os.getenv("META_PAGE_TOKEN"))
+
+
+def renew_ig_token(state: dict) -> None:
+    """Instagram Login tokens last 60 days. Every ~30 days, get a fresh one and save it as the
+    IG_ACCESS_TOKEN secret (needs GH_ADMIN_TOKEN: a fine-grained token for this repo with
+    "Secrets: read and write"). Without GH_ADMIN_TOKEN, renew it by hand every ~50 days."""
+    token, admin = os.getenv("IG_ACCESS_TOKEN"), os.getenv("GH_ADMIN_TOKEN")
+    if not (token and admin):
+        return
+    last = state.get("ig_token_renewed")
+    if last and dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(last) < dt.timedelta(days=30):
+        return
+    try:
+        r = httpx.get("https://graph.instagram.com/refresh_access_token", timeout=30,
+                      params={"grant_type": "ig_refresh_token", "access_token": token})
+        r.raise_for_status()
+        new = r.json()["access_token"]
+        from base64 import b64encode
+        from nacl import encoding, public
+        repo = os.environ["GITHUB_REPOSITORY"]
+        h = {"Authorization": f"Bearer {admin}", "Accept": "application/vnd.github+json"}
+        key = httpx.get(f"https://api.github.com/repos/{repo}/actions/secrets/public-key",
+                        headers=h, timeout=30).json()
+        box = public.SealedBox(public.PublicKey(key["key"].encode(), encoding.Base64Encoder()))
+        enc = b64encode(box.encrypt(new.encode())).decode()
+        httpx.put(f"https://api.github.com/repos/{repo}/actions/secrets/IG_ACCESS_TOKEN",
+                  headers=h, timeout=30,
+                  json={"encrypted_value": enc, "key_id": key["key_id"]}).raise_for_status()
+        os.environ["IG_ACCESS_TOKEN"] = new
+        state["ig_token_renewed"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        log.info("Instagram token renewed for another 60 days")
+    except Exception as exc:
+        log.warning("Could not renew the Instagram token: %s", exc)

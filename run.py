@@ -137,7 +137,7 @@ async def main(force: bool) -> None:
         # 3b. NotebookLM's own vertical Short from the same notebook (if today's Shorts limit
         #     is not reached). Any problem -> the Short is cut from the episode instead.
         short_raw = OUT / "short_raw.mp4"
-        want_short = shorts_left(state) or bool(os.getenv("META_PAGE_TOKEN"))  # YouTube or Reels
+        want_short = shorts_left(state) or bool(os.getenv("IG_ACCESS_TOKEN") or os.getenv("META_PAGE_TOKEN"))  # YouTube or Reels
         if want_short and (os.getenv("SHORTS_SOURCE") or "notebooklm") == "notebooklm":
             try:
                 from pipeline.notebooklm_video import make_short_video
@@ -204,7 +204,7 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
     Short, watermark removed by the website; otherwise a clip cut from the episode.
     Never stops the run - a Short is a bonus."""
     youtube_ok = shorts_left(state)
-    reels_ok = bool(os.getenv("META_PAGE_TOKEN"))
+    reels_ok = bool(os.getenv("IG_ACCESS_TOKEN") or os.getenv("META_PAGE_TOKEN"))
     if not (youtube_ok or reels_ok):
         log.info("Shorts limit for today reached - no Short for this episode")
         return
