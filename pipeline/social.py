@@ -60,7 +60,8 @@ def _instagram(url: str, caption: str) -> str:
     r = httpx.post(f"{graph}/{ig}/media", timeout=60, data={
         "media_type": "REELS", "video_url": url, "caption": caption,
         "share_to_feed": "true", "access_token": token})
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise RuntimeError(f"Instagram refused the Reel ({r.status_code}): {r.text[:500]}")
     container = r.json()["id"]
     for _ in range(60):  # Instagram processes the video: up to ~10 minutes
         time.sleep(10)
@@ -123,12 +124,14 @@ def _instagram_upload(path: Path, caption: str) -> str:
     r = httpx.post(f"{IG_GRAPH}/{ig}/media", timeout=60, data={
         "media_type": "REELS", "upload_type": "resumable", "caption": caption,
         "share_to_feed": "true", "access_token": token})
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise RuntimeError(f"Instagram refused the Reel ({r.status_code}): {r.text[:500]}")
     container, uri = r.json()["id"], r.json()["uri"]
     data = path.read_bytes()
     up = httpx.post(uri, timeout=600, content=data, headers={
         "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data))})
-    up.raise_for_status()
+    if up.status_code >= 400:
+        raise RuntimeError(f"Instagram upload failed ({up.status_code}): {up.text[:500]}")
     for _ in range(60):
         time.sleep(10)
         st = httpx.get(f"{IG_GRAPH}/{container}", timeout=30, params={
@@ -139,7 +142,8 @@ def _instagram_upload(path: Path, caption: str) -> str:
             raise RuntimeError(f"Instagram could not process the video: {st}")
     r = httpx.post(f"{IG_GRAPH}/{ig}/media_publish", timeout=60,
                    data={"creation_id": container, "access_token": token})
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise RuntimeError(f"Instagram publish failed ({r.status_code}): {r.text[:500]}")
     return r.json()["id"]
 
 
@@ -150,11 +154,18 @@ def queue_short(state: dict, short: Path, meta: dict, video_id: str | None, slot
         return
     if os.getenv("IG_ACCESS_TOKEN"):
         renew_ig_token(state)
+        ready = short
         try:
-            log.info("Instagram Reel posted (id %s)",
-                     _instagram_upload(_ig_ready(short), _caption(meta, video_id)))
+            ready = _ig_ready(short)
+            log.info("Instagram Reel posted (id %s)", _instagram_upload(ready, _caption(meta, video_id)))
+            return
         except Exception as exc:
-            body = getattr(getattr(exc, "response", None), "text", "")[:300]
+            log.warning("Instagram direct upload failed: %s - trying the public-link method", exc)
+        try:  # backup: Instagram downloads the file from a temporary public link
+            with _PublicLink(ready) as url:
+                log.info("Instagram Reel posted via link (id %s)", _instagram(url, _caption(meta, video_id)))
+        except Exception as exc:
+            body = getattr(getattr(exc, "response", None), "text", "")[:500]
             log.warning("Instagram Reel failed: %s %s", exc, body)
         return
     try:
@@ -208,7 +219,8 @@ def renew_ig_token(state: dict) -> None:
     try:
         r = httpx.get("https://graph.instagram.com/refresh_access_token", timeout=30,
                       params={"grant_type": "ig_refresh_token", "access_token": token})
-        r.raise_for_status()
+        if r.status_code >= 400:
+            raise RuntimeError(f"{r.status_code}: {r.text[:300]}")
         new = r.json()["access_token"]
         from base64 import b64encode
         from nacl import encoding, public
