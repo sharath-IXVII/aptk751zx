@@ -15,6 +15,7 @@ Old Facebook-Page method (still supported): META_PAGE_ID, META_PAGE_TOKEN, META_
 import datetime as dt
 import logging
 import os
+import re
 import subprocess
 import time
 from pathlib import Path
@@ -24,6 +25,19 @@ import httpx
 log = logging.getLogger(__name__)
 GRAPH = "https://graph.facebook.com/v21.0"
 IG_GRAPH = "https://graph.instagram.com/v21.0"
+
+
+def _clean_secrets() -> None:
+    """Pasted secrets often carry spaces, quotes, line breaks or 'access_token=': remove them."""
+    for name in ("IG_ACCESS_TOKEN", "IG_USER_ID"):
+        v = os.getenv(name)
+        if v:
+            v = v.strip().strip('"').strip("'").strip()
+            v = re.sub(r"^(access_token|token|IG_ACCESS_TOKEN|IG_USER_ID)\s*[=:]\s*", "", v)
+            os.environ[name] = re.sub(r"\s+", "", v)
+
+
+_clean_secrets()
 
 
 def _caption(meta: dict, video_id: str | None) -> str:

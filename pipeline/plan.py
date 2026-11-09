@@ -26,12 +26,8 @@ MIN_LEAD = dt.timedelta(minutes=30)
 
 
 def gap(state: dict) -> dt.timedelta:
-    """Time between new videos. While more than 2 days of videos are already waiting, make
-    only 2 a day (the queue shrinks, as 3 a day go public); then 3 a day."""
-    sched = [dt.datetime.fromisoformat(x) for x in state.get("scheduled", [])]
-    if sched and max(sched) - now() > dt.timedelta(days=2):
-        return dt.timedelta(hours=11, minutes=30)
-    return dt.timedelta(hours=7, minutes=30)  # a slot must be at least this far away when uploading
+    """Time between new videos: about every 6 hours (4 a day)."""
+    return NOTEBOOKLM_GAP  # a slot must be at least this far away when uploading
 
 
 def now() -> dt.datetime:
