@@ -131,8 +131,8 @@ def _ig_ready(src: Path) -> Path:
     dst = src.with_name("reel_ig.mp4")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf",
                     "scale=1080:1920:force_original_aspect_ratio=decrease,"
-                    "pad=1080:1920:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p",
-                    "-c:v", "libx264", "-profile:v", "high", "-level", "4.1", "-crf", "21",
+                    "pad=1080:1920:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,format=yuv420p",
+                    "-c:v", "libx264", "-profile:v", "high", "-level", "4.1", "-crf", "21", "-g", "60", "-bf", "2", "-maxrate", "8M", "-bufsize", "16M",
                     "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "128k",
                     "-movflags", "+faststart", "-t", "89", str(dst)], check=True)
     return dst
