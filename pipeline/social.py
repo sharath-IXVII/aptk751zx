@@ -40,6 +40,12 @@ def _clean_secrets() -> None:
 _clean_secrets()
 
 
+def _ig_graph() -> str:
+    """Instagram-Login tokens (IGAA...) use graph.instagram.com; Facebook / System User tokens
+    (EAA...) reach the same Instagram account through graph.facebook.com."""
+    return GRAPH if (os.getenv("IG_ACCESS_TOKEN") or "").startswith("EAA") else IG_GRAPH
+
+
 def _caption(meta: dict, video_id: str | None) -> str:
     hook = meta.get("short_hook") or meta["title"]
     tags = meta.get("description", "").strip().split("\n")[-1]  # the hashtag line
@@ -68,7 +74,7 @@ class _PublicLink:
 
 def _instagram(url: str, caption: str) -> str:
     if os.getenv("IG_ACCESS_TOKEN"):  # Instagram Login (no Facebook)
-        ig, token, graph = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"], IG_GRAPH
+        ig, token, graph = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"], _ig_graph()
     else:
         ig, token, graph = os.environ["META_IG_USER_ID"], os.environ["META_PAGE_TOKEN"], GRAPH
     r = httpx.post(f"{graph}/{ig}/media", timeout=60, data={
@@ -135,7 +141,7 @@ def _ig_ready(src: Path) -> Path:
 def _instagram_upload(path: Path, caption: str) -> str:
     """Instagram Login: upload the file straight to Instagram (no public link needed)."""
     ig, token = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
-    r = httpx.post(f"{IG_GRAPH}/{ig}/media", timeout=60, data={
+    r = httpx.post(f"{_ig_graph()}/{ig}/media", timeout=60, data={
         "media_type": "REELS", "upload_type": "resumable", "caption": caption,
         "share_to_feed": "true", "access_token": token})
     if r.status_code >= 400:
@@ -148,13 +154,13 @@ def _instagram_upload(path: Path, caption: str) -> str:
         raise RuntimeError(f"Instagram upload failed ({up.status_code}): {up.text[:500]}")
     for _ in range(60):
         time.sleep(10)
-        st = httpx.get(f"{IG_GRAPH}/{container}", timeout=30, params={
+        st = httpx.get(f"{_ig_graph()}/{container}", timeout=30, params={
             "fields": "status_code,status", "access_token": token}).json()
         if st.get("status_code") == "FINISHED":
             break
         if st.get("status_code") == "ERROR":
             raise RuntimeError(f"Instagram could not process the video: {st}")
-    r = httpx.post(f"{IG_GRAPH}/{ig}/media_publish", timeout=60,
+    r = httpx.post(f"{_ig_graph()}/{ig}/media_publish", timeout=60,
                    data={"creation_id": container, "access_token": token})
     if r.status_code >= 400:
         raise RuntimeError(f"Instagram publish failed ({r.status_code}): {r.text[:500]}")
@@ -225,7 +231,7 @@ def renew_ig_token(state: dict) -> None:
     IG_ACCESS_TOKEN secret (needs GH_ADMIN_TOKEN: a fine-grained token for this repo with
     "Secrets: read and write"). Without GH_ADMIN_TOKEN, renew it by hand every ~50 days."""
     token, admin = os.getenv("IG_ACCESS_TOKEN"), os.getenv("GH_ADMIN_TOKEN")
-    if not (token and admin):
+    if not (token and admin) or token.startswith("EAA"):  # System User tokens don't expire
         return
     last = state.get("ig_token_renewed")
     if last and dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(last) < dt.timedelta(days=30):
