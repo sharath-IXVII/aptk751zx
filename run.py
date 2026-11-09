@@ -75,7 +75,7 @@ async def main(force: bool) -> None:
     # 1. Script (reuse today's if a previous run already wrote it)
     if not job:
         last = state.get("notebooklm_started_at")
-        if last and now() - dt.datetime.fromisoformat(last) < plan.gap(state):
+        if last and now() - dt.datetime.fromisoformat(last) < plan.gap(state) and not force:
             log.info("Less than 6 hours since the last NotebookLM video - try again later")
             return
         script = create_script()
@@ -96,7 +96,7 @@ async def main(force: bool) -> None:
         # 2. Start the NotebookLM video (once), remembering ids so a later run can resume
         if not job.get("notebook_id"):
             last = state.get("notebooklm_started_at")
-            if last and now() - dt.datetime.fromisoformat(last) < plan.gap(state):
+            if last and now() - dt.datetime.fromisoformat(last) < plan.gap(state) and not force:
                 log.info("Less than 6 hours since the last NotebookLM video - try again later")
                 return
             # Cinematic (animated) videos only - never the explainer format. If NotebookLM is
