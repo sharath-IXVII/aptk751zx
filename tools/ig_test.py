@@ -49,3 +49,22 @@ with social._PublicLink(ready) as url:
         print("B create:", r.status_code, r.text[:200])
         if r.status_code == 200:
             print("B status (", "final link" if u == final else "github link", "):", wait(r.json()["id"]))
+
+# C) REAL post (only when the workflow is run with "publish" ticked): proves the whole chain works.
+if os.getenv("PUBLISH") == "true":
+    r = httpx.post(f"{G}/{ig}/media", timeout=60, data={"media_type": "REELS", "upload_type": "resumable",
+                   "caption": "Test post - checking our Reels upload works. Full videos on our YouTube channel!",
+                   "share_to_feed": "true", "access_token": token})
+    print("C create:", r.status_code, r.text[:300])
+    j = r.json(); data = ready.read_bytes()
+    up = httpx.post(j["uri"], content=data, timeout=300, headers={
+        "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data))})
+    print("C upload:", up.status_code, up.text[:200])
+    print("C status:", wait(j["id"]))
+    r = httpx.post(f"{G}/{ig}/media_publish", timeout=60, data={"creation_id": j["id"], "access_token": token})
+    print("C publish:", r.status_code, r.text[:300])
+    if r.status_code == 200:
+        p = httpx.get(f"{G}/{r.json()['id']}", params={"fields": "permalink", "access_token": token}, timeout=30).json()
+        print("REAL REEL POSTED:", p.get("permalink"))
+    else:
+        sys.exit(1)

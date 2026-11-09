@@ -1,5 +1,11 @@
 name: Instagram test (no posting)
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Really post a short test Reel to Instagram"
+        type: boolean
+        default: false
 permissions:
   contents: write
 jobs:
@@ -14,4 +20,5 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GH_TOKEN: ${{ github.token }}
+          PUBLISH: ${{ inputs.publish }}
         run: python tools/ig_test.py
