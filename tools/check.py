@@ -28,3 +28,9 @@ if t:
     print("Instagram says:", r.status_code, r.text[:300])
     if r.status_code == 200:
         print("IG_USER_ID matches the token's account:", r.json().get("user_id") == u)
+    if t.startswith("EAA"):
+        for path, f in (("me", "id,name"), (u, "id,username")):
+            r = httpx.get(f"https://graph.facebook.com/v21.0/{path}", params={"fields": f, "access_token": t}, timeout=30)
+            print(f"Facebook API /{'me' if path=='me' else 'IG_USER_ID'}:", r.status_code, r.text[:250].replace(u, "<IG_USER_ID>"))
+        r = httpx.get("https://graph.facebook.com/debug_token", params={"input_token": t, "access_token": t}, timeout=30)
+        print("token info:", r.status_code, r.text[:400].replace(u, "<IG_USER_ID>"))
