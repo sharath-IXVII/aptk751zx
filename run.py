@@ -170,7 +170,8 @@ async def main(force: bool) -> None:
         from pipeline.youtube_upload import upload
         # Schedule into the next free slot (2 a day). If every slot is
         # taken (only with --force), it goes public right away.
-        slot = plan.next_slot(state)
+        # PUBLISH_NOW (default on): the video goes public as soon as it is ready.
+        slot = None if (os.getenv("PUBLISH_NOW") or "1") == "1" else plan.next_slot(state)
         video_id = upload(final, thumb, meta, publish_at=slot)
         if slot:
             plan.book(state, slot)
