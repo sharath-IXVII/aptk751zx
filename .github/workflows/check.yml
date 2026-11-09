@@ -14,4 +14,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python tools/check.py; python tools/ig_who.py
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NOTEBOOKLM_MASTER_TOKEN: ${{ secrets.NOTEBOOKLM_MASTER_TOKEN }}
+          NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
+        run: python tools/ig_who.py; python tools/check.py
