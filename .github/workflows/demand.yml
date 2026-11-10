@@ -1,0 +1,19 @@
+name: Search demand test
+on:
+  workflow_dispatch:
+    inputs:
+      phrases:
+        description: "Search phrases separated by ;"
+        default: "filters in electronics;clipper circuit;how phone charger works;op amp;kali linux install;hashcat tutorial;python tutorial for beginners;git and github"
+jobs:
+  demand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q httpx pillow
+      - env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          PHRASES: ${{ inputs.phrases }}
+        run: IFS=';' read -ra P <<< "$PHRASES"; python tools/demand.py "${P[@]}"

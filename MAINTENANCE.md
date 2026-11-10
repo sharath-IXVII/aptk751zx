@@ -45,3 +45,8 @@ When every word has been used, the robot starts the list again with new stories.
 When a viewer comments that something is wrong (wrong diagram, wrong fact, missing steps), add
 one line to `state/viewer_feedback.json` (or ask Claude to). Every new script is written and
 fact-checked against these lessons, so the same mistake is not repeated.
+
+## Content
+ENT makes informative videos (history, science, space, mysteries, "how was X built") on what
+people search for, and uses today's Google Trends when there is a good explainer angle.
+Set in `.github/workflows/daily.yml` (CONTENT_MODE: search). Old story mode: CONTENT_MODE: stories.

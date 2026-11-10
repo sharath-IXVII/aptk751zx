@@ -52,7 +52,7 @@ def upload(video: Path, thumbnail: Path | None, meta: dict,
             "title": meta["title"],
             "description": meta["description"],
             "tags": meta.get("tags", []),
-            "categoryId": os.getenv("YT_CATEGORY") or "27",  # 27 = Education, 24 = Entertainment
+            "categoryId": os.getenv("YT_CATEGORY") or "27",  # 27 = Education, 28 = Science & Tech
             "defaultLanguage": "en",
             "defaultAudioLanguage": "en",
         },
@@ -95,3 +95,36 @@ def upload(video: Path, thumbnail: Path | None, meta: dict,
             # Custom thumbnails need a phone-verified channel.
             log.warning("Could not set thumbnail (is the channel phone-verified?): %s", exc)
     return video_id
+
+
+def add_to_playlist(video_id: str, title: str) -> None:
+    """Add a video to the channel's playlist with this title, creating it if needed.
+    Videos are added in upload order, so a course playlist stays in lesson order."""
+    youtube = _client()
+    playlist_id, page = None, None
+    while not playlist_id:
+        res = youtube.playlists().list(part="snippet", mine=True, maxResults=50,
+                                       pageToken=page).execute()
+        playlist_id = next((p["id"] for p in res.get("items", [])
+                            if p["snippet"]["title"] == title), None)
+        page = res.get("nextPageToken")
+        if not page:
+            break
+    if not playlist_id:
+        playlist_id = youtube.playlists().insert(part="snippet,status", body={
+            "snippet": {"title": title,
+                        "description": f"{title}: watch in order, every video builds on the last."},
+            "status": {"privacyStatus": "public"}}).execute()["id"]
+        log.info("Created playlist: %s", title)
+    import time
+    for attempt in range(4):  # YouTube sometimes answers 409 "service unavailable": retry
+        try:
+            youtube.playlistItems().insert(part="snippet", body={"snippet": {
+                "playlistId": playlist_id,
+                "resourceId": {"kind": "youtube#video", "videoId": video_id}}}).execute()
+            break
+        except Exception:
+            if attempt == 3:
+                raise
+            time.sleep(20 * (attempt + 1))
+    log.info("Added to playlist: %s", title)

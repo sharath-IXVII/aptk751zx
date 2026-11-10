@@ -32,6 +32,8 @@ def search_suggestions(seed: str, limit: int = 12) -> list[str]:
 
 
 def _seed(script: dict) -> str:
+    if script.get("search_phrase"):
+        return script["search_phrase"]
     if script.get("course"):
         return f"{script['course']} {script['lesson']}"
     if script.get("ece_topic"):
@@ -45,7 +47,13 @@ def make_metadata(script: dict) -> dict:
     """Title, description, tags and the title-screen text, based on the research."""
     research = script.get("research", {})
     headlines = "\n".join(f"- {h}" for h in research.get("headlines", [])[:12])
-    if script.get("genre"):
+    if script.get("search_topic"):
+        from pipeline import searchtopics
+        meta = searchtopics.make_metadata(script)
+    elif script.get("ece_topic"):
+        from pipeline import electronics
+        meta = electronics.make_metadata(script)
+    elif script.get("genre"):
         from pipeline import stories
         meta = stories.make_metadata(script)
     elif script.get("series"):
@@ -152,7 +160,7 @@ def finish_metadata(meta: dict, script: dict) -> dict:
     sources = "\n".join(f"- {s.get('source') or 'Source'}: {s['url']}"
                         for s in script.get("sources", [])[:5] if s.get("url"))
     channel = os.getenv("CHANNEL_NAME") or "GetYr_ENT"
-    about = os.getenv("BRAND_TEXT") or "original animated stories with twists you will not see coming - mystery, emotion, suspense, drama and more. New stories every day."
+    about = os.getenv("BRAND_TEXT") or "the fascinating stories behind history, science, space and the world around us - explained clearly and accurately. New videos every day."
     meta["description"] = "\n\n".join(part for part in [
         meta.get("description", "").strip(),
         f"Sources:\n{sources}" if sources else "",

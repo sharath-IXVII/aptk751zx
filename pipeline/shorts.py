@@ -1,7 +1,7 @@
 """A vertical YouTube Short (9:16, under 60 s) cut from each episode, to bring viewers to it.
 
-It takes the opening of the story (right after the title screen - the cold-open hook), puts it
-on a blurred full-screen background, adds the hook text on top and "Full story on the channel"
+It takes the opening of the video (right after the title screen), puts it
+on a blurred full-screen background, adds the hook text on top and "Full video on the channel"
 at the bottom. It is published at the same time as its full episode and links to it.
 """
 
@@ -44,7 +44,7 @@ def make_short(episode: Path, out: Path, hook: str, start: float = 3.5,
         f",drawtext=fontfile={FONT}:text='{_text(line)}':fontsize=64:fontcolor=white:"
         f"borderw=5:bordercolor=black:x=(w-tw)/2:y={150 + i * 84}"
         for i, line in enumerate(lines))
-    footer = _text(os.getenv("SHORTS_FOOTER") or "Full story on the channel")
+    footer = _text(os.getenv("SHORTS_FOOTER") or "Full video on the channel")
     graph = (
         f"[0:v]split[a][b];"
         f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
@@ -91,11 +91,11 @@ def add_mark(src: Path, dst: Path) -> Path:
 
 def short_metadata(meta: dict, episode_id: str | None) -> dict:
     hook = meta.get("short_hook") or meta["title"]
-    link = f"Watch the full story: https://youtu.be/{episode_id}\n\n" if episode_id else ""
+    link = f"Watch the full video: https://youtu.be/{episode_id}\n\n" if episode_id else ""
     title = hook if len(hook) <= 90 else meta["title"]
     return {
         "title": f"{title} #shorts"[:100],
-        "description": f"{hook}\n\n{link}{meta['title']}\n\n#shorts #story #plottwist "
+        "description": f"{hook}\n\n{link}{meta['title']}\n\n#shorts #facts #history "
                        + " ".join(meta.get("description", "").split("\n")[-1].split()[:8]),
-        "tags": ["shorts", "story", "animated story", "plot twist"] + meta.get("tags", [])[:8],
+        "tags": ["shorts", "facts", "history", "explained"] + meta.get("tags", [])[:8],
     }
