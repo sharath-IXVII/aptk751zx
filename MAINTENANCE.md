@@ -41,12 +41,7 @@ When every word has been used, the robot starts the list again with new stories.
   front of the two `schedule:` lines.
 - **Run once now:** **Actions → Daily video → Run workflow**.
 
-## Viewer comments (mistakes viewers point out)
-Every day **Actions → Viewer comments** reads new comments. Comments that report a mistake
-(wrong diagram, wrong fact, missing steps) are saved as lessons in `state/viewer_feedback.json`,
-and every new script is written and fact-checked against them, so the same mistake is not repeated.
-Open the latest run to see all new comments and the mistakes found.
-
-It needs a free YouTube API key once: console.cloud.google.com → APIs & Services → Library →
-"YouTube Data API v3" → Enable → Credentials → Create credentials → API key. Paste it into
-**Settings → Secrets and variables → Actions → New repository secret** named `YOUTUBE_API_KEY`.
+## Mistakes viewers point out
+When a viewer comments that something is wrong (wrong diagram, wrong fact, missing steps), add
+one line to `state/viewer_feedback.json` (or ask Claude to). Every new script is written and
+fact-checked against these lessons, so the same mistake is not repeated.
