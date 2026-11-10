@@ -19,6 +19,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           NVIDIA_WRITER_MODEL: ${{ secrets.NVIDIA_WRITER_MODEL }}
         run: python tools/comments.py
       - name: Save lessons

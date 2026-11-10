@@ -4,6 +4,7 @@ The script writer and the fact-checker read these lessons, so the same mistake i
 Also prints a short report of all new comments. Nothing is posted or deleted."""
 import datetime as dt
 import json
+import os
 import logging
 import re
 import sys
@@ -24,13 +25,30 @@ def load(p: Path, default):
     return json.loads(p.read_text()) if p.exists() else default
 
 
+class _KeyAPI:
+    """Public YouTube API with an API key (YOUTUBE_API_KEY): reading comments needs no special
+    login permission this way."""
+
+    def __init__(self, key):
+        self.key = key
+
+    def get(self, path, **params):
+        import httpx
+        r = httpx.get(f"https://www.googleapis.com/youtube/v3/{path}", timeout=30,
+                      params={k: v for k, v in {**params, "key": self.key}.items() if v is not None})
+        r.raise_for_status()
+        return r.json()
+
+
 def fetch(yt, days: int = 14) -> list[dict]:
     ch = yt.channels().list(part="id", mine=True).execute()["items"][0]["id"]
+    api = _KeyAPI(os.environ["YOUTUBE_API_KEY"]) if os.getenv("YOUTUBE_API_KEY") else None
     since = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)
     out, tok = [], None
     for _ in range(5):
-        r = yt.commentThreads().list(part="snippet", allThreadsRelatedToChannelId=ch, maxResults=100,
-                                     order="time", textFormat="plainText", pageToken=tok).execute()
+        q = dict(part="snippet", allThreadsRelatedToChannelId=ch, maxResults=100,
+                 order="time", textFormat="plainText", pageToken=tok)
+        r = api.get("commentThreads", **q) if api else yt.commentThreads().list(**q).execute()
         for t in r.get("items", []):
             c = t["snippet"]["topLevelComment"]["snippet"]
             when = dt.datetime.fromisoformat(c["publishedAt"].replace("Z", "+00:00"))
@@ -86,7 +104,14 @@ Return JSON: {{"issues": [{{"n": <comment number>, "problem": "<what was wrong>"
 def main():
     yt = _client()
     seen = set(load(SEEN, []))
-    new = [c for c in fetch(yt) if c["id"] not in seen]
+    try:
+        new = [c for c in fetch(yt) if c["id"] not in seen]
+    except Exception as exc:
+        if "insufficient" in str(exc).lower() or "403" in str(exc):
+            print("CANNOT READ COMMENTS YET: add the YOUTUBE_API_KEY secret (see MAINTENANCE.md, "
+                  "'Viewer comments'). Error:", str(exc)[:200])
+            return
+        raise
     t = titles(yt, sorted({c["video_id"] for c in new if c["video_id"]}))
     for c in new:
         c["title"] = t.get(c["video_id"], "(channel)")
