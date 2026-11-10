@@ -1,0 +1,32 @@
+name: Viewer comments
+on:
+  schedule:
+    - cron: "41 2 * * *"   # every day, 08:11 India time
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: state-commit
+jobs:
+  comments:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q httpx google-api-python-client google-auth
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_WRITER_MODEL: ${{ secrets.NVIDIA_WRITER_MODEL }}
+        run: python tools/comments.py
+      - name: Save lessons
+        run: |
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git add state/viewer_feedback.json state/comments_seen.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Viewer comments: save lessons [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && exit 0; sleep $((i*5)); done
+          exit 1
