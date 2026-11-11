@@ -94,10 +94,17 @@ Write ONE better title, 40-65 characters:
   "for Beginners", brackets with fluff, emojis, or ALL CAPS sentences.
 - If the current title ends with a series part like "| ... Course #12" or "Part 3", keep it exactly.
 - Only promise what the video really covers.
+- NEVER invent numbers, percentages, salaries or statistics. Use a number only if that exact
+  number is stated in the video summary above.
 
 Return JSON: {{"title": "..."}}""", temperature=0.6, max_tokens=300)
         new = (r.get("title") or "").strip().strip('"')
-        if 20 <= len(new) <= 100 and not any(b in new.lower() for b in BANNED):
+        made_up = [n for n in re.findall(r"\d[\d,.]*", new)
+                   if n.rstrip(".,") not in script.get("script", "") and n.rstrip(".,") not in title]
+        if made_up:
+            log.warning("Polished title has numbers not in the video (%s) - keeping the original: %s",
+                        ", ".join(made_up), new)
+        elif 20 <= len(new) <= 100 and not any(b in new.lower() for b in BANNED):
             log.info("Title polished: %s -> %s", title, new)
             return new
     except Exception as exc:

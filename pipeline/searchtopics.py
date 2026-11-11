@@ -255,21 +255,29 @@ def _demand_from_page(phrase: str) -> int | None:
 _STOP = {"the", "and", "for", "how", "what", "why", "with", "your", "you", "are", "does",
          "work", "works", "explained", "tutorial", "beginners", "beginner", "guide", "complete",
          "full", "course", "simple", "simply", "step", "from", "into", "that", "this", "best",
-         "2024", "2025", "2026", "part", "basics", "introduction", "learn", "real", "method"}
+         "2024", "2025", "2026", "part", "basics", "introduction", "learn", "real", "method",
+         "install", "use", "using", "working", "principle", "actually", "really", "explain",
+         "what", "does", "about", "inside", "behind", "secret", "secrets", "truth", "ever",
+         "minutes", "need", "know", "everything", "made", "easy", "free", "today", "new"}
 
 
 def _key(s: str) -> set[str]:
     return _words(s) - _STOP
 
 
-def already_made(pick: dict) -> str | None:
-    """The existing topic/video this pick repeats, or None. Checked in code, not left to the AI."""
-    new = _key(pick.get("topic", "")) | _key(pick.get("search_phrase", ""))
+def already_made(pick: dict | str) -> str | None:
+    """The existing topic/video this pick repeats, or None. Checked in code, not left to the AI.
+    Same topic = at least 2 key words shared AND more than half of the key words of EACH title
+    match (so "Aircrack-ng on Kali" is new next to "Install Kali on Windows 11", but
+    "Full Wave Bridge Rectifier Working" repeats "How a Full Wave Bridge Rectifier Works")."""
+    text = pick if isinstance(pick, str) else f'{pick.get("topic", "")} {pick.get("search_phrase", "")}'
+    new = _key(text)
     if not new:
         return None
     for old in _made_before() + channel_videos()["titles"]:
         o = _key(old)
-        if o and len(new & o) >= max(2, int(0.6 * min(len(new), len(o)))):
+        overlap = len(new & o)
+        if overlap >= 2 and overlap * 2 > len(new) and overlap * 2 > len(o):
             return old
     return None
 
@@ -287,7 +295,7 @@ def pick_topic() -> dict:
     cap = int(os.getenv("MAX_SEARCH_VIEWS") or 1000000)
     rejected: list[str] = []
     for attempt in range(6):
-        r = _pick_once(rejected + _low_demand()[-60:])
+        r = _pick_once(rejected + _low_demand()[-60:], attempt)
         dup = already_made(r)
         if dup:
             log.info("Skipping '%s': the channel already has '%s'", r.get("topic"), dup)
@@ -325,8 +333,8 @@ def trending_today() -> list[str]:
     return _TRENDS
 
 
-def _pick_once(avoid: list[str]) -> dict:
-    cands = [c for c in candidates() if c[0] not in avoid]
+def _pick_once(avoid: list[str], attempt: int = 0) -> dict:
+    cands = [c for c in candidates() if c[0] not in avoid and not already_made(c[0])]
     d = _domain()
     listing = "\n".join(f"- {p} (score {s:.0f})" for p, s in cands) or (
         "- (live data unavailable: use your knowledge of the most-searched YouTube topics in this field)")
@@ -336,7 +344,7 @@ now, with a popularity score:
 {listing}
 
 Already made (do not repeat, not even reworded): {"; ".join(_made_before()[-80:]) or "none"}
-Rejected (too few searches, too crowded, or already made) - never pick these or anything similar: {"; ".join(avoid) or "none"}
+Rejected (too few searches, too crowded, or already made) - pick a DIFFERENT subject, not a reworded version of any of these: {"; ".join(avoid) or "none"}
 Already on the channel: {"; ".join(t[:60] for t in channel_videos()["titles"][:120]) or "none"}
 
 {("TRENDING TODAY (Google Trends): " + "; ".join(trending_today()) + chr(10) + "If one of these has a fascinating, accurate, evergreen explainer angle in our field (e.g. a trending eclipse -> how solar eclipses work), prefer it - it rides today's interest. Skip celebrity gossip, sports scores and politics." + chr(10)) if trending_today() else ""}
@@ -361,7 +369,7 @@ explainer can cover really well. {d["safety"]}
 
 Return JSON: {{"topic": "<the video topic in plain words>", "search_phrase": "<the exact
 search phrase it targets>", "angle": "<the hook/angle that makes people click and stay>"}}""",
-                      SYSTEM, temperature=0.5, max_tokens=600, prefer=llm.WRITER_MODEL)
+                      SYSTEM, temperature=min(1.0, 0.5 + 0.12 * attempt), max_tokens=600, prefer=llm.WRITER_MODEL)
     log.info("Search-led topic: %s (targets '%s')", r.get("topic"), r.get("search_phrase"))
     return r
 
@@ -553,6 +561,8 @@ Write:
   " | " and the subject/series, like this channel's most-viewed titles:
   {"; ".join(t for _, t in channel_videos()["winners"][:5]) or "What Is X? | How It Actually Works | Subject"}
   Honest, clear, may end with one fitting emoji. No clickbait that the video doesn't deliver.
+  NEVER invent numbers, percentages, salaries or statistics - only use a number that the
+  script states.
 - cover_text: 2-4 bold words for the thumbnail/title screen.
 - short_hook: one gripping sentence (max 12 words) for the vertical Short.
 - description: 1) two sentences that naturally contain the search phrase and close
