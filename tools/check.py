@@ -72,6 +72,28 @@ if t and u:
     check("Instagram allows posting Reels to this account", r.status_code == 200,
           "" if r.status_code == 200 else r.text[:300])
 
+# ---------- Daily video runs (a stuck channel shows up here first)
+print("=== Daily video runs")
+repo, gh = os.getenv("GITHUB_REPOSITORY"), os.getenv("GH_TOKEN")
+if repo and gh:
+    try:
+        r = httpx.get(f"https://api.github.com/repos/{repo}/actions/workflows/daily.yml/runs",
+                      params={"per_page": 30, "status": "completed"}, timeout=30,
+                      headers={"Authorization": f"Bearer {gh}", "Accept": "application/vnd.github+json"})
+        r.raise_for_status()
+        runs = [x for x in r.json()["workflow_runs"] if x["conclusion"] in ("success", "failure")]
+        streak = 0
+        for x in runs:  # newest first
+            if x["conclusion"] != "failure":
+                break
+            streak += 1
+        fails = sum(x["conclusion"] == "failure" for x in runs)
+        check("Daily video is not stuck (fewer than 3 failures in a row)", streak < 3,
+              f"{streak} failed runs in a row - open the latest failed run for the error")
+        print(f"  last {len(runs)} runs: {fails} failed")
+    except Exception as e:
+        print("Could not read the Daily video runs:", str(e)[:200])
+
 # ---------- Summary
 failed = [n for n, ok, _ in results if not ok]
 print("\n========== SUMMARY ==========")
