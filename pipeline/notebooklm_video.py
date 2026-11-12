@@ -101,9 +101,7 @@ async def make_short_video(client, notebook_id: str, out_path: Path, language: s
                     "surprising fact, show one clear animated insight, and leave viewers "
                     "curious for the full explanation. "
                     + (f'Start with: "{hook}". ' if hook else "")
-                    + (f'End by saying clearly: "Watch the full video: {title} - tap the link below." '
-                       if title else
-                       "End by telling viewers the full video is on the channel."))
+                    + 'End by saying clearly: "Watch the full video on our channel."')
     status = await client.artifacts.generate_video(
         notebook_id, language=language, instructions=instructions,
         video_format=VideoFormat.SHORT)
