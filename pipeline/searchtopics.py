@@ -282,6 +282,33 @@ def already_made(pick: dict | str) -> str | None:
     return None
 
 
+def ai_repeat(pick: dict) -> str | None:
+    """Second repeat check by meaning (word matching misses "How a Diode Works" vs "What Is a
+    Diode?"). Returns the existing title it repeats, or None. Never blocks on errors."""
+    titles = list(dict.fromkeys(channel_videos()["titles"] + _made_before()))[:250]
+    if not titles:
+        return None
+    try:
+        r = llm.chat_json(f"""New video idea: "{pick.get("topic")}" (search: "{pick.get("search_phrase")}")
+
+Existing videos on our channel:
+{chr(10).join("- " + t[:90] for t in titles)}
+
+Would a viewer see the new video as basically the SAME video as one that exists (same main
+subject or tool, same purpose) - even if the wording, angle or title is different? A clearly
+different subtopic (e.g. half-wave vs bridge rectifier, Nmap scan types vs Nmap install) is NOT
+the same.
+
+Return JSON: {{"same_as": "<the existing title, copied exactly>" or null}}""",
+                          "You are a strict YouTube channel editor who prevents repeated videos.",
+                          temperature=0.0, max_tokens=300)
+        same = r.get("same_as")
+        return same if same and str(same).lower() not in ("null", "none", "") else None
+    except Exception as exc:
+        log.warning("AI repeat check failed, continuing: %s", exc)
+        return None
+
+
 def _low_demand() -> list[str]:
     return json.loads(LOW_DEMAND_FILE.read_text()) if LOW_DEMAND_FILE.exists() else []
 
@@ -296,7 +323,7 @@ def pick_topic() -> dict:
     rejected: list[str] = []
     for attempt in range(6):
         r = _pick_once(rejected + _low_demand()[-60:], attempt)
-        dup = already_made(r)
+        dup = already_made(r) or ai_repeat(r)
         if dup:
             log.info("Skipping '%s': the channel already has '%s'", r.get("topic"), dup)
             rejected.append(r.get("search_phrase") or r.get("topic", ""))
