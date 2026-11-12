@@ -469,7 +469,10 @@ the narration must be the real steps:
     3. Keep tension: every 60-90 seconds tease the next part ("but here's the part most people
        get wrong...").
     4. Common mistakes / myths, and pro tips.
-    5. Short recap, then one line inviting viewers to subscribe for the next video.
+    5. Short recap. Then ask viewers ONE specific, easy question about this topic to answer in
+       the comments (e.g. "Which of these three commands do you use most? Tell me in the
+       comments." or "Did you know about this before? Comment yes or no."). Then one line
+       inviting viewers to subscribe for the next video.
 
     Rules: 100% accurate; if unsure, leave it out. Whenever you describe a circuit or setup,
 say exactly how each part is connected (which way a diode or capacitor faces, which pin goes
