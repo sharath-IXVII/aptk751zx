@@ -143,7 +143,7 @@ async def main(force: bool) -> None:
                 from pipeline.notebooklm_video import make_short_video
                 await make_short_video(client, job["notebook_id"], short_raw,
                                        os.getenv("VIDEO_LANGUAGE", "en"),
-                                       meta.get("short_hook", ""))
+                                       meta.get("short_hook", ""), meta.get("title", ""))
             except Exception as exc:
                 log.warning("NotebookLM Short failed (%s) - will cut the Short from the episode", exc)
                 short_raw.unlink(missing_ok=True)

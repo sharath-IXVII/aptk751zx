@@ -95,13 +95,15 @@ async def finish_video(client, job: dict, out_path: Path) -> Path:
 
 
 async def make_short_video(client, notebook_id: str, out_path: Path, language: str = "en",
-                           hook: str = "") -> Path:
+                           hook: str = "", title: str = "") -> Path:
     """NotebookLM's own vertical Short (720x1280) from the same notebook as the episode."""
     instructions = ("A gripping vertical short that teases this video: open with its most "
                     "surprising fact, show one clear animated insight, and leave viewers "
                     "curious for the full explanation. "
                     + (f'Start with: "{hook}". ' if hook else "")
-                    + "End by telling viewers the full video is on the channel.")
+                    + (f'End by saying clearly: "Watch the full video: {title} - search it on YouTube '
+                       f'or tap the channel name." ' if title else
+                       "End by telling viewers the full video is on the channel."))
     status = await client.artifacts.generate_video(
         notebook_id, language=language, instructions=instructions,
         video_format=VideoFormat.SHORT)
