@@ -173,8 +173,17 @@ def channel_videos() -> dict:
     return _CHANNEL
 
 
+def _stem(w: str) -> str:
+    """passwords/password, cracks/cracker/cracking, works/working -> the same word."""
+    for end in ("ing", "ers", "er", "es", "s"):
+        if len(w) > len(end) + 3 and w.endswith(end):
+            return w[: -len(end)]
+    return w
+
+
 def _words(s: str) -> set[str]:
-    return {w for w in re.findall(r"[a-z0-9+#]+", s.lower()) if len(w) > 2}
+    s = re.sub(r"(?<=[a-z0-9])-(?=[a-z0-9])", "", s.lower())  # wi-fi -> wifi, aircrack-ng -> aircrackng
+    return {_stem(w) for w in re.findall(r"[a-z0-9+#]+", s) if len(w) > 2}
 
 
 _CANDS: list = []
@@ -268,11 +277,15 @@ _STOP = {"the", "and", "for", "how", "what", "why", "with", "your", "you", "are"
          "2024", "2025", "2026", "part", "basics", "introduction", "learn", "real", "method",
          "install", "use", "using", "working", "principle", "actually", "really", "explain",
          "what", "does", "about", "inside", "behind", "secret", "secrets", "truth", "ever",
-         "minutes", "need", "know", "everything", "made", "easy", "free", "today", "new"}
+         "minutes", "need", "know", "everything", "made", "easy", "free", "today", "new",
+         # words in almost every title of a channel say nothing about the topic
+         "kali", "linux", "ethical", "hacking", "hacker", "hackers", "cybersecurity",
+         "electronics", "electronic", "circuit", "circuits", "engineering", "programming",
+         "coding", "computer", "science", "history", "ancient"}
 
 
 def _key(s: str) -> set[str]:
-    return _words(s) - _STOP
+    return _words(s) - {_stem(w) for w in _STOP}
 
 
 def already_made(pick: dict | str) -> str | None:
@@ -287,7 +300,8 @@ def already_made(pick: dict | str) -> str | None:
     for old in _made_before() + channel_videos()["titles"]:
         o = _key(old)
         overlap = len(new & o)
-        if overlap >= 2 and overlap * 2 > len(new) and overlap * 2 > len(o):
+        same_core = bool(o) and new == o  # e.g. both are just "hashcat" or just "diode"
+        if same_core or (overlap >= 2 and overlap * 2 > len(new) and overlap * 2 > len(o)):
             return old
     return None
 
