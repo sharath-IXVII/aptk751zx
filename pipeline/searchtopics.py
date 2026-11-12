@@ -321,9 +321,13 @@ def pick_topic() -> dict:
     # own that search and a small channel never shows up (python tutorial: 8M -> we got 4 views).
     cap = int(os.getenv("MAX_SEARCH_VIEWS") or 1000000)
     rejected: list[str] = []
+    ai_rejects = 0
     for attempt in range(6):
         r = _pick_once(rejected + _low_demand()[-60:], attempt)
-        dup = already_made(r) or ai_repeat(r)
+        dup = already_made(r)
+        if not dup and ai_rejects < 3:  # cap, so an over-strict AI can never stall the channel
+            dup = ai_repeat(r)
+            ai_rejects += bool(dup)
         if dup:
             log.info("Skipping '%s': the channel already has '%s'", r.get("topic"), dup)
             rejected.append(r.get("search_phrase") or r.get("topic", ""))
