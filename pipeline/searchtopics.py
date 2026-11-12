@@ -195,7 +195,17 @@ def candidates() -> list[tuple[str, float]]:
         if len(w) < 2 or any(len(w & d) >= max(2, len(w) - 1) for d in done):
             continue  # too vague, or already made
         out.append((phrase, score))
-    _CANDS.extend(sorted(out, key=lambda x: -x[1])[:60])
+    out = [o for o in out if not already_made(o[0])]
+    if len(out) < 25:  # pool used up: go deeper into autocomplete (seed + a letter)
+        import random
+        letters = random.sample("abcdefghiklmnoprstuvw", 4)
+        for seed in random.sample(_domain()["seeds"], min(12, len(_domain()["seeds"]))):
+            for ch in letters:
+                for rank, phrase in enumerate(search_suggestions(f"{seed} {ch}", limit=6)):
+                    if phrase not in dict(out) and len(_words(phrase)) >= 2 and not already_made(phrase):
+                        out.append((phrase, 3 - rank * 0.3))
+        log.info("Topic pool was small - added deeper search suggestions (%d phrases now)", len(out))
+    _CANDS.extend(sorted(out, key=lambda x: -x[1])[:80])
     return _CANDS
 
 
@@ -367,7 +377,7 @@ def trending_today() -> list[str]:
 def _pick_once(avoid: list[str], attempt: int = 0) -> dict:
     cands = [c for c in candidates() if c[0] not in avoid and not already_made(c[0])]
     d = _domain()
-    listing = "\n".join(f"- {p} (score {s:.0f})" for p, s in cands) or (
+    listing = "\n".join(f"{i}. {p} (score {s:.0f})" for i, (p, s) in enumerate(cands)) or (
         "- (live data unavailable: use your knowledge of the most-searched YouTube topics in this field)")
     r = llm.chat_json(f"""Our channel covers {d["about"]}. Goal: grow fast and reach YouTube
 monetization (watch hours). These are phrases people are typing into YouTube search right
@@ -398,9 +408,23 @@ that giant channels own. Beginner-friendly but with
 depth, evergreen enough to get views for months, and something a 8-10 minute animated
 explainer can cover really well. {d["safety"]}
 
-Return JSON: {{"topic": "<the video topic in plain words>", "search_phrase": "<the exact
-search phrase it targets>", "angle": "<the hook/angle that makes people click and stay>"}}""",
+{"You MUST choose one of the NUMBERED search phrases above - no other topic." if cands else ""}
+Return JSON: {{"choice": <number of the chosen search phrase>, "topic": "<the video topic in
+plain words>", "search_phrase": "<that search phrase>", "angle": "<the hook/angle that makes
+people click and stay>"}}""",
                       SYSTEM, temperature=min(1.0, 0.5 + 0.12 * attempt), max_tokens=600, prefer=llm.WRITER_MODEL)
+    if cands:  # enforced in code: the AI may only pick from the fresh, unused list
+        try:
+            n = int(r.get("choice"))
+        except (TypeError, ValueError):
+            n = -1
+        if not 0 <= n < len(cands):
+            n = min(attempt, len(cands) - 1)
+            r = {"topic": cands[n][0], "angle": ""}
+            log.info("AI did not choose from the list - taking '%s'", cands[n][0])
+        r["search_phrase"] = cands[n][0]
+        if already_made(r.get("topic", "")):  # reworded into an old topic: use the phrase itself
+            r["topic"] = cands[n][0]
     log.info("Search-led topic: %s (targets '%s')", r.get("topic"), r.get("search_phrase"))
     return r
 
