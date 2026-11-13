@@ -58,7 +58,16 @@ DOMAIN = {
                    '"links": [["a", "b"]], "packets": [{"from": "a", "to": "b", "label": "SYN :80", "bad": true, "blocked": false}]} '
                    '(x 150-1450, y 150-650)',
     }},
-    "ent": {"theme": "ent", "name": "ENT", "about": "today's big news explained (markets, economy, tech, science, world events)", "scenes": {}},
+    "ent": {"theme": "ent", "name": "ENT NEWS", "about": "today's big news, told as the story of what actually happened (markets, economy, tech, science, world events)",
+            "captions": "bold", "story": True, "scenes": {
+        "story": 'a moment of the story drawn with ink stick figures (generic roles, never a real person\'s likeness): {"figures": [{"pose": '
+                 '"stand|walk|point|shock|think|phone|sit|cheer|sad", "label": "Trader", "flip": false, "prop": "briefcase|mic"}] (1-3 figures), '
+                 '"bubble": {"who": 0, "text": "max 6 words"}, "prop": "desk|screen|podium|city|rocket", "hud": HUD}',
+        "phone": 'phone screen with news alerts / messages / market app: {"app": "News", "items": [{"from": "BREAKING", "text": "...", "alert": true}], "hud": HUD}',
+        "chart": 'a number drawn live with a counter (prices, index, rate) - ONLY real numbers from the facts: {"label": "SENSEX", '
+                 '"points": [82000, 81500, 80950], "unit": "" or "%", "bad": "down" or "up" (which direction is bad news), "note": "...", "hud": HUD}',
+        "stamp": 'big rubber-stamp word: {"text": "BREAKING" | "WHY?" | "CONFIRMED" | "WHAT NEXT?", "sub": "one line", "hud": HUD}',
+        }},
 }
 
 
@@ -67,7 +76,11 @@ def _domain() -> dict:
 
 
 def _catalog(d: dict) -> str:
-    return "\n".join(f"- {k}: {v}" for k, v in {**COMMON, **d["scenes"]}.items())
+    c = "\n".join(f"- {k}: {v}" for k, v in {**COMMON, **d["scenes"]}.items())
+    if d.get("story"):
+        c += ('\nHUD = the live news corner: {"date": "12 NOV 2026", "time": "9:15 AM", "place": "MUMBAI", '
+              '"stats": ["SENSEX 80,950 ▼"]} - real date/time/place/number from the facts; put it on story/phone/chart/stamp scenes.')
+    return c
 
 
 def write_episode(script: dict, meta: dict) -> dict:
@@ -75,6 +88,7 @@ def write_episode(script: dict, meta: dict) -> dict:
     d = _domain()
     ep = llm.chat_json(f"""You are the lead teacher and animation director of a YouTube channel about {d["about"]}.
 Viewers are beginners who know nothing about this topic. Turn this narration into an animated LESSON.
+{"For this NEWS channel: tell it as the STORY of what actually happened, in time order, like a gripping animated story - who, where, when (show it in the HUD), what people saw on their phones, how the numbers moved, then WHY, then what it means and what happens next. Start with a 'stamp' BREAKING scene. Mostly use story/phone/chart/stamp scenes. Only real facts." if d.get("story") else ""}
 
 TITLE: {meta.get("title")}
 NARRATION:
@@ -104,11 +118,13 @@ Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...",
     ep.update({"title": meta.get("title", script.get("title")), "style": "lab", "theme": d["theme"],
                "badge": f"GETYR · {d['name']}", "tag": f"GETYR · {d['name']}", "engine": "kokoro",
                "kokoro_voice": os.getenv("STUDIO_VOICE") or "af_heart", "speed": float(os.getenv("STUDIO_SPEED") or 1.05)})
+    if d.get("captions"):
+        ep["captions"] = d["captions"]
     return ep
 
 
 # ------------------------------------------------------------------ checks done in code
-REQUIRED = {"lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
+REQUIRED = {"story": ["figures"], "phone": ["items"], "chart": ["points"], "stamp": ["text"], "lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
             "lab-outro": ["title"], "capacitor": [], "rectifier": [], "wave": [], "code": ["code", "steps"],
             "array": ["values", "steps"], "terminal": ["lines"], "network": ["nodes", "links", "packets"]}
 
@@ -187,7 +203,7 @@ def check_episode(ep: dict) -> list[str]:
             if any(a not in ids or b not in ids for a, b in s.get("links", [])) or \
                any(p.get("from") not in ids or p.get("to") not in ids for p in s.get("packets", [])):
                 problems.append(f"scene {i}: network refers to a node that does not exist")
-    if scenes and scenes[0].get("type") != "lab-title":
+    if scenes and scenes[0].get("type") not in ("lab-title", "stamp"):
         problems.append("first scene must be lab-title")
     if sum(s.get("type") == "question" for s in scenes) < 2:
         problems.append("needs at least 2 question scenes")
@@ -232,7 +248,7 @@ Use "reject" only if the topic cannot be taught correctly.""",
             raise RuntimeError("Reviewer rejected the lesson: " + "; ".join(r.get("issues", [])[:3]))
         fixed = r.get("lesson")
         if isinstance(fixed, dict) and len(fixed.get("scenes") or []) >= 12:
-            keep = {k: ep[k] for k in ("title", "style", "theme", "badge", "tag", "engine", "kokoro_voice", "speed") if k in ep}
+            keep = {k: ep[k] for k in ("title", "style", "theme", "badge", "tag", "engine", "kokoro_voice", "speed", "captions") if k in ep}
             ep = {**fixed, **keep}
         if r.get("verdict") == "ok" and not check_episode(ep):
             log.info("Reviewer %d: lesson approved", rnd)

@@ -5,6 +5,7 @@ import { Title, Ship, MapScene, Counter, Bars, Facts, Clock, Timeline, Quote, Ou
 import { C, SERIF, SANS, fade } from "./theme";
 import { LabFrame, LAB_SCENES, setTheme } from "./lab";
 import { DOMAIN_SCENES } from "./domains";
+import { STORY_SCENES } from "./story";
 import sample from "../episodes/titanic.json";
 
 const FPS = 30;
@@ -24,7 +25,7 @@ const Film: React.FC<{ ep: any; pick?: number[]; hook?: string; short?: boolean 
     <AbsoluteFill style={{ background: C.bg0 }}>
       {hook && <Sequence durationInFrames={75}><Hook text={hook} tag={ep.tag} /></Sequence>}
       {scenes.map((s: any) => {
-        const d = framesOf(s); const from = at; at += d; const Comp = LAB_SCENES[s.type] || DOMAIN_SCENES[s.type] || SCENES[s.type];
+        const d = framesOf(s); const from = at; at += d; const Comp = LAB_SCENES[s.type] || DOMAIN_SCENES[s.type] || STORY_SCENES[s.type] || SCENES[s.type];
         return (
           <Sequence key={s.idx} from={from} durationInFrames={d}>
             {lab ? <LabFrame caption={s.narration} dur={d} scene={s} ep={ep} progress={(from + d) / all}><Comp {...s} dur={d} /></LabFrame>

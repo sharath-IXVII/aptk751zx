@@ -83,7 +83,19 @@ export const LabFrame: React.FC<{ children: React.ReactNode; caption?: string; d
       </div>
       {/* lesson progress */}
       <div style={{ position: "absolute", left: 0, bottom: 0, height: 5 * u, width: `${progress * 100}%`, background: L.cyan, opacity: 0.8 }} />
-      {current && (
+      {ep?.captions === "bold" && caption && (() => {
+        // big 2-3 word captions, one chunk at a time, the key word in colour (timed by letters)
+        const words = caption.replace(/\s+/g, " ").trim().split(" ");
+        const chunks: string[][] = []; for (let i = 0; i < words.length; i += 3) chunks.push(words.slice(i, i + 3));
+        const lens = chunks.map((c) => c.join(" ").length + 4); const tot = lens.reduce((a, b) => a + b, 0);
+        let a2 = 0, k = chunks.length - 1; for (let i = 0; i < chunks.length; i++) { if (f < ((a2 + lens[i]) / tot) * dur) { k = i; break; } a2 += lens[i]; }
+        const ch = chunks[k] || []; const key = ch.reduce((b, w, i) => (w.replace(/\W/g, "").length > (ch[b] || "").replace(/\W/g, "").length ? i : b), 0);
+        return <div style={{ position: "absolute", left: "5%", right: "5%", bottom: tall ? "16%" : "9%", textAlign: "center", fontFamily: SANS, fontWeight: 900,
+          fontSize: 76 * u * (tall ? 1.15 : 1), letterSpacing: -1 * u, lineHeight: 1.05, textTransform: "uppercase", opacity: out }}>
+          {ch.map((w, i) => <span key={i} style={{ color: i === key ? L.red : L.text, WebkitTextStroke: `${2 * u}px ${L.bg0}`, paintOrder: "stroke" }}>{w.replace(/[.,!?;:]$/, "")} </span>)}
+        </div>;
+      })()}
+      {current && ep?.captions !== "bold" && (
         <div style={{ position: "absolute", left: "7%", right: "7%", bottom: tall ? "9%" : "5%", textAlign: "center", fontFamily: SANS,
           fontSize: 30 * u * (tall ? 1.25 : 1), fontWeight: tall ? 700 : 500, lineHeight: 1.35, color: L.text,
           textShadow: L.shadow, opacity: out }}>
