@@ -15,6 +15,7 @@ const framesOf = (s: any) => s.frames || Math.round((s.narration.split(" ").leng
 
 const shortScenes = (ep: any) => (ep.short_scenes || []).map((s: any, i: number) => ({ ...s, idx: `sh${i}` }));
 const Film: React.FC<{ ep: any; pick?: number[]; hook?: string; short?: boolean }> = ({ ep, pick, hook, short }) => {
+  if (short && !ep.short_scenes) { pick = ep.short; hook = ep.short_hook; }  // never a sample's leftovers
   const scenes = short && ep.short_scenes ? shortScenes(ep)
     : (pick ? pick.map((i) => ({ ...ep.scenes[i], idx: i })) : ep.scenes.map((s: any, i: number) => ({ ...s, idx: i })));
   if (short && ep.short_scenes) hook = undefined;  // a written Short opens on its own hook scene
@@ -67,7 +68,7 @@ export const Root: React.FC = () => (
     <Composition id="Explainer" component={Film as any} fps={FPS} width={1920} height={1080} durationInFrames={total(sample)}
       defaultProps={{ ep: sample }} calculateMetadata={({ props }: any) => ({ durationInFrames: total(props.ep) })} />
     <Composition id="Short" component={Film as any} fps={FPS} width={1080} height={1920} durationInFrames={total(sample, sample.short, true)}
-      defaultProps={{ ep: sample, pick: sample.short, hook: sample.short_hook }}
-      calculateMetadata={({ props }: any) => ({ durationInFrames: total(props.ep, props.pick, !props.short, props.short) })} />
+      defaultProps={{ ep: sample, short: true }}
+      calculateMetadata={({ props }: any) => ({ durationInFrames: total(props.ep, props.ep.short, !props.ep.short_scenes, true) })} />
   </>
 );

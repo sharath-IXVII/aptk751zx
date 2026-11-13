@@ -8,10 +8,21 @@ FPS = 30
 def dur(f):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(f)],
                                 capture_output=True, text=True, check=True).stdout)
-if not ep.get("short_scenes") and ep.get("short"):
-    ep["short_scenes"] = [dict(ep["scenes"][i]) for i in ep["short"] if 0 <= i < len(ep["scenes"])] + [
-        {"type": "lab-outro" if ep.get("style") == "lab" else "outro", "title": (ep.get("title") or "").upper()[:40], "lines": [],
-         "cta": "Full video on our channel", "narration": "For the detailed explanation, watch the full video on our channel."}]
+import re as _re
+if not ep.get("short_scenes"):  # fallback: first sentences of the picked scenes, about 60 seconds
+    picked, words = [], 0
+    for i in (ep.get("short") or [0, 1, 2, 3]):
+        if 0 <= i < len(ep["scenes"]) and ep["scenes"][i].get("type") != "question":
+            sc = dict(ep["scenes"][i]); first = " ".join(_re.findall(r"[^.!?]+[.!?]", sc.get("narration", ""))[:2]) or sc.get("narration", "")
+            sc["narration"] = first; words += len(first.split()); picked.append(sc)
+            if words > 130: break
+    ep["short_scenes"] = picked
+if ep.get("short_scenes"):
+    if ep["short_scenes"][-1].get("type") not in ("lab-outro", "outro"):
+        ep["short_scenes"].append({"type": "lab-outro" if ep.get("style") == "lab" else "outro", "title": (ep.get("title") or "").upper()[:40],
+            "lines": [], "cta": "Full video on our channel", "narration": "For the detailed explanation, watch the full video on our channel."})
+    if ep.get("style") == "lab":  # first frame = bold cover (Shorts thumbnail / Reel cover)
+        ep["short_scenes"].insert(0, {"type": "cover", "cover": ep.get("cover") or ep.get("title", ""), "cover_highlight": ep.get("cover_highlight", ""), "narration": ""})
 jobs = [(f"s{i}", s) for i, s in enumerate(ep["scenes"])] + [(f"sh{i}", s) for i, s in enumerate(ep.get("short_scenes", []))]
 KOKORO = None
 def kokoro_say(text, voice, speed, wav):
@@ -27,6 +38,8 @@ def kokoro_say(text, voice, speed, wav):
 engine = ep.get("engine", "kokoro")
 for key, s in jobs:
     i = key
+    if s.get("type") == "cover":
+        s["frames"] = 24; s["audio"] = False; continue  # silent 0.8 s cover
     f = pub / "audio" / f"{key}.mp3"
     if engine == "kokoro":
         wav = f.with_suffix(".wav")
@@ -45,6 +58,10 @@ for key, s in jobs:
         pad = 3.4  # silent on-screen 3-2-1 after the question is asked
     s["frames"] = int((d + pad) * FPS)
     print(f"scene {key:5s} {s['type']:9s} {d:5.1f}s")
+# keep the Short at 60 seconds or less: drop middle scenes (never the hook, cover or ending)
+sh = ep.get("short_scenes") or []
+while len(sh) > 4 and sum(x["frames"] for x in sh) / FPS > 60:
+    sh.pop(len(sh) - 2)
 total = sum(s["frames"] for s in ep["scenes"]) / FPS
 json.dump({"ep": ep}, open(props, "w"))
 json.dump({"ep": ep, "short": True}, open(props.replace(".json", "_short.json"), "w"))

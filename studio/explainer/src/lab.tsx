@@ -74,7 +74,7 @@ export const LabFrame: React.FC<{ children: React.ReactNode; caption?: string; d
       {L.pattern === "scan" && <AbsoluteFill style={{ backgroundImage: `repeating-linear-gradient(0deg, ${L.grid} 0px, ${L.grid} 1px, transparent 2px, transparent ${4 * u}px)` }}>
         <div style={{ position: "absolute", left: 0, right: 0, top: `${(f * 0.6) % 120 - 10}%`, height: "8%", background: `linear-gradient(transparent, ${L.grid2}, transparent)` }} /></AbsoluteFill>}
       {L.pattern === "grain" && <AbsoluteFill style={{ opacity: 0.08, mixBlendMode: "screen" }}><svg width="100%" height="100%"><filter id="lg"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={f % 50} /></filter><rect width="100%" height="100%" filter="url(#lg)" /></svg></AbsoluteFill>}
-      <AbsoluteFill style={{ opacity: Math.min(fade(f, 0, 8), out) }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ opacity: scene?.type === "cover" ? 1 : Math.min(fade(f, 0, 8), out) }}>{children}</AbsoluteFill>
       {/* channel badge + chapter */}
       <div style={{ position: "absolute", left: 40 * u, top: 34 * u, display: "flex", alignItems: "center", gap: 14 * u, fontFamily: MONO }}>
         <div style={{ border: `${2 * u}px solid ${L.cyan}`, color: L.cyan, fontSize: 18 * u, fontWeight: 700, padding: `${4 * u}px ${10 * u}px`, letterSpacing: 2 * u }}>
@@ -422,7 +422,25 @@ export const OutroLab: React.FC<any> = ({ title, lines = [], cta = "Subscribe fo
   );
 };
 
+/** First frame of a Short: the bold title (works as the Shorts thumbnail / Reel cover). */
+export const CoverLab: React.FC<any> = ({ cover = "", cover_highlight = "" }) => {
+  const { u } = useU();
+  const words: string[] = String(cover).toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 5);
+  const hi = String(cover_highlight).toUpperCase().replace(/\W/g, "");
+  let key = words.findIndex((w) => hi && w.replace(/\W/g, "") === hi);
+  if (key < 0) key = words.reduce((b, w, i) => (w.length > words[b].length ? i : b), 0);
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", padding: "0 9%" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 118 * u, lineHeight: 0.98, letterSpacing: -3 * u, color: L.text }}>
+        {words.map((w, i) => <div key={i} style={{ color: i === key ? L.amber : L.text }}>{w}</div>)}
+      </div>
+      <div style={{ marginTop: 40 * u, width: 200 * u, height: 16 * u, background: L.amber, borderRadius: 8 * u }} />
+    </AbsoluteFill>
+  );
+};
+
 export const LAB_SCENES: Record<string, React.FC<any>> = {
+  cover: CoverLab,
   "lab-title": TitleLab, rectifier: RectifierLab, wave: WaveLab, capacitor: CapLab, question: QuestionLab,
   formula: FormulaLab, steps: StepsLab, "lab-outro": OutroLab,
 };
