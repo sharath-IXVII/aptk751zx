@@ -89,7 +89,7 @@ jobs:
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
           SERIES_CHARACTER: ${{ vars.SERIES_CHARACTER }}
-          CONTENT_MODE: search   # informative videos on what people search (was: stories)
+          CONTENT_MODE: news   # ENT = news explainer: today's biggest story, explained
           MIN_SEARCH_VIEWS: ${{ vars.MIN_SEARCH_VIEWS }}
           MAX_SEARCH_VIEWS: ${{ vars.MAX_SEARCH_VIEWS }}
           WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}

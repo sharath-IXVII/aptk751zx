@@ -231,6 +231,11 @@ def create_script() -> dict:
     """Part 2: the next episode. CONTENT_MODE: stories (default, twist stories), series
     (Words That Shape You) or trending."""
     mode = os.getenv("CONTENT_MODE") or "search"
+    if mode == "news":  # ENT: explain today's biggest story
+        from pipeline import news
+        r = news.create_script([h.get("topic", "") for h in load_history()])
+        r["research"] = {"headlines": [x["title"] for x in r.get("sources", [])], "query": r["search_phrase"]}
+        return r
     if mode == "search":  # growth mode: what people search for right now
         from pipeline import searchtopics
         return searchtopics.create_script()

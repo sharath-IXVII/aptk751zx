@@ -58,7 +58,7 @@ DOMAIN = {
                    '"links": [["a", "b"]], "packets": [{"from": "a", "to": "b", "label": "SYN :80", "bad": true, "blocked": false}]} '
                    '(x 150-1450, y 150-650)',
     }},
-    "ent": {"theme": "ent", "name": "ENT", "about": "history, science, space, mysteries and how famous things were built", "scenes": {}},
+    "ent": {"theme": "ent", "name": "ENT", "about": "today's big news explained (markets, economy, tech, science, world events)", "scenes": {}},
 }
 
 
@@ -175,7 +175,7 @@ lesson for complete beginners BEFORE it is published. Check EVERY scene:
 - the explanation is deep and clear enough for a beginner, with no missing steps;
 - each question is answered correctly by the next scene;
 - only legal, ethical, defensive content; no invented statistics.
-{lessons}
+{lessons[:14000]}
 Problems already found automatically: {"; ".join(problems) or "none"}
 
 Allowed scene types and fields:
@@ -232,6 +232,8 @@ def render(ep: dict, out_dir: Path) -> tuple[Path, Path]:
 
 def make(script: dict, meta: dict, out_dir: Path, lessons: str = "") -> tuple[Path, Path, dict]:
     ep = write_episode(script, meta)
+    if script.get("facts"):  # news: every claim must match today's reporting
+        lessons += "\nSOURCE FACTS from today's reporting - every claim in the lesson must match these; remove anything not supported:\n" + script["facts"][:12000]
     ep = review_episode(ep, lessons)
     final, short = render(ep, out_dir)
     return final, short, ep
