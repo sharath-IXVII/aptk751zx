@@ -50,9 +50,20 @@ const total = (ep: any, pick?: number[], hook?: boolean, short?: boolean) =>
   short && ep.short_scenes ? ep.short_scenes.reduce((a: number, s: any) => a + framesOf(s), 0)
   : (pick ? pick.map((i) => ep.scenes[i]) : ep.scenes).reduce((a: number, s: any) => a + framesOf(s), hook ? 75 : 0);
 
+// the most visual scene of the lesson becomes the thumbnail background
+const VISUAL = ["rectifier", "code", "network", "story", "chart", "array", "terminal", "capacitor", "wave", "phone", "flow", "formula"];
+const Thumb: React.FC<{ ep: any }> = ({ ep }) => {
+  setTheme(ep.theme);
+  const pick = (ep.scenes || []).map((s: any, i: number) => [VISUAL.indexOf(s.type), i]).filter(([r]: number[]) => r >= 0)
+    .sort((a: number[], b: number[]) => a[0] - b[0] || a[1] - b[1])[0];
+  const scene = pick ? { ...ep.scenes[pick[1]], frames: 300 } : null;
+  const Scene = scene ? (LAB_SCENES[scene.type] || DOMAIN_SCENES[scene.type] || STORY_SCENES[scene.type]) : undefined;
+  return <Sequence from={-200}><ThumbLab ep={ep} Scene={Scene} scene={scene} /></Sequence>;
+};
+
 export const Root: React.FC = () => (
   <>
-    <Composition id="Thumbnail" component={ThumbLab as any} fps={FPS} width={1280} height={720} durationInFrames={1} defaultProps={{ ep: sample }} />
+    <Composition id="Thumbnail" component={Thumb as any} fps={FPS} width={1280} height={720} durationInFrames={1} defaultProps={{ ep: sample }} />
     <Composition id="Explainer" component={Film as any} fps={FPS} width={1920} height={1080} durationInFrames={total(sample)}
       defaultProps={{ ep: sample }} calculateMetadata={({ props }: any) => ({ durationInFrames: total(props.ep) })} />
     <Composition id="Short" component={Film as any} fps={FPS} width={1080} height={1920} durationInFrames={total(sample, sample.short, true)}

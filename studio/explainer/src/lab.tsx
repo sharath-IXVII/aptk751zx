@@ -436,38 +436,23 @@ const ICONS: Record<string, (c: string) => React.ReactNode> = {
   ent: (c) => <g><rect x={30} y={90} width={320} height={130} rx={14} fill="none" stroke={c} strokeWidth={14} transform="rotate(-8 190 155)" />
     <text x={190} y={180} textAnchor="middle" fill={c} fontFamily="Inter, sans-serif" fontWeight={900} fontSize={64} transform="rotate(-8 190 155)">NEWS</text></g>,
 };
-export const ThumbLab: React.FC<{ ep: any }> = ({ ep }) => {
+/** Thumbnail = a real frame of the lesson's most visual scene + the clean bold title on top. */
+export const ThumbLab: React.FC<{ ep: any; Scene?: React.FC<any>; scene?: any }> = ({ ep, Scene, scene }) => {
   setTheme(ep.theme);
-  const words: string[] = String(ep.cover || ep.title || "").toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 4);
+  const words: string[] = String(ep.cover || ep.title || "").toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 5);
   const hi = String(ep.cover_highlight || "").toUpperCase().replace(/\W/g, "");
   let key = words.findIndex((w) => hi && w.replace(/\W/g, "") === hi);
   if (key < 0) key = words.reduce((b, w, i) => (w.length > words[b].length ? i : b), 0);
-  const theme = (ep.theme || "ece").split("-")[0];
-  const rest = words.filter((_, i) => i !== key); const kw = words[key] || "";
-  const tag = ({ ece: "EXPLAINED", cse: "FULL GUIDE", cyber: "MUST KNOW", ent: "BREAKING" } as any)[theme] || "EXPLAINED";
-  const big = Math.min(190, Math.floor(600 / (Math.max(4, kw.length) * 0.66)));
-  const small = Math.min(92, Math.floor(660 / (Math.max(8, Math.max(words.slice(0, key).join(" ").length, words.slice(key + 1).join(" ").length)) * 0.55)));
+  const len = words.join(" ").length; const fs = len > 22 ? 96 : len > 16 ? 112 : 136;
   return (
-    <AbsoluteFill style={{ background: L.bg0, overflow: "hidden" }}>
-      {/* bold accent panel on the right with a glowing icon */}
-      <div style={{ position: "absolute", right: -140, top: -120, width: 760, height: 960, background: `linear-gradient(160deg, ${L.cyan}, ${L.amber})`,
-        transform: "rotate(12deg)", borderRadius: 60 }} />
-      <div style={{ position: "absolute", right: 40, top: 160, width: 400, height: 400, borderRadius: "50%", background: "rgba(255,255,255,0.18)",
-        boxShadow: "0 0 120px rgba(255,255,255,0.5)" }} />
-      <svg viewBox="0 0 380 340" width={330} height={295} style={{ position: "absolute", right: 70, top: 210, overflow: "visible", filter: "drop-shadow(0 10px 30px rgba(0,0,0,0.35))" }}>
-        {ICONS[theme]?.("#ffffff")}</svg>
-      {/* corner sticker */}
-      <div style={{ position: "absolute", right: 40, bottom: 44, background: "#ffd23f", color: "#111", fontFamily: SANS, fontWeight: 900, fontSize: 44,
-        padding: "10px 26px", borderRadius: 14, transform: "rotate(-4deg)", boxShadow: "0 8px 0 rgba(0,0,0,0.25)" }}>{tag}</div>
-      {/* text block */}
-      <div style={{ position: "absolute", left: 56, top: 70, width: 680 }}>
-        <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 30, color: L.cyan, letterSpacing: 4, marginBottom: 18 }}>{ep.badge || L.badge}</div>
-        {rest.slice(0, Math.max(0, key)).length > 0 && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: small, lineHeight: 1, color: L.text, letterSpacing: -2 }}>
-          {words.slice(0, key).join(" ")}</div>}
-        <div style={{ display: "inline-block", marginTop: 14, background: L.text, color: L.bg0, fontFamily: SANS, fontWeight: 900, fontSize: big, lineHeight: 1,
-          padding: "10px 26px 18px", borderRadius: 18, transform: "rotate(-2deg)", boxShadow: `14px 14px 0 ${L.amber}` }}>{kw}</div>
-        {words.slice(key + 1).length > 0 && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: small, lineHeight: 1.05, color: L.text, letterSpacing: -2, marginTop: 22 }}>
-          {words.slice(key + 1).join(" ")}</div>}
+    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 60% 40%, ${L.bg1} 0%, ${L.bg0} 75%)`, overflow: "hidden" }}>
+      {Scene && scene && <AbsoluteFill style={{ transform: "translateX(24%) scale(0.74)", transformOrigin: "60% 50%" }}><Scene {...scene} dur={scene.frames || 300} /></AbsoluteFill>}
+      <AbsoluteFill style={{ background: `linear-gradient(90deg, ${L.bg0} 0%, ${L.bg0} 40%, ${L.bg0}00 56%)` }} />
+      <div style={{ position: "absolute", left: 56, top: 50, border: `5px solid ${L.cyan}`, color: L.cyan, fontFamily: MONO, fontWeight: 700, fontSize: 30, padding: "6px 18px", letterSpacing: 3 }}>
+        {ep.badge || L.badge}</div>
+      <div style={{ position: "absolute", left: 56, top: 150, width: 560, fontFamily: SANS, fontWeight: 900, fontSize: fs, lineHeight: 0.98, letterSpacing: -3, color: L.text }}>
+        {words.map((w, i) => <span key={i} style={{ color: i === key ? L.amber : L.text, display: "inline-block", marginRight: 22 }}>{w}</span>)}
+        <div style={{ marginTop: 26, width: 220, height: 16, background: L.amber, borderRadius: 8 }} />
       </div>
     </AbsoluteFill>
   );
