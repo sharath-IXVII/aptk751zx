@@ -24,6 +24,7 @@ from pipeline import llm
 log = logging.getLogger(__name__)
 STUDIO = Path(__file__).resolve().parent.parent / "studio" / "explainer"
 REVIEWER_MODEL = os.getenv("REVIEWER_MODEL") or "deepseek-ai/deepseek-v4.1-flash"
+QUIZ = (os.getenv("STUDIO_QUIZ") or "off") == "on"   # questions are switched off for now
 
 COMMON = {
     "lab-title": 'opening card: {"kicker": "GETYR · <CHANNEL>", "title": "SHORT TITLE IN CAPS", "subtitle": "one line"}',
@@ -32,6 +33,7 @@ COMMON = {
             '{"title": "...", "nodes": ["2-5 short labels"], "notes": ["one short sentence per node"]}',
     "formula": 'a formula with what each symbol means and a worked example: {"formula": "V = I × R", '
                '"terms": [["V", "voltage"], ...], "example": ["line 1", "line 2", "answer line"]}',
+    **({} if not QUIZ else {}),
     "question": 'PAUSE & THINK card with a 3-2-1 countdown; the answer is revealed automatically right after: '
                 '{"q": "...", "options": ["2-3 short options"], "answer": "<the correct option, copied exactly>", '
                 '"why": "<one sentence: why that is the answer>"}',
@@ -42,6 +44,9 @@ COMMON = {
     "screen": 'a software window for "how to" steps - the menu path is clicked, a dialog opens, options are ticked: '
               '{"app": "KiCad PCB Editor", "menu": ["File", "Edit", "View", "Place", "Tools"], "path": ["File", "Plot"], '
               '"dialog": {"title": "Plot", "checks": ["All copper layers", "Mirror bottom layer"], "button": "Plot"}, "result": "Gerber files created"}',
+    "installer": 'download + setup wizard, page by page: {"app": "KiCad 8", "site": "kicad.org/download", '
+                 '"pages": ["Welcome", "License agreement", "Choose location", "Installing", "Finish"], "notes": ["one short note per page"]}',
+    "terminal": 'terminal typing commands with their output: {"title": "terminal", "lines": [{"cmd": "..."}, {"out": "...", "good": true}]}',
     "diagram": 'labelled parts placed anywhere, joined by arrows, lit step by step (any process, structure or system): '
                '{"title": "...", "parts": [{"id": "a", "label": "Schematic", "x": 10, "y": 50, "shape": "box|circle|pill"}] (x/y 0-100, 2-6 parts), '
                '"arrows": [["a", "b", "label"]], "steps": [{"highlight": ["a"], "note": "short sentence"}]}',
@@ -94,6 +99,22 @@ def _catalog(d: dict) -> str:
     return c
 
 
+QUIZ_RULES = """- NO questions while teaching. First teach the whole concept completely. Then, at the very END (after the
+  recap, before the last "lab-outro"), add a "Quick quiz" chapter with 3-5 "question" scenes that test ONLY
+  what this lesson taught. Each question's narration must, in this order: read the question, explain in one
+  or two sentences what it is really asking, then read EVERY option and explain what each one means.
+  Exactly like:
+  {"type": "question", "chapter": "Quick quiz", "q": "<question about something taught in THIS lesson>",
+    "options": ["<option A>", "<option B>", "<option C>"], "answer": "<the correct option, copied exactly>",
+    "why": "<one or two sentences: why it is correct, and why the others are wrong>",
+    "narration": "Question two. <the question>. <what it is asking>. Option A, <option A> - <what that means>.
+    Option B, <option B> - <what that means>. Option C, <option C> - <what that means>. Which one is right?"}
+  Never say "pause and think" or count "three, two, one" - the countdown is shown silently. Never reveal
+  the answer in the question's narration: the answer scene ("The correct answer is ...") is added after it
+  automatically.
+"""
+
+
 def write_episode(script: dict, meta: dict) -> dict:
     """Turn the fact-checked narration into a lesson made of animated scenes (retries if the AI
     returns nothing usable)."""
@@ -122,23 +143,14 @@ Rules:
   facts; you may only add short connecting sentences and the questions below.
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
-- NO questions while teaching. First teach the whole concept completely. Then, at the very END (after the
-  recap, before the last "lab-outro"), add a "Quick quiz" chapter with 3-5 "question" scenes that test ONLY
-  what this lesson taught. Each question's narration must, in this order: read the question, explain in one
-  or two sentences what it is really asking, then read EVERY option and explain what each one means.
-  Exactly like:
-  {{"type": "question", "chapter": "Quick quiz", "q": "<question about something taught in THIS lesson>",
-    "options": ["<option A>", "<option B>", "<option C>"], "answer": "<the correct option, copied exactly>",
-    "why": "<one or two sentences: why it is correct, and why the others are wrong>",
-    "narration": "Question two. <the question>. <what it is asking>. Option A, <option A> - <what that means>.
-    Option B, <option B> - <what that means>. Option C, <option C> - <what that means>. Which one is right?"}}
-  Never say "pause and think" or count "three, two, one" - the countdown is shown silently. Never reveal
-  the answer in the question's narration: the answer scene ("The correct answer is ...") is added after it
-  automatically.
+{QUIZ_RULES if QUIZ else "- No questions anywhere in the lesson. Just teach."}
 - SHOW, DON'T JUST TELL: every scene's picture must show EXACTLY what its narration is saying at that
   moment - the real object (image), the real menu clicks (screen), the real parts and connections (diagram,
   circuit, code, network...). A title card or a text list is NOT a visual: use "steps" only for a recap,
   never more than 2 "steps" scenes in the whole lesson. If you talk about a thing, show that thing.
+- The viewer knows NOTHING. For anything they must download, install or set up, SHOW every step, one scene per
+  step, and explain in the narration what the step does and why: "installer" for a setup wizard (with the
+  official site), "screen" for clicks inside an app, "terminal" for commands (say what each command means).
   Chosen from this list only, with every field filled in correctly:
 {_catalog(d)}
 - Use "chapter" on every scene ("1 · The problem", "2 · How it works", ...).
@@ -166,7 +178,7 @@ Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...",
 
 
 # ------------------------------------------------------------------ checks done in code
-REQUIRED = {"image": ["query"], "screen": ["path"], "diagram": ["parts"], "story": ["figures"], "phone": ["items"], "chart": ["points"], "stamp": ["text"], "lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
+REQUIRED = {"installer": ["pages"], "image": ["query"], "screen": ["path"], "diagram": ["parts"], "story": ["figures"], "phone": ["items"], "chart": ["points"], "stamp": ["text"], "lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
             "lab-outro": ["title"], "capacitor": [], "rectifier": [], "wave": [], "code": ["code", "steps"],
             "array": ["values", "steps"], "terminal": ["lines"], "network": ["nodes", "links", "packets"]}
 
@@ -213,8 +225,8 @@ def normalize(ep: dict, final_pass: bool = False) -> dict:
                  "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
         out.append(s)
     # questions go to the end (Quick quiz), before the outro; at most 3
-    qs = [x for x in out if x.get("type") == "question" and not x.get("reveal")][:5]
-    rest = [x for x in out if x.get("type") != "question"]
+    qs = [x for x in out if x.get("type") == "question" and not x.get("reveal")][:5] if QUIZ else []
+    rest = [x for x in out if x.get("type") != "question"]  # (without QUIZ every question is removed)
     outro = [x for x in rest if x.get("type") == "lab-outro"]
     rest = [x for x in rest if x.get("type") != "lab-outro"]
     for q in qs:
@@ -283,7 +295,7 @@ def check_episode(ep: dict) -> list[str]:
                 problems.append(f"scene {i}: network refers to a node that does not exist")
     if scenes and scenes[0].get("type") not in ("lab-title", "stamp"):
         problems.append("first scene must be lab-title")
-    if sum(s.get("type") == "question" and not s.get("reveal") for s in scenes) < 1:
+    if QUIZ and sum(s.get("type") == "question" and not s.get("reveal") for s in scenes) < 1:
         problems.append("needs at least 1 quiz question scenes")
     ep["short"] = [i for i in ep.get("short", []) if isinstance(i, int) and 0 <= i < len(scenes)][:6] or [0, 1, 2, 3]
     ss = [x for x in (ep.get("short_scenes") or []) if isinstance(x, dict) and x.get("type") in allowed - {"question"}

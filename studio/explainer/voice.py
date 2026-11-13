@@ -22,7 +22,11 @@ if ep.get("short_scenes"):
         ep["short_scenes"].append({"type": "lab-outro" if ep.get("style") == "lab" else "outro", "title": (ep.get("title") or "").upper()[:40],
             "lines": [], "cta": "Full video on our channel", "narration": "For the detailed explanation, watch the full video on our channel."})
     if ep.get("style") == "lab":  # first frame = bold cover (Shorts thumbnail / Reel cover)
-        ep["short_scenes"].insert(0, {"type": "cover", "cover": ep.get("cover") or ep.get("title", ""), "cover_highlight": ep.get("cover_highlight", ""), "narration": ""})
+        order = ["rectifier", "image", "code", "network", "story", "screen", "installer", "chart", "diagram", "array", "terminal", "capacitor", "wave", "phone", "flow"]
+        pool = [x for x in ep["short_scenes"] + ep["scenes"] if x.get("type") in order]
+        best = min(pool, key=lambda x: order.index(x["type"]), default=None)
+        ep["short_scenes"].insert(0, {"type": "cover", "cover": ep.get("cover") or ep.get("title", ""), "cover_highlight": ep.get("cover_highlight", ""),
+                                      "narration": "", "visual": dict(best, frames=300) if best else None})
 jobs = [(f"s{i}", s) for i, s in enumerate(ep["scenes"])] + [(f"sh{i}", s) for i, s in enumerate(ep.get("short_scenes", []))]
 KOKORO = None
 def kokoro_say(text, voice, speed, wav):

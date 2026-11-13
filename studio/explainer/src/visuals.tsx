@@ -122,3 +122,53 @@ export const DiagramScene: React.FC<any> = ({ dur, title, parts = [], arrows = [
 };
 
 export const VISUAL_SCENES: Record<string, React.FC<any>> = { image: ImageScene, screen: ScreenScene, diagram: DiagramScene };
+
+// ------------------------------------------------------------------ installer walkthrough
+// {"app": "KiCad 8", "site": "kicad.org/download", "pages": ["Welcome", "License agreement", "Choose location", "Installing", "Finish"],
+//  "notes": ["...one short note per page..."]} - browser download first, then each wizard page, progress bar, finish.
+export const InstallerScene: React.FC<any> = ({ dur, app = "App", site, pages = ["Welcome", "License", "Location", "Installing", "Finish"], notes = [] }) => {
+  const f = useCurrentFrame(); const { u } = useU();
+  const all: string[] = site ? ["__download", ...pages] : pages;
+  const per = (dur - 16) / Math.max(1, all.length); const k = Math.min(all.length - 1, Math.max(0, Math.floor((f - 8) / per)));
+  const local = (f - 8 - k * per) / per; const page = all[k]; const note = notes.length >= all.length ? notes[k] : notes[site ? k - 1 : k];
+  const isProg = /install|copy|progress/i.test(page) && !/finish/i.test(page);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+      <svg viewBox="0 0 1200 760" width="84%" height="78%" style={{ opacity: fade(f, 0) }}>
+        {page === "__download" ? <g>
+          <rect x={0} y={0} width={1200} height={760} rx={18} fill={L.panel} stroke={L.off} strokeWidth={3} />
+          <rect x={20} y={16} width={1160} height={44} rx={22} fill={L.bg1} />
+          <text x={50} y={46} fill={L.dim} fontFamily={MONO} fontSize={22}>🔒 {site}</text>
+          <text x={600} y={250} textAnchor="middle" fill={L.text} fontFamily={SANS} fontSize={54} fontWeight={900}>{app}</text>
+          <rect x={430} y={320} width={340} height={84} rx={16} fill={local > 0.5 ? L.green : L.cyan} />
+          <text x={600} y={374} textAnchor="middle" fill="#fff" fontFamily={SANS} fontSize={30} fontWeight={800}>{local > 0.5 ? "✓ Downloaded" : "⬇ Download"}</text>
+          <g transform={`translate(${interpolate(local, [0, 0.45], [880, 600], { extrapolateRight: "clamp" })},${interpolate(local, [0, 0.45], [620, 370], { extrapolateRight: "clamp" })})`}>
+            <path d="M0,0 L0,34 L9,26 L16,42 L22,39 L15,24 L27,24 Z" fill="#111" stroke="#fff" strokeWidth={2} /></g>
+        </g> : <g>
+          <rect x={200} y={90} width={800} height={560} rx={16} fill={L.panel} stroke={L.cyan} strokeWidth={3} />
+          <rect x={200} y={90} width={800} height={56} rx={16} fill={L.bg1} />
+          <text x={230} y={126} fill={L.text} fontFamily={SANS} fontSize={24} fontWeight={800}>{app} Setup</text>
+          <text x={240} y={220} fill={L.text} fontFamily={SANS} fontSize={40} fontWeight={900}>{page}</text>
+          {isProg ? <g><rect x={240} y={330} width={720} height={36} rx={18} fill={L.bg1} />
+            <rect x={240} y={330} width={720 * Math.min(1, local * 1.2)} height={36} rx={18} fill={L.green} />
+            <text x={600} y={410} textAnchor="middle" fill={L.dim} fontFamily={MONO} fontSize={24}>{Math.round(Math.min(1, local * 1.2) * 100)}%</text></g>
+           : /licen/i.test(page) ? <g>{[0, 1, 2, 3, 4].map((i) => <rect key={i} x={240} y={260 + i * 30} width={600 - i * 40} height={12} rx={6} fill={L.off} />)}
+             <rect x={240} y={440} width={30} height={30} rx={6} fill={local > 0.4 ? L.green : "transparent"} stroke={L.wire} strokeWidth={3} />
+             <text x={285} y={464} fill={L.text} fontFamily={SANS} fontSize={24}>I accept the agreement</text></g>
+           : /location|folder|path/i.test(page) ? <g><rect x={240} y={300} width={560} height={50} rx={8} fill={L.bg0} stroke={L.off} strokeWidth={2} />
+             <text x={256} y={334} fill={L.text} fontFamily={MONO} fontSize={22}>C:\Program Files\{app}</text>
+             <rect x={820} y={300} width={140} height={50} rx={8} fill={L.bg1} /><text x={890} y={334} textAnchor="middle" fill={L.text} fontFamily={SANS} fontSize={22}>Browse…</text></g>
+           : /finish|complete|done/i.test(page) ? <text x={600} y={380} textAnchor="middle" fill={L.green} fontFamily={SANS} fontSize={44} fontWeight={900}>✓ {app} is installed</text>
+           : <text x={240} y={300} fill={L.dim} fontFamily={SANS} fontSize={26}>This wizard will install {app} on your computer.</text>}
+          <rect x={800} y={570} width={160} height={52} rx={10} fill={L.cyan} opacity={local > 0.6 ? 1 : 0.85} />
+          <text x={880} y={604} textAnchor="middle" fill="#fff" fontFamily={SANS} fontSize={24} fontWeight={800}>{/finish|complete/i.test(page) ? "Finish" : isProg ? "…" : "Next >"}</text>
+          <text x={240} y={612} fill={L.dim} fontFamily={MONO} fontSize={20}>Step {site ? k : k + 1} of {pages.length}</text>
+        </g>}
+      </svg>
+      {note && <div style={{ position: "absolute", bottom: "6%", maxWidth: "80%", textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 34 * u, color: L.text,
+        background: L.panel, padding: `${10 * u}px ${24 * u}px`, borderRadius: 12 * u, opacity: fade(local * per, 0, 6) }}>{note}</div>}
+    </AbsoluteFill>
+  );
+};
+
+VISUAL_SCENES.installer = InstallerScene;

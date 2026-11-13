@@ -2,7 +2,7 @@
 // Blueprint grid, real schematic symbols, electrons that flow along the conducting path,
 // a live oscilloscope synced to the circuit, pause-and-think questions and worked formulas.
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { AbsoluteFill, Freeze, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/700.css";
 import { SANS, fade, rise, prog, ease } from "./theme";
@@ -423,18 +423,20 @@ export const OutroLab: React.FC<any> = ({ title, lines = [], cta = "Subscribe fo
 };
 
 /** First frame of a Short: the bold title (works as the Shorts thumbnail / Reel cover). */
-export const CoverLab: React.FC<any> = ({ cover = "", cover_highlight = "" }) => {
+export const CoverLab: React.FC<any> = ({ cover = "", cover_highlight = "", visual, Visual }) => {
   const { u } = useU();
   const words: string[] = String(cover).toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 5);
   const hi = String(cover_highlight).toUpperCase().replace(/\W/g, "");
   let key = words.findIndex((w) => hi && w.replace(/\W/g, "") === hi);
   if (key < 0) key = words.reduce((b, w, i) => (w.length > words[b].length ? i : b), 0);
   return (
-    <AbsoluteFill style={{ justifyContent: "center", padding: "0 9%" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 118 * u, lineHeight: 0.98, letterSpacing: -3 * u, color: L.text }}>
-        {words.map((w, i) => <div key={i} style={{ color: i === key ? L.amber : L.text }}>{w}</div>)}
+    <AbsoluteFill>
+      {Visual && visual && <AbsoluteFill style={{ top: "34%", height: "66%", transform: "scale(0.95)" }}><Freeze frame={170}><Visual {...visual} dur={300} /></Freeze></AbsoluteFill>}
+      <div style={{ position: "absolute", left: "8%", right: "8%", top: Visual && visual ? "9%" : "36%", fontFamily: SANS, fontWeight: 900,
+        fontSize: (Visual && visual ? 92 : 118) * u, lineHeight: 0.98, letterSpacing: -3 * u, color: L.text }}>
+        {words.map((w, i) => <span key={i} style={{ color: i === key ? L.amber : L.text, display: "inline-block", marginRight: 22 * u }}>{w}</span>)}
+        <div style={{ marginTop: 24 * u, width: 180 * u, height: 14 * u, background: L.amber, borderRadius: 7 * u }} />
       </div>
-      <div style={{ marginTop: 40 * u, width: 200 * u, height: 16 * u, background: L.amber, borderRadius: 8 * u }} />
     </AbsoluteFill>
   );
 };

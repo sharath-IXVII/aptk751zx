@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Composition, Sequence, staticFile, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, Audio, Composition, Freeze, Sequence, staticFile, useCurrentFrame, interpolate } from "remotion";
 import { Frame } from "./Frame";
 import { Title, Ship, MapScene, Counter, Bars, Facts, Clock, Timeline, Quote, Outro, Depth, Valve, Silicon, Mosfet, Circuit, Binary } from "./scenes";
 import { C, SERIF, SANS, fade } from "./theme";
@@ -28,9 +28,10 @@ const Film: React.FC<{ ep: any; pick?: number[]; hook?: string; short?: boolean 
       {hook && <Sequence durationInFrames={75}><Hook text={hook} tag={ep.tag} /></Sequence>}
       {scenes.map((s: any) => {
         const d = framesOf(s); const from = at; at += d; const Comp = LAB_SCENES[s.type] || DOMAIN_SCENES[s.type] || STORY_SCENES[s.type] || VISUAL_SCENES[s.type] || SCENES[s.type];
+        const vis = s.type === "cover" && s.visual ? (LAB_SCENES[s.visual.type] || DOMAIN_SCENES[s.visual.type] || STORY_SCENES[s.visual.type] || VISUAL_SCENES[s.visual.type]) : undefined;
         return (
           <Sequence key={s.idx} from={from} durationInFrames={d}>
-            {lab ? <LabFrame caption={s.narration} dur={d} scene={s} ep={ep} progress={(from + d) / all}><Comp {...s} dur={d} /></LabFrame>
+            {lab ? <LabFrame caption={s.narration} dur={d} scene={s} ep={ep} progress={(from + d) / all}><Comp {...s} dur={d} Visual={vis} /></LabFrame>
                  : <Frame caption={s.narration} dur={d}><Comp {...s} dur={d} /></Frame>}
             {s.audio && <Audio src={staticFile(`audio/${s.audio_key || "s" + s.idx}.mp3`)} />}
           </Sequence>
@@ -53,7 +54,7 @@ const total = (ep: any, pick?: number[], hook?: boolean, short?: boolean) =>
   : (pick ? pick.map((i) => ep.scenes[i]) : ep.scenes).reduce((a: number, s: any) => a + framesOf(s), hook ? 75 : 0);
 
 // the most visual scene of the lesson becomes the thumbnail background
-const VISUAL = ["rectifier", "code", "network", "story", "image", "chart", "screen", "diagram", "array", "terminal", "capacitor", "wave", "phone", "flow", "formula"];
+const VISUAL = ["rectifier", "image", "code", "network", "story", "screen", "installer", "chart", "diagram", "array", "terminal", "capacitor", "wave", "phone", "flow", "formula"];
 const Thumb: React.FC<{ ep: any }> = ({ ep }) => {
   setTheme(ep.theme);
   const pick = (ep.scenes || []).map((s: any, i: number) => [VISUAL.indexOf(s.type), i]).filter(([r]: number[]) => r >= 0)
