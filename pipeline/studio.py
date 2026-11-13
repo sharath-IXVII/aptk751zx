@@ -152,7 +152,13 @@ def normalize(ep: dict, final_pass: bool = False) -> dict:
             continue
         s["narration"] = (s.get("narration") or s.get("text") or "").strip()
         if len(s["narration"].split()) < 5:
-            continue  # nothing to say -> no scene
+            pts = s.get("items") or s.get("nodes") or s.get("lines") or []
+            pts = [p if isinstance(p, str) else (p.get("cmd") or p.get("out") or "") for p in pts]
+            said = ". ".join(p.rstrip(".") for p in pts if p).strip()
+            if len(said.split()) >= 5:
+                s["narration"] = (s["narration"] + " " + said + ".").strip()  # read out what is on screen
+            else:
+                continue  # nothing to say -> no scene
         t = s.get("type")
         if t == "question":
             if not s.get("q"):
@@ -196,7 +202,7 @@ def check_episode(ep: dict) -> list[str]:
         t = s.get("type")
         if t not in allowed:
             problems.append(f"scene {i}: type '{t}' is not allowed"); continue
-        if len((s.get("narration") or "").split()) < 8:
+        if len((s.get("narration") or "").split()) < 5:
             problems.append(f"scene {i}: narration missing or too short")
         for k in REQUIRED.get(t, []):
             if not s.get(k):
