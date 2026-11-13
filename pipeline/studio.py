@@ -85,7 +85,19 @@ def _catalog(d: dict) -> str:
 
 
 def write_episode(script: dict, meta: dict) -> dict:
-    """Turn the fact-checked narration into a lesson made of animated scenes."""
+    """Turn the fact-checked narration into a lesson made of animated scenes (retries if the AI
+    returns nothing usable)."""
+    for attempt in range(3):
+        ep = _write_once(script, meta, attempt)
+        sc = ep.get("scenes") or (ep.get("lesson") or {}).get("scenes") or ep.get("Scenes") or []
+        if isinstance(sc, list) and len(sc) >= 10:
+            ep["scenes"] = sc
+            return ep
+        log.warning("Lesson writer returned %d scenes - trying again", len(sc) if isinstance(sc, list) else 0)
+    raise RuntimeError("Lesson writer returned no usable lesson")
+
+
+def _write_once(script: dict, meta: dict, attempt: int) -> dict:
     d = _domain()
     ep = llm.chat_json(f"""You are the lead teacher and animation director of a YouTube channel about {d["about"]}.
 Viewers are beginners who know nothing about this topic. Turn this narration into an animated LESSON.
@@ -116,7 +128,8 @@ Rules:
 
 Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...", <fields for that type>}}],
 "short": [..], "short_hook": "..."}}""", "You design accurate, engaging animated lessons.",
-                       temperature=0.4, max_tokens=12000, prefer=llm.WRITER_MODEL)
+                       temperature=0.4 + 0.1 * attempt, max_tokens=16000,
+                       prefer=llm.WRITER_MODEL if attempt < 2 else REVIEWER_MODEL)
     ep.update({"title": meta.get("title", script.get("title")), "style": "lab", "theme": d["theme"],
                "badge": f"GETYR · {d['name']}", "tag": f"GETYR · {d['name']}", "engine": "kokoro",
                "kokoro_voice": os.getenv("STUDIO_VOICE") or "af_heart", "speed": float(os.getenv("STUDIO_SPEED") or 1.05)})
