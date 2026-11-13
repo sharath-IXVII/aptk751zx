@@ -332,8 +332,14 @@ export const CapLab: React.FC<any> = ({ dur, mode = "cycle" }) => {
 };
 
 /** Pause & think: the narrator asks, the viewer gets a 3-2-1. With reveal=true it shows the answer. */
-export const QuestionLab: React.FC<any> = ({ dur, q, options = [], reveal = false, answer = "" }) => {
+export const QuestionLab: React.FC<any> = ({ dur, q, options = [], reveal = false, answer = "", narration = "" }) => {
   const f = useCurrentFrame(); const { u } = useU();
+  // while the voice explains "Option A ... Option B ...", that option lights up
+  const talk = Math.max(1, dur - 102); const low = narration.toLowerCase();
+  const marks = options.map((_: string, i: number) => low.indexOf(`option ${String.fromCharCode(97 + i)}`));
+  let speaking = -1;
+  if (!reveal) marks.forEach((m: number, i: number) => { if (m >= 0 && f >= (m / Math.max(1, low.length)) * talk) speaking = i; });
+  if (f > talk) speaking = -1;
   const left = Math.max(1, 3 - Math.floor(interpolate(f, [dur - 95, dur - 5], [0, 3], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
   const norm = (x: string) => String(x).toLowerCase().replace(/[^a-z0-9]/g, "");
   const right = options.findIndex((o: string) => norm(o) === norm(answer) || (norm(answer).length > 2 && norm(o).includes(norm(answer))));
@@ -344,8 +350,10 @@ export const QuestionLab: React.FC<any> = ({ dur, q, options = [], reveal = fals
       <div style={{ display: "flex", gap: 26 * u, marginTop: 50 * u, flexWrap: "wrap", justifyContent: "center" }}>
         {options.map((o: string, i: number) => {
           const ok = reveal && i === right; const dim = reveal && i !== right;
-          return <div key={i} style={{ fontFamily: MONO, fontSize: 30 * u, color: ok ? L.bg0 : L.cyan, background: ok ? L.green : "transparent",
-            border: `${2 * u}px solid ${ok ? L.green : L.cyan}`, borderRadius: 12 * u, padding: `${14 * u}px ${26 * u}px`,
+          const on = i === speaking;
+          return <div key={i} style={{ fontFamily: MONO, fontSize: 30 * u, color: ok ? L.bg0 : on ? L.bg0 : L.cyan, background: ok ? L.green : on ? L.amber : "transparent",
+            border: `${2 * u}px solid ${ok ? L.green : on ? L.amber : L.cyan}`, borderRadius: 12 * u, padding: `${14 * u}px ${26 * u}px`,
+            boxShadow: on ? `0 0 ${30 * u}px ${L.amber}88` : "none",
             opacity: dim ? 0.35 : fade(f, reveal ? 0 : 20 + i * 8), transform: `scale(${ok ? interpolate(f, [0, 8, 14], [1, 1.12, 1.06], { extrapolateRight: "clamp" }) : 1})` }}>
             {ok ? "✓ " : `${String.fromCharCode(65 + i)}. `}{o}</div>;
         })}
@@ -430,22 +438,37 @@ const ICONS: Record<string, (c: string) => React.ReactNode> = {
 };
 export const ThumbLab: React.FC<{ ep: any }> = ({ ep }) => {
   setTheme(ep.theme);
-  const words: string[] = String(ep.cover || ep.title || "").toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 5);
-  const hi = String(ep.cover_highlight || "").toUpperCase();
-  const key = Math.max(0, words.findIndex((w) => hi && w.replace(/\W/g, "") === hi.replace(/\W/g, "")));
+  const words: string[] = String(ep.cover || ep.title || "").toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 4);
+  const hi = String(ep.cover_highlight || "").toUpperCase().replace(/\W/g, "");
+  let key = words.findIndex((w) => hi && w.replace(/\W/g, "") === hi);
+  if (key < 0) key = words.reduce((b, w, i) => (w.length > words[b].length ? i : b), 0);
   const theme = (ep.theme || "ece").split("-")[0];
-  const len = words.join(" ").length; const fs = len > 22 ? 112 : len > 16 ? 132 : 160;
+  const rest = words.filter((_, i) => i !== key); const kw = words[key] || "";
+  const tag = ({ ece: "EXPLAINED", cse: "FULL GUIDE", cyber: "MUST KNOW", ent: "BREAKING" } as any)[theme] || "EXPLAINED";
+  const big = Math.min(190, Math.floor(600 / (Math.max(4, kw.length) * 0.66)));
+  const small = Math.min(92, Math.floor(660 / (Math.max(8, Math.max(words.slice(0, key).join(" ").length, words.slice(key + 1).join(" ").length)) * 0.55)));
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(135deg, ${L.bg0} 0%, ${L.bg1} 100%)`, padding: "130px 60px 60px", justifyContent: "center" }}>
-      <AbsoluteFill style={{ backgroundImage: `linear-gradient(${L.grid2} 2px, transparent 2px), linear-gradient(90deg, ${L.grid2} 2px, transparent 2px)`, backgroundSize: "80px 80px", opacity: 0.6 }} />
-      <svg viewBox="0 0 380 340" width={360} height={322} style={{ position: "absolute", right: 50, bottom: 70, opacity: 0.95, overflow: "visible" }}>{ICONS[theme]?.(L.cyan)}</svg>
-      <div style={{ position: "relative", maxWidth: 780, fontFamily: SANS, fontWeight: 900, fontSize: fs, lineHeight: 0.95, letterSpacing: -4, color: L.text }}>
-        {words.map((w, i) => <span key={i} style={{ color: i === key ? L.amber : L.text, display: "inline-block", marginRight: 26,
-          textShadow: L.dark ? "0 6px 30px rgba(0,0,0,0.6)" : "none" }}>{w}</span>)}
+    <AbsoluteFill style={{ background: L.bg0, overflow: "hidden" }}>
+      {/* bold accent panel on the right with a glowing icon */}
+      <div style={{ position: "absolute", right: -140, top: -120, width: 760, height: 960, background: `linear-gradient(160deg, ${L.cyan}, ${L.amber})`,
+        transform: "rotate(12deg)", borderRadius: 60 }} />
+      <div style={{ position: "absolute", right: 40, top: 160, width: 400, height: 400, borderRadius: "50%", background: "rgba(255,255,255,0.18)",
+        boxShadow: "0 0 120px rgba(255,255,255,0.5)" }} />
+      <svg viewBox="0 0 380 340" width={330} height={295} style={{ position: "absolute", right: 70, top: 210, overflow: "visible", filter: "drop-shadow(0 10px 30px rgba(0,0,0,0.35))" }}>
+        {ICONS[theme]?.("#ffffff")}</svg>
+      {/* corner sticker */}
+      <div style={{ position: "absolute", right: 40, bottom: 44, background: "#ffd23f", color: "#111", fontFamily: SANS, fontWeight: 900, fontSize: 44,
+        padding: "10px 26px", borderRadius: 14, transform: "rotate(-4deg)", boxShadow: "0 8px 0 rgba(0,0,0,0.25)" }}>{tag}</div>
+      {/* text block */}
+      <div style={{ position: "absolute", left: 56, top: 70, width: 680 }}>
+        <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 30, color: L.cyan, letterSpacing: 4, marginBottom: 18 }}>{ep.badge || L.badge}</div>
+        {rest.slice(0, Math.max(0, key)).length > 0 && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: small, lineHeight: 1, color: L.text, letterSpacing: -2 }}>
+          {words.slice(0, key).join(" ")}</div>}
+        <div style={{ display: "inline-block", marginTop: 14, background: L.text, color: L.bg0, fontFamily: SANS, fontWeight: 900, fontSize: big, lineHeight: 1,
+          padding: "10px 26px 18px", borderRadius: 18, transform: "rotate(-2deg)", boxShadow: `14px 14px 0 ${L.amber}` }}>{kw}</div>
+        {words.slice(key + 1).length > 0 && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: small, lineHeight: 1.05, color: L.text, letterSpacing: -2, marginTop: 22 }}>
+          {words.slice(key + 1).join(" ")}</div>}
       </div>
-      <div style={{ position: "relative", marginTop: 34, width: 260, height: 18, background: L.amber, borderRadius: 9 }} />
-      <div style={{ position: "absolute", left: 60, top: 46, border: `5px solid ${L.cyan}`, color: L.cyan, fontFamily: MONO, fontWeight: 700, fontSize: 34, padding: "6px 18px", letterSpacing: 3 }}>
-        {ep.badge || L.badge}</div>
     </AbsoluteFill>
   );
 };

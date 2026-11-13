@@ -113,13 +113,18 @@ Rules:
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
 - NO questions while teaching. First teach the whole concept completely. Then, at the very END (after the
-  recap, before the last "lab-outro"), add a "Quick quiz" chapter with 2-3 "question" scenes that test ONLY
-  what this lesson taught, exactly like:
+  recap, before the last "lab-outro"), add a "Quick quiz" chapter with 3-5 "question" scenes that test ONLY
+  what this lesson taught. Each question's narration must, in this order: read the question, explain in one
+  or two sentences what it is really asking, then read EVERY option and explain what each one means.
+  Exactly like:
   {{"type": "question", "chapter": "Quick quiz", "q": "<question about something taught in THIS lesson>",
     "options": ["<option A>", "<option B>", "<option C>"], "answer": "<the correct option, copied exactly>",
-    "why": "<one sentence explaining why>", "narration": "<just ask the question naturally, e.g. 'Question one. Which diodes conduct in the positive half-cycle?'>"}}
-  Never say "pause and think" or count "three, two, one" - the countdown is shown silently. The answer scene
-  is added automatically after each question; never reveal the answer in the question's narration.
+    "why": "<one or two sentences: why it is correct, and why the others are wrong>",
+    "narration": "Question two. <the question>. <what it is asking>. Option A, <option A> - <what that means>.
+    Option B, <option B> - <what that means>. Option C, <option C> - <what that means>. Which one is right?"}}
+  Never say "pause and think" or count "three, two, one" - the countdown is shown silently. Never reveal
+  the answer in the question's narration: the answer scene ("The correct answer is ...") is added after it
+  automatically.
 - Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
   with every field filled in correctly:
 {_catalog(d)}
@@ -192,7 +197,7 @@ def normalize(ep: dict, final_pass: bool = False) -> dict:
                  "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
         out.append(s)
     # questions go to the end (Quick quiz), before the outro; at most 3
-    qs = [x for x in out if x.get("type") == "question" and not x.get("reveal")][:3]
+    qs = [x for x in out if x.get("type") == "question" and not x.get("reveal")][:5]
     rest = [x for x in out if x.get("type") != "question"]
     outro = [x for x in rest if x.get("type") == "lab-outro"]
     rest = [x for x in rest if x.get("type") != "lab-outro"]
@@ -211,9 +216,13 @@ def normalize(ep: dict, final_pass: bool = False) -> dict:
                 continue
             if s.get("answer"):
                 why = (s.get("why") or "").strip()
+                opts = [str(o) for o in s.get("options", [])]
+                norm = lambda x: re.sub(r"[^a-z0-9]", "", str(x).lower())
+                k = next((j for j, o in enumerate(opts) if norm(o) == norm(s["answer"])), -1)
+                letter = f"option {chr(65 + k)}, " if k >= 0 else ""
                 final.append({"type": "question", "reveal": True, "chapter": s.get("chapter", ""), "q": s.get("q", ""),
-                              "options": s.get("options", []), "answer": s["answer"],
-                              "narration": f"The answer is: {s['answer']}. {why}".strip()})
+                              "options": opts, "answer": s["answer"],
+                              "narration": f"The correct answer is {letter}{s['answer']}. {why}".strip()})
             elif final_pass:
                 final.pop()  # a question nobody answers is worse than no question
     ep["scenes"] = final
@@ -285,7 +294,8 @@ lesson for complete beginners BEFORE it is published. Check EVERY scene:
 - every visual matches its narration exactly (labels, values, steps, which part does what, direction of
   current/flow, the order of steps, code output, command output);
 - the explanation is deep and clear enough for a beginner, with no missing steps;
-- each question has the CORRECT "answer" (one of its options) and a correct "why";
+- each quiz question (3-5, only at the end) has the CORRECT "answer" (one of its options) and a correct "why";
+  its narration reads the question, explains it, and reads and explains every option, without revealing the answer;
 - only legal, ethical, defensive content; no invented statistics.
 {lessons[:14000]}
 Problems already found automatically: {"; ".join(problems) or "none"}
