@@ -1,0 +1,7 @@
+{"title":"Demo Cyber","style":"lab","theme":"cyber","short":[0],"short_hook":"x","scenes":[
+{"type":"terminal","chapter":"2 · Scanning your own lab","title":"kali — your own lab VM only","lines":[{"cmd":"nmap -sV 192.168.56.101"},{"out":"Starting Nmap 7.94"},{"out":"PORT   STATE SERVICE VERSION"},{"out":"22/tcp open  ssh     OpenSSH 8.9"},{"out":"80/tcp open  http    Apache 2.4.52","bad":true},{"out":"Nmap done: 1 IP address scanned","good":true}],
+ "narration":"In your own practice lab, we scan a test machine. Nmap asks every common port if it's open, and which program is answering behind it."},
+{"type":"network","chapter":"3 · How the attack works","title":"SYN scan, step by step","nodes":[{"id":"a","label":"Scanner","x":250,"y":400,"kind":"attacker"},{"id":"f","label":"Firewall","x":800,"y":400,"kind":"firewall"},{"id":"s","label":"Lab server","x":1350,"y":400,"kind":"server"}],
+ "links":[["a","f"],["f","s"]],"packets":[{"from":"a","to":"f","label":"SYN :80"},{"from":"f","to":"s","label":"SYN :80"},{"from":"s","to":"f","label":"SYN-ACK","bad":true},{"from":"a","to":"f","label":"SYN :23","bad":true,"blocked":true}],
+ "narration":"The scanner sends a SYN packet. If the server answers with SYN-ACK, the port is open. A good firewall simply drops packets to ports that should never be reachable."},
+{"type":"flow","chapter":"4 · Defence","title":"Defence in depth","nodes":["Firewall","Patch","Strong auth","Monitor"],"narration":"Defence works in layers. Block what you don't need, patch what you run, require strong login, and watch the logs."}]}

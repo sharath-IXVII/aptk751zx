@@ -1,0 +1,9 @@
+{"title":"Demo CSE","style":"lab","theme":"cse","short":[0],"short_hook":"x","scenes":[
+{"type":"code","chapter":"2 · Loops","lang":"python","code":"total = 0\nfor n in range(1, 4):\n    total = total + n\n    print(n, total)\nprint(\"done\")",
+ "steps":[{"line":1,"note":"We create a box called total and put 0 in it.","vars":{"total":0}},{"line":2,"note":"n takes the values 1, 2, 3 one at a time.","vars":{"n":1,"total":0}},{"line":3,"vars":{"n":1,"total":1},"note":"total becomes 0 + 1."},{"line":4,"out":"1 1","vars":{"n":1,"total":1}},{"line":3,"vars":{"n":2,"total":3},"note":"Next round: total = 1 + 2."},{"line":4,"out":"2 3"}],
+ "narration":"Let's run this loop line by line and watch every variable change as the program runs, step by step, so you can see exactly what the computer does."},
+{"type":"array","chapter":"3 · Sorting","title":"Bubble sort, pass 1","values":[5,2,8,1],"steps":[{"i":0,"j":1,"note":"5 > 2, so swap them","swap":true},{"i":1,"j":2,"note":"5 < 8, no swap"},{"i":2,"j":3,"note":"8 > 1, swap","swap":true},{"done":[3],"note":"The biggest number bubbled to the end"}],
+ "narration":"Bubble sort compares neighbours. If the left one is bigger, they swap. After one full pass, the largest value has bubbled to the end of the list."},
+{"type":"flow","chapter":"1 · Big picture","title":"How code runs","nodes":["You write code","Compiler","Machine code","CPU runs it"],"notes":["Human-readable instructions","Translates to the CPU's language","Ones and zeros","Billions of steps per second"],
+ "narration":"Here's the big picture. You write code, a compiler translates it, the result is machine code, and the CPU runs it billions of times per second."},
+{"type":"question","chapter":"2 · Loops","q":"How many times does the loop body run?","options":["2","3","4"],"narration":"Quick question. How many times does this loop run? Three, two, one."}]}

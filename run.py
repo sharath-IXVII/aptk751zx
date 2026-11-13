@@ -92,6 +92,8 @@ async def main(force: bool) -> None:
     raw, final, thumb = OUT / "video_raw.mp4", OUT / "video_final.mp4", OUT / "thumbnail.jpg"
     if job.get("video_id"):  # uploaded by an earlier run that stopped right after
         return finish_job(state, job, job["video_id"], today)
+    if (os.getenv("VIDEO_ENGINE") or "studio") == "studio":
+        return await make_with_studio(state, job, script, meta, today, final, thumb)
     async with NotebookLMClient.from_storage(allow_headless=True) as client:
         # 2. Start the NotebookLM video (once), remembering ids so a later run can resume
         if not job.get("notebook_id"):
@@ -198,8 +200,48 @@ def shorts_left(state: dict) -> bool:
     return state.get("shorts", {}).get(day, 0) < int(os.getenv("SHORTS_PER_DAY") or 2)
 
 
+async def make_with_studio(state: dict, job: dict, script: dict, meta: dict, today: str,
+                           final: Path, thumb: Path) -> None:
+    """GetYr Studio: our own animated lesson (AI writer -> second-AI review -> Kokoro voice ->
+    Remotion animation). No NotebookLM, no watermark website."""
+    from pipeline import studio
+    state["notebooklm_started_at"] = now().isoformat()  # keeps the same pace (one video per gap)
+    save_state(state)
+    lessons = ""
+    try:
+        from pipeline.searchtopics import viewer_lessons
+        lessons = viewer_lessons()
+    except Exception:
+        pass
+    try:
+        final, short, ep = studio.make(script, meta, OUT, lessons)
+    except RuntimeError as exc:
+        if "Reviewer rejected" in str(exc) or "still has problems" in str(exc):
+            log.warning("%s - dropping this topic; a new one is picked next run", exc)
+            state.pop("job", None)
+            save_state(state)
+        raise
+    (OUT / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
+    import subprocess
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "2.5", "-i", str(final), "-frames:v", "1",
+                    "-q:v", "2", str(thumb)], check=True)  # thumbnail = the title card
+    if not os.getenv("YT_REFRESH_TOKEN"):
+        log.warning("YouTube secrets not set - skipping upload (files are in the run artifacts)")
+        return finish_job(state, job, None, today)
+    from pipeline.youtube_upload import upload
+    slot = None if (os.getenv("PUBLISH_NOW") or "1") == "1" else plan.next_slot(state)
+    video_id = upload(final, thumb, meta, publish_at=slot)
+    if slot:
+        plan.book(state, slot)
+    job["video_id"] = video_id
+    save_state(state)
+    add_to_playlist(meta, video_id)
+    await upload_short(state, final, OUT / "no_notebooklm_short.mp4", meta, video_id, slot, ready=short)
+    finish_job(state, job, video_id, today)
+
+
 async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
-                       video_id: str, slot) -> None:
+                       video_id: str, slot, ready: Path | None = None) -> None:
     """Make the vertical Short and publish it: to YouTube (published together with its
     episode, at most SHORTS_PER_DAY a day because of YouTube's upload quota) and as Instagram
     and Facebook Reels (every episode - they have no such limit). Preferred: NotebookLM's own
@@ -213,8 +255,8 @@ async def upload_short(state: dict, episode: Path, short_raw: Path, meta: dict,
     from zoneinfo import ZoneInfo
     from pipeline import shorts, social
     from pipeline.youtube_upload import upload
-    short = None
-    if short_raw.exists():
+    short = ready if ready and ready.exists() else None
+    if short is None and short_raw.exists():
         clean = OUT / "short_clean.mp4"
         if await asyncio.to_thread(editor.remove_watermark, short_raw, clean, OUT / "short_screens"):
             short = clean

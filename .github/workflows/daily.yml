@@ -50,11 +50,21 @@ jobs:
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
         if: steps.check.outputs.skip != 'true' || inputs.force
       - name: NotebookLM login
+        continue-on-error: true   # not needed by GetYr Studio
         if: steps.check.outputs.skip != 'true' || inputs.force
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
           NOTEBOOKLM_MASTER_TOKEN: ${{ secrets.NOTEBOOKLM_MASTER_TOKEN }}
         run: bash tools/notebooklm_auth.sh
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.skip != 'true' || inputs.force
+        with: {node-version: 22}
+      - name: GetYr Studio tools (animation + voice)
+        if: steps.check.outputs.skip != 'true' || inputs.force
+        run: |
+          sudo apt-get install -y -qq espeak-ng
+          pip install -q "kokoro>=0.9.4" soundfile
+          cd studio/explainer && (npm ci || npm install)
       - name: Make and upload video
         if: steps.check.outputs.skip != 'true' || inputs.force
         env:
@@ -85,6 +95,8 @@ jobs:
           WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}
           THUMBNAIL_AT: ${{ vars.THUMBNAIL_AT }}
           VIDEO_LANGUAGE: en
+          VIDEO_ENGINE: ${{ vars.VIDEO_ENGINE || 'studio' }}
+          SEARCH_DOMAIN: ent
         run: |
           set -o pipefail
           python run.py ${{ inputs.force && '--force' || '' }} 2>&1 | tee run.log
