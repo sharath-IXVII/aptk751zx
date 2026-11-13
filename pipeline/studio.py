@@ -118,17 +118,27 @@ QUIZ_RULES = """- NO questions while teaching. First teach the whole concept com
 def write_episode(script: dict, meta: dict) -> dict:
     """Turn the fact-checked narration into a lesson made of animated scenes (retries if the AI
     returns nothing usable)."""
+    need = int(len(script.get("script", "").split()) * 0.7)
+    best = None
     for attempt in range(3):
-        ep = _write_once(script, meta, attempt)
+        ep = _write_once(script, meta, attempt, need)
         sc = ep.get("scenes") or (ep.get("lesson") or {}).get("scenes") or ep.get("Scenes") or []
+        words = sum(len(str(x.get("narration", "")).split()) for x in sc if isinstance(x, dict)) if isinstance(sc, list) else 0
         if isinstance(sc, list) and len(sc) >= 10:
             ep["scenes"] = sc
-            return ep
-        log.warning("Lesson writer returned %d scenes - trying again", len(sc) if isinstance(sc, list) else 0)
+            if words >= need:
+                return ep
+            if best is None or words > best[0]:
+                best = (words, ep)
+        log.warning("Lesson writer returned %d scenes, %d of the %d words needed - trying again",
+                    len(sc) if isinstance(sc, list) else 0, words, need)
+    if best and best[0] >= need * 0.6:
+        log.info("Using the longest lesson (%d words)", best[0])
+        return best[1]
     raise RuntimeError("Lesson writer returned no usable lesson")
 
 
-def _write_once(script: dict, meta: dict, attempt: int) -> dict:
+def _write_once(script: dict, meta: dict, attempt: int, need: int = 600) -> dict:
     d = _domain()
     ep = llm.chat_json(f"""You are the lead teacher and animation director of a YouTube channel about {d["about"]}.
 Viewers are beginners who know nothing about this topic. Turn this narration into an animated LESSON.
@@ -139,8 +149,9 @@ NARRATION:
 {script["script"]}
 
 Rules:
-- Split the narration into 18-30 scenes, in order, 25-45 words each. Keep the narration's wording and
-  facts; you may only add short connecting sentences and the questions below.
+- Split the narration into 18-30 scenes, in order, 25-45 words each. Use ALL of the narration - do not
+  summarise or shorten it: the scenes' narration together must be at least {need} words. Keep its wording
+  and facts; you may only add short connecting sentences.
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
 {QUIZ_RULES if QUIZ else "- No questions anywhere in the lesson. Just teach."}
