@@ -60,7 +60,7 @@ DOMAIN = {
     }},
     "ent": {"theme": "ent", "name": "ENT NEWS", "about": "today's big news, told as the story of what actually happened (markets, economy, tech, science, world events)",
             "captions": "bold", "story": True, "scenes": {
-        "story": 'a moment of the story drawn with ink stick figures (generic roles, never a real person\'s likeness): {"figures": [{"pose": '
+        "story": 'a moment of the story with flat illustrated characters (generic roles, never a real person\'s likeness): {"figures": [{"pose": '
                  '"stand|walk|point|shock|think|phone|sit|cheer|sad", "label": "Trader", "flip": false, "prop": "briefcase|mic"}] (1-3 figures), '
                  '"bubble": {"who": 0, "text": "max 6 words"}, "prop": "desk|screen|podium|city|rocket", "hud": HUD}',
         "phone": 'phone screen with news alerts / messages / market app: {"app": "News", "items": [{"from": "BREAKING", "text": "...", "alert": true}], "hud": HUD}',

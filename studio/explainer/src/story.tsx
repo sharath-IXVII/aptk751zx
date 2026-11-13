@@ -1,4 +1,4 @@
-// ENT "Sketchbook News": the story of what actually happened, told with ink-drawn characters on
+// ENT "Sketchbook News": the story of what actually happened, told with flat illustrated characters on
 // cream paper, a live news HUD, phone alerts, market charts and rubber-stamp words.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
@@ -35,37 +35,61 @@ export const Hud: React.FC<{ hud: any; dur: number }> = ({ hud, dur }) => {
   );
 };
 
-// ------------------------------------------------------------------ ink stick figure
+// ------------------------------------------------------------------ flat illustrated character
 type Pose = "stand" | "walk" | "point" | "shock" | "think" | "phone" | "sit" | "cheer" | "sad";
-export const Figure: React.FC<{ pose?: Pose; x: number; y: number; s?: number; label?: string; t: number; flip?: boolean; prop?: string }> =
-  ({ pose = "stand", x, y, s = 1, label, t, flip, prop }) => {
-  const ink = INK(); const sw = 7;
-  const bob = Math.sin(t * 0.12) * 3;
-  const swing = pose === "walk" ? Math.sin(t * 0.3) * 22 : 0;
-  // arm end points relative to the shoulder (0,-120)
+// clothes colour by role keyword (label), so each person reads at a glance
+const OUTFIT: [RegExp, string, string][] = [
+  [/office|employee|professional|analyst|reporter|journalist/i, "#3f6fb0", "#3a3a48"],
+  [/trader|banker|investor|ceo|minister|official|executive|boss|manager/i, "#2f3e5c", "#e9e3d6"],
+  [/shop|vendor|farmer|seller|worker|labour/i, "#c0502a", "#f3d9a4"],
+  [/scientist|doctor|engineer|researcher|expert/i, "#f4f4f4", "#3d7ea6"],
+  [/student|kid|young|customer|buyer|people|citizen|family/i, "#3d8b6d", "#2a2015"],
+  [/police|soldier|guard/i, "#33465c", "#33465c"],
+];
+const SKIN = ["#c98b5f", "#a86a43", "#e0b48c", "#8a5534"];
+const HAIR = ["#2a1d14", "#1a1a1a", "#5a3a22", "#3b2a1c"];
+export const Figure: React.FC<{ pose?: Pose; x: number; y: number; s?: number; label?: string; t: number; flip?: boolean; prop?: string; seed?: number }> =
+  ({ pose = "stand", x, y, s = 1, label, t, flip, prop, seed = 0 }) => {
+  const ink = INK();
+  const [, shirt, pants] = OUTFIT.find(([re]) => re.test(label || "")) || [null, "#7a5c3e", "#3a3a48"];
+  const skin = SKIN[seed % SKIN.length], hair = HAIR[(seed + 1) % HAIR.length];
+  const bob = Math.sin(t * 0.12) * 3; const swing = pose === "walk" ? Math.sin(t * 0.3) * 22 : 0;
   const arms: Record<string, [number[], number[]]> = {
-    stand: [[-30, -60], [30, -60]], walk: [[-25 + swing, -60], [25 - swing, -60]], point: [[-28, -62], [70, -150]],
-    shock: [[-60, -190], [60, -190]], think: [[-30, -60], [12, -150]], phone: [[-28, -62], [22, -148]],
-    sit: [[-34, -78], [34, -78]], cheer: [[-55, -200 + Math.sin(t * 0.4) * 10], [55, -200 - Math.sin(t * 0.4) * 10]], sad: [[-20, -55], [20, -55]],
+    stand: [[-44, -70], [44, -70]], walk: [[-30 + swing, -66], [30 - swing, -66]], point: [[-42, -72], [96, -150]],
+    shock: [[-70, -200], [70, -200]], think: [[-44, -70], [18, -168]], phone: [[-42, -72], [28, -170]],
+    sit: [[-50, -96], [50, -96]], cheer: [[-62, -214 + Math.sin(t * 0.4) * 10], [62, -214 - Math.sin(t * 0.4) * 10]], sad: [[-30, -60], [30, -60]],
   };
   const [la, ra] = arms[pose] || arms.stand;
-  const legs = pose === "sit" ? "M0,-60 L-40,-60 L-40,0 M0,-60 L40,-60 L40,0" :
-    `M0,-60 L${-22 + swing},0 M0,-60 L${22 - swing},0`;
-  const headY = pose === "sad" ? -152 : -160;
+  const sit = pose === "sit"; const hy = pose === "sad" ? -178 : -186;
+  const eyes = pose === "shock" ? 7 : 5;
   return (
     <g transform={`translate(${x},${y + bob}) scale(${(flip ? -1 : 1) * s},${s})`}>
-      <ellipse cx={0} cy={2} rx={46} ry={8} fill={ink} opacity={0.1} />
-      <path d={legs} stroke={ink} strokeWidth={sw} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-      <line x1={0} y1={-60} x2={0} y2={-125} stroke={ink} strokeWidth={sw} strokeLinecap="round" />
-      <path d={`M0,-118 L${la[0]},${la[1]} M0,-118 L${ra[0]},${ra[1]}`} stroke={ink} strokeWidth={sw} fill="none" strokeLinecap="round" />
-      <circle cx={0} cy={headY} r={30} fill={L.bg0} stroke={ink} strokeWidth={sw} />
-      {pose === "shock" && <><circle cx={-10} cy={headY - 4} r={4} fill={ink} /><circle cx={10} cy={headY - 4} r={4} fill={ink} /><ellipse cx={0} cy={headY + 12} rx={6} ry={8} fill={ink} /></>}
-      {pose === "sad" && <path d={`M-10,${headY + 14} q10,-8 20,0`} stroke={ink} strokeWidth={4} fill="none" />}
-      {pose === "cheer" && <path d={`M-10,${headY + 8} q10,10 20,0`} stroke={ink} strokeWidth={4} fill="none" />}
-      {pose === "phone" && <rect x={14} y={-178} width={24} height={40} rx={5} fill={L.cyan} stroke={ink} strokeWidth={4} />}
-      {prop === "briefcase" && <rect x={-58} y={-62} width={36} height={28} rx={4} fill="none" stroke={ink} strokeWidth={5} />}
-      {prop === "mic" && <><line x1={70} y1={-150} x2={92} y2={-178} stroke={ink} strokeWidth={6} /><circle cx={96} cy={-184} r={10} fill={ink} /></>}
-      {label && <text x={0} y={46} transform={flip ? "scale(-1,1)" : undefined} textAnchor="middle" fill={L.dim} fontFamily={MONO} fontSize={26} fontWeight={700}>{label.toUpperCase()}</text>}
+      <ellipse cx={0} cy={4} rx={60} ry={10} fill={ink} opacity={0.1} />
+      {/* legs */}
+      {sit ? <path d="M-22,-70 L-62,-70 L-62,-2 M22,-70 L-18,-70 L-18,-2" stroke={pants} strokeWidth={26} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+           : <path d={`M-16,-70 L${-20 + swing},-4 M16,-70 L${20 - swing},-4`} stroke={pants} strokeWidth={26} fill="none" strokeLinecap="round" />}
+      {/* shoes */}
+      {!sit && [[-20 + swing, -2], [20 - swing, -2]].map(([sx, sy], i) => <ellipse key={i} cx={sx + 6} cy={sy} rx={18} ry={9} fill={ink} />)}
+      {/* body */}
+      <path d="M-46,-74 Q-50,-150 0,-152 Q50,-150 46,-74 Z" fill={shirt} />
+      {/^.*(shop|vendor)/i.test(label || "") && <path d="M-30,-140 L30,-140 L36,-76 L-36,-76 Z" fill="#f6efe1" opacity={0.9} />}
+      {/(trader|banker|minister|official|ceo|executive|manager)/i.test(label || "") && <path d="M-4,-150 L4,-150 L8,-110 L0,-98 L-8,-110 Z" fill="#b8323a" />}
+      {/* arms */}
+      <path d={`M-38,-136 L${la[0]},${la[1]} M38,-136 L${ra[0]},${ra[1]}`} stroke={shirt} strokeWidth={22} fill="none" strokeLinecap="round" />
+      <circle cx={la[0]} cy={la[1]} r={12} fill={skin} /><circle cx={ra[0]} cy={ra[1]} r={12} fill={skin} />
+      {pose === "phone" && <rect x={14} y={-204} width={28} height={46} rx={6} fill="#1e2430" />}
+      {/* head */}
+      <rect x={-9} y={-166} width={18} height={18} fill={skin} />
+      <circle cx={0} cy={hy} r={36} fill={skin} />
+      <path d={`M-37,${hy - 4} Q-36,${hy - 46} 0,${hy - 44} Q38,${hy - 46} 37,${hy - 6} Q20,${hy - 26} -6,${hy - 24} Q-26,${hy - 22} -37,${hy - 4} Z`} fill={hair} />
+      <circle cx={-12} cy={hy + 2} r={eyes / 1.6} fill={ink} /><circle cx={12} cy={hy + 2} r={eyes / 1.6} fill={ink} />
+      {pose === "shock" ? <ellipse cx={0} cy={hy + 20} rx={7} ry={9} fill={ink} />
+        : pose === "sad" ? <path d={`M-10,${hy + 22} q10,-8 20,0`} stroke={ink} strokeWidth={4} fill="none" strokeLinecap="round" />
+        : pose === "think" ? <path d={`M-8,${hy + 18} h16`} stroke={ink} strokeWidth={4} strokeLinecap="round" />
+        : <path d={`M-10,${hy + 16} q10,${pose === "cheer" ? 12 : 7} 20,0`} stroke={ink} strokeWidth={4} fill="none" strokeLinecap="round" />}
+      {prop === "briefcase" && <rect x={-72} y={-74} width={44} height={34} rx={6} fill="#5b3a24" />}
+      {prop === "mic" && <><line x1={96} y1={-150} x2={118} y2={-180} stroke={ink} strokeWidth={6} /><circle cx={122} cy={-186} r={11} fill={ink} /></>}
+      {label && <text x={0} y={48} transform={flip ? "scale(-1,1)" : undefined} textAnchor="middle" fill={L.dim} fontFamily={MONO} fontSize={26} fontWeight={700}>{label.toUpperCase()}</text>}
     </g>
   );
 };
@@ -101,9 +125,9 @@ export const StoryScene: React.FC<any> = ({ dur, figures = [], bubble, prop, hud
         {figures.map((fg: any, i: number) => {
           const baseX = fg.x ?? (n === 1 ? 800 : 500 + (i * 600) / (n - 1));
           const x = fg.pose === "walk" ? baseX + interpolate(f, [0, dur], [-120, 120]) : baseX;
-          return <g key={i} opacity={fade(f, i * 6)}><Figure pose={fg.pose} x={x} y={GROUND} s={1.45} label={fg.label} t={f + i * 20} flip={fg.flip} prop={fg.prop} /></g>;
+          return <g key={i} opacity={fade(f, i * 6)}><Figure pose={fg.pose} x={x} y={GROUND} s={1.3} label={fg.label} t={f + i * 20} flip={fg.flip} prop={fg.prop} seed={i * 3 + (fg.label || "").length} /></g>;
         })}
-        {bubble && figures[bubble.who ?? 0] && <Bubble x={(figures[bubble.who ?? 0].x ?? (n === 1 ? 800 : 500 + ((bubble.who ?? 0) * 600) / (n - 1))) + 60} y={GROUND - 300} text={bubble.text} f={f - 12} />}
+        {bubble && figures[bubble.who ?? 0] && <Bubble x={(figures[bubble.who ?? 0].x ?? (n === 1 ? 800 : 500 + ((bubble.who ?? 0) * 600) / (n - 1))) + 60} y={GROUND - 310} text={bubble.text} f={f - 12} />}
       </svg>
       <Hud hud={hud} dur={dur} />
       {caption && <div style={{ position: "absolute", right: 60 * u, top: 90 * u, fontFamily: MONO, color: L.dim, fontSize: 22 * u }}>{caption}</div>}

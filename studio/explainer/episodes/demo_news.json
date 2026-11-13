@@ -1,7 +1,7 @@
 {"title":"Demo News","style":"lab","theme":"ent","captions":"bold","badge":"GETYR · ENT NEWS","short":[0],"short_hook":"x","scenes":[
 {"type":"stamp","chapter":"Breaking","text":"BREAKING","sub":"India's retail inflation crosses the RBI's 6% limit","hud":{"date":"12 NOV 2026","time":"4:00 PM","place":"NEW DELHI","stats":["INFLATION 6.09% ▲"]},
  "narration":"Yesterday at four in the evening, a number came out that every economist in India was waiting for."},
-{"type":"story","chapter":"1 · What happened","figures":[{"pose":"phone","label":"Office worker"},{"pose":"shock","label":"Shopkeeper","flip":true}],"bubble":{"who":1,"text":"Tomatoes went up again?!"},"prop":"city","hud":{"date":"12 NOV 2026","time":"4:05 PM","place":"MUMBAI","stats":["FOOD PRICES ▲"]},
+{"type":"story","chapter":"1 · What happened","figures":[{"pose":"phone","label":"Office worker"},{"pose":"shock","label":"Shopkeeper","flip":true},{"pose":"point","label":"Trader","prop":"briefcase"}],"bubble":{"who":1,"text":"Tomatoes went up again?!"},"prop":"city","hud":{"date":"12 NOV 2026","time":"4:05 PM","place":"MUMBAI","stats":["FOOD PRICES ▲"]},
  "narration":"Retail inflation jumped to six point zero nine percent in October. For the first time in two years, it crossed the RBI's upper limit."},
 {"type":"phone","chapter":"1 · What happened","app":"News","items":[{"from":"BREAKING","text":"Retail inflation hits 6.09% in October","alert":true},{"from":"Markets","text":"Rate hike fears return"},{"from":"Mom","text":"Vegetables are so expensive now 😩"}],"hud":{"date":"12 NOV 2026","time":"4:12 PM","place":"BENGALURU"},
  "narration":"Within minutes, phones lit up across the country. And the big question was simple. Why is everything getting more expensive?"},
