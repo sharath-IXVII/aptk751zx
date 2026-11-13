@@ -11,7 +11,7 @@ def dur(f):
 if not ep.get("short_scenes") and ep.get("short"):
     ep["short_scenes"] = [dict(ep["scenes"][i]) for i in ep["short"] if 0 <= i < len(ep["scenes"])] + [
         {"type": "lab-outro" if ep.get("style") == "lab" else "outro", "title": (ep.get("title") or "").upper()[:40], "lines": [],
-         "cta": "Full video on our channel", "narration": "Watch the full video on our channel."}]
+         "cta": "Full video on our channel", "narration": "For the detailed explanation, watch the full video on our channel."}]
 jobs = [(f"s{i}", s) for i, s in enumerate(ep["scenes"])] + [(f"sh{i}", s) for i, s in enumerate(ep.get("short_scenes", []))]
 KOKORO = None
 def kokoro_say(text, voice, speed, wav):

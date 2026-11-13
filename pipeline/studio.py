@@ -130,11 +130,14 @@ Rules:
 {_catalog(d)}
 - Use "chapter" on every scene ("1 · The problem", "2 · How it works", ...).
 - First scene "lab-title", last scene "lab-outro". Mix the scene types; never 3 of the same type in a row.
-- "short_scenes": a SEPARATE vertical Short (40-55 seconds) written to stop the scroll - 5-7 scenes, same
-  scene types, narration 8-20 words each, fast and punchy:
-  scene 1 = the hook (a surprising fact or question in the first 2 seconds, on a "lab-title" or "stamp"),
-  scenes 2-5 = the single most interesting idea of the lesson shown visually, step by step,
-  last scene = "lab-outro" with "cta": "Full video on our channel" and narration "Watch the full video on our channel."
+- "short_scenes": a SEPARATE vertical Short that explains the WHOLE concept of this lesson in 50-60 seconds
+  (about 140-160 words in total), so a viewer who only sees the Short still understands it - 6-9 scenes,
+  same scene types, narration 12-25 words each, fast and clear:
+  scene 1 = hook (surprising fact or question in the first 2 seconds, on a "lab-title" or "stamp"),
+  then the complete idea in order: what it is -> how it works, step by step -> the key takeaway,
+  each step shown with its best visual,
+  last scene = "lab-outro" with "cta": "Full video on our channel" and narration
+  "For the detailed explanation, watch the full video on our channel."
   No questions in the Short.
 
 Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...", <fields for that type>}}],
@@ -275,8 +278,8 @@ def check_episode(ep: dict) -> list[str]:
     if len(ss) >= 3:
         if ss[-1].get("type") != "lab-outro":
             ss.append({"type": "lab-outro", "title": (ep.get("title") or "").upper()[:40], "lines": [], "cta": "Full video on our channel",
-                       "narration": "Watch the full video on our channel."})
-        ep["short_scenes"] = ss[:8]
+                       "narration": "For the detailed explanation, watch the full video on our channel."})
+        ep["short_scenes"] = ss[:10]
     else:
         ep.pop("short_scenes", None)
     return problems
