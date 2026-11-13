@@ -78,9 +78,14 @@ new laws or rules that affect people. Prefer "why did this happen / what does it
 stories. Never pick: deaths or tragedies of private people, crime accusations against named
 people, partisan election fights, celebrity gossip, sexual content, rumours.
 
-Return JSON: {{"story": "<the story in plain words>", "query": "<short news search query>",
+Describe the story ONLY with what the headlines say - never add numbers, years or details from your
+own memory (they may be outdated). The search query: 3-6 plain words, no year, no numbers.
+
+Return JSON: {{"story": "<the story in plain words, from the headlines>", "query": "<short news search query>",
 "angle": "<the question viewers want answered, e.g. Why did the Sensex fall 1,000 points today?>"}}""",
                       SYSTEM, temperature=0.3, max_tokens=800)
+    import re
+    r["query"] = re.sub(r"\b(19|20)\d\d\b", "", r.get("query", "")).strip()  # never search an old year
     log.info("News story: %s (search '%s')", r.get("story"), r.get("query"))
     return r
 
