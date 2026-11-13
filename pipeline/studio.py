@@ -100,8 +100,8 @@ Rules:
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
 - Add 3 "question" scenes in the middle (after an idea is explained, before the next step), exactly like:
-  {{"type": "question", "chapter": "2 · How it works", "q": "Which way does current flow now?",
-    "options": ["Left to right", "Right to left"], "narration": "Quick question... Pause and think. Three, two, one."}}
+  {{"type": "question", "chapter": "<chapter>", "q": "<a question about what was JUST explained in THIS lesson>",
+    "options": ["<option A>", "<option B>"], "narration": "<ask the same question>... Pause and think. Three, two, one."}}
   There is NO "answer" scene type: the scene right after a question is a normal visual scene whose
   narration starts by giving the answer.
 - Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
@@ -158,7 +158,8 @@ def normalize(ep: dict) -> dict:
                 last = _sentences(s["narration"])
                 s["q"] = s.get("question") or (qs[-1] if qs else (last[-1] if last else s["narration"][:80]))
             s["options"] = [str(o) for o in (s.get("options") or s.get("choices") or [])][:3]
-        elif t not in allowed:  # unknown type (e.g. "answer") -> numbered key points from the narration
+        elif t not in allowed or any(not s.get(k) for k in REQUIRED.get(t, [])):
+            # unknown type (e.g. "answer") or missing parts -> numbered key points from the narration
             items = [x if len(x) <= 70 else x[:67].rsplit(" ", 1)[0] + "..." for x in _sentences(s["narration"])][:4]
             s = {"type": "steps", "chapter": s.get("chapter", ""), "narration": s["narration"],
                  "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
@@ -234,11 +235,12 @@ Allowed scene types and fields:
 LESSON (JSON):
 {json.dumps(ep, ensure_ascii=False)[:30000]}
 
-Fix every problem directly in the lesson. Return JSON: {{"verdict": "ok" | "fixed" | "reject",
-"issues": ["each problem you found and fixed"], "lesson": <the complete corrected lesson JSON, same format>}}
+Return ONLY the changes (do not repeat the whole lesson). JSON:
+{{"verdict": "ok" | "fixed" | "reject", "issues": ["each problem you found"],
+  "fixes": [{{"scene": <scene number, 0-based>, "set": {{<only the fields to replace, e.g. "narration": "...", "items": [...]}}}}]}}
 Use "reject" only if the topic cannot be taught correctly.""",
                               "You are an independent fact-checker. Be precise and strict.",
-                              temperature=0.1, max_tokens=14000, prefer=REVIEWER_MODEL)
+                              temperature=0.1, max_tokens=6000, prefer=REVIEWER_MODEL)
         except Exception as exc:
             log.warning("Reviewer round %d failed: %s", rnd, exc)
             break
@@ -246,10 +248,15 @@ Use "reject" only if the topic cannot be taught correctly.""",
             log.info("Reviewer %d: %s", rnd, issue)
         if r.get("verdict") == "reject":
             raise RuntimeError("Reviewer rejected the lesson: " + "; ".join(r.get("issues", [])[:3]))
-        fixed = r.get("lesson")
-        if isinstance(fixed, dict) and len(fixed.get("scenes") or []) >= 12:
-            keep = {k: ep[k] for k in ("title", "style", "theme", "badge", "tag", "engine", "kokoro_voice", "speed", "captions") if k in ep}
-            ep = {**fixed, **keep}
+        applied = 0
+        for fx in r.get("fixes") or []:
+            try:
+                i = int(fx.get("scene")); upd = fx.get("set") or {}
+                if 0 <= i < len(ep["scenes"]) and isinstance(upd, dict) and upd:
+                    ep["scenes"][i].update(upd); applied += 1
+            except (TypeError, ValueError):
+                continue
+        log.info("Reviewer %d: %d fixes applied", rnd, applied)
         if r.get("verdict") == "ok" and not check_episode(ep):
             log.info("Reviewer %d: lesson approved", rnd)
             break
