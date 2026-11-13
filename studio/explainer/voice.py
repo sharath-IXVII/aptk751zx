@@ -40,7 +40,10 @@ for key, s in jobs:
             break
         print("voice retry", i, r.stderr[-150:]); time.sleep(3 * (attempt + 1))
     d = dur(f); s["audio"] = True; s["audio_key"] = key
-    s["frames"] = int((d + (0.9 if s["type"] in ("title", "outro") else 0.3)) * FPS)
+    pad = 0.9 if s["type"] in ("title", "outro", "lab-title", "lab-outro") else 0.3
+    if s["type"] == "question" and not s.get("reveal"):
+        pad = 3.4  # silent on-screen 3-2-1 after the question is asked
+    s["frames"] = int((d + pad) * FPS)
     print(f"scene {key:5s} {s['type']:9s} {d:5.1f}s")
 total = sum(s["frames"] for s in ep["scenes"]) / FPS
 json.dump({"ep": ep}, open(props, "w"))

@@ -418,3 +418,34 @@ export const LAB_SCENES: Record<string, React.FC<any>> = {
   "lab-title": TitleLab, rectifier: RectifierLab, wave: WaveLab, capacitor: CapLab, question: QuestionLab,
   formula: FormulaLab, steps: StepsLab, "lab-outro": OutroLab,
 };
+
+// ------------------------------------------------------------------ thumbnail (1280x720 still)
+const ICONS: Record<string, (c: string) => React.ReactNode> = {
+  ece: (c) => <g fill="none" stroke={c} strokeWidth={14} strokeLinejoin="round"><path d="M40,160 L120,160" /><polygon points="120,100 120,220 220,160" /><line x1={228} y1={96} x2={228} y2={224} /><path d="M228,160 L320,160" />
+    <path d="M30,300 Q85,220 140,300 T250,300 T360,300" stroke={c} opacity={0.6} /></g>,
+  cse: (c) => <g fill={c} fontFamily="JetBrains Mono, monospace" fontWeight={700}><text x={190} y={230} fontSize={170} textAnchor="middle">{"</>"}</text></g>,
+  cyber: (c) => <g fill="none" stroke={c} strokeWidth={16} strokeLinejoin="round"><path d="M190,40 L320,90 Q320,250 190,320 Q60,250 60,90 Z" /><rect x={140} y={160} width={100} height={80} rx={10} fill={c} /><path d="M160,160 V130 a30,30 0 0 1 60,0 V160" /></g>,
+  ent: (c) => <g><rect x={30} y={90} width={320} height={130} rx={14} fill="none" stroke={c} strokeWidth={14} transform="rotate(-8 190 155)" />
+    <text x={190} y={180} textAnchor="middle" fill={c} fontFamily="Inter, sans-serif" fontWeight={900} fontSize={64} transform="rotate(-8 190 155)">NEWS</text></g>,
+};
+export const ThumbLab: React.FC<{ ep: any }> = ({ ep }) => {
+  setTheme(ep.theme);
+  const words: string[] = String(ep.cover || ep.title || "").toUpperCase().replace(/[|:]/g, " ").split(/\s+/).filter(Boolean).slice(0, 5);
+  const hi = String(ep.cover_highlight || "").toUpperCase();
+  const key = Math.max(0, words.findIndex((w) => hi && w.replace(/\W/g, "") === hi.replace(/\W/g, "")));
+  const theme = (ep.theme || "ece").split("-")[0];
+  const len = words.join(" ").length; const fs = len > 22 ? 112 : len > 16 ? 132 : 160;
+  return (
+    <AbsoluteFill style={{ background: `linear-gradient(135deg, ${L.bg0} 0%, ${L.bg1} 100%)`, padding: "130px 60px 60px", justifyContent: "center" }}>
+      <AbsoluteFill style={{ backgroundImage: `linear-gradient(${L.grid2} 2px, transparent 2px), linear-gradient(90deg, ${L.grid2} 2px, transparent 2px)`, backgroundSize: "80px 80px", opacity: 0.6 }} />
+      <svg viewBox="0 0 380 340" width={360} height={322} style={{ position: "absolute", right: 50, bottom: 70, opacity: 0.95, overflow: "visible" }}>{ICONS[theme]?.(L.cyan)}</svg>
+      <div style={{ position: "relative", maxWidth: 780, fontFamily: SANS, fontWeight: 900, fontSize: fs, lineHeight: 0.95, letterSpacing: -4, color: L.text }}>
+        {words.map((w, i) => <span key={i} style={{ color: i === key ? L.amber : L.text, display: "inline-block", marginRight: 26,
+          textShadow: L.dark ? "0 6px 30px rgba(0,0,0,0.6)" : "none" }}>{w}</span>)}
+      </div>
+      <div style={{ position: "relative", marginTop: 34, width: 260, height: 18, background: L.amber, borderRadius: 9 }} />
+      <div style={{ position: "absolute", left: 60, top: 46, border: `5px solid ${L.cyan}`, color: L.cyan, fontFamily: MONO, fontWeight: 700, fontSize: 34, padding: "6px 18px", letterSpacing: 3 }}>
+        {ep.badge || L.badge}</div>
+    </AbsoluteFill>
+  );
+};

@@ -112,22 +112,28 @@ Rules:
   facts; you may only add short connecting sentences and the questions below.
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
-- Add 3 "question" scenes in the middle (after an idea is explained, before the next step), exactly like:
-  {{"type": "question", "chapter": "<chapter>", "q": "<a question about what was JUST explained in THIS lesson>",
-    "options": ["<option A>", "<option B>"], "answer": "<the correct option, copied exactly>",
-    "why": "<one sentence explaining why>", "narration": "<ask the same question>... Pause and think. Three, two, one."}}
-  The answer scene is added automatically after it - do not write one, and never reveal the answer in the
-  question's own narration.
+- NO questions while teaching. First teach the whole concept completely. Then, at the very END (after the
+  recap, before the last "lab-outro"), add a "Quick quiz" chapter with 2-3 "question" scenes that test ONLY
+  what this lesson taught, exactly like:
+  {{"type": "question", "chapter": "Quick quiz", "q": "<question about something taught in THIS lesson>",
+    "options": ["<option A>", "<option B>", "<option C>"], "answer": "<the correct option, copied exactly>",
+    "why": "<one sentence explaining why>", "narration": "<just ask the question naturally, e.g. 'Question one. Which diodes conduct in the positive half-cycle?'>"}}
+  Never say "pause and think" or count "three, two, one" - the countdown is shown silently. The answer scene
+  is added automatically after each question; never reveal the answer in the question's narration.
 - Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
   with every field filled in correctly:
 {_catalog(d)}
 - Use "chapter" on every scene ("1 · The problem", "2 · How it works", ...).
 - First scene "lab-title", last scene "lab-outro". Mix the scene types; never 3 of the same type in a row.
-- "short": 4-6 scene numbers (0-based) that together make a gripping ~55 second vertical Short.
-- "short_hook": one line (max 9 words) for the Short.
+- "short_scenes": a SEPARATE vertical Short (40-55 seconds) written to stop the scroll - 5-7 scenes, same
+  scene types, narration 8-20 words each, fast and punchy:
+  scene 1 = the hook (a surprising fact or question in the first 2 seconds, on a "lab-title" or "stamp"),
+  scenes 2-5 = the single most interesting idea of the lesson shown visually, step by step,
+  last scene = "lab-outro" with "cta": "Full video on our channel" and narration "Watch the full video on our channel."
+  No questions in the Short.
 
 Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...", <fields for that type>}}],
-"short": [..], "short_hook": "..."}}""", "You design accurate, engaging animated lessons.",
+"short_scenes": [...], "cover": "<2-4 BIG words for the thumbnail, the hook>", "cover_highlight": "<the one word to colour>"}}""", "You design accurate, engaging animated lessons.",
                        temperature=0.4 + 0.1 * attempt, max_tokens=16000,
                        prefer=llm.WRITER_MODEL if attempt < 2 else REVIEWER_MODEL)
     ep.update({"title": meta.get("title", script.get("title")), "style": "lab", "theme": d["theme"],
@@ -185,6 +191,17 @@ def normalize(ep: dict, final_pass: bool = False) -> dict:
             s = {"type": "steps", "chapter": s.get("chapter", ""), "narration": s["narration"],
                  "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
         out.append(s)
+    # questions go to the end (Quick quiz), before the outro; at most 3
+    qs = [x for x in out if x.get("type") == "question" and not x.get("reveal")][:3]
+    rest = [x for x in out if x.get("type") != "question"]
+    outro = [x for x in rest if x.get("type") == "lab-outro"]
+    rest = [x for x in rest if x.get("type") != "lab-outro"]
+    for q in qs:
+        q["chapter"] = "Quick quiz"
+        q["narration"] = re.sub(r"(?i)\b(pause and think|take a moment to think|think about it)\b[.!,]*|\b(three|3)[,.]?\s*(two|2)[,.]?\s*(one|1)\b[.!]*", "", q["narration"]).strip()
+        if len(q["narration"].split()) < 4:
+            q["narration"] = q.get("q", "")
+    out = rest + qs + outro
     final = []
     for i, s in enumerate(out):
         final.append(s)
@@ -241,9 +258,18 @@ def check_episode(ep: dict) -> list[str]:
                 problems.append(f"scene {i}: network refers to a node that does not exist")
     if scenes and scenes[0].get("type") not in ("lab-title", "stamp"):
         problems.append("first scene must be lab-title")
-    if sum(s.get("type") == "question" and not s.get("reveal") for s in scenes) < 2:
-        problems.append("needs at least 2 question scenes")
+    if sum(s.get("type") == "question" and not s.get("reveal") for s in scenes) < 1:
+        problems.append("needs at least 1 quiz question scenes")
     ep["short"] = [i for i in ep.get("short", []) if isinstance(i, int) and 0 <= i < len(scenes)][:6] or [0, 1, 2, 3]
+    ss = [x for x in (ep.get("short_scenes") or []) if isinstance(x, dict) and x.get("type") in allowed - {"question"}
+          and len((x.get("narration") or "").split()) >= 3 and all(x.get(k) for k in REQUIRED.get(x.get("type"), []))]
+    if len(ss) >= 3:
+        if ss[-1].get("type") != "lab-outro":
+            ss.append({"type": "lab-outro", "title": (ep.get("title") or "").upper()[:40], "lines": [], "cta": "Full video on our channel",
+                       "narration": "Watch the full video on our channel."})
+        ep["short_scenes"] = ss[:8]
+    else:
+        ep.pop("short_scenes", None)
     return problems
 
 
@@ -323,11 +349,20 @@ def render(ep: dict, out_dir: Path) -> tuple[Path, Path]:
                         "-filter_complex", "[1:a]volume=0.45[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
                         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", str(dst)], check=True)
     shutil.copy(epf, out_dir / "episode.json")
+    try:  # designed thumbnail: big bold words + highlighted keyword + channel icon
+        props = json.loads((work / "props.json").read_text())
+        props["ep"].setdefault("cover", ep.get("cover") or ep.get("title"))
+        (work / "props_thumb.json").write_text(json.dumps(props, ensure_ascii=False))
+        run("npx", "remotion", "still", "src/index.ts", "Thumbnail", str((out_dir / "thumb_studio.png").resolve()), "--props=props_thumb.json")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out_dir / "thumb_studio.png"), "-q:v", "2", str(out_dir / "thumb_studio.jpg")], check=True)
+    except Exception as exc:
+        log.warning("Designed thumbnail failed, using a frame instead: %s", exc)
     return final, short
 
 
 def make(script: dict, meta: dict, out_dir: Path, lessons: str = "") -> tuple[Path, Path, dict]:
     ep = write_episode(script, meta)
+    ep.setdefault("cover", meta.get("cover_text") or meta.get("title"))
     if script.get("facts"):  # news: every claim must match today's reporting
         lessons += "\nSOURCE FACTS from today's reporting - every claim in the lesson must match these; remove anything not supported:\n" + script["facts"][:12000]
     ep = review_episode(ep, lessons)

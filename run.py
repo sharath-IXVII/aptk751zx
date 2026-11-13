@@ -223,8 +223,13 @@ async def make_with_studio(state: dict, job: dict, script: dict, meta: dict, tod
         raise
     (OUT / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
     import subprocess
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "2.5", "-i", str(final), "-frames:v", "1",
-                    "-q:v", "2", str(thumb)], check=True)  # thumbnail = the title card
+    designed = OUT / "thumb_studio.jpg"
+    if designed.exists():
+        import shutil
+        shutil.copy(designed, thumb)  # the designed thumbnail
+    else:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "2.5", "-i", str(final), "-frames:v", "1",
+                        "-q:v", "2", str(thumb)], check=True)  # fallback: the title card
     if not os.getenv("YT_REFRESH_TOKEN"):
         log.warning("YouTube secrets not set - skipping upload (files are in the run artifacts)")
         return finish_job(state, job, None, today)

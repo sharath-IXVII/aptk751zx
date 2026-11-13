@@ -3,7 +3,7 @@ import { AbsoluteFill, Audio, Composition, Sequence, staticFile, useCurrentFrame
 import { Frame } from "./Frame";
 import { Title, Ship, MapScene, Counter, Bars, Facts, Clock, Timeline, Quote, Outro, Depth, Valve, Silicon, Mosfet, Circuit, Binary } from "./scenes";
 import { C, SERIF, SANS, fade } from "./theme";
-import { LabFrame, LAB_SCENES, setTheme } from "./lab";
+import { LabFrame, LAB_SCENES, setTheme, ThumbLab } from "./lab";
 import { DOMAIN_SCENES } from "./domains";
 import { STORY_SCENES } from "./story";
 import sample from "../episodes/titanic.json";
@@ -52,6 +52,7 @@ const total = (ep: any, pick?: number[], hook?: boolean, short?: boolean) =>
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Thumbnail" component={ThumbLab as any} fps={FPS} width={1280} height={720} durationInFrames={1} defaultProps={{ ep: sample }} />
     <Composition id="Explainer" component={Film as any} fps={FPS} width={1920} height={1080} durationInFrames={total(sample)}
       defaultProps={{ ep: sample }} calculateMetadata={({ props }: any) => ({ durationInFrames: total(props.ep) })} />
     <Composition id="Short" component={Film as any} fps={FPS} width={1080} height={1920} durationInFrames={total(sample, sample.short, true)}
