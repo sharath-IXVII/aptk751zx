@@ -95,7 +95,7 @@ export const LabFrame: React.FC<{ children: React.ReactNode; caption?: string; d
           {ch.map((w, i) => <span key={i} style={{ color: i === key ? L.red : L.text, WebkitTextStroke: `${2 * u}px ${L.bg0}`, paintOrder: "stroke" }}>{w.replace(/[.,!?;:]$/, "")} </span>)}
         </div>;
       })()}
-      {current && ep?.captions !== "bold" && (
+      {current && ep?.captions === "sentences" && (
         <div style={{ position: "absolute", left: "7%", right: "7%", bottom: tall ? "9%" : "5%", textAlign: "center", fontFamily: SANS,
           fontSize: 30 * u * (tall ? 1.25 : 1), fontWeight: tall ? 700 : 500, lineHeight: 1.35, color: L.text,
           textShadow: L.shadow, opacity: out }}>
