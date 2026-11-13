@@ -50,7 +50,7 @@ jobs:
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
         if: steps.check.outputs.skip != 'true' || inputs.force
       - name: NotebookLM login
-        continue-on-error: true   # not needed by GetYr Studio
+        continue-on-error: false
         if: steps.check.outputs.skip != 'true' || inputs.force
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
@@ -95,7 +95,7 @@ jobs:
           WATERMARK_SITE: ${{ vars.WATERMARK_SITE }}
           THUMBNAIL_AT: ${{ vars.THUMBNAIL_AT }}
           VIDEO_LANGUAGE: en
-          VIDEO_ENGINE: ${{ vars.VIDEO_ENGINE || 'studio' }}
+          VIDEO_ENGINE: ${{ vars.VIDEO_ENGINE || 'notebooklm' }}   # Studio is being perfected on ECE first
           SEARCH_DOMAIN: ent
         run: |
           set -o pipefail
