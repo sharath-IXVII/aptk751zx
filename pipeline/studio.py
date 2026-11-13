@@ -296,9 +296,12 @@ def render(ep: dict, out_dir: Path) -> tuple[Path, Path]:
     run("npx", "remotion", "render", "src/index.ts", "Short", "out/short.mp4", "--props=props_short.json", "--concurrency=4", "--crf=20")
     out_dir.mkdir(exist_ok=True)
     final, short = out_dir / "video_final.mp4", out_dir / "short_studio.mp4"
-    for src, dst in ((work / "out" / "video.mp4", final), (work / "out" / "short.mp4", short)):
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-i", str(work / "public" / "music.wav"),
-                        "-filter_complex", "[1:a]volume=0.18[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+    for src, dst, bedf in ((work / "out" / "video.mp4", final, "music.wav"), (work / "out" / "short.mp4", short, "music_short.wav")):
+        bedp = work / "public" / bedf
+        if not bedp.exists():
+            bedp = work / "public" / "music.wav"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-i", str(bedp),
+                        "-filter_complex", "[1:a]volume=0.45[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
                         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", str(dst)], check=True)
     shutil.copy(epf, out_dir / "episode.json")
     return final, short
