@@ -85,8 +85,11 @@ Rules:
   facts; you may only add short connecting sentences and the questions below.
 - Teach in depth like a great human teacher: explain how it ACTUALLY works, step by step, with the
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
-- Add 3 "question" scenes in the middle (after an idea is explained, before the next step). The
-  scene right after a question must start by giving the answer.
+- Add 3 "question" scenes in the middle (after an idea is explained, before the next step), exactly like:
+  {{"type": "question", "chapter": "2 · How it works", "q": "Which way does current flow now?",
+    "options": ["Left to right", "Right to left"], "narration": "Quick question... Pause and think. Three, two, one."}}
+  There is NO "answer" scene type: the scene right after a question is a normal visual scene whose
+  narration starts by giving the answer.
 - Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
   with every field filled in correctly:
 {_catalog(d)}
@@ -118,10 +121,41 @@ def _run_python(code: str) -> list[str] | None:
         return None
 
 
+def _sentences(t: str) -> list[str]:
+    return [x.strip() for x in re.findall(r"[^.!?]+[.!?]", t or "") if len(x.split()) >= 3]
+
+
+def normalize(ep: dict) -> dict:
+    """Repair what AI writers often get slightly wrong, in code, so a fixable slip never stops a video."""
+    d = _domain(); allowed = set(COMMON) | set(d["scenes"])
+    out = []
+    for s in ep.get("scenes") or []:
+        if not isinstance(s, dict):
+            continue
+        s["narration"] = (s.get("narration") or s.get("text") or "").strip()
+        if len(s["narration"].split()) < 5:
+            continue  # nothing to say -> no scene
+        t = s.get("type")
+        if t == "question":
+            if not s.get("q"):
+                qs = [x for x in _sentences(s["narration"]) if x.endswith("?")]
+                last = _sentences(s["narration"])
+                s["q"] = s.get("question") or (qs[-1] if qs else (last[-1] if last else s["narration"][:80]))
+            s["options"] = [str(o) for o in (s.get("options") or s.get("choices") or [])][:3]
+        elif t not in allowed:  # unknown type (e.g. "answer") -> numbered key points from the narration
+            items = [x if len(x) <= 70 else x[:67].rsplit(" ", 1)[0] + "..." for x in _sentences(s["narration"])][:4]
+            s = {"type": "steps", "chapter": s.get("chapter", ""), "narration": s["narration"],
+                 "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
+        out.append(s)
+    ep["scenes"] = out
+    return ep
+
+
 def check_episode(ep: dict) -> list[str]:
     """Problems we can find without an AI. Also corrects code output to the real output."""
     d = _domain(); allowed = set(COMMON) | set(d["scenes"])
     problems = []
+    normalize(ep)
     scenes = ep.get("scenes") or []
     if len(scenes) < 12:
         problems.append(f"only {len(scenes)} scenes - the lesson is too short")
