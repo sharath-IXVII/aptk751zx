@@ -31,8 +31,9 @@ COMMON = {
             '{"title": "...", "nodes": ["2-5 short labels"], "notes": ["one short sentence per node"]}',
     "formula": 'a formula with what each symbol means and a worked example: {"formula": "V = I × R", '
                '"terms": [["V", "voltage"], ...], "example": ["line 1", "line 2", "answer line"]}',
-    "question": 'PAUSE & THINK card with a 3-2-1 countdown (narration asks the question, the NEXT scene '
-                'answers it): {"q": "...", "options": ["2-3 short options"]}',
+    "question": 'PAUSE & THINK card with a 3-2-1 countdown; the answer is revealed automatically right after: '
+                '{"q": "...", "options": ["2-3 short options"], "answer": "<the correct option, copied exactly>", '
+                '"why": "<one sentence: why that is the answer>"}',
     "lab-outro": 'last card: {"title": "TOPIC", "lines": ["3 key takeaways"], "cta": "Subscribe for the next lesson"}',
 }
 DOMAIN = {
@@ -101,9 +102,10 @@ Rules:
   "why" behind every step. Talk to the viewer ("you"), use simple words and short sentences.
 - Add 3 "question" scenes in the middle (after an idea is explained, before the next step), exactly like:
   {{"type": "question", "chapter": "<chapter>", "q": "<a question about what was JUST explained in THIS lesson>",
-    "options": ["<option A>", "<option B>"], "narration": "<ask the same question>... Pause and think. Three, two, one."}}
-  There is NO "answer" scene type: the scene right after a question is a normal visual scene whose
-  narration starts by giving the answer.
+    "options": ["<option A>", "<option B>"], "answer": "<the correct option, copied exactly>",
+    "why": "<one sentence explaining why>", "narration": "<ask the same question>... Pause and think. Three, two, one."}}
+  The answer scene is added automatically after it - do not write one, and never reveal the answer in the
+  question's own narration.
 - Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
   with every field filled in correctly:
 {_catalog(d)}
@@ -141,7 +143,7 @@ def _sentences(t: str) -> list[str]:
     return [x.strip() for x in re.findall(r"[^.!?]+[.!?]", t or "") if len(x.split()) >= 3]
 
 
-def normalize(ep: dict) -> dict:
+def normalize(ep: dict, final_pass: bool = False) -> dict:
     """Repair what AI writers often get slightly wrong, in code, so a fixable slip never stops a video."""
     d = _domain(); allowed = set(COMMON) | set(d["scenes"])
     out = []
@@ -164,7 +166,21 @@ def normalize(ep: dict) -> dict:
             s = {"type": "steps", "chapter": s.get("chapter", ""), "narration": s["narration"],
                  "title": s.get("title", ""), "items": items or [s["narration"][:60]]}
         out.append(s)
-    ep["scenes"] = out
+    final = []
+    for i, s in enumerate(out):
+        final.append(s)
+        if s.get("type") == "question" and not s.get("reveal"):
+            nxt = out[i + 1] if i + 1 < len(out) else {}
+            if nxt.get("reveal"):
+                continue
+            if s.get("answer"):
+                why = (s.get("why") or "").strip()
+                final.append({"type": "question", "reveal": True, "chapter": s.get("chapter", ""), "q": s.get("q", ""),
+                              "options": s.get("options", []), "answer": s["answer"],
+                              "narration": f"The answer is: {s['answer']}. {why}".strip()})
+            elif final_pass:
+                final.pop()  # a question nobody answers is worse than no question
+    ep["scenes"] = final
     return ep
 
 
@@ -185,8 +201,8 @@ def check_episode(ep: dict) -> list[str]:
         for k in REQUIRED.get(t, []):
             if not s.get(k):
                 problems.append(f"scene {i} ({t}): '{k}' is missing")
-        if t == "question" and i + 1 < len(scenes) and scenes[i + 1].get("type") == "question":
-            problems.append(f"scene {i}: two questions in a row")
+        if t == "question" and not s.get("reveal") and not s.get("answer"):
+            problems.append(f"scene {i} (question): 'answer' and 'why' are missing - add the correct answer")
         if t == "code" and s.get("lang", "python") == "python" and s.get("code"):
             real = _run_python(s["code"])
             if real is None:
@@ -206,7 +222,7 @@ def check_episode(ep: dict) -> list[str]:
                 problems.append(f"scene {i}: network refers to a node that does not exist")
     if scenes and scenes[0].get("type") not in ("lab-title", "stamp"):
         problems.append("first scene must be lab-title")
-    if sum(s.get("type") == "question" for s in scenes) < 2:
+    if sum(s.get("type") == "question" and not s.get("reveal") for s in scenes) < 2:
         problems.append("needs at least 2 question scenes")
     ep["short"] = [i for i in ep.get("short", []) if isinstance(i, int) and 0 <= i < len(scenes)][:6] or [0, 1, 2, 3]
     return problems
@@ -224,7 +240,7 @@ lesson for complete beginners BEFORE it is published. Check EVERY scene:
 - every visual matches its narration exactly (labels, values, steps, which part does what, direction of
   current/flow, the order of steps, code output, command output);
 - the explanation is deep and clear enough for a beginner, with no missing steps;
-- each question is answered correctly by the next scene;
+- each question has the CORRECT "answer" (one of its options) and a correct "why";
 - only legal, ethical, defensive content; no invented statistics.
 {lessons[:14000]}
 Problems already found automatically: {"; ".join(problems) or "none"}
@@ -260,7 +276,8 @@ Use "reject" only if the topic cannot be taught correctly.""",
         if r.get("verdict") == "ok" and not check_episode(ep):
             log.info("Reviewer %d: lesson approved", rnd)
             break
-    left = check_episode(ep)
+    normalize(ep, final_pass=True)
+    left = [p for p in check_episode(ep) if "answer" not in p and "question scenes" not in p]
     if left:
         raise RuntimeError("Lesson still has problems after review: " + "; ".join(left[:4]))
     return ep

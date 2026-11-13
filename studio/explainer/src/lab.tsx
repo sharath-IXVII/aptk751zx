@@ -331,20 +331,28 @@ export const CapLab: React.FC<any> = ({ dur, mode = "cycle" }) => {
   );
 };
 
-/** Pause & think: the narrator asks, the viewer gets a 3-2-1. */
-export const QuestionLab: React.FC<any> = ({ dur, q, options = [] }) => {
+/** Pause & think: the narrator asks, the viewer gets a 3-2-1. With reveal=true it shows the answer. */
+export const QuestionLab: React.FC<any> = ({ dur, q, options = [], reveal = false, answer = "" }) => {
   const f = useCurrentFrame(); const { u } = useU();
   const left = Math.max(1, 3 - Math.floor(interpolate(f, [dur - 95, dur - 5], [0, 3], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })));
+  const norm = (x: string) => String(x).toLowerCase().replace(/[^a-z0-9]/g, "");
+  const right = options.findIndex((o: string) => norm(o) === norm(answer) || (norm(answer).length > 2 && norm(o).includes(norm(answer))));
   return (
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 10%" }}>
-      <div style={{ fontFamily: MONO, color: L.amber, letterSpacing: 8 * u, fontSize: 28 * u, fontWeight: 700, opacity: fade(f, 0) }}>PAUSE &amp; THINK</div>
-      <div style={{ fontFamily: SANS, color: L.text, fontSize: 64 * u, fontWeight: 700, lineHeight: 1.2, marginTop: 30 * u, opacity: fade(f, 6), transform: `translateY(${rise(f, 6)}px)` }}>{q}</div>
+      <div style={{ fontFamily: MONO, color: reveal ? L.green : L.amber, letterSpacing: 8 * u, fontSize: 28 * u, fontWeight: 700, opacity: fade(f, 0) }}>{reveal ? "ANSWER" : "PAUSE & THINK"}</div>
+      <div style={{ fontFamily: SANS, color: L.text, fontSize: 60 * u, fontWeight: 700, lineHeight: 1.2, marginTop: 30 * u, opacity: fade(f, reveal ? 0 : 6), transform: `translateY(${reveal ? 0 : rise(f, 6)}px)` }}>{q}</div>
       <div style={{ display: "flex", gap: 26 * u, marginTop: 50 * u, flexWrap: "wrap", justifyContent: "center" }}>
-        {options.map((o: string, i: number) => <div key={i} style={{ fontFamily: MONO, fontSize: 30 * u, color: L.cyan, border: `${2 * u}px solid ${L.cyan}`, borderRadius: 12 * u,
-          padding: `${14 * u}px ${26 * u}px`, opacity: fade(f, 20 + i * 8), transform: `translateY(${rise(f, 20 + i * 8)}px)` }}>{String.fromCharCode(65 + i)}. {o}</div>)}
+        {options.map((o: string, i: number) => {
+          const ok = reveal && i === right; const dim = reveal && i !== right;
+          return <div key={i} style={{ fontFamily: MONO, fontSize: 30 * u, color: ok ? L.bg0 : L.cyan, background: ok ? L.green : "transparent",
+            border: `${2 * u}px solid ${ok ? L.green : L.cyan}`, borderRadius: 12 * u, padding: `${14 * u}px ${26 * u}px`,
+            opacity: dim ? 0.35 : fade(f, reveal ? 0 : 20 + i * 8), transform: `scale(${ok ? interpolate(f, [0, 8, 14], [1, 1.12, 1.06], { extrapolateRight: "clamp" }) : 1})` }}>
+            {ok ? "✓ " : `${String.fromCharCode(65 + i)}. `}{o}</div>;
+        })}
       </div>
-      <div style={{ marginTop: 50 * u, width: 110 * u, height: 110 * u, borderRadius: "50%", border: `${5 * u}px solid ${L.amber}`, color: L.amber, display: "flex",
-        alignItems: "center", justifyContent: "center", fontFamily: MONO, fontSize: 60 * u, fontWeight: 700, opacity: fade(f, dur - 100) }}>{left}</div>
+      {reveal && right < 0 && answer && <div style={{ marginTop: 40 * u, fontFamily: SANS, fontWeight: 800, fontSize: 52 * u, color: L.green }}>✓ {answer}</div>}
+      {!reveal && <div style={{ marginTop: 50 * u, width: 110 * u, height: 110 * u, borderRadius: "50%", border: `${5 * u}px solid ${L.amber}`, color: L.amber, display: "flex",
+        alignItems: "center", justifyContent: "center", fontFamily: MONO, fontSize: 60 * u, fontWeight: 700, opacity: fade(f, dur - 100) }}>{left}</div>}
     </AbsoluteFill>
   );
 };
