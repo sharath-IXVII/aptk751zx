@@ -15,6 +15,7 @@ import os
 import re
 import shutil
 import subprocess
+import time
 import sys
 from pathlib import Path
 
@@ -35,6 +36,15 @@ COMMON = {
                 '{"q": "...", "options": ["2-3 short options"], "answer": "<the correct option, copied exactly>", '
                 '"why": "<one sentence: why that is the answer>"}',
     "lab-outro": 'last card: {"title": "TOPIC", "lines": ["3 key takeaways"], "cta": "Subscribe for the next lesson"}',
+    "image": 'a REAL photo or diagram of the exact thing being talked about (fetched from Wikimedia Commons): '
+             '{"query": "<2-5 English words that find that exact thing, e.g. printed circuit board, Great Wall of China>", '
+             '"label": "<short label>", "points": [{"x": 0-100, "y": 0-100, "label": "<part to point at>"}] (optional, only if sure where)}',
+    "screen": 'a software window for "how to" steps - the menu path is clicked, a dialog opens, options are ticked: '
+              '{"app": "KiCad PCB Editor", "menu": ["File", "Edit", "View", "Place", "Tools"], "path": ["File", "Plot"], '
+              '"dialog": {"title": "Plot", "checks": ["All copper layers", "Mirror bottom layer"], "button": "Plot"}, "result": "Gerber files created"}',
+    "diagram": 'labelled parts placed anywhere, joined by arrows, lit step by step (any process, structure or system): '
+               '{"title": "...", "parts": [{"id": "a", "label": "Schematic", "x": 10, "y": 50, "shape": "box|circle|pill"}] (x/y 0-100, 2-6 parts), '
+               '"arrows": [["a", "b", "label"]], "steps": [{"highlight": ["a"], "note": "short sentence"}]}',
 }
 DOMAIN = {
     "ece": {"theme": "ece", "name": "ECE", "about": "electronics and electrical engineering", "scenes": {
@@ -125,8 +135,11 @@ Rules:
   Never say "pause and think" or count "three, two, one" - the countdown is shown silently. Never reveal
   the answer in the question's narration: the answer scene ("The correct answer is ...") is added after it
   automatically.
-- Every scene needs the visual that best SHOWS what is being said, chosen from this list only,
-  with every field filled in correctly:
+- SHOW, DON'T JUST TELL: every scene's picture must show EXACTLY what its narration is saying at that
+  moment - the real object (image), the real menu clicks (screen), the real parts and connections (diagram,
+  circuit, code, network...). A title card or a text list is NOT a visual: use "steps" only for a recap,
+  never more than 2 "steps" scenes in the whole lesson. If you talk about a thing, show that thing.
+  Chosen from this list only, with every field filled in correctly:
 {_catalog(d)}
 - Use "chapter" on every scene ("1 · The problem", "2 · How it works", ...).
 - First scene "lab-title", last scene "lab-outro". Mix the scene types; never 3 of the same type in a row.
@@ -153,7 +166,7 @@ Return JSON: {{"scenes": [{{"type": "...", "chapter": "...", "narration": "...",
 
 
 # ------------------------------------------------------------------ checks done in code
-REQUIRED = {"story": ["figures"], "phone": ["items"], "chart": ["points"], "stamp": ["text"], "lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
+REQUIRED = {"image": ["query"], "screen": ["path"], "diagram": ["parts"], "story": ["figures"], "phone": ["items"], "chart": ["points"], "stamp": ["text"], "lab-title": ["title"], "steps": ["items"], "flow": ["nodes"], "formula": ["formula"], "question": ["q"],
             "lab-outro": ["title"], "capacitor": [], "rectifier": [], "wave": [], "code": ["code", "steps"],
             "array": ["values", "steps"], "terminal": ["lines"], "network": ["nodes", "links", "packets"]}
 
@@ -294,8 +307,10 @@ def review_episode(ep: dict, lessons: str = "") -> dict:
             r = llm.chat_json(f"""You are a strict senior professor and engineer in {d["about"]}, reviewing an animated
 lesson for complete beginners BEFORE it is published. Check EVERY scene:
 - every fact, number, unit, formula, definition, date, command and line of code is correct;
-- every visual matches its narration exactly (labels, values, steps, which part does what, direction of
-  current/flow, the order of steps, code output, command output);
+- every visual SHOWS exactly what its narration says at that moment (labels, values, steps, which part does
+  what, direction of current/flow, the order of steps, code output, command output). If a scene only shows text
+  or a title while the narration talks about a real thing, change it to a visual that shows that thing
+  (image with a precise query, screen for software steps, diagram, or the channel's own scenes);
 - the explanation is deep and clear enough for a beginner, with no missing steps;
 - each quiz question (3-5, only at the end) has the CORRECT "answer" (one of its options) and a correct "why";
   its narration reads the question, explains it, and reads and explains every option, without revealing the answer;
@@ -342,9 +357,56 @@ Use "reject" only if the topic cannot be taught correctly.""",
 
 
 # ------------------------------------------------------------------ render
+OK_LICENSES = ("cc0", "public domain", "cc by", "cc-by", "pd")
+
+
+def fetch_images(ep: dict, work: Path) -> list[str]:
+    """Download a freely licensed photo for every image scene (Wikimedia Commons). Scenes whose
+    image cannot be found become a diagram-free 'steps' recap of their narration (never a blank)."""
+    import httpx
+    (work / "public" / "img").mkdir(parents=True, exist_ok=True)
+    credits, n = [], 0
+    for sc in (ep.get("scenes") or []) + (ep.get("short_scenes") or []):
+        if sc.get("type") != "image" or sc.get("src"):
+            continue
+        try:
+            r = httpx.get("https://commons.wikimedia.org/w/api.php", timeout=30, headers={"User-Agent": "GetYrStudio/1.0 (educational videos)"},
+                          params={"action": "query", "format": "json", "generator": "search", "gsrnamespace": 6, "gsrlimit": 8,
+                                  "gsrsearch": f"filetype:bitmap {sc['query']}", "prop": "imageinfo",
+                                  "iiprop": "url|extmetadata|size", "iiurlwidth": 1600})
+            pages = sorted((r.json().get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+            for pg in pages:
+                ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata") or {}
+                lic = (md.get("LicenseShortName", {}).get("value") or "").lower()
+                if not any(x in lic for x in OK_LICENSES) or ii.get("width", 0) < 800:
+                    continue
+                img = None
+                for wait in (0, 4, 10, 20):  # Wikimedia asks for polite, slow downloads
+                    time.sleep(wait + 1.5)
+                    img = httpx.get(ii.get("thumburl") or ii["url"], timeout=60, follow_redirects=True,
+                                    headers={"User-Agent": "GetYrStudio/1.0 (https://github.com/sharath-IXVII; educational videos)"})
+                    if img.status_code != 429:
+                        break
+                if img is None or img.status_code >= 400:
+                    continue
+                n += 1; name = f"img/{n}.jpg"; (work / "public" / name).write_bytes(img.content)
+                artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value") or "Wikimedia Commons").strip()[:60]
+                sc["src"] = name; sc["credit"] = f"{artist} / {md.get('LicenseShortName', {}).get('value', '')}"
+                credits.append(f"{pg.get('title', '').replace('File:', '')} - {sc['credit']} - {ii.get('descriptionurl', '')}")
+                break
+        except Exception as exc:
+            log.warning("Image search failed for '%s': %s", sc.get("query"), exc)
+        if not sc.get("src"):
+            log.info("No licensed image for '%s' - showing key points instead", sc.get("query"))
+            said = sc.get("narration", ""); pts = [x for x in re.findall(r"[^.!?]+[.!?]", said) if len(x.split()) >= 3][:4]
+            sc.clear(); sc.update({"type": "steps", "title": "", "items": [p.strip()[:70] for p in pts] or [said[:70]], "narration": said})
+    return credits
+
+
 def render(ep: dict, out_dir: Path) -> tuple[Path, Path]:
     """Voice + animation. Returns (16:9 lesson, 9:16 Short)."""
     work = STUDIO
+    ep["credits"] = fetch_images(ep, work)
     (work / "episodes").mkdir(exist_ok=True)
     epf = work / "episodes" / "current.json"
     epf.write_text(json.dumps(ep, ensure_ascii=False, indent=1))
@@ -380,4 +442,6 @@ def make(script: dict, meta: dict, out_dir: Path, lessons: str = "") -> tuple[Pa
         lessons += "\nSOURCE FACTS from today's reporting - every claim in the lesson must match these; remove anything not supported:\n" + script["facts"][:12000]
     ep = review_episode(ep, lessons)
     final, short = render(ep, out_dir)
+    if ep.get("credits"):  # licence credits for the photos used
+        meta["description"] = (meta.get("description", "") + "\n\nImage credits (Wikimedia Commons):\n" + "\n".join(ep["credits"]))[:4900]
     return final, short, ep

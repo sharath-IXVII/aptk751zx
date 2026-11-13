@@ -6,6 +6,7 @@ import { C, SERIF, SANS, fade } from "./theme";
 import { LabFrame, LAB_SCENES, setTheme, ThumbLab } from "./lab";
 import { DOMAIN_SCENES } from "./domains";
 import { STORY_SCENES } from "./story";
+import { VISUAL_SCENES } from "./visuals";
 import sample from "../episodes/titanic.json";
 
 const FPS = 30;
@@ -26,7 +27,7 @@ const Film: React.FC<{ ep: any; pick?: number[]; hook?: string; short?: boolean 
     <AbsoluteFill style={{ background: C.bg0 }}>
       {hook && <Sequence durationInFrames={75}><Hook text={hook} tag={ep.tag} /></Sequence>}
       {scenes.map((s: any) => {
-        const d = framesOf(s); const from = at; at += d; const Comp = LAB_SCENES[s.type] || DOMAIN_SCENES[s.type] || STORY_SCENES[s.type] || SCENES[s.type];
+        const d = framesOf(s); const from = at; at += d; const Comp = LAB_SCENES[s.type] || DOMAIN_SCENES[s.type] || STORY_SCENES[s.type] || VISUAL_SCENES[s.type] || SCENES[s.type];
         return (
           <Sequence key={s.idx} from={from} durationInFrames={d}>
             {lab ? <LabFrame caption={s.narration} dur={d} scene={s} ep={ep} progress={(from + d) / all}><Comp {...s} dur={d} /></LabFrame>
@@ -52,13 +53,13 @@ const total = (ep: any, pick?: number[], hook?: boolean, short?: boolean) =>
   : (pick ? pick.map((i) => ep.scenes[i]) : ep.scenes).reduce((a: number, s: any) => a + framesOf(s), hook ? 75 : 0);
 
 // the most visual scene of the lesson becomes the thumbnail background
-const VISUAL = ["rectifier", "code", "network", "story", "chart", "array", "terminal", "capacitor", "wave", "phone", "flow", "formula"];
+const VISUAL = ["rectifier", "code", "network", "story", "image", "chart", "screen", "diagram", "array", "terminal", "capacitor", "wave", "phone", "flow", "formula"];
 const Thumb: React.FC<{ ep: any }> = ({ ep }) => {
   setTheme(ep.theme);
   const pick = (ep.scenes || []).map((s: any, i: number) => [VISUAL.indexOf(s.type), i]).filter(([r]: number[]) => r >= 0)
     .sort((a: number[], b: number[]) => a[0] - b[0] || a[1] - b[1])[0];
   const scene = pick ? { ...ep.scenes[pick[1]], frames: 300 } : null;
-  const Scene = scene ? (LAB_SCENES[scene.type] || DOMAIN_SCENES[scene.type] || STORY_SCENES[scene.type]) : undefined;
+  const Scene = scene ? (LAB_SCENES[scene.type] || DOMAIN_SCENES[scene.type] || STORY_SCENES[scene.type] || VISUAL_SCENES[scene.type]) : undefined;
   return <Sequence from={-200}><ThumbLab ep={ep} Scene={Scene} scene={scene} /></Sequence>;
 };
 
