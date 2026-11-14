@@ -1,0 +1,215 @@
+{
+ "key": "stratton_p02",
+ "yt": {
+  "title": "The Locked Shop | The Stratton Brothers (True Story) Part 2 #shorts",
+  "description": "Part 2 of 7: The Stratton Brothers, Deptford, London, 1905. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the stratton brothers"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "thomas": {
+   "name": "Thomas Farrow",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "ann": {
+   "name": "Ann Farrow",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "boy": {
+   "name": "the shop assistant",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "alfred": {
+   "name": "Alfred Stratton",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "albert": {
+   "name": "Albert Stratton",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "collins": {
+   "name": "Inspector Charles Collins",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "witness": {
+   "name": "a milkman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_daniel"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE STRATTON BROTHERS",
+    "years": "LONDON · 1905",
+    "crime": "ONE THUMBPRINT",
+    "part": "PART 2 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: elderly Thomas and Ann Farrow ran a paint shop in Deptford."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "boy",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "boy",
+    "text": "The shop's still locked. Mr Farrow always opens at seven."
+   },
+   "title": "27 MARCH 1905"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "boy",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "collins",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "boy",
+    "text": "Sir! Come quick! Mr Farrow's on the floor!"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "ann",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "boy",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Upstairs, Ann Farrow was badly hurt. She died days later."
+   },
+   "bed": true,
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "collins",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "collins",
+    "text": "No forced door. Robbed. And a cash box, empty, under the bed."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WOULD HURT AN OLD COUPLE FOR A FEW POUNDS?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who would hurt an old couple for a few pounds? Part 3 is next."
+   }
+  }
+ ]
+}

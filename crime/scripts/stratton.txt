@@ -1,0 +1,64 @@
+CAST thomas | Thomas Farrow | m | worker | white | beard
+CAST ann | Ann Farrow | f | plain | grey
+CAST boy | the shop assistant | m | plain | blonde
+CAST alfred | Alfred Stratton | m | worker | brown
+CAST albert | Albert Stratton | m | worker | black
+CAST collins | Inspector Charles Collins | m | detective | grey | beard
+CAST witness | a milkman | m | worker | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Paint Shop
+PART
+street establish > nar: Deptford, London. March 1905. [DEPTFORD · MARCH 1905]
+home two thomas:smile,ann:smile > ann: Another week's takings, Thomas. Into the cash box.
+home two thomas:smile,boy > thomas: Lock up tight, lad. See you in the morning.
+home face boy:smile > boy: Goodnight, Mr Farrow.
+home establish > nar: Old Thomas and Ann Farrow ran a small paint shop, and lived above it.
+home establish > nar: What do you think happened that night?
+# TITLE 2: The Locked Shop
+PART
+home establish > nar: Previously: elderly Thomas and Ann Farrow ran a paint shop in Deptford.
+street face boy:think > boy: The shop's still locked. Mr Farrow always opens at seven. [27 MARCH 1905]
+street two boy:scared,collins > boy: Sir! Come quick! Mr Farrow's on the floor!
+home bed ann:sick,boy > nar: Upstairs, Ann Farrow was badly hurt. She died days later.
+home face collins:think > collins: No forced door. Robbed. And a cash box, empty, under the bed.
+home establish > nar: Who would hurt an old couple for a few pounds?
+# TITLE 3: The Thumbprint
+PART
+home establish > nar: Previously: Thomas Farrow was killed and his wife badly hurt in a robbery.
+home two collins:point,boy > collins: Don't touch that cash box. Look, there. On the inside of the tray.
+home face collins:think > collins: A greasy thumbprint.
+home two collins,boy:think > boy: A thumbprint? Can that catch someone?
+home face collins > collins: Scotland Yard has a new fingerprint bureau. Let's find out.
+home establish > nar: Could one thumbprint solve a murder?
+# TITLE 4: The Doubters
+PART
+home establish > nar: Previously: a thumbprint was found on the empty cash box.
+home two collins,judge > judge: Fingerprints? It's never been used to convict anyone of murder in Britain. [SCOTLAND YARD]
+home face collins:think > collins: Every print is different. No two people share one.
+home two collins:point,judge > collins: If we find the right thumb, we'll have our man.
+home establish > nar: Many people thought fingerprints were just a fad.
+home establish > nar: Would you trust fingerprint evidence?
+# TITLE 5: Two Young Men
+PART
+home establish > nar: Previously: Inspector Collins believed the thumbprint could catch the killer.
+street two witness,collins > witness: Two young men ran out of the shop that morning. One in a brown coat. [DEPTFORD]
+street two collins:think,witness > collins: Locals say two brothers have been bragging. Alfred and Albert Stratton.
+street two collins:point,alfred:cuffed > collins: Alfred Stratton. Albert Stratton. Come with us.
+street face albert:cross > albert: We never did nothing!
+street establish > nar: Will the thumb match?
+# TITLE 6: A Perfect Match
+PART
+street establish > nar: Previously: brothers Alfred and Albert Stratton were arrested.
+home two collins,alfred > collins: Press your right thumb here.
+home face collins:think > collins: Eleven points of agreement. It's Alfred's thumb.
+home face alfred:scared > alfred: That's just a smudge. It proves nothing.
+home establish > nar: Now it was up to a jury.
+home establish > nar: Would a jury believe a thumbprint?
+# TITLE 7: History Is Made
+PART
+home establish > nar: Previously: Alfred Stratton's thumb matched the print on the cash box.
+court two collins,judge > collins: Gentlemen of the jury, let me show you how prints match. [OLD BAILEY · MAY 1905]
+court court judge,alfred > judge: Guilty. Both brothers will hang.
+prison establish > nar: The Stratton brothers were hanged in May 1905.
+prison establish > nar: It was the first murder conviction in Britain using fingerprints.
+prison establish > nar: Today fingerprints solve crimes every day. What do you think criminals fear most now?

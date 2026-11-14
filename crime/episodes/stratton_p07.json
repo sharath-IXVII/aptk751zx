@@ -1,0 +1,196 @@
+{
+ "key": "stratton_p07",
+ "yt": {
+  "title": "History Is Made | The Stratton Brothers (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: The Stratton Brothers, Deptford, London, 1905. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the stratton brothers"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "thomas": {
+   "name": "Thomas Farrow",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "ann": {
+   "name": "Ann Farrow",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "boy": {
+   "name": "the shop assistant",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "alfred": {
+   "name": "Alfred Stratton",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "albert": {
+   "name": "Albert Stratton",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "collins": {
+   "name": "Inspector Charles Collins",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "witness": {
+   "name": "a milkman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_daniel"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE STRATTON BROTHERS",
+    "years": "LONDON · 1905",
+    "crime": "ONE THUMBPRINT",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Alfred Stratton's thumb matched the print on the cash box."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "collins",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "collins",
+    "text": "Gentlemen of the jury, let me show you how prints match."
+   },
+   "title": "OLD BAILEY · MAY 1905"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "alfred",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Guilty. Both brothers will hang."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Stratton brothers were hanged in May 1905."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "It was the first murder conviction in Britain using fingerprints."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "TODAY FINGERPRINTS SOLVE CRIMES EVERY DAY. WHAT DO YOU THINK",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Today fingerprints solve crimes every day. What do you think criminals fear most now?"
+   }
+  }
+ ]
+}

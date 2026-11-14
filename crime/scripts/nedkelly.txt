@@ -1,0 +1,84 @@
+CAST ned | Ned Kelly | m | worker | brown | beard
+CAST dan | Dan Kelly | m | worker | brown
+CAST ellen | Ellen Kelly | f | plain | black
+CAST joe | Joe Byrne | m | worker | blonde
+CAST trooper | a police trooper | m | police | black
+CAST teacher | Thomas Curnow | m | plain | brown
+CAST farmer | a farmer | m | worker | grey | beard
+CAST judge | the judge | m | judge | white
+# TITLE 1: Bush Boy
+PART
+forest establish > nar: Victoria, Australia. Ned Kelly grows up poor in the bush. [VICTORIA · 1870s]
+home two ellen:think,ned > ellen: The troopers again, Ned. Always our family.
+home two ellen,ned:cross > ned: Because we're poor and Irish, Mother. They'll never leave us alone.
+forest two trooper:point,ned > trooper: Kelly. Where'd you get that horse?
+forest face ned:cross > ned: Bought it fair.
+forest establish > nar: Again and again, the Kelly family clashed with police.
+forest establish > nar: Was Ned trouble, or was he treated unfairly?
+# TITLE 2: Mother in Jail
+PART
+forest establish > nar: Previously: the poor Kelly family clashed again and again with police.
+home two trooper:point,dan > trooper: Dan Kelly, you're coming with me. [APRIL 1878]
+home establish > nar: A fight broke out at the Kelly home. The trooper said he'd been shot at.
+home two trooper:point,ellen:cuffed > trooper: Ellen Kelly. Three years' hard labour.
+forest two ned:cross,dan > ned: They've jailed our mother. With a baby in her arms.
+forest face ned > ned: Then we live in the bush. They'll never find us.
+forest establish > nar: Where do you think this leads?
+# TITLE 3: Stringybark Creek
+PART
+forest establish > nar: Previously: Ned's mother was jailed. Ned and Dan fled to the bush.
+forest two trooper:think,farmer > trooper: A police search party is out looking for the Kelly brothers. [STRINGYBARK CREEK · OCTOBER 1878]
+forest face ned > ned: They've come to kill us. Bail up!
+forest establish > nar: In the shootout, three policemen were killed.
+forest face ned:think > ned: There's no going back now.
+forest establish > nar: Ned, Dan, Joe Byrne and Steve Hart were declared outlaws. Anyone could shoot them.
+forest establish > nar: Would you help them, or turn them in?
+# TITLE 4: The Jerilderie Letter
+PART
+forest establish > nar: Previously: three police were killed at Stringybark Creek. The gang were declared outlaws.
+street two ned:point,farmer > ned: Hands up! We're the Kelly Gang. We only want the bank's money. [EUROA · JERILDERIE]
+home face ned > ned: I'll write it all down. Every injustice against poor Irish families.
+home two joe,ned > joe: Fifty-six pages, Ned. Who's going to read it?
+home face ned > ned: One day, everyone.
+home establish > nar: The gang robbed banks at Euroa and Jerilderie.
+home establish > nar: Was Ned a criminal, or a rebel?
+# TITLE 5: Protected
+PART
+home establish > nar: Previously: the Kelly Gang robbed banks and Ned wrote his famous letter.
+home two farmer:smile,ned > farmer: Stay the night, Ned. The troopers won't hear it from us.
+forest two trooper:cross,farmer > trooper: Have you seen the Kelly Gang?
+forest face farmer > farmer: Never heard of them.
+forest establish > nar: For nearly two years, poor families protected the gang.
+forest establish > nar: Why would people protect outlaws?
+# TITLE 6: Iron Suits
+PART
+forest establish > nar: Previously: poor families protected the Kelly Gang for nearly two years.
+forest two joe,ned > ned: Plough metal. We'll beat it into armour. [1880]
+forest face joe:think > joe: Helmets, chest plates. Bullets will bounce off.
+forest face ned:smile > ned: Let them try to shoot us now.
+forest establish > nar: Each suit of armour weighed around forty kilograms.
+forest establish > nar: Would armour protect them?
+# TITLE 7: Glenrowan
+PART
+forest establish > nar: Previously: the gang made suits of iron armour.
+home two ned:point,teacher > ned: We've taken this hotel. The police train will come, and we'll wreck the track. [GLENROWAN · JUNE 1880]
+home face teacher:think > teacher: I must warn the train.
+forest walk teacher > nar: Schoolteacher Thomas Curnow slipped away and stopped the train with a red scarf and a candle.
+forest face trooper > trooper: The Kelly Gang is at Glenrowan! Surround the hotel!
+forest establish > nar: What do you think happened at dawn?
+# TITLE 8: The Iron Man
+PART
+forest establish > nar: Previously: a teacher warned the police train. Police surrounded the hotel.
+forest face ned > nar: Dawn. A huge figure walks out of the mist toward the police. [GLENROWAN · DAWN]
+forest establish > nar: Bullets bounced off his armour.
+forest face trooper:scared > trooper: Aim for his legs!
+forest establish > nar: Ned fell. The rest of the gang died in the hotel.
+forest establish > nar: Will Ned survive?
+# TITLE 9: Such Is Life
+PART
+forest establish > nar: Previously: Ned was shot in the legs and captured. The rest of the gang died.
+court court judge,ned > judge: Edward Kelly, you are sentenced to death. [MELBOURNE · OCTOBER 1880]
+court face ned > ned: I will see you there, where I go.
+prison establish > nar: More than thirty thousand people signed a petition to save him.
+prison establish > nar: Ned Kelly was hanged in November 1880. His last words are said to be: 'Such is life.'
+prison establish > nar: Hero or villain? What do you think?
