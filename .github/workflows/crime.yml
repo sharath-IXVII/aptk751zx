@@ -6,17 +6,35 @@ on:
     inputs:
       preview: {description: "Only render Part 1 as an unlisted preview", type: boolean, default: false}
 concurrency: {group: crime, cancel-in-progress: false}
-permissions: {contents: write}
+permissions: {contents: write, issues: write}
 jobs:
   part:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - uses: actions/setup-node@v4
         with: {node-version: 22}
+      - name: Write more episodes when the queue runs low
+        if: inputs.preview != true
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_WRITER_MODEL: ${{ secrets.NVIDIA_WRITER_MODEL }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pip install -q python-dotenv google-api-python-client google-auth httpx
+          python -m pipeline.crime_writer 8 | tee writer.log
+          if git status --porcelain crime | grep -q .; then
+            git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add crime && git commit -qm "Crime: write next case [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && break; sleep $((i*5)); done
+          fi
+          if grep -q "cases left in library: [0-3]$\|CASE LIBRARY EMPTY" writer.log; then
+            gh issue list --state open --search "Crime case library" -q '.[].number' --json number | grep -q . || \
+            gh issue create --title "Crime case library is running out" --body "The ENT true-crime library has only a few cases left. Ask Claude to add more cases to crime/cases*.py."
+          fi
       - name: Next part
         id: ep
         run: |

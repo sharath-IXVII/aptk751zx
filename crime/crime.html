@@ -115,6 +115,20 @@ const SETS={
    box(S,60,.2,60,'#2a3226',0,-.1,0);for(let i=0;i<9;i++){const x=-6+(i%3)*4+rnd(),z=-3-Math.floor(i/3)*4;box(S,.9,1.2,.25,'#7a7c78',x,.6,z);box(S,.5,.25,.27,'#7a7c78',x,1.3,z)}
    box(S,2.2,.6,1,'#3a2414',0,.3,.8);box(S,2.3,.08,1.1,'#2a1a10',0,.64,.8);
    for(let i=0;i<4;i++){const t=box(S,.4,5,.4,'#2a1e16',(i%2?8:-8)+rnd(),2.5,-8-i*3);box(S,2.5,2,2,'#1e2a1e',t.position.x,5,t.position.z)}},
+ street(){S.background=new THREE.Color('#0e1018');S.fog=new THREE.Fog('#0e1018',10,40);lights(true);
+   box(S,60,.2,60,'#3a3a40',0,-.1,0);for(let i=0;i<40;i++)box(S,.9,.02,.45,i%2?'#45454c':'#404046',-6+(i%10)*1.3,.01,2-Math.floor(i/10)*1.2);
+   box(S,40,.25,2,'#55555a',0,.12,-3.5);
+   for(let i=0;i<6;i++){const x=-12+i*4.6,h=6+rnd()*4;box(S,4.4,h,3,i%2?'#4a3a34':'#3e3a44',x,h/2,-6.5);
+     for(let r=0;r<3;r++)for(let c=0;c<2;c++){const lit=rnd()>.5;box(S,.7,.9,.1,lit?'#ffcf7a':'#1a1e2a',x-1+c*2,2+r*1.9,-4.95,lit?'#ff9a30':0)}}
+   for(const x of [-4,4]){box(S,.15,3.6,.15,'#1a1a1a',x,1.8,-2.6);box(S,.4,.5,.4,'#ffdf9a',x,3.7,-2.6,'#ffb040');const l=new THREE.PointLight('#ffc070',10,9);l.position.set(x,3.4,-2.2);l.castShadow=true;S.add(l);if(x<0)ctx.flick=l}},
+ forest(){S.background=new THREE.Color('#0b120e');S.fog=new THREE.Fog('#0b120e',6,26);lights(true);ctx.moon.color.set('#a8c8b8');
+   box(S,80,.2,80,'#22301f',0,-.1,0);for(let i=0;i<40;i++){const x=(rnd()-.5)*30,z=-2-rnd()*20;if(Math.abs(x)<2.2&&z>-5)continue;const h=4+rnd()*4;box(S,.45,h,.45,'#2e2218',x,h/2,z);box(S,2.2,1.6,2.2,'#18281a',x,h,z);box(S,1.4,1.2,1.4,'#1e3020',x,h+1.1,z)}
+   for(let i=0;i<30;i++)box(S,.5,.3,.5,'#2a3a24',(rnd()-.5)*16,.15,(rnd()-.5)*8)},
+ prison(){S.background=new THREE.Color('#0a0a0c');S.fog=new THREE.Fog('#0a0a0c',8,24);lights(true);ctx.moon.color.set('#c0c8d0');
+   box(S,12,.2,12,'#3a3a3a',0,-.1,0);box(S,12,7,.3,'#4a4a48',0,3.5,-3);box(S,.3,7,12,'#444442',-3.5,3.5,0);box(S,.3,7,12,'#444442',3.5,3.5,0);
+   for(let i=0;i<14;i++)box(S,.08,4.5,.08,'#1a1a1a',-3.2+i*.5,2.25,3.2);box(S,7,.12,.12,'#1a1a1a',0,4.4,3.2);
+   box(S,1.0,.45,2.2,'#55554e',-2.4,.3,-1.6);box(S,.9,.6,.1,'#1a2a3a',1.5,4.5,-2.85,'#1a2a40');
+   const l=new THREE.PointLight('#d8e0e8',6,10);l.position.set(0,4.5,-1);S.add(l);ctx.flick=l},
  dock(){S.background=new THREE.Color('#121828');S.fog=new THREE.Fog('#121828',12,50);lights(true);
    box(S,80,.1,80,'#16243c',0,-.3,0);for(let i=0;i<12;i++)box(S,6,.15,.5,'#5a4430',0,0,4-i*.55);
    for(let i=0;i<4;i++)box(S,.25,1.4,.25,'#4a3424',(i%2?2.8:-2.8),.3,2-i*2);
@@ -150,6 +164,8 @@ const CAMS={
  courtw:t=>[[0,3.4,9-t*.25],[0,1.6,-5]],
  grave:t=>[[.8,2.4,9.5-t*.2],[0,1.4,1]],
  face:t=>[[0,2.3,3.9-t*.08],[0,2.0,0]],
+ scene:t=>[[.4-t*.08,2.4,10-t*.2],[0,1.5,0]],
+ cell:t=>[[.3,2.2,7.5-t*.12],[0,1.5,0]],
  wide:t=>[[-2+t*.25,3,14],[2,4,-10]],
  lowtower:t=>[[-1,.8,6-t*.2],[4,10,-16]],
  stairs:t=>[[5.5,2.6+t*.3,2+t*-.55],[0,1.4+t*.3,-t*.55]],
@@ -183,16 +199,16 @@ window.renderAt=(i,t,talk)=>{
     if(sp&&a!=='scared'&&a!=='cross')c.arms[1].rotation.x=-.5+Math.sin(t*3)*.3;
   }
   if(ctx.rain){const p=ctx.rain.geometry.attributes.position;for(let k=0;k<p.count;k++){let y=p.getY(k)-0.6;if(y<0)y+=25;p.setY(k,y)}p.needsUpdate=true}
-  if(ctx.flick)ctx.flick.intensity*=1;if(ctx.flick)ctx.flick.intensity=(({stairs:5,ward:10,home:12,court:16,asylum:7})[sh.set]||9)*(sh.set==='ward'?(sh.flick&&Math.sin(t*31)*Math.sin(t*3.7)>.5?.12:1):(.85+.15*Math.sin(t*23)*Math.sin(t*7.3)));
+  if(ctx.flick)ctx.flick.intensity*=1;if(ctx.flick)ctx.flick.intensity=(({stairs:5,ward:10,home:12,court:16,asylum:7,street:10,prison:6})[sh.set]||9)*(sh.set==='ward'?(sh.flick&&Math.sin(t*31)*Math.sin(t*3.7)>.5?.12:1):(.85+.15*Math.sin(t*23)*Math.sin(t*7.3)));
   if(ctx.beam)ctx.beam.rotation.y=t*1.2;
   if(ctx.boat)ctx.boat.rotation.z=Math.sin(t*1.5)*.06;
   const ln=sh.fx&&sh.fx.includes('lightning')&&((t>1.2&&t<1.32)||(t>1.45&&t<1.55));
-  S.background.set(ln?'#c8d4ff':({home:'#120c08',court:'#14100c',asylum:'#08090a',grave:'#0d1018',ward:'#0a0c0c',shore:'#141a2e',stairs:'#0d0d12',room:'#0b0b10',dock:'#121828'})[sh.set]);ctx.moon.intensity=ln?7:({room:.9,home:.6,court:.8,asylum:.7})[sh.set]||1.8;
+  S.background.set(ln?'#c8d4ff':({street:'#0e1018',forest:'#0b120e',prison:'#0a0a0c',home:'#120c08',court:'#14100c',asylum:'#08090a',grave:'#0d1018',ward:'#0a0c0c',shore:'#141a2e',stairs:'#0d0d12',room:'#0b0b10',dock:'#121828'})[sh.set]);ctx.moon.intensity=ln?7:({room:.9,home:.6,court:.8,asylum:.7,prison:.6,street:1.2,forest:1.0})[sh.set]||1.8;
   if(ctx.bigLamp)ctx.bigLamp.intensity=t>1.8?120:0;
   if(ctx.sil)ctx.sil.root.visible=(t>1.2&&t<1.6)||t>2.4;
   ttl.style.display=sh.title&&t<3.2?'block':'none';if(sh.title)ttl.textContent=sh.title;
   const cp=(sh.caps||[]).find(c=>t>=c[0]&&t<c[1]);cap.style.display=cp&&!sh.card&&!sh.intro?'block':'none';if(cp)capt.textContent=cp[2];
-  intro.style.display=sh.intro?'flex':'none';if(sh.intro){in1.textContent=sh.intro.name;in2.textContent=sh.intro.years;in3.textContent=sh.intro.crime;in4.textContent=sh.intro.part}
+  intro.style.display=sh.intro?'flex':'none';if(sh.intro){in1.textContent=sh.intro.name;in1.style.fontSize=(sh.intro.name.length>20?60:sh.intro.name.length>12?80:108)+'px';in3.style.fontSize=(sh.intro.crime.length>18?54:74)+'px';in2.textContent=sh.intro.years;in3.textContent=sh.intro.crime;in4.textContent=sh.intro.part}
   const [p,l]=CAMS[sh.cam](t);cam.position.set(...p);ctx.fill.position.set(p[0]*.6,p[1]+1,p[2]*.6);cam.lookAt(...l);
   R.render(S,cam);
 };

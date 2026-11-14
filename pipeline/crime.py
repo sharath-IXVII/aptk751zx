@@ -1,7 +1,6 @@
-"""ENT story Shorts ('The Human Journey'): Instagram Reel as soon as a part is rendered,
-YouTube Short scheduled 3 a day (CRIME_TIMES, IST).
-python -m pipeline.saga next <order.json>
-python -m pipeline.saga upload <key> <ep.json> <video> [preview]"""
+"""ENT true-crime Shorts: 2 a day (CRIME_TIMES, IST); YouTube and Instagram post when a part is rendered.
+python -m pipeline.crime next <order.json>      -> next key, or nothing if no slot is due yet
+python -m pipeline.crime upload <key> <ep.json> <video> [preview]"""
 import datetime as dt, json, os, sys
 from pathlib import Path
 from pipeline import youtube_upload as yt
@@ -21,6 +20,20 @@ def slot(state):
             s = dt.datetime.combine(day, dt.time(hh, mm), IST)
             if s >= after:
                 return s
+        day += dt.timedelta(days=1)
+
+
+def due(key, state) -> bool:
+    """Jolly Jane (the launch story) posts hourly; everything else at the daily slot times."""
+    if key.startswith("toppan"): return True
+    times = [tuple(map(int, t.split(":"))) for t in (os.getenv("CRIME_TIMES") or "12:47,19:43").split(",")]
+    now = dt.datetime.now(IST)
+    last = dt.datetime.fromisoformat(state["last_slot"]) if state.get("last_slot") else now - dt.timedelta(days=1)
+    day = last.date()
+    while True:
+        for hh, mm in times:
+            s = dt.datetime.combine(day, dt.time(hh, mm), IST)
+            if s > last: return now >= s - dt.timedelta(minutes=20)
         day += dt.timedelta(days=1)
 
 
@@ -45,6 +58,7 @@ def upload(key, ep_path, video, preview=False):
 if __name__ == "__main__":
     import logging; logging.basicConfig(level=logging.INFO)
     if sys.argv[1] == "next":
-        done = load()["done"]; print(next((e for e in json.loads(Path(sys.argv[2]).read_text()) if e not in done), ""))
+        st = load(); k = next((e for e in json.loads(Path(sys.argv[2]).read_text()) if e not in st["done"]), "")
+        print(k if k and due(k, st) else "")
     else:
         upload(sys.argv[2], sys.argv[3], sys.argv[4], len(sys.argv) > 5 and sys.argv[5] == "preview")
