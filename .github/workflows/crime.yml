@@ -19,6 +19,7 @@ jobs:
         with: {node-version: 22}
       - name: Write more episodes when the queue runs low
         if: inputs.preview != true
+        continue-on-error: true
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           NVIDIA_WRITER_MODEL: ${{ secrets.NVIDIA_WRITER_MODEL }}
