@@ -1,0 +1,170 @@
+{
+ "key": "benders_p07",
+ "yt": {
+  "title": "The Orchard | The Bloody Benders (True Story) Part 7 #shorts",
+  "description": "Part 7 of 8: The Bloody Benders, Labette County, Kansas, 1871-1873. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the bloody benders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "kate": {
+   "name": "Kate Bender",
+   "skin": "#e6b48e",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "ma": {
+   "name": "Ma Bender",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "pa": {
+   "name": "John Bender Sr.",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "johnjr": {
+   "name": "John Bender Jr.",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "traveller": {
+   "name": "a traveller",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "york": {
+   "name": "Colonel Alexander York",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BLOODY BENDERS",
+    "years": "KANSAS · 1873",
+    "crime": "THE INN OF NO RETURN",
+    "part": "PART 7 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the Bender inn was found abandoned."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "york",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "neighbour",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "neighbour",
+    "text": "A trapdoor. Under the floor. A cellar."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "york",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "york",
+    "text": "In the orchard. Graves. And... my brother."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Searchers found many graves in the Benders' orchard."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE DID THE BENDERS GO?",
+    "p": "Comment below 👇",
+    "f": "Part 8 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where did the Benders go? Part 8 is next."
+   }
+  }
+ ]
+}

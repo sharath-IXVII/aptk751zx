@@ -1,0 +1,164 @@
+{
+ "key": "matmad_p01",
+ "yt": {
+  "title": "The Stranger | The Mad Trapper (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: The Mad Trapper, Rat River, Northwest Territories, Canada, 1931-1932. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the mad trapper"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "johnson": {
+   "name": "'Albert Johnson'",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "trapper": {
+   "name": "a trapper",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "mountie": {
+   "name": "a Mountie",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "mountie2": {
+   "name": "another Mountie",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#c8a050",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "wop": {
+   "name": "Wop May",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MAD TRAPPER",
+    "years": "YUKON · 1932",
+    "crime": "THE MANHUNT IN THE SNOW",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Arctic Canada, 1931. A silent stranger arrives at the Rat River."
+   },
+   "title": "RAT RIVER · 1931"
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "trapper",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "johnson",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "trapper",
+    "text": "Name's Joe. Who are you, friend?"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "johnson",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "johnson",
+    "text": "Albert Johnson."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "trapper",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "trapper",
+    "text": "That's all he ever said. Then he built a tiny cabin by the river."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WAS ALBERT JOHNSON?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who was Albert Johnson? Part 2 is next."
+   }
+  }
+ ]
+}

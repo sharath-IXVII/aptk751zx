@@ -1,0 +1,164 @@
+{
+ "key": "matmad_p07",
+ "yt": {
+  "title": "The Frozen River | The Mad Trapper (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: The Mad Trapper, Rat River, Northwest Territories, Canada, 1931-1932. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the mad trapper"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "johnson": {
+   "name": "'Albert Johnson'",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "trapper": {
+   "name": "a trapper",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "mountie": {
+   "name": "a Mountie",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "mountie2": {
+   "name": "another Mountie",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#c8a050",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "wop": {
+   "name": "Wop May",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MAD TRAPPER",
+    "years": "YUKON · 1932",
+    "crime": "THE MANHUNT IN THE SNOW",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: pilot Wop May tracked Johnson from the air."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mountie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "mountie2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mountie",
+    "text": "There! On the frozen river!"
+   },
+   "title": "EAGLE RIVER · 17 FEBRUARY 1932",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Surrounded, Johnson fought until he was killed."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mountie2",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "mountie2",
+    "text": "Who was he? No papers. Just money and gold teeth."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Decades later, DNA tests still couldn't confirm his real name."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO DO YOU THINK THE MAD TRAPPER REALLY WAS?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who do you think the Mad Trapper really was?"
+   }
+  }
+ ]
+}

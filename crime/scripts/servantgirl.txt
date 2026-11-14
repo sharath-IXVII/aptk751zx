@@ -1,0 +1,52 @@
+CAST marshal | the city marshal | m | police | black | beard
+CAST mayor | the mayor | m | rich | grey
+CAST cook | a cook | f | worker | brown
+CAST maid | a servant woman | f | worker | black
+CAST citizen | a citizen | m | worker | brown
+CAST lady | a wealthy lady | f | rich | blonde
+# TITLE 1: The Young Capital
+PART
+street establish > nar: Austin, Texas, 1884. A young city building a grand new Capitol. [AUSTIN · 1884]
+street two citizen:smile,mayor:smile > mayor: Austin is growing every day. A modern city!
+home two cook:smile,maid:smile > maid: We work hard. But we get a room of our own behind the big house.
+home face cook:think > cook: Sometimes at night it's so dark back there.
+street establish > nar: Many servant women lived in small rooms behind the homes where they worked.
+street establish > nar: Can you guess what's coming?
+# TITLE 2: In the Dark
+PART
+street establish > nar: Previously: Austin was a growing city. Servant women slept in small rooms behind the houses.
+home bed maid:sleep > nar: December 1884. Late at night, someone enters a servant's quarters. [DECEMBER 1884]
+home establish > nar: A young servant woman was killed.
+street two marshal:think,citizen > marshal: Footprints. Bare feet. Going toward the street.
+street establish > nar: Then another attack. And another.
+street establish > nar: Who could do this, and disappear every time?
+# TITLE 3: The Pattern
+PART
+street establish > nar: Previously: servant women were being attacked at night in Austin.
+street two marshal:think,mayor > marshal: Always at night. Always in the servants' rooms. Always gone before anyone wakes. [1885]
+street face mayor:cross > mayor: Then arrest someone!
+street two marshal:cross,mayor > marshal: We've arrested several men. The attacks keep happening.
+street establish > nar: Who do you think was responsible?
+# TITLE 4: Patrols
+PART
+street establish > nar: Previously: police arrested several men, but the attacks continued.
+street two citizen:point,marshal > citizen: We'll patrol the streets ourselves. Every night. [AUSTIN · 1885]
+home two cook:scared,maid:scared > cook: I won't sleep alone back there. Not anymore.
+street establish > nar: People locked their doors and slept with guns.
+street establish > nar: Will the patrols stop him?
+# TITLE 5: Christmas Eve
+PART
+street establish > nar: Previously: citizens patrolled Austin at night, but the fear continued.
+home two lady:smile,citizen > lady: Merry Christmas! Lock the doors tonight, though. [24 DECEMBER 1885]
+home establish > nar: On Christmas Eve 1885, two women were killed in different parts of the city on the same night.
+home establish > nar: This time, the victims were wealthy white women. The city panicked even more.
+street face marshal:scared > marshal: Two at once?
+street establish > nar: How do you fight something you can never see?
+# TITLE 6: The Moonlight Towers
+PART
+street establish > nar: Previously: two women were killed on Christmas Eve 1885.
+street establish > nar: After that night, the killings stopped. [1886]
+street two mayor,citizen > mayor: Never again will Austin live in darkness.
+street establish > nar: In the 1890s, Austin built tall 'moonlight towers' that lit the whole city at night. Some still stand today.
+street establish > nar: Some call the killer America's first serial killer. He was never identified.
+street establish > nar: Who do you think the Servant Girl Annihilator was?

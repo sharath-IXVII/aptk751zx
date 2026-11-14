@@ -1,0 +1,67 @@
+CAST kate | Kate Bender | f | plain | red
+CAST ma | Ma Bender | f | plain | grey
+CAST pa | John Bender Sr. | m | worker | grey | beard
+CAST johnjr | John Bender Jr. | m | worker | brown
+CAST traveller | a traveller | m | rich | blonde
+CAST york | Colonel Alexander York | m | soldier | grey | beard
+CAST neighbour | a neighbour | m | worker | brown
+# TITLE 1: The Inn on the Prairie
+PART
+forest establish > nar: Kansas, 1871. A lonely trail across the prairie. [KANSAS · 1871]
+home three pa,ma,johnjr > pa: A store. An inn. Travellers will need food and a bed.
+home face kate:smile > kate: And I'll bring in customers.
+home establish > nar: The Bender family opened a tiny inn on the trail.
+home establish > nar: Would you stop there for the night?
+# TITLE 2: Professor Kate
+PART
+home establish > nar: Previously: the Bender family opened a small inn on a lonely prairie trail.
+street face kate:smile > kate: Professor Kate Bender. I can heal the sick. I can speak to spirits.
+street two kate:smile,neighbour > neighbour: She's very charming. And very strange.
+home face kate:smile > kate: Come inside. Let me tell your fortune.
+home establish > nar: Kate became famous in the area as a healer and spiritualist.
+home establish > nar: What do you think she was really doing?
+# TITLE 3: The Curtain
+PART
+home establish > nar: Previously: Kate Bender drew visitors as a healer and spiritualist.
+home two traveller:smile,kate:smile > kate: Sit here, sir. The seat of honour. [1872]
+home face traveller:smile > traveller: Right by the curtain?
+home establish > nar: The guest's chair was placed with its back against a canvas curtain that split the cabin in two.
+home establish > nar: Who do you think was behind the curtain?
+# TITLE 4: Missing Travellers
+PART
+home establish > nar: Previously: guests at the Bender inn sat with their backs to a canvas curtain.
+street two neighbour:think,york > neighbour: Travellers go missing on this trail. Bandits, people say. [1872]
+street face neighbour > neighbour: Nobody suspects that friendly little inn.
+home face kate:smile > kate: More coffee?
+home establish > nar: Some who travelled that trail were never seen again.
+home establish > nar: Can this go on forever?
+# TITLE 5: The Brother
+PART
+home establish > nar: Previously: travellers kept disappearing on the trail near the Bender inn.
+home two york,pa > york: My brother, Dr William York. He passed this way. Have you seen him? [MARCH 1873]
+home face kate:smile > kate: No, sir. But I could ask the spirits.
+home face york:think > york: I'll be back. With more men.
+home establish > nar: Colonel York was searching for his missing brother. And he was suspicious.
+home establish > nar: What do you think the Benders will do?
+# TITLE 6: Abandoned
+PART
+home establish > nar: Previously: Colonel York came looking for his brother and questioned the Benders.
+forest two neighbour:scared,york > neighbour: The Bender place is empty! The animals are starving! [MAY 1873]
+home face york:think > york: They've run. In a hurry.
+home face neighbour:scared > neighbour: There's a smell from under the floor.
+home establish > nar: What do you think they found?
+# TITLE 7: The Orchard
+PART
+home establish > nar: Previously: the Bender inn was found abandoned.
+home two york,neighbour > neighbour: A trapdoor. Under the floor. A cellar.
+forest face york:cry > york: In the orchard. Graves. And... my brother.
+forest establish > nar: Searchers found many graves in the Benders' orchard.
+forest establish > nar: Where did the Benders go?
+# TITLE 8: Vanished
+PART
+forest establish > nar: Previously: graves were found in the Benders' orchard, including Dr York's.
+street two york,neighbour > york: A reward for the Benders. Dead or alive. [1873 - TODAY]
+street establish > nar: Search parties rode out. Stories spread that they'd been caught and killed. None were ever proven.
+street establish > nar: Years later, two women were arrested and said to be Kate and Ma. But they were never convicted.
+street establish > nar: The Bloody Benders vanished into history.
+street establish > nar: Where do you think the Benders went?

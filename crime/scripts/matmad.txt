@@ -1,0 +1,58 @@
+CAST johnson | 'Albert Johnson' | m | worker | brown | beard
+CAST trapper | a trapper | m | worker | black | beard
+CAST mountie | a Mountie | m | police | brown
+CAST mountie2 | another Mountie | m | police | blonde
+CAST wop | Wop May | m | soldier | brown
+# TITLE 1: The Stranger
+PART
+forest establish > nar: Arctic Canada, 1931. A silent stranger arrives at the Rat River. [RAT RIVER · 1931]
+forest two trapper,johnson > trapper: Name's Joe. Who are you, friend?
+forest face johnson > johnson: Albert Johnson.
+forest face trapper:think > trapper: That's all he ever said. Then he built a tiny cabin by the river.
+forest establish > nar: Who was Albert Johnson?
+# TITLE 2: The Traps
+PART
+forest establish > nar: Previously: a silent stranger called Albert Johnson built a cabin by the Rat River.
+forest two trapper:cross,mountie > trapper: Someone's been tampering with our traplines. It's that Johnson. [DECEMBER 1931]
+forest two mountie,johnson > mountie: Mr Johnson? We just want to talk. Open up.
+forest face johnson > nar: Silence.
+forest face mountie:think > mountie: He won't even come to the door.
+forest establish > nar: What do you think the Mounties did next?
+# TITLE 3: Shots Through the Door
+PART
+forest establish > nar: Previously: Johnson refused to talk to the Mounties.
+forest two mountie,mountie2 > mountie: We've got a search warrant this time. [31 DECEMBER 1931]
+forest establish > nar: Johnson fired through the cabin door. A Mountie was hit.
+forest face mountie2:scared > mountie2: He's down! Get him to the sled!
+forest establish > nar: The wounded officer survived the long journey to help.
+forest establish > nar: How do you catch a man in the frozen wilderness?
+# TITLE 4: Minus Forty
+PART
+forest establish > nar: Previously: Johnson shot a Mountie through his cabin door.
+forest two mountie:point,mountie2 > mountie: Forty below zero. And he's dug in under the floor. [JANUARY 1932]
+forest establish > nar: For hours, they fired at the cabin. Even dynamite didn't stop him.
+forest face mountie2:cross > mountie2: The cabin's empty. He's gone into the snow.
+forest establish > nar: Where could anyone go in that cold?
+# TITLE 5: The Chase
+PART
+forest establish > nar: Previously: Johnson escaped the siege into the snow.
+forest walk johnson > nar: For forty-eight days he ran, through blizzards, over mountains.
+forest two mountie,trapper > trapper: He walks backwards in his own tracks to fool us.
+forest establish > nar: In one shootout, a Mountie was killed.
+forest face mountie:cry > mountie: We're not stopping now.
+forest establish > nar: How long can one man outrun everyone?
+# TITLE 6: The Plane
+PART
+forest establish > nar: Previously: Johnson ran for weeks and killed a Mountie.
+forest two wop,mountie > wop: I'm Wop May. Bush pilot. I'll find him from the air. [FEBRUARY 1932]
+forest face wop:think > wop: Tracks in the snow. Leading over the mountains toward Yukon.
+forest establish > nar: It was the first time a plane was used in a Canadian manhunt.
+forest establish > nar: Can a plane catch a man on foot?
+# TITLE 7: The Frozen River
+PART
+forest establish > nar: Previously: pilot Wop May tracked Johnson from the air.
+forest two mountie:point,mountie2 > mountie: There! On the frozen river! [EAGLE RIVER · 17 FEBRUARY 1932]
+forest establish > nar: Surrounded, Johnson fought until he was killed.
+forest face mountie2:think > mountie2: Who was he? No papers. Just money and gold teeth.
+forest establish > nar: Decades later, DNA tests still couldn't confirm his real name.
+forest establish > nar: Who do you think the Mad Trapper really was?

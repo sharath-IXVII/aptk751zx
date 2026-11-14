@@ -1,0 +1,161 @@
+{
+ "key": "matmad_p03",
+ "yt": {
+  "title": "Shots Through the Door | The Mad Trapper (True Story) Part 3 #shorts",
+  "description": "Part 3 of 7: The Mad Trapper, Rat River, Northwest Territories, Canada, 1931-1932. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the mad trapper"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "johnson": {
+   "name": "'Albert Johnson'",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "trapper": {
+   "name": "a trapper",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "mountie": {
+   "name": "a Mountie",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "mountie2": {
+   "name": "another Mountie",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#c8a050",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "wop": {
+   "name": "Wop May",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MAD TRAPPER",
+    "years": "YUKON · 1932",
+    "crime": "THE MANHUNT IN THE SNOW",
+    "part": "PART 3 OF 7"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Johnson refused to talk to the Mounties."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mountie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "mountie2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mountie",
+    "text": "We've got a search warrant this time."
+   },
+   "title": "31 DECEMBER 1931"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Johnson fired through the cabin door. A Mountie was hit."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mountie2",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "mountie2",
+    "text": "He's down! Get him to the sled!"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The wounded officer survived the long journey to help."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU CATCH A MAN IN THE FROZEN WILDERNESS?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you catch a man in the frozen wilderness? Part 4 is next."
+   }
+  }
+ ]
+}
