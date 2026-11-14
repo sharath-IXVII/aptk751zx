@@ -1,0 +1,109 @@
+CAST burke | William Burke | m | worker | brown
+CAST hare | William Hare | m | worker | black | beard
+CAST maggie | Margaret Hare | f | plain | red
+CAST helen | Helen McDougal | f | plain | brown
+CAST knox | Dr Robert Knox | m | doctor | black
+CAST student | a medical student | m | rich | blonde
+CAST old | an old lodger | m | plain | white | beard
+CAST jamie | Daft Jamie | m | plain | blonde
+CAST mrsd | Margaret Docherty | f | plain | grey
+CAST gray | James Gray | m | worker | brown
+CAST ann | Ann Gray | f | plain | blonde
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: Bodies for Sale
+PART
+street establish > nar: Edinburgh, 1827. The finest medical schools in the world. [EDINBURGH · 1827]
+home two knox,student > knox: To teach anatomy, I need bodies. Many bodies.
+home two knox:think,student > student: The law only gives us the bodies of hanged criminals, sir. It's never enough.
+grave establish > nar: So at night, grave robbers dug up the newly buried. [THAT NIGHT]
+grave two police:point,student > police: Another empty grave! Families are hiring guards now.
+home face knox > knox: I pay well. I ask no questions.
+street establish > nar: In a poor lodging house nearby, two men were listening.
+street establish > nar: How far would people go for money?
+# TITLE 2: The Lodging House
+PART
+street establish > nar: Previously: Edinburgh's doctors paid well for bodies to study.
+home two maggie:smile,hare > hare: Our lodging house in the West Port. Cheap beds, cheap whisky. [WEST PORT]
+home two burke:smile,helen > burke: A room for me and Helen, Mr Hare?
+home two burke,hare:smile > hare: Call me William. You're one of us now, Burke.
+home three burke:smile,hare:smile,maggie > maggie: To new friends!
+home establish > nar: Two Irish labourers. Two Williams. They became close friends.
+home establish > nar: Soon they would become partners in something terrible.
+home establish > nar: Can you guess what's coming?
+# TITLE 3: The First Sale
+PART
+home establish > nar: Previously: William Burke moved into William Hare's lodging house.
+home bed old:sick,hare > old: I'm sorry, Hare. I can't pay the rent this week.
+home establish > nar: Days later, the old lodger died of illness. [1827]
+home two hare:think,burke > hare: He owed me four pounds. Who'll pay that now?
+home face burke:think > burke: The doctors. They pay for bodies.
+home two knox,hare > knox: Seven pounds ten shillings. Bring me more, gentlemen.
+home two burke:smile,hare:smile > hare: Seven pounds for one night's work.
+home establish > nar: They had found easy money.
+home establish > nar: What do you think they did next?
+# TITLE 4: The Easy Way
+PART
+home establish > nar: Previously: Burke and Hare sold a dead lodger's body to Dr Knox.
+home two hare:think,burke > hare: Waiting for people to die is slow, William.
+home face burke > burke: Then we don't wait.
+street two burke:smile,old > burke: Need a bed and a drink, friend? Come with me.
+home establish > nar: They lured poor travellers in, gave them drink, and made sure no marks were left. [1828]
+home two knox,student > knox: Fresh, and not a mark on them. Excellent.
+home establish > nar: Their partners, Helen and Margaret, knew too.
+home establish > nar: How could no one notice?
+# TITLE 5: No Questions Asked
+PART
+home establish > nar: Previously: Burke and Hare began killing lodgers to sell their bodies.
+home two student:think,knox > student: Another delivery, sir? That's the fourth this month.
+home two student,knox:point > knox: Pay them and get on with the lesson.
+home two burke:give,knox > burke: Here's the next one, Doctor.
+home two burke:smile,hare:smile > hare: Ten pounds. We're rich, William!
+home establish > nar: Victim after victim was carried through Edinburgh in tea chests.
+home establish > nar: Who do you think was more guilty: the killers or the doctor?
+# TITLE 6: A Face They Knew
+PART
+home establish > nar: Previously: Burke and Hare kept selling bodies to Dr Knox's school.
+home two student:scared,knox > student: Sir, I know this girl! It's Mary Paterson. I saw her alive last week! [THE ANATOMY ROOM]
+home two student,knox:cross > knox: You are mistaken. Continue the lesson.
+home face student:scared > student: I'm not mistaken.
+home establish > nar: The student kept quiet. And the killers kept going.
+home establish > nar: Should he have gone to the police?
+# TITLE 7: Daft Jamie
+PART
+street establish > nar: Previously: a student recognised a victim, Mary Paterson, but said nothing.
+street two jamie:smile,burke > jamie: Hello, Mr Burke! Are you looking for my mother?
+street face burke:smile > burke: Come with me, Jamie. I'll take you to her.
+street establish > nar: Daft Jamie was a gentle young man everyone in Edinburgh knew. [EDINBURGH]
+street two police,ann > police: Has anyone seen Jamie? He's never gone this long.
+home face student:scared > student: Doctor, that's Jamie. Everyone knows that face.
+home establish > nar: People began to ask where the missing were going.
+home establish > nar: How long can a secret this big stay hidden?
+# TITLE 8: Halloween
+PART
+home establish > nar: Previously: Daft Jamie disappeared, and people began to notice.
+home two mrsd:smile,burke:smile > burke: Mrs Docherty! An Irish lady, like my own mother. Come, stay for the party. [HALLOWEEN · 1828]
+home two gray,ann > ann: Why did Burke move us out for the night?
+home establish > nar: The next morning, Margaret Docherty was gone. [THE NEXT MORNING]
+home two ann:scared,gray > ann: James... there's a woman under the straw. It's the old lady!
+home two helen:scared,ann > helen: Keep quiet! I'll give you ten pounds a week!
+home two gray:point,ann > gray: No. We're going to the police.
+home establish > nar: Who do you think the police believed?
+# TITLE 9: The Deal
+PART
+home establish > nar: Previously: lodgers James and Ann Gray found a body and went to the police.
+home two police:point,burke:cuffed > police: William Burke, you're under arrest. And Hare too. [NOVEMBER 1828]
+prison two police:think,judge > police: The evidence is thin, my lord. We need a witness.
+prison cell hare:smile > hare: Let me go free and I'll tell you everything.
+prison face burke:scared > burke: He's selling me out. Just like the bodies.
+prison establish > nar: Hare was given immunity to testify against his friend.
+prison establish > nar: Was that fair?
+# TITLE 10: The Skeleton
+PART
+court establish > nar: Previously: Hare agreed to testify against Burke in exchange for freedom.
+court court judge,burke > judge: William Burke, you are guilty. You will hang, and your body will be dissected. [DECEMBER 1828]
+court face hare:smile > hare: I walk free.
+street establish > nar: In January 1829 Burke was hanged before a huge crowd. [JANUARY 1829]
+home establish > nar: His body was dissected in public. His skeleton is still kept at Edinburgh University today.
+home establish > nar: William Hare was released, and vanished into history.
+home establish > nar: Should Hare have walked free? What do you think?

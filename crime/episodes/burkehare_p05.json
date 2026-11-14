@@ -1,0 +1,276 @@
+{
+ "key": "burkehare_p05",
+ "yt": {
+  "title": "No Questions Asked | Burke & Hare (True Story) Part 5 #shorts",
+  "description": "Part 5 of 10: Burke & Hare, Edinburgh, Scotland, 1827-1829. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "burke & hare"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "burke": {
+   "name": "William Burke",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "hare": {
+   "name": "William Hare",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "maggie": {
+   "name": "Margaret Hare",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "helen": {
+   "name": "Helen McDougal",
+   "skin": "#e0aa84",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "knox": {
+   "name": "Dr Robert Knox",
+   "skin": "#d0a07c",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "student": {
+   "name": "a medical student",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "old": {
+   "name": "an old lodger",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "beard": true
+  },
+  "jamie": {
+   "name": "Daft Jamie",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_daniel"
+  },
+  "mrsd": {
+   "name": "Margaret Docherty",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "gray": {
+   "name": "James Gray",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
+  },
+  "ann": {
+   "name": "Ann Gray",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sky",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_echo",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_puck",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BURKE & HARE",
+    "years": "EDINBURGH · 1828",
+    "crime": "16 MURDERS FOR MONEY",
+    "part": "PART 5 OF 10"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Burke and Hare began killing lodgers to sell their bodies."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "student",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "knox",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "student",
+    "text": "Another delivery, sir? That's the fourth this month."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "student",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "knox",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "knox",
+    "text": "Pay them and get on with the lesson."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "burke",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "give"
+    },
+    {
+     "id": "knox",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "burke",
+    "text": "Here's the next one, Doctor."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "burke",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "hare",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "hare",
+    "text": "Ten pounds. We're rich, William!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Victim after victim was carried through Edinburgh in tea chests."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO DO YOU THINK WAS MORE GUILTY: THE KILLERS OR THE DOCTOR?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who do you think was more guilty: the killers or the doctor? Part 6 is next."
+   }
+  }
+ ]
+}

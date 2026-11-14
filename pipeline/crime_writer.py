@@ -185,6 +185,7 @@ def place(fr, who, st, acts):
     return [], {"ward": "ward", "shore": "wide"}.get(st, "scene"), {}
 
 
+TRUSTED = False  # hand-written scripts set this
 SAFE = {"bed": {"home", "ward"}, "grave": {"grave"}, "court": {"court"}, "cell": {"prison", "asylum"}}
 
 
@@ -221,7 +222,7 @@ def convert(case, k, cast, d) -> dict:
         if st in ("street", "forest", "dock", "shore") and h(case["id"] + str(k) + str(i)) % 3 == 0: sh["fx"] = ["rain"]
         if st in ("ward", "asylum", "home", "prison") and spk == "nar" and i > 0: sh["flick"] = True
         if last:
-            if not text.endswith("?") or len(text.split()) > 10 or re.search(r"\b(will|found|remains)\b", text, re.I):
+            if not TRUSTED and not text.endswith("?") or not TRUSTED and len(text.split()) > 10 or not TRUSTED and re.search(r"\b(will|found|remains)\b", text, re.I) or not text.endswith("?"):
                 text = "What do you think happens next?" if k < n else "What do you think of this case?"
             q = text
             sh = {"set": st, "cam": "office", "chars": [],

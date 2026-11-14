@@ -1,0 +1,250 @@
+{
+ "key": "crippen_p09",
+ "yt": {
+  "title": "The Pilot Who Wasn't | Dr. Crippen (True Story) Part 9 #shorts",
+  "description": "Part 9 of 10: Dr. Crippen, London and the Atlantic Ocean, 1910. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dr. crippen"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "crippen": {
+   "name": "Dr Hawley Crippen",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "cora": {
+   "name": "Cora Crippen",
+   "skin": "#d0a07c",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "ethel": {
+   "name": "Ethel Le Neve",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "friend": {
+   "name": "Cora's friend",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "dew": {
+   "name": "Inspector Walter Dew",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "kendall": {
+   "name": "Captain Kendall",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "spilsbury": {
+   "name": "Bernard Spilsbury",
+   "skin": "#b9774a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DR. CRIPPEN",
+    "years": "LONDON · 1910",
+    "crime": "CAUGHT BY RADIO",
+    "part": "PART 9 OF 10"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Captain Kendall recognised Crippen and sent a radio message."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dew",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "dew",
+    "text": "A faster ship. We'll reach Canada before the Montrose."
+   },
+   "title": "CANADA · JULY 1910"
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "dew",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Inspector Dew boarded the Montrose dressed as a ship's pilot."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "dew",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "crippen",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "dew",
+    "text": "Good morning, Dr Crippen. Do you know me?"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "crippen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "crippen",
+    "text": "Thank God it's over. The suspense was too much."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "dew",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "crippen",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "dew",
+    "text": "Hawley Crippen, you're under arrest."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Crippen and Ethel were taken back to London."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE JURY BELIEVE HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 10 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the jury believe him? Part 10 is next."
+   }
+  }
+ ]
+}

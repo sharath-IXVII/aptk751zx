@@ -1,0 +1,84 @@
+CAST lizzie | Lizzie Borden | f | rich | red
+CAST andrew | Andrew Borden | m | rich | white | beard
+CAST abby | Abby Borden | f | plain | grey
+CAST emma | Emma Borden | f | rich | brown
+CAST bridget | Bridget Sullivan | f | worker | brown
+CAST alice | Alice Russell | f | rich | blonde
+CAST clerk | the drug store clerk | m | plain | black
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Richest Miser in Town
+PART
+home establish > nar: Lizzie Borden. A name America would never forget. [FALL RIVER · 1892]
+home two lizzie:think,andrew > lizzie: Father, we're rich. Why do we live like this? No electric light. No bathroom upstairs.
+home two lizzie,andrew:cross > andrew: Money is for keeping, Lizzie. Not for wasting.
+home two emma:think,lizzie > emma: He'll give everything to her. Not to us.
+home face lizzie:cross > lizzie: Don't call her Mother. She is Mrs Borden.
+home establish > nar: A wealthy family. A tense house.
+home establish > nar: Who do you think was the problem in this house?
+# TITLE 2: The Feud Over Money
+PART
+home establish > nar: Previously: Andrew Borden was rich but tight with money. His daughters resented their stepmother.
+home two andrew,abby:smile > andrew: I've put the house in your sister's name, Abby. Your family needs it.
+home two emma:cross,lizzie:cross > lizzie: He gives property to her family and nothing to us!
+home two lizzie:point,andrew > lizzie: You care more about her than your own daughters!
+home face abby:scared > abby: Lizzie, please. I've never hurt you.
+home establish > nar: The sisters stopped eating meals with their parents.
+home establish > nar: How long can a family live with this much anger?
+# TITLE 3: A Strange Sickness
+PART
+home establish > nar: Previously: the Bordens argued bitterly about money and property.
+home bed abby:sick,bridget > abby: We're all so sick, Bridget. Was it the mutton? [AUGUST 1892]
+home two clerk,lizzie > clerk: You want prussic acid, miss? For a sealskin cape? Not without a prescription. [THE DRUG STORE]
+home face lizzie > lizzie: I've never been in that shop in my life.
+home two alice:think,lizzie > lizzie: Alice, I feel something terrible is going to happen.
+home establish > nar: Lizzie later said the clerk was mistaken.
+home establish > nar: Do you believe her?
+# TITLE 4: A Hot Morning
+PART
+home establish > nar: Previously: the family fell ill, and a clerk said Lizzie tried to buy poison.
+home establish > nar: The morning of the fourth of August, 1892. Very hot. [4 AUGUST 1892]
+home two bridget:think,abby > abby: The windows need washing, Bridget. Inside and out.
+home face bridget > bridget: Yes, ma'am. In this heat.
+home establish > nar: Emma was away visiting friends. Andrew went into town.
+home establish > nar: Upstairs, in the guest room, Abby Borden was killed.
+home establish > nar: No one heard a thing.
+home establish > nar: How could no one hear?
+# TITLE 5: Father's Dead
+PART
+home establish > nar: Previously: Abby Borden was killed upstairs while the maid washed windows.
+home two andrew,lizzie > andrew: Too hot. I'll rest on the sofa. [ABOUT AN HOUR LATER]
+home face lizzie > lizzie: Rest well, Father.
+home bed bridget,lizzie > bridget: Miss Lizzie? I'm lying down for a minute.
+home establish > nar: Minutes later, Lizzie's voice rang through the house.
+home two lizzie:scared,bridget:scared > lizzie: Bridget, come down quick! Father's dead! Somebody came in and killed him!
+home establish > nar: And upstairs, Abby was still lying where she fell.
+home establish > nar: Who do you think did it?
+# TITLE 6: The Burned Dress
+PART
+home establish > nar: Previously: Andrew and Abby Borden were found killed in their home.
+home two police:think,lizzie > police: No door forced. Nothing stolen. Where were you, Miss Borden?
+home two police,lizzie > lizzie: In the barn. No, in the yard. Eating pears.
+home face police:think > police: Her story keeps changing.
+home two alice:scared,lizzie > alice: Lizzie, what are you doing with that dress? [THREE DAYS LATER]
+home face lizzie > lizzie: Burning it. It has paint on it.
+home face alice:scared > alice: I wouldn't let anybody see you do that.
+home establish > nar: Would you burn a dress after your parents were killed?
+# TITLE 7: The Trial of the Century
+PART
+home establish > nar: Previously: Lizzie's stories changed, and a friend saw her burn a dress.
+home two police:point,lizzie:cuffed > police: Lizzie Borden, you are under arrest. [AUGUST 1892]
+court establish > nar: Reporters came from all over America. [NEW BEDFORD · JUNE 1893]
+court two alice:scared,judge > alice: She said it had paint on it. And she burned it.
+court face lizzie > lizzie: I am innocent.
+court establish > nar: The whole country argued. Could a quiet church lady do something like this?
+court establish > nar: What would your verdict be?
+# TITLE 8: Not Guilty
+PART
+court establish > nar: Previously: Lizzie Borden was tried for the murders of her father and stepmother.
+court two police:think,judge > police: No bloody clothes. No clear weapon. No witness.
+court court judge,lizzie > judge: The jury finds the defendant: not guilty. [JUNE 1893]
+court face lizzie:cry > lizzie: Take me home. I want to go home.
+street establish > nar: Lizzie stayed in Fall River, shunned by her neighbours, until she died in 1927.
+street establish > nar: No one else was ever charged. The case is still unsolved.
+street establish > nar: Lizzie Borden: guilty or innocent?

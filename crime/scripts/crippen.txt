@@ -1,0 +1,105 @@
+CAST crippen | Dr Hawley Crippen | m | rich | brown | beard
+CAST cora | Cora Crippen | f | rich | black
+CAST ethel | Ethel Le Neve | f | plain | brown
+CAST friend | Cora's friend | f | rich | blonde
+CAST dew | Inspector Walter Dew | m | detective | grey | beard
+CAST kendall | Captain Kendall | m | soldier | white | beard
+CAST spilsbury | Bernard Spilsbury | m | doctor | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Quiet Doctor
+PART
+home establish > nar: Doctor Hawley Crippen. The quietest man in London. [LONDON · 1910]
+home two cora:point,crippen > cora: Hawley! Another dull night at home? I'm a star, I need the stage!
+home two cora,crippen:think > crippen: Yes, dear. Of course, dear.
+home face cora:smile > cora: The world knows me as Belle Elmore. Don't forget it.
+home face crippen > crippen: How could I ever forget?
+home two cora:cross,crippen > cora: And sell more of your silly medicines. My dresses aren't cheap.
+home establish > nar: Behind the door of 39 Hilldrop Crescent, the marriage was falling apart.
+home establish > nar: How long could a quiet man stay quiet?
+# TITLE 2: The Typist
+PART
+home establish > nar: Previously: quiet Dr Crippen lived with his loud, glamorous wife Cora.
+home two ethel:smile,crippen > ethel: Your letters are typed, Doctor. Shall I bring tea? [THE OFFICE]
+home two ethel,crippen:smile > crippen: Ethel, you're the only kind voice in my day.
+home face ethel:smile > ethel: You deserve kindness, Hawley.
+home two ethel:smile,crippen:smile > crippen: If only I were free.
+home establish > nar: The doctor had fallen in love with his young typist, Ethel Le Neve.
+home establish > nar: Would you blame him?
+# TITLE 3: The Last Party
+PART
+home establish > nar: Previously: Dr Crippen fell in love with his typist, Ethel.
+home two friend:smile,cora:smile > friend: What a lovely evening, Belle! [31 JANUARY 1910]
+home two friend,cora:smile > cora: Come again soon, darling. Goodnight!
+home two cora:cross,crippen > cora: You were rude to my guests all night, Hawley.
+home face crippen > crippen: Goodnight, Cora.
+home establish > nar: The guests went home. And Cora Crippen was never seen again. [THAT NIGHT]
+home establish > nar: What do you think happened after the guests left?
+# TITLE 4: Ethel Moves In
+PART
+home establish > nar: Previously: after a party at the Crippens' house, Cora disappeared.
+street two friend:think,crippen > friend: Where is Belle? She's missed every meeting!
+street two friend,crippen > crippen: She's gone to America. Family trouble.
+street establish > nar: Weeks later, he had more news. [WEEKS LATER]
+street two friend:scared,crippen:cry > crippen: Terrible news. Cora died in America.
+home two ethel:smile,crippen > ethel: Is this really for me, Hawley?
+home face friend:scared > friend: That's Belle's brooch. Ethel is wearing Belle's jewellery!
+home establish > nar: Cora's friends began to ask questions.
+home establish > nar: Would you go to the police?
+# TITLE 5: Scotland Yard Visits
+PART
+street establish > nar: Previously: Cora vanished, and Ethel moved in wearing her jewellery.
+street two friend,dew > friend: Inspector, Belle would never leave without a word. [SCOTLAND YARD]
+home two dew:think,crippen > dew: Dr Crippen, where is your wife?
+home face crippen > crippen: I lied, Inspector. She left me for another man. I was ashamed.
+home two dew:think,crippen > dew: Thank you for being honest, Doctor.
+home face dew:think > dew: Almost everything fits. Almost.
+home establish > nar: Inspector Walter Dew was nearly satisfied.
+home establish > nar: Do you believe Crippen's story?
+# TITLE 6: Under the Cellar Floor
+PART
+home establish > nar: Previously: Crippen told Inspector Dew his wife had left him.
+home two dew:scared,ethel > dew: The doctor's gone? And the typist with him? [DAYS LATER]
+home face dew:think > dew: Innocent men don't run. Search the house again.
+home two dew,police > dew: These cellar bricks are loose.
+home establish > nar: Under the cellar floor, they found human remains.
+home face dew > dew: Find Crippen. Every port. Every ship.
+home establish > nar: The hunt for Dr Crippen had begun.
+home establish > nar: Where would you run?
+CAST police | a police officer | m | police | black
+# TITLE 7: Father and Son
+PART
+dock establish > nar: Previously: police found human remains in Crippen's cellar. He had fled with Ethel.
+dock two ethel,crippen:smile > crippen: From now on I'm Mr Robinson. And you are my son. [ANTWERP · JULY 1910]
+dock two ethel:think,crippen > ethel: A boy? In these trousers? Will anyone believe it?
+dock face crippen:smile > crippen: Nobody looks twice at a father and his son.
+dock walk ethel > nar: They boarded the SS Montrose, sailing for Canada.
+dock establish > nar: But one man on board was looking very closely.
+dock establish > nar: Who do you think was watching them?
+# TITLE 8: The Captain's Telegram
+PART
+dock establish > nar: Previously: Crippen and Ethel sailed for Canada, disguised as father and son.
+dock two kendall:think,police > kendall: That boy has the figure of a woman. And they hold hands. [SS MONTROSE]
+dock face kendall:think > kendall: Mr Robinson. Or should I say Dr Crippen?
+dock two kendall:point,police > kendall: Send a wireless message to London. Now.
+dock establish > nar: For the first time, radio was used to catch a fleeing killer.
+dock establish > nar: But the ship was still days from land.
+dock establish > nar: Could the police reach Canada first?
+# TITLE 9: The Pilot Who Wasn't
+PART
+dock establish > nar: Previously: Captain Kendall recognised Crippen and sent a radio message.
+dock face dew > dew: A faster ship. We'll reach Canada before the Montrose. [CANADA · JULY 1910]
+dock walk dew > nar: Inspector Dew boarded the Montrose dressed as a ship's pilot.
+dock two dew,crippen:scared > dew: Good morning, Dr Crippen. Do you know me?
+dock face crippen > crippen: Thank God it's over. The suspense was too much.
+dock two dew:point,crippen:cuffed > dew: Hawley Crippen, you're under arrest.
+dock establish > nar: Crippen and Ethel were taken back to London.
+dock establish > nar: Will the jury believe him?
+# TITLE 10: The Scar
+PART
+court establish > nar: Previously: Inspector Dew arrested Crippen on board the ship.
+court two spilsbury,dew > spilsbury: There is a scar on the remains. Cora had a scar just like it. [OLD BAILEY · OCT 1910]
+court face crippen > crippen: I never harmed my wife.
+court court judge,crippen > judge: Guilty. The sentence is death.
+court two ethel:cry,dew > nar: In a separate trial, Ethel Le Neve was found not guilty.
+prison establish > nar: Crippen was hanged in November 1910. His last wish was to be buried with Ethel's photograph.
+prison establish > nar: Was Ethel really innocent? What do you think?

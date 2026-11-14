@@ -65,6 +65,7 @@ def build(path: Path):
         if l == "PART": cur = []; parts.append(cur); continue
         cur.append(l)
     assert len(parts) == len(case["parts"]), f"{cid}: {len(parts)} parts written, library has {len(case['parts'])}"
+    W.TRUSTED = True
     W.present = lambda case, k, cast: list(cast)  # hand-written: every listed character is allowed
     keys = []
     for k, pl in enumerate(parts, 1):

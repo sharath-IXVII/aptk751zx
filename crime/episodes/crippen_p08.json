@@ -1,0 +1,230 @@
+{
+ "key": "crippen_p08",
+ "yt": {
+  "title": "The Captain's Telegram | Dr. Crippen (True Story) Part 8 #shorts",
+  "description": "Part 8 of 10: Dr. Crippen, London and the Atlantic Ocean, 1910. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dr. crippen"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "crippen": {
+   "name": "Dr Hawley Crippen",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "cora": {
+   "name": "Cora Crippen",
+   "skin": "#d0a07c",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "ethel": {
+   "name": "Ethel Le Neve",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "friend": {
+   "name": "Cora's friend",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "dew": {
+   "name": "Inspector Walter Dew",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "kendall": {
+   "name": "Captain Kendall",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "spilsbury": {
+   "name": "Bernard Spilsbury",
+   "skin": "#b9774a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DR. CRIPPEN",
+    "years": "LONDON · 1910",
+    "crime": "CAUGHT BY RADIO",
+    "part": "PART 8 OF 10"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Crippen and Ethel sailed for Canada, disguised as father and son."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "kendall",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "kendall",
+    "text": "That boy has the figure of a woman. And they hold hands."
+   },
+   "title": "SS MONTROSE"
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "kendall",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "kendall",
+    "text": "Mr Robinson. Or should I say Dr Crippen?"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "kendall",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "kendall",
+    "text": "Send a wireless message to London. Now."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "For the first time, radio was used to catch a fleeing killer."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "But the ship was still days from land."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "COULD THE POLICE REACH CANADA FIRST?",
+    "p": "Comment below 👇",
+    "f": "Part 9 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Could the police reach Canada first? Part 9 is next."
+   }
+  }
+ ]
+}
