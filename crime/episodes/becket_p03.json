@@ -1,0 +1,155 @@
+{
+ "key": "becket_p03",
+ "yt": {
+  "title": "Exile | The Murder Of Thomas Becket (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: The Murder Of Thomas Becket, England, 1162-1174. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the murder of thomas becket"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "henry": {
+   "name": "King Henry II",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "becket": {
+   "name": "Thomas Becket",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "knight": {
+   "name": "a knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "knight2": {
+   "name": "another knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "monk": {
+   "name": "a monk",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MURDER OF THOMAS BECKET",
+    "years": "CANTERBURY · 1170",
+    "crime": "KILLED IN THE CATHEDRAL",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Becket defended the Church against the king's power."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "henry",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "henry",
+    "text": "He defies me at every turn!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "In danger, Becket fled to France. He stayed in exile for six years."
+   },
+   "title": "1164 - 1170",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "becket",
+    "text": "I will not bend."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD HE EVER COME HOME?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would he ever come home? Part 4 is next."
+   }
+  }
+ ]
+}

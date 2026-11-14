@@ -1,0 +1,61 @@
+CAST garfield | President James Garfield | m | rich | brown | beard
+CAST guiteau | Charles Guiteau | m | plain | brown | beard
+CAST clerk | a White House clerk | m | plain | grey
+CAST bliss | Dr Willard Bliss | m | doctor | white | beard
+CAST bell | Alexander Graham Bell | m | rich | grey | beard
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Job Seeker
+PART
+street establish > nar: Washington, 1881. President James Garfield has just taken office. [WASHINGTON · 1881]
+home two clerk,guiteau > guiteau: I helped elect the President! I want to be ambassador to Paris.
+home two clerk:cross,guiteau > clerk: The answer is no, Mr Guiteau. Again.
+home face guiteau:cross > guiteau: I wrote a speech for him! I deserve that job!
+home establish > nar: Charles Guiteau came to the White House again and again.
+home establish > nar: What would you do with someone like him?
+# TITLE 2: A Mission From God
+PART
+home establish > nar: Previously: Charles Guiteau demanded a government job, and was turned away again and again.
+home face guiteau:think > guiteau: God has spoken to me. The President must be removed. [JUNE 1881]
+home face guiteau > guiteau: I've bought a revolver. With an ivory handle. It'll look good in a museum.
+home establish > nar: Guiteau began following the President, waiting for the right moment.
+home establish > nar: Could anyone stop him?
+# TITLE 3: The Station
+PART
+home establish > nar: Previously: Guiteau bought a gun and began following the President.
+street walk garfield > nar: 2 July 1881. A Washington railway station. The President is going on holiday. [2 JULY 1881]
+street face guiteau > nar: Guiteau stepped up behind him and fired.
+street two police:point,guiteau:cuffed > police: Got him!
+street face guiteau:smile > guiteau: I did it. I want to be arrested.
+street establish > nar: Will the President survive?
+# TITLE 4: Dirty Fingers
+PART
+street establish > nar: Previously: Guiteau shot President Garfield in the back.
+home bed garfield:sick,bliss > bliss: The bullet is inside. I must find it. [JULY 1881]
+home face bliss:think > bliss: I'll probe the wound. With my finger.
+home establish > nar: Doctors pushed unwashed fingers and instruments into the wound, again and again.
+home establish > nar: Germs were not well understood in America yet.
+home establish > nar: Do you think the doctors helped or hurt him?
+# TITLE 5: The Metal Detector
+PART
+home establish > nar: Previously: doctors searched for the bullet with unwashed fingers.
+home two bell,bliss > bell: I've built a machine. An induction balance. It can find metal in the body.
+home bed garfield:sick,bell > bell: I'm hearing a signal everywhere. It doesn't make sense.
+home face bell:think > bell: The metal springs in the bed! They're confusing my machine.
+home establish > nar: Alexander Graham Bell's invention failed.
+home establish > nar: Could anything save the President now?
+# TITLE 6: Eighty Days
+PART
+home establish > nar: Previously: Alexander Graham Bell's metal detector couldn't find the bullet.
+home bed garfield:sick,bliss > garfield: Am I dying? [SEPTEMBER 1881]
+home establish > nar: Infection spread through his body. He suffered for eighty days.
+home establish > nar: On 19 September 1881, President Garfield died.
+home establish > nar: Who really killed him? The gunman, or the doctors?
+# TITLE 7: Singing to the Court
+PART
+home establish > nar: Previously: President Garfield died after eighty days, mainly from infection.
+court face guiteau:smile > guiteau: The doctors killed Garfield. I just shot him! [WASHINGTON · 1882]
+court face guiteau > nar: He sang songs and insulted the court.
+court court judge,guiteau > judge: Charles Guiteau, guilty.
+prison establish > nar: On the day of his hanging, he recited a poem called 'I am going to the Lordy'.
+prison establish > nar: Should Garfield's doctors have faced trial too?

@@ -1,0 +1,193 @@
+{
+ "key": "becket_p05",
+ "yt": {
+  "title": "In the Cathedral | The Murder Of Thomas Becket (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Murder Of Thomas Becket, England, 1162-1174. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the murder of thomas becket"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "henry": {
+   "name": "King Henry II",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "becket": {
+   "name": "Thomas Becket",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "knight": {
+   "name": "a knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "knight2": {
+   "name": "another knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "monk": {
+   "name": "a monk",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MURDER OF THOMAS BECKET",
+    "years": "CANTERBURY · 1170",
+    "crime": "KILLED IN THE CATHEDRAL",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: angry King Henry seemed to wish Becket gone. Four knights rode to Canterbury."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "monk",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "becket",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "monk",
+    "text": "Bar the doors, Archbishop! Armed men!"
+   },
+   "title": "CANTERBURY · 29 DECEMBER 1170"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "becket",
+    "text": "A church is not a castle. Open the doors."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "knight",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "becket",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "knight",
+    "text": "Where is Thomas Becket, traitor to the king?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "becket",
+    "text": "Here I am. No traitor. A priest of God."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The knights killed Thomas Becket in his own cathedral."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU THINK EUROPE REACTED?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you think Europe reacted? Part 6 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "key": "marks_p04",
+ "yt": {
+  "title": "The Murders | Grace Marks (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Grace Marks, Richmond Hill, Upper Canada, 1843. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "grace marks"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "grace": {
+   "name": "Grace Marks",
+   "skin": "#b9774a",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mcdermott": {
+   "name": "James McDermott",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "kinnear": {
+   "name": "Thomas Kinnear",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "nancy": {
+   "name": "Nancy Montgomery",
+   "skin": "#8a5232",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "a constable",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "GRACE MARKS",
+    "years": "CANADA · 1843",
+    "crime": "THE SERVANT GIRL",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: McDermott and Grace both resented Nancy."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "July 1843. Nancy Montgomery was killed. Then Thomas Kinnear was shot."
+   },
+   "title": "JULY 1843",
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mcdermott",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "grace",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "mcdermott",
+    "text": "Pack the silver. The clothes. We're going to the States."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "grace",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Grace and McDermott fled across Lake Ontario to Lewiston, New York."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD THEY GET AWAY?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would they get away? Part 5 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "key": "becket_p04",
+ "yt": {
+  "title": "The Turbulent Priest | The Murder Of Thomas Becket (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Murder Of Thomas Becket, England, 1162-1174. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the murder of thomas becket"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "henry": {
+   "name": "King Henry II",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "becket": {
+   "name": "Thomas Becket",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "knight": {
+   "name": "a knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "knight2": {
+   "name": "another knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "monk": {
+   "name": "a monk",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MURDER OF THOMAS BECKET",
+    "years": "CANTERBURY · 1170",
+    "crime": "KILLED IN THE CATHEDRAL",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Becket spent six years in exile in France."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "In 1170, Becket returned to Canterbury. And immediately punished the king's supporters."
+   },
+   "title": "DECEMBER 1170",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "henry",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "henry",
+    "text": "Will no one rid me of this turbulent priest?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "knight",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "knight2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "knight",
+    "text": "Did you hear the king?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "knight2",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "knight2",
+    "text": "We heard."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DID THE KING REALLY MEAN IT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Did the king really mean it? Part 5 is next."
+   }
+  }
+ ]
+}

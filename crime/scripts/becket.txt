@@ -1,0 +1,52 @@
+CAST henry | King Henry II | m | royal | red | beard
+CAST becket | Thomas Becket | m | judge | brown
+CAST knight | a knight | m | soldier | black | beard
+CAST knight2 | another knight | m | soldier | brown
+CAST monk | a monk | m | plain | grey
+# TITLE 1: Best Friends
+PART
+court establish > nar: England, 1160s. King Henry the Second and Thomas Becket. Best friends. [ENGLAND · 1160s]
+court two henry:smile,becket:smile > henry: Thomas, my chancellor. My closest friend. We hunt, we feast, we rule together.
+court face becket:smile > becket: Whatever you need, my king.
+court face henry:smile > henry: Then I'll make you Archbishop of Canterbury. With you running the Church, we'll never argue.
+court establish > nar: Was that a good idea?
+# TITLE 2: A Changed Man
+PART
+court establish > nar: Previously: King Henry made his friend Thomas Becket Archbishop of Canterbury.
+home face becket > becket: I serve God now. Not the king. [1162]
+court two henry:cross,becket > henry: The Church must obey my courts, Thomas!
+court two henry,becket:cross > becket: The Church answers only to God.
+court establish > nar: The king's friend had become his greatest opponent.
+court establish > nar: What would you do if your best friend turned against you?
+# TITLE 3: Exile
+PART
+court establish > nar: Previously: Becket defended the Church against the king's power.
+court face henry:cross > henry: He defies me at every turn!
+street walk becket > nar: In danger, Becket fled to France. He stayed in exile for six years. [1164 - 1170]
+home face becket > becket: I will not bend.
+home establish > nar: Would he ever come home?
+# TITLE 4: The Turbulent Priest
+PART
+home establish > nar: Previously: Becket spent six years in exile in France.
+street walk becket > nar: In 1170, Becket returned to Canterbury. And immediately punished the king's supporters. [DECEMBER 1170]
+court face henry:cross > henry: Will no one rid me of this turbulent priest?
+court two knight,knight2 > knight: Did you hear the king?
+court face knight2 > knight2: We heard.
+court establish > nar: Did the king really mean it?
+# TITLE 5: In the Cathedral
+PART
+court establish > nar: Previously: angry King Henry seemed to wish Becket gone. Four knights rode to Canterbury.
+court two monk:scared,becket > monk: Bar the doors, Archbishop! Armed men! [CANTERBURY · 29 DECEMBER 1170]
+court face becket > becket: A church is not a castle. Open the doors.
+court two knight:point,becket > knight: Where is Thomas Becket, traitor to the king?
+court face becket > becket: Here I am. No traitor. A priest of God.
+court establish > nar: The knights killed Thomas Becket in his own cathedral.
+court establish > nar: How do you think Europe reacted?
+# TITLE 6: Saint Thomas
+PART
+court establish > nar: Previously: four knights killed Thomas Becket in Canterbury Cathedral.
+street establish > nar: Europe was horrified. Within three years, the Pope made Becket a saint. [1173]
+court face henry:cry > henry: I never meant for this. I will do penance.
+court establish > nar: King Henry walked barefoot to Becket's tomb and was whipped by monks.
+court establish > nar: For centuries, pilgrims travelled to Canterbury to pray at his shrine.
+court establish > nar: Was the king guilty of murder?

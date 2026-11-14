@@ -1,0 +1,159 @@
+{
+ "key": "becket_p01",
+ "yt": {
+  "title": "Best Friends | The Murder Of Thomas Becket (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: The Murder Of Thomas Becket, England, 1162-1174. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the murder of thomas becket"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "henry": {
+   "name": "King Henry II",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "becket": {
+   "name": "Thomas Becket",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "knight": {
+   "name": "a knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "knight2": {
+   "name": "another knight",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "monk": {
+   "name": "a monk",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MURDER OF THOMAS BECKET",
+    "years": "CANTERBURY · 1170",
+    "crime": "KILLED IN THE CATHEDRAL",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "England, 1160s. King Henry the Second and Thomas Becket. Best friends."
+   },
+   "title": "ENGLAND · 1160S"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "henry",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "becket",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "henry",
+    "text": "Thomas, my chancellor. My closest friend. We hunt, we feast, we rule together."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "becket",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "becket",
+    "text": "Whatever you need, my king."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "henry",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "henry",
+    "text": "Then I'll make you Archbishop of Canterbury. With you running the Church, we'll never argue."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS THAT A GOOD IDEA?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was that a good idea? Part 2 is next."
+   }
+  }
+ ]
+}

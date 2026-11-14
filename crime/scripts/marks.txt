@@ -1,0 +1,52 @@
+CAST grace | Grace Marks | f | worker | red
+CAST mcdermott | James McDermott | m | worker | black
+CAST kinnear | Thomas Kinnear | m | rich | brown
+CAST nancy | Nancy Montgomery | f | rich | brown
+CAST police | a constable | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The New Servant
+PART
+forest establish > nar: Upper Canada, 1843. Richmond Hill, north of Toronto. [RICHMOND HILL · 1843]
+home two kinnear:smile,grace > kinnear: Welcome, Grace. You'll help Nancy with the house.
+home face grace > grace: Yes, sir. I'm sixteen, but I work hard.
+home establish > nar: Grace Marks, a poor Irish immigrant, began work on Thomas Kinnear's farm.
+home establish > nar: Will this be a good place for her?
+# TITLE 2: Nancy
+PART
+home establish > nar: Previously: sixteen-year-old Grace Marks began work on Thomas Kinnear's farm.
+home two nancy:cross,grace > nancy: The floors aren't clean enough. Do them again.
+home face grace:cross > grace: She's a housekeeper, just like me. Why does she give the orders?
+home two nancy:smile,kinnear:smile > kinnear: Because she's more than a housekeeper, Grace.
+home establish > nar: Nancy Montgomery was also Kinnear's lover. And she ran the house.
+home establish > nar: How do you think Grace felt?
+# TITLE 3: Resentment
+PART
+home establish > nar: Previously: housekeeper Nancy, Kinnear's lover, gave Grace orders.
+home two mcdermott:cross,grace > mcdermott: Nancy's dismissed me. Two weeks' notice. After all my work.
+home face grace:think > grace: She'll dismiss me too, one day.
+home two mcdermott,grace:scared > mcdermott: Not if something happens to her first.
+home establish > nar: Stable hand James McDermott and Grace both resented Nancy.
+home establish > nar: Was it just angry talk?
+# TITLE 4: The Murders
+PART
+home establish > nar: Previously: McDermott and Grace both resented Nancy.
+home establish > nar: July 1843. Nancy Montgomery was killed. Then Thomas Kinnear was shot. [JULY 1843]
+home two mcdermott,grace:scared > mcdermott: Pack the silver. The clothes. We're going to the States.
+dock walk grace > nar: Grace and McDermott fled across Lake Ontario to Lewiston, New York.
+dock establish > nar: Would they get away?
+# TITLE 5: Two Stories
+PART
+dock establish > nar: Previously: Nancy and Kinnear were killed. Grace and McDermott fled to the United States.
+dock two police:point,mcdermott:cuffed > police: James McDermott. Grace Marks. You're under arrest. [LEWISTON · JULY 1843]
+home face mcdermott:cross > mcdermott: It was Grace's idea. She planned it all.
+home face grace:cry > grace: He forced me! He said he'd kill me too!
+home establish > nar: Each blamed the other.
+home establish > nar: Who do you believe?
+# TITLE 6: Pardoned
+PART
+home establish > nar: Previously: McDermott and Grace each blamed the other.
+court court judge,mcdermott > judge: James McDermott, you will hang. [TORONTO · 1843]
+court court judge,grace > judge: Grace Marks. Death. Changed, because of your youth, to life in prison.
+prison cell grace > nar: Grace spent almost thirty years in prison.
+prison establish > nar: In 1872 she was pardoned. She moved to New York, and disappeared from history.
+prison establish > nar: Was Grace Marks guilty, or a frightened girl?

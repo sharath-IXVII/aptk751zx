@@ -1,0 +1,183 @@
+{
+ "key": "garfield_p04",
+ "yt": {
+  "title": "Dirty Fingers | The Garfield Assassination (True Story) Part 4 #shorts",
+  "description": "Part 4 of 7: The Garfield Assassination, Washington DC, 1881. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the garfield assassination"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "garfield": {
+   "name": "President James Garfield",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "guiteau": {
+   "name": "Charles Guiteau",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "clerk": {
+   "name": "a White House clerk",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "bliss": {
+   "name": "Dr Willard Bliss",
+   "skin": "#8a5232",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "beard": true,
+   "glasses": true
+  },
+  "bell": {
+   "name": "Alexander Graham Bell",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE GARFIELD ASSASSINATION",
+    "years": "WASHINGTON · 1881",
+    "crime": "KILLED BY HIS DOCTORS?",
+    "part": "PART 4 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Guiteau shot President Garfield in the back."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "garfield",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "bliss",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bliss",
+    "text": "The bullet is inside. I must find it."
+   },
+   "bed": true,
+   "title": "JULY 1881"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bliss",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "bliss",
+    "text": "I'll probe the wound. With my finger."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Doctors pushed unwashed fingers and instruments into the wound, again and again."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Germs were not well understood in America yet."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK THE DOCTORS HELPED OR HURT HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think the doctors helped or hurt him? Part 5 is next."
+   }
+  }
+ ]
+}
