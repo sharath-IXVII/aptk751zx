@@ -1,0 +1,192 @@
+{
+ "key": "judd_p04",
+ "yt": {
+  "title": "The Smell | Winnie Ruth Judd (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Winnie Ruth Judd, Phoenix, Arizona and Los Angeles, 1931. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "winnie ruth judd"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "winnie": {
+   "name": "Winnie Ruth Judd",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "agnes": {
+   "name": "Agnes LeRoi",
+   "skin": "#d0a07c",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true,
+   "nurse": true
+  },
+  "sammy": {
+   "name": "Sammy Samuelson",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "porter": {
+   "name": "a baggage worker",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "WINNIE RUTH JUDD",
+    "years": "PHOENIX · 1931",
+    "crime": "THE TRUNK MURDERESS",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Winnie took two heavy trunks on a train to Los Angeles."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "porter",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "porter",
+    "text": "That smell. And the trunk is leaking."
+   },
+   "title": "LOS ANGELES · 19 OCTOBER 1931",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "winnie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Can you open this trunk, ma'am?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "winnie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "winnie",
+    "text": "My husband has the key. I'll go and get it."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Winnie walked away, and disappeared."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE DO YOU THINK SHE WENT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where do you think she went? Part 5 is next."
+   }
+  }
+ ]
+}

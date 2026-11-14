@@ -1,0 +1,52 @@
+CAST ponzi | Charles Ponzi | m | rich | black
+CAST rose | Rose Ponzi | f | plain | brown
+CAST investor | an investor | m | worker | grey | beard
+CAST investor2 | another investor | f | plain | blonde
+CAST reporter | a Boston Post reporter | m | plain | brown
+CAST agent | a federal agent | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Coupon
+PART
+home establish > nar: Boston, 1919. Charles Ponzi, a poor Italian immigrant, opens a letter. [BOSTON · 1919]
+home face ponzi:think > ponzi: An international reply coupon. Bought cheap in Italy. Swap it here for more stamps.
+home face ponzi:smile > ponzi: Buy low in Europe. Cash in high in America. Profit!
+home two rose,ponzi:smile > rose: Is that really possible, Charles?
+home establish > nar: Was it a real opportunity, or the start of a trick?
+# TITLE 2: Fifty Percent
+PART
+home establish > nar: Previously: Ponzi found a way to profit from international postal coupons.
+street two investor:think,ponzi:smile > ponzi: Give me your money. In forty-five days, I'll give you fifty percent profit. [DECEMBER 1919]
+street face investor:smile > investor: Fifty percent? In forty-five days? Sign me up!
+street establish > nar: Word spread fast. Money started pouring in.
+street establish > nar: Would you invest?
+# TITLE 3: Robbing Peter to Pay Paul
+PART
+street establish > nar: Previously: Ponzi promised investors fifty percent profit in forty-five days.
+home face ponzi:think > ponzi: Buying coupons is too slow. Too difficult.
+home face ponzi:smile > ponzi: But I can pay old investors with new investors' money. Nobody will know.
+street two investor2:smile,investor:smile > investor2: He paid me back with profit! I'm investing everything!
+street establish > nar: Ponzi wasn't buying coupons any more. New money paid the old.
+street establish > nar: How long can that last?
+# TITLE 4: The Millionaire
+PART
+street establish > nar: Previously: Ponzi used new investors' money to pay old investors.
+home two rose:smile,ponzi:smile > ponzi: A mansion, Rose! Servants! A car! [SUMMER 1920]
+street face investor2:smile > investor2: The queue outside his office goes around the block!
+street establish > nar: Ponzi collected millions of dollars in a few months.
+street establish > nar: Who do you think would ask questions?
+# TITLE 5: The Numbers
+PART
+street establish > nar: Previously: Ponzi became a millionaire as crowds rushed to invest.
+home two reporter:think,agent > reporter: To cover all this money, he'd need millions of postal coupons. [BOSTON POST · JULY 1920]
+home face reporter > reporter: There aren't that many in the whole world.
+street two reporter:point,ponzi > reporter: Mr Ponzi, the numbers don't add up.
+street face ponzi:smile > ponzi: Trust me.
+street establish > nar: Should investors trust him?
+# TITLE 6: Collapse
+PART
+street establish > nar: Previously: a newspaper showed Ponzi's numbers couldn't work.
+street two investor:cross,investor2:cry > investor: Give me my money back! Now! [AUGUST 1920]
+street two agent:point,ponzi:cuffed > agent: Charles Ponzi. You're under arrest for fraud.
+prison cell ponzi > nar: Investors lost millions. Ponzi went to prison.
+street establish > nar: He died poor in Brazil in 1949. His name lives on: a Ponzi scheme.
+street establish > nar: Have you ever seen an offer that was too good to be true?

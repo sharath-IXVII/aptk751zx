@@ -1,0 +1,50 @@
+CAST winnie | Winnie Ruth Judd | f | rich | blonde
+CAST agnes | Agnes LeRoi | f | nurse | brown
+CAST sammy | Sammy Samuelson | f | plain | red
+CAST porter | a baggage worker | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: Friends
+PART
+home establish > nar: Phoenix, Arizona, 1931. Winnie Ruth Judd, a doctor's wife. [PHOENIX · 1931]
+home three winnie:smile,agnes:smile,sammy:smile > agnes: Ruth, you're always welcome at our place.
+home face winnie:smile > winnie: You two are my best friends.
+home establish > nar: Winnie shared friends and a social life with nurse Agnes LeRoi and her roommate Sammy Samuelson.
+home establish > nar: What do you think went wrong between them?
+# TITLE 2: That Night
+PART
+home establish > nar: Previously: Winnie Ruth Judd was close friends with Agnes and Sammy.
+home two agnes:cross,winnie:cross > agnes: We need to talk, Ruth. [16 OCTOBER 1931]
+home establish > nar: That night, Agnes and Sammy were killed in their home.
+home face winnie:scared > winnie: What have I done?
+home establish > nar: Was it planned, or did something go terribly wrong?
+# TITLE 3: Two Trunks
+PART
+home establish > nar: Previously: Agnes and Sammy were killed in their home.
+street walk winnie > nar: Winnie took a train to Los Angeles. With two heavy trunks. [18 OCTOBER 1931]
+street two porter:think,winnie > porter: These trunks are very heavy, ma'am. What's in them?
+street face winnie > winnie: Books. Medical books. My husband's a doctor.
+street establish > nar: Why would she travel with those trunks?
+# TITLE 4: The Smell
+PART
+street establish > nar: Previously: Winnie took two heavy trunks on a train to Los Angeles.
+street two porter:scared,police > porter: That smell. And the trunk is leaking. [LOS ANGELES · 19 OCTOBER 1931]
+street two police,winnie > police: Can you open this trunk, ma'am?
+street face winnie:scared > winnie: My husband has the key. I'll go and get it.
+street establish > nar: Winnie walked away, and disappeared.
+street establish > nar: Where do you think she went?
+# TITLE 5: Self-Defence
+PART
+street establish > nar: Previously: police found the bodies in the trunks. Winnie disappeared.
+home face police:think > police: The Trunk Murderess. Every newspaper wants her. [OCTOBER 1931]
+home two police,winnie:cry > winnie: I'm giving myself up. It was self-defence. They attacked me first.
+home face police:think > police: Two women in two trunks. Self-defence?
+home establish > nar: Do you believe her?
+# TITLE 6: Seven Escapes
+PART
+home establish > nar: Previously: Winnie surrendered and said it was self-defence.
+court court judge,winnie > judge: Guilty. The sentence is death. [1932]
+prison cell winnie > nar: Days before her execution, she was declared insane and sent to a mental hospital instead.
+prison establish > nar: She escaped seven times. Once she stayed free for six years, working as a housekeeper under a new name.
+prison establish > nar: She was finally released in 1971.
+prison establish > nar: Was Winnie Ruth Judd a cold killer, or something else?

@@ -1,0 +1,50 @@
+CAST floyd | Charles 'Pretty Boy' Floyd | m | rich | black
+CAST farmer | a farmer | m | worker | grey | beard
+CAST farmwife | the farmer's wife | f | plain | brown
+CAST teller | a bank teller | m | plain | blonde
+CAST purvis | Melvin Purvis | m | detective | brown
+CAST agent | an FBI agent | m | police | black
+# TITLE 1: Pretty Boy
+PART
+forest establish > nar: Oklahoma, the 1920s. Charles Floyd grows up poor on a cotton farm. [OKLAHOMA · 1920s]
+forest two farmer,floyd > farmer: Times are hard, Charley. Everyone's losing their farms.
+forest face floyd:cross > floyd: The banks take everything. And they call me 'Pretty Boy'. I hate that name.
+forest establish > nar: Do you think poverty made him a criminal?
+# TITLE 2: Torn-Up Mortgages
+PART
+forest establish > nar: Previously: Charles Floyd grew up poor in Oklahoma.
+street two floyd:point,teller:scared > floyd: Put the money in the bag. And the mortgage papers too. [1930s]
+street face floyd > floyd: Burn the mortgages. Let the farmers keep their land.
+street establish > nar: Legend says he tore up mortgages to help poor farmers. Nobody knows if it's true.
+street establish > nar: Was he a criminal, or a Robin Hood?
+# TITLE 3: Hidden by Friends
+PART
+street establish > nar: Previously: Floyd robbed banks, and legend said he tore up mortgages.
+home two farmwife:smile,floyd > farmwife: Sit down, Charley. Have some supper.
+home two farmer,floyd:give > floyd: For the children.
+home face farmer > farmer: Nobody around here will ever give you up.
+home establish > nar: Poor families fed him, hid him, and called him a hero.
+home establish > nar: Would you hide him?
+# TITLE 4: Kansas City
+PART
+home establish > nar: Previously: poor families hid Floyd and called him a hero.
+street two agent:scared,purvis > agent: Union Station, Kansas City. Gunmen ambushed officers transporting a prisoner. [17 JUNE 1933]
+street face purvis:cross > purvis: Officers dead. The FBI blames Pretty Boy Floyd.
+home face floyd:cross > floyd: I wasn't there. I had nothing to do with it.
+home establish > nar: Floyd denied it until the end. Historians still argue.
+home establish > nar: Do you think he was there?
+# TITLE 5: Public Enemy Number One
+PART
+home establish > nar: Previously: the FBI blamed Floyd for the Kansas City Massacre.
+home two purvis,agent > purvis: Dillinger is dead. Now Floyd is Public Enemy Number One. [JULY 1934]
+home face purvis:think > purvis: He's somewhere in Ohio. Find him.
+forest walk floyd > nar: Floyd was running out of places to hide.
+forest establish > nar: How long could he last?
+# TITLE 6: The Farm in Ohio
+PART
+forest establish > nar: Previously: Floyd became Public Enemy Number One.
+forest two farmwife,floyd > floyd: Could I get something to eat, ma'am? I'll pay. [OHIO · 22 OCTOBER 1934]
+forest face agent:point > agent: That's him! Stop!
+forest establish > nar: Floyd ran across a field. Agents opened fire.
+forest establish > nar: Charles 'Pretty Boy' Floyd was dead at thirty.
+forest establish > nar: Hero to the poor, or just a bank robber?

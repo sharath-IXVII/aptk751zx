@@ -1,0 +1,194 @@
+{
+ "key": "ponzi_p06",
+ "yt": {
+  "title": "Collapse | Charles Ponzi (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Charles Ponzi, Boston, 1919-1920. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "charles ponzi"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ponzi": {
+   "name": "Charles Ponzi",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "rose": {
+   "name": "Rose Ponzi",
+   "skin": "#d9a882",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "investor": {
+   "name": "an investor",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "investor2": {
+   "name": "another investor",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "reporter": {
+   "name": "a Boston Post reporter",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "agent": {
+   "name": "a federal agent",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHARLES PONZI",
+    "years": "BOSTON · 1920",
+    "crime": "THE ORIGINAL PONZI SCHEME",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a newspaper showed Ponzi's numbers couldn't work."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "investor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "investor2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "investor",
+    "text": "Give me my money back! Now!"
+   },
+   "title": "AUGUST 1920"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "agent",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "ponzi",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "Charles Ponzi. You're under arrest for fraud."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "ponzi",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Investors lost millions. Ponzi went to prison."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He died poor in Brazil in 1949. His name lives on: a Ponzi scheme."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HAVE YOU EVER SEEN AN OFFER THAT WAS TOO GOOD TO BE TRUE?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Have you ever seen an offer that was too good to be true?"
+   }
+  }
+ ]
+}

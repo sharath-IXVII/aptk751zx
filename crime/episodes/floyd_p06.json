@@ -1,0 +1,174 @@
+{
+ "key": "floyd_p06",
+ "yt": {
+  "title": "The Farm in Ohio | Pretty Boy Floyd (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Pretty Boy Floyd, Oklahoma, Missouri and Ohio, 1920s-1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "pretty boy floyd"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "floyd": {
+   "name": "Charles 'Pretty Boy' Floyd",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "farmer": {
+   "name": "a farmer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "farmwife": {
+   "name": "the farmer's wife",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "teller": {
+   "name": "a bank teller",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "purvis": {
+   "name": "Melvin Purvis",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "agent": {
+   "name": "an FBI agent",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "PRETTY BOY FLOYD",
+    "years": "OHIO · 1934",
+    "crime": "THE OUTLAW WHO TORE UP MORTGAGES",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Floyd became Public Enemy Number One."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "farmwife",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "floyd",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "floyd",
+    "text": "Could I get something to eat, ma'am? I'll pay."
+   },
+   "title": "OHIO · 22 OCTOBER 1934"
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "agent",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "That's him! Stop!"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Floyd ran across a field. Agents opened fire."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Charles 'Pretty Boy' Floyd was dead at thirty."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HERO TO THE POOR, OR JUST A BANK ROBBER?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Hero to the poor, or just a bank robber?"
+   }
+  }
+ ]
+}
