@@ -1,0 +1,82 @@
+CAST nathan | Nathan Leopold | m | rich | black
+CAST richard | Richard Loeb | m | rich | brown
+CAST bobby | Bobby Franks | m | plain | brown
+CAST mother | Mrs Franks | f | rich | brown
+CAST police | a police officer | m | police | black
+CAST optician | the optician | m | doctor | grey
+CAST darrow | Clarence Darrow | m | rich | grey
+CAST judge | the judge | m | judge | white
+CAST worker | a railway worker | m | worker | brown
+# TITLE 1: Too Clever
+PART
+home establish > nar: Nathan Leopold and Richard Loeb. Two rich young geniuses. [CHICAGO · 1924]
+home two nathan,richard:smile > richard: Nineteen, and you already speak a dozen languages, Nathan.
+home two nathan:smile,richard > nathan: And you graduated at seventeen. We're not like other people, Dick.
+home face richard:smile > richard: Rules are for ordinary men.
+home face nathan > nathan: A superior man can do anything. Even break the law.
+home establish > nar: Two brilliant young men. Too much money. Too little conscience.
+home establish > nar: What happens when someone believes they're above the law?
+# TITLE 2: The Perfect Crime
+PART
+home establish > nar: Previously: Leopold and Loeb believed they were above ordinary rules.
+home two richard:point,nathan > richard: A perfect crime. A kidnapping no one could ever solve. [SPRING 1924]
+home two richard,nathan:think > nathan: A typed ransom note. A rented car under a fake name.
+home face richard:smile > richard: We plan every detail. For months.
+home two richard:smile,nathan:smile > nathan: The police will never catch us. We're smarter than them.
+home establish > nar: They spent months planning a crime just to prove they could.
+home establish > nar: Is there really such a thing as a perfect crime?
+# TITLE 3: A Ride Home
+PART
+home establish > nar: Previously: Leopold and Loeb planned a kidnapping they believed could never be solved.
+street walk bobby > nar: 21 May 1924. Fourteen-year-old Bobby Franks walks home from school. [21 MAY 1924]
+street two richard:smile,bobby > richard: Bobby! Want a ride home? I want to ask about your tennis racket.
+street two richard,bobby:smile > bobby: Sure, Dick! Thanks.
+street establish > nar: Bobby knew Richard Loeb. He was a distant cousin.
+street establish > nar: Bobby got into the car. He never came home.
+street establish > nar: Why would Bobby trust them?
+# TITLE 4: The Ransom Letter
+PART
+home establish > nar: Previously: Bobby Franks got into a car with Leopold and Loeb and never came home.
+forest establish > nar: That night, they hid his body in a drain near the marshes. [THAT NIGHT]
+home two mother:scared,police > mother: Bobby never came home from school. Please find him!
+home two mother:scared,police > police: A letter arrived, ma'am. Ten thousand dollars. They say he's safe.
+home face mother:cry > mother: Whatever they want. Just bring my boy home.
+home two richard:smile,nathan > richard: Phase two complete.
+home establish > nar: But the next morning, someone walked past that drain.
+home establish > nar: What do you think was found?
+# TITLE 5: The Glasses
+PART
+forest establish > nar: Previously: Leopold and Loeb hid Bobby's body and sent a ransom letter.
+forest two worker:scared,police > worker: A body in the culvert. It's the Franks boy. [22 MAY 1924]
+forest two worker,police:think > police: And look here. A pair of glasses on the ground.
+home face mother:cry > mother: My Bobby.
+forest face police:think > police: Whoever dropped these glasses was right here.
+forest establish > nar: A tiny detail. But it would change everything.
+forest establish > nar: Who do you think dropped the glasses?
+# TITLE 6: Three Pairs in Chicago
+PART
+forest establish > nar: Previously: police found Bobby's body, and a pair of glasses nearby.
+street two optician,police > optician: This hinge is very rare. Only three pairs like this were sold in all of Chicago. [THE OPTICIAN]
+street two optician:think,police > police: Who bought them?
+street face optician > optician: One pair was sold to... Nathan Leopold.
+home two police,nathan > nathan: I'm a bird watcher. I must have dropped them weeks ago.
+home face police:think > police: Then show us how they fall out of your pocket.
+home establish > nar: Can a genius lie his way out of this?
+# TITLE 7: The Alibi Breaks
+PART
+home establish > nar: Previously: the rare glasses near the body belonged to Nathan Leopold.
+home two police,nathan > nathan: That day we drove around with two girls. In my car. [POLICE STATION]
+home two police:point,nathan > police: Your driver says your car never left the garage that day.
+home face richard:scared > richard: It's over. Nathan did it.
+home face nathan:scared > nathan: Richard did it! It was his idea!
+home establish > nar: The perfect crime had lasted ten days.
+home establish > nar: Who do you think was more guilty?
+# TITLE 8: Twelve Hours
+PART
+court establish > nar: Previously: Leopold and Loeb confessed, each blaming the other.
+court two darrow,judge > darrow: My clients plead guilty, Your Honour. I only ask you to spare their lives. [CHICAGO · 1924]
+court face darrow > darrow: Killing them will not bring back Bobby Franks. It will only make us like them.
+court establish > nar: Clarence Darrow spoke for twelve hours.
+court court judge,nathan > judge: Life in prison. For both of you.
+prison establish > nar: Richard Loeb was killed in prison in 1936. Nathan Leopold was paroled in 1958.
+prison establish > nar: Should they have received the death penalty? What do you think?

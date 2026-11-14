@@ -1,0 +1,236 @@
+{
+ "key": "bonnieclyde_p01",
+ "yt": {
+  "title": "The Waitress and the Outlaw | Bonnie & Clyde (True Story) Part 1 #shorts",
+  "description": "Part 1 of 9: Bonnie & Clyde, Texas, Oklahoma, Missouri and Louisiana, 1930-1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "bonnie & clyde"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "bonnie": {
+   "name": "Bonnie Parker",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "clyde": {
+   "name": "Clyde Barrow",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "friend": {
+   "name": "a friend",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "buck": {
+   "name": "Buck Barrow",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "blanche": {
+   "name": "Blanche Barrow",
+   "skin": "#a86a42",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "hamer": {
+   "name": "Frank Hamer",
+   "skin": "#b9774a",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_daniel"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BONNIE & CLYDE",
+    "years": "TEXAS · 1932-34",
+    "crime": "LOVE. GUNS. AN AMBUSH.",
+    "part": "PART 1 OF 9"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Bonnie Parker and Clyde Barrow. The most famous outlaw couple in history."
+   },
+   "title": "DALLAS · JANUARY 1930"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "friend",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "bonnie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "friend",
+    "text": "Bonnie, come meet my friend's brother. His name is Clyde."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bonnie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "clyde",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "clyde",
+    "text": "They say you write poems."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bonnie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "clyde",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bonnie",
+    "text": "And they say you're trouble."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "clyde",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "clyde",
+    "text": "Maybe I am."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Bonnie was nineteen. A waitress who dreamed of something bigger."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT LOVE AT FIRST SIGHT?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it love at first sight? Part 2 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "key": "lindbergh_p04",
+ "yt": {
+  "title": "Jafsie | The Lindbergh Baby (True Story) Part 4 #shorts",
+  "description": "Part 4 of 10: The Lindbergh Baby, Hopewell, New Jersey and the Bronx, New York, 1932-1936. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the lindbergh baby"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "charles": {
+   "name": "Charles Lindbergh",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "anne": {
+   "name": "Anne Lindbergh",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "betty": {
+   "name": "Betty Gow",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true,
+   "nurse": true
+  },
+  "condon": {
+   "name": "Dr John Condon",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#e0e0e0",
+   "voice": "am_eric"
+  },
+  "john": {
+   "name": "Cemetery John",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "attendant": {
+   "name": "a petrol station attendant",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "hauptmann": {
+   "name": "Bruno Richard Hauptmann",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "expert": {
+   "name": "a wood expert",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_fable",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_echo",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE LINDBERGH BABY",
+    "years": "NEW JERSEY · 1932",
+    "crime": "THE CRIME OF THE CENTURY",
+    "part": "PART 4 OF 10"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the Lindbergh baby was kidnapped and a ransom note was left."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "condon",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "condon",
+    "text": "I'm a retired teacher. I've offered in the newspaper to help."
+   },
+   "title": "THE BRONX",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "condon",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "condon",
+    "text": "And the kidnapper wrote back. To me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "condon",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "charles",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "charles",
+    "text": "Then you'll be our go-between, Dr Condon."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "condon",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "charles",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "condon",
+    "text": "In the newspaper I'll sign my messages Jafsie. My initials."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "More notes arrived, with the same strange symbol on each."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU TRUST A STRANGER AS THE MIDDLEMAN?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you trust a stranger as the middleman? Part 5 is next."
+   }
+  }
+ ]
+}

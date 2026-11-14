@@ -1,0 +1,94 @@
+CAST bonnie | Bonnie Parker | f | plain | blonde
+CAST clyde | Clyde Barrow | m | rich | black
+CAST friend | a friend | f | plain | brown
+CAST buck | Buck Barrow | m | worker | brown
+CAST blanche | Blanche Barrow | f | plain | red
+CAST police | a police officer | m | police | black
+CAST guard | a prison guard | m | police | grey
+CAST hamer | Frank Hamer | m | detective | grey
+CAST reporter | a reporter | m | plain | blonde
+# TITLE 1: The Waitress and the Outlaw
+PART
+home establish > nar: Bonnie Parker and Clyde Barrow. The most famous outlaw couple in history. [DALLAS · JANUARY 1930]
+home two friend:smile,bonnie > friend: Bonnie, come meet my friend's brother. His name is Clyde.
+home two bonnie:smile,clyde:smile > clyde: They say you write poems.
+home two bonnie:smile,clyde > bonnie: And they say you're trouble.
+home face clyde:smile > clyde: Maybe I am.
+home establish > nar: Bonnie was nineteen. A waitress who dreamed of something bigger.
+home establish > nar: Was it love at first sight?
+# TITLE 2: The Smuggled Gun
+PART
+home establish > nar: Previously: Bonnie Parker met Clyde Barrow and fell in love fast.
+prison two police:point,clyde:cuffed > police: Clyde Barrow, you're going back to jail. [1930]
+prison two bonnie:scared,clyde > bonnie: I'll get you out. I promise.
+prison face bonnie > nar: Bonnie smuggled a gun to him in jail.
+street walk clyde > clyde: Free!
+street two police:point,clyde:cuffed > police: Not for long, Barrow. Caught again.
+street establish > nar: Clyde went back to prison. Bonnie waited.
+street establish > nar: Would you wait for someone like Clyde?
+# TITLE 3: Joining the Gang
+PART
+street establish > nar: Previously: Bonnie smuggled Clyde a gun, but he was caught again.
+street walk clyde > nar: 1932. Clyde is released, and he's angry at the world. [1932]
+street two clyde:smile,bonnie > clyde: Small shops. Small banks. Fast cars. You coming, Bonnie?
+street face bonnie:think > bonnie: My mama will cry.
+street face bonnie:smile > bonnie: Let's go.
+street establish > nar: Bonnie left her old life behind for the open road.
+street establish > nar: Did she know what she was getting into?
+# TITLE 4: On the Run
+PART
+street establish > nar: Previously: Bonnie joined Clyde's gang as they began robbing shops and banks.
+street two clyde:point,bonnie > clyde: Another stolen Ford. The fastest car on the road. [TEXAS · OKLAHOMA · MISSOURI]
+street two police:scared,guard > nar: Robbery after robbery. State after state.
+street establish > nar: In their shootouts, police officers lost their lives.
+home two bonnie:think,clyde > bonnie: Clyde... we can never go home now. Can we?
+home face clyde > clyde: We just keep driving.
+home establish > nar: They were famous. And they were hunted.
+home establish > nar: How long can you outrun the law?
+# TITLE 5: The Photographs
+PART
+home establish > nar: Previously: the gang robbed and fought their way across several states.
+home two bonnie:smile,clyde:smile > bonnie: Take my picture, Clyde. Like a movie star! [JOPLIN · APRIL 1933]
+home two police:point,guard > police: Police! Open up!
+home establish > nar: Police raided the hideout. The gang escaped in a hail of bullets. They left everything behind.
+home two reporter:smile,police > reporter: Rolls of camera film? Poems? This is the story of the year!
+street face reporter:smile > reporter: Bonnie and Clyde, on every front page in America!
+street establish > nar: Now everyone knew their faces.
+street establish > nar: Was fame good or bad for them?
+# TITLE 6: Buck and Blanche
+PART
+street establish > nar: Previously: police found Bonnie and Clyde's photos. They became famous overnight.
+forest two buck:smile,blanche > buck: Clyde's my brother, Blanche. Where he goes, we go. [JULY 1933]
+forest two blanche:scared,buck > blanche: I just want a normal life, Buck.
+forest establish > nar: Police surrounded the gang's camp. Another shootout.
+forest two blanche:cry,buck:sick > blanche: Buck! Buck, stay with me!
+forest two police:point,blanche:cuffed > police: Blanche Barrow, you're under arrest.
+forest establish > nar: Buck died of his wounds. Blanche went to prison.
+forest establish > nar: Should Bonnie and Clyde have stopped now?
+# TITLE 7: The Prison Break
+PART
+forest establish > nar: Previously: Clyde's brother Buck died and Blanche was captured.
+prison two clyde,bonnie > clyde: Eastham prison farm. I swore I'd get back at that place. [JANUARY 1934]
+prison two guard:scared,clyde > nar: Clyde helped break gang members out of the Eastham prison farm in Texas.
+prison face guard:scared > guard: They're gone! Raise the alarm!
+street two clyde:smile,bonnie > clyde: That'll show them.
+street establish > nar: Texas had had enough. It was time to send a hunter.
+street establish > nar: Who would they send?
+# TITLE 8: The Hunter
+PART
+street establish > nar: Previously: Clyde broke his gang members out of a Texas prison farm.
+home two hamer,police > hamer: I'm Frank Hamer. Former Texas Ranger. Give me time. [FEBRUARY 1934]
+home face hamer:think > hamer: Where do they sleep? Where do they eat? Which roads do they drive?
+home two hamer:point,police > hamer: They always come back to visit family. That's their weakness.
+street walk hamer > nar: For months Hamer followed their trail, studying every move.
+street establish > nar: He was waiting for the right road.
+street establish > nar: Would you be able to catch them?
+# TITLE 9: The Road Near Gibsland
+PART
+street establish > nar: Previously: former Texas Ranger Frank Hamer studied every move Bonnie and Clyde made.
+forest two hamer:think,police > hamer: They'll come down this road. We wait. [GIBSLAND · 23 MAY 1934]
+forest establish > nar: Dawn. Officers hide in the bushes beside a country road in Louisiana.
+forest two bonnie:smile,clyde:smile > bonnie: Nearly home, Clyde.
+forest establish > nar: Their car slowed. And then the shooting started.
+forest establish > nar: Bonnie was twenty-three. Clyde was twenty-five. Both died on that road.
+forest establish > nar: Were they heroes, villains, or just lost kids?

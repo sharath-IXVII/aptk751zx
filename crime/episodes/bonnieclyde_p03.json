@@ -1,0 +1,230 @@
+{
+ "key": "bonnieclyde_p03",
+ "yt": {
+  "title": "Joining the Gang | Bonnie & Clyde (True Story) Part 3 #shorts",
+  "description": "Part 3 of 9: Bonnie & Clyde, Texas, Oklahoma, Missouri and Louisiana, 1930-1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "bonnie & clyde"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "bonnie": {
+   "name": "Bonnie Parker",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "clyde": {
+   "name": "Clyde Barrow",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "friend": {
+   "name": "a friend",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "buck": {
+   "name": "Buck Barrow",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "blanche": {
+   "name": "Blanche Barrow",
+   "skin": "#a86a42",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "hamer": {
+   "name": "Frank Hamer",
+   "skin": "#b9774a",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_daniel"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BONNIE & CLYDE",
+    "years": "TEXAS · 1932-34",
+    "crime": "LOVE. GUNS. AN AMBUSH.",
+    "part": "PART 3 OF 9"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Bonnie smuggled Clyde a gun, but he was caught again."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "clyde",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "1932. Clyde is released, and he's angry at the world."
+   },
+   "title": "1932",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "clyde",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "bonnie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "clyde",
+    "text": "Small shops. Small banks. Fast cars. You coming, Bonnie?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bonnie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "bonnie",
+    "text": "My mama will cry."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bonnie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "bonnie",
+    "text": "Let's go."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Bonnie left her old life behind for the open road."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DID SHE KNOW WHAT SHE WAS GETTING INTO?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Did she know what she was getting into? Part 4 is next."
+   }
+  }
+ ]
+}

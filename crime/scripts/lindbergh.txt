@@ -1,0 +1,103 @@
+CAST charles | Charles Lindbergh | m | rich | blonde
+CAST anne | Anne Lindbergh | f | rich | brown
+CAST betty | Betty Gow | f | nurse | red
+CAST condon | Dr John Condon | m | plain | white
+CAST john | Cemetery John | m | worker | black
+CAST attendant | a petrol station attendant | m | worker | brown
+CAST hauptmann | Bruno Richard Hauptmann | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST expert | a wood expert | m | doctor | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Most Famous Man Alive
+PART
+street establish > nar: Charles Lindbergh. The most famous man in the world. [NEW YORK · 1927]
+street two police:smile,charles:smile > police: The first man to fly alone across the Atlantic! Welcome home, hero!
+home two anne:smile,charles:smile > anne: Our own house in the countryside at last. Hopewell, New Jersey.
+home three anne:smile,charles:smile,betty:smile > betty: And little Charlie is twenty months old. Such a happy boy.
+home face charles:smile > charles: Out here, no reporters, no crowds. Just us.
+home establish > nar: They thought they'd found peace.
+home establish > nar: Can the most famous family in the world ever be safe?
+# TITLE 2: Bedtime
+PART
+home establish > nar: Previously: hero pilot Charles Lindbergh moved his family to a quiet country house.
+home bed betty:tuck,anne > betty: Little Charlie has a cold. I'll tuck him in tight tonight. [1 MARCH 1932]
+home two anne,betty:smile > anne: Thank you, Betty. Goodnight.
+home two charles:think,anne > charles: Did you hear that? Like wood cracking outside.
+home two charles,anne:smile > anne: Probably the wind.
+home establish > nar: It was a windy night. Nobody went to check.
+home establish > nar: What do you think made that sound?
+# TITLE 3: The Empty Cot
+PART
+home establish > nar: Previously: nurse Betty put baby Charlie to bed. Charles heard a strange sound.
+home two betty:scared,anne > betty: Mrs Lindbergh, do you have the baby? He's not in his cot! [10 PM]
+home face charles:scared > charles: Anne, they've stolen our baby.
+home two charles:point,police > charles: There's a note on the windowsill.
+home two police:think,charles > police: Fifty thousand dollars ransom. And outside, a broken home-made ladder.
+home face anne:cry > anne: Please. Just bring him back.
+home establish > nar: Within hours, the whole country was searching.
+home establish > nar: Who would dare steal the Lindbergh baby?
+# TITLE 4: Jafsie
+PART
+home establish > nar: Previously: the Lindbergh baby was kidnapped and a ransom note was left.
+street two condon,police > condon: I'm a retired teacher. I've offered in the newspaper to help. [THE BRONX]
+home face condon:think > condon: And the kidnapper wrote back. To me.
+home two condon,charles > charles: Then you'll be our go-between, Dr Condon.
+home two condon:smile,charles > condon: In the newspaper I'll sign my messages Jafsie. My initials.
+home establish > nar: More notes arrived, with the same strange symbol on each.
+home establish > nar: Would you trust a stranger as the middleman?
+# TITLE 5: Cemetery John
+PART
+grave establish > nar: Previously: retired teacher Dr Condon became the go-between, calling himself Jafsie.
+grave two john,condon > john: You gotted my note? Stay back. [WOODLAWN CEMETERY · NIGHT]
+grave two john:think,condon > condon: Is the baby alive? How do we know you have him?
+grave two john,condon > john: The baby is fine. You will get his sleeping suit.
+grave establish > nar: Weeks later, the ransom was paid in gold certificates in another cemetery. [APRIL 1932]
+grave face condon:think > condon: Cemetery John. I'll never forget that voice.
+grave establish > nar: But the baby was not where the note said.
+grave establish > nar: Do you think they got the baby back?
+# TITLE 6: The Woods
+PART
+forest establish > nar: Previously: the ransom was paid, but the baby was not where the kidnapper said.
+forest walk police > nar: May 1932. A truck driver stopped in woods a few miles from the Lindbergh house. [MAY 1932]
+forest face police:scared > police: Sir... we've found the baby.
+home two anne:cry,charles:cry > anne: He never came home. He was so close all along.
+home face charles > charles: Find who did this.
+forest establish > nar: Now it was a murder case.
+forest establish > nar: How would they ever find the killer?
+# TITLE 7: Following the Money
+PART
+home establish > nar: Previously: the Lindbergh baby was found dead in the woods.
+home two police,condon > police: Every ransom note has a serial number. We wrote them all down. [1932 - 1934]
+street two police:point,attendant > police: Watch for gold certificates. Banks, shops, petrol stations.
+home face police:think > police: They keep turning up in New York. Always the Bronx.
+home establish > nar: Two years passed. Investigators tracked every bill that appeared.
+home establish > nar: The killer was spending the money. Slowly.
+home establish > nar: Would you spend money everyone was watching for?
+# TITLE 8: The Licence Plate
+PART
+street establish > nar: Previously: investigators tracked the ransom's serial numbers for two years.
+street two attendant:think,hauptmann > attendant: A ten-dollar gold certificate? We hardly see those any more. [SEPTEMBER 1934]
+street face attendant:think > attendant: I'll just write your licence plate on the back.
+street two police,attendant > police: That's ransom money! Whose car is this?
+street two police:point,hauptmann:cuffed > police: Bruno Richard Hauptmann, you're under arrest.
+street face hauptmann > hauptmann: I'm a carpenter. I did nothing.
+street establish > nar: Would one licence plate be enough?
+# TITLE 9: The Garage and the Attic
+PART
+home establish > nar: Previously: a petrol station attendant's note led police to Bruno Richard Hauptmann.
+home two police:scared,charles > police: In his garage. Over fourteen thousand dollars of the ransom! [THE BRONX]
+home face hauptmann > hauptmann: A friend left it with me. A box. I didn't know.
+home two expert,police > expert: This rail of the ladder came from wood in Hauptmann's attic. The grain matches.
+home face condon:think > condon: Is this the voice from the cemetery?
+home establish > nar: The evidence was piling up.
+home establish > nar: Is this enough to prove he did it?
+# TITLE 10: The Trial of the Century
+PART
+court establish > nar: Previously: police found ransom money in Hauptmann's garage and linked the ladder to his attic.
+court establish > nar: 1935. Reporters and crowds packed the town of Flemington. [FLEMINGTON · 1935]
+court two charles,judge > charles: That's the voice. The man in the cemetery.
+court face hauptmann > hauptmann: I am innocent!
+court court judge,hauptmann > judge: Guilty. The sentence is death.
+prison establish > nar: Hauptmann was executed in April 1936, still saying he was innocent.
+prison establish > nar: To this day, some people argue about his guilt.
+prison establish > nar: Was Hauptmann guilty? Or was there more to the story?
