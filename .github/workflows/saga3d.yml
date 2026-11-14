@@ -1,0 +1,48 @@
+name: Story Shorts 3D preview
+on:
+  workflow_dispatch:
+    inputs:
+      ep: {description: "Episode (in episodes/)", default: "saga/a1_p01.json"}
+permissions: {contents: write}
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {repository: sharath11yr/gptk755blend, path: blend}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Voice, soundtrack and timing (2D render gives the audio track)
+        working-directory: blend/studio/explainer
+        run: |
+          npm ci || npm install
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libxkbcommon0 libsm6 libegl1
+          pip install -q edge-tts "kokoro>=0.9.4" soundfile
+          python voice.py "episodes/${{ inputs.ep }}" public props.json
+          npx remotion render src/index.ts Short out/short.mp4 --props=props_short.json --concurrency=4
+          ffmpeg -y -loglevel error -i out/short.mp4 -i public/music_short.wav -filter_complex "[1:a]volume=0.55[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]" -map "[a]" -c:a aac -b:a 192k out/audio.m4a
+          python ../saga_shots.py props_short.json out/shots.json
+      - name: Blender (4 parallel chunks)
+        run: |
+          curl -sL https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz | tar -xJ -C /opt
+          B=/opt/blender-4.2.3-linux-x64/blender; S=blend/studio/explainer/out/shots.json
+          for c in 0 1 2 3; do $B -b -noaudio -P blend/studio/saga3d.py -- $S frames $c 4 > log$c.txt 2>&1 & done; wait
+          grep -h "shot " log*.txt | tail -3; grep -h -i "error" log*.txt | head -5; ls frames | wc -l
+      - name: Assemble and upload an unlisted preview
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          pip install -q python-dotenv google-api-python-client google-auth httpx
+          ls frames/*.jpg | sort > list.txt; awk '{print "file \x27"$0"\x27\nduration 0.041667"}' list.txt > concat.txt
+          ffmpeg -y -loglevel error -f concat -safe 0 -i concat.txt -i blend/studio/explainer/out/audio.m4a -vf "scale=1080:1920:flags=lanczos,fps=24,format=yuv420p" -c:v libx264 -crf 19 -c:a copy -shortest out3d.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 out3d.mp4
+          python -m pipeline.saga upload x "blend/studio/explainer/episodes/${{ inputs.ep }}" out3d.mp4 preview
+          mkdir -p previews; for t in 2 6 10 14 18 22 26 30; do ffmpeg -y -loglevel error -ss $t -i out3d.mp4 -frames:v 1 -vf scale=360:-1 previews/f$t.jpg || true; done
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          B=preview-3d-${{ github.run_id }}; git checkout -q -b $B; git add previews; git commit -qm "3d preview"; git push -q origin $B
