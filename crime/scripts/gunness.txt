@@ -1,0 +1,74 @@
+CAST belle | Belle Gunness | f | plain | blonde
+CAST andrew | Andrew Helgelien | m | worker | blonde | beard
+CAST asle | Asle Helgelien | m | worker | blonde | beard
+CAST ray | Ray Lamphere | m | worker | brown
+CAST suitor | a suitor | m | rich | grey
+CAST neighbour | a neighbour | f | plain | brown
+CAST police | the sheriff | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Widow of La Porte
+PART
+forest establish > nar: Belle Gunness. A widow with a pig farm in La Porte, Indiana. [LA PORTE · 1900s]
+street two neighbour:think,belle > neighbour: Two husbands gone, Belle. You've had such bad luck.
+street two neighbour,belle:cry > belle: The Lord tests us. At least the insurance helps me raise the children.
+home face belle:smile > belle: And a woman alone on a farm needs a man.
+forest establish > nar: Belle was big, strong, and clever.
+forest establish > nar: What do you think she wanted?
+# TITLE 2: The Lonely Hearts Advert
+PART
+forest establish > nar: Previously: twice-widowed Belle Gunness ran a farm and collected insurance.
+home face belle:smile > belle: Comely widow, owner of a large farm, seeks a man to share it. [NORWEGIAN NEWSPAPERS]
+home face belle:smile > belle: Triflers need not apply. He must bring money.
+home two suitor:smile,belle:smile > suitor: I answered your letter, Mrs Gunness. I've brought my savings, as you asked.
+home two suitor,belle:smile > belle: Welcome home.
+home establish > nar: Would you answer that advert?
+# TITLE 3: They Come, But Don't Leave
+PART
+home establish > nar: Previously: Belle advertised for a husband who must bring money.
+street two neighbour:think,ray > neighbour: Another man arrived at Belle's farm last week, Ray. With a big trunk.
+street two neighbour,ray:think > ray: I saw him come. Never saw him go.
+forest establish > nar: Men arrived from all over America with their savings. Neighbours never saw them again.
+home face belle:smile > belle: He went back home. Things didn't work out.
+home establish > nar: How long before someone comes looking?
+# TITLE 4: Andrew
+PART
+home establish > nar: Previously: men arrived at Belle's farm with their savings and were never seen again.
+home two andrew:smile,belle:smile > andrew: All the way from South Dakota, Belle. Your letters were so warm. [JANUARY 1908]
+home two andrew:give,belle:smile > andrew: Here. All my savings, like you asked.
+home face belle:smile > belle: Now we can start our life together.
+forest establish > nar: Soon after, Andrew Helgelien vanished too.
+forest establish > nar: But Andrew had a brother.
+forest establish > nar: What do you think his brother will do?
+# TITLE 5: The Brother's Letters
+PART
+forest establish > nar: Previously: Andrew Helgelien came to Belle's farm with his savings and vanished.
+home face asle:think > asle: Andrew withdrew all his money and went to Indiana. Now he doesn't answer. [SOUTH DAKOTA]
+home face belle > belle: Dear Mr Helgelien, your brother has left. I don't know where he went.
+home face asle:think > asle: Then I'll come and look myself.
+home face belle:scared > belle: He's coming here.
+home establish > nar: What do you think Belle will do?
+# TITLE 6: The Fire
+PART
+home establish > nar: Previously: Andrew's brother Asle said he was coming to look for him.
+forest establish > nar: 28 April 1908. Belle's farmhouse burns to the ground. [28 APRIL 1908]
+forest two police:scared,neighbour > police: Three children in the ruins. And a woman's body.
+forest face police:think > police: But the woman has no head. Can we be sure it's Belle?
+street two police:point,ray:cuffed > police: Ray Lamphere, you worked for her and argued with her. You set the fire.
+street face ray:scared > ray: I didn't kill anybody!
+street establish > nar: Was the body in the fire really Belle?
+# TITLE 7: Digging the Farm
+PART
+street establish > nar: Previously: Belle's farmhouse burned down. A headless woman's body was found.
+forest two asle,police > asle: Dig by the pig pen. Where the ground is soft. [MAY 1908]
+forest face asle:cry > asle: It's Andrew. It's my brother.
+forest two police:scared,asle > police: And more. Many more.
+forest establish > nar: Body after body was found buried on the farm.
+forest establish > nar: How many do you think there were?
+# TITLE 8: Did She Escape?
+PART
+forest establish > nar: Previously: many bodies were found buried on Belle's farm.
+court court judge,ray > judge: Ray Lamphere, guilty of arson. Not guilty of murder. [NOVEMBER 1908]
+prison cell ray > ray: The body wasn't Belle. She got away.
+street establish > nar: Some believed Belle faked her death and escaped with her money.
+street establish > nar: For years, people claimed they had seen her.
+street establish > nar: Do you think Belle Gunness escaped?

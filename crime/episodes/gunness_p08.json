@@ -1,0 +1,188 @@
+{
+ "key": "gunness_p08",
+ "yt": {
+  "title": "Did She Escape? | Belle Gunness (True Story) Part 8 #shorts",
+  "description": "Part 8 of 8: Belle Gunness, La Porte, Indiana, 1900s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "belle gunness"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "belle": {
+   "name": "Belle Gunness",
+   "skin": "#e0aa84",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "andrew": {
+   "name": "Andrew Helgelien",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "asle": {
+   "name": "Asle Helgelien",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "ray": {
+   "name": "Ray Lamphere",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "suitor": {
+   "name": "a suitor",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#d9a882",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "the sheriff",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BELLE GUNNESS",
+    "years": "INDIANA · 1908",
+    "crime": "THE LONELY HEARTS FARM",
+    "part": "PART 8 OF 8"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: many bodies were found buried on Belle's farm."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "judge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "ray",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Ray Lamphere, guilty of arson. Not guilty of murder."
+   },
+   "title": "NOVEMBER 1908"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ray",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ray",
+    "text": "The body wasn't Belle. She got away."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Some believed Belle faked her death and escaped with her money."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "For years, people claimed they had seen her."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK BELLE GUNNESS ESCAPED?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think Belle Gunness escaped?"
+   }
+  }
+ ]
+}

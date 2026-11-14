@@ -1,0 +1,72 @@
+CAST elizabeth | Countess Elizabeth Báthory | f | royal | black
+CAST servant | a servant woman | f | worker | grey
+CAST girl | a young servant girl | f | plain | blonde
+CAST mother | a peasant mother | f | plain | brown
+CAST pastor | a pastor | m | judge | white
+CAST thurzo | Count György Thurzó | m | royal | grey | beard
+CAST soldier | a soldier | m | soldier | brown
+# TITLE 1: The Countess
+PART
+forest establish > nar: Elizabeth Báthory. One of the most powerful women in Hungary. [HUNGARY · 1590s]
+home two servant,elizabeth > elizabeth: My husband is at war. While he's gone, I run these lands.
+home two servant:scared,elizabeth:point > elizabeth: Every castle, every village, every servant answers to me.
+home face elizabeth > elizabeth: And I expect obedience.
+forest establish > nar: She was rich, educated, and spoke several languages.
+forest establish > nar: But what happened behind her castle walls?
+# TITLE 2: The Girls Who Didn't Come Back
+PART
+forest establish > nar: Previously: Countess Elizabeth Báthory ruled vast lands while her husband was at war.
+home two mother:smile,girl:smile > mother: Work hard at the castle, my girl. Send money home. [1604]
+home face girl:smile > girl: I'll come back at Christmas, Mama.
+home establish > nar: After her husband died in 1604, rumours began to spread.
+street face mother:cry > mother: Christmas came. My daughter never came back.
+street establish > nar: Where were the girls going?
+# TITLE 3: No One Listened
+PART
+street establish > nar: Previously: young servant girls who went to the Countess's castles did not come back.
+street two mother:cry,soldier > mother: Please, sir! My daughter is missing from the castle!
+street two mother,soldier:cross > soldier: Peasant girls go missing. Who will believe you over a countess?
+home face elizabeth > elizabeth: Bring me more girls. From better families this time.
+home establish > nar: Then daughters of lesser noble families began to vanish too.
+home establish > nar: Will someone powerful finally listen?
+# TITLE 4: The Pastors Complain
+PART
+home establish > nar: Previously: girls from noble families began to disappear too.
+grave two pastor:think,servant > pastor: Another coffin. Another secret burial at night. [ČACHTICE]
+grave face pastor:cross > pastor: I will not bury any more girls without knowing how they died.
+home two pastor:point,thurzo > pastor: My lord Thurzó, something terrible is happening at Čachtice castle.
+home face thurzo:think > thurzo: The King himself has ordered me to investigate.
+home establish > nar: What do you think Thurzó found?
+# TITLE 5: The Castle Raid
+PART
+home establish > nar: Previously: the King ordered Count Thurzó to investigate the Countess.
+forest walk soldier > nar: December 1610. Thurzó's men ride to Čachtice castle. [DECEMBER 1610]
+home two soldier:scared,thurzo > soldier: My lord... you must see this.
+home face thurzo:scared > thurzo: God help us.
+home two thurzo:point,elizabeth > thurzo: Countess Báthory, you are under my arrest.
+home face elizabeth:cross > elizabeth: You have no right! I am a Báthory!
+home establish > nar: Will a countess ever face justice?
+# TITLE 6: The Servants' Trial
+PART
+home establish > nar: Previously: Thurzó's men raided Čachtice castle and arrested the Countess.
+court two servant:scared,thurzo > servant: The Countess ordered it. We were afraid of her. [JANUARY 1611]
+court face pastor > pastor: Some witnesses say dozens of victims. One claims more than six hundred.
+court establish > nar: Her servants were tried and executed.
+court establish > nar: But the numbers varied wildly. No one knows the truth.
+court establish > nar: What should happen to the Countess?
+# TITLE 7: Walled In
+PART
+court establish > nar: Previously: the Countess's servants were tried and executed.
+home face thurzo > thurzo: A noblewoman of her rank cannot be put on trial. But she will never leave.
+prison cell elizabeth > nar: Elizabeth was walled into rooms in her own castle.
+prison cell elizabeth:cross > elizabeth: Only a slit for air, and a slot for food.
+prison establish > nar: She would never see the sky again.
+prison establish > nar: Was this justice?
+# TITLE 8: The Legend
+PART
+prison establish > nar: Previously: the Countess was walled into her castle.
+prison establish > nar: In August 1614, Elizabeth Báthory died in her prison. [AUGUST 1614]
+forest establish > nar: Later legends said she bathed in the blood of girls to stay young.
+forest establish > nar: Historians say there's no evidence for that. It was added a century later.
+forest establish > nar: Some even argue she was framed, so powerful men could take her lands.
+forest establish > nar: Monster or victim of a plot? What do you think?

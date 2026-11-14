@@ -1,0 +1,188 @@
+{
+ "key": "bathory_p02",
+ "yt": {
+  "title": "The Girls Who Didn't Come Back | Elizabeth Báthory (True Story) Part 2 #shorts",
+  "description": "Part 2 of 8: Elizabeth Báthory, Kingdom of Hungary, 1590s-1614, Čachtice castle. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "elizabeth báthory"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "elizabeth": {
+   "name": "Countess Elizabeth Báthory",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "servant": {
+   "name": "a servant woman",
+   "skin": "#e6b48e",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "girl": {
+   "name": "a young servant girl",
+   "skin": "#d9a882",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "mother": {
+   "name": "a peasant mother",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_sky",
+   "long": true
+  },
+  "pastor": {
+   "name": "a pastor",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_adam",
+   "glasses": true
+  },
+  "thurzo": {
+   "name": "Count György Thurzó",
+   "skin": "#d0a07c",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "soldier": {
+   "name": "a soldier",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ELIZABETH BÁTHORY",
+    "years": "HUNGARY · 1610",
+    "crime": "THE BLOOD COUNTESS",
+    "part": "PART 2 OF 8"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Countess Elizabeth Báthory ruled vast lands while her husband was at war."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mother",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "girl",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mother",
+    "text": "Work hard at the castle, my girl. Send money home."
+   },
+   "title": "1604"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "girl",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "girl",
+    "text": "I'll come back at Christmas, Mama."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "After her husband died in 1604, rumours began to spread."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mother",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "mother",
+    "text": "Christmas came. My daughter never came back."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE WERE THE GIRLS GOING?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where were the girls going? Part 3 is next."
+   }
+  }
+ ]
+}
