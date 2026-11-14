@@ -1,0 +1,324 @@
+{
+ "key": "holmes_p12",
+ "yt": {
+  "title": "Murder Castle | H. H. Holmes (True Story) Part 12 #shorts",
+  "description": "Part 12 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "h. h. holmes"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "herman": {
+   "name": "Herman Webster Mudgett / H. H. Holmes",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "carrie": {
+   "name": "Carrie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "benjamin": {
+   "name": "Benjamin Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "alice": {
+   "name": "Alice Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "nellie": {
+   "name": "Nellie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "howard": {
+   "name": "Howard Pitezel",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "geyer": {
+   "name": "Detective Frank Geyer",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "Judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "Police Officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "H. H. HOLMES",
+    "years": "CHICAGO · 1890s",
+    "crime": "THE MURDER HOTEL",
+    "part": "PART 12 OF 14"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Police search Holmes' Chicago Castle and find hidden rooms, a vault and a basement with grim evidence."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "cross"
+    },
+    {
+     "id": "judge",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Holmes stands trial in Philadelphia for Benjamin Pitezel's murder."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "over",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "sick"
+    }
+   ],
+   "line": {
+    "who": "carrie",
+    "text": "I cannot pay my husband's debts."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "carrie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "I have a plan to fake my death for insurance money."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "idle"
+    },
+    {
+     "id": "carrie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    },
+    {
+     "id": "alice",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "peek"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "We will hide in the castle while I arrange the scheme."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "give"
+    },
+    {
+     "id": "howard",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "Here is the money. Take your son and flee the city."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "I leave my family and go to the castle alone."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 1.6,
+     "ry": 0,
+     "act": "kneel"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "I find Alice and Nellie's remains in a cellar grave."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 1.6,
+     "ry": 0,
+     "act": "kneel"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "I find Howard's remains near a grave outside the city."
+   }
+  },
+  {
+   "set": "asylum",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "herman",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "I deny killing my partner. It was an accident."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "asylum",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CLIFFHANGER: HOLMES IS FOUND GUILTY, BUT HIS EXECUTION IS DE",
+    "p": "Comment below 👇",
+    "f": "Part 13 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Cliffhanger: Holmes is found guilty, but his execution is delayed. Part 13 is next."
+   }
+  }
+ ]
+}

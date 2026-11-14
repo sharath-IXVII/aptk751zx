@@ -1,0 +1,367 @@
+{
+ "key": "holmes_p06",
+ "yt": {
+  "title": "FRAUD PLAN | H. H. Holmes (True Story) Part 6 #shorts",
+  "description": "Part 6 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "h. h. holmes"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "herman": {
+   "name": "Herman Webster Mudgett / H. H. Holmes",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "carrie": {
+   "name": "Carrie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "benjamin": {
+   "name": "Benjamin Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "alice": {
+   "name": "Alice Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "nellie": {
+   "name": "Nellie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "howard": {
+   "name": "Howard Pitezel",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "geyer": {
+   "name": "Detective Frank Geyer",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "Judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "Police Officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "H. H. HOLMES",
+    "years": "CHICAGO · 1890s",
+    "crime": "THE MURDER HOTEL",
+    "part": "PART 6 OF 14"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Holmes built fake companies and insurance schemes."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "I have a plan. Fake your death. Collect ten thousand dollars."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "carrie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "Carrie, we need to fake my death for the money."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "carrie",
+    "text": "I do not want to lose you. But I need the money."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "Trust me. We stage it. You die. I collect. Simple."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "give"
+    },
+    {
+     "id": "carrie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "I give you my life insurance papers. Sign here."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "give"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "carrie",
+    "text": "I sign. Please make it look like an accident."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "We will make it look like a gas leak. No one suspects."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "tuck"
+    },
+    {
+     "id": "alice",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "peek"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "Goodbye, children. Mama will take care of you. Sleep well."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "We meet again soon. I promise. Now, rest."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "NEXT TIME: PITEZEL IS FOUND DEAD. HOLMES COLLECTS THE MONEY.",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Next time: Pitezel is found dead. Holmes collects the money. Part 7 is next."
+   }
+  }
+ ]
+}

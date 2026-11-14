@@ -1,0 +1,336 @@
+{
+ "key": "holmes_p03",
+ "yt": {
+  "title": "H Holmes' Castle | H. H. Holmes (True Story) Part 3 #shorts",
+  "description": "Part 3 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "h. h. holmes"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "herman": {
+   "name": "Herman Webster Mudgett / H. H. Holmes",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "carrie": {
+   "name": "Carrie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "benjamin": {
+   "name": "Benjamin Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "alice": {
+   "name": "Alice Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "nellie": {
+   "name": "Nellie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "howard": {
+   "name": "Howard Pitezel",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "geyer": {
+   "name": "Detective Frank Geyer",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "Judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "Police Officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "H. H. HOLMES",
+    "years": "CHICAGO · 1890s",
+    "crime": "THE MURDER HOTEL",
+    "part": "PART 3 OF 14"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: He charms a widow and takes over a busy pharmacy."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "I have a plan for a grand building, Benjamin."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "herman",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "cross"
+    },
+    {
+     "id": "benjamin",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "point"
+    },
+    {
+     "id": "police",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "Why are you stopping me? This is my property!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "benjamin",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "The rooms are odd, locked tight. I fear for my family."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "benjamin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "tuck"
+    }
+   ],
+   "line": {
+    "who": "carrie",
+    "text": "Why do you keep our children away, Benjamin?"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "point"
+    },
+    {
+     "id": "benjamin",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    },
+    {
+     "id": "police",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "give"
+    }
+   ],
+   "line": {
+    "who": "benjamin",
+    "text": "The building is a trap, Carrie. Run while you can."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "herman",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "Fear is just the beginning. Welcome to my castle."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Detective Geyer arrives, suspicious of missing persons."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "herman",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "Where is Benjamin Pitezel, sir?"
+   }
+  },
+  {
+   "set": "asylum",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "herman",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "herman",
+    "text": "I have secrets buried beneath this floor."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "NEXT: THE WORLD'S FAIR ARRIVES AND HOLMES HIDES HIS CRIMES.",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Next: The World's Fair arrives and Holmes hides his crimes. Part 4 is next."
+   }
+  }
+ ]
+}
