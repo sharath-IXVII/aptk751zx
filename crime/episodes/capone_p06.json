@@ -1,0 +1,234 @@
+{
+ "key": "capone_p06",
+ "yt": {
+  "title": "A New Plan | Al Capone (True Story) Part 6 #shorts",
+  "description": "Part 6 of 9: Al Capone, Chicago in Prohibition, 1920-1932. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "al capone"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "al": {
+   "name": "Al Capone",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "torrio": {
+   "name": "Johnny Torrio",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "moran": {
+   "name": "Bugs Moran",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "ness": {
+   "name": "Eliot Ness",
+   "skin": "#b9774a",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "wilson": {
+   "name": "Frank Wilson",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  },
+  "agent": {
+   "name": "a federal agent",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#b9774a",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "bartender": {
+   "name": "a bartender",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_echo",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "AL CAPONE",
+    "years": "CHICAGO · 1920s",
+    "crime": "CAUGHT BY TAXES",
+    "part": "PART 6 OF 9"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: seven men were killed in the St Valentine's Day Massacre."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "agent",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "wilson",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "No witnesses will talk. No one has been convicted."
+   },
+   "title": "WASHINGTON"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "wilson",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "wilson",
+    "text": "Then we don't chase his guns. We chase his money."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "agent",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "wilson",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "His money?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "agent",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "wilson",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "wilson",
+    "text": "Capone has never paid a single dollar in income tax."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The government had found a new weapon."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN A PENCIL CATCH A GANGSTER?",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can a pencil catch a gangster? Part 7 is next."
+   }
+  }
+ ]
+}

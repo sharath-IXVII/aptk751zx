@@ -1,0 +1,220 @@
+{
+ "key": "capone_p09",
+ "yt": {
+  "title": "Guilty of Tax Evasion | Al Capone (True Story) Part 9 #shorts",
+  "description": "Part 9 of 9: Al Capone, Chicago in Prohibition, 1920-1932. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "al capone"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "al": {
+   "name": "Al Capone",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "torrio": {
+   "name": "Johnny Torrio",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "moran": {
+   "name": "Bugs Moran",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "ness": {
+   "name": "Eliot Ness",
+   "skin": "#b9774a",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "wilson": {
+   "name": "Frank Wilson",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  },
+  "agent": {
+   "name": "a federal agent",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#b9774a",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "bartender": {
+   "name": "a bartender",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_echo",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "AL CAPONE",
+    "years": "CHICAGO · 1920s",
+    "crime": "CAUGHT BY TAXES",
+    "part": "PART 9 OF 9"
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: tax investigator Frank Wilson found ledgers proving Capone's income."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "wilson",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "wilson",
+    "text": "He earned millions and paid nothing."
+   },
+   "title": "CHICAGO · OCTOBER 1931"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "al",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Guilty of tax evasion. Eleven years in prison."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "al",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "al",
+    "text": "Eleven years? For taxes?"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He was later sent to Alcatraz. He was released in 1939, very ill, and died in 1947."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The gangster who ruled Chicago was beaten by an accountant."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT FAIR TO CATCH HIM FOR TAXES?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it fair to catch him for taxes?"
+   }
+  }
+ ]
+}

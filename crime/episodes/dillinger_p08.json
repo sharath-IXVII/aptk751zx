@@ -1,0 +1,231 @@
+{
+ "key": "dillinger_p08",
+ "yt": {
+  "title": "The Woman in Orange | John Dillinger (True Story) Part 8 #shorts",
+  "description": "Part 8 of 9: John Dillinger, Indiana, Illinois, Wisconsin, 1933-1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "john dillinger"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "john": {
+   "name": "John Dillinger",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "pal": {
+   "name": "a gang member",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "teller": {
+   "name": "a bank teller",
+   "skin": "#8a5232",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a jail guard",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "sheriff": {
+   "name": "the sheriff",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true,
+   "cap": true
+  },
+  "purvis": {
+   "name": "Melvin Purvis",
+   "skin": "#e6b48e",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "agent": {
+   "name": "an FBI agent",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "anna": {
+   "name": "Anna Sage",
+   "skin": "#d0a07c",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "doctor": {
+   "name": "a backstreet doctor",
+   "skin": "#d0a07c",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "JOHN DILLINGER",
+    "years": "USA · 1933-34",
+    "crime": "PUBLIC ENEMY NO. 1",
+    "part": "PART 8 OF 9"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Dillinger changed his face and burned his fingerprints."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "anna",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "purvis",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "anna",
+    "text": "I know where Dillinger will be. He's taking me to the cinema."
+   },
+   "title": "CHICAGO · JULY 1934"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "anna",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "purvis",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "purvis",
+    "text": "Which cinema?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "anna",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "anna",
+    "text": "The Biograph. I'll wear an orange skirt so your men can spot me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "purvis",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "purvis",
+    "text": "Under the theatre lights, it will look red."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She would later be called the Lady in Red."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "SHOULD DILLINGER HAVE TRUSTED ANNA?",
+    "p": "Comment below 👇",
+    "f": "Part 9 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Should Dillinger have trusted Anna? Part 9 is next."
+   }
+  }
+ ]
+}

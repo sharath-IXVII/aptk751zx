@@ -1,0 +1,90 @@
+CAST john | John Dillinger | m | rich | black
+CAST pal | a gang member | m | worker | brown
+CAST teller | a bank teller | f | plain | blonde
+CAST guard | a jail guard | m | police | grey
+CAST sheriff | the sheriff | f | police | brown
+CAST purvis | Melvin Purvis | m | detective | brown
+CAST agent | an FBI agent | m | police | black
+CAST anna | Anna Sage | f | rich | red
+CAST doctor | a backstreet doctor | m | doctor | grey
+# TITLE 1: Nine Years Inside
+PART
+prison establish > nar: John Dillinger. Public Enemy Number One. [INDIANA · 1924]
+prison two guard:point,john:cuffed > guard: Grocery store robbery. That's ten to twenty years, kid.
+prison face john:cross > john: Ten years? For one robbery?
+prison two pal:smile,john > pal: In here, you learn from the best. Banks, John. Not grocery stores.
+street walk john > nar: 1933. After nine years behind bars, Dillinger walks free. [MAY 1933]
+street face john > john: They took nine years from me. Now I take what I want.
+street establish > nar: Prison had turned a small-time thief into a professional.
+street establish > nar: What do you think he did first?
+# TITLE 2: Robin Hood With a Gun
+PART
+street establish > nar: Previously: Dillinger left prison after nine years, ready for bigger crimes.
+home two john:smile,teller:scared > john: Don't be scared, miss. We only want the bank's money, not yours. [THE MIDWEST · 1933]
+home two pal,john:smile > pal: We told the manager we were a film crew. He believed us!
+street two teller,agent > teller: He was so polite. He even jumped over the counter like an athlete.
+street face john:smile > john: Banks took people's farms. Now I take from the banks.
+street establish > nar: In the Great Depression, many ordinary people cheered for him.
+street establish > nar: Was he a hero or a criminal?
+# TITLE 3: The Escape-Proof Jail
+PART
+street establish > nar: Previously: Dillinger's gang robbed banks across the Midwest.
+street two agent:point,john:cuffed > agent: John Dillinger, you're under arrest. [TUCSON · JANUARY 1934]
+prison two sheriff,guard > sheriff: Crown Point jail. Escape-proof. He'll stay here until his trial. [CROWN POINT · INDIANA]
+prison cell john > john: Escape-proof. We'll see.
+prison cell john:smile > nar: In his cell, Dillinger carved something out of wood. And blackened it with shoe polish.
+prison establish > nar: What do you think he was making?
+# TITLE 4: The Wooden Gun
+PART
+prison establish > nar: Previously: Dillinger was locked in the escape-proof jail at Crown Point.
+prison two john:point,guard:scared > john: Open the door. Slowly. [3 MARCH 1934]
+prison face guard:scared > guard: Don't shoot!
+street walk john > nar: With a fake gun carved from wood, Dillinger walked out of the escape-proof jail.
+street two john:smile,pal > john: And he took the sheriff's own car.
+prison face sheriff:cross > sheriff: The whole country is laughing at us.
+street establish > nar: Can a jail ever really be escape-proof?
+# TITLE 5: Public Enemy Number One
+PART
+street establish > nar: Previously: Dillinger escaped Crown Point jail with a wooden gun.
+home two purvis,agent > purvis: The FBI has named him Public Enemy Number One. [CHICAGO · 1934]
+home face purvis:think > purvis: I'm Melvin Purvis, and catching Dillinger is now my job.
+home two agent:point,purvis > agent: Sir, sightings everywhere. Chicago. Wisconsin. Indiana.
+home face purvis > purvis: Then we go everywhere.
+home establish > nar: The biggest manhunt in American history had begun.
+home establish > nar: Who would win: the outlaw or the agent?
+# TITLE 6: Little Bohemia
+PART
+home establish > nar: Previously: the FBI named Dillinger Public Enemy Number One.
+forest two agent,purvis > agent: The gang is at the Little Bohemia lodge. Tonight. [WISCONSIN · APRIL 1934]
+forest face purvis > purvis: Surround it. Nobody gets out.
+forest establish > nar: In the dark, it went badly wrong. Agents opened fire on the wrong people.
+forest two john:scared,pal > john: Out the back window! Into the woods!
+forest face purvis:cross > purvis: Gone. Every one of them.
+forest establish > nar: A huge embarrassment for the FBI.
+forest establish > nar: How do you catch a man who always escapes?
+# TITLE 7: A New Face
+PART
+forest establish > nar: Previously: Dillinger escaped an FBI raid at the Little Bohemia lodge.
+home two doctor,john > doctor: Lie still. When I'm done, your own mother won't know you. [MAY 1934]
+home face john > john: And my fingertips. Burn them. No more fingerprints.
+home face john:smile > nar: Dillinger had surgery to change his face, and burned his fingerprints off.
+home establish > nar: He thought he had become invisible.
+home establish > nar: Would changing his face be enough?
+# TITLE 8: The Woman in Orange
+PART
+home establish > nar: Previously: Dillinger changed his face and burned his fingerprints.
+home two anna,purvis > anna: I know where Dillinger will be. He's taking me to the cinema. [CHICAGO · JULY 1934]
+home two anna:think,purvis > purvis: Which cinema?
+home face anna > anna: The Biograph. I'll wear an orange skirt so your men can spot me.
+home face purvis:think > purvis: Under the theatre lights, it will look red.
+home establish > nar: She would later be called the Lady in Red.
+home establish > nar: Should Dillinger have trusted Anna?
+# TITLE 9: The Biograph Theater
+PART
+street establish > nar: Previously: Anna Sage told the FBI where Dillinger would be.
+street two purvis:think,agent > purvis: When I light my cigar, that's the signal. [22 JULY 1934]
+street walk john > nar: Dillinger walked out of a gangster movie with two women.
+street face purvis > nar: Purvis lit his cigar.
+street establish > nar: Dillinger sensed the trap and ran toward an alley. Agents opened fire.
+street establish > nar: John Dillinger was dead at thirty-one.
+street establish > nar: Was Dillinger a hero of his time, or just a killer?

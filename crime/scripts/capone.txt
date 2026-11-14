@@ -1,0 +1,91 @@
+CAST al | Al Capone | m | rich | black
+CAST torrio | Johnny Torrio | m | rich | grey
+CAST moran | Bugs Moran | m | rich | brown
+CAST ness | Eliot Ness | m | detective | brown
+CAST wilson | Frank Wilson | m | plain | grey
+CAST agent | a federal agent | m | police | black
+CAST reporter | a reporter | f | plain | blonde
+CAST bartender | a bartender | m | worker | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Dry Years
+PART
+street establish > nar: 1920. America bans alcohol. And in Chicago, a new kind of king is born. [CHICAGO · 1920]
+street two bartender:think,agent > bartender: No more beer? People will still want a drink, officer.
+street two bartender:smile,agent > agent: Then they'll have to find it somewhere secret.
+home establish > nar: Secret bars. Hidden breweries. Huge profits for anyone willing to break the law.
+home face bartender:smile > bartender: Knock three times. Ask for Joe.
+home establish > nar: The gangsters who controlled the alcohol would control the city.
+home establish > nar: Would you go to a secret bar?
+# TITLE 2: The Apprentice
+PART
+home establish > nar: Previously: Prohibition made Chicago's gangsters rich.
+home two torrio,al:smile > torrio: You're smart, Al. You'll run things with me. [CHICAGO · 1920s]
+home two torrio:smile,al > al: Whatever you need, Mr Torrio.
+street establish > nar: Then rivals shot Johnny Torrio. He survived. But he'd had enough. [1925]
+home two torrio:sick,al > torrio: I'm going back to Italy. It's all yours, Al.
+home face al:smile > al: Mine. All of it.
+home establish > nar: Al Capone was just twenty-six.
+home establish > nar: What would you do with a whole city?
+# TITLE 3: The Celebrity Gangster
+PART
+home establish > nar: Previously: Al Capone took over Chicago's biggest gang at twenty-six.
+street two reporter:smile,al:smile > al: I'm just a businessman. I give the people what they want. [CHICAGO · 1926]
+street two reporter,al:give > al: And free soup for the poor. Write that down.
+home two agent:smile,al:give > nar: Behind the smiles, he paid police and politicians to look away.
+home face al > al: You can get much further with a kind word and a gun than with a kind word alone.
+home establish > nar: That last quote is often credited to him, but no one knows if he really said it.
+home establish > nar: Was Capone a businessman or a monster?
+# TITLE 4: Gang War
+PART
+home establish > nar: Previously: Capone became a celebrity while paying off police and politicians.
+home two moran:cross,bartender > moran: Capone thinks he owns this city. The North Side belongs to me. [NORTH SIDE · CHICAGO]
+home face al:cross > al: Bugs Moran. Always Bugs Moran.
+street establish > nar: Shootouts in the streets. Bombs in shops. Hundreds died in Chicago's gang wars.
+street two reporter:scared,agent > reporter: Is anyone safe in this city?
+street establish > nar: Everyone waited for the next strike.
+street establish > nar: Who do you think would strike first?
+# TITLE 5: The St Valentine's Day Massacre
+PART
+street establish > nar: Previously: Capone and Bugs Moran were at war.
+street establish > nar: 14 February 1929. Seven men wait in a North Side garage. [14 FEBRUARY 1929]
+street establish > nar: Men dressed as police officers walk in.
+street establish > nar: Moments later, all seven men were dead.
+street two reporter:scared,agent > reporter: Fake police? This is the worst massacre the city has ever seen!
+home face moran:scared > moran: I was late. I saw the police car and walked away. That's the only reason I'm alive.
+home face al > al: I was in Florida. How could it be me?
+home establish > nar: Who do you think planned it?
+# TITLE 6: A New Plan
+PART
+home establish > nar: Previously: seven men were killed in the St Valentine's Day Massacre.
+home two agent:cross,wilson > agent: No witnesses will talk. No one has been convicted. [WASHINGTON]
+home face wilson:think > wilson: Then we don't chase his guns. We chase his money.
+home two agent:think,wilson > agent: His money?
+home two agent,wilson:point > wilson: Capone has never paid a single dollar in income tax.
+home establish > nar: The government had found a new weapon.
+home establish > nar: Can a pencil catch a gangster?
+# TITLE 7: The Untouchables
+PART
+home establish > nar: Previously: the government decided to go after Capone's money.
+street two ness:point,agent > ness: We hit his breweries. One after another. [CHICAGO · 1930]
+street two agent:smile,ness > agent: He tried to bribe me with two thousand dollars, sir. I said no.
+street face ness:smile > ness: That's why they call us the Untouchables.
+street establish > nar: Every raid cost Capone money.
+street establish > nar: Would you turn down a bribe?
+# TITLE 8: The Ledgers
+PART
+street establish > nar: Previously: Eliot Ness's Untouchables raided Capone's breweries.
+home two wilson,agent > wilson: Old account books from a gambling house. Look at this name. [1930]
+home face wilson:smile > wilson: Payments to 'Al'. Year after year.
+home two wilson:point,agent > agent: Proof of income. Income he never paid tax on.
+home face al:scared > al: Tax? They're coming after me for tax?
+home establish > nar: The most feared man in Chicago was in trouble over paperwork.
+home establish > nar: Will the evidence hold up in court?
+# TITLE 9: Guilty of Tax Evasion
+PART
+court establish > nar: Previously: tax investigator Frank Wilson found ledgers proving Capone's income.
+court two wilson,judge > wilson: He earned millions and paid nothing. [CHICAGO · OCTOBER 1931]
+court court judge,al > judge: Guilty of tax evasion. Eleven years in prison.
+court face al:cross > al: Eleven years? For taxes?
+prison establish > nar: He was later sent to Alcatraz. He was released in 1939, very ill, and died in 1947.
+prison establish > nar: The gangster who ruled Chicago was beaten by an accountant.
+prison establish > nar: Was it fair to catch him for taxes?
