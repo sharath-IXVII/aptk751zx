@@ -1,0 +1,58 @@
+name: Crime Shorts (true horror stories)
+on:
+  # schedule (enabled after the owner approves Part 1):
+  #   - cron: "23 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      preview: {description: "Only render Part 1 as an unlisted preview", type: boolean, default: false}
+concurrency: {group: crime, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  part:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Next part
+        id: ep
+        run: |
+          pip install -q python-dotenv google-api-python-client google-auth httpx
+          if [ "${{ inputs.preview }}" = "true" ]; then e=toppan_p1; else e=$(python -m pipeline.crime next crime/episodes/order.json); fi
+          echo "ep=$e" >> $GITHUB_OUTPUT; echo "next: ${e:-none}"
+      - name: Voice and soundtrack
+        if: steps.ep.outputs.ep != ''
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+          pip install -q "kokoro>=0.9.4" soundfile numpy
+          python crime/voice.py crime/episodes/${{ steps.ep.outputs.ep }}.json build
+      - name: Render
+        if: steps.ep.outputs.ep != ''
+        run: |
+          cd crime && npm install --no-audit --no-fund && npx playwright install --with-deps chromium && cd ..
+          node crime/render.js crime/episodes/${{ steps.ep.outputs.ep }}.json build/timeline.json build/frames
+          ffmpeg -y -loglevel error -framerate 24 -i build/frames/f%05d.jpg -i build/audio.wav -vf "scale=1080:1920:flags=lanczos,format=yuv420p" -c:v libx264 -crf 19 -c:a aac -b:a 192k -shortest build/short.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 build/short.mp4
+      - name: Post
+        if: steps.ep.outputs.ep != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_ADMIN_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          EP=${{ steps.ep.outputs.ep }}
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "${{ inputs.preview }}" = "true" ]; then
+            python -m pipeline.crime upload "$EP" "crime/episodes/$EP.json" build/short.mp4 preview
+            b=preview-crime-${{ github.run_id }}; git checkout -q -b $b; mkdir -p previews; cp build/short.mp4 previews/; git add -f previews && git commit -qm "preview" && git push -q origin $b; exit 0
+          fi
+          python -m pipeline.crime upload "$EP" "crime/episodes/$EP.json" build/short.mp4
+          git add state/ && git commit -qm "Crime: $EP [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i*5)); done

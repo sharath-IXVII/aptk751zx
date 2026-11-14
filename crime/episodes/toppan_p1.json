@@ -1,0 +1,30 @@
+{
+ "key": "toppan_p1",
+ "yt": {"title": "The Nurse Everyone Loved… (True Story) | Part 1 #shorts",
+        "description": "Jolly Jane: the true story of Jane Toppan, a nurse in 1880s-1900s Massachusetts who later confessed to 31 murders. Dramatised retelling; dialogue is imagined. Part 1 of 5.\n\n#truecrime #horror #history #shorts",
+        "tags": ["true crime", "jane toppan", "jolly jane", "horror stories", "history", "nurse", "shorts"]},
+ "narrator": "am_michael",
+ "cast": {
+  "jane": {"skin":"#e6b48e","cloth":"#2a2f45","cloth2":"#232838","hair":"#3a2418","long":true,"nurse":true,"voice":"af_bella"},
+  "pat":  {"skin":"#d9a882","cloth":"#e8e4d8","cloth2":"#cfcbbd","hair":"#9a9a9a","beard":true},
+  "pat2": {"skin":"#c99872","cloth":"#e8e4d8","cloth2":"#cfcbbd","hair":"#5a4030"}
+ },
+ "shots": [
+  {"set":"ward","cam":"ward","chars":[{"id":"jane","x":0,"z":-2,"ry":0,"act":"walk"},{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"pat2","x":2.8,"z":-5.8,"ry":0,"act":"lie"}],
+   "line":{"who":"nar","text":"Massachusetts, the eighteen eighties. In a quiet hospital ward, one young nurse was loved by everyone."}},
+  {"set":"ward","cam":"two","chars":[{"id":"jane","x":0.3,"z":0.4,"ry":-0.2,"act":"smile"}],
+   "line":{"who":"jane","text":"Don't you worry, dear. Nurse Jane will take good care of you."}},
+  {"set":"ward","cam":"bed","chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"jane","x":-1.5,"z":-3.0,"ry":-1.2,"act":"idle"}],
+   "line":{"who":"nar","text":"Patients called her Jolly Jane. Always smiling. Always kind."}},
+  {"set":"ward","cam":"ward","flick":true,"chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"pat2","x":2.8,"z":-5.8,"ry":0,"act":"lie"}],
+   "line":{"who":"nar","text":"But on the nights she worked, something strange kept happening. Some of her patients grew worse."}},
+  {"set":"ward","cam":"bed","flick":true,"chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"jane","x":-1.5,"z":-3.0,"ry":-1.2,"act":"idle"}],
+   "line":{"who":"nar","text":"No one suspected the friendly nurse. Not yet."}},
+  {"set":"ward","cam":"close","flick":true,"chars":[{"id":"jane","x":0,"z":0,"ry":0,"act":"smile"}],
+   "line":{"who":"jane","text":"Shh. Sleep now, dear. Just sleep."}},
+  {"set":"ward","cam":"ward","fx":["lightning"],"chars":[{"id":"jane","x":0,"z":0,"ry":0,"act":"idle"}],
+   "line":{"who":"nar","text":"Years later, she would confess to thirty one murders. This is the true story of Jane Toppan."}},
+  {"set":"ward","cam":"ward","card":{"h":"WHY DID NO ONE STOP HER?","p":"Tell me in the comments 👇","f":"Part 2 coming next"},"chars":[],
+   "line":{"who":"nar","text":"Why did no one stop her? Tell me in the comments. Part two is next."}}
+ ]
+}
