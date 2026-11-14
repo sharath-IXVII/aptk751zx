@@ -1,0 +1,74 @@
+CAST smith | George Joseph Smith | m | rich | black | beard
+CAST bessie | Bessie Mundy | f | rich | brown
+CAST alice | Alice Burnham | f | plain | blonde
+CAST margaret | Margaret Lofty | f | plain | red
+CAST burnham | Charles Burnham | m | worker | grey | beard
+CAST doctor | the local doctor | m | doctor | grey
+CAST neil | Inspector Arthur Neil | m | detective | brown
+CAST spilsbury | Bernard Spilsbury | m | doctor | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Charming Stranger
+PART
+street establish > nar: George Joseph Smith. A man with many names, and many wives. [ENGLAND · 1910]
+street two bessie:smile,smith:smile > smith: Henry Williams, at your service. May I walk with you, miss?
+street two bessie:smile,smith > bessie: You're very charming, Mr Williams.
+street face smith:smile > smith: And you, my dear, are a lady of means. I heard about your inheritance.
+street establish > nar: He looked for lonely women with money. He married them under false names.
+street establish > nar: Then he took everything they had.
+street establish > nar: Would you fall for a stranger this charming?
+# TITLE 2: Bessie
+PART
+street establish > nar: Previously: conman George Smith married women under false names for their money.
+home two bessie:smile,smith:smile > smith: Let's make our wills, Bessie. Everything to each other. Just in case. [HERNE BAY · 1912]
+home two bessie,smith:give > bessie: If it makes you happy, Henry.
+home two doctor,smith > smith: Doctor, my wife had a fit yesterday. I'm worried.
+home establish > nar: Days later, Bessie was found dead in the bath.
+home two doctor:think,smith:cry > doctor: A fit, in the bath. A terrible accident.
+home face smith > smith: A terrible accident.
+home establish > nar: Do you believe it was an accident?
+# TITLE 3: Alice
+PART
+home establish > nar: Previously: Smith's wife Bessie was found dead in the bath. A doctor called it a fit.
+home two alice:smile,smith:smile > alice: Mr and Mrs Smith. I love the sound of that, George. [BLACKPOOL · 1913]
+home two alice,smith > smith: I've taken out life insurance on you, Alice. It's what good husbands do.
+home two smith:think,doctor > smith: Our lodgings must have a bath. Alice loves a bath.
+home establish > nar: Soon after, Alice was found dead in the bath at their Blackpool lodgings.
+home face smith > smith: Another tragedy.
+home establish > nar: Two wives. Two baths.
+home establish > nar: How many times can an accident happen?
+# TITLE 4: Margaret
+PART
+home establish > nar: Previously: Smith's second wife, Alice, also died in the bath.
+home two margaret:smile,smith:smile > margaret: Married at last! I thought no one would ever ask, John. [LONDON · DECEMBER 1914]
+home two margaret,smith:smile > smith: Tonight we start our new life.
+home establish > nar: The very next evening, the landlady heard splashing, then the sound of a harmonium playing.
+home establish > nar: Margaret Lofty was found dead in the bath.
+home face smith > smith: She loved her baths.
+home establish > nar: Will anyone ever notice the pattern?
+# TITLE 5: The Father Who Read the News
+PART
+home establish > nar: Previously: Smith's third wife, Margaret, drowned in the bath the day after the wedding.
+home two burnham:think,alice > burnham: Bride found dead in her bath. The day after her wedding. [JANUARY 1915]
+home face burnham:scared > burnham: That's exactly how my Alice died.
+home two burnham:point,neil > burnham: Inspector, read this. Then read about my daughter. It's the same man!
+home face neil:think > neil: Two brides. Two baths. That's no coincidence.
+home establish > nar: Alice's father had found the pattern.
+home establish > nar: What would you do next, if you were the inspector?
+# TITLE 6: The Experiment
+PART
+home establish > nar: Previously: Alice's father saw a newspaper story and went to the police.
+home two neil,spilsbury > neil: How could a grown woman drown in a small bath without a struggle? [1915]
+home face spilsbury:think > spilsbury: There were no bruises. So she didn't fight.
+home two spilsbury:point,neil > spilsbury: But if someone pulls her feet up suddenly, water rushes in. She can't fight back.
+home face neil:scared > neil: Then they were murdered.
+home two neil:point,smith:cuffed > neil: George Smith, you're under arrest.
+home establish > nar: Will the jury believe it?
+# TITLE 7: Twenty Minutes
+PART
+court establish > nar: Previously: pathologist Bernard Spilsbury showed how the brides were drowned.
+court two spilsbury,judge > spilsbury: Three wives. Three baths. The same method. [OLD BAILEY · 1915]
+court face smith:cross > smith: It's a disgrace! I'm not a murderer!
+court establish > nar: The jury took just twenty minutes.
+court court judge,smith > judge: Guilty. You will be hanged.
+prison establish > nar: George Joseph Smith was hanged in August 1915.
+prison establish > nar: Without a father reading the news, would he ever have been caught?

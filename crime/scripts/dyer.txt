@@ -1,0 +1,74 @@
+CAST dyer | Amelia Dyer | f | plain | grey
+CAST mother | a young mother | f | plain | blonde
+CAST evelina | Evelina Marmon | f | plain | brown
+CAST bargeman | a bargeman | m | worker | brown | beard
+CAST police | a police officer | m | police | black
+CAST detective | a detective | m | detective | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Baby Farmers
+PART
+street establish > nar: Victorian England. For an unmarried mother, a baby could mean shame and ruin. [ENGLAND · 1890s]
+home two mother:cry,police > mother: They threw me out of my job. I can't feed him. What do I do?
+street two mother:think,police > police: There are women who take babies for a fee. Baby farmers, they call them.
+home face mother:think > mother: A kind woman to raise him? In a good home?
+street establish > nar: Many baby farmers were honest. Some were not.
+street establish > nar: Would you give your baby to a stranger?
+# TITLE 2: The Kind Lady
+PART
+street establish > nar: Previously: desperate mothers paid baby farmers to look after their children.
+home face dyer:smile > dyer: Respectable married woman will adopt a child. A good country home. [THE NEWSPAPER ADVERT]
+home two evelina:cry,dyer:smile > evelina: Ten pounds is all I have. Will you love my little Doris? [READING · 1896]
+home two evelina,dyer:smile > dyer: Like my own, my dear. You may visit whenever you wish.
+home face evelina:cry > evelina: Goodbye, Doris. Mama loves you.
+home establish > nar: Amelia Dyer was a former nurse. She seemed gentle, motherly and kind.
+home establish > nar: Was she what she seemed?
+# TITLE 3: Trusting Mothers
+PART
+home establish > nar: Previously: Amelia Dyer promised mothers a loving home for their babies.
+home two mother:smile,dyer:smile > mother: You'll write and tell me how he's doing?
+home two mother,dyer:smile > dyer: Every week, dear.
+home establish > nar: Mothers handed over their babies and their savings.
+home face mother:think > mother: She never wrote. Not once.
+home establish > nar: Who would ask questions about babies nobody wanted?
+# TITLE 4: Many Names
+PART
+home establish > nar: Previously: mothers gave Amelia Dyer their babies and their money. Few ever heard from her again.
+home two dyer,police > dyer: My name? Mrs Thomas. Or is it Mrs Harding? [OVER THE YEARS]
+home establish > nar: She moved from town to town, changing her name each time.
+home two police:think,detective > police: A baby died in her care. The inquest says natural causes.
+home face dyer > dyer: Babies are delicate things, officer.
+home establish > nar: How many times can a story like that be believed?
+# TITLE 5: The Parcel in the River
+PART
+home establish > nar: Previously: Amelia Dyer moved often, changing her name. Babies in her care died.
+dock walk bargeman > nar: March 1896. A bargeman is working on the River Thames at Reading. [READING · MARCH 1896]
+dock face bargeman:think > bargeman: What's that parcel in the water?
+dock face bargeman:scared > bargeman: Oh no. Police! Somebody fetch the police!
+dock two police:scared,bargeman > police: A baby. Wrapped in paper.
+dock establish > nar: Who do you think the parcel led to?
+# TITLE 6: A Name on the Paper
+PART
+dock establish > nar: Previously: a bargeman pulled a parcel with a baby inside from the Thames.
+home two detective:think,police > detective: Look at the wrapping paper. A faint label. An address. [READING · 1896]
+home face detective > detective: Mrs Thomas. Piggott's Road, Caversham.
+home two detective:point,police > detective: That's one of the names Amelia Dyer uses.
+home establish > nar: The police set a trap.
+home establish > nar: What kind of trap would you set?
+# TITLE 7: The Raid
+PART
+home establish > nar: Previously: a name on the wrapping paper led police to Amelia Dyer.
+home two police:smile,dyer:smile > police: My sister has a baby she needs looked after. Can you help? [APRIL 1896]
+home two police,dyer:smile > dyer: Of course, dear. Bring the child round.
+home two detective:point,dyer:cuffed > detective: Amelia Dyer, you're under arrest.
+home face detective:scared > detective: The smell in this house... and baby clothes everywhere.
+dock establish > nar: More parcels were pulled from the river.
+dock establish > nar: How many were there?
+# TITLE 8: Never Truly Known
+PART
+dock establish > nar: Previously: police raided Amelia Dyer's home and found more babies in the river.
+court face dyer > dyer: You'll know mine by the tape around their necks.
+court court judge,dyer > judge: Amelia Dyer, you are guilty. You will be hanged. [OLD BAILEY · MAY 1896]
+prison establish > nar: She was hanged in June 1896.
+prison establish > nar: She may have killed hundreds of babies over many years.
+prison establish > nar: Her case led to stronger laws to protect adopted children.
+prison establish > nar: How could this happen for so long?

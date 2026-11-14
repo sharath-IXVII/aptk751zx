@@ -1,0 +1,196 @@
+{
+ "key": "dyer_p03",
+ "yt": {
+  "title": "Trusting Mothers | Amelia Dyer (True Story) Part 3 #shorts",
+  "description": "Part 3 of 8: Amelia Dyer, Reading and Bristol, England, 1870s-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "amelia dyer"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "dyer": {
+   "name": "Amelia Dyer",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mother": {
+   "name": "a young mother",
+   "skin": "#e6b48e",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "evelina": {
+   "name": "Evelina Marmon",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "bargeman": {
+   "name": "a bargeman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "detective": {
+   "name": "a detective",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "AMELIA DYER",
+    "years": "READING · 1896",
+    "crime": "THE BABY FARMER",
+    "part": "PART 3 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Amelia Dyer promised mothers a loving home for their babies."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mother",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "dyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mother",
+    "text": "You'll write and tell me how he's doing?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mother",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "dyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "dyer",
+    "text": "Every week, dear."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Mothers handed over their babies and their savings."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mother",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "mother",
+    "text": "She never wrote. Not once."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WOULD ASK QUESTIONS ABOUT BABIES NOBODY WANTED?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who would ask questions about babies nobody wanted? Part 4 is next."
+   }
+  }
+ ]
+}

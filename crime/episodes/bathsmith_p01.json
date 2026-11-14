@@ -1,0 +1,227 @@
+{
+ "key": "bathsmith_p01",
+ "yt": {
+  "title": "The Charming Stranger | The Brides In The Bath (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: The Brides In The Bath, England, 1910-1915. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the brides in the bath"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "smith": {
+   "name": "George Joseph Smith",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "bessie": {
+   "name": "Bessie Mundy",
+   "skin": "#d0a07c",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "alice": {
+   "name": "Alice Burnham",
+   "skin": "#d0a07c",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "margaret": {
+   "name": "Margaret Lofty",
+   "skin": "#d0a07c",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "burnham": {
+   "name": "Charles Burnham",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "doctor": {
+   "name": "the local doctor",
+   "skin": "#a86a42",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "neil": {
+   "name": "Inspector Arthur Neil",
+   "skin": "#8a5232",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "spilsbury": {
+   "name": "Bernard Spilsbury",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BRIDES IN THE BATH",
+    "years": "ENGLAND · 1912-14",
+    "crime": "THREE WIVES. ONE BATH.",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "George Joseph Smith. A man with many names, and many wives."
+   },
+   "title": "ENGLAND · 1910"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bessie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "smith",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "smith",
+    "text": "Henry Williams, at your service. May I walk with you, miss?"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bessie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "smith",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bessie",
+    "text": "You're very charming, Mr Williams."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "smith",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "smith",
+    "text": "And you, my dear, are a lady of means. I heard about your inheritance."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He looked for lonely women with money. He married them under false names."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Then he took everything they had."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU FALL FOR A STRANGER THIS CHARMING?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you fall for a stranger this charming? Part 2 is next."
+   }
+  }
+ ]
+}
