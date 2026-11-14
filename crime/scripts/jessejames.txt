@@ -1,0 +1,65 @@
+CAST jesse | Jesse James | m | rich | brown | beard
+CAST frank | Frank James | m | worker | brown | beard
+CAST robert | Robert Ford | m | plain | blonde
+CAST charley | Charley Ford | m | plain | brown
+CAST zee | Zee James | f | plain | brown
+CAST banker | a bank cashier | m | rich | grey
+CAST governor | Governor Crittenden | m | rich | white
+CAST reporter | a reporter | m | plain | black
+# TITLE 1: After the War
+PART
+forest establish > nar: Missouri, after the Civil War. Jesse James and his brother Frank come home angry. [MISSOURI · 1866]
+forest two frank,jesse:cross > jesse: We fought for the South, Frank. And we lost everything.
+forest two frank:think,jesse > frank: So what now?
+forest face jesse > jesse: Now we take it back. Banks. Trains. Anything with money.
+forest establish > nar: Should anyone sympathise with Jesse James?
+# TITLE 2: The Folk Hero
+PART
+forest establish > nar: Previously: Jesse and Frank James turned to robbing banks and trains.
+street two banker:scared,jesse:point > jesse: Open the safe. Now. [1870s]
+street two reporter:smile,banker > reporter: Jesse James robs from the rich! Great story!
+street face banker:cross > banker: Robs from the rich? People died in those robberies!
+street establish > nar: Newspapers made Jesse a hero. But his gang killed people.
+street establish > nar: Why do you think people loved him?
+# TITLE 3: Northfield
+PART
+street establish > nar: Previously: newspapers made Jesse a folk hero despite the killings.
+street two jesse,frank > jesse: Northfield, Minnesota. A rich bank. Easy job. [NORTHFIELD · SEPTEMBER 1876]
+street face banker:cross > banker: I won't open the safe.
+street establish > nar: The townspeople grabbed guns and fought back.
+forest two frank:scared,jesse:scared > frank: The gang's finished, Jesse. Dead or captured.
+forest establish > nar: Only Jesse and Frank escaped.
+forest establish > nar: Will Jesse give up now?
+# TITLE 4: The New Gang
+PART
+forest establish > nar: Previously: the raid on Northfield destroyed the James gang.
+home two zee,jesse > zee: Mr Howard. That's who we are now. [ST JOSEPH · 1881]
+home two jesse:smile,robert:smile > robert: I've read every story about you, Jesse. You're my hero.
+home two jesse,charley > jesse: The Ford brothers. Young, hungry. They'll do.
+home face robert:smile > robert: I'll do anything you say.
+home establish > nar: Should Jesse trust the Ford brothers?
+# TITLE 5: The Deal
+PART
+home establish > nar: Previously: Jesse recruited the young Ford brothers into a new gang.
+home two governor,robert > governor: Ten thousand dollars for Jesse James. Dead or alive. [1882]
+home face robert:think > robert: And if I bring him in?
+home face governor > governor: You'd be rich. And pardoned.
+home face robert > robert: Then it's a deal.
+home establish > nar: Would you betray your hero for money?
+# TITLE 6: The Picture on the Wall
+PART
+home establish > nar: Previously: Robert Ford made a secret deal with the governor.
+home two jesse,charley > jesse: Hot day. I'll take my gun belt off. [3 APRIL 1882]
+home face jesse > jesse: That picture is dusty. Let me straighten it.
+home face robert > nar: Jesse turned his back and climbed onto a chair.
+home establish > nar: Robert Ford shot him in the back of the head.
+home face zee:cry > zee: Jesse!
+home establish > nar: What do you think happened to Robert Ford?
+# TITLE 7: The Dirty Little Coward
+PART
+home establish > nar: Previously: Robert Ford shot Jesse James in his own home.
+court two governor,robert > governor: The court found you guilty, Robert. And I pardon you. The same day.
+street two reporter:cross,robert > reporter: They're singing songs about you, Ford. 'The dirty little coward.'
+street face robert:scared > robert: I killed America's most wanted man!
+street establish > nar: Ten years later, Robert Ford was shot dead himself.
+street establish > nar: Was Robert Ford a hero or a traitor?

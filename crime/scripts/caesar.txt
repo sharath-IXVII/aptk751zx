@@ -1,0 +1,64 @@
+CAST caesar | Julius Caesar | m | royal | grey
+CAST brutus | Marcus Brutus | m | rich | brown
+CAST cassius | Gaius Cassius | m | rich | black
+CAST calpurnia | Calpurnia | f | rich | brown
+CAST seer | a soothsayer | m | plain | white | beard
+CAST antony | Mark Antony | m | soldier | brown
+# TITLE 1: Dictator for Life
+PART
+street establish > nar: Rome, 44 BC. One man rules everything. [ROME · 44 BC]
+street two antony:smile,caesar:smile > antony: Dictator for life, Caesar! Rome is yours!
+street face caesar:smile > caesar: I came, I saw, I conquered. And now I lead.
+court two cassius:cross,brutus > cassius: Dictator for life? Next he'll call himself king.
+court face brutus:think > brutus: Rome has not had a king for nearly five hundred years.
+court establish > nar: Would you trust one man with all the power?
+# TITLE 2: The Conspiracy
+PART
+court establish > nar: Previously: Caesar was named dictator for life. Some senators feared he wanted to be king.
+home two cassius,brutus > cassius: You're the most respected man in Rome, Brutus. If you join us, others will follow.
+home face brutus:think > brutus: Caesar is my friend. He trusts me.
+home two cassius:point,brutus > cassius: And Rome? Does Rome mean less to you than a friend?
+home face brutus > brutus: For Rome, then.
+home establish > nar: Dozens of senators secretly joined the plot.
+home establish > nar: Would you betray a friend for your country?
+# TITLE 3: Beware
+PART
+home establish > nar: Previously: Brutus joined the plot against his friend Caesar.
+street two seer,caesar > seer: Caesar! Beware the Ides of March!
+street face caesar:smile > caesar: An old man's riddles.
+street face seer > seer: Danger will come no later than the Ides of March.
+street establish > nar: The Ides of March was the fifteenth of March.
+street establish > nar: Would you listen to the warning?
+# TITLE 4: Calpurnia's Dream
+PART
+street establish > nar: Previously: a soothsayer warned Caesar of danger by the Ides of March.
+home bed calpurnia:sleep,caesar > nar: The night before the Ides of March. [14 MARCH · 44 BC]
+home two calpurnia:scared,caesar > calpurnia: I dreamed I held you in my arms. And you were dying. Please stay home today.
+home two calpurnia,caesar:think > caesar: Perhaps I will. Just this once.
+home two brutus:smile,caesar > brutus: The Senate is waiting for you, Caesar. Don't disappoint them.
+home establish > nar: Should Caesar stay home?
+# TITLE 5: The Ides of March
+PART
+home establish > nar: Previously: Caesar's wife begged him to stay home. A friend persuaded him to go.
+street two seer,caesar:smile > caesar: The Ides of March have come. [15 MARCH · 44 BC]
+street face seer > seer: Yes, Caesar. But they have not gone.
+court two cassius,brutus > cassius: Now.
+court establish > nar: The senators surrounded him. Caesar was stabbed many times.
+court face brutus > nar: Among the attackers, Caesar saw Brutus.
+court establish > nar: What do you think his last words were?
+# TITLE 6: And You, Brutus?
+PART
+court establish > nar: Previously: the senators attacked Caesar in the Senate meeting.
+court establish > nar: Caesar fell at the foot of a statue of his old rival, Pompey.
+court face brutus > brutus: Rome is free! The tyrant is dead!
+court establish > nar: Shakespeare wrote that his last words were: 'Et tu, Brute?' And you, Brutus?
+court establish > nar: Historians aren't sure he said anything at all.
+court establish > nar: Was Brutus a hero or a traitor?
+# TITLE 7: The End of the Republic
+PART
+court establish > nar: Previously: Caesar was killed by senators, including Brutus.
+street face antony:cross > antony: Friends, Romans, countrymen! See what they did to him!
+street establish > nar: The people of Rome turned against the killers.
+street establish > nar: Civil war followed. Brutus and Cassius both died.
+street establish > nar: Caesar's adopted son Octavian became Augustus, Rome's first emperor.
+street establish > nar: They killed Caesar to stop a king. Instead they got an emperor. Was it worth it?

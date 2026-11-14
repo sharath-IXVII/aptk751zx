@@ -1,0 +1,184 @@
+{
+ "key": "franz_p05",
+ "yt": {
+  "title": "Two Shots | The Sarajevo Assassination (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Sarajevo Assassination, Sarajevo, 28 June 1914. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the sarajevo assassination"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "franz": {
+   "name": "Archduke Franz Ferdinand",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "sophie": {
+   "name": "Duchess Sophie",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "princip": {
+   "name": "Gavrilo Princip",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "bomber": {
+   "name": "a young conspirator",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "driver": {
+   "name": "the driver",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE SARAJEVO ASSASSINATION",
+    "years": "SARAJEVO · 1914",
+    "crime": "ONE WRONG TURN",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the driver took a wrong turn and stopped right in front of Princip."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Princip stepped forward and fired two shots."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "franz",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "sophie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "franz",
+    "text": "Sophie, don't die. Stay alive for our children."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Within minutes, both Franz Ferdinand and Sophie were dead."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "driver",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "princip",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "driver",
+    "text": "Grab him! Grab him!"
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU THINK THE WORLD REACTED?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you think the world reacted? Part 6 is next."
+   }
+  }
+ ]
+}

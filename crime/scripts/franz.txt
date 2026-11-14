@@ -1,0 +1,54 @@
+CAST franz | Archduke Franz Ferdinand | m | royal | brown | beard
+CAST sophie | Duchess Sophie | f | royal | brown
+CAST princip | Gavrilo Princip | m | worker | black
+CAST bomber | a young conspirator | m | worker | brown
+CAST driver | the driver | m | soldier | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: A Visit to Sarajevo
+PART
+street establish > nar: 28 June 1914. Sarajevo. A royal visit. [SARAJEVO · 28 JUNE 1914]
+street two franz:smile,sophie:smile > sophie: Such sunshine, Franz. And for once we ride together in public.
+street two franz,sophie:smile > franz: A short drive through the city, then we celebrate.
+street two princip,bomber > princip: Six of us along the route. One of us will do it.
+street establish > nar: Archduke Franz Ferdinand was heir to the throne of Austria-Hungary.
+street establish > nar: Do you think the plan will work?
+# TITLE 2: The Bomb
+PART
+street establish > nar: Previously: six young conspirators waited along the Archduke's route.
+street face bomber > bomber: Now!
+street establish > nar: The bomb bounced off the Archduke's car and exploded under the car behind. People were hurt.
+street two franz:cross,sophie:scared > franz: I come here as a guest and they throw bombs at me!
+street face princip:think > princip: It failed. It's over.
+street establish > nar: Was it really over?
+# TITLE 3: The Café
+PART
+street establish > nar: Previously: a bomb missed the Archduke's car.
+street walk princip > nar: Gavrilo Princip, nineteen years old, walked away. He thought the plan had failed.
+street face princip > princip: I'll wait here on the corner. Maybe there's still a chance.
+home two franz:think,sophie > franz: I want to visit the wounded in hospital.
+home two franz,sophie:smile > sophie: Then I'm coming with you.
+home establish > nar: Should they have changed their plans?
+# TITLE 4: The Wrong Turn
+PART
+home establish > nar: Previously: the Archduke decided to visit people hurt by the bomb.
+street two driver,franz > driver: Left here, sir? Into this side street? [FRANZ JOSEF STREET]
+street face driver:scared > driver: Wrong way! I have to stop and reverse!
+street face princip:scared > nar: The car stopped. Right in front of the café. Right in front of Gavrilo Princip.
+street face princip > princip: It's him.
+street establish > nar: What do you think happened next?
+# TITLE 5: Two Shots
+PART
+street establish > nar: Previously: the driver took a wrong turn and stopped right in front of Princip.
+street establish > nar: Princip stepped forward and fired two shots.
+street two franz:sick,sophie > franz: Sophie, don't die. Stay alive for our children.
+street establish > nar: Within minutes, both Franz Ferdinand and Sophie were dead.
+street two driver:scared,princip:cuffed > driver: Grab him! Grab him!
+street establish > nar: How do you think the world reacted?
+# TITLE 6: The War
+PART
+street establish > nar: Previously: Princip shot the Archduke and his wife.
+court court judge,princip > judge: Too young to hang. Twenty years in prison. [OCTOBER 1914]
+prison cell princip > nar: Princip died in prison of tuberculosis in 1918.
+street establish > nar: But one month after the shots, Austria-Hungary declared war on Serbia.
+street establish > nar: Country after country joined in. The First World War had begun.
+street establish > nar: Can one wrong turn change the whole world?

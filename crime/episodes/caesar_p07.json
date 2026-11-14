@@ -1,0 +1,154 @@
+{
+ "key": "caesar_p07",
+ "yt": {
+  "title": "The End of the Republic | The Murder Of Julius Caesar (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: The Murder Of Julius Caesar, Rome, 44 BC. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the murder of julius caesar"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "caesar": {
+   "name": "Julius Caesar",
+   "skin": "#d0a07c",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "am_adam"
+  },
+  "brutus": {
+   "name": "Marcus Brutus",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "cassius": {
+   "name": "Gaius Cassius",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "calpurnia": {
+   "name": "Calpurnia",
+   "skin": "#e6b48e",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "seer": {
+   "name": "a soothsayer",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "antony": {
+   "name": "Mark Antony",
+   "skin": "#8a5232",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MURDER OF JULIUS CAESAR",
+    "years": "ROME · 44 BC",
+    "crime": "BEWARE THE IDES OF MARCH",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Caesar was killed by senators, including Brutus."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "antony",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "antony",
+    "text": "Friends, Romans, countrymen! See what they did to him!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The people of Rome turned against the killers."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Civil war followed. Brutus and Cassius both died."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Caesar's adopted son Octavian became Augustus, Rome's first emperor."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "THEY KILLED CAESAR TO STOP A KING. INSTEAD THEY GOT AN EMPER",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "They killed Caesar to stop a king. Instead they got an emperor. Was it worth it?"
+   }
+  }
+ ]
+}
