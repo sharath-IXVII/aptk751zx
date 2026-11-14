@@ -1,0 +1,61 @@
+CAST jack | Jack Sheppard | m | worker | brown
+CAST wild | Jonathan Wild | m | rich | grey
+CAST bess | Elizabeth Lyon | f | plain | red
+CAST jailer | a jailer | m | police | black | beard
+CAST crowd | a Londoner | f | plain | blonde
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Carpenter
+PART
+street establish > nar: London, the 1720s. Jack Sheppard is a gifted young carpenter. [LONDON · 1720s]
+street two bess:smile,jack:smile > bess: Clever hands, Jack. You can open any lock in London.
+street face jack:smile > jack: A carpenter's life is too slow, Bess. Locks are faster.
+street establish > nar: He turned his skills to burglary.
+street establish > nar: Where do you think his skills will take him?
+# TITLE 2: The Thief-Taker General
+PART
+street establish > nar: Previously: carpenter Jack Sheppard turned to burglary.
+home two wild:smile,jack > wild: I'm Jonathan Wild. The Thief-Taker General. I catch thieves. [LONDON · 1724]
+home two wild:smile,jack > wild: Or rather, thieves work for me. And give me what they steal.
+home face jack:cross > jack: I work for no one.
+home face wild:cross > wild: Then you'll hang, boy.
+home establish > nar: Who would you rather cross: the law, or Jonathan Wild?
+# TITLE 3: Bedsheets
+PART
+home establish > nar: Previously: Jack refused to work for crime boss Jonathan Wild.
+prison two jailer:point,jack:cuffed > jailer: Locked in the top of the prison, Sheppard. [ST GILES ROUNDHOUSE · 1724]
+prison cell jack:think > jack: Through the roof. Then knotted bedsheets to the ground.
+street walk jack > nar: Within hours, Jack was out.
+street face jailer:scared > jailer: He's gone!
+street establish > nar: Can anything hold him?
+# TITLE 4: Over the Wall
+PART
+street establish > nar: Previously: Jack escaped through a prison roof using bedsheets.
+prison two jailer:point,bess > jailer: Caught again. And your girl with you. [NEW PRISON · MAY 1724]
+prison cell jack:think > jack: File through the chains. Out through the bars.
+prison two bess:scared,jack > bess: In my petticoats? Over that wall?
+street walk jack > nar: Jack and Bess escaped together, climbing a twenty-two foot wall.
+street establish > nar: Would you try it?
+# TITLE 5: The Condemned Cell
+PART
+street establish > nar: Previously: Jack and Bess escaped over a prison wall.
+court court judge,jack > judge: Jack Sheppard, you will hang. [AUGUST 1724]
+prison cell jack > jack: Newgate. The condemned cell.
+prison two bess:smile,jack > bess: A loose bar in the window, Jack. Pull.
+street walk jack > nar: Days before his hanging, he escaped from Newgate's condemned cell.
+street establish > nar: How long can his luck last?
+# TITLE 6: Six Locked Doors
+PART
+street establish > nar: Previously: Jack escaped from the condemned cell at Newgate.
+prison two jailer:point,jack:cuffed > jailer: Chained to the floor of the strongest room in Newgate. [OCTOBER 1724]
+prison cell jack:think > jack: A nail. A small bent nail is all I need.
+prison face jailer:scared > jailer: Six barred doors. Six! And he went through every one!
+street face crowd:smile > crowd: Jack's out again! London's hero!
+street establish > nar: Could anyone ever catch Jack Sheppard again?
+# TITLE 7: Two Hundred Thousand
+PART
+street establish > nar: Previously: Jack broke through six locked doors to escape Newgate again.
+street two jack:smile,crowd > jack: One more drink! Who'll catch me now? [NOVEMBER 1724]
+street two jailer:point,jack:cuffed > jailer: Drunk in a gin shop. Caught at last.
+street establish > nar: On 16 November 1724, Jack Sheppard was hanged.
+street establish > nar: Around two hundred thousand people came to watch. A third of London.
+street establish > nar: Was Jack a hero or a criminal?

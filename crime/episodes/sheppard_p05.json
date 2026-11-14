@@ -1,0 +1,193 @@
+{
+ "key": "sheppard_p05",
+ "yt": {
+  "title": "The Condemned Cell | Jack Sheppard (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: Jack Sheppard, London, 1720s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "jack sheppard"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "jack": {
+   "name": "Jack Sheppard",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "wild": {
+   "name": "Jonathan Wild",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "bess": {
+   "name": "Elizabeth Lyon",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "jailer": {
+   "name": "a jailer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true,
+   "cap": true
+  },
+  "crowd": {
+   "name": "a Londoner",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "JACK SHEPPARD",
+    "years": "LONDON · 1724",
+    "crime": "THE MAN NO JAIL COULD HOLD",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Jack and Bess escaped over a prison wall."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "jack",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Jack Sheppard, you will hang."
+   },
+   "title": "AUGUST 1724"
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "jack",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "jack",
+    "text": "Newgate. The condemned cell."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bess",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "jack",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bess",
+    "text": "A loose bar in the window, Jack. Pull."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "jack",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Days before his hanging, he escaped from Newgate's condemned cell."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW LONG CAN HIS LUCK LAST?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How long can his luck last? Part 6 is next."
+   }
+  }
+ ]
+}

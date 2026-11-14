@@ -1,0 +1,180 @@
+{
+ "key": "rasputin_p07",
+ "yt": {
+  "title": "The Frozen River | Rasputin (True Story) Part 7 #shorts",
+  "description": "Part 7 of 8: Rasputin, Russia, 1905-1916. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "rasputin"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "rasputin": {
+   "name": "Grigori Rasputin",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "tsarina": {
+   "name": "Tsarina Alexandra",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "tsar": {
+   "name": "Tsar Nicholas II",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "alexei": {
+   "name": "Alexei",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "felix": {
+   "name": "Prince Felix Yusupov",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "dmitri": {
+   "name": "Grand Duke Dmitri",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#c8a050",
+   "voice": "bm_lewis"
+  },
+  "doctor": {
+   "name": "the royal doctor",
+   "skin": "#e6b48e",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RASPUTIN",
+    "years": "ST PETERSBURG · 1916",
+    "crime": "THE MAN WHO WOULD NOT DIE",
+    "part": "PART 7 OF 8"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Rasputin was shot again as he fled into the courtyard."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "felix",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "dmitri",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "dmitri",
+    "text": "The river. Through the ice. No one will ever know."
+   },
+   "title": "DECEMBER 1916"
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Rasputin's body was thrown into the freezing river."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Days later, it was found."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "tsarina",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "tsarina",
+    "text": "Our friend. They murdered our friend."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE KILLERS BE PUNISHED?",
+    "p": "Comment below 👇",
+    "f": "Part 8 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the killers be punished? Part 8 is next."
+   }
+  }
+ ]
+}

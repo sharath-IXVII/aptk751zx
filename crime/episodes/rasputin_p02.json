@@ -1,0 +1,211 @@
+{
+ "key": "rasputin_p02",
+ "yt": {
+  "title": "The Bleeding Prince | Rasputin (True Story) Part 2 #shorts",
+  "description": "Part 2 of 8: Rasputin, Russia, 1905-1916. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "rasputin"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "rasputin": {
+   "name": "Grigori Rasputin",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "tsarina": {
+   "name": "Tsarina Alexandra",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "tsar": {
+   "name": "Tsar Nicholas II",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "alexei": {
+   "name": "Alexei",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "felix": {
+   "name": "Prince Felix Yusupov",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "dmitri": {
+   "name": "Grand Duke Dmitri",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#c8a050",
+   "voice": "bm_lewis"
+  },
+  "doctor": {
+   "name": "the royal doctor",
+   "skin": "#e6b48e",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RASPUTIN",
+    "years": "ST PETERSBURG · 1916",
+    "crime": "THE MAN WHO WOULD NOT DIE",
+    "part": "PART 2 OF 8"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Rasputin, a wandering holy man, arrived in St Petersburg."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "alexei",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "tsarina",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "tsarina",
+    "text": "My son has haemophilia. Even a bruise could kill him."
+   },
+   "bed": true
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "doctor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "tsarina",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doctor",
+    "text": "We've done everything, Your Majesty. The bleeding won't stop."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "alexei",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "rasputin",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "rasputin",
+    "text": "Sleep, little one. You will get well."
+   },
+   "bed": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "tsarina",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "tsarina",
+    "text": "The bleeding has stopped. It's a miracle."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT A MIRACLE? OR SOMETHING ELSE?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it a miracle? Or something else? Part 3 is next."
+   }
+  }
+ ]
+}

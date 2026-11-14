@@ -1,0 +1,188 @@
+{
+ "key": "rasputin_p04",
+ "yt": {
+  "title": "The Plot | Rasputin (True Story) Part 4 #shorts",
+  "description": "Part 4 of 8: Rasputin, Russia, 1905-1916. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "rasputin"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "rasputin": {
+   "name": "Grigori Rasputin",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "tsarina": {
+   "name": "Tsarina Alexandra",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "tsar": {
+   "name": "Tsar Nicholas II",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "alexei": {
+   "name": "Alexei",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "felix": {
+   "name": "Prince Felix Yusupov",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "dmitri": {
+   "name": "Grand Duke Dmitri",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#c8a050",
+   "voice": "bm_lewis"
+  },
+  "doctor": {
+   "name": "the royal doctor",
+   "skin": "#e6b48e",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RASPUTIN",
+    "years": "ST PETERSBURG · 1916",
+    "crime": "THE MAN WHO WOULD NOT DIE",
+    "part": "PART 4 OF 8"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Rasputin gained huge influence over the royal family."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "1916. Russia is losing the First World War. People blame Rasputin."
+   },
+   "title": "1916",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "felix",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "dmitri",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "felix",
+    "text": "The Tsar is at the front. The Empress listens only to him."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dmitri",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "dmitri",
+    "text": "Then he must die. For Russia."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "felix",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "felix",
+    "text": "I'll invite him to my palace. At midnight."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU JOIN THE PLOT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you join the plot? Part 5 is next."
+   }
+  }
+ ]
+}

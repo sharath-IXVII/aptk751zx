@@ -1,0 +1,71 @@
+CAST rasputin | Grigori Rasputin | m | plain | black | beard
+CAST tsarina | Tsarina Alexandra | f | royal | brown
+CAST tsar | Tsar Nicholas II | m | royal | brown | beard
+CAST alexei | Alexei | m | royal | brown
+CAST felix | Prince Felix Yusupov | m | royal | black
+CAST dmitri | Grand Duke Dmitri | m | soldier | blonde
+CAST doctor | the royal doctor | m | doctor | grey
+# TITLE 1: The Holy Man
+PART
+street establish > nar: St Petersburg, 1905. A wild-eyed peasant arrives from Siberia. [ST PETERSBURG · 1905]
+street face rasputin > rasputin: I am Grigori. A man of God. I have walked across all of Russia.
+street two rasputin:smile,doctor > doctor: They say he can heal the sick with prayer.
+street face rasputin:smile > rasputin: God works through me.
+street establish > nar: Grigori Rasputin was soon talked about in the grandest homes of the city.
+street establish > nar: Who was he really?
+# TITLE 2: The Bleeding Prince
+PART
+street establish > nar: Previously: Rasputin, a wandering holy man, arrived in St Petersburg.
+home bed alexei:sick,tsarina > tsarina: My son has haemophilia. Even a bruise could kill him.
+home two doctor:think,tsarina > doctor: We've done everything, Your Majesty. The bleeding won't stop.
+home bed alexei:sleep,rasputin > rasputin: Sleep, little one. You will get well.
+home face tsarina:cry > tsarina: The bleeding has stopped. It's a miracle.
+home establish > nar: Was it a miracle? Or something else?
+# TITLE 3: Power
+PART
+home establish > nar: Previously: Rasputin seemed to calm the prince's bleeding when doctors could not.
+home two tsarina:smile,rasputin > tsarina: Our friend Grigori is sent from God. [1912]
+home two tsar:think,tsarina > tsar: The ministers hate him, Alix.
+home face rasputin:smile > rasputin: Ministers come and go. I stay.
+street two felix:cross,dmitri > felix: A drunken peasant whispering to the Empress. All of Russia laughs at us.
+street establish > nar: Should anyone have this much power?
+# TITLE 4: The Plot
+PART
+street establish > nar: Previously: Rasputin gained huge influence over the royal family.
+street establish > nar: 1916. Russia is losing the First World War. People blame Rasputin. [1916]
+home two felix,dmitri > felix: The Tsar is at the front. The Empress listens only to him.
+home face dmitri:cross > dmitri: Then he must die. For Russia.
+home face felix > felix: I'll invite him to my palace. At midnight.
+home establish > nar: Would you join the plot?
+# TITLE 5: Midnight at the Palace
+PART
+home establish > nar: Previously: Prince Yusupov and others plotted to kill Rasputin.
+home two felix:smile,rasputin:smile > felix: Welcome, Grigori. Wine? Some cakes? [YUSUPOV PALACE · DECEMBER 1916]
+home face rasputin:smile > rasputin: Your cakes are delicious, Prince.
+home face felix:scared > nar: According to Felix, the poisoned cakes had no effect at all.
+home establish > nar: Rasputin kept eating. Kept drinking. Kept talking.
+home establish > nar: What would you do if you were Felix?
+# TITLE 6: He Rose Again
+PART
+home establish > nar: Previously: Felix says the poisoned cakes and wine did not affect Rasputin.
+home face felix:scared > nar: Felix shot him. Rasputin fell.
+home two felix:scared,dmitri > felix: He's dead. It's over.
+home face rasputin:cross > nar: But in Felix's version of the story, Rasputin opened his eyes and lunged at him.
+street establish > nar: He staggered out into the snowy courtyard. More shots rang out.
+street establish > nar: Can one man really be this hard to kill?
+# TITLE 7: The Frozen River
+PART
+street establish > nar: Previously: Rasputin was shot again as he fled into the courtyard.
+dock two felix,dmitri > dmitri: The river. Through the ice. No one will ever know. [DECEMBER 1916]
+dock establish > nar: Rasputin's body was thrown into the freezing river.
+dock establish > nar: Days later, it was found.
+home face tsarina:cry > tsarina: Our friend. They murdered our friend.
+dock establish > nar: Will the killers be punished?
+# TITLE 8: The End of an Empire
+PART
+dock establish > nar: Previously: Rasputin's body was found in the frozen river.
+home face felix > felix: I was sent into exile. And I wrote my story. Again and again.
+home establish > nar: Historians think Felix exaggerated many details to make himself a hero.
+home establish > nar: A letter said to be from Rasputin warned that if nobles killed him, the royal family would not survive.
+home establish > nar: A few months later, the Tsar fell from power. The royal family was later killed.
+home establish > nar: Was Rasputin a holy man or a fraud?
