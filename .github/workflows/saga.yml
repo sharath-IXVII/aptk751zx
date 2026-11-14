@@ -1,0 +1,59 @@
+name: Story Shorts (The Human Journey)
+on:
+  # schedule (enabled after the owner approves Part 1):
+  #   - cron: "23 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      preview: {description: "Only render Part 1 as an unlisted preview", type: boolean, default: false}
+concurrency: {group: saga, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  part:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {repository: sharath11yr/gptk755blend, path: blend}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Next part
+        id: ep
+        run: |
+          pip install -q python-dotenv google-api-python-client google-auth httpx
+          if [ "${{ inputs.preview }}" = "true" ]; then e=saga/a1_p01.json; else e=$(python -m pipeline.saga next blend/studio/explainer/episodes/saga/order.json); fi
+          echo "ep=$e" >> $GITHUB_OUTPUT; echo "next: ${e:-none}"
+      - uses: actions/setup-node@v4
+        if: steps.ep.outputs.ep != ''
+        with: {node-version: 22}
+      - name: Render
+        if: steps.ep.outputs.ep != ''
+        working-directory: blend/studio/explainer
+        run: |
+          npm ci || npm install
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+          pip install -q edge-tts "kokoro>=0.9.4" soundfile
+          python voice.py "episodes/${{ steps.ep.outputs.ep }}" public props.json
+          npx remotion render src/index.ts Short out/short.mp4 --props=props_short.json --concurrency=4 --crf=18
+          d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/short.mp4); echo "duration $d s"
+          if python -c "import sys; sys.exit(0 if float('$d') > 59 else 1)"; then
+            r=$(python -c "print(min(1.25, float('$d')/58))")
+            ffmpeg -y -loglevel error -i out/short.mp4 -filter_complex "[0:v]setpts=PTS/$r[v];[0:a]atempo=$r[a]" -map "[v]" -map "[a]" -c:v libx264 -crf 19 -c:a aac out/f.mp4 && mv out/f.mp4 out/short.mp4
+          fi
+      - name: Post
+        if: steps.ep.outputs.ep != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_ADMIN_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          EP=${{ steps.ep.outputs.ep }}
+          if [ "${{ inputs.preview }}" = "true" ]; then python -m pipeline.saga upload "$EP" "blend/studio/explainer/episodes/$EP" blend/studio/explainer/out/short.mp4 preview; exit 0; fi
+          python -m pipeline.saga upload "$EP" "blend/studio/explainer/episodes/$EP" blend/studio/explainer/out/short.mp4
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/ && git commit -qm "Saga: $EP [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i*5)); done
