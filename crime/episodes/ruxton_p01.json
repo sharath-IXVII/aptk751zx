@@ -1,0 +1,232 @@
+{
+ "key": "ruxton_p01",
+ "yt": {
+  "title": "The Kind Doctor | Dr. Buck Ruxton (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: Dr. Buck Ruxton, Lancaster, England and Moffat, Scotland, 1935. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dr. buck ruxton"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ruxton": {
+   "name": "Dr Buck Ruxton",
+   "skin": "#e6b48e",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "glasses": true
+  },
+  "isabella": {
+   "name": "Isabella Ruxton",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Rogerson",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "cleaner": {
+   "name": "a cleaner",
+   "skin": "#d0a07c",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#9a9a9a",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "walker": {
+   "name": "a walker",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_sky",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "scientist": {
+   "name": "a forensic scientist",
+   "skin": "#a86a42",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DR. BUCK RUXTON",
+    "years": "LANCASTER · 1935",
+    "crime": "SOLVED BY SCIENCE",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Dr Buck Ruxton. The most popular doctor in Lancaster."
+   },
+   "title": "LANCASTER · 1935",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "cleaner",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "ruxton",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "cleaner",
+    "text": "You never charge the poor, Doctor. Everyone says you're a saint."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "isabella",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "ruxton",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "ruxton",
+    "text": "Where were you? Who were you with? Tell me!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "isabella",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "ruxton",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "isabella",
+    "text": "Only my sister, Buck. Please stop this."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "The doctor's so kind at work. So different at home."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Behind closed doors, Ruxton was jealous and violent."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW LONG CAN TWO DIFFERENT FACES STAY HIDDEN?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How long can two different faces stay hidden? Part 2 is next."
+   }
+  }
+ ]
+}

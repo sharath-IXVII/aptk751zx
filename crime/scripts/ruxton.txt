@@ -1,0 +1,68 @@
+CAST ruxton | Dr Buck Ruxton | m | doctor | black
+CAST isabella | Isabella Ruxton | f | rich | brown
+CAST mary | Mary Rogerson | f | worker | red
+CAST cleaner | a cleaner | f | worker | grey
+CAST walker | a walker | f | plain | blonde
+CAST police | a police officer | m | police | black
+CAST scientist | a forensic scientist | m | doctor | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Kind Doctor
+PART
+street establish > nar: Dr Buck Ruxton. The most popular doctor in Lancaster. [LANCASTER · 1935]
+street two cleaner:smile,ruxton:smile > cleaner: You never charge the poor, Doctor. Everyone says you're a saint.
+home two isabella:scared,ruxton:cross > ruxton: Where were you? Who were you with? Tell me!
+home two isabella:cry,ruxton > isabella: Only my sister, Buck. Please stop this.
+home face mary:scared > mary: The doctor's so kind at work. So different at home.
+home establish > nar: Behind closed doors, Ruxton was jealous and violent.
+home establish > nar: How long can two different faces stay hidden?
+# TITLE 2: Gone
+PART
+home establish > nar: Previously: Dr Ruxton was loved by patients but violent at home.
+home two cleaner:think,ruxton > cleaner: Where's Mrs Ruxton? And Mary? [SEPTEMBER 1935]
+home two cleaner,ruxton:smile > ruxton: They've gone on holiday to Scotland. Both of them.
+home face cleaner:think > cleaner: Mary never said a word about a holiday.
+home establish > nar: Isabella and the young maid, Mary Rogerson, had disappeared.
+home establish > nar: Where do you think they really were?
+# TITLE 3: The Carpets
+PART
+home establish > nar: Previously: Isabella Ruxton and the maid Mary vanished. Ruxton said they were in Scotland.
+home two cleaner:scared,ruxton > ruxton: Scrub these carpets for me. I cut my hand opening a tin.
+home face cleaner:scared > cleaner: That's a lot of blood for one cut hand, Doctor.
+home two cleaner,ruxton:give > ruxton: Take the carpets home. Keep them. A gift.
+home face ruxton > ruxton: Everything is fine.
+home establish > nar: Would you take the carpets?
+# TITLE 4: The Ravine
+PART
+home establish > nar: Previously: Ruxton asked a cleaner to scrub blood-stained carpets.
+forest walk walker > nar: Late September 1935. A woman walks over a bridge near Moffat, Scotland. [MOFFAT · SCOTLAND]
+forest face walker:scared > walker: What's down in the ravine? Wrapped in newspaper.
+forest two walker:scared,police > police: Human remains. Stay back, miss.
+forest face police:think > police: Whoever did this tried hard to hide who they were.
+forest establish > nar: Could anything identify them?
+# TITLE 5: The Newspaper
+PART
+forest establish > nar: Previously: human remains were found in a ravine in Scotland, wrapped in newspaper.
+home two police:think,scientist > police: This newspaper is the Sunday Graphic. A special edition. [SCOTLAND · 1935]
+home face police > police: Only sold in Lancaster and Morecambe.
+home two police:point,scientist > scientist: And two women from Lancaster are missing.
+home face police:scared > police: The doctor's wife and maid.
+home establish > nar: The newspaper pointed straight at Lancaster.
+home establish > nar: Can science prove who the victims were?
+# TITLE 6: The Photograph
+PART
+home establish > nar: Previously: a newspaper wrapped around the remains pointed to Lancaster.
+home two scientist:think,police > scientist: A photo of the skull. And a photo of Isabella Ruxton. Same size.
+home face scientist > scientist: Now lay one over the other.
+home face scientist:scared > scientist: They match perfectly.
+home two police:point,ruxton:cuffed > police: Dr Ruxton, you're under arrest.
+home establish > nar: It was one of the first times this photo technique was ever used.
+home establish > nar: Will the jury believe a photograph?
+# TITLE 7: Science on Trial
+PART
+home establish > nar: Previously: a photo technique matched the skull to Isabella Ruxton.
+court two scientist,judge > scientist: The skull is Isabella's. The science is clear. [MANCHESTER · 1936]
+court face ruxton:cry > ruxton: I loved my wife!
+court court judge,ruxton > judge: Guilty. You will be hanged.
+prison establish > nar: Ruxton was hanged in May 1936.
+prison establish > nar: The case changed forensic science forever.
+prison establish > nar: What do you think was the biggest mistake he made?

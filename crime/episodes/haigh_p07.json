@@ -1,0 +1,189 @@
+{
+ "key": "haigh_p07",
+ "yt": {
+  "title": "Six Victims | John George Haigh (True Story) Part 7 #shorts",
+  "description": "Part 7 of 8: John George Haigh, London and Crawley, 1944-1949. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "john george haigh"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "haigh": {
+   "name": "John George Haigh",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "olive": {
+   "name": "Olive Durand-Deacon",
+   "skin": "#a86a42",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "constance": {
+   "name": "Constance Lane",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#e0e0e0",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "detective": {
+   "name": "a detective",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "simpson": {
+   "name": "Dr Keith Simpson",
+   "skin": "#e6b48e",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "JOHN GEORGE HAIGH",
+    "years": "LONDON · 1949",
+    "crime": "NO BODY, NO CRIME?",
+    "part": "PART 7 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Dr Keith Simpson found Olive's gallstones and false teeth."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "haigh",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "haigh",
+    "text": "Olive wasn't the first. There were six of them."
+   },
+   "title": "1949"
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "detective",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "detective",
+    "text": "He killed for their money. Then destroyed everything."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "haigh",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "haigh",
+    "text": "I'm mad, you see. You can't hang a madman."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He claimed he was insane, hoping to escape the gallows."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK HE WAS MAD, OR JUST COLD?",
+    "p": "Comment below 👇",
+    "f": "Part 8 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think he was mad, or just cold? Part 8 is next."
+   }
+  }
+ ]
+}

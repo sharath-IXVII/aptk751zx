@@ -1,0 +1,73 @@
+CAST petiot | Dr Marcel Petiot | m | doctor | black
+CAST client | a desperate client | m | rich | grey
+CAST wife | his wife | f | rich | brown
+CAST neighbour | a neighbour | f | plain | grey
+CAST fireman | a fireman | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST soldier | a German soldier | m | soldier | blonde
+CAST judge | the judge | m | judge | white
+# TITLE 1: Occupied Paris
+PART
+street establish > nar: Paris, 1941. The Nazis have taken the city. [PARIS · 1941]
+street two soldier:point,client:scared > soldier: Papers! Now!
+home two client:scared,wife:scared > client: They're arresting people every night. We must get out of France.
+home face wife:cry > wife: But how? Every border is watched.
+home establish > nar: Thousands of people desperately wanted to escape.
+home establish > nar: Who could they trust?
+# TITLE 2: Doctor Eugène
+PART
+home establish > nar: Previously: people hunted by the Nazis desperately wanted to escape Paris.
+home two client,petiot:smile > petiot: I know a secret route. To Argentina. Call me Doctor Eugène. [1942]
+home two client:smile,petiot > client: You can really get us out?
+home face petiot:smile > petiot: Bring your money. Your jewellery. Everything you own.
+home establish > nar: Dr Marcel Petiot was a well-known doctor. People trusted him.
+home establish > nar: Would you trust Doctor Eugène?
+# TITLE 3: The Injection
+PART
+home establish > nar: Previously: Dr Petiot offered a secret escape route, calling himself Doctor Eugène.
+home two client:think,petiot > petiot: Argentina requires a vaccination. Just a small injection. [21 RUE LE SUEUR]
+home two client,petiot:smile > client: Of course, Doctor. Whatever is needed.
+home face petiot:smile > petiot: Roll up your sleeve.
+home establish > nar: What do you think was really in the syringe?
+# TITLE 4: No Letters
+PART
+home establish > nar: Previously: Petiot told his clients they needed a vaccination before the journey.
+home two wife:think,neighbour > wife: My husband promised to write from Argentina. Months have passed. [1943]
+home face wife:cry > wife: Not one letter.
+home two neighbour:think,wife > neighbour: Nobody who goes with Doctor Eugène ever writes.
+home establish > nar: Dozens of people came to 21 rue Le Sueur. None of them were heard from again.
+home establish > nar: How long can a secret like this stay hidden?
+# TITLE 5: The Chimney
+PART
+home establish > nar: Previously: people who went with Doctor Eugène were never heard from again.
+street two neighbour:scared,police > neighbour: Thick black smoke from that chimney. Five days now! [MARCH 1944]
+street face neighbour:scared > neighbour: And the smell! It's unbearable!
+street two fireman,police > fireman: Nobody's answering. We're breaking in.
+home face fireman:scared > fireman: Officer... come and see the basement.
+home establish > nar: What they found was beyond their worst nightmares.
+home establish > nar: Where do you think Dr Petiot was?
+# TITLE 6: The Excuse
+PART
+home establish > nar: Previously: firemen broke into Petiot's building and found horrors in the basement.
+home two petiot:smile,police > petiot: Officer, those were Nazis and traitors. The Resistance killed them. I'm a patriot.
+home face police:think > police: The Resistance?
+home face petiot:smile > petiot: Don't tell the Germans. I'll be on my way.
+street walk petiot > nar: The officer let him go. Petiot vanished into the city.
+street establish > nar: Would you have believed him?
+# TITLE 7: Hiding in Plain Sight
+PART
+street establish > nar: Previously: Petiot talked his way out and disappeared.
+street establish > nar: August 1944. Paris is freed. The Nazis are gone. [AUGUST 1944]
+street two client,petiot:smile > petiot: Captain Valery. Resistance. At your service.
+street face petiot:smile > nar: Petiot had joined the Resistance under a false name.
+street two police:point,petiot:cuffed > police: Captain Valery? No. You're Marcel Petiot. [OCTOBER 1944]
+street establish > nar: Will he talk his way out again?
+# TITLE 8: Sixty-Three
+PART
+street establish > nar: Previously: Petiot was caught hiding in the Resistance under a false name.
+court face petiot:smile > petiot: I killed sixty-three people. All enemies of France. [PARIS · 1946]
+court two police,judge > police: Charged with twenty-six murders. Most were people trying to escape the Nazis.
+court court judge,petiot > judge: Guilty. Death.
+prison establish > nar: Marcel Petiot was guillotined in May 1946.
+prison establish > nar: Much of the money and jewellery he took was never found.
+prison establish > nar: Where do you think his treasure went?

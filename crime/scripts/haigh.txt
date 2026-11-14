@@ -1,0 +1,77 @@
+CAST haigh | John George Haigh | m | rich | black
+CAST olive | Olive Durand-Deacon | f | rich | grey
+CAST constance | Constance Lane | f | rich | white
+CAST police | a police officer | m | police | black
+CAST detective | a detective | m | detective | brown
+CAST simpson | Dr Keith Simpson | m | doctor | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Gentleman at the Hotel
+PART
+home establish > nar: John George Haigh. The smartest-dressed man at the Onslow Court Hotel. [LONDON · 1949]
+home two olive:smile,haigh:smile > haigh: Good morning, Mrs Durand-Deacon. Lovely day.
+home two olive:smile,haigh > olive: Always so polite, Mr Haigh. What is it you do?
+home face haigh:smile > haigh: I'm an inventor. Engineering. Bits and pieces.
+home two constance:smile,olive > constance: Such a charming young man.
+home establish > nar: Everyone at the hotel liked him.
+home establish > nar: What do you think he was hiding?
+# TITLE 2: No Body, No Crime
+PART
+home establish > nar: Previously: charming John Haigh lived at a London hotel and called himself an inventor.
+home face haigh > haigh: Everyone knows the rule. No body, no murder charge.
+home face haigh:smile > haigh: If nobody can ever find a body, nobody can ever prove a thing.
+home establish > nar: It wasn't true. It was a myth. But Haigh believed it completely.
+home establish > nar: And he owed a lot of money.
+home establish > nar: What do you think he was planning?
+# TITLE 3: The Fingernails
+PART
+home establish > nar: Previously: Haigh believed that without a body there could be no murder charge.
+home two olive:smile,haigh > olive: I have an idea for artificial fingernails. Could you help make them? [FEBRUARY 1949]
+home two olive,haigh:smile > haigh: How wonderful. Come to my workshop in Crawley. We'll look at materials.
+home face olive:smile > olive: Tomorrow, then.
+home face haigh:smile > haigh: Tomorrow.
+home establish > nar: Should Olive go to the workshop?
+# TITLE 4: Missing
+PART
+home establish > nar: Previously: Haigh invited Olive Durand-Deacon to his workshop in Crawley.
+street walk olive > nar: 18 February 1949. Olive drives off with Haigh. [18 FEBRUARY 1949]
+home two constance:scared,haigh > constance: Olive didn't come back last night. Did you see her?
+home two constance,haigh:think > haigh: She never turned up, I'm afraid. Shall we go to the police together?
+home two constance:scared,police > constance: My friend is missing. Please, help me.
+home establish > nar: Haigh even drove Constance to the police station himself.
+home establish > nar: Why would he go to the police?
+# TITLE 5: The Workshop
+PART
+home establish > nar: Previously: Olive vanished, and Haigh helped report her missing.
+home two detective:think,police > detective: Haigh has a record. Fraud. Several times. [CRAWLEY]
+home two detective:scared,police > detective: His workshop. Drums of acid. A gun.
+home face detective:think > detective: And a dry-cleaning receipt for a Persian lamb coat. Hers.
+home two detective:point,haigh > detective: Mr Haigh. Where is Mrs Durand-Deacon?
+home face haigh:smile > haigh: She no longer exists. You can't prove murder without a body.
+home establish > nar: Was he right?
+# TITLE 6: The Sludge
+PART
+home establish > nar: Previously: Haigh told police that Olive no longer existed.
+forest two simpson,detective > simpson: The yard behind the workshop. We search every handful. [CRAWLEY · 1949]
+forest face simpson:think > simpson: There. Gallstones. They survive things that bones don't.
+forest two simpson:point,detective > simpson: And these. False teeth.
+home two detective,simpson > detective: Her dentist says those are her teeth.
+home face haigh:scared > haigh: Impossible.
+home establish > nar: The myth was broken. There was evidence after all.
+home establish > nar: What do you think Haigh said next?
+# TITLE 7: Six Victims
+PART
+home establish > nar: Previously: Dr Keith Simpson found Olive's gallstones and false teeth.
+prison cell haigh > haigh: Olive wasn't the first. There were six of them. [1949]
+prison two detective:scared,police > detective: He killed for their money. Then destroyed everything.
+prison face haigh:smile > haigh: I'm mad, you see. You can't hang a madman.
+prison establish > nar: He claimed he was insane, hoping to escape the gallows.
+prison establish > nar: Do you think he was mad, or just cold?
+# TITLE 8: The Verdict
+PART
+prison establish > nar: Previously: Haigh confessed to six murders and claimed he was insane.
+court two simpson,judge > simpson: The evidence identifies Olive Durand-Deacon beyond doubt. [LEWES · JULY 1949]
+court court judge,haigh > judge: Guilty. You will be hanged.
+court face haigh > haigh: So be it.
+prison establish > nar: John George Haigh was hanged in August 1949.
+prison establish > nar: He left his clothes to a waxworks museum, to dress his own figure.
+prison establish > nar: Could forensic science catch a killer like this today?

@@ -1,0 +1,70 @@
+CAST landru | Henri Landru | m | rich | black | beard
+CAST widow | a widow | f | rich | grey
+CAST widow2 | another widow | f | plain | brown
+CAST neighbour | a village neighbour | m | worker | grey
+CAST sister | a missing woman's sister | f | plain | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Advert
+PART
+street establish > nar: France, during the First World War. So many men are gone. So many women alone. [PARIS · 1915]
+home face landru:smile > landru: Widower with comfortable income seeks widow for marriage.
+home two widow:smile,landru:smile > widow: I answered your advertisement, monsieur.
+home two widow,landru:smile > landru: Madame, it is fate. Call me Raymond.
+home establish > nar: Henri Landru had a bald head, a big beard, and a way with words.
+home establish > nar: Would you answer his advert?
+# TITLE 2: Many Names
+PART
+home establish > nar: Previously: Henri Landru placed adverts as a widower seeking a wife.
+home two widow:smile,landru > widow: My savings, my furniture... we'll share everything when we marry.
+home two widow2:smile,landru:smile > landru: Madame, you're the only woman I've ever loved. Call me Lucien.
+home face landru:smile > landru: A different name for every lady.
+home establish > nar: He courted many women at once, under false names.
+home establish > nar: How many lies can one man juggle?
+# TITLE 3: The Villa at Gambais
+PART
+home establish > nar: Previously: Landru courted many widows under false names.
+home two widow:smile,landru:smile > landru: I have a little villa in the countryside. At Gambais. So peaceful. [GAMBAIS]
+home face widow:smile > widow: The countryside! How romantic.
+forest walk landru > nar: He took the women to his villa.
+forest establish > nar: They were never seen again.
+forest establish > nar: Where do you think the women went?
+# TITLE 4: Smoke
+PART
+forest establish > nar: Previously: Landru took the women to his villa at Gambais. They vanished.
+street two neighbour:think,police > neighbour: Thick black smoke from his chimney. Again. [GAMBAIS]
+street face neighbour:scared > neighbour: And the smell... like nothing I've ever smelled.
+street two neighbour,landru:smile > landru: Just burning rubbish, my friend.
+street face neighbour:think > neighbour: In the middle of summer?
+street establish > nar: Would you go to the police?
+# TITLE 5: The Notebooks
+PART
+street establish > nar: Previously: neighbours noticed foul black smoke from Landru's chimney.
+home face landru > landru: Every centime written down. I'm a careful man.
+home face landru:think > nar: In his notebook, he wrote every expense. Including train tickets to Gambais.
+home face landru > landru: One return ticket for me. One single ticket for her.
+home establish > nar: A return ticket for him. A one-way ticket for each woman.
+home establish > nar: Why would anyone write that down?
+# TITLE 6: Spotted in a Shop
+PART
+home establish > nar: Previously: Landru kept careful notebooks, including one-way tickets for each woman.
+street two sister:think,police > sister: My sister went off with a man and disappeared. No one will listen to me. [PARIS · APRIL 1919]
+street face sister:scared > sister: That's him! In the china shop! The man with the beard!
+street walk landru > nar: She followed him to his address.
+street two police:point,landru:cuffed > police: Henri Landru. You're under arrest.
+street establish > nar: Will the notebooks give him away?
+# TITLE 7: The Trial
+PART
+street establish > nar: Previously: a missing woman's sister spotted Landru in Paris, and he was arrested.
+court two police,judge > police: Ten women. One teenage son. All vanished after meeting him. [VERSAILLES · 1921]
+court face landru:smile > landru: Find the bodies, then. You can't.
+court face landru:smile > landru: I'm sorry I only have one seat to offer this lady. It's the one I'm sitting in.
+court establish > nar: Crowds packed the court. He joked and admitted nothing.
+court establish > nar: Should a man who jokes in court be trusted?
+# TITLE 8: Bluebeard
+PART
+court establish > nar: Previously: Landru joked through his trial and admitted nothing.
+court court judge,landru > judge: Guilty. The sentence is death. [NOVEMBER 1921]
+prison cell landru > nar: In February 1922, Landru was guillotined. [FEBRUARY 1922]
+prison establish > nar: France called him Bluebeard, after the fairy-tale husband who killed his wives.
+prison establish > nar: Do you think he would have been caught without the sister?
