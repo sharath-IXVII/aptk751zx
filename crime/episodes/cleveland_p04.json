@@ -1,0 +1,164 @@
+{
+ "key": "cleveland_p04",
+ "yt": {
+  "title": "The Death Masks | The Cleveland Torso Killer (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Cleveland Torso Killer, Kingsbury Run, Cleveland, Ohio, 1935-1938. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the cleveland torso killer"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ness": {
+   "name": "Eliot Ness",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "coat": true,
+   "hat": true
+  },
+  "cop": {
+   "name": "a Cleveland detective",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "boy": {
+   "name": "a boy",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "man": {
+   "name": "a man in the shanty town",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "woman": {
+   "name": "a fairgoer",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE CLEVELAND TORSO KILLER",
+    "years": "CLEVELAND · 1935-38",
+    "crime": "ELIOT NESS'S UNSOLVED CASE",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Eliot Ness took charge of the hunt."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "woman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "cop",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "woman",
+    "text": "Plaster masks of faces? At the Great Lakes Exposition?"
+   },
+   "title": "1936"
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "cop",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "cop",
+    "text": "The faces of unknown victims. Someone might recognise them."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Thousands of people looked. Nobody came forward with a name."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU LOOK?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you look? Part 5 is next."
+   }
+  }
+ ]
+}

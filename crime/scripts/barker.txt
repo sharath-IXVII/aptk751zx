@@ -1,0 +1,53 @@
+CAST ma | Ma Barker | f | plain | grey
+CAST fred | Fred Barker | m | worker | brown
+CAST doc | Doc Barker | m | worker | black
+CAST karpis | Alvin Karpis | m | rich | black
+CAST victim | a kidnapped businessman | m | rich | grey
+CAST agent | an FBI agent | m | police | brown
+# TITLE 1: Four Sons
+PART
+home establish > nar: Missouri, the early 1900s. Kate Barker raises four sons. [MISSOURI · 1910s]
+home two ma:smile,fred > ma: My boys are good boys. Whatever anyone says.
+home face doc:smile > doc: Ma always takes our side.
+home establish > nar: One by one, all four Barker sons got into trouble with the law.
+home establish > nar: Can a mother be blamed for her sons' crimes?
+# TITLE 2: The Gang
+PART
+home establish > nar: Previously: Kate 'Ma' Barker raised four sons who all got into crime.
+home three fred,doc,karpis > karpis: Alvin Karpis. Fred and I met in prison. [1931]
+home two fred:smile,karpis > fred: The Barker-Karpis gang. Banks first. Then bigger things.
+home face ma > ma: Where my boys go, I go.
+home establish > nar: The gang moved from city to city. Ma travelled with them.
+home establish > nar: Was Ma the boss, or just their mother?
+# TITLE 3: Kidnapping
+PART
+home establish > nar: Previously: Fred Barker and Alvin Karpis formed a gang. Ma travelled with them.
+home two victim:scared,doc > doc: You're worth a lot of money, mister. [1933 - 1934]
+home face victim:scared > victim: Please. I have a family.
+home establish > nar: The gang kidnapped two rich businessmen and collected huge ransoms.
+home face agent:cross > agent: The Barker gang. Now they're on our list.
+home establish > nar: How would the FBI catch them?
+# TITLE 4: The Map
+PART
+home establish > nar: Previously: the gang kidnapped two wealthy businessmen for huge ransoms.
+street two agent:point,doc:cuffed > agent: Doc Barker. You're under arrest. [CHICAGO · JANUARY 1935]
+street face agent:think > agent: What's this in his apartment? A map of Florida.
+street face agent > agent: And a lake circled. Lake Weir.
+street establish > nar: The map led straight to the rest of the family.
+street establish > nar: Should Ma and Fred run?
+# TITLE 5: Lake Weir
+PART
+street establish > nar: Previously: a map in Doc's apartment pointed to Lake Weir, Florida.
+forest face agent:point > agent: Surround the house. Ma Barker and Fred are inside. [LAKE WEIR · 16 JANUARY 1935]
+forest establish > nar: A long gunfight followed. Hours of shooting.
+forest face agent > agent: It's over.
+forest establish > nar: Ma Barker and her son Fred were both killed.
+forest establish > nar: Was Ma Barker a gang leader?
+# TITLE 6: The Legend
+PART
+forest establish > nar: Previously: Ma Barker and Fred were killed in a gunfight with the FBI.
+home face agent > agent: She was the brains of the gang. The mastermind. [1935]
+home face karpis > karpis: Ma? She couldn't plan breakfast. She just came along.
+home establish > nar: The FBI said she was the leader. Gang members said she was just their mother.
+home establish > nar: Historians still argue.
+home establish > nar: Mastermind or mother? What do you think?

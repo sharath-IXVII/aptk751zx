@@ -1,0 +1,188 @@
+{
+ "key": "taylor_p05",
+ "yt": {
+  "title": "The Missing Letters | William Desmond Taylor (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: William Desmond Taylor, Los Angeles, February 1922. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "william desmond taylor"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "taylor": {
+   "name": "William Desmond Taylor",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_adam"
+  },
+  "mabel": {
+   "name": "Mabel Normand",
+   "skin": "#b9774a",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Miles Minter",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "peavey": {
+   "name": "Henry Peavey",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "detective": {
+   "name": "a detective",
+   "skin": "#e6b48e",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "doctor": {
+   "name": "a man in the crowd",
+   "skin": "#d0a07c",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#d0a07c",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "WILLIAM DESMOND TAYLOR",
+    "years": "HOLLYWOOD · 1922",
+    "crime": "HOLLYWOOD'S DARKEST MYSTERY",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: police discovered Taylor had been shot in the back."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "detective",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "reporter",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "detective",
+    "text": "People from the studio were here before us. Letters, papers, bottles. Gone."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "reporter",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "reporter",
+    "text": "What were they hiding?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Love letters from young star Mary Miles Minter were found in his house."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The scene had been disturbed before police could secure it."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WOULD YOU HAVE HIDDEN?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What would you have hidden? Part 6 is next."
+   }
+  }
+ ]
+}

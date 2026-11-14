@@ -1,0 +1,178 @@
+{
+ "key": "barker_p04",
+ "yt": {
+  "title": "The Map | Ma Barker (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Ma Barker, the American Midwest and Florida, 1930s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "ma barker"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ma": {
+   "name": "Ma Barker",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "fred": {
+   "name": "Fred Barker",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "doc": {
+   "name": "Doc Barker",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "karpis": {
+   "name": "Alvin Karpis",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "victim": {
+   "name": "a kidnapped businessman",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "agent": {
+   "name": "an FBI agent",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MA BARKER",
+    "years": "FLORIDA · 1935",
+    "crime": "THE MOTHER OF A GANG",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the gang kidnapped two wealthy businessmen for huge ransoms."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "agent",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "doc",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "Doc Barker. You're under arrest."
+   },
+   "title": "CHICAGO · JANUARY 1935"
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "agent",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "What's this in his apartment? A map of Florida."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "agent",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "agent",
+    "text": "And a lake circled. Lake Weir."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The map led straight to the rest of the family."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "SHOULD MA AND FRED RUN?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Should Ma and Fred run? Part 5 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+CAST taylor | William Desmond Taylor | m | rich | grey
+CAST mabel | Mabel Normand | f | rich | black
+CAST mary | Mary Miles Minter | f | rich | blonde
+CAST peavey | Henry Peavey | m | worker | black
+CAST detective | a detective | m | detective | brown
+CAST doctor | a man in the crowd | m | doctor | grey
+CAST reporter | a reporter | f | plain | red
+# TITLE 1: The Director
+PART
+street establish > nar: Hollywood, 1922. Silent films. Glamour. Secrets. [HOLLYWOOD · 1922]
+home two mary:smile,taylor:smile > mary: You're the greatest director in Hollywood, Mr Taylor.
+home two taylor:smile,mary > taylor: And you're the brightest young star, Mary.
+home face reporter:smile > reporter: William Desmond Taylor. Charming. Respected. A true gentleman.
+home establish > nar: Everyone in Hollywood seemed to love him.
+home establish > nar: Do you think he had secrets?
+# TITLE 2: The Last Visitor
+PART
+home establish > nar: Previously: William Desmond Taylor was one of Hollywood's top directors.
+home two mabel:smile,taylor:smile > mabel: I came to borrow that book you promised me, Bill. [1 FEBRUARY 1922]
+home two mabel,taylor:give > taylor: Here. Freud. Don't say I never educate you.
+street walk mabel > nar: Actress Mabel Normand left at about quarter to eight. Taylor waved goodbye.
+street establish > nar: She was the last person known to see him alive.
+street establish > nar: What do you think happened after she left?
+# TITLE 3: Natural Causes?
+PART
+street establish > nar: Previously: actress Mabel Normand visited Taylor and left that evening.
+home two peavey:scared,taylor > peavey: Mr Taylor? Mr Taylor! He's on the floor! [2 FEBRUARY 1922 · MORNING]
+home two doctor:think,peavey > doctor: I'm a doctor. Looks like a stomach haemorrhage. Natural causes.
+home face peavey:cry > peavey: He was fine last night.
+home establish > nar: A man in the crowd said he was a doctor. Nobody ever knew who he was.
+home establish > nar: Do you believe it was natural causes?
+# TITLE 4: Shot in the Back
+PART
+home establish > nar: Previously: Taylor was found dead. A stranger said it was natural causes.
+home two detective:scared,peavey > detective: Turn him over. Gently.
+home face detective:scared > detective: He's been shot. In the back.
+home face detective:think > detective: His wallet and watch are still here. This wasn't a robbery.
+home establish > nar: It was murder. One of the biggest scandals in Hollywood history.
+home establish > nar: Who do you think did it?
+# TITLE 5: The Missing Letters
+PART
+home establish > nar: Previously: police discovered Taylor had been shot in the back.
+home two detective:cross,reporter > detective: People from the studio were here before us. Letters, papers, bottles. Gone.
+home face reporter:smile > reporter: What were they hiding?
+home face mary:scared > nar: Love letters from young star Mary Miles Minter were found in his house.
+home establish > nar: The scene had been disturbed before police could secure it.
+home establish > nar: What would you have hidden?
+# TITLE 6: A Different Man
+PART
+home establish > nar: Previously: people removed letters and papers before police arrived.
+home two detective,reporter > detective: Taylor isn't even his real name. He was William Deane-Tanner.
+home face reporter:scared > reporter: He left a wife and daughter in New York? Years ago?
+home face detective:think > detective: A man with a secret past. And plenty of secrets now.
+home establish > nar: The more police dug, the stranger the story became.
+home establish > nar: Does his secret past matter?
+# TITLE 7: Never Solved
+PART
+home establish > nar: Previously: police found Taylor had lived under a different name.
+home face detective:think > detective: Mabel Normand. Mary Miles Minter. Her mother. A former valet. So many suspects. [1922 - TODAY]
+home face mabel:cry > mabel: I loved him like a brother. I don't know who did this.
+home establish > nar: Careers were ruined. Rumours spread. Nobody was ever charged.
+home establish > nar: The William Desmond Taylor murder is still one of Hollywood's greatest mysteries.
+home establish > nar: Who do you think killed William Desmond Taylor?

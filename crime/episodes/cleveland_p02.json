@@ -1,0 +1,152 @@
+{
+ "key": "cleveland_p02",
+ "yt": {
+  "title": "No Names | The Cleveland Torso Killer (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: The Cleveland Torso Killer, Kingsbury Run, Cleveland, Ohio, 1935-1938. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the cleveland torso killer"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ness": {
+   "name": "Eliot Ness",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "coat": true,
+   "hat": true
+  },
+  "cop": {
+   "name": "a Cleveland detective",
+   "skin": "#d9a882",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "boy": {
+   "name": "a boy",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "man": {
+   "name": "a man in the shanty town",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "woman": {
+   "name": "a fairgoer",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "reporter": {
+   "name": "a reporter",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE CLEVELAND TORSO KILLER",
+    "years": "CLEVELAND · 1935-38",
+    "crime": "ELIOT NESS'S UNSOLVED CASE",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: remains were found in Kingsbury Run, where poor people lived."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Over the next three years, more victims were found."
+   },
+   "title": "1935 - 1938"
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "cop",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "cop",
+    "text": "No ID. No fingerprints on file. No one reported them missing."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Most victims were never identified."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DO YOU THINK NOBODY MISSED THEM?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why do you think nobody missed them? Part 3 is next."
+   }
+  }
+ ]
+}

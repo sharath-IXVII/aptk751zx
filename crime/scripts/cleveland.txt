@@ -1,0 +1,50 @@
+CAST ness | Eliot Ness | m | detective | brown
+CAST cop | a Cleveland detective | m | police | black
+CAST boy | a boy | m | plain | blonde
+CAST man | a man in the shanty town | m | worker | grey | beard
+CAST woman | a fairgoer | f | plain | brown
+CAST reporter | a reporter | m | plain | black
+# TITLE 1: Kingsbury Run
+PART
+forest establish > nar: Cleveland, 1935. The Great Depression. A ravine called Kingsbury Run. [CLEVELAND · 1935]
+forest two boy:scared,cop > boy: Over there! In the weeds! Something terrible!
+forest face cop:scared > cop: Get back, son. Go home.
+forest two man,cop > man: Poor folks live here. Nobody notices when one goes missing.
+forest establish > nar: Remains were found in the ravine where homeless people lived.
+forest establish > nar: Who would do this?
+# TITLE 2: No Names
+PART
+forest establish > nar: Previously: remains were found in Kingsbury Run, where poor people lived.
+forest establish > nar: Over the next three years, more victims were found. [1935 - 1938]
+forest face cop:cross > cop: No ID. No fingerprints on file. No one reported them missing.
+forest establish > nar: Most victims were never identified.
+forest establish > nar: Why do you think nobody missed them?
+# TITLE 3: Eliot Ness
+PART
+forest establish > nar: Previously: more and more unidentified victims were found in Cleveland.
+street two ness,reporter > reporter: Eliot Ness! The man who took on Al Capone! [CLEVELAND · 1936]
+street face ness > ness: I'm Cleveland's Safety Director now. And I'll catch this killer.
+street two ness:point,cop > ness: Every lead. Every name. Every shack.
+street establish > nar: Could the famous Untouchable solve it?
+# TITLE 4: The Death Masks
+PART
+street establish > nar: Previously: Eliot Ness took charge of the hunt.
+street two woman:scared,cop > woman: Plaster masks of faces? At the Great Lakes Exposition? [1936]
+street face cop > cop: The faces of unknown victims. Someone might recognise them.
+street establish > nar: Thousands of people looked. Nobody came forward with a name.
+street establish > nar: Would you look?
+# TITLE 5: Burned Down
+PART
+street establish > nar: Previously: masks of victims' faces were displayed at a fair. No one recognised them.
+forest two ness:point,cop > ness: Clear the shanty towns. Burn them down. [AUGUST 1938]
+forest two man:cross,ness > man: Where will we go? This is all we have!
+street two reporter:cross,ness > reporter: You've made hundreds of people homeless, Mr Ness. And caught no one.
+street establish > nar: Was Ness right to do it?
+# TITLE 6: Never Caught
+PART
+street establish > nar: Previously: Ness burned the shanty towns but caught no one.
+street face ness:think > ness: I'm sure it was a doctor. But I can't prove it. [1938 - TODAY]
+street establish > nar: Ness had a suspect, a troubled doctor. He was never charged.
+street establish > nar: The killings stopped. The killer was never caught.
+street establish > nar: It was the one case Eliot Ness couldn't solve.
+street establish > nar: Who do you think the Torso Killer was?
