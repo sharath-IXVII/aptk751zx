@@ -1,0 +1,189 @@
+{
+ "key": "ripper_p04",
+ "yt": {
+  "title": "Dear Boss | Jack The Ripper (True Story) Part 4 #shorts",
+  "description": "Part 4 of 10: Jack The Ripper, Whitechapel, East London, autumn 1888. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "jack the ripper"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "constable": {
+   "name": "a police constable",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "cap": true
+  },
+  "inspector": {
+   "name": "a Scotland Yard inspector",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "lusk": {
+   "name": "George Lusk",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "woman": {
+   "name": "a Whitechapel woman",
+   "skin": "#d0a07c",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "friend": {
+   "name": "her friend",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "editor": {
+   "name": "a news agency clerk",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "landlord": {
+   "name": "a landlord's man",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "JACK THE RIPPER",
+    "years": "LONDON · 1888",
+    "crime": "NEVER CAUGHT",
+    "part": "PART 4 OF 10"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Annie Chapman was killed. Whitechapel was in panic."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "editor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "inspector",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "editor",
+    "text": "This letter came to our news agency. Written in red ink."
+   },
+   "title": "SEPTEMBER 1888"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "editor",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "editor",
+    "text": "'Dear Boss.' And it's signed... 'Jack the Ripper.'"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "inspector",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "inspector",
+    "text": "A hoax, probably. A journalist, maybe."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Real or fake, the name spread around the world."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK THE KILLER REALLY WROTE IT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think the killer really wrote it? Part 5 is next."
+   }
+  }
+ ]
+}

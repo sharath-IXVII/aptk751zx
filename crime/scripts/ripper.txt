@@ -1,0 +1,92 @@
+CAST constable | a police constable | m | police | black
+CAST inspector | a Scotland Yard inspector | m | detective | grey | beard
+CAST lusk | George Lusk | m | rich | brown | beard
+CAST woman | a Whitechapel woman | f | plain | red
+CAST friend | her friend | f | plain | brown
+CAST editor | a news agency clerk | m | plain | blonde
+CAST landlord | a landlord's man | m | worker | grey
+# TITLE 1: Whitechapel
+PART
+street establish > nar: Whitechapel, London, 1888. Crowded, poor, and dark. [WHITECHAPEL · 1888]
+street two woman:think,friend > friend: No money for a bed tonight again, love?
+street two woman,friend > woman: I'll find a few pennies. I always do.
+street two constable,woman > constable: Mind yourselves, ladies. These streets aren't safe at night.
+street establish > nar: Gas lamps. Fog. Narrow alleys. Thousands of people living in poverty.
+street establish > nar: And somewhere among them, a killer was about to begin.
+street establish > nar: Would you walk these streets at night?
+# TITLE 2: Buck's Row
+PART
+street establish > nar: Previously: Whitechapel in 1888. Poor, crowded and dark.
+street walk constable > nar: 31 August 1888. A little before four in the morning. [31 AUGUST 1888]
+street face constable:scared > constable: There's a woman lying in the street! Fetch help!
+street two inspector:think,constable > inspector: Her name was Mary Ann Nichols. Polly, her friends called her.
+street face inspector > inspector: No one heard a thing. No one saw a thing.
+street establish > nar: It was the first of the murders most linked to the Whitechapel killer.
+street establish > nar: Could this be the only one?
+# TITLE 3: Hanbury Street
+PART
+street establish > nar: Previously: Mary Ann Nichols was found dead in Buck's Row.
+street walk constable > nar: 8 September 1888. Just one week later. [8 SEPTEMBER 1888]
+street two inspector:scared,constable > constable: A backyard on Hanbury Street. Another woman. Annie Chapman.
+street two woman:scared,friend:scared > friend: Two in one week? He's out there among us!
+street face inspector:think > inspector: The same way. The same kind of victim. It's the same man.
+street establish > nar: Panic spread through the East End.
+street establish > nar: Who do you think could do this?
+# TITLE 4: Dear Boss
+PART
+street establish > nar: Previously: Annie Chapman was killed. Whitechapel was in panic.
+home two editor:scared,inspector > editor: This letter came to our news agency. Written in red ink. [SEPTEMBER 1888]
+home face editor > editor: 'Dear Boss.' And it's signed... 'Jack the Ripper.'
+home face inspector:think > inspector: A hoax, probably. A journalist, maybe.
+home establish > nar: Real or fake, the name spread around the world.
+home establish > nar: Do you think the killer really wrote it?
+# TITLE 5: The Double Event
+PART
+home establish > nar: Previously: a letter signed 'Jack the Ripper' made the killer famous.
+street establish > nar: 30 September 1888. Just after one in the morning. [30 SEPTEMBER 1888]
+street two constable:scared,inspector > constable: Elizabeth Stride. Berner Street. Still warm.
+street establish > nar: Less than an hour later, in Mitre Square, Catherine Eddowes was found.
+street two inspector:scared,constable > inspector: Two in one night. He's mocking us.
+street establish > nar: The newspapers called it the double event.
+street establish > nar: How could he get away twice in one night?
+# TITLE 6: The Writing on the Wall
+PART
+street establish > nar: Previously: two women were killed on the same night.
+street two constable:point,inspector > constable: A piece of her apron. In a doorway on Goulston Street. [30 SEPTEMBER 1888]
+street face constable:think > constable: And chalk writing on the wall above it.
+street two inspector:cross,constable > inspector: Wipe it off before dawn. Before it causes a riot.
+street face constable:scared > constable: Shouldn't we photograph it first, sir?
+street establish > nar: The writing was wiped away. A clue, lost forever.
+street establish > nar: Was that the right decision?
+# TITLE 7: From Hell
+PART
+street establish > nar: Previously: a possible clue on a wall was wiped away before it could be photographed.
+home two lusk,editor > lusk: I'm George Lusk. My Vigilance Committee patrols the streets. [OCTOBER 1888]
+home face lusk:scared > lusk: And now this parcel came. With a letter.
+home face lusk:scared > lusk: It begins 'From Hell'.
+home establish > nar: The letter was misspelled, and terrifying. Some think it was the only real one.
+home establish > nar: Do you think it came from the killer?
+# TITLE 8: Miller's Court
+PART
+home establish > nar: Previously: George Lusk received a parcel and a letter headed 'From Hell'.
+street two landlord,constable > landlord: I went to collect Mary Kelly's rent. She didn't answer. [9 NOVEMBER 1888]
+street face landlord:scared > landlord: I looked through the broken window...
+street face constable:scared > constable: Don't let anyone in.
+street establish > nar: Mary Jane Kelly was the last of the five murders most linked to the Ripper.
+street establish > nar: Would he strike again?
+# TITLE 9: Hundreds of Suspects
+PART
+street establish > nar: Previously: Mary Jane Kelly was killed in her room in Miller's Court.
+home two inspector:think,constable > inspector: Doctors. Butchers. Sailors. Local men. Even a prince, according to rumour. [1888 - 1889]
+home face inspector:cross > inspector: Hundreds of people questioned. Hundreds of letters.
+home two constable:think,inspector > constable: And not one real witness who saw his face.
+home establish > nar: No one was ever charged with the murders.
+home establish > nar: Who would be your suspect?
+# TITLE 10: The Mystery
+PART
+home establish > nar: Previously: police questioned hundreds of suspects, but charged no one.
+street establish > nar: After November 1888, the murders most linked to him stopped.
+street face inspector > inspector: Did he die? Was he locked away? Did he leave England?
+street establish > nar: More than a hundred and thirty years later, people still argue about his identity.
+street establish > nar: Jack the Ripper was never caught.
+street establish > nar: Who do you think Jack the Ripper was?

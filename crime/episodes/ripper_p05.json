@@ -1,0 +1,197 @@
+{
+ "key": "ripper_p05",
+ "yt": {
+  "title": "The Double Event | Jack The Ripper (True Story) Part 5 #shorts",
+  "description": "Part 5 of 10: Jack The Ripper, Whitechapel, East London, autumn 1888. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "jack the ripper"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "constable": {
+   "name": "a police constable",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "cap": true
+  },
+  "inspector": {
+   "name": "a Scotland Yard inspector",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "lusk": {
+   "name": "George Lusk",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "woman": {
+   "name": "a Whitechapel woman",
+   "skin": "#d0a07c",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "friend": {
+   "name": "her friend",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "editor": {
+   "name": "a news agency clerk",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "landlord": {
+   "name": "a landlord's man",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "JACK THE RIPPER",
+    "years": "LONDON · 1888",
+    "crime": "NEVER CAUGHT",
+    "part": "PART 5 OF 10"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a letter signed 'Jack the Ripper' made the killer famous."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "30 September 1888. Just after one in the morning."
+   },
+   "title": "30 SEPTEMBER 1888"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "constable",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "inspector",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "constable",
+    "text": "Elizabeth Stride. Berner Street. Still warm."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Less than an hour later, in Mitre Square, Catherine Eddowes was found."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "inspector",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "constable",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "inspector",
+    "text": "Two in one night. He's mocking us."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The newspapers called it the double event."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW COULD HE GET AWAY TWICE IN ONE NIGHT?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How could he get away twice in one night? Part 6 is next."
+   }
+  }
+ ]
+}
