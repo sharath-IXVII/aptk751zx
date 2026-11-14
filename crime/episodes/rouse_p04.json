@@ -1,0 +1,212 @@
+{
+ "key": "rouse_p04",
+ "yt": {
+  "title": "The Blazing Car | The Blazing Car Murder (True Story) Part 4 #shorts",
+  "description": "Part 4 of 7: The Blazing Car Murder, Northamptonshire, England, November 1930. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the blazing car murder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "rouse": {
+   "name": "Alfred Rouse",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lily": {
+   "name": "Lily Rouse",
+   "skin": "#d0a07c",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "girl": {
+   "name": "one of his girlfriends",
+   "skin": "#a86a42",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "stranger": {
+   "name": "a stranger",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "youth": {
+   "name": "a young man",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "youth2": {
+   "name": "his cousin",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BLAZING CAR MURDER",
+    "years": "NORTHAMPTON · 1930",
+    "crime": "THE MAN WHO FAKED HIS DEATH",
+    "part": "PART 4 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Rouse picked up a stranger on Bonfire Night."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Late at night, on a quiet country lane near Hardingstone."
+   },
+   "title": "HARDINGSTONE · NIGHT"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Rouse's car burst into flames with the stranger inside."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "youth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "youth2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "youth",
+    "text": "Look! A fire, up the lane!"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "youth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "rouse",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "youth",
+    "text": "Is that your car, mister?"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "rouse",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "rouse",
+    "text": "It looks as if someone is having a bonfire up there."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY WOULD HE WALK AWAY?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why would he walk away? Part 5 is next."
+   }
+  }
+ ]
+}

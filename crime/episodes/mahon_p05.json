@@ -1,0 +1,188 @@
+{
+ "key": "mahon_p05",
+ "yt": {
+  "title": "Spilsbury | The Crumbles Murder (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Crumbles Murder, Eastbourne and London, 1924. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the crumbles murder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mahon": {
+   "name": "Patrick Mahon",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "emily": {
+   "name": "Emily Kaye",
+   "skin": "#8a5232",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "jessie": {
+   "name": "Jessie Mahon",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "friend": {
+   "name": "a former policeman",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "coat": true,
+   "hat": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "spilsbury": {
+   "name": "Bernard Spilsbury",
+   "skin": "#a86a42",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE CRUMBLES MURDER",
+    "years": "EASTBOURNE · 1924",
+    "crime": "CAUGHT BY A LEFT-LUGGAGE TICKET",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: police caught Mahon collecting a bag of blood-stained clothes."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mahon",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mahon",
+    "text": "She fell and hit her head. It was an accident."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "spilsbury",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "spilsbury",
+    "text": "The cottage. Every room. Every trace."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "spilsbury",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "spilsbury",
+    "text": "These remains are a woman's. And she was expecting a child."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Pathologist Bernard Spilsbury pieced together what happened."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE JURY BELIEVE 'AN ACCIDENT'?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the jury believe 'an accident'? Part 6 is next."
+   }
+  }
+ ]
+}

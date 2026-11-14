@@ -1,0 +1,54 @@
+CAST mahon | Patrick Mahon | m | rich | black
+CAST emily | Emily Kaye | f | plain | blonde
+CAST jessie | Jessie Mahon | f | plain | brown
+CAST friend | a former policeman | m | detective | grey
+CAST police | a police officer | m | police | black
+CAST spilsbury | Bernard Spilsbury | m | doctor | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Secret
+PART
+street establish > nar: London, 1924. Patrick Mahon. Handsome, charming, and married. [LONDON · 1924]
+home two jessie:smile,mahon:smile > jessie: Off to work, dear?
+home face mahon:smile > mahon: Busy day, Jessie.
+street two emily:smile,mahon:smile > emily: Pat, I'm going to have a baby. Our baby.
+street face mahon:scared > mahon: A baby?
+street establish > nar: What do you think Mahon will do?
+# TITLE 2: The Crumbles
+PART
+street establish > nar: Previously: Patrick Mahon's lover, Emily Kaye, told him she was expecting his child.
+home two emily:smile,mahon > mahon: A cottage by the sea, Emily. Near Eastbourne. Just us. [THE CRUMBLES · APRIL 1924]
+home face emily:smile > emily: A love experiment, you called it. To see if we can live together.
+shore establish > nar: The cottage stood on a lonely stretch of beach called the Crumbles.
+shore establish > nar: Emily never left it.
+shore establish > nar: What do you think happened in that cottage?
+# TITLE 3: Back to Normal
+PART
+shore establish > nar: Previously: Emily Kaye went to a seaside cottage with Mahon, and never left.
+home two jessie,mahon:smile > mahon: Home again, darling. Busy week. [MAY 1924]
+home face jessie:think > jessie: You've been away a lot, Pat.
+home establish > nar: Mahon carried on as if nothing had happened.
+home establish > nar: Can anyone hide something this big?
+# TITLE 4: The Ticket
+PART
+home establish > nar: Previously: Mahon returned home as if nothing had happened.
+home face jessie:think > jessie: A left-luggage ticket in his suit. Waterloo Station. What is he hiding?
+home two jessie,friend > jessie: You used to be a policeman. Will you find out what's in that bag?
+home two friend:scared,police > friend: A knife. And blood-stained clothes. You'd better wait for whoever collects it.
+home two police:point,mahon:cuffed > police: Patrick Mahon. We'd like a word about this bag.
+home establish > nar: What would he say?
+# TITLE 5: Spilsbury
+PART
+home establish > nar: Previously: police caught Mahon collecting a bag of blood-stained clothes.
+home face mahon > mahon: She fell and hit her head. It was an accident.
+home two spilsbury,police > spilsbury: The cottage. Every room. Every trace.
+home face spilsbury:think > spilsbury: These remains are a woman's. And she was expecting a child.
+home establish > nar: Pathologist Bernard Spilsbury pieced together what happened.
+home establish > nar: Will the jury believe 'an accident'?
+# TITLE 6: Lightning
+PART
+home establish > nar: Previously: Spilsbury examined the cottage and found Emily's remains.
+court court judge,mahon > judge: Patrick Mahon, guilty of murder. [LEWES · JULY 1924]
+court establish > nar: At his trial, a thunderstorm broke out. Mahon turned pale as lightning lit the court.
+prison establish > nar: Patrick Mahon was hanged in September 1924.
+prison establish > nar: The case led police to create special 'murder bags' for collecting evidence.
+prison establish > nar: Would Mahon have been caught without his wife's curiosity?

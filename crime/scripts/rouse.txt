@@ -1,0 +1,65 @@
+CAST rouse | Alfred Rouse | m | rich | brown
+CAST lily | Lily Rouse | f | plain | brown
+CAST girl | one of his girlfriends | f | plain | blonde
+CAST stranger | a stranger | m | worker | black
+CAST youth | a young man | m | plain | blonde
+CAST youth2 | his cousin | m | plain | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: Too Many Promises
+PART
+street establish > nar: England, 1930. Alfred Rouse, travelling salesman. Charming. And in deep trouble. [ENGLAND · 1930]
+home two lily:think,rouse > lily: Another trip, Alfred? You're never home.
+street two girl:smile,rouse:smile > girl: When are we getting married, Alfred? You promised.
+street face rouse:think > rouse: Soon, my love. Very soon.
+street establish > nar: Debts. A wife. And several girlfriends, each promised marriage.
+street establish > nar: How do you think he'll escape his problems?
+# TITLE 2: The Plan
+PART
+street establish > nar: Previously: salesman Alfred Rouse had debts, a wife, and several girlfriends.
+home face rouse:think > rouse: If Alfred Rouse died... all my problems would die with him.
+home face rouse > rouse: A burned car. A body inside. Everyone thinks it's me.
+home face rouse:smile > rouse: And I start again. A new name. A new life.
+home establish > nar: There was just one problem. He needed a body.
+home establish > nar: Where do you think he planned to find one?
+# TITLE 3: A Lift
+PART
+home establish > nar: Previously: Rouse planned to fake his own death in a burning car.
+street two stranger:smile,rouse:smile > stranger: Heading north, mister? Could you give me a lift? [5 NOVEMBER 1930]
+street two stranger,rouse:smile > rouse: Hop in, friend. Plenty of room.
+street establish > nar: It was Bonfire Night. Fireworks lit the sky.
+street establish > nar: The stranger had no idea who he'd just met.
+street establish > nar: What do you think happened on that road?
+# TITLE 4: The Blazing Car
+PART
+street establish > nar: Previously: Rouse picked up a stranger on Bonfire Night.
+forest establish > nar: Late at night, on a quiet country lane near Hardingstone. [HARDINGSTONE · NIGHT]
+forest establish > nar: Rouse's car burst into flames with the stranger inside.
+forest two youth,youth2 > youth: Look! A fire, up the lane!
+forest two youth:think,rouse > youth: Is that your car, mister?
+forest face rouse > rouse: It looks as if someone is having a bonfire up there.
+forest establish > nar: Why would he walk away?
+# TITLE 5: Changing Stories
+PART
+forest establish > nar: Previously: Rouse walked away from his burning car, past two young men.
+street two police,rouse:scared > rouse: I stopped to go to the toilet. When I came back, the car was on fire. [NOVEMBER 1930]
+street two police:think,rouse > rouse: Or... I asked him to fill the tank. He was smoking.
+street face police:think > police: That's two different stories, Mr Rouse.
+street establish > nar: The two young men had seen his face. The newspapers carried his name.
+street establish > nar: Can he talk his way out?
+# TITLE 6: The Loosened Pipe
+PART
+street establish > nar: Previously: Rouse kept changing his story.
+home two police,judge > police: Experts say the fuel pipe was loosened. On purpose. [NORTHAMPTON · JANUARY 1931]
+court court judge,rouse > judge: Alfred Rouse, guilty of murder.
+prison cell rouse > nar: Before his hanging, Rouse confessed.
+prison establish > nar: He was hanged in March 1931.
+prison establish > nar: Should anyone ever be able to get away with this?
+# TITLE 7: The Unknown Man
+PART
+prison establish > nar: Previously: Rouse was hanged for the blazing car murder.
+forest establish > nar: But who was the man in the car? [1931 - TODAY]
+forest establish > nar: Rouse said he never asked his name.
+forest establish > nar: For almost a century, the victim was unknown. Families have searched for answers using DNA.
+forest establish > nar: He died nameless, because one man wanted a new life.
+forest establish > nar: Who do you think he was?
