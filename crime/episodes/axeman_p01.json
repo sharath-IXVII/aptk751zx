@@ -1,0 +1,178 @@
+{
+ "key": "axeman_p01",
+ "yt": {
+  "title": "The Door Panel | The Axeman Of New Orleans (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: The Axeman Of New Orleans, New Orleans, 1918-1919. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the axeman of new orleans"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "grocer": {
+   "name": "a grocer",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "wife": {
+   "name": "the grocer's wife",
+   "skin": "#a86a42",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "survivor": {
+   "name": "a survivor",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police detective",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "editor": {
+   "name": "a newspaper editor",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "musician": {
+   "name": "a jazz musician",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis"
+  },
+  "girl": {
+   "name": "a young woman",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE AXEMAN OF NEW ORLEANS",
+    "years": "NEW ORLEANS · 1918-19",
+    "crime": "PLAY JAZZ OR DIE",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "New Orleans, 1918. Jazz in the streets. And something in the dark."
+   },
+   "title": "NEW ORLEANS · 1918"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "grocer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "wife",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "wife",
+    "text": "Lock up the shop, dear. Time for bed."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "wife",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "grocer",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "grocer",
+    "text": "Every door locked. We're safe."
+   },
+   "bed": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "That night, someone chiselled out a panel in the back door. And came inside."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO DO YOU THINK WAS IN THE HOUSE?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who do you think was in the house? Part 2 is next."
+   }
+  }
+ ]
+}

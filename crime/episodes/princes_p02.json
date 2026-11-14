@@ -1,0 +1,188 @@
+{
+ "key": "princes_p02",
+ "yt": {
+  "title": "To the Tower | The Princes In The Tower (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: The Princes In The Tower, The Tower of London, 1483. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the princes in the tower"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edward": {
+   "name": "young King Edward V",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "richard": {
+   "name": "Prince Richard",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "uncle": {
+   "name": "Richard, Duke of Gloucester",
+   "skin": "#e6b48e",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "queen": {
+   "name": "Queen Elizabeth Woodville",
+   "skin": "#c99872",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a Tower guard",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "workman": {
+   "name": "a workman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE PRINCES IN THE TOWER",
+    "years": "LONDON · 1483",
+    "crime": "TWO BOYS VANISHED",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: twelve-year-old Edward became King, protected by his uncle Richard."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "uncle",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "edward",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "uncle",
+    "text": "You'll stay at the Tower of London until your coronation. Royal tradition."
+   },
+   "title": "LONDON · MAY 1483",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "edward",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edward",
+    "text": "The Tower? Is it safe?"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "uncle",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "uncle",
+    "text": "Very safe. No one goes in or out without my say."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In those days the Tower was a royal palace, as well as a fortress."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU FEEL SAFE THERE?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you feel safe there? Part 3 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+CAST grocer | a grocer | m | worker | black | beard
+CAST wife | the grocer's wife | f | plain | brown
+CAST survivor | a survivor | m | worker | grey
+CAST police | a police detective | m | detective | brown
+CAST editor | a newspaper editor | m | rich | grey
+CAST musician | a jazz musician | m | rich | black
+CAST girl | a young woman | f | rich | red
+# TITLE 1: The Door Panel
+PART
+street establish > nar: New Orleans, 1918. Jazz in the streets. And something in the dark. [NEW ORLEANS · 1918]
+home two grocer:smile,wife:smile > wife: Lock up the shop, dear. Time for bed.
+home bed wife:sleep,grocer > grocer: Every door locked. We're safe.
+home establish > nar: That night, someone chiselled out a panel in the back door. And came inside.
+home establish > nar: Who do you think was in the house?
+# TITLE 2: A Dark Figure
+PART
+home establish > nar: Previously: someone broke into a grocer's home at night through a door panel.
+home bed survivor:sick,police > survivor: A figure. Standing over the bed. That's all I saw. [1918]
+home two police:think,survivor > police: Did you see his face?
+home face survivor:scared > survivor: Only the dark. And the axe.
+home face police:think > police: Another grocer. Another door panel. It's the same man.
+home establish > nar: Some victims survived. None could describe him.
+home establish > nar: How do you catch someone nobody has seen?
+# TITLE 3: Nobody Sleeps
+PART
+home establish > nar: Previously: more people were attacked at night. Survivors saw only a dark figure.
+street two grocer:scared,police > grocer: I sit up all night with my gun. I can't sleep. [1919]
+street two wife:scared,police > wife: Every noise, every creak. Is that him?
+street face police:cross > police: We have no suspect. No pattern but the door panels.
+street establish > nar: The whole city was terrified.
+street establish > nar: Would you be able to sleep?
+# TITLE 4: A Letter From Hell
+PART
+street establish > nar: Previously: New Orleans was terrified of the Axeman.
+home two editor:scared,police > editor: A letter came for the newspaper. Signed 'from Hell'. [MARCH 1919]
+home face editor:scared > editor: He says he is not a human being, but a spirit.
+home two police:think,editor > police: Probably a hoax. But print it. We'll see who reacts.
+home establish > nar: The letter appeared in the newspaper for the whole city to read.
+home establish > nar: What do you think the letter said next?
+# TITLE 5: Play Jazz or Die
+PART
+home establish > nar: Previously: a letter claiming to be from the Axeman was printed in the newspaper.
+home face editor > editor: Next Tuesday night, I will pass through New Orleans.
+home face editor:scared > editor: I will spare any house where a jazz band is playing.
+street two musician:smile,girl:scared > girl: Do you think it's real?
+street two musician:smile,girl > musician: Real or not, I'm playing all night!
+street establish > nar: Would you risk it, or would you play jazz?
+# TITLE 6: The Loudest Night
+PART
+street establish > nar: Previously: the letter said the Axeman would spare every house playing jazz.
+street two musician:smile,girl:smile > girl: Every house on the street has music! [19 MARCH 1919]
+street two grocer:smile,wife:smile > wife: Bands, pianos, records. Nobody's sleeping tonight!
+street face musician:smile > musician: Play it louder!
+street establish > nar: The whole city played jazz until dawn.
+street establish > nar: That night, no one was attacked.
+street establish > nar: Was the letter real?
+# TITLE 7: The Man No One Found
+PART
+street establish > nar: Previously: on the night of the letter, the city played jazz and no one was attacked.
+street two police:think,editor > police: More attacks after that night. Then, late in 1919, they just stopped.
+street face police > police: No arrest. No name.
+street establish > nar: Many theories. Many suspects. None proven.
+street establish > nar: The Axeman of New Orleans was never identified.
+street establish > nar: Who do you think the Axeman was?

@@ -1,0 +1,56 @@
+CAST edward | young King Edward V | m | royal | blonde
+CAST richard | Prince Richard | m | royal | blonde
+CAST uncle | Richard, Duke of Gloucester | m | royal | black
+CAST queen | Queen Elizabeth Woodville | f | royal | blonde
+CAST guard | a Tower guard | m | soldier | brown
+CAST workman | a workman | m | worker | grey
+# TITLE 1: The Boy King
+PART
+street establish > nar: April 1483. King Edward the Fourth of England is dead. [ENGLAND · APRIL 1483]
+home two queen:cry,edward > queen: Your father is gone. Now you are King, my son.
+home face edward:scared > edward: I'm only twelve, Mother.
+home two uncle:smile,edward > uncle: Don't be afraid, nephew. Your uncle Richard will protect you.
+home establish > nar: The young king's uncle was named Lord Protector.
+home establish > nar: Should the boy trust his uncle?
+# TITLE 2: To the Tower
+PART
+home establish > nar: Previously: twelve-year-old Edward became King, protected by his uncle Richard.
+street two uncle:smile,edward > uncle: You'll stay at the Tower of London until your coronation. Royal tradition. [LONDON · MAY 1483]
+street face edward > edward: The Tower? Is it safe?
+street two guard,uncle > uncle: Very safe. No one goes in or out without my say.
+prison establish > nar: In those days the Tower was a royal palace, as well as a fortress.
+prison establish > nar: Would you feel safe there?
+# TITLE 3: Two Brothers
+PART
+prison establish > nar: Previously: young King Edward was taken to the Tower of London.
+home two queen:cry,uncle > uncle: Send me your younger son. His brother is lonely. [JUNE 1483]
+home face queen:scared > queen: Richard is only nine.
+home two richard:smile,edward:smile > richard: Edward! They let me come and stay with you!
+home two richard:smile,edward > edward: Now we can play in the gardens together.
+home establish > nar: Both princes were now in the Tower.
+home establish > nar: Why do you think the uncle wanted both boys there?
+# TITLE 4: King Richard III
+PART
+home establish > nar: Previously: both princes were living in the Tower of London.
+court establish > nar: Parliament declared that the boys' parents' marriage was not valid. So the boys could not inherit the crown. [JUNE 1483]
+court face uncle:smile > uncle: Then the crown passes to me.
+court establish > nar: In July 1483, the uncle was crowned King Richard the Third. [JULY 1483]
+prison face edward:scared > edward: Then what happens to us?
+prison establish > nar: What do you think happened to the princes?
+# TITLE 5: Seen Less and Less
+PART
+prison establish > nar: Previously: the princes' uncle was crowned King Richard the Third.
+prison establish > nar: At first the boys were seen playing in the Tower gardens. [SUMMER 1483]
+prison face guard:think > guard: They've been moved to the inner rooms. Fewer people see them now.
+prison establish > nar: Then they were seen less often.
+prison establish > nar: And then, never again.
+prison establish > nar: Where did the princes go?
+# TITLE 6: The Bones Under the Stairs
+PART
+prison establish > nar: Previously: the princes stopped being seen, and were never seen again.
+prison two workman:scared,guard > workman: Sir! Under these old stairs! A wooden box! [1674]
+prison face workman:scared > workman: The bones of two children.
+prison establish > nar: Nearly two hundred years later, workmen found the bones of two children in the Tower.
+prison establish > nar: Many believe King Richard had them killed. Others suspect someone else.
+prison establish > nar: More than 500 years later, it's still a mystery.
+prison establish > nar: Who do you think was responsible?

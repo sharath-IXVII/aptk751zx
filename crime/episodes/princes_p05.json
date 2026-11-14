@@ -1,0 +1,154 @@
+{
+ "key": "princes_p05",
+ "yt": {
+  "title": "Seen Less and Less | The Princes In The Tower (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Princes In The Tower, The Tower of London, 1483. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the princes in the tower"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edward": {
+   "name": "young King Edward V",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "richard": {
+   "name": "Prince Richard",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "uncle": {
+   "name": "Richard, Duke of Gloucester",
+   "skin": "#e6b48e",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "queen": {
+   "name": "Queen Elizabeth Woodville",
+   "skin": "#c99872",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a Tower guard",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "workman": {
+   "name": "a workman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE PRINCES IN THE TOWER",
+    "years": "LONDON · 1483",
+    "crime": "TWO BOYS VANISHED",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the princes' uncle was crowned King Richard the Third."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "At first the boys were seen playing in the Tower gardens."
+   },
+   "title": "SUMMER 1483",
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "guard",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "They've been moved to the inner rooms. Fewer people see them now."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Then they were seen less often."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "And then, never again."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE DID THE PRINCES GO?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where did the princes go? Part 6 is next."
+   }
+  }
+ ]
+}

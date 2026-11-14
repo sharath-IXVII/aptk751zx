@@ -1,0 +1,206 @@
+{
+ "key": "princes_p03",
+ "yt": {
+  "title": "Two Brothers | The Princes In The Tower (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: The Princes In The Tower, The Tower of London, 1483. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the princes in the tower"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edward": {
+   "name": "young King Edward V",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "richard": {
+   "name": "Prince Richard",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "uncle": {
+   "name": "Richard, Duke of Gloucester",
+   "skin": "#e6b48e",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "queen": {
+   "name": "Queen Elizabeth Woodville",
+   "skin": "#c99872",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a Tower guard",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "workman": {
+   "name": "a workman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE PRINCES IN THE TOWER",
+    "years": "LONDON · 1483",
+    "crime": "TWO BOYS VANISHED",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: young King Edward was taken to the Tower of London."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "queen",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "uncle",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "uncle",
+    "text": "Send me your younger son. His brother is lonely."
+   },
+   "title": "JUNE 1483"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "queen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "queen",
+    "text": "Richard is only nine."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "richard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "edward",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "richard",
+    "text": "Edward! They let me come and stay with you!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "richard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "edward",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edward",
+    "text": "Now we can play in the gardens together."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Both princes were now in the Tower."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DO YOU THINK THE UNCLE WANTED BOTH BOYS THERE?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why do you think the uncle wanted both boys there? Part 4 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "key": "princes_p04",
+ "yt": {
+  "title": "King Richard III | The Princes In The Tower (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Princes In The Tower, The Tower of London, 1483. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the princes in the tower"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edward": {
+   "name": "young King Edward V",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "richard": {
+   "name": "Prince Richard",
+   "skin": "#8a5232",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "uncle": {
+   "name": "Richard, Duke of Gloucester",
+   "skin": "#e6b48e",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "queen": {
+   "name": "Queen Elizabeth Woodville",
+   "skin": "#c99872",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a Tower guard",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "workman": {
+   "name": "a workman",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE PRINCES IN THE TOWER",
+    "years": "LONDON · 1483",
+    "crime": "TWO BOYS VANISHED",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: both princes were living in the Tower of London."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Parliament declared that the boys' parents' marriage was not valid. So the boys could not inherit the crown."
+   },
+   "title": "JUNE 1483",
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "uncle",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "uncle",
+    "text": "Then the crown passes to me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In July 1483, the uncle was crowned King Richard the Third."
+   },
+   "title": "JULY 1483",
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "edward",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "edward",
+    "text": "Then what happens to us?"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HAPPENED TO THE PRINCES?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think happened to the princes? Part 5 is next."
+   }
+  }
+ ]
+}
