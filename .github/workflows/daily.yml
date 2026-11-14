@@ -37,7 +37,7 @@ jobs:
       - name: Anything to do?
         id: check
         env:
-          VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
+          VIDEOS_PER_DAY: "0"   # NotebookLM stopped on ENT: story Shorts only
           YT_PUBLISH_TIMES: ${{ vars.YT_PUBLISH_TIMES }}
           BUFFER_DAYS: ${{ vars.BUFFER_DAYS }}
         run: python3 pipeline/plan.py >> "$GITHUB_OUTPUT" && cat "$GITHUB_OUTPUT"
@@ -83,7 +83,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}   # temporary public link for the Reels
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
           YT_PUBLISH_TIMES: ${{ vars.YT_PUBLISH_TIMES }}
-          VIDEOS_PER_DAY: ${{ vars.VIDEOS_PER_DAY }}
+          VIDEOS_PER_DAY: "0"   # NotebookLM stopped on ENT: story Shorts only
           BUFFER_DAYS: ${{ vars.BUFFER_DAYS }}
           YT_CATEGORY: ${{ vars.YT_CATEGORY }}
           WATERMARK_BOX: ${{ vars.WATERMARK_BOX }}
