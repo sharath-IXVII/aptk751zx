@@ -1,0 +1,234 @@
+{
+ "key": "redbarn_p02",
+ "yt": {
+  "title": "Meet Me at the Red Barn | The Red Barn Murder (True Story) Part 2 #shorts",
+  "description": "Part 2 of 7: The Red Barn Murder, Polstead, Suffolk, England, 1827-1828. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the red barn murder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "maria": {
+   "name": "Maria Marten",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "corder": {
+   "name": "William Corder",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "ann": {
+   "name": "Ann Marten",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "thomas": {
+   "name": "Thomas Marten",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "police": {
+   "name": "a London police officer",
+   "skin": "#c99872",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "wife": {
+   "name": "Corder's new wife",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE RED BARN MURDER",
+    "years": "SUFFOLK · 1827",
+    "crime": "SOLVED BY A DREAM?",
+    "part": "PART 2 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Maria Marten fell in love with William Corder, a rich farmer's son."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "corder",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "corder",
+    "text": "Meet me at the Red Barn. We'll run away to Ipswich and get married."
+   },
+   "title": "MAY 1827"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "corder",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "maria",
+    "text": "Why the barn?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "corder",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "corder",
+    "text": "Dress as a man, so no one sees you leave. I'll bring your clothes."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "ann",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "maria",
+    "text": "I'm going, Mother. I'm going to be a bride!"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "maria",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Maria walked across the fields toward the Red Barn."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK WAS WAITING AT THE BARN?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think was waiting at the barn? Part 3 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+CAST constance | Constance Kent | f | rich | brown
+CAST william | William Kent | m | rich | brown
+CAST samuel | Samuel Kent | m | rich | grey | beard
+CAST mary | Mary Kent | f | rich | blonde
+CAST gough | Elizabeth Gough | f | nurse | red
+CAST whicher | Inspector Jonathan Whicher | m | detective | grey | beard
+CAST police | the local police officer | m | police | black
+CAST priest | a clergyman | m | judge | white
+# TITLE 1: Behind the High Walls
+PART
+home establish > nar: Road Hill House. A grand house behind high walls. [WILTSHIRE · 1860]
+home two constance:cross,william > constance: Father loves the new children. Not us, William.
+home two william:think,constance > william: Since he married the governess, it's like we don't exist.
+home two samuel:smile,mary:smile > mary: Little Saville is the sweetest boy in the world.
+home face constance > constance: Everyone adores Saville.
+home establish > nar: Constance Kent was sixteen. She felt like a stranger in her own home.
+home establish > nar: Can jealousy turn into something terrible?
+# TITLE 2: The Empty Cot
+PART
+home establish > nar: Previously: Constance Kent felt unloved since her father remarried.
+home bed gough:sleep,mary > nar: 29 June 1860. The nursemaid Elizabeth Gough wakes at dawn. [29 JUNE 1860]
+home two gough:scared,mary > gough: Ma'am, is Saville with you? His cot is empty!
+home face mary:scared > mary: With me? No! Where is my baby?
+home two samuel:scared,police > samuel: My son is missing! Search everywhere!
+home establish > nar: Three-year-old Saville Kent had vanished in the night.
+home establish > nar: Where could a little boy go in the night?
+# TITLE 3: Locked From Inside
+PART
+home establish > nar: Previously: three-year-old Saville vanished from his cot in the night.
+forest two police:scared,samuel > police: Sir... we found him. In the outdoor privy.
+home face mary:cry > mary: My baby. My sweet baby.
+home two police:think,samuel > police: Every door and window was locked from the inside last night.
+home face police:scared > police: Which means whoever did this is still in this house.
+home establish > nar: Everyone in the house was now a suspect.
+home establish > nar: Who would you suspect?
+# TITLE 4: The Detective
+PART
+home establish > nar: Previously: Saville's body was found. The house had been locked from the inside.
+home two whicher,samuel > whicher: Inspector Jonathan Whicher. Scotland Yard. [JULY 1860]
+home face whicher:think > whicher: The local police have failed. Let's start again.
+home two whicher:think,gough > whicher: Tell me about the laundry, miss. Is anything missing?
+home face gough:think > gough: One of Miss Constance's nightdresses. It never came back.
+home face whicher > whicher: A missing nightdress.
+home establish > nar: Why would a nightdress go missing?
+# TITLE 5: The Accusation
+PART
+home establish > nar: Previously: Inspector Whicher learned that one of Constance's nightdresses was missing.
+home two whicher:point,constance > whicher: Constance Kent, I believe you killed your brother.
+home face constance > constance: I am innocent.
+street two police:cross,whicher > police: You accused a gentleman's daughter? Over a nightdress?
+street establish > nar: The public was outraged. The court released Constance.
+street face whicher > whicher: I know I'm right.
+street establish > nar: Whicher went home to London in disgrace. His career was ruined.
+street establish > nar: Was Whicher right?
+# TITLE 6: Five Years Later
+PART
+street establish > nar: Previously: Whicher accused Constance, but she was released and he was disgraced.
+home two constance,priest > constance: Father, I need to confess something. [1865]
+home face constance > constance: I did it. I killed Saville. I did it alone.
+home face priest:scared > priest: Then you must tell the court.
+court establish > nar: Constance was sentenced to death, but it was changed to life in prison.
+court establish > nar: Whicher had been right all along.
+court establish > nar: Why do you think she confessed after five years?
+# TITLE 7: The Nurse in Australia
+PART
+court establish > nar: Previously: Constance Kent confessed to killing her brother.
+prison cell constance > nar: She spent twenty years in prison. [1865 - 1885]
+prison face constance > constance: When I'm free, I'll help people. I'll heal people.
+street establish > nar: She moved to Australia under a new name and became a nurse.
+street establish > nar: She died in 1944, aged one hundred.
+street establish > nar: Can someone who did something terrible truly change?

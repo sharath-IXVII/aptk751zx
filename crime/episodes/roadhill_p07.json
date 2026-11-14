@@ -1,0 +1,185 @@
+{
+ "key": "roadhill_p07",
+ "yt": {
+  "title": "The Nurse in Australia | Road Hill House (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: Road Hill House, Road, Wiltshire, England, 1860-1865. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "road hill house"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "constance": {
+   "name": "Constance Kent",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "william": {
+   "name": "William Kent",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "samuel": {
+   "name": "Samuel Kent",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "mary": {
+   "name": "Mary Kent",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "gough": {
+   "name": "Elizabeth Gough",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true,
+   "nurse": true
+  },
+  "whicher": {
+   "name": "Inspector Jonathan Whicher",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "police": {
+   "name": "the local police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "priest": {
+   "name": "a clergyman",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ROAD HILL HOUSE",
+    "years": "WILTSHIRE · 1860",
+    "crime": "THE FIRST DETECTIVE",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Constance Kent confessed to killing her brother."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "constance",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "She spent twenty years in prison."
+   },
+   "title": "1865 - 1885",
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "constance",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "constance",
+    "text": "When I'm free, I'll help people. I'll heal people."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She moved to Australia under a new name and became a nurse."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She died in 1944, aged one hundred."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN SOMEONE WHO DID SOMETHING TERRIBLE TRULY CHANGE?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can someone who did something terrible truly change?"
+   }
+  }
+ ]
+}

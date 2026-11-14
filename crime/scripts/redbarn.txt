@@ -1,0 +1,65 @@
+CAST maria | Maria Marten | f | plain | brown
+CAST corder | William Corder | m | rich | blonde
+CAST ann | Ann Marten | f | plain | grey
+CAST thomas | Thomas Marten | m | worker | white | beard
+CAST police | a London police officer | m | police | black
+CAST wife | Corder's new wife | f | rich | blonde
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Mole-Catcher's Daughter
+PART
+forest establish > nar: Polstead, a quiet English village. 1827. [POLSTEAD · SUFFOLK · 1827]
+home two maria:smile,corder:smile > corder: Maria Marten. The prettiest girl in Polstead.
+home two maria:smile,corder > maria: And you're the farmer's son, William Corder. Everyone's warned me about you.
+home two ann:think,thomas > ann: That Corder boy is no good for her, Thomas.
+home face maria:smile > maria: He loves me, Mother. He'll marry me. You'll see.
+home establish > nar: Would you trust William Corder?
+# TITLE 2: Meet Me at the Red Barn
+PART
+home establish > nar: Previously: Maria Marten fell in love with William Corder, a rich farmer's son.
+home two maria,corder:smile > corder: Meet me at the Red Barn. We'll run away to Ipswich and get married. [MAY 1827]
+home two maria:think,corder > maria: Why the barn?
+home two maria,corder:point > corder: Dress as a man, so no one sees you leave. I'll bring your clothes.
+home two maria:smile,ann > maria: I'm going, Mother. I'm going to be a bride!
+forest walk maria > nar: Maria walked across the fields toward the Red Barn.
+forest establish > nar: What do you think was waiting at the barn?
+# TITLE 3: The Letters
+PART
+forest establish > nar: Previously: Maria left in disguise to meet William at the Red Barn.
+home two ann:smile,thomas > ann: A letter from William! They're married and living near Ipswich. [SUMMER 1827]
+home two ann:think,thomas > thomas: Then why hasn't Maria written herself?
+home face ann:think > ann: He says her hand is hurt. She can't write.
+home establish > nar: Letter after letter came from William. Not a single one from Maria.
+home establish > nar: Would you believe these letters?
+# TITLE 4: The Dreams
+PART
+home establish > nar: Previously: William wrote that he and Maria were happily married. Maria never wrote.
+home bed ann:sleep,thomas > ann: Thomas... wake up. I had the dream again. [MARCH 1828]
+home two ann:scared,thomas > ann: Maria. In the Red Barn. Buried under the floor.
+home two ann:cry,thomas:think > ann: Three nights now. The same dream.
+home face thomas > thomas: Then I'll go and dig.
+home establish > nar: Was it a dream? Or did Ann know more than she said?
+# TITLE 5: The Red Barn
+PART
+home establish > nar: Previously: Maria's stepmother dreamed that Maria was buried in the Red Barn.
+forest walk thomas > nar: April 1828. Thomas Marten walks to the Red Barn with a spade. [19 APRIL 1828]
+forest face thomas > thomas: There. The ground is different here.
+forest establish > nar: Under the floor of the barn, he found Maria's body.
+forest face thomas:cry > thomas: My girl. My poor girl.
+forest establish > nar: Where do you think William Corder was?
+# TITLE 6: The Newspaper Advert
+PART
+forest establish > nar: Previously: Maria's father found her body in the Red Barn.
+home two wife:smile,corder:smile > wife: I answered your newspaper advert for a wife. And here we are. [LONDON · 1828]
+home two wife,corder:smile > corder: A school for young ladies. A respectable life.
+home two police:point,corder:cuffed > police: William Corder? You're under arrest for the murder of Maria Marten.
+home face corder:scared > corder: I don't know any Maria Marten.
+home establish > nar: Will his lies save him?
+# TITLE 7: The Souvenirs
+PART
+home establish > nar: Previously: Corder was arrested in London, where he had a new wife.
+court court judge,corder > judge: William Corder, you are guilty. [BURY ST EDMUNDS · AUGUST 1828]
+court face corder > corder: I confess. But it was an accident.
+street establish > nar: He was hanged before a huge crowd.
+street establish > nar: The rope was sold by the inch. The barn was taken apart for souvenirs.
+street establish > nar: The story became plays and songs for a hundred years.
+street establish > nar: Do you believe a dream solved this murder?

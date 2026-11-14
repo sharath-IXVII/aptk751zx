@@ -1,0 +1,231 @@
+{
+ "key": "roadhill_p01",
+ "yt": {
+  "title": "Behind the High Walls | Road Hill House (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: Road Hill House, Road, Wiltshire, England, 1860-1865. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "road hill house"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "constance": {
+   "name": "Constance Kent",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "william": {
+   "name": "William Kent",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "samuel": {
+   "name": "Samuel Kent",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "mary": {
+   "name": "Mary Kent",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "gough": {
+   "name": "Elizabeth Gough",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true,
+   "nurse": true
+  },
+  "whicher": {
+   "name": "Inspector Jonathan Whicher",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "police": {
+   "name": "the local police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "priest": {
+   "name": "a clergyman",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ROAD HILL HOUSE",
+    "years": "WILTSHIRE · 1860",
+    "crime": "THE FIRST DETECTIVE",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Road Hill House. A grand house behind high walls."
+   },
+   "title": "WILTSHIRE · 1860"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "constance",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "william",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "constance",
+    "text": "Father loves the new children. Not us, William."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "william",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "constance",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "william",
+    "text": "Since he married the governess, it's like we don't exist."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "samuel",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "Little Saville is the sweetest boy in the world."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "constance",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "constance",
+    "text": "Everyone adores Saville."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Constance Kent was sixteen. She felt like a stranger in her own home."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN JEALOUSY TURN INTO SOMETHING TERRIBLE?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can jealousy turn into something terrible? Part 2 is next."
+   }
+  }
+ ]
+}

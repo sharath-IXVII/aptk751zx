@@ -1,0 +1,210 @@
+{
+ "key": "redbarn_p04",
+ "yt": {
+  "title": "The Dreams | The Red Barn Murder (True Story) Part 4 #shorts",
+  "description": "Part 4 of 7: The Red Barn Murder, Polstead, Suffolk, England, 1827-1828. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the red barn murder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "maria": {
+   "name": "Maria Marten",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "corder": {
+   "name": "William Corder",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_adam"
+  },
+  "ann": {
+   "name": "Ann Marten",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "thomas": {
+   "name": "Thomas Marten",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "police": {
+   "name": "a London police officer",
+   "skin": "#c99872",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "wife": {
+   "name": "Corder's new wife",
+   "skin": "#d9a882",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE RED BARN MURDER",
+    "years": "SUFFOLK · 1827",
+    "crime": "SOLVED BY A DREAM?",
+    "part": "PART 4 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: William wrote that he and Maria were happily married. Maria never wrote."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "ann",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "thomas",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ann",
+    "text": "Thomas... wake up. I had the dream again."
+   },
+   "bed": true,
+   "title": "MARCH 1828"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ann",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "thomas",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ann",
+    "text": "Maria. In the Red Barn. Buried under the floor."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ann",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "thomas",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "ann",
+    "text": "Three nights now. The same dream."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "thomas",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "thomas",
+    "text": "Then I'll go and dig."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT A DREAM? OR DID ANN KNOW MORE THAN SHE SAID?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it a dream? Or did Ann know more than she said? Part 5 is next."
+   }
+  }
+ ]
+}
