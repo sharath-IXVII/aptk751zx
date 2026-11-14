@@ -1,0 +1,62 @@
+CAST anse | Devil Anse Hatfield | m | worker | black | beard
+CAST randolph | Randolph McCoy | m | worker | grey | beard
+CAST johnse | Johnse Hatfield | m | worker | black
+CAST roseanna | Roseanna McCoy | f | plain | brown
+CAST ellison | Ellison Hatfield | m | worker | brown | beard
+CAST judge | the judge | m | judge | white
+CAST deputy | a lawman | m | police | brown
+# TITLE 1: Two Families, One River
+PART
+forest establish > nar: The Tug Fork river. West Virginia on one side. Kentucky on the other. [TUG FORK · 1870s]
+forest face anse > anse: Devil Anse Hatfield. This side of the river is ours.
+forest face randolph:cross > randolph: Randolph McCoy. And that side is ours.
+forest two anse:cross,randolph:cross > randolph: Stay on your side, Hatfield.
+forest establish > nar: Two big families. Two proud men. And bad blood from the Civil War.
+forest establish > nar: How do you think it started?
+# TITLE 2: The Pig
+PART
+forest establish > nar: Previously: the Hatfields and McCoys lived on opposite sides of the Tug Fork river.
+forest two randolph:point,anse > randolph: That's my pig! Look at the ear marks! [1878]
+forest two randolph,anse:cross > anse: That pig belongs to a Hatfield.
+court court judge,randolph > judge: The court finds for the Hatfields. The pig stays.
+forest face randolph:cross > randolph: One of my own kin voted with the Hatfields! This isn't over.
+forest establish > nar: Can a pig really start a war?
+# TITLE 3: Forbidden Love
+PART
+forest establish > nar: Previously: a quarrel over a pig ended in court, and the McCoys lost.
+forest two johnse:smile,roseanna:smile > johnse: I'm a Hatfield. You're a McCoy. I don't care. [1880]
+forest two johnse,roseanna:smile > roseanna: Neither do I, Johnse.
+home face randolph:cross > randolph: My daughter with a Hatfield? Never!
+home face anse:cross > anse: My son with a McCoy? Never!
+forest establish > nar: Can love survive a feud?
+# TITLE 4: Election Day
+PART
+forest establish > nar: Previously: Johnse Hatfield and Roseanna McCoy fell in love, angering both families.
+street two ellison,randolph > nar: Election Day, 1882. Drinks. Arguments. Tempers. [ELECTION DAY · 1882]
+street establish > nar: Ellison Hatfield was badly hurt in a fight with three McCoy sons. He died days later.
+forest face anse:cross > anse: They killed my brother. Now we take three for one.
+forest establish > nar: The Hatfields took revenge on all three McCoy brothers.
+forest establish > nar: Will this ever end?
+# TITLE 5: New Year's Night
+PART
+forest establish > nar: Previously: after Ellison Hatfield died, the Hatfields killed three McCoy brothers.
+forest establish > nar: New Year's night, 1888. Hatfield men surround the McCoy cabin. [1 JANUARY 1888]
+home face randolph:scared > randolph: Fire! They've set the cabin on fire!
+home establish > nar: Two of the McCoy children were killed. Their mother was badly beaten.
+forest face randolph:cry > randolph: They burned my home. They killed my children.
+forest establish > nar: What should the law do?
+# TITLE 6: Across the State Line
+PART
+forest establish > nar: Previously: the Hatfields attacked the McCoy cabin on New Year's night.
+forest two deputy:point,johnse > deputy: Kentucky wants Hatfields for trial. We're crossing into West Virginia. [1888]
+forest establish > nar: Armed men raided across the state line. Both states argued. Even the US Supreme Court got involved.
+court establish > nar: Several Hatfield men were sentenced to life in prison. One was hanged.
+court establish > nar: Was it justice, or just more revenge?
+# TITLE 7: The Handshake
+PART
+court establish > nar: Previously: several Hatfields were tried and one was hanged.
+forest establish > nar: The feud slowly faded. The families went on with their lives. [1890s]
+forest face anse > anse: In the end, I was baptised in the river. An old man at peace.
+forest establish > nar: In 2003, descendants of both families signed an official peace treaty.
+forest establish > nar: More than a century of hate, ended with a handshake.
+forest establish > nar: Can family grudges ever really be forgiven?

@@ -1,0 +1,54 @@
+CAST alizon | Alizon Device | f | plain | brown
+CAST law | John Law | m | worker | grey | beard
+CAST demdike | Old Demdike | f | plain | white
+CAST chattox | Old Chattox | f | plain | grey
+CAST jennet | Jennet Device | f | plain | blonde
+CAST nowell | Roger Nowell | m | judge | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Pedlar
+PART
+forest establish > nar: Pendle Hill, Lancashire. March 1612. [PENDLE HILL · MARCH 1612]
+forest two alizon,law > alizon: Please, sir. Can I have some pins?
+forest two alizon,law:cross > law: Have you any money? No? Then no pins.
+forest face alizon:cross > alizon: You'll be sorry.
+forest establish > nar: Moments later, John Law fell to the ground. He couldn't speak or move one side of his body.
+forest establish > nar: Was it a curse? Or a stroke?
+# TITLE 2: I Did It
+PART
+forest establish > nar: Previously: a pedlar collapsed after refusing to give Alizon Device some pins.
+home two alizon:scared,nowell > alizon: It was me. I cursed him. The devil came to me as a black dog. [1612]
+home face nowell > nowell: You admit to witchcraft?
+home face alizon:scared > alizon: And my grandmother Demdike is a witch too. And old Chattox.
+home establish > nar: Alizon believed her own curse had worked. And she named others.
+home establish > nar: Why would she accuse her own family?
+# TITLE 3: Good Friday
+PART
+home establish > nar: Previously: Alizon confessed to witchcraft and accused her grandmother and others.
+home two demdike,chattox > nar: Demdike and Chattox were arrested. [APRIL 1612]
+home establish > nar: On Good Friday, friends and family gathered at Malkin Tower, the Devices' home.
+home two nowell:think,judge > nowell: A gathering of witches. Plotting to free the prisoners.
+home establish > nar: More people were arrested. Now the trial would be huge.
+home establish > nar: What do you think the gathering really was?
+# TITLE 4: The Star Witness
+PART
+home establish > nar: Previously: more people were arrested after a gathering at Malkin Tower.
+court establish > nar: Lancaster Castle, August 1612. [LANCASTER · AUGUST 1612]
+court two jennet,judge > judge: Jennet Device, you are nine years old. Will you speak against your family?
+court face jennet > jennet: Yes. My mother is a witch. My brother is a witch.
+court face alizon:scared > alizon: Jennet!
+court establish > nar: Would you believe a nine-year-old?
+# TITLE 5: Ten Hanged
+PART
+court establish > nar: Previously: nine-year-old Jennet testified against her own family.
+court court judge,alizon > judge: Guilty of witchcraft. You will be hanged.
+court establish > nar: Ten people were hanged for witchcraft. Old Demdike had already died in prison.
+court establish > nar: Twenty years later, Jennet herself was accused of witchcraft. [1634]
+court face jennet:scared > jennet: But I'm not a witch!
+court establish > nar: How do you think this story should be remembered?
+# TITLE 6: Pardoned at Last?
+PART
+court establish > nar: Previously: ten people were hanged, and later Jennet herself was accused.
+forest establish > nar: Pendle Hill still stands over the villages. [PENDLE HILL · TODAY]
+forest establish > nar: More than four hundred years later, people still visit, and some campaign for the accused to be pardoned.
+forest establish > nar: Was John Law cursed? Or did he simply have a stroke?
+forest establish > nar: Should the Pendle witches be pardoned?

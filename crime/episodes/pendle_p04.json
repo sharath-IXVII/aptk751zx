@@ -1,0 +1,189 @@
+{
+ "key": "pendle_p04",
+ "yt": {
+  "title": "The Star Witness | The Pendle Witches (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Pendle Witches, Pendle Hill, Lancashire, England, 1612. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the pendle witches"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "alizon": {
+   "name": "Alizon Device",
+   "skin": "#d0a07c",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "law": {
+   "name": "John Law",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "demdike": {
+   "name": "Old Demdike",
+   "skin": "#a86a42",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#e0e0e0",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "chattox": {
+   "name": "Old Chattox",
+   "skin": "#b9774a",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "jennet": {
+   "name": "Jennet Device",
+   "skin": "#e6b48e",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sky",
+   "long": true
+  },
+  "nowell": {
+   "name": "Roger Nowell",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE PENDLE WITCHES",
+    "years": "LANCASHIRE · 1612",
+    "crime": "A PEDLAR, A CURSE, A TRIAL",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: more people were arrested after a gathering at Malkin Tower."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Lancaster Castle, August 1612."
+   },
+   "title": "LANCASTER · AUGUST 1612",
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "jennet",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Jennet Device, you are nine years old. Will you speak against your family?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "jennet",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "jennet",
+    "text": "Yes. My mother is a witch. My brother is a witch."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "alizon",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "alizon",
+    "text": "Jennet!"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU BELIEVE A NINE-YEAR-OLD?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you believe a nine-year-old? Part 5 is next."
+   }
+  }
+ ]
+}
