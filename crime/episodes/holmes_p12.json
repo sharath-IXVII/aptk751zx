@@ -1,0 +1,337 @@
+{
+ "key": "holmes_p12",
+ "yt": {
+  "title": "Murder Castle | H. H. Holmes (True Story) Part 12 #shorts",
+  "description": "Part 12 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "h. h. holmes"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "herman": {
+   "name": "Herman Webster Mudgett / H. H. Holmes",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "carrie": {
+   "name": "Carrie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "benjamin": {
+   "name": "Benjamin Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "alice": {
+   "name": "Alice Pitezel",
+   "skin": "#a86a42",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "nellie": {
+   "name": "Nellie Pitezel",
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "howard": {
+   "name": "Howard Pitezel",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "geyer": {
+   "name": "Detective Frank Geyer",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "Judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "police": {
+   "name": "Police Officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_daniel",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "H. H. HOLMES",
+    "years": "CHICAGO · 1890s",
+    "crime": "THE MURDER HOTEL",
+    "part": "PART 12 OF 14"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: In Toronto and Indianapolis, Geyer found Pitezel children's remains."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "walk"
+    },
+    {
+     "id": "geyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "Chicago police show me the Castle. Hidden rooms and a basement."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "police",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "point"
+    },
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    },
+    {
+     "id": "alice",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "This is the Murder Castle. Secret passages and a vault."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "A basement with grim evidence. Not a home, but a killing place."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "walk"
+    },
+    {
+     "id": "geyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "Rooms soundproofed. A vault for bodies. Holmes built this to kill."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "This changes everything. Holmes is a serial killer."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "geyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Newspapers name it the Murder Castle. The whole city talks."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "I must find Pitezel's other children. Alice and Nellie are gone."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "walk"
+    },
+    {
+     "id": "howard",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "Where is Howard? The search continues across the city."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "The Castle stands. Evidence of crimes that can no longer hide."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "p": "Comment below 👇",
+    "f": "Part 13 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think happens next? Part 13 is next."
+   }
+  }
+ ]
+}
