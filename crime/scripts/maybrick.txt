@@ -1,0 +1,65 @@
+CAST florence | Florence Maybrick | f | rich | blonde
+CAST james | James Maybrick | m | rich | grey | beard
+CAST alfred | Alfred Brierley | m | rich | brown
+CAST nanny | the nanny | f | nurse | brown
+CAST brother | James's brother | m | rich | grey
+CAST chemist | the chemist | m | worker | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The American Bride
+PART
+dock establish > nar: Florence Maybrick. A young American bride in Victorian Liverpool. [LIVERPOOL · 1880s]
+dock two florence:smile,james:smile > james: Welcome to England, my darling Florie.
+dock two florence:smile,james > florence: You're twenty-four years older than me, James. Will that matter?
+dock face james:smile > james: Not one bit. I'm a wealthy cotton merchant. You'll want for nothing.
+home establish > nar: A grand house. Servants. Children. It looked like a perfect life.
+home establish > nar: Was it?
+# TITLE 2: Secrets
+PART
+home establish > nar: Previously: Florence married wealthy cotton merchant James Maybrick.
+home two florence:cross,james > florence: I know about your other woman, James. And her children.
+home two james:cross,florence > james: And what of your debts, Florie? Your spending?
+street two alfred:smile,florence:smile > alfred: Meet me in London, Florence. Nobody will know.
+home face florence:think > florence: Nobody can know.
+home establish > nar: Florence began an affair with Alfred Brierley.
+home establish > nar: Can a marriage like this survive?
+# TITLE 3: The Flypapers
+PART
+home establish > nar: Previously: James had a mistress, and Florence began an affair.
+street two chemist,florence > florence: A dozen flypapers, please. [APRIL 1889]
+home two nanny:think,florence > nanny: Ma'am, why are flypapers soaking in a basin of water?
+home face florence > florence: For my face. It makes a lovely complexion wash.
+home establish > nar: Flypapers contained arsenic.
+home establish > nar: Do you believe her explanation?
+# TITLE 4: James Falls Ill
+PART
+home establish > nar: Previously: Florence soaked arsenic flypapers, saying it was for her face.
+home bed james:sick,florence > james: My stomach. I've never felt so ill. [MAY 1889]
+home two nanny:scared,brother > nanny: Sir, I found a letter Mrs Maybrick wrote to another man.
+home face brother:cross > brother: Nobody leaves her alone with James. Not for a second.
+home establish > nar: On 11 May 1889, James Maybrick died.
+home establish > nar: Was it murder?
+# TITLE 5: Arsenic Everywhere
+PART
+home establish > nar: Previously: James Maybrick died, and his brothers suspected Florence.
+home two brother,chemist > chemist: There's arsenic in the house. Bottles, powders, packets.
+home two brother:cross,florence:cuffed > brother: You poisoned him!
+home face florence:cry > florence: I didn't!
+home two chemist:think,brother > chemist: But your brother took arsenic himself for years, as a tonic. Many men did.
+home establish > nar: So who put the arsenic in James?
+# TITLE 6: The Hostile Judge
+PART
+home establish > nar: Previously: arsenic was found in the house, but James had taken it as a tonic for years.
+court two chemist,judge > chemist: The amount of arsenic in his body was small. [LIVERPOOL · AUGUST 1889]
+court face florence > florence: I gave him a powder he asked for. I didn't know what was in it.
+court court judge,florence > judge: The jury finds you guilty. The sentence is death.
+court establish > nar: Many people believed the judge was unfair. A great outcry followed.
+court establish > nar: Her sentence was changed to life in prison.
+court establish > nar: Was justice done?
+# TITLE 7: Free
+PART
+court establish > nar: Previously: Florence was sentenced to death, then life in prison.
+prison cell florence > nar: Fifteen years later, Florence Maybrick was released. [1904]
+dock walk florence > nar: She went home to America and lived quietly under her maiden name.
+dock face florence > florence: I was never guilty.
+dock establish > nar: She died in 1941, poor and alone, surrounded by her cats.
+dock establish > nar: Do you think Florence was innocent?

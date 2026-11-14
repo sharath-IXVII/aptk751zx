@@ -1,0 +1,67 @@
+CAST palmer | Dr William Palmer | m | rich | brown
+CAST cook | John Parsons Cook | m | rich | blonde
+CAST lender | a moneylender | m | rich | grey | beard
+CAST maid | a hotel maid | f | worker | red
+CAST doctor | an old doctor | m | doctor | white
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Gambling Doctor
+PART
+street establish > nar: Dr William Palmer. Charming, cheerful, and drowning in debt. [RUGELEY · 1850s]
+street two cook:smile,palmer:smile > cook: Off to the races again, William?
+street two cook,palmer:smile > palmer: The horses will make me rich one day, John. You'll see.
+home two lender:cross,palmer > lender: You owe me thousands, Doctor. And the signatures on these loans are forged.
+home face palmer:think > palmer: Give me time. Money is coming.
+home establish > nar: Would you lend money to Dr Palmer?
+# TITLE 2: Family Deaths
+PART
+home establish > nar: Previously: Dr Palmer was deep in gambling debt.
+grave grave palmer:cry > palmer: My poor wife. Taken so suddenly. [1854]
+grave establish > nar: His wife died. So did several of his children, as babies.
+home two lender:think,palmer:smile > palmer: The insurance has paid. Thirteen thousand pounds. You'll have your money.
+home face lender:think > lender: Lucky for you, Doctor. Very lucky.
+home establish > nar: Is it luck, or something else?
+# TITLE 3: The Big Win
+PART
+home establish > nar: Previously: Palmer's wife died, and he collected a large insurance payment.
+street two cook:smile,palmer:smile > cook: I've won, William! Shrewsbury races! A fortune! [NOVEMBER 1855]
+street two cook:smile,palmer > palmer: Then let's celebrate, John. Drinks are on you.
+home two cook:give,palmer:smile > palmer: To your good luck.
+home face cook:smile > cook: To my good luck!
+home establish > nar: That night, Cook felt terribly ill.
+home establish > nar: What do you think was in the drink?
+# TITLE 4: The Caring Friend
+PART
+home establish > nar: Previously: John Cook won big at the races, then fell ill after drinking with Palmer.
+home bed cook:sick,palmer > cook: William, I feel awful. [THE TALBOT ARMS · RUGELEY]
+home bed cook:sick,palmer:give > palmer: Take these pills, John. I'm a doctor. I'll look after you.
+home two maid:think,palmer > maid: He seems worse after every visit from his friend.
+home establish > nar: A few nights later, John Parsons Cook died in agony.
+home establish > nar: And his winnings were gone.
+home establish > nar: Who do you think took the money?
+# TITLE 5: The Jar
+PART
+home establish > nar: Previously: John Cook died after Palmer nursed him. His winnings were missing.
+home two doctor:think,palmer > doctor: Cook's stepfather wants a post-mortem examination. [NOVEMBER 1855]
+home face palmer:smile > palmer: I'll help, of course.
+home two doctor:scared,palmer > doctor: You pushed the jar, Dr Palmer! The jar with the evidence!
+home face palmer > palmer: An accident. I was just helping.
+home establish > nar: He even tried to bribe the man taking the samples to London.
+home establish > nar: Why would an innocent man do that?
+# TITLE 6: A Special Law
+PART
+home establish > nar: Previously: Palmer was caught interfering with Cook's post-mortem.
+street two police:point,palmer:cuffed > police: William Palmer, you're under arrest for murder.
+street two police:think,lender > lender: Everyone in Staffordshire hates him now. No jury here will be fair.
+street establish > nar: Public anger was so strong that Parliament passed a special law to move his trial to London. [1856]
+street establish > nar: It became known as Palmer's Act.
+street establish > nar: Can a man get a fair trial when everyone hates him?
+# TITLE 7: The Prince of Poisoners
+PART
+street establish > nar: Previously: Parliament passed a special law to move Palmer's trial to London.
+court two doctor,judge > doctor: The symptoms match strychnine. I'm certain. [OLD BAILEY · MAY 1856]
+court face palmer > palmer: I am innocent of poisoning John Cook.
+court court judge,palmer > judge: Guilty. You will be hanged.
+street establish > nar: In June 1856 Palmer was hanged before a crowd of thousands.
+street establish > nar: The newspapers called him the Prince of Poisoners.
+street establish > nar: How many people do you think he really killed?
