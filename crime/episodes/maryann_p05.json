@@ -1,0 +1,207 @@
+{
+ "key": "maryann_p05",
+ "yt": {
+  "title": "Charles Edward | Mary Ann Cotton (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: Mary Ann Cotton, County Durham, England, 1852-1873. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "mary ann cotton"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary Ann Cotton",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "husband": {
+   "name": "one of her husbands",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "charlie": {
+   "name": "Charles Edward Cotton",
+   "skin": "#e6b48e",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "riley": {
+   "name": "Thomas Riley",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "doctor": {
+   "name": "the doctor",
+   "skin": "#c99872",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#b9774a",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MARY ANN COTTON",
+    "years": "DURHAM · 1873",
+    "crime": "ARSENIC IN THE TEAPOT",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Mary Ann told Thomas Riley her stepson was in her way."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "charlie",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "mary",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "charlie",
+    "text": "Mama, my tummy hurts."
+   },
+   "bed": true,
+   "title": "JULY 1872"
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Days later, seven-year-old Charles Edward was dead."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "riley",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "riley",
+    "text": "The boy was perfectly healthy last week. She told me he'd go like the rest."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "police",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Then we need a proper examination."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE TRUTH FINALLY COME OUT?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the truth finally come out? Part 6 is next."
+   }
+  }
+ ]
+}

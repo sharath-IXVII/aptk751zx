@@ -1,0 +1,75 @@
+CAST cream | Dr Thomas Neill Cream | m | rich | brown | beard
+CAST ellen | Ellen Donworth | f | plain | red
+CAST matilda | Matilda Clover | f | plain | brown
+CAST alice | Alice Marsh | f | plain | blonde
+CAST emma | Emma Shrivell | f | plain | brown
+CAST mcintyre | a former New York policeman | m | detective | grey
+CAST police | a police officer | m | police | black
+CAST rich | a wealthy gentleman | m | rich | white
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Doctor With a Past
+PART
+prison establish > nar: Dr Thomas Neill Cream. A doctor who should never have been a doctor. [CHICAGO · 1881]
+prison two police:point,cream:cuffed > police: You poisoned a man with strychnine, Cream. Life in prison.
+prison cell cream > cream: Medicine and poison. It's all just a matter of the dose.
+prison establish > nar: He had trained as a doctor in Canada and Scotland.
+prison establish > nar: But after only ten years, he was set free.
+prison establish > nar: Where do you think he went next?
+# TITLE 2: Lambeth
+PART
+prison establish > nar: Previously: Dr Cream served ten years in a Chicago prison for poisoning a man.
+dock walk cream > nar: 1891. Cream sails to London. [LONDON · OCTOBER 1891]
+street two police,cream:smile > cream: I'd like to rent rooms on Lambeth Palace Road. I'm a doctor, you see.
+street face cream:smile > cream: London is so full of opportunity.
+street establish > nar: Lambeth. Crowded, foggy streets beside the Thames.
+street establish > nar: Is this a fresh start, or something darker?
+# TITLE 3: The Pills
+PART
+street establish > nar: Previously: Dr Cream moved into rooms in Lambeth, London.
+street two ellen,cream:give > cream: Take these pills, my dear. They'll make your skin glow. [OCTOBER 1891]
+street two ellen:smile,cream > ellen: Free medicine from a gentleman? Thank you, sir.
+street establish > nar: Hours later, Ellen Donworth collapsed in agony in the street.
+home bed matilda:sick,police > matilda: A man called Fred gave me pills. Then the pain came.
+home establish > nar: Ellen Donworth and Matilda Clover both died.
+home establish > nar: Who do you think Fred was?
+# TITLE 4: Blackmail Letters
+PART
+home establish > nar: Previously: two young women died in agony after taking pills from a stranger.
+home face cream:smile > cream: Dear sir. I know you poisoned Matilda Clover. Pay me, and I'll stay silent. [LATE 1891]
+home two rich:scared,police > rich: Officer! A letter accusing me of murder! I've never even heard of these women!
+home two police:think,rich > police: You're the third gentleman this week to get one.
+home face police:think > police: Whoever wrote these knows things only the killer could know.
+home establish > nar: Why would a killer write letters about his own crimes?
+# TITLE 5: The Same Night
+PART
+home establish > nar: Previously: famous people received letters accusing them of the Lambeth murders.
+street two alice:smile,emma:smile > emma: A gentleman named Fred is visiting us tonight, Alice. [APRIL 1892]
+home two alice:smile,cream:give > cream: Something for you both. A little treat.
+home establish > nar: That night, Alice Marsh and Emma Shrivell both died in agony.
+street establish > nar: Lambeth was terrified. The newspapers called him the Lambeth Poisoner.
+street establish > nar: Who would stop him?
+# TITLE 6: He Talks Too Much
+PART
+street establish > nar: Previously: Alice Marsh and Emma Shrivell died on the same night.
+street two mcintyre,cream:smile > cream: You were a policeman in New York? Then let me tell you about the Lambeth Poisoner. [MAY 1892]
+street two mcintyre:think,cream > cream: I know all about the girls. Every detail.
+street face mcintyre:think > mcintyre: How does he know so much?
+street two cream:cross,mcintyre > cream: And I'm being followed. I want it stopped!
+street establish > nar: Cream complained to police about being followed. That only made them look closer.
+street establish > nar: Why would a killer draw attention to himself?
+# TITLE 7: The Handwriting
+PART
+street establish > nar: Previously: Cream boasted about the murders to a former New York policeman.
+home two police,mcintyre > police: The blackmail letters. Compare the handwriting with Cream's. [JUNE 1892]
+home face police:scared > police: It's a match.
+home two police:point,cream:cuffed > police: Thomas Neill Cream, you're under arrest.
+court court judge,cream > judge: Guilty of the murder of Matilda Clover. [OCTOBER 1892]
+prison establish > nar: What do you think his last words were?
+# TITLE 8: I Am Jack...
+PART
+prison establish > nar: Previously: Dr Cream was found guilty of murder.
+prison cell cream > nar: November 1892. Cream is led to the gallows. [NOVEMBER 1892]
+prison establish > nar: A legend says his last words were: 'I am Jack...'
+prison establish > nar: As in, Jack the Ripper.
+prison establish > nar: But he was in prison in America during the Ripper murders. There's no proof he said it at all.
+prison establish > nar: Could Cream have been the Ripper?

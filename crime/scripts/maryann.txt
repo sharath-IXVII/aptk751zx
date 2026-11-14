@@ -1,0 +1,68 @@
+CAST mary | Mary Ann Cotton | f | plain | black
+CAST husband | one of her husbands | m | worker | brown | beard
+CAST charlie | Charles Edward Cotton | m | plain | blonde
+CAST riley | Thomas Riley | m | rich | grey
+CAST doctor | the doctor | m | doctor | grey
+CAST police | a police officer | m | police | black
+CAST neighbour | a neighbour | f | plain | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Pit Village Girl
+PART
+street establish > nar: Mary Ann Cotton. A name once sung in children's rhymes in northern England. [COUNTY DURHAM · 1850s]
+street two neighbour:smile,mary:smile > neighbour: Married already, Mary Ann? You're barely twenty!
+street two neighbour,mary:smile > mary: A miner's wife. We'll go wherever the work is.
+home two husband:smile,mary:smile > husband: A new village, a new start.
+street establish > nar: She grew up poor, in a mining village. She married young and moved often.
+street establish > nar: What kind of life do you think she wanted?
+# TITLE 2: Gastric Fever
+PART
+street establish > nar: Previously: Mary Ann Cotton married young and moved from village to village.
+home bed husband,mary:tuck > mary: The baby has a fever again. And stomach pains.
+home two doctor:think,mary:cry > doctor: Gastric fever, Mrs Cotton. Very common. I'm so sorry.
+grave grave mary:cry,neighbour > neighbour: Another little one. That poor woman has lost so many.
+grave face mary:cry > mary: God has tested me.
+grave establish > nar: In those days many children died young. No one thought it strange.
+grave establish > nar: Was it just bad luck?
+# TITLE 3: The Insurance
+PART
+grave establish > nar: Previously: many of Mary Ann's children died of 'gastric fever'.
+home bed husband:sick,mary > husband: I feel so ill, Mary Ann. My stomach is on fire.
+home two mary,doctor > mary: Will he recover, doctor?
+grave establish > nar: Her husbands died too. One after another.
+home two mary:smile,neighbour > neighbour: The insurance company paid out again?
+home face mary:smile > mary: A widow has to live somehow.
+home establish > nar: How many husbands can one woman lose?
+# TITLE 4: In My Way
+PART
+home establish > nar: Previously: Mary Ann's husbands died, and she collected the insurance.
+home two charlie:smile,mary > charlie: Mama, can I go out to play? [WEST AUCKLAND · 1872]
+home two riley:think,mary > mary: Mr Riley, could the boy go to the workhouse? He's in my way. I could marry again.
+home two riley:cross,mary > riley: Only if you go with him, Mrs Cotton.
+home face mary > mary: Then I won't be troubled long. He'll go like the rest.
+home establish > nar: Thomas Riley never forgot those words.
+home establish > nar: What would you do if you heard that?
+# TITLE 5: Charles Edward
+PART
+home establish > nar: Previously: Mary Ann told Thomas Riley her stepson was in her way.
+home bed charlie:sick,mary > charlie: Mama, my tummy hurts. [JULY 1872]
+home establish > nar: Days later, seven-year-old Charles Edward was dead.
+street two riley:scared,police > riley: The boy was perfectly healthy last week. She told me he'd go like the rest.
+street face police:think > police: Then we need a proper examination.
+street establish > nar: Will the truth finally come out?
+# TITLE 6: Arsenic
+PART
+street establish > nar: Previously: Mary Ann's stepson died, and Thomas Riley went to the police.
+home two doctor:scared,police > doctor: Arsenic. The boy was poisoned with arsenic.
+home two police:point,mary:cuffed > police: Mary Ann Cotton, you're under arrest.
+grave two police,doctor > police: Dig up the others. Every one of them.
+grave face doctor:scared > doctor: Arsenic. In them too.
+grave establish > nar: How many do you think they found?
+# TITLE 7: The Rhyme
+PART
+grave establish > nar: Previously: arsenic was found in her stepson's body, and in others.
+court court judge,mary > judge: Guilty of the murder of Charles Edward Cotton. [DURHAM · MARCH 1873]
+court face mary > mary: I am innocent.
+prison establish > nar: Mary Ann Cotton was hanged in March 1873.
+prison establish > nar: She may have killed around twenty-one people, including her own children.
+prison establish > nar: Children in the north sang: 'Mary Ann Cotton, she's dead and she's rotten.'
+prison establish > nar: How could this go unnoticed for twenty years?
