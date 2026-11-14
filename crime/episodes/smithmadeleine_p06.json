@@ -1,0 +1,177 @@
+{
+ "key": "smithmadeleine_p06",
+ "yt": {
+  "title": "Not Proven | Madeleine Smith (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Madeleine Smith, Glasgow, Scotland, 1855-1857. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "madeleine smith"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "madeleine": {
+   "name": "Madeleine Smith",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "emile": {
+   "name": "Pierre Emile L'Angelier",
+   "skin": "#e6b48e",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "father": {
+   "name": "Mr Smith",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "minnoch": {
+   "name": "William Minnoch",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "chemist": {
+   "name": "a chemist",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "landlady": {
+   "name": "a landlady",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MADELEINE SMITH",
+    "years": "GLASGOW · 1857",
+    "crime": "NOT PROVEN",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Emile died of arsenic poisoning, and Madeleine had bought arsenic."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "madeleine",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "madeleine",
+    "text": "I never gave him anything."
+   },
+   "title": "EDINBURGH · JULY 1857"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "madeleine",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "On the charge of murder, the jury finds: not proven."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Not proven: a Scottish verdict meaning 'we think you might have done it, but we can't prove it'."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She walked free, moved to London, and later to America. She died in 1928."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DID MADELEINE SMITH GET AWAY WITH MURDER?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Did Madeleine Smith get away with murder?"
+   }
+  }
+ ]
+}

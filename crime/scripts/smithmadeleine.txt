@@ -1,0 +1,57 @@
+CAST madeleine | Madeleine Smith | f | rich | brown
+CAST emile | Pierre Emile L'Angelier | m | plain | black
+CAST father | Mr Smith | m | rich | grey | beard
+CAST minnoch | William Minnoch | m | rich | brown
+CAST chemist | a chemist | m | worker | grey
+CAST landlady | a landlady | f | plain | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Secret Lover
+PART
+street establish > nar: Glasgow, 1855. Madeleine Smith, the daughter of a wealthy architect. [GLASGOW · 1855]
+street two madeleine:smile,emile:smile > emile: Mademoiselle, may I walk with you?
+street two madeleine:smile,emile > madeleine: You're very forward, monsieur. And very handsome.
+home two father:cross,madeleine > father: That clerk? Penniless! You will never see him again!
+home face madeleine:smile > madeleine: Of course, Papa.
+home establish > nar: She kept seeing him. In secret.
+home establish > nar: How long can a secret love stay secret?
+# TITLE 2: The Basement Window
+PART
+home establish > nar: Previously: Madeleine Smith began a secret romance with a poor clerk, Emile.
+home face madeleine:smile > madeleine: My dearest Emile. I love you. Your own Mimi. [1855 - 1856]
+home two madeleine:give,emile:smile > emile: Another letter through the basement window.
+home face emile:smile > emile: I'll keep every single one.
+home establish > nar: They wrote hundreds of passionate letters. Shocking for the time.
+home establish > nar: Why would that be dangerous?
+# TITLE 3: A Respectable Match
+PART
+home establish > nar: Previously: Madeleine and Emile wrote hundreds of passionate letters.
+home two father:smile,minnoch:smile > father: William Minnoch, Madeleine. A wealthy, respectable man. [1857]
+home two madeleine:smile,minnoch > minnoch: Will you marry me, Miss Smith?
+home face madeleine:smile > madeleine: Yes, Mr Minnoch.
+home two madeleine,emile > madeleine: It's over, Emile. Please send back my letters.
+home establish > nar: What do you think Emile will do?
+# TITLE 4: The Threat
+PART
+home establish > nar: Previously: Madeleine got engaged to a wealthy man and asked Emile for her letters back.
+home two emile:cross,madeleine > emile: No. If you leave me, I'll show your letters to your father.
+home face madeleine:scared > madeleine: Then my life is ruined.
+home two emile,madeleine:smile > madeleine: Come and see me, Emile. Let's talk. I'll make you cocoa.
+home establish > nar: Madeleine had a big problem. And she needed a solution.
+home establish > nar: What would you do?
+# TITLE 5: Arsenic for Rats
+PART
+home establish > nar: Previously: Emile threatened to show Madeleine's letters to her father.
+street two chemist,madeleine > madeleine: Arsenic, please. For the rats. [FEBRUARY 1857]
+home bed emile:sick,landlady > emile: I've been sick after seeing her before. Now worse than ever. [MARCH 1857]
+home face landlady:scared > landlady: Mr L'Angelier! Somebody get a doctor!
+home establish > nar: Emile died. His body was full of arsenic.
+home establish > nar: And his room was full of her letters.
+home establish > nar: Is that proof?
+# TITLE 6: Not Proven
+PART
+home establish > nar: Previously: Emile died of arsenic poisoning, and Madeleine had bought arsenic.
+court face madeleine > madeleine: I never gave him anything. [EDINBURGH · JULY 1857]
+court court judge,madeleine > judge: On the charge of murder, the jury finds: not proven.
+street establish > nar: Not proven: a Scottish verdict meaning 'we think you might have done it, but we can't prove it'.
+street establish > nar: She walked free, moved to London, and later to America. She died in 1928.
+street establish > nar: Did Madeleine Smith get away with murder?

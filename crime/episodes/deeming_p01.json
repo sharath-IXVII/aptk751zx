@@ -1,0 +1,204 @@
+{
+ "key": "deeming_p01",
+ "yt": {
+  "title": "The Man of Many Names | Frederick Deeming (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Frederick Deeming, Rainhill, England and Melbourne, Australia, 1891-1892. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "frederick deeming"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "deeming": {
+   "name": "Frederick Deeming",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "marie": {
+   "name": "Marie Deeming",
+   "skin": "#d9a882",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "emily": {
+   "name": "Emily Mather",
+   "skin": "#d9a882",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "landlord": {
+   "name": "a landlord",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "tenant": {
+   "name": "a new tenant",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "FREDERICK DEEMING",
+    "years": "MELBOURNE · 1892",
+    "crime": "UNDER THE FIREPLACE",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Frederick Deeming. A conman who sailed the world with a new name in every port."
+   },
+   "title": "1880S"
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "deeming",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "deeming",
+    "text": "Mr Swanston, at your service. Gold mines in Africa, you know."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "deeming",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "deeming",
+    "text": "Or is it Mr Williams today? I forget."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "marie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "deeming",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "marie",
+    "text": "Fred, why do we keep moving? Why do you have so many names?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "deeming",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "deeming",
+    "text": "Business, Marie. Don't ask questions."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU TRUST A MAN WITH SO MANY NAMES?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you trust a man with so many names? Part 2 is next."
+   }
+  }
+ ]
+}

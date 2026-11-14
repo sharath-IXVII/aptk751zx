@@ -1,0 +1,208 @@
+{
+ "key": "smithmadeleine_p05",
+ "yt": {
+  "title": "Arsenic for Rats | Madeleine Smith (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Madeleine Smith, Glasgow, Scotland, 1855-1857. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "madeleine smith"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "madeleine": {
+   "name": "Madeleine Smith",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "emile": {
+   "name": "Pierre Emile L'Angelier",
+   "skin": "#e6b48e",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "father": {
+   "name": "Mr Smith",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "minnoch": {
+   "name": "William Minnoch",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "chemist": {
+   "name": "a chemist",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "landlady": {
+   "name": "a landlady",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MADELEINE SMITH",
+    "years": "GLASGOW · 1857",
+    "crime": "NOT PROVEN",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Emile threatened to show Madeleine's letters to her father."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "chemist",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "madeleine",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "madeleine",
+    "text": "Arsenic, please. For the rats."
+   },
+   "title": "FEBRUARY 1857",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "emile",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "landlady",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "emile",
+    "text": "I've been sick after seeing her before. Now worse than ever."
+   },
+   "bed": true,
+   "title": "MARCH 1857"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "landlady",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "landlady",
+    "text": "Mr L'Angelier! Somebody get a doctor!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Emile died. His body was full of arsenic."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "And his room was full of her letters."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS THAT PROOF?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is that proof? Part 6 is next."
+   }
+  }
+ ]
+}

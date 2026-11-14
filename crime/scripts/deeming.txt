@@ -1,0 +1,57 @@
+CAST deeming | Frederick Deeming | m | rich | blonde | beard
+CAST marie | Marie Deeming | f | plain | brown
+CAST emily | Emily Mather | f | plain | blonde
+CAST landlord | a landlord | m | worker | grey
+CAST tenant | a new tenant | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Man of Many Names
+PART
+dock establish > nar: Frederick Deeming. A conman who sailed the world with a new name in every port. [1880s]
+dock two police:think,deeming:smile > deeming: Mr Swanston, at your service. Gold mines in Africa, you know.
+dock face deeming:smile > deeming: Or is it Mr Williams today? I forget.
+home two marie:think,deeming > marie: Fred, why do we keep moving? Why do you have so many names?
+home face deeming > deeming: Business, Marie. Don't ask questions.
+home establish > nar: Would you trust a man with so many names?
+# TITLE 2: Rainhill
+PART
+home establish > nar: Previously: conman Frederick Deeming used many false names.
+home two landlord,deeming:smile > deeming: I'll take the house. My wife and four children are coming. [RAINHILL · 1891]
+home two marie:smile,deeming > marie: A real home at last, Fred!
+home establish > nar: Soon after, Marie and the children vanished.
+home two landlord:think,deeming > deeming: They've gone to visit relatives. Now, about the kitchen floor. I want it cemented.
+home face landlord:think > landlord: Fresh cement? In a rented house?
+home establish > nar: Why would he need a new floor?
+# TITLE 3: Emily
+PART
+home establish > nar: Previously: Deeming's family vanished and he had the kitchen floor cemented.
+home two emily:smile,deeming:smile > deeming: Emily Mather. Marry me and come to Australia. [1891]
+home two emily:smile,deeming > emily: Australia! A whole new life!
+dock walk emily > nar: They married and sailed for Melbourne.
+dock face emily:smile > emily: I'm the luckiest girl in the world.
+dock establish > nar: Is she?
+# TITLE 4: The House in Melbourne
+PART
+dock establish > nar: Previously: Deeming married Emily Mather and sailed with her to Australia.
+home two emily,deeming > deeming: A nice little house in Windsor. Just for us. [MELBOURNE · DECEMBER 1891]
+home establish > nar: Weeks later, Emily was gone. Deeming moved out and moved on.
+home two tenant:scared,landlord > tenant: That smell in the bedroom! It's unbearable!
+home two landlord:scared,police > police: Under the hearth. Lift the stones.
+home face police:scared > police: It's a woman. Cemented in.
+home establish > nar: What do you think police did next?
+# TITLE 5: News Reaches England
+PART
+home establish > nar: Previously: Emily's body was found under a hearth in Melbourne.
+home two police:point,landlord > police: Telegraph England. Find out where he lived before. [MARCH 1892]
+home two landlord:scared,police > landlord: Rainhill. That's the man who cemented my kitchen floor!
+home face police:scared > police: Marie, and all four children. Under the floor.
+street two police:point,deeming:cuffed > police: Frederick Deeming. You're under arrest. [WESTERN AUSTRALIA]
+street establish > nar: Will his many names save him now?
+# TITLE 6: The End of the Lies
+PART
+street establish > nar: Previously: police found Deeming's family in England, and caught him in Western Australia.
+court face deeming > deeming: I heard voices. My dead mother told me to do it. [MELBOURNE · 1892]
+court court judge,deeming > judge: Guilty. You will be hanged.
+prison establish > nar: Frederick Deeming was hanged in May 1892.
+prison establish > nar: Some even claimed he was Jack the Ripper. There's no evidence he was.
+prison establish > nar: How many lives did his lies cost?
