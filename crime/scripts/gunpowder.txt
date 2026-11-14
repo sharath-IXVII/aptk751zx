@@ -1,0 +1,70 @@
+CAST catesby | Robert Catesby | m | rich | brown | beard
+CAST fawkes | Guy Fawkes | m | soldier | red | beard
+CAST percy | Thomas Percy | m | rich | grey | beard
+CAST monteagle | Lord Monteagle | m | royal | brown
+CAST guard | a king's guard | m | soldier | black
+CAST king | King James I | m | royal | brown | beard
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Plan
+PART
+street establish > nar: London, 1604. English Catholics are fined, jailed and persecuted. [LONDON · 1604]
+home two catesby:cross,percy > catesby: King James promised to help us. He lied.
+home face catesby > catesby: So we'll blow up the king. And Parliament with him.
+home face percy:scared > percy: All of them? At once?
+home establish > nar: Robert Catesby began planning one of the most famous plots in history.
+home establish > nar: Who would he need to make it work?
+# TITLE 2: Guy Fawkes
+PART
+home establish > nar: Previously: Robert Catesby planned to blow up the king and Parliament.
+home two catesby,fawkes > catesby: Guy Fawkes. You fought in Spain. You know gunpowder.
+home face fawkes > fawkes: I know gunpowder.
+home three catesby,fawkes,percy > percy: Then we're all sworn. No one speaks of this. Ever.
+home establish > nar: More men joined the secret plot.
+home establish > nar: Can a secret this big stay secret?
+# TITLE 3: Thirty-Six Barrels
+PART
+home establish > nar: Previously: Guy Fawkes and others joined the plot.
+home two percy,fawkes > percy: I've rented a cellar. Right under the House of Lords. [1605]
+home face fawkes:smile > fawkes: Thirty-six barrels of gunpowder. Hidden under firewood.
+home face catesby > catesby: On the fifth of November, the king opens Parliament.
+home establish > nar: Enough gunpowder to destroy the whole building.
+home establish > nar: Would they get away with it?
+# TITLE 4: The Letter
+PART
+home establish > nar: Previously: the plotters hid thirty-six barrels of gunpowder under Parliament.
+home face monteagle:think > monteagle: An anonymous letter. 'Stay away from Parliament. They shall receive a terrible blow.' [26 OCTOBER 1605]
+home face monteagle:scared > monteagle: A terrible blow? I must show this to the king's ministers.
+home face catesby:scared > catesby: Someone's warned Monteagle. Should we stop?
+home face fawkes > fawkes: No. We go on.
+home establish > nar: Who do you think wrote the letter?
+# TITLE 5: Midnight
+PART
+home establish > nar: Previously: Lord Monteagle received a letter warning him to stay away from Parliament.
+court face king:think > king: A terrible blow? Search under Parliament. [4 NOVEMBER 1605]
+home two guard:point,fawkes:cuffed > guard: Who are you? And what's under all this firewood?
+home face fawkes > fawkes: John Johnson. A servant.
+home face guard:scared > guard: Gunpowder! Barrels of it! And matches in his pocket!
+home establish > nar: What would happen to the other plotters?
+# TITLE 6: The Shootout
+PART
+home establish > nar: Previously: Guy Fawkes was caught guarding the gunpowder at midnight.
+street walk catesby > nar: The other plotters fled from London. [HOLBECHE HOUSE · 8 NOVEMBER 1605]
+home face catesby:scared > catesby: The sheriff's men are outside. We fight.
+home establish > nar: In the shootout, Catesby and Percy were killed. Others were captured.
+home establish > nar: What do you think happened to Guy Fawkes?
+# TITLE 7: Questioned
+PART
+home establish > nar: Previously: Catesby and Percy died in a shootout.
+prison cell fawkes > fawkes: My name is John Johnson. That's all I'll say. [TOWER OF LONDON]
+prison face guard > guard: The king has allowed harsh questioning.
+prison cell fawkes:cry > fawkes: Guido Fawkes. My name is Guido Fawkes.
+prison establish > nar: After days of torture, Fawkes gave the names of the plotters.
+prison establish > nar: What should their punishment be?
+# TITLE 8: Remember, Remember
+PART
+prison establish > nar: Previously: Fawkes was tortured and named the plotters.
+court court judge,fawkes > judge: Guilty of high treason. [JANUARY 1606]
+street establish > nar: Guy Fawkes and the surviving plotters were executed in January 1606.
+street establish > nar: Parliament ordered a day of thanksgiving every 5 November.
+street establish > nar: Today, Britain still lights bonfires and fireworks on Bonfire Night.
+street establish > nar: Was the plot an act of terror, or of desperation?

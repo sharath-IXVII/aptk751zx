@@ -1,0 +1,161 @@
+{
+ "key": "babington_p04",
+ "yt": {
+  "title": "The Plot | The Babington Plot (True Story) Part 4 #shorts",
+  "description": "Part 4 of 7: The Babington Plot, England, 1586-1587. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the babington plot"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary, Queen of Scots",
+   "skin": "#d0a07c",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "elizabeth": {
+   "name": "Queen Elizabeth I",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "walsingham": {
+   "name": "Sir Francis Walsingham",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "phelippes": {
+   "name": "Thomas Phelippes",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "babington": {
+   "name": "Anthony Babington",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "gifford": {
+   "name": "Gilbert Gifford",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BABINGTON PLOT",
+    "years": "ENGLAND · 1586",
+    "crime": "THE SECRET CODE",
+    "part": "PART 4 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Mary's secret letters were secretly passed to Walsingham."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "babington",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "babington",
+    "text": "Anthony Babington. A group of us will free you, Your Majesty. And Elizabeth will be... removed."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "Do I dare answer?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Young nobleman Anthony Babington wrote to Mary about a plan to kill Elizabeth."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WOULD YOU ANSWER?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What would you answer? Part 5 is next."
+   }
+  }
+ ]
+}

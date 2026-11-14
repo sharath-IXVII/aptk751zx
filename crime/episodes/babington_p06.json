@@ -1,0 +1,196 @@
+{
+ "key": "babington_p06",
+ "yt": {
+  "title": "Treason | The Babington Plot (True Story) Part 6 #shorts",
+  "description": "Part 6 of 7: The Babington Plot, England, 1586-1587. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the babington plot"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary, Queen of Scots",
+   "skin": "#d0a07c",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "elizabeth": {
+   "name": "Queen Elizabeth I",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "walsingham": {
+   "name": "Sir Francis Walsingham",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "phelippes": {
+   "name": "Thomas Phelippes",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "babington": {
+   "name": "Anthony Babington",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "gifford": {
+   "name": "Gilbert Gifford",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BABINGTON PLOT",
+    "years": "ENGLAND · 1586",
+    "crime": "THE SECRET CODE",
+    "part": "PART 6 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: code breaker Phelippes cracked Mary's code. She had approved the plot."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "walsingham",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "babington",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "walsingham",
+    "text": "Anthony Babington. You're under arrest."
+   },
+   "title": "AUGUST 1586",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Babington and the plotters were executed."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "mary",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Mary Stuart. Guilty of treason."
+   },
+   "title": "FOTHERINGHAY · OCTOBER 1586"
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "I am a queen. You have no right to judge me."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD ELIZABETH SIGN THE DEATH WARRANT?",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would Elizabeth sign the death warrant? Part 7 is next."
+   }
+  }
+ ]
+}

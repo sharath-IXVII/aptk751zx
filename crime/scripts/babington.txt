@@ -1,0 +1,61 @@
+CAST mary | Mary, Queen of Scots | f | royal | red
+CAST elizabeth | Queen Elizabeth I | f | royal | red
+CAST walsingham | Sir Francis Walsingham | m | rich | black | beard
+CAST phelippes | Thomas Phelippes | m | plain | grey
+CAST babington | Anthony Babington | m | rich | blonde
+CAST gifford | Gilbert Gifford | m | plain | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Prisoner Queen
+PART
+home establish > nar: England, 1586. Mary, Queen of Scots has been Elizabeth's prisoner for eighteen years. [ENGLAND · 1586]
+home face mary:cross > mary: I am a queen. Yet I live like a prisoner, moved from castle to castle.
+court face elizabeth:think > elizabeth: My cousin Mary. Catholics say she should be queen of England instead of me.
+home face mary:think > mary: One day I'll be free. One day I'll wear England's crown.
+home establish > nar: Is Mary a victim, or a danger?
+# TITLE 2: The Spymaster
+PART
+home establish > nar: Previously: Mary, Queen of Scots had been Elizabeth's prisoner for eighteen years.
+court two walsingham,elizabeth > walsingham: Your Majesty, as long as Mary lives, you are in danger.
+court face elizabeth > elizabeth: I won't kill a queen without proof, Walsingham.
+court face walsingham:think > walsingham: Then I'll get you proof.
+court establish > nar: Sir Francis Walsingham ran England's spies. And he set a trap.
+court establish > nar: What kind of trap would you set?
+# TITLE 3: The Beer Barrels
+PART
+court establish > nar: Previously: spymaster Walsingham wanted proof against Mary.
+home two gifford,mary > gifford: Your Majesty, letters can be hidden in the beer barrels. In and out. Secretly.
+home face mary:smile > mary: At last, a way to talk to my friends!
+home two gifford,walsingham > gifford: Every letter she sends comes to you first, sir.
+home establish > nar: The messenger, Gilbert Gifford, was a double agent.
+home establish > nar: Do you think Mary suspected?
+# TITLE 4: The Plot
+PART
+home establish > nar: Previously: Mary's secret letters were secretly passed to Walsingham.
+home face babington > babington: Anthony Babington. A group of us will free you, Your Majesty. And Elizabeth will be... removed.
+home face mary:think > mary: Do I dare answer?
+home establish > nar: Young nobleman Anthony Babington wrote to Mary about a plan to kill Elizabeth.
+home establish > nar: What would you answer?
+# TITLE 5: The Code
+PART
+home establish > nar: Previously: Babington wrote to Mary about a plan to free her and kill Elizabeth.
+home face mary > mary: In code. 'Set the six gentlemen to work.' [JULY 1586]
+home two phelippes,walsingham > phelippes: I've broken her cipher, sir. She approves of the plan.
+home face walsingham:smile > walsingham: Then we have her.
+home establish > nar: Code breaker Thomas Phelippes cracked Mary's secret code.
+home establish > nar: What happens now?
+# TITLE 6: Treason
+PART
+home establish > nar: Previously: code breaker Phelippes cracked Mary's code. She had approved the plot.
+street two walsingham:point,babington:cuffed > walsingham: Anthony Babington. You're under arrest. [AUGUST 1586]
+street establish > nar: Babington and the plotters were executed.
+court court judge,mary > judge: Mary Stuart. Guilty of treason. [FOTHERINGHAY · OCTOBER 1586]
+court face mary > mary: I am a queen. You have no right to judge me.
+court establish > nar: Would Elizabeth sign the death warrant?
+# TITLE 7: Fotheringhay
+PART
+court establish > nar: Previously: Mary was found guilty of plotting against Elizabeth.
+court face elizabeth:cry > elizabeth: To kill a queen... I don't want to sign it. [FEBRUARY 1587]
+home face mary > mary: In my end is my beginning.
+home establish > nar: On 8 February 1587, Mary, Queen of Scots, was beheaded at Fotheringhay Castle.
+home establish > nar: Her son James would later become King of England.
+home establish > nar: Was Mary guilty, or trapped?

@@ -1,0 +1,169 @@
+{
+ "key": "babington_p01",
+ "yt": {
+  "title": "The Prisoner Queen | The Babington Plot (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: The Babington Plot, England, 1586-1587. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the babington plot"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary, Queen of Scots",
+   "skin": "#d0a07c",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "elizabeth": {
+   "name": "Queen Elizabeth I",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "walsingham": {
+   "name": "Sir Francis Walsingham",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "phelippes": {
+   "name": "Thomas Phelippes",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "babington": {
+   "name": "Anthony Babington",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "gifford": {
+   "name": "Gilbert Gifford",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BABINGTON PLOT",
+    "years": "ENGLAND · 1586",
+    "crime": "THE SECRET CODE",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "England, 1586. Mary, Queen of Scots has been Elizabeth's prisoner for eighteen years."
+   },
+   "title": "ENGLAND · 1586"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "I am a queen. Yet I live like a prisoner, moved from castle to castle."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "elizabeth",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "elizabeth",
+    "text": "My cousin Mary. Catholics say she should be queen of England instead of me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "One day I'll be free. One day I'll wear England's crown."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS MARY A VICTIM, OR A DANGER?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is Mary a victim, or a danger? Part 2 is next."
+   }
+  }
+ ]
+}

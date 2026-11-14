@@ -1,0 +1,194 @@
+{
+ "key": "gunpowder_p05",
+ "yt": {
+  "title": "Midnight | The Gunpowder Plot (True Story) Part 5 #shorts",
+  "description": "Part 5 of 8: The Gunpowder Plot, London, 1604-1606. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the gunpowder plot"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "catesby": {
+   "name": "Robert Catesby",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "fawkes": {
+   "name": "Guy Fawkes",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#a84a22",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "percy": {
+   "name": "Thomas Percy",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "monteagle": {
+   "name": "Lord Monteagle",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "bm_george"
+  },
+  "guard": {
+   "name": "a king's guard",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis"
+  },
+  "king": {
+   "name": "King James I",
+   "skin": "#e0aa84",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#4a3020",
+   "voice": "bm_daniel",
+   "beard": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE GUNPOWDER PLOT",
+    "years": "LONDON · 1605",
+    "crime": "36 BARRELS UNDER PARLIAMENT",
+    "part": "PART 5 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Lord Monteagle received a letter warning him to stay away from Parliament."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "king",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "king",
+    "text": "A terrible blow? Search under Parliament."
+   },
+   "title": "4 NOVEMBER 1605"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "fawkes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "Who are you? And what's under all this firewood?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "fawkes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "fawkes",
+    "text": "John Johnson. A servant."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "guard",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "Gunpowder! Barrels of it! And matches in his pocket!"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WOULD HAPPEN TO THE OTHER PLOTTERS?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What would happen to the other plotters? Part 6 is next."
+   }
+  }
+ ]
+}
