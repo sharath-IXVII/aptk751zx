@@ -1,0 +1,181 @@
+{
+ "key": "mona_p02",
+ "yt": {
+  "title": "Monday Morning | The Mona Lisa Heist (True Story) Part 2 #shorts",
+  "description": "Part 2 of 7: The Mona Lisa Heist, Paris and Florence, 1911-1913. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the mona lisa heist"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "vincenzo": {
+   "name": "Vincenzo Peruggia",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "guard": {
+   "name": "a Louvre guard",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "painter": {
+   "name": "a copyist painter",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "detective": {
+   "name": "a French detective",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "geri": {
+   "name": "Alfredo Geri",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  },
+  "woman": {
+   "name": "a Parisian woman",
+   "skin": "#8a5232",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE MONA LISA HEIST",
+    "years": "PARIS · 1911",
+    "crime": "THE PAINTING VANISHED",
+    "part": "PART 2 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a former Louvre worker, Vincenzo Peruggia, hid inside the museum."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "vincenzo",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "vincenzo",
+    "text": "A white smock. Just like all the workmen."
+   },
+   "title": "21 AUGUST 1911"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "vincenzo",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "He lifted the Mona Lisa off the wall."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "vincenzo",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "vincenzo",
+    "text": "Out of the frame. Under my smock."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "vincenzo",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "He walked out of the Louvre with the most famous painting in the world."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW LONG DO YOU THINK UNTIL SOMEONE NOTICED?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How long do you think until someone noticed? Part 3 is next."
+   }
+  }
+ ]
+}

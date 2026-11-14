@@ -1,0 +1,171 @@
+{
+ "key": "lustig_p04",
+ "yt": {
+  "title": "Too Embarrassed | Victor Lustig (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Victor Lustig, Paris and the USA, 1920s-1930s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "victor lustig"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "lustig": {
+   "name": "'Count' Victor Lustig",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "dealer": {
+   "name": "André Poisson",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "wife": {
+   "name": "the dealer's wife",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mark": {
+   "name": "a greedy buyer",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "capone": {
+   "name": "Al Capone",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "agent": {
+   "name": "a Secret Service agent",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "VICTOR LUSTIG",
+    "years": "PARIS · 1925",
+    "crime": "HE SOLD THE EIFFEL TOWER",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a scrap dealer paid Lustig for the Eiffel Tower, plus a bribe."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "lustig",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Lustig fled to Austria with a suitcase of cash."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dealer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "dealer",
+    "text": "The government has never heard of the sale. I've been robbed."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dealer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "dealer",
+    "text": "If I report it, all of Paris will laugh at me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The dealer never went to the police. So Lustig came back... and tried again."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU HAVE REPORTED IT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you have reported it? Part 5 is next."
+   }
+  }
+ ]
+}

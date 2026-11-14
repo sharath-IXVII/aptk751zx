@@ -1,0 +1,59 @@
+CAST vincenzo | Vincenzo Peruggia | m | worker | black | beard
+CAST guard | a Louvre guard | m | police | grey
+CAST painter | a copyist painter | m | rich | brown
+CAST detective | a French detective | m | detective | brown | beard
+CAST geri | Alfredo Geri | m | rich | grey
+CAST woman | a Parisian woman | f | rich | blonde
+# TITLE 1: The Handyman
+PART
+home establish > nar: Paris, August 1911. The Louvre, the most famous museum in the world. [PARIS · AUGUST 1911]
+home two guard,vincenzo > vincenzo: I used to work here. I made the glass cases for the paintings.
+home face vincenzo:think > vincenzo: And I know the museum closes on Mondays.
+home establish > nar: On Sunday evening, Vincenzo Peruggia hid inside the Louvre.
+home establish > nar: What do you think he was planning?
+# TITLE 2: Monday Morning
+PART
+home establish > nar: Previously: a former Louvre worker, Vincenzo Peruggia, hid inside the museum.
+home face vincenzo > vincenzo: A white smock. Just like all the workmen. [21 AUGUST 1911]
+home face vincenzo:think > nar: He lifted the Mona Lisa off the wall.
+home face vincenzo > vincenzo: Out of the frame. Under my smock.
+street walk vincenzo > nar: He walked out of the Louvre with the most famous painting in the world.
+street establish > nar: How long do you think until someone noticed?
+# TITLE 3: An Empty Wall
+PART
+street establish > nar: Previously: Peruggia walked out of the Louvre with the Mona Lisa under his smock.
+home two painter:think,guard > painter: Where's the Mona Lisa? I came to paint my copy. [22 AUGUST 1911]
+home two painter,guard:smile > guard: Probably being photographed.
+home face guard:scared > guard: It's not being photographed. It's gone!
+home establish > nar: The theft wasn't noticed for over a day. The Louvre closed for a week.
+home establish > nar: Who would steal the Mona Lisa?
+# TITLE 4: Everyone Is a Suspect
+PART
+home establish > nar: Previously: the Mona Lisa vanished and the Louvre closed for a week.
+home two detective:point,painter > detective: We're questioning everyone. Even the poet Apollinaire. Even the painter Picasso. [PARIS · 1911]
+street two woman:think,detective > woman: Crowds are queueing at the Louvre to look at an empty wall!
+street face detective:cross > detective: A fingerprint on the frame. But we can't match it.
+street establish > nar: Where do you think the painting was?
+# TITLE 5: Under the Bed
+PART
+street establish > nar: Previously: police questioned even Picasso, but found nothing.
+home face vincenzo > vincenzo: In a trunk, under my bed. In my little room in Paris. [1911 - 1913]
+home face vincenzo:think > vincenzo: She belongs in Italy. Napoleon stole her from us. I'll take her home.
+home establish > nar: For two years, the Mona Lisa lay in a trunk in a small Paris room.
+home establish > nar: Was he right that she belonged in Italy?
+# TITLE 6: Florence
+PART
+home establish > nar: Previously: the Mona Lisa was hidden in Peruggia's room for two years.
+home two geri,vincenzo > vincenzo: I have the Mona Lisa. I want to return her to Italy. [FLORENCE · DECEMBER 1913]
+home face geri:scared > geri: It's... real. It's really her.
+home two geri:smile,vincenzo > geri: Wait here. I'll bring someone to check it.
+home establish > nar: The art dealer brought the police.
+home establish > nar: What punishment do you think he got?
+# TITLE 7: World Famous
+PART
+home establish > nar: Previously: Peruggia tried to sell the Mona Lisa in Florence and was arrested.
+court face vincenzo > vincenzo: I did it for Italy!
+court establish > nar: Many Italians saw him as a hero. He spent only months in jail.
+street establish > nar: The Mona Lisa went back to the Louvre.
+street establish > nar: Before the theft, she was a famous painting. After it, she was the most famous painting in the world.
+street establish > nar: Was Peruggia a thief or a patriot?

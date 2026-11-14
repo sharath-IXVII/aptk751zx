@@ -1,0 +1,171 @@
+{
+ "key": "turpin_p03",
+ "yt": {
+  "title": "The Killing | Dick Turpin (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Dick Turpin, Essex, London and Yorkshire, 1730s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dick turpin"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "turpin": {
+   "name": "Dick Turpin",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "gang": {
+   "name": "an Essex Gang member",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "farmer": {
+   "name": "a farmer",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "wife": {
+   "name": "the farmer's wife",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "catcher": {
+   "name": "a thief-catcher",
+   "skin": "#d9a882",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "teacher": {
+   "name": "James Smith",
+   "skin": "#a86a42",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DICK TURPIN",
+    "years": "ENGLAND · 1739",
+    "crime": "THE REAL HIGHWAYMAN",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Turpin became a highwayman after his gang was caught."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "catcher",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "turpin",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "catcher",
+    "text": "Dick Turpin! You're coming with me!"
+   },
+   "title": "EPPING FOREST · 1737"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Turpin shot the man who tried to capture him."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "turpin",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "turpin",
+    "text": "Now they'll hunt me everywhere. I need to go north."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE DO YOU THINK HE WENT?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where do you think he went? Part 4 is next."
+   }
+  }
+ ]
+}

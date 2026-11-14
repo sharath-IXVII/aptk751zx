@@ -1,0 +1,56 @@
+CAST lustig | 'Count' Victor Lustig | m | rich | black
+CAST dealer | André Poisson | m | rich | grey
+CAST wife | the dealer's wife | f | rich | brown
+CAST mark | a greedy buyer | m | rich | brown
+CAST capone | Al Capone | m | rich | black
+CAST agent | a Secret Service agent | m | police | brown
+# TITLE 1: The Newspaper Article
+PART
+home establish > nar: Paris, 1925. Victor Lustig reads the newspaper. [PARIS · 1925]
+home face lustig:think > lustig: 'The Eiffel Tower is costly to repair.' Interesting.
+home face lustig:smile > lustig: What if it were... for sale?
+home establish > nar: Victor Lustig was one of the greatest con men who ever lived.
+home establish > nar: Can you sell something you don't own?
+# TITLE 2: A Secret Meeting
+PART
+home establish > nar: Previously: Victor Lustig had an idea about the Eiffel Tower.
+home two dealer,lustig:smile > lustig: Gentlemen, the government will sell the Eiffel Tower for scrap. This is top secret. [HÔTEL DE CRILLON]
+home face dealer:think > dealer: The Eiffel Tower? Sold for scrap?
+home face lustig > lustig: Seven thousand tonnes of iron. The highest bid wins.
+home establish > nar: He posed as a government official, with fake documents.
+home establish > nar: Would you believe him?
+# TITLE 3: The Bribe
+PART
+home establish > nar: Previously: Lustig told scrap dealers the Eiffel Tower was for sale.
+home two wife:think,dealer > wife: Why all the secrecy? Something feels wrong.
+home two dealer,lustig:think > lustig: A government official's salary is very small, Monsieur Poisson.
+home face dealer:smile > dealer: Ah! He wants a bribe. So he must be a real official!
+home two dealer:give,lustig:smile > lustig: Thank you, monsieur.
+home establish > nar: The dealer paid for the tower, and a bribe on top.
+home establish > nar: What do you think happened next?
+# TITLE 4: Too Embarrassed
+PART
+home establish > nar: Previously: a scrap dealer paid Lustig for the Eiffel Tower, plus a bribe.
+dock walk lustig > nar: Lustig fled to Austria with a suitcase of cash.
+home face dealer:scared > dealer: The government has never heard of the sale. I've been robbed.
+home face dealer:cross > dealer: If I report it, all of Paris will laugh at me.
+home establish > nar: The dealer never went to the police. So Lustig came back... and tried again.
+home establish > nar: Would you have reported it?
+# TITLE 5: The Money Box
+PART
+home establish > nar: Previously: the dealer was too embarrassed to report the Eiffel Tower con.
+home two mark:think,lustig:smile > lustig: This box prints perfect hundred-dollar bills. Just wait six hours. [AMERICA · 1930s]
+home face mark:smile > mark: I'll pay anything!
+home two capone:cross,lustig > capone: You promised to double my money, Count.
+home two capone,lustig:give > lustig: The deal failed, Mr Capone. Here's your money back.
+home face capone:smile > capone: An honest man! Here's a thousand dollars.
+home establish > nar: Even Al Capone was fooled.
+home establish > nar: Can a con man stay lucky forever?
+# TITLE 6: Alcatraz
+PART
+home establish > nar: Previously: Lustig sold fake money boxes and even fooled Al Capone.
+street two agent:point,lustig:cuffed > agent: Counterfeit money. Millions of dollars. You're under arrest. [NEW YORK · 1935]
+prison cell lustig > nar: Lustig was sent to Alcatraz.
+prison establish > nar: He died in prison in 1947.
+prison establish > nar: His death certificate listed his job as 'apprentice salesman'.
+prison establish > nar: What's the smartest con you've ever heard of?

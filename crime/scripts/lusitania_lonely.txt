@@ -1,0 +1,56 @@
+CAST raymond | Raymond Fernandez | m | rich | black
+CAST martha | Martha Beck | f | nurse | brown
+CAST janet | Janet Fay | f | rich | grey
+CAST delphine | Delphine Downing | f | plain | blonde
+CAST neighbour | a neighbour | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Lonely Hearts Club
+PART
+home establish > nar: America, the 1940s. Lonely-hearts clubs match people by letter. [NEW YORK · 1947]
+home face raymond:smile > raymond: Dear lady, I'm a gentleman of Spanish descent. Lonely. Looking for love.
+home two janet:smile,raymond:smile > janet: Your letters are so beautiful, Raymond.
+home face raymond:smile > raymond: And your savings, my dear? Safe in the bank?
+home establish > nar: Raymond Fernandez courted lonely women by letter. Then took their money.
+home establish > nar: Would you fall for a letter like that?
+# TITLE 2: Martha
+PART
+home establish > nar: Previously: Raymond Fernandez courted lonely women by letter and stole their money.
+home face martha:smile > martha: A letter from a man named Raymond. Finally, someone who sees me. [FLORIDA · 1947]
+home two martha:smile,raymond > raymond: You're... very different from your photo.
+home face martha:cry > martha: Don't leave me. I'll do anything.
+home two martha:smile,raymond:smile > raymond: Then come with me. Pretend to be my sister.
+home establish > nar: Martha Beck, a nurse, left everything to join his scams.
+home establish > nar: What could go wrong?
+# TITLE 3: Jealousy
+PART
+home establish > nar: Previously: nurse Martha Beck joined Raymond's scams, posing as his sister.
+home two raymond:smile,janet:smile > raymond: My sister Martha will keep us company.
+home face martha:cross > martha: He's mine. Not hers.
+home two martha:cross,raymond > martha: You're getting too close to them, Ray.
+home establish > nar: Martha's jealousy was extreme. And dangerous.
+home establish > nar: How far would her jealousy go?
+# TITLE 4: Janet Fay
+PART
+home establish > nar: Previously: Martha's jealousy grew more and more extreme.
+home two janet:smile,raymond > janet: I've given you my savings, Raymond. Now let's marry. [NEW YORK · JANUARY 1949]
+home face martha:cross > martha: Never.
+home establish > nar: Janet Fay, a sixty-six-year-old widow, was killed in their apartment.
+home face raymond:scared > raymond: Pack everything. We're leaving. Michigan.
+home establish > nar: Will they stop now?
+# TITLE 5: Michigan
+PART
+home establish > nar: Previously: widow Janet Fay was killed. Raymond and Martha fled to Michigan.
+home two delphine:smile,raymond:smile > delphine: My little Rainelle loves you already, Raymond. [MICHIGAN · FEBRUARY 1949]
+home establish > nar: Delphine Downing and her two-year-old daughter were killed.
+home two neighbour:think,police > neighbour: Mrs Downing and her little girl haven't been seen. And that couple's still in the house.
+home two police:point,raymond:cuffed > police: Raymond Fernandez. Martha Beck. You're under arrest.
+home establish > nar: How do you think the trial went?
+# TITLE 6: Together
+PART
+home establish > nar: Previously: Raymond and Martha were arrested in Michigan.
+court court judge,martha > judge: Raymond Fernandez, Martha Beck. Guilty. Death. [NEW YORK · 1949]
+court face martha > martha: My story is a love story.
+prison establish > nar: Both were executed in March 1951.
+prison establish > nar: They may have killed many more women than were ever proven.
+prison establish > nar: Was Martha a victim of love, or a killer?

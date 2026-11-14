@@ -1,0 +1,206 @@
+{
+ "key": "lustig_p03",
+ "yt": {
+  "title": "The Bribe | Victor Lustig (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Victor Lustig, Paris and the USA, 1920s-1930s. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "victor lustig"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "lustig": {
+   "name": "'Count' Victor Lustig",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "dealer": {
+   "name": "André Poisson",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "wife": {
+   "name": "the dealer's wife",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mark": {
+   "name": "a greedy buyer",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "capone": {
+   "name": "Al Capone",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "agent": {
+   "name": "a Secret Service agent",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "VICTOR LUSTIG",
+    "years": "PARIS · 1925",
+    "crime": "HE SOLD THE EIFFEL TOWER",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Lustig told scrap dealers the Eiffel Tower was for sale."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "wife",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "dealer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "wife",
+    "text": "Why all the secrecy? Something feels wrong."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "dealer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "lustig",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "lustig",
+    "text": "A government official's salary is very small, Monsieur Poisson."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dealer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "dealer",
+    "text": "Ah! He wants a bribe. So he must be a real official!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "dealer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "give"
+    },
+    {
+     "id": "lustig",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "lustig",
+    "text": "Thank you, monsieur."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The dealer paid for the tower, and a bribe on top."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HAPPENED NEXT?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think happened next? Part 4 is next."
+   }
+  }
+ ]
+}

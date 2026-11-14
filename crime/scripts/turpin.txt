@@ -1,0 +1,53 @@
+CAST turpin | Dick Turpin | m | worker | black
+CAST gang | an Essex Gang member | m | worker | brown | beard
+CAST farmer | a farmer | m | worker | grey | beard
+CAST wife | the farmer's wife | f | plain | brown
+CAST catcher | a thief-catcher | m | detective | grey
+CAST teacher | James Smith | m | plain | white
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Butcher
+PART
+street establish > nar: Essex, 1730s. Dick Turpin, a butcher, joins a gang. [ESSEX · 1730s]
+forest two gang,turpin > gang: Deer poaching pays. But farmhouses pay better.
+forest face turpin > turpin: I'm in.
+home two farmer:scared,wife:scared > wife: Who's at the door this late?
+home establish > nar: The Essex Gang broke into farmhouses and terrorised families.
+home establish > nar: Was Turpin the hero later stories made him?
+# TITLE 2: The Gang Falls
+PART
+home establish > nar: Previously: Dick Turpin joined the Essex Gang, who terrorised farmhouses.
+street two catcher:point,gang:cuffed > catcher: Another one caught. Another one hanged. [1735]
+forest face turpin:scared > turpin: They're all gone. I'm the last one.
+forest face turpin > turpin: Then I'll take to the roads.
+forest establish > nar: Turpin turned to highway robbery, stopping coaches on lonely roads.
+forest establish > nar: How long can a highwayman last?
+# TITLE 3: The Killing
+PART
+forest establish > nar: Previously: Turpin became a highwayman after his gang was caught.
+forest two catcher:point,turpin > catcher: Dick Turpin! You're coming with me! [EPPING FOREST · 1737]
+forest establish > nar: Turpin shot the man who tried to capture him.
+forest face turpin:scared > turpin: Now they'll hunt me everywhere. I need to go north.
+forest establish > nar: Where do you think he went?
+# TITLE 4: John Palmer
+PART
+forest establish > nar: Previously: Turpin killed a man and fled north.
+street two farmer,turpin:smile > turpin: John Palmer. Horse dealer. Fine horses, cheap. [YORKSHIRE · 1738]
+street face turpin:cross > turpin: That cockerel's in my way.
+street establish > nar: Drunk and angry, 'John Palmer' shot his landlord's cockerel in the street.
+street two catcher:point,turpin:cuffed > catcher: Shooting a cockerel? Come with us, Mr Palmer.
+street establish > nar: Will they find out who he really is?
+# TITLE 5: The Handwriting
+PART
+street establish > nar: Previously: 'John Palmer' was jailed for shooting a cockerel.
+prison cell turpin > turpin: A letter to my brother. Send money. Help me. [YORK CASTLE · 1739]
+home two teacher:think,catcher > teacher: I know this handwriting. I taught him to write. That's Dick Turpin.
+prison face turpin:scared > turpin: My own old teacher.
+prison establish > nar: Should he have written that letter?
+# TITLE 6: Black Bess
+PART
+prison establish > nar: Previously: Turpin's old teacher recognised his handwriting.
+court court judge,turpin > judge: Richard Turpin, guilty of horse theft. You will hang. [YORK · APRIL 1739]
+street establish > nar: Turpin was hanged at York in April 1739.
+street establish > nar: A century later, a novel invented his legendary ride on his horse, Black Bess.
+street establish > nar: The real Turpin was no romantic hero.
+street establish > nar: Why do you think people love legends more than the truth?
