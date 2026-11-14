@@ -1,0 +1,64 @@
+CAST billy | Billy the Kid | m | worker | brown
+CAST tunstall | John Tunstall | m | rich | blonde
+CAST garrett | Sheriff Pat Garrett | m | police | black | beard
+CAST bell | Deputy James Bell | m | police | brown
+CAST olinger | Deputy Bob Olinger | m | police | grey | beard
+CAST friend | a friend of Billy's | m | worker | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Orphan
+PART
+street establish > nar: New Mexico Territory, 1877. A skinny teenage orphan looking for work. [LINCOLN COUNTY · 1877]
+street two tunstall:smile,billy > tunstall: Can you ride? Can you shoot? Then you've got a job, kid.
+street two tunstall,billy:smile > billy: Thank you, Mr Tunstall. Nobody ever gave me a chance before.
+street face tunstall:smile > tunstall: Everybody deserves one chance.
+street establish > nar: Billy had found someone who treated him like family.
+street establish > nar: How long do you think it lasted?
+# TITLE 2: The Lincoln County War
+PART
+street establish > nar: Previously: orphan Billy found work and kindness with rancher John Tunstall.
+forest walk tunstall > nar: February 1878. A posse linked to Tunstall's rivals rides after him. [FEBRUARY 1878]
+forest establish > nar: John Tunstall was shot dead on the road.
+street two billy:cross,friend > billy: They killed the only man who ever treated me right.
+street face billy > billy: I'll get every one of them.
+street establish > nar: The Lincoln County War had begun.
+street establish > nar: Is revenge ever justice?
+# TITLE 3: Wanted
+PART
+street establish > nar: Previously: Tunstall was killed, and Billy swore revenge.
+street two friend,billy > friend: They say you killed the sheriff, Billy. Sheriff Brady. [1878]
+street face billy:cross > billy: They say a lot of things.
+street establish > nar: Billy was accused of killing several men, including a sheriff.
+street establish > nar: Newspapers made him famous. Billy the Kid.
+street establish > nar: What would you do if you were Billy now?
+# TITLE 4: Pat Garrett
+PART
+street establish > nar: Previously: Billy became a wanted outlaw, accused of killing a sheriff.
+street two garrett,friend > garrett: I used to know the Kid. We played cards together. [1880]
+street face garrett > garrett: Now I'm the sheriff. And it's my job to bring him in.
+forest two garrett:point,billy:cuffed > garrett: Stinking Springs. You're surrounded, Kid. Come out. [DECEMBER 1880]
+forest face billy:smile > billy: Got any food, Pat?
+forest establish > nar: Can an old friend be your enemy?
+# TITLE 5: Sentenced
+PART
+forest establish > nar: Previously: Sheriff Pat Garrett captured Billy at Stinking Springs.
+court court judge,billy > judge: William Bonney, you are sentenced to hang. [APRIL 1881]
+prison cell billy > billy: The Lincoln courthouse. Two guards. Bell and Olinger.
+prison two olinger:cross,billy > olinger: You'll hang soon, Kid. I'll enjoy watching.
+prison face billy > billy: We'll see, Bob.
+prison establish > nar: Do you think Billy will hang?
+# TITLE 6: The Escape
+PART
+prison establish > nar: Previously: Billy was sentenced to hang and guarded in the Lincoln courthouse.
+prison two bell,billy > billy: Take me to the outhouse, Bell. [28 APRIL 1881]
+prison establish > nar: Somehow, Billy got hold of a gun. Both guards were killed.
+street walk billy > nar: Billy rode out of Lincoln in broad daylight. Nobody dared stop him.
+street face garrett:cross > garrett: He's gone again.
+street establish > nar: Where would you go if you were Billy?
+# TITLE 7: Who Is It?
+PART
+street establish > nar: Previously: Billy escaped, killing his two guards.
+home two garrett:think,friend > garrett: He's at Fort Sumner. He has friends there. [FORT SUMNER · JULY 1881]
+home face garrett > nar: Late at night, Garrett waited in a dark bedroom.
+home face billy:think > billy: ¿Quién es? Who is it?
+home establish > nar: Garrett fired. Billy the Kid was dead, at about twenty-one.
+home establish > nar: Was Billy the Kid a killer, or a kid who never had a chance?

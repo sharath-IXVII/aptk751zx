@@ -1,0 +1,62 @@
+CAST urschel | Charles Urschel | m | rich | grey
+CAST berenice | Berenice Urschel | f | rich | blonde
+CAST george | George 'Machine Gun' Kelly | m | rich | black
+CAST kathryn | Kathryn Kelly | f | rich | red
+CAST guard | a farm guard | m | worker | brown | beard
+CAST agent | an FBI agent | m | police | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Card Game
+PART
+home establish > nar: Oklahoma City, July 1933. A hot night on the porch of an oil millionaire. [OKLAHOMA CITY · JULY 1933]
+home two urschel:smile,berenice:smile > berenice: Your turn, Charles. Don't cheat.
+home two george:point,urschel:scared > george: Which one of you is Urschel? Never mind. We'll take both men.
+home face berenice:scared > berenice: Charles!
+home establish > nar: Charles Urschel was kidnapped at gunpoint.
+home establish > nar: What would you do if you were taken?
+# TITLE 2: Blindfolded
+PART
+home establish > nar: Previously: oil millionaire Charles Urschel was kidnapped from his home.
+home bed urschel:sleep,guard > nar: Urschel was taken to a farm far away. Blindfolded. Chained.
+home two guard,urschel > guard: Two hundred thousand dollars. That's what you're worth.
+home face urschel:think > urschel: I can't see. But I can listen. I can count. I can remember.
+home establish > nar: Can a blind man solve his own kidnapping?
+# TITLE 3: Every Clue
+PART
+home establish > nar: Previously: Urschel was held blindfolded on a remote farm.
+home face urschel:think > urschel: The water tastes of minerals. Iron. From a well with a squeaky pump.
+home face urschel:think > urschel: A plane flies over at 9:45 every morning. And at 5:45 in the evening.
+home two guard,urschel:think > guard: Storm today. Heavy rain.
+home face urschel:smile > urschel: And today... no plane.
+home establish > nar: Why would a missing plane matter?
+# TITLE 4: Released
+PART
+home establish > nar: Previously: Urschel memorised every sound, including a plane that didn't fly in a storm.
+home two kathryn,george > kathryn: The money's paid. Let him go. [JULY 1933]
+street walk urschel > nar: After nine days, the ransom was paid, and Urschel was set free.
+home two agent,urschel > urschel: I'll tell you everything. The plane. The water. The rain.
+home face agent:think > agent: You noticed all that?
+home establish > nar: What would you do with those clues?
+# TITLE 5: The Flight Schedules
+PART
+home establish > nar: Previously: Urschel was released and gave the FBI every detail he'd noticed.
+home face agent:think > agent: Which airline flies over at 9:45 and 5:45? And skipped a flight in a storm?
+home two agent:point,urschel > agent: One route. Over a farm near Paradise, Texas.
+forest two agent:point,guard:cuffed > agent: FBI! Nobody move!
+forest face urschel:smile > urschel: The squeaky pump. The iron water. This is it.
+forest establish > nar: Where were the Kellys?
+# TITLE 6: G-Men
+PART
+forest establish > nar: Previously: the FBI found the farm where Urschel was held.
+home two agent:point,george:cuffed > agent: George Kelly! Hands up! [MEMPHIS · SEPTEMBER 1933]
+home face george:scared > george: Don't shoot, G-Men! Don't shoot!
+home two agent,kathryn:cuffed > agent: And you, Kathryn.
+home establish > nar: Legend says that's how FBI agents got the nickname G-Men. Government men.
+home establish > nar: Do you think the legend is true?
+# TITLE 7: Life
+PART
+home establish > nar: Previously: George and Kathryn Kelly were arrested.
+court court judge,george > judge: Life in prison. For both of you. [OCTOBER 1933]
+prison cell george > nar: Machine Gun Kelly spent the rest of his life in prison, including years on Alcatraz.
+prison establish > nar: The case helped make the FBI famous across America.
+prison establish > nar: Urschel solved his own kidnapping, blindfolded.
+prison establish > nar: Could you have remembered as much as Urschel?

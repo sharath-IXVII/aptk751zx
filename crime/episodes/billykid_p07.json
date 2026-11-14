@@ -1,0 +1,192 @@
+{
+ "key": "billykid_p07",
+ "yt": {
+  "title": "Who Is It? | Billy The Kid (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: Billy The Kid, New Mexico Territory, 1877-1881. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "billy the kid"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "billy": {
+   "name": "Billy the Kid",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "tunstall": {
+   "name": "John Tunstall",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "garrett": {
+   "name": "Sheriff Pat Garrett",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true,
+   "cap": true
+  },
+  "bell": {
+   "name": "Deputy James Bell",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "olinger": {
+   "name": "Deputy Bob Olinger",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true,
+   "cap": true
+  },
+  "friend": {
+   "name": "a friend of Billy's",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BILLY THE KID",
+    "years": "NEW MEXICO · 1881",
+    "crime": "THE LAST ESCAPE",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Billy escaped, killing his two guards."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "garrett",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "friend",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "garrett",
+    "text": "He's at Fort Sumner. He has friends there."
+   },
+   "title": "FORT SUMNER · JULY 1881"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "garrett",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Late at night, Garrett waited in a dark bedroom."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "billy",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "billy",
+    "text": "¿Quién es? Who is it?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Garrett fired. Billy the Kid was dead, at about twenty-one."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS BILLY THE KID A KILLER, OR A KID WHO NEVER HAD A CHANCE?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was Billy the Kid a killer, or a kid who never had a chance?"
+   }
+  }
+ ]
+}

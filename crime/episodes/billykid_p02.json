@@ -1,0 +1,200 @@
+{
+ "key": "billykid_p02",
+ "yt": {
+  "title": "The Lincoln County War | Billy The Kid (True Story) Part 2 #shorts",
+  "description": "Part 2 of 7: Billy The Kid, New Mexico Territory, 1877-1881. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "billy the kid"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "billy": {
+   "name": "Billy the Kid",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "tunstall": {
+   "name": "John Tunstall",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "garrett": {
+   "name": "Sheriff Pat Garrett",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "beard": true,
+   "cap": true
+  },
+  "bell": {
+   "name": "Deputy James Bell",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "olinger": {
+   "name": "Deputy Bob Olinger",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true,
+   "cap": true
+  },
+  "friend": {
+   "name": "a friend of Billy's",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BILLY THE KID",
+    "years": "NEW MEXICO · 1881",
+    "crime": "THE LAST ESCAPE",
+    "part": "PART 2 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: orphan Billy found work and kindness with rancher John Tunstall."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "tunstall",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "February 1878. A posse linked to Tunstall's rivals rides after him."
+   },
+   "title": "FEBRUARY 1878"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "John Tunstall was shot dead on the road."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "billy",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "friend",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "billy",
+    "text": "They killed the only man who ever treated me right."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "billy",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "billy",
+    "text": "I'll get every one of them."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Lincoln County War had begun."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS REVENGE EVER JUSTICE?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is revenge ever justice? Part 3 is next."
+   }
+  }
+ ]
+}
