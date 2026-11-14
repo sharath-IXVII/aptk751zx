@@ -189,7 +189,7 @@ SAFE = {"bed": {"home", "ward"}, "grave": {"grave"}, "court": {"court"}, "cell":
 
 
 TRIAL = re.compile(r"trial|tried|court|guilty|jury|acquit|verdict|sentenced|not proven|convict", re.I)
-ARREST = re.compile(r"arrest|jail|prison|cell|caught|captur|held|custody|alcatraz|newgate|asylum|walled", re.I)
+ARREST = re.compile(r"arrest|hanged|executed|jail|prison|cell|caught|captur|held|custody|alcatraz|newgate|asylum|walled", re.I)
 
 
 def convert(case, k, cast, d) -> dict:

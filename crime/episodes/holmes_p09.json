@@ -1,7 +1,7 @@
 {
  "key": "holmes_p09",
  "yt": {
-  "title": "H. H. HOLMES PART 9 | H. H. Holmes (True Story) Part 9 #shorts",
+  "title": "A Tip From a Train Robber | H. H. Holmes (True Story) Part 9 #shorts",
   "description": "Part 9 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -107,70 +154,102 @@
    }
   },
   {
-   "set": "home",
+   "set": "prison",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Holmes takes three Pitezel children across the US and Canada, promising to bring them to their father."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": -2,
-     "ry": 0,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Boston streets, rainy. I walk with police."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "cross"
-    },
-    {
-     "id": "police",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "cross"
-    }
-   ],
-   "line": {
-    "who": "police",
-    "text": "You are under arrest for fraud."
+    "text": "Previously: Holmes travelled with three of the Pitezel children."
    }
   },
   {
    "set": "prison",
-   "cam": "cell",
+   "cam": "office",
    "chars": [
     {
-     "id": "herman",
+     "id": "hedge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Do you know a crooked lawyer? I need one for an insurance job."
+   },
+   "title": "ST LOUIS JAIL"
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "hedge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "hedge",
+    "text": "For a share? I know just the man."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "hedge",
      "x": 0,
      "z": 0,
      "ry": 0,
-     "act": "think"
+     "act": "cross"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "I am Dr. Holmes. I did not do this."
+    "who": "hedge",
+    "text": "But you never paid me, Holmes. So now I talk."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "hedge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "hedge",
+    "text": "Officer, that insurance death? It was a fraud."
    }
   },
   {
@@ -178,149 +257,68 @@
    "cam": "office",
    "chars": [
     {
-     "id": "alice",
+     "id": "police",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
      "act": "point"
     },
     {
-     "id": "nellie",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
-     "act": "cry"
+     "act": "cuffed"
     }
    ],
    "line": {
-    "who": "alice",
-    "text": "Where is Father? You said he would meet us."
+    "who": "police",
+    "text": "H. H. Holmes, you're under arrest for fraud."
    },
-   "fx": [
-    "rain"
-   ]
+   "title": "BOSTON · NOV 1894"
   },
   {
    "set": "street",
-   "cam": "office",
+   "cam": "face",
    "chars": [
     {
-     "id": "herman",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
      "act": "smile"
-    },
-    {
-     "id": "alice",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "point"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "Your father is waiting. Trust me."
+    "who": "holmes",
+    "text": "Fraud? Just a misunderstanding."
    }
   },
   {
    "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "smile"
-    },
-    {
-     "id": "howard",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Come, Howard. We have a long ride ahead."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "geyer",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "think"
-    },
-    {
-     "id": "police",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "think"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "Marion Hedgepeth told us Holmes fled Boston."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "geyer",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "walk"
-    },
-    {
-     "id": "police",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "We follow his trail city by city."
-   }
-  },
-  {
-   "set": "home",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Holmes arrested in Boston. A train robber tipped off the police."
+    "text": "Holmes was in custody. But where were the children?"
    },
-   "flick": true,
    "fx": [
+    "rain",
     "lightning"
    ]
   },
   {
-   "set": "home",
+   "set": "street",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "WOULD YOU BELIEVE ANYTHING HOLMES SAYS?",
     "p": "Comment below 👇",
     "f": "Part 10 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 10 is next."
+    "text": "Would you believe anything Holmes says? Part 10 is next."
    }
   }
  ]

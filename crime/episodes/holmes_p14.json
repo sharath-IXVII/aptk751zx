@@ -1,7 +1,7 @@
 {
  "key": "holmes_p14",
  "yt": {
-  "title": "H. H. HOLMES Part 14 | H. H. Holmes (True Story) Part 14 #shorts",
+  "title": "The Confession | H. H. Holmes (True Story) Part 14 #shorts",
   "description": "Part 14 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -107,18 +154,62 @@
    }
   },
   {
-   "set": "home",
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Holmes was found guilty of murdering Benjamin Pitezel."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Newspapers will pay a fortune for my story."
+   },
+   "title": "PRISON · 1896"
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "I confess to twenty-seven murders."
+   }
+  },
+  {
+   "set": "prison",
    "cam": "office",
    "chars": [
     {
-     "id": "judge",
+     "id": "police",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
-     "act": "cross"
+     "act": "think"
     },
     {
-     "id": "herman",
+     "id": "geyer",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -126,135 +217,63 @@
     }
    ],
    "line": {
-    "who": "judge",
-    "text": "Guilty of murder. Sentence: death."
+    "who": "police",
+    "text": "Some of the people he named are still alive!"
    }
   },
   {
-   "set": "home",
-   "cam": "office",
+   "set": "prison",
+   "cam": "face",
    "chars": [
     {
-     "id": "herman",
+     "id": "geyer",
      "x": 0,
-     "z": 0.3,
+     "z": 0,
      "ry": 0,
      "act": "idle"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "I have confessed to many things."
+    "who": "geyer",
+    "text": "Even his confession is a lie."
    }
   },
   {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "think"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "But truth is hard to find."
-   }
-  },
-  {
-   "set": "dock",
+   "set": "prison",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "He sells his story to a newspaper."
-   }
+    "text": "Holmes was hanged in May 1896."
+   },
+   "title": "MAY 1896",
+   "flick": true
   },
   {
-   "set": "dock",
+   "set": "prison",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Twenty-seven murders he claims."
+    "text": "How many people he really killed is still unknown."
    },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Some later shown false."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "The gallows wait."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "scared"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "May 1896. My end."
-   }
-  },
-  {
-   "set": "shore",
-   "cam": "wide",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Hanged. The count of his victims unknown."
-   },
+   "flick": true,
    "fx": [
     "lightning"
    ]
   },
   {
-   "set": "shore",
+   "set": "prison",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "HOW MANY DID HE TRULY KILL?",
+    "h": "WHAT DO YOU THINK: HOW MANY VICTIMS WERE THERE?",
     "p": "Comment below 👇",
     "f": "Next true story coming soon"
    },
    "line": {
     "who": "nar",
-    "text": "How many did he truly kill?"
+    "text": "What do you think: how many victims were there?"
    }
   }
  ]

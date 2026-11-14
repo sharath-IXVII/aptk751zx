@@ -1,7 +1,7 @@
 {
  "key": "holmes_p12",
  "yt": {
-  "title": "Murder Castle Evidence | H. H. Holmes (True Story) Part 12 #shorts",
+  "title": "Inside the Murder Castle | H. H. Holmes (True Story) Part 12 #shorts",
   "description": "Part 12 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -107,185 +154,68 @@
    }
   },
   {
-   "set": "home",
+   "set": "street",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Police search the Chicago Castle and find hidden rooms, a vault and a basement with grim evidence."
+    "text": "Previously: Detective Geyer found the remains of the three Pitezel children."
    },
-   "title": "CHICAGO · 1896"
+   "fx": [
+    "rain"
+   ]
   },
   {
-   "set": "grave",
-   "cam": "grave",
+   "set": "street",
+   "cam": "office",
    "chars": [
     {
      "id": "police",
      "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
+     "z": 0.4,
+     "ry": 0.5,
      "act": "point"
     },
     {
      "id": "geyer",
      "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
+     "z": 0.4,
+     "ry": -0.5,
      "act": "idle"
     }
    ],
    "line": {
-    "who": "geyer",
-    "text": "Another hidden room. What secrets does it hold?"
-   }
+    "who": "police",
+    "text": "Chicago police are searching Holmes's Castle."
+   },
+   "title": "CHICAGO · 1895"
   },
   {
-   "set": "grave",
-   "cam": "grave",
+   "set": "home",
+   "cam": "office",
    "chars": [
     {
      "id": "police",
      "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
     },
     {
      "id": "geyer",
      "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
+     "z": 0.4,
+     "ry": -0.5,
      "act": "idle"
     }
    ],
    "line": {
-    "who": "geyer",
-    "text": "A vault. And inside... something dark."
+    "who": "police",
+    "text": "Hidden rooms. Secret passages. A huge vault."
    }
   },
   {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "police",
-     "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "geyer",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "A basement. And grim evidence everywhere."
-   }
-  },
-  {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "police",
-     "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "geyer",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "Newspapers call it the Murder Castle."
-   }
-  },
-  {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "police",
-     "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "geyer",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "Who built this place of horror?"
-   }
-  },
-  {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "police",
-     "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "geyer",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "How many did Holmes kill here?"
-   }
-  },
-  {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "police",
-     "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "geyer",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "geyer",
-    "text": "This changes everything for the case."
-   }
-  },
-  {
-   "set": "grave",
+   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -298,24 +228,66 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "We must find more victims."
+    "text": "Doors that open onto walls. Who builds a house like this?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "geyer",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "And the basement. You need to see the basement."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "What they found shocked the city."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Newspapers gave it a new name. The Murder Castle."
    },
    "fx": [
     "lightning"
    ]
   },
   {
-   "set": "grave",
+   "set": "street",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "WOULD YOU DARE TO WALK THROUGH THE CASTLE?",
     "p": "Comment below 👇",
     "f": "Part 13 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 13 is next."
+    "text": "Would you dare to walk through the Castle? Part 13 is next."
    }
   }
  ]

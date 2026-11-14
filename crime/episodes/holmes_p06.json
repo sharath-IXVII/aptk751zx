@@ -1,7 +1,7 @@
 {
  "key": "holmes_p06",
  "yt": {
-  "title": "THE INSURANCE SCAM | H. H. Holmes (True Story) Part 6 #shorts",
+  "title": "The Insurance Plan | H. H. Holmes (True Story) Part 6 #shorts",
   "description": "Part 6 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -108,17 +155,26 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Holmes lived on fraud, and women close to him vanished."
+   }
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
-     "id": "benjamin",
+     "id": "ben",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
-     "act": "think"
+     "act": "idle"
     },
     {
-     "id": "herman",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -126,8 +182,8 @@
     }
    ],
    "line": {
-    "who": "benjamin",
-    "text": "You want to fake my death for money?"
+    "who": "holmes",
+    "text": "Ben, you're my most loyal friend. And I have a plan to make us rich."
    }
   },
   {
@@ -135,38 +191,14 @@
    "cam": "office",
    "chars": [
     {
-     "id": "benjamin",
+     "id": "ben",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
-     "act": "smile"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
      "act": "think"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Ten thousand dollars if you play dead."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "cross"
     },
     {
-     "id": "herman",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -174,8 +206,8 @@
     }
    ],
    "line": {
-    "who": "benjamin",
-    "text": "My family will miss me, but we need cash."
+    "who": "ben",
+    "text": "What kind of plan?"
    }
   },
   {
@@ -183,47 +215,40 @@
    "cam": "office",
    "chars": [
     {
-     "id": "benjamin",
+     "id": "ben",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
      "act": "idle"
     },
     {
-     "id": "herman",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
-     "act": "give"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "I give you the plan. You fake your end."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
      "act": "point"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "think"
     }
    ],
    "line": {
-    "who": "benjamin",
-    "text": "Who finds the body? You?"
+    "who": "holmes",
+    "text": "We insure your life for ten thousand dollars. Then we fake your death."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ben",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "ben",
+    "text": "Fake my death? And Carrie, my children?"
    }
   },
   {
@@ -231,38 +256,14 @@
    "cam": "office",
    "chars": [
     {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "cross"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "No. I arrange. You collect the gold."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
+     "id": "ben",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
      "act": "think"
     },
     {
-     "id": "herman",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -270,8 +271,25 @@
     }
    ],
    "line": {
-    "who": "benjamin",
-    "text": "Agreed. We share the ten grand."
+    "who": "holmes",
+    "text": "They'll get their share. A body, a new name, and we split the money."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ben",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ben",
+    "text": "All right, Holmes. I trust you."
    }
   },
   {
@@ -280,81 +298,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Holmes built schemes on fraud."
+    "text": "Benjamin Pitezel agreed to the plan."
    },
-   "flick": true
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "cross"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "benjamin",
-    "text": "So we plan the trick, you and I."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "think"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "The money comes when you are missed."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "benjamin",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "smile"
-    },
-    {
-     "id": "herman",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "cross"
-    }
-   ],
-   "line": {
-    "who": "benjamin",
-    "text": "Ten thousand dollars. Gone like smoke."
-   },
+   "flick": true,
    "fx": [
     "lightning"
    ]
@@ -364,13 +310,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "SHOULD HE HAVE TRUSTED HOLMES?",
     "p": "Comment below 👇",
     "f": "Part 7 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 7 is next."
+    "text": "Should he have trusted Holmes? Part 7 is next."
    }
   }
  ]

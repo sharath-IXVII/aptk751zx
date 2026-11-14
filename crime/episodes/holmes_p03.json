@@ -1,7 +1,7 @@
 {
  "key": "holmes_p03",
  "yt": {
-  "title": "CHICAGO · 1886-1896 | H. H. Holmes (True Story) Part 3 #shorts",
+  "title": "The Castle Rises | H. H. Holmes (True Story) Part 3 #shorts",
   "description": "Part 3 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -112,7 +159,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: He takes over a pharmacy and charms everyone."
+    "text": "Previously: Holmes took over the pharmacy. Its owner was said to have moved away."
    },
    "fx": [
     "rain"
@@ -120,67 +167,17 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Now he builds a huge three-storey building over the shop."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": -2,
-     "ry": 0,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Room for rent, sir?"
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
-     "id": "herman",
+     "id": "builder",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
      "act": "idle"
     },
     {
-     "id": "carrie",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Fired again. No one stays long."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "idle"
-    },
-    {
-     "id": "carrie",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -188,8 +185,73 @@
     }
    ],
    "line": {
-    "who": "carrie",
-    "text": "What goes on upstairs?"
+    "who": "holmes",
+    "text": "Three storeys. Shops below, rooms above."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "builder",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "builder",
+    "text": "These plans are strange, sir. Doors that open onto walls? Stairs to nowhere?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Just build what I draw. And don't ask questions."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "builder",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "You're slow. You're fired. Send in the next man."
    },
    "fx": [
     "rain"
@@ -197,19 +259,19 @@
   },
   {
    "set": "street",
-   "cam": "office",
+   "cam": "scene",
    "chars": [
     {
-     "id": "herman",
+     "id": "builder",
      "x": 0,
-     "z": 0.3,
+     "z": -2,
      "ry": 0,
-     "act": "smile"
+     "act": "walk"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "Just a shop, ma'am. Nothing more."
+    "who": "builder",
+    "text": "Fired again. No one stays long enough to see the whole building."
    }
   },
   {
@@ -218,68 +280,19 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Workers come and go, but the plan stays hidden."
-   }
+    "text": "Builders came and went. Only Holmes knew every room."
+   },
+   "title": "1887 - 1892"
   },
   {
    "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": -0.8,
-     "z": 0.4,
-     "ry": 0.5,
-     "act": "idle"
-    },
-    {
-     "id": "carrie",
-     "x": 0.8,
-     "z": 0.4,
-     "ry": -0.5,
-     "act": "scared"
-    }
-   ],
+   "cam": "scene",
+   "chars": [],
    "line": {
-    "who": "carrie",
-    "text": "Why so many locked doors?"
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "think"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Only I know the way out."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "face",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Trust me. It will be worth it."
+    "who": "nar",
+    "text": "Locals gave the strange building a name. They called it the Castle."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

@@ -1,7 +1,7 @@
 {
  "key": "holmes_p01",
  "yt": {
-  "title": "THE MONSTER OF ENGLEWOOD | H. H. Holmes (True Story) Part 1 #shorts",
+  "title": "The Man With A New Name | H. H. Holmes (True Story) Part 1 #shorts",
   "description": "Part 1 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -112,16 +159,16 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Herman Mudgett. A medical student with a secret identity."
+    "text": "Chicago, 1886. A young man steps off the train with a brand new name."
    },
-   "title": "ENGLEWOOD · 1886"
+   "title": "CHICAGO · 1886"
   },
   {
    "set": "street",
    "cam": "scene",
    "chars": [
     {
-     "id": "herman",
+     "id": "holmes",
      "x": 0,
      "z": -2,
      "ry": 0,
@@ -129,79 +176,97 @@
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "New city. New name. H. H. Holmes."
+    "who": "holmes",
+    "text": "Herman Mudgett is gone. From today, I am Doctor H. H. Holmes."
    }
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "office",
    "chars": [
     {
-     "id": "herman",
+     "id": "widow",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "widow",
+    "text": "A doctor? In my little pharmacy? Well, I do need help."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "widow",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Leave everything to me, ma'am. I learn fast."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "holmes",
      "x": 0,
-     "z": 0.3,
+     "z": 0,
      "ry": 0,
      "act": "smile"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "Fine establishment. What brings you to Chicago?"
-   },
-   "fx": [
-    "rain"
-   ]
+    "who": "holmes",
+    "text": "Every customer loves a friendly face."
+   }
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "office",
    "chars": [
     {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
+     "id": "widow",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
      "act": "idle"
     }
    ],
    "line": {
-    "who": "nar",
-    "text": "Welcome, sir. We have just what you need."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "cross"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "That pharmacy for sale? I will take it."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "A wise choice. The location is perfect."
+    "who": "widow",
+    "text": "You're very charming, Doctor Holmes. Almost too charming."
    }
   },
   {
@@ -210,43 +275,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "He smiles, charming everyone on the busy corner."
+    "text": "He had a new name, a new town, and big plans."
    },
-   "title": "NO TITLE"
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Good evening, ma'am. Lovely night."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "office",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0.3,
-     "ry": 0,
-     "act": "idle"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Lovely indeed. Good day to you."
-   }
+   "title": "ENGLEWOOD"
   },
   {
    "set": "street",
@@ -254,24 +285,24 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The name H. H. Holmes begins. But who is the man behind the smile?"
+    "text": "But who was the real man behind that smile?"
    },
    "fx": [
     "lightning"
    ]
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "WOULD YOU TRUST A STRANGER WITH A BRAND NEW NAME?",
     "p": "Comment below 👇",
     "f": "Part 2 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 2 is next."
+    "text": "Would you trust a stranger with a brand new name? Part 2 is next."
    }
   }
  ]

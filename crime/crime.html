@@ -203,7 +203,7 @@ window.renderAt=(i,t,talk)=>{
   if(ctx.beam)ctx.beam.rotation.y=t*1.2;
   if(ctx.boat)ctx.boat.rotation.z=Math.sin(t*1.5)*.06;
   const ln=sh.fx&&sh.fx.includes('lightning')&&((t>1.2&&t<1.32)||(t>1.45&&t<1.55));
-  S.background.set(ln?'#c8d4ff':({street:'#0e1018',forest:'#0b120e',prison:'#0a0a0c',home:'#120c08',court:'#14100c',asylum:'#08090a',grave:'#0d1018',ward:'#0a0c0c',shore:'#141a2e',stairs:'#0d0d12',room:'#0b0b10',dock:'#121828'})[sh.set]);ctx.moon.intensity=ln?7:({room:.9,home:.6,court:.8,asylum:.7,prison:.6,street:1.2,forest:1.0})[sh.set]||1.8;
+  S.background.set(ln?'#c8d4ff':({street:'#0e1018',forest:'#0b120e',prison:'#0a0a0c',home:'#120c08',court:'#14100c',asylum:'#08090a',grave:'#0d1018',ward:'#0a0c0c',shore:'#141a2e',stairs:'#0d0d12',room:'#0b0b10',dock:'#121828'})[sh.set]);ctx.moon.intensity=ln?7:({room:.9,home:.6,court:.8,asylum:.7,prison:.6,street:1.2,forest:2.4})[sh.set]||1.8;
   if(ctx.bigLamp)ctx.bigLamp.intensity=t>1.8?120:0;
   if(ctx.sil)ctx.sil.root.visible=(t>1.2&&t<1.6)||t>2.4;
   ttl.style.display=sh.title&&t<3.2?'block':'none';if(sh.title)ttl.textContent=sh.title;

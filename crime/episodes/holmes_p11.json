@@ -1,7 +1,7 @@
 {
  "key": "holmes_p11",
  "yt": {
-  "title": "TORONTO · 1896 | H. H. Holmes (True Story) Part 11 #shorts",
+  "title": "The Cellar in Toronto | H. H. Holmes (True Story) Part 11 #shorts",
   "description": "Part 11 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -112,132 +159,63 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Geyer hunts Pitezel children across cities."
+    "text": "Previously: Detective Geyer followed Holmes's route city by city to Toronto."
    },
-   "title": "TORONTO · 1896",
    "fx": [
     "rain"
    ]
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "geyer",
-     "x": -1.2,
-     "z": 0.3,
-     "ry": 0.4,
-     "act": "think"
-    },
-    {
-     "id": "police",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "cross"
-    },
-    {
-     "id": "alice",
-     "x": 1.2,
-     "z": 0.3,
-     "ry": -0.4,
-     "act": "cry"
-    }
-   ],
-   "line": {
-    "who": "alice",
-    "text": "Where is my mother? I want my sister."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "geyer",
-     "x": -1.2,
-     "z": 0.3,
-     "ry": 0.4,
-     "act": "point"
-    },
-    {
-     "id": "police",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "think"
-    },
-    {
-     "id": "nellie",
-     "x": 1.2,
-     "z": 0.3,
-     "ry": -0.4,
-     "act": "scared"
-    }
-   ],
-   "line": {
-    "who": "nellie",
-    "text": "We are lost. Please help us."
-   }
-  },
-  {
-   "set": "grave",
-   "cam": "grave",
+   "cam": "office",
    "chars": [
     {
      "id": "geyer",
      "x": -0.8,
-     "z": 1.6,
-     "ry": 0.3,
-     "act": "cross"
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
     },
     {
      "id": "police",
      "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
+     "z": 0.4,
+     "ry": -0.5,
      "act": "idle"
     }
    ],
    "line": {
     "who": "police",
-    "text": "These children are dead. I am sorry."
-   }
+    "text": "A man rented this house with two girls. He borrowed a spade."
+   },
+   "title": "TORONTO · 1895"
   },
   {
-   "set": "grave",
-   "cam": "grave",
+   "set": "home",
+   "cam": "face",
    "chars": [
     {
      "id": "geyer",
      "x": 0,
-     "z": 1.6,
+     "z": 0,
      "ry": 0,
-     "act": "kneel"
+     "act": "scared"
     }
    ],
    "line": {
     "who": "geyer",
-    "text": "Alice and Nellie are in the cellar. Rest now."
+    "text": "A spade? Show me the cellar."
    }
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "scene",
-   "chars": [
-    {
-     "id": "geyer",
-     "x": 0,
-     "z": -2,
-     "ry": 0,
-     "act": "walk"
-    }
-   ],
+   "chars": [],
    "line": {
-    "who": "geyer",
-    "text": "Howard is missing. I must find him."
-   }
+    "who": "nar",
+    "text": "In the cellar, Geyer found the remains of Alice and Nellie."
+   },
+   "flick": true
   },
   {
    "set": "grave",
@@ -245,39 +223,51 @@
    "chars": [
     {
      "id": "geyer",
-     "x": -0.8,
+     "x": 0,
      "z": 1.6,
-     "ry": 0.3,
-     "act": "point"
-    },
-    {
-     "id": "police",
-     "x": 0.8,
-     "z": 1.6,
-     "ry": -0.3,
+     "ry": 0,
      "act": "cry"
     }
    ],
    "line": {
-    "who": "police",
-    "text": "Howard's body here. Near Indianapolis."
+    "who": "geyer",
+    "text": "I'm so sorry, girls. I came too late."
    }
   },
   {
-   "set": "street",
-   "cam": "office",
+   "set": "grave",
+   "cam": "face",
    "chars": [
     {
      "id": "geyer",
      "x": 0,
-     "z": 0.3,
+     "z": 0,
      "ry": 0,
-     "act": "think"
+     "act": "idle"
     }
    ],
    "line": {
     "who": "geyer",
-    "text": "Holmes lied. He killed them all."
+    "text": "And Howard? I'm not stopping until I find him."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Later, near Indianapolis, Geyer found Howard's remains too."
+   },
+   "title": "INDIANAPOLIS"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The children never saw their father again."
    },
    "fx": [
     "rain",
@@ -285,17 +275,17 @@
    ]
   },
   {
-   "set": "street",
+   "set": "forest",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "HOW SHOULD HOLMES BE PUNISHED?",
     "p": "Comment below 👇",
     "f": "Part 12 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 12 is next."
+    "text": "How should Holmes be punished? Part 12 is next."
    }
   }
  ]

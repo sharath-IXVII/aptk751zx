@@ -26,15 +26,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           pip install -q python-dotenv google-api-python-client google-auth httpx
-          python -m pipeline.crime_writer 8 | tee writer.log
+          python -m pipeline.crime_writer 0 | tee writer.log  # AI writer paused: scripts are hand-written in crime/scripts
           if git status --porcelain crime | grep -q .; then
             git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add crime && git commit -qm "Crime: write next case [skip ci]"
             for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && break; sleep $((i*5)); done
           fi
           if grep -q "cases left in library: [0-3]$\|CASE LIBRARY EMPTY" writer.log; then
-            gh issue list --state open --search "Crime case library" -q '.[].number' --json number | grep -q . || \
-            gh issue create --title "Crime case library is running out" --body "The ENT true-crime library has only a few cases left. Ask Claude to add more cases to crime/cases*.py."
+            gh issue list --state open --search "Crime scripts" -q '.[].number' --json number | grep -q . || \
+            gh issue create --title "Crime scripts are running out" --body "The ENT channel has fewer than 12 true-crime Shorts left to post (about 6 days). Ask Claude to write the next cases in crime/scripts/."
           fi
       - name: Next part
         id: ep

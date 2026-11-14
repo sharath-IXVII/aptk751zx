@@ -1,7 +1,7 @@
 {
  "key": "holmes_p08",
  "yt": {
-  "title": "HOLMES TAKES THE CHILDREN | H. H. Holmes (True Story) Part 8 #shorts",
+  "title": "Three Children on the Road | H. H. Holmes (True Story) Part 8 #shorts",
   "description": "Part 8 of 14: H. H. Holmes, Chicago and other US cities, 1886-1896. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
   "tags": [
    "true crime",
@@ -13,13 +13,58 @@
  },
  "narrator": "am_michael",
  "cast": {
-  "herman": {
-   "name": "Herman Webster Mudgett / H. H. Holmes",
-   "skin": "#e6b48e",
+  "holmes": {
+   "name": "H. H. Holmes",
+   "skin": "#e0aa84",
    "cloth": "#3a2a4a",
    "cloth2": "#2a1e36",
    "hair": "#4a3020",
-   "voice": "am_adam"
+   "voice": "am_adam",
+   "beard": true
+  },
+  "widow": {
+   "name": "the shop owner",
+   "skin": "#b9774a",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "builder": {
+   "name": "a builder",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "guest": {
+   "name": "a hotel guest",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "clerk": {
+   "name": "a young clerk",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "ben": {
+   "name": "Benjamin Pitezel",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "beard": true
   },
   "carrie": {
    "name": "Carrie Pitezel",
@@ -27,24 +72,16 @@
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
    "hair": "#4a3020",
-   "voice": "af_bella",
+   "voice": "af_sky",
    "long": true
-  },
-  "benjamin": {
-   "name": "Benjamin Pitezel",
-   "skin": "#a86a42",
-   "cloth": "#4a5a6a",
-   "cloth2": "#36424e",
-   "hair": "#4a3020",
-   "voice": "am_eric"
   },
   "alice": {
    "name": "Alice Pitezel",
    "skin": "#a86a42",
    "cloth": "#6a4a2a",
    "cloth2": "#6a4a2a",
-   "hair": "#4a3020",
-   "voice": "af_nicole",
+   "hair": "#c8a050",
+   "voice": "af_nova",
    "long": true
   },
   "nellie": {
@@ -53,7 +90,7 @@
    "cloth": "#2a2f45",
    "cloth2": "#2a2f45",
    "hair": "#4a3020",
-   "voice": "af_sarah",
+   "voice": "bf_emma",
    "long": true
   },
   "howard": {
@@ -61,36 +98,46 @@
    "skin": "#c99872",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
-   "hair": "#4a3020",
-   "voice": "am_liam"
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "hedge": {
+   "name": "Marion Hedgepeth",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "beard": true
   },
   "geyer": {
    "name": "Detective Frank Geyer",
    "skin": "#d9a882",
    "cloth": "#3b3f4a",
    "cloth2": "#2a2d35",
-   "hair": "#4a3020",
-   "voice": "bm_george",
+   "hair": "#9a9a9a",
+   "voice": "bm_daniel",
+   "beard": true,
    "coat": true,
    "hat": true
   },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_fable",
+   "cap": true
+  },
   "judge": {
-   "name": "Judge",
+   "name": "the judge",
    "skin": "#c99872",
    "cloth": "#151515",
    "cloth2": "#101010",
    "hair": "#e0e0e0",
-   "voice": "bm_lewis",
+   "voice": "am_echo",
    "glasses": true
-  },
-  "police": {
-   "name": "Police Officer",
-   "skin": "#b9774a",
-   "cloth": "#1e2a4a",
-   "cloth2": "#16203a",
-   "hair": "#4a3020",
-   "voice": "bm_daniel",
-   "cap": true
   }
  },
  "shots": [
@@ -107,189 +154,115 @@
    }
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Holmes took three Pitezel children across the US and Canada."
+    "text": "Previously: Benjamin Pitezel was found dead, and Holmes collected the insurance."
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
+   "set": "home",
+   "cam": "office",
    "chars": [
     {
-     "id": "herman",
-     "x": -1.2,
-     "z": 0.3,
-     "ry": 0.4,
-     "act": "smile"
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
     },
     {
-     "id": "alice",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "think"
-    },
-    {
-     "id": "nellie",
-     "x": 1.2,
-     "z": 0.3,
-     "ry": -0.4,
-     "act": "cross"
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "Come children, we travel far now."
-   },
-   "fx": [
-    "rain"
-   ]
+    "who": "carrie",
+    "text": "My Ben... and now I have five children to feed."
+   }
   },
   {
-   "set": "street",
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Let me help. I'll take Alice, Nellie and Howard. They'll see their father soon."
+   }
+  },
+  {
+   "set": "home",
    "cam": "scene",
    "chars": [
     {
-     "id": "howard",
+     "id": "alice",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "idle"
+    },
+    {
+     "id": "nellie",
      "x": 0,
-     "z": -2,
+     "z": 0,
      "ry": 0,
-     "act": "walk"
+     "act": "idle"
+    },
+    {
+     "id": "howard",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "smile"
     }
    ],
    "line": {
     "who": "howard",
-    "text": "Where is father, Mr Holmes?"
+    "text": "Are we really going to see Papa?"
    }
   },
   {
-   "set": "street",
-   "cam": "face",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "He will join us soon, do not worry."
-   }
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "alice",
-     "x": 0,
-     "z": -2,
-     "ry": 0,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "alice",
-    "text": "I am tired, where do we stop?"
-   }
-  },
-  {
-   "set": "forest",
-   "cam": "face",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Soon we reach a place, you will rest well."
-   }
-  },
-  {
-   "set": "shore",
-   "cam": "scene",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": -2,
-     "ry": 0,
-     "act": "walk"
-    }
-   ],
-   "line": {
-    "who": "nellie",
-    "text": "Water is pretty, is this Canada?"
-   }
-  },
-  {
-   "set": "shore",
-   "cam": "face",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "herman",
-    "text": "Yes, we are near the sea now, soon we return."
-   }
-  },
-  {
-   "set": "street",
+   "set": "home",
    "cam": "office",
    "chars": [
     {
-     "id": "herman",
+     "id": "alice",
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
      "act": "smile"
     },
     {
-     "id": "alice",
+     "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
-     "act": "think"
-    }
-   ],
-   "line": {
-    "who": "alice",
-    "text": "When do we see father again?"
-   }
-  },
-  {
-   "set": "street",
-   "cam": "face",
-   "chars": [
-    {
-     "id": "herman",
-     "x": 0,
-     "z": 0,
-     "ry": 0,
      "act": "smile"
     }
    ],
    "line": {
-    "who": "herman",
-    "text": "Soon, Alice, soon we all meet."
+    "who": "holmes",
+    "text": "Of course. Pack your things, children."
    }
   },
   {
@@ -297,47 +270,85 @@
    "cam": "scene",
    "chars": [
     {
-     "id": "herman",
-     "x": -1.2,
-     "z": 0.3,
-     "ry": 0.4,
-     "act": "smile"
+     "id": "holmes",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Holmes took the children across the United States and into Canada."
+   },
+   "title": "1894"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "alice",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
     },
+    {
+     "id": "nellie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "alice",
+    "text": "Nellie, why do we keep moving to new cities?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
     {
      "id": "nellie",
      "x": 0,
      "z": 0,
      "ry": 0,
-     "act": "cross"
-    },
-    {
-     "id": "howard",
-     "x": 1.2,
-     "z": 0.3,
-     "ry": -0.4,
-     "act": "walk"
+     "act": "scared"
     }
    ],
    "line": {
-    "who": "howard",
-    "text": "I want to go home now."
+    "who": "nellie",
+    "text": "I miss Mama. When will we see Papa?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Their letters home were never sent."
    },
+   "flick": true,
    "fx": [
     "lightning"
    ]
   },
   {
-   "set": "street",
+   "set": "home",
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENS NEXT?",
+    "h": "WHERE DO YOU THINK HOLMES WAS TAKING THEM?",
     "p": "Comment below 👇",
     "f": "Part 9 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happens next? Part 9 is next."
+    "text": "Where do you think Holmes was taking them? Part 9 is next."
    }
   }
  ]
