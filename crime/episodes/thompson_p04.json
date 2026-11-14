@@ -1,0 +1,164 @@
+{
+ "key": "thompson_p04",
+ "yt": {
+  "title": "Oh Don't! | Thompson & Bywaters (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Thompson & Bywaters, Ilford, London, 1921-1923. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "thompson & bywaters"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edith": {
+   "name": "Edith Thompson",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "percy": {
+   "name": "Percy Thompson",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "freddy": {
+   "name": "Frederick Bywaters",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THOMPSON & BYWATERS",
+    "years": "LONDON · 1922",
+    "crime": "HANGED FOR HER LETTERS",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Edith wrote passionate letters to Freddy, imagining a life without her husband."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edith",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "percy",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "percy",
+    "text": "Good play tonight, I suppose."
+   },
+   "title": "3 OCTOBER 1922"
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Walking home from the theatre, a man rushed out of the dark."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "edith",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "edith",
+    "text": "Oh don't! Oh don't!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Freddy Bywaters attacked Percy. Percy died on the pavement."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DID EDITH KNOW THIS WOULD HAPPEN?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Did Edith know this would happen? Part 5 is next."
+   }
+  }
+ ]
+}

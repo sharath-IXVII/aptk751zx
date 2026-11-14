@@ -1,0 +1,54 @@
+CAST alma | Alma Rattenbury | f | rich | blonde
+CAST francis | Francis Rattenbury | m | rich | white
+CAST george | George Stoner | m | worker | brown
+CAST irene | Irene Riggs | f | worker | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Villa Madeira
+PART
+home establish > nar: Bournemouth, 1934. The Villa Madeira. [BOURNEMOUTH · 1934]
+home two alma:smile,irene > alma: I wrote another song today, Irene. They play my songs on the radio, you know.
+home two alma,francis > francis: Hmm? Yes, dear. Very nice.
+home face alma:think > alma: He's thirty years older than me. He just sits and drinks.
+home establish > nar: Alma Rattenbury, a songwriter, lived with her elderly husband Francis, a retired architect.
+home establish > nar: Do you think Alma was happy?
+# TITLE 2: The Chauffeur
+PART
+home establish > nar: Previously: songwriter Alma Rattenbury lived unhappily with her older husband.
+home two alma:smile,george > alma: You'll be our chauffeur, George. And handyman. [1934]
+home face george:smile > george: Yes, Mrs Rattenbury.
+home two irene:scared,george > irene: You're eighteen, George. She's thirty-seven. Everyone can see what's happening.
+home establish > nar: Alma and George began an affair. Under her husband's roof.
+home establish > nar: Where do you think this leads?
+# TITLE 3: The Armchair
+PART
+home establish > nar: Previously: Alma began an affair with the young chauffeur, George Stoner.
+home face francis > francis: Just a quiet night in my armchair. [24 MARCH 1935]
+home establish > nar: That night, Francis Rattenbury was attacked in his armchair.
+home face irene:scared > irene: Mr Rattenbury! Somebody call a doctor!
+home establish > nar: He died of his injuries days later.
+home establish > nar: Who do you think did it?
+# TITLE 4: Two Confessions
+PART
+home establish > nar: Previously: Francis Rattenbury was attacked in his armchair.
+home two police,alma:scared > alma: I did it! It was me! [MARCH 1935]
+home face police:think > police: She's been drinking. She keeps changing her story.
+home two police,george:scared > george: No. It was me. She didn't know anything.
+home face irene:scared > irene: George told me he did it.
+home establish > nar: Which confession do you believe?
+# TITLE 5: The Verdict
+PART
+home establish > nar: Previously: both Alma and George confessed.
+court court judge,alma > judge: Alma Rattenbury, not guilty. [OLD BAILEY · MAY 1935]
+court court judge,george > judge: George Stoner, guilty. The sentence is death.
+court face alma:cry > alma: No! Not George!
+court establish > nar: The crowd outside booed Alma as she left.
+court establish > nar: Was the verdict fair?
+# TITLE 6: Days Later
+PART
+court establish > nar: Previously: Alma was acquitted. George was sentenced to death.
+home face alma:cry > alma: I can't live with this.
+home establish > nar: Days after the trial, Alma took her own life.
+prison cell george > nar: Thousands signed a petition for George. His sentence was reduced.
+prison establish > nar: He was freed after seven years.
+prison establish > nar: Who do you think was most to blame for this tragedy?

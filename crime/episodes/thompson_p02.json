@@ -1,0 +1,175 @@
+{
+ "key": "thompson_p02",
+ "yt": {
+  "title": "Freddy | Thompson & Bywaters (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: Thompson & Bywaters, Ilford, London, 1921-1923. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "thompson & bywaters"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edith": {
+   "name": "Edith Thompson",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "percy": {
+   "name": "Percy Thompson",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "freddy": {
+   "name": "Frederick Bywaters",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THOMPSON & BYWATERS",
+    "years": "LONDON · 1922",
+    "crime": "HANGED FOR HER LETTERS",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Edith Thompson was stuck in a dull, unhappy marriage."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edith",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "freddy",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "freddy",
+    "text": "Freddy Bywaters. I work on the ships. I've been all over the world."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edith",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "freddy",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edith",
+    "text": "Tell me everything. Every port. Every ocean."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "percy",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "percy",
+    "text": "That young man is too friendly with my wife."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Edith was twenty-eight. Freddy was twenty. They fell deeply in love."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN A SECRET LOVE STAY SECRET?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can a secret love stay secret? Part 3 is next."
+   }
+  }
+ ]
+}

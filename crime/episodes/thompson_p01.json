@@ -1,0 +1,176 @@
+{
+ "key": "thompson_p01",
+ "yt": {
+  "title": "The Dreamer | Thompson & Bywaters (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Thompson & Bywaters, Ilford, London, 1921-1923. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "thompson & bywaters"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "edith": {
+   "name": "Edith Thompson",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "percy": {
+   "name": "Percy Thompson",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "freddy": {
+   "name": "Frederick Bywaters",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THOMPSON & BYWATERS",
+    "years": "LONDON · 1922",
+    "crime": "HANGED FOR HER LETTERS",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Ilford, London, 1921. Edith Thompson. Clever, stylish, and bored."
+   },
+   "title": "ILFORD · 1921"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edith",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "percy",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edith",
+    "text": "I read the most wonderful novel today, Percy. A great romance."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edith",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "percy",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "percy",
+    "text": "Novels. Waste of time."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "edith",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "edith",
+    "text": "Is this all life is?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Edith had a good job in fashion. But her marriage was dull and unhappy."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK SHE WAS LONGING FOR?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think she was longing for? Part 2 is next."
+   }
+  }
+ ]
+}

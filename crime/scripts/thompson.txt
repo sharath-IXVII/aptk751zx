@@ -1,0 +1,53 @@
+CAST edith | Edith Thompson | f | rich | brown
+CAST percy | Percy Thompson | m | plain | black
+CAST freddy | Frederick Bywaters | m | worker | blonde
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Dreamer
+PART
+street establish > nar: Ilford, London, 1921. Edith Thompson. Clever, stylish, and bored. [ILFORD · 1921]
+home two edith:smile,percy > edith: I read the most wonderful novel today, Percy. A great romance.
+home two edith,percy:cross > percy: Novels. Waste of time.
+home face edith:think > edith: Is this all life is?
+home establish > nar: Edith had a good job in fashion. But her marriage was dull and unhappy.
+home establish > nar: What do you think she was longing for?
+# TITLE 2: Freddy
+PART
+home establish > nar: Previously: Edith Thompson was stuck in a dull, unhappy marriage.
+home two edith:smile,freddy:smile > freddy: Freddy Bywaters. I work on the ships. I've been all over the world.
+home two edith:smile,freddy > edith: Tell me everything. Every port. Every ocean.
+home face percy:cross > percy: That young man is too friendly with my wife.
+home establish > nar: Edith was twenty-eight. Freddy was twenty. They fell deeply in love.
+home establish > nar: Can a secret love stay secret?
+# TITLE 3: The Letters
+PART
+home establish > nar: Previously: Edith fell in love with Freddy Bywaters, a ship's steward.
+dock face freddy:smile > freddy: Another letter from Edie. Pages and pages. [1921 - 1922]
+home face edith > edith: Darlingest boy, I dream of a life without him. Of you and me.
+dock face freddy:think > freddy: She writes about ways to be free of him. Fantasies.
+home establish > nar: Edith wrote dozens of passionate letters. Some imagined getting rid of Percy.
+home establish > nar: Were they just fantasies?
+# TITLE 4: Oh Don't!
+PART
+home establish > nar: Previously: Edith wrote passionate letters to Freddy, imagining a life without her husband.
+street two edith:smile,percy > percy: Good play tonight, I suppose. [3 OCTOBER 1922]
+street establish > nar: Walking home from the theatre, a man rushed out of the dark.
+street face edith:scared > edith: Oh don't! Oh don't!
+street establish > nar: Freddy Bywaters attacked Percy. Percy died on the pavement.
+street establish > nar: Did Edith know this would happen?
+# TITLE 5: Found in a Box
+PART
+street establish > nar: Previously: Freddy killed Percy as the couple walked home.
+home two police:point,freddy:cuffed > police: Frederick Bywaters, you're under arrest.
+home face freddy > freddy: Edie knew nothing about it. Nothing. I did it alone.
+home establish > nar: In Freddy's things, police found Edith's letters.
+home two police:point,edith:cuffed > police: Edith Thompson, you're under arrest too.
+home establish > nar: Can words make you a murderer?
+# TITLE 6: Hanged for Her Letters
+PART
+home establish > nar: Previously: police found Edith's letters and arrested her too.
+court two police,judge > judge: The letters show an intention. A wish. [OLD BAILEY · DECEMBER 1922]
+court court judge,edith > judge: Both of you, guilty. You will hang.
+court face edith:cry > edith: I am not guilty! Oh God, I am not guilty!
+prison establish > nar: On 9 January 1923, Edith Thompson and Freddy Bywaters were hanged at the same hour, in different prisons.
+prison establish > nar: Many believed Edith was hanged for her letters, not for murder. Do you agree?

@@ -1,0 +1,192 @@
+{
+ "key": "rattenbury_p04",
+ "yt": {
+  "title": "Two Confessions | The Villa Madeira (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Villa Madeira, Bournemouth, England, 1934-1935. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the villa madeira"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "alma": {
+   "name": "Alma Rattenbury",
+   "skin": "#8a5232",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "francis": {
+   "name": "Francis Rattenbury",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "am_adam"
+  },
+  "george": {
+   "name": "George Stoner",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "irene": {
+   "name": "Irene Riggs",
+   "skin": "#d0a07c",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#c99872",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE VILLA MADEIRA",
+    "years": "BOURNEMOUTH · 1935",
+    "crime": "THE CHAUFFEUR AND THE WIFE",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Francis Rattenbury was attacked in his armchair."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "alma",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "alma",
+    "text": "I did it! It was me!"
+   },
+   "title": "MARCH 1935"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "police",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "She's been drinking. She keeps changing her story."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "george",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "george",
+    "text": "No. It was me. She didn't know anything."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "irene",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "irene",
+    "text": "George told me he did it."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHICH CONFESSION DO YOU BELIEVE?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Which confession do you believe? Part 5 is next."
+   }
+  }
+ ]
+}
