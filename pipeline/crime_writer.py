@@ -70,7 +70,7 @@ def make_cast(case) -> dict:
 
 SYSTEM = ("You write scripts for 60-90 second animated YouTube Shorts that dramatise REAL historical crimes. "
           "Movie style: SHOW the story through characters acting and talking, not a narrator explaining. "
-          "Strict rules: use only the facts given; never invent new names, dates, numbers, places or events; "
+          "Strict rules: show ONLY this part's facts, in order (no arrests, trials, verdicts or discoveries unless they are in this part's facts); each person only does what the facts say they did; use only the facts given; never invent new names, dates, numbers, places or events; "
           "invented dialogue and small everyday actions are fine. No gore, no detailed violence, no methods of killing or poison "
           "amounts - the worst moments happen off-screen or are implied. Simple English a 12-year-old understands.")
 
@@ -111,8 +111,10 @@ def check(case, beat, d) -> bool:
     lines = "\n".join(f"{s.get('speaker')}: {s.get('text')}" for s in shots)
     try:
         r = llm.chat_json(f"Facts allowed: {beat}\nPeople in the case: {case['people']}\nScript:\n{lines}\n\n"
-                          "Does the script invent any new FACT (a name, date, number, place, or event not in the facts; "
-                          "imagined dialogue and feelings are fine), or show gore or a killing method in detail? "
+                          "The script may ONLY show the allowed facts above. Reject it (ok=false) if it: invents a new fact (name, date, number, place, event); "
+                          "shows anything that is not in the allowed facts, like an arrest, trial, verdict, death or discovery from another part of the story; "
+                          "has a person do something the facts say someone else did (e.g. a detective being arrested, a victim planning the crime); "
+                          "or shows gore or a killing method in detail. Imagined dialogue and feelings are fine. "
                           'JSON: {"ok": true|false, "why": ""}', temperature=0, max_tokens=400, prefer=os.getenv("CHECKER_MODEL") or "qwen/qwen3-235b-a22b")
         if not r.get("ok", True): log.warning("checker: %s", r.get("why"))
         return bool(r.get("ok", True))
@@ -146,8 +148,12 @@ def place(fr, who, st, acts):
 SAFE = {"bed": {"home", "ward"}, "grave": {"grave"}, "court": {"court"}, "cell": {"prison", "asylum"}}
 
 
+TRIAL = re.compile(r"trial|tried|court|guilty|jury|acquit|verdict|sentenced|not proven|convict", re.I)
+ARREST = re.compile(r"arrest|jail|prison|cell|caught|captur|held|custody|alcatraz|newgate|asylum|walled", re.I)
+
+
 def convert(case, k, cast, d) -> dict:
-    n = len(case["parts"]); shots = []
+    n = len(case["parts"]); shots = []; beat = case["parts"][k - 1]
     shots.append({"set": "home", "cam": "office", "chars": [], "hold": 2.8,
                   "intro": {"name": case["name"], "years": case["years"], "crime": case["tag"], "part": f"PART {k} OF {n}"}})
     raw = [s for s in d.get("shots", []) if isinstance(s, dict) and str(s.get("text", "")).strip()][:16]
@@ -159,9 +165,13 @@ def convert(case, k, cast, d) -> dict:
         who = [x for x in s.get("who", []) if x in cast][:3]
         spk = s.get("speaker") if s.get("speaker") in cast else "nar"
         if spk != "nar" and spk not in who: who = [spk] + who
-        if fr == "court" and len(who) < 2: fr = "two"
+        if fr == "court" and (len(who) < 2 or not TRIAL.search(beat)): fr = "two"; st = "home" if st == "court" else st
+        if fr == "cell" and not ARREST.search(beat): fr = "solo"; st = "home" if st in ("prison", "asylum") else st
+        if st == "court" and not TRIAL.search(beat): st = "home"
         if fr == "establish" or not who: fr, who = "establish", []
         acts = {x: a for x, a in (s.get("acts") or {}).items() if a in ACTS}
+        if fr != "bed": acts = {x: ("idle" if a in ("sick", "sleep", "peek") else a) for x, a in acts.items()}
+        if not ARREST.search(beat): acts = {x: ("idle" if a == "cuffed" else a) for x, a in acts.items()}
         ch, cam, extra = place(fr, who, st, acts)
         text = " ".join(str(s["text"]).split()[:22])
         sh = {"set": st, "cam": cam, "chars": ch, "line": {"who": spk, "text": text}, **extra}
@@ -169,7 +179,8 @@ def convert(case, k, cast, d) -> dict:
         if st in ("street", "forest", "dock", "shore") and h(case["id"] + str(k) + str(i)) % 3 == 0: sh["fx"] = ["rain"]
         if st in ("ward", "asylum", "home", "prison") and spk == "nar" and i > 0: sh["flick"] = True
         if last:
-            q = text.rstrip(".!") if text.endswith("?") else text
+            if not text.endswith("?"): text = "What do you think happens next?"
+            q = text
             sh = {"set": st, "cam": "office", "chars": [],
                   "card": {"h": q.upper()[:60], "p": "Comment below 👇", "f": f"Part {k + 1} next" if k < n else "Next true story coming soon"},
                   "line": {"who": "nar", "text": text + (f" Part {k + 1} is next." if k < n else "")}}
