@@ -1,0 +1,214 @@
+{
+ "key": "ratcliff_p04",
+ "yt": {
+  "title": "The King's Arms | The Ratcliff Highway Murders (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Ratcliff Highway Murders, Wapping, East London, December 1811. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the ratcliff highway murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "marr": {
+   "name": "Timothy Marr",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "celia": {
+   "name": "Celia Marr",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "margaret": {
+   "name": "Margaret Jewell",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "watchman": {
+   "name": "a night watchman",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "cap": true
+  },
+  "lodger": {
+   "name": "a young lodger",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "williams": {
+   "name": "John Williams",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "magistrate": {
+   "name": "the magistrate",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE RATCLIFF HIGHWAY MURDERS",
+    "years": "LONDON · 1811",
+    "crime": "TWO FAMILIES IN 12 DAYS",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: London panicked. There was no real police force to catch the killer."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "lodger",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Twelve days later. A pub called the King's Arms."
+   },
+   "bed": true,
+   "title": "19 DECEMBER 1811",
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "lodger",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "lodger",
+    "text": "Screams downstairs! He's here! He's in the house!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "lodger",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "lodger",
+    "text": "Knotted sheets... out of the window... I have to get out!"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "lodger",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "watchman",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "lodger",
+    "text": "Help! They're killing everyone at the King's Arms!"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The publican and his family were killed. The young lodger survived."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL HIS ESCAPE HELP CATCH THE KILLER?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will his escape help catch the killer? Part 5 is next."
+   }
+  }
+ ]
+}

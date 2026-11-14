@@ -1,0 +1,192 @@
+{
+ "key": "corday_p06",
+ "yt": {
+  "title": "One Life to Save Thousands | Charlotte Corday (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Charlotte Corday, Revolutionary Paris, July 1793. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "charlotte corday"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "charlotte": {
+   "name": "Charlotte Corday",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "marat": {
+   "name": "Jean-Paul Marat",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "simonne": {
+   "name": "Simonne Evrard",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "seller": {
+   "name": "a knife seller",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "guard": {
+   "name": "a guard",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHARLOTTE CORDAY",
+    "years": "PARIS · 1793",
+    "crime": "MURDER IN THE BATH",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Charlotte killed Marat, and did not try to escape."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "charlotte",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Why did you do it?"
+   },
+   "title": "17 JULY 1793"
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "charlotte",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "charlotte",
+    "text": "I killed one man to save a hundred thousand."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "charlotte",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Death by guillotine."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Charlotte Corday was executed four days after the killing."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Instead of calming France, the Terror grew even worse."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS SHE RIGHT TO DO IT?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was she right to do it?"
+   }
+  }
+ ]
+}

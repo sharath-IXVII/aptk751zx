@@ -1,0 +1,200 @@
+{
+ "key": "corday_p05",
+ "yt": {
+  "title": "She Did Not Run | Charlotte Corday (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Charlotte Corday, Revolutionary Paris, July 1793. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "charlotte corday"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "charlotte": {
+   "name": "Charlotte Corday",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "marat": {
+   "name": "Jean-Paul Marat",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "simonne": {
+   "name": "Simonne Evrard",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "seller": {
+   "name": "a knife seller",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "guard": {
+   "name": "a guard",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHARLOTTE CORDAY",
+    "years": "PARIS · 1793",
+    "crime": "MURDER IN THE BATH",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Charlotte got into Marat's home by promising names of traitors."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "marat",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "marat",
+    "text": "Give me their names. They'll all be guillotined."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Charlotte struck. Marat cried out for help."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "simonne",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "guard",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "simonne",
+    "text": "Help! Jean-Paul!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "charlotte",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "Don't move!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "charlotte",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "charlotte",
+    "text": "I'm not running. I did what I came to do."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS SHE A MURDERER OR A HERO?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was she a murderer or a hero? Part 6 is next."
+   }
+  }
+ ]
+}

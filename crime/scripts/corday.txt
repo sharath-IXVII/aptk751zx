@@ -1,0 +1,56 @@
+CAST charlotte | Charlotte Corday | f | rich | brown
+CAST marat | Jean-Paul Marat | m | plain | black
+CAST simonne | Simonne Evrard | f | plain | brown
+CAST seller | a knife seller | m | worker | grey
+CAST guard | a guard | m | soldier | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Angry Pen
+PART
+street establish > nar: Paris, 1793. The French Revolution. Every day, the guillotine. [PARIS · 1793]
+home face marat:cross > marat: Enemies of the Revolution are everywhere! Cut off their heads!
+home two simonne:think,marat > simonne: Your newspaper makes the crowds so angry, Jean-Paul.
+home face marat > marat: Good. Anger is what the Revolution needs.
+street establish > nar: Jean-Paul Marat's writing called for more and more executions.
+street establish > nar: Can words be as dangerous as weapons?
+# TITLE 2: A Young Woman in Normandy
+PART
+street establish > nar: Previously: Jean-Paul Marat wrote articles demanding executions.
+home face charlotte:cross > charlotte: Marat calls for blood every day. And people die because of him. [CAEN · NORMANDY]
+home face charlotte > charlotte: Someone must stop him.
+home face charlotte:think > charlotte: If no one else will, then I will.
+home establish > nar: Charlotte Corday was twenty-four. She had made up her mind.
+home establish > nar: What would you do in her place?
+# TITLE 3: The Kitchen Knife
+PART
+home establish > nar: Previously: Charlotte Corday decided she would stop Marat herself.
+street walk charlotte > nar: She travelled to Paris alone. [PARIS · JULY 1793]
+street two seller,charlotte > seller: A kitchen knife, mademoiselle? This one. Very sharp.
+street face charlotte > charlotte: It will do.
+street establish > nar: She hid the knife in her dress.
+street establish > nar: Will she go through with it?
+# TITLE 4: Visitors in the Bath
+PART
+street establish > nar: Previously: Charlotte bought a kitchen knife in Paris.
+home two simonne:cross,charlotte > simonne: Monsieur Marat is ill. He sees no one. [13 JULY 1793]
+home two simonne,charlotte > charlotte: Tell him I have names. Names of traitors in Normandy.
+home face marat > marat: Let her in. I'll see her from my bath.
+home establish > nar: Marat had a painful skin disease. He worked from a medicinal bath.
+home establish > nar: What do you think happened next?
+# TITLE 5: She Did Not Run
+PART
+home establish > nar: Previously: Charlotte got into Marat's home by promising names of traitors.
+home face marat > marat: Give me their names. They'll all be guillotined.
+home establish > nar: Charlotte struck. Marat cried out for help.
+home two simonne:scared,guard > simonne: Help! Jean-Paul!
+home two guard:point,charlotte:cuffed > guard: Don't move!
+home face charlotte > charlotte: I'm not running. I did what I came to do.
+home establish > nar: Was she a murderer or a hero?
+# TITLE 6: One Life to Save Thousands
+PART
+home establish > nar: Previously: Charlotte killed Marat, and did not try to escape.
+court court judge,charlotte > judge: Why did you do it? [17 JULY 1793]
+court face charlotte > charlotte: I killed one man to save a hundred thousand.
+court court judge,charlotte > judge: Death by guillotine.
+street establish > nar: Charlotte Corday was executed four days after the killing.
+street establish > nar: Instead of calming France, the Terror grew even worse.
+street establish > nar: Was she right to do it?

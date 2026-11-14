@@ -1,0 +1,179 @@
+{
+ "key": "corday_p01",
+ "yt": {
+  "title": "The Angry Pen | Charlotte Corday (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Charlotte Corday, Revolutionary Paris, July 1793. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "charlotte corday"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "charlotte": {
+   "name": "Charlotte Corday",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "marat": {
+   "name": "Jean-Paul Marat",
+   "skin": "#d0a07c",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "simonne": {
+   "name": "Simonne Evrard",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "seller": {
+   "name": "a knife seller",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "guard": {
+   "name": "a guard",
+   "skin": "#d9a882",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHARLOTTE CORDAY",
+    "years": "PARIS · 1793",
+    "crime": "MURDER IN THE BATH",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Paris, 1793. The French Revolution. Every day, the guillotine."
+   },
+   "title": "PARIS · 1793",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "marat",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "marat",
+    "text": "Enemies of the Revolution are everywhere! Cut off their heads!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "simonne",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "marat",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "simonne",
+    "text": "Your newspaper makes the crowds so angry, Jean-Paul."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "marat",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "marat",
+    "text": "Good. Anger is what the Revolution needs."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Jean-Paul Marat's writing called for more and more executions."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN WORDS BE AS DANGEROUS AS WEAPONS?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can words be as dangerous as weapons? Part 2 is next."
+   }
+  }
+ ]
+}

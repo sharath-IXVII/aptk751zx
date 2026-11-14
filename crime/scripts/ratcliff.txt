@@ -1,0 +1,57 @@
+CAST marr | Timothy Marr | m | worker | brown
+CAST celia | Celia Marr | f | plain | blonde
+CAST margaret | Margaret Jewell | f | worker | red
+CAST watchman | a night watchman | m | police | grey | beard
+CAST lodger | a young lodger | m | plain | blonde
+CAST williams | John Williams | m | worker | black
+CAST magistrate | the magistrate | m | judge | white
+# TITLE 1: Oysters at Midnight
+PART
+street establish > nar: London, December 1811. The busy, dangerous streets near the docks. [WAPPING · DECEMBER 1811]
+home two marr:smile,celia:smile > celia: Our own shop, Timothy. And a baby boy. We're so lucky.
+home two marr,margaret > marr: Margaret, go and buy some oysters for supper. Here's a pound note.
+home face margaret:smile > margaret: Yes, sir. Back soon.
+street walk margaret > nar: It was nearly midnight. Margaret walked out into the cold.
+street establish > nar: Why does it matter that she left?
+# TITLE 2: The Silent Shop
+PART
+street establish > nar: Previously: shopkeeper Timothy Marr sent his servant Margaret out to buy oysters.
+street face margaret:think > margaret: All the oyster shops are closed. I'll go home.
+street two margaret:scared,watchman > margaret: The door's locked. I keep knocking. No one answers!
+street face margaret:scared > margaret: I heard footsteps inside. Then nothing.
+home two watchman:scared,margaret > watchman: Miss, stay outside. Don't come in.
+home establish > nar: Inside, the whole Marr family had been killed. Even the baby. Even the apprentice.
+home establish > nar: Who could do something so cruel?
+# TITLE 3: No Police
+PART
+home establish > nar: Previously: the Marr family was found killed in their shop.
+street two watchman:scared,margaret > watchman: I'm one old watchman with a lantern. I can't protect a whole street. [LONDON · 1811]
+street establish > nar: London had no real police force. Only night watchmen.
+street face margaret:scared > margaret: People are bolting their doors. Buying guns.
+street face watchman:think > watchman: The killer is still out there.
+street establish > nar: Do you think he'd strike again?
+# TITLE 4: The King's Arms
+PART
+street establish > nar: Previously: London panicked. There was no real police force to catch the killer.
+home bed lodger:sleep > nar: Twelve days later. A pub called the King's Arms. [19 DECEMBER 1811]
+home face lodger:scared > lodger: Screams downstairs! He's here! He's in the house!
+street walk lodger > lodger: Knotted sheets... out of the window... I have to get out!
+street two lodger:scared,watchman > lodger: Help! They're killing everyone at the King's Arms!
+street establish > nar: The publican and his family were killed. The young lodger survived.
+street establish > nar: Will his escape help catch the killer?
+# TITLE 5: John Williams
+PART
+street establish > nar: Previously: another family was killed. A young lodger escaped down knotted sheets.
+home two watchman:point,williams:cuffed > watchman: John Williams, sailor. You're coming with us. [DECEMBER 1811]
+home face williams > williams: I've done nothing.
+home two magistrate,watchman > watchman: A tool from the Marr shop. Marked with initials. It belongs to his lodging house.
+home face magistrate:think > magistrate: Hold him for trial.
+home establish > nar: Is that enough to prove he did it?
+# TITLE 6: The Cell
+PART
+home establish > nar: Previously: sailor John Williams was arrested after a tool was linked to his lodging house.
+prison cell williams > nar: Before his trial, Williams was found hanged in his cell. [28 DECEMBER 1811]
+prison two watchman,magistrate > magistrate: Then he's guilty. Case closed.
+prison face watchman:think > watchman: Or someone wanted the case closed.
+prison establish > nar: The murders pushed London to create a real police force years later.
+prison establish > nar: Was John Williams guilty? What do you think?

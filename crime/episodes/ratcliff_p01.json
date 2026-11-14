@@ -1,0 +1,202 @@
+{
+ "key": "ratcliff_p01",
+ "yt": {
+  "title": "Oysters at Midnight | The Ratcliff Highway Murders (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: The Ratcliff Highway Murders, Wapping, East London, December 1811. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the ratcliff highway murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "marr": {
+   "name": "Timothy Marr",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "celia": {
+   "name": "Celia Marr",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "margaret": {
+   "name": "Margaret Jewell",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "watchman": {
+   "name": "a night watchman",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true,
+   "cap": true
+  },
+  "lodger": {
+   "name": "a young lodger",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "williams": {
+   "name": "John Williams",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "magistrate": {
+   "name": "the magistrate",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE RATCLIFF HIGHWAY MURDERS",
+    "years": "LONDON · 1811",
+    "crime": "TWO FAMILIES IN 12 DAYS",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "London, December 1811. The busy, dangerous streets near the docks."
+   },
+   "title": "WAPPING · DECEMBER 1811"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "marr",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "celia",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "celia",
+    "text": "Our own shop, Timothy. And a baby boy. We're so lucky."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "marr",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "margaret",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "marr",
+    "text": "Margaret, go and buy some oysters for supper. Here's a pound note."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "margaret",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "margaret",
+    "text": "Yes, sir. Back soon."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "margaret",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "It was nearly midnight. Margaret walked out into the cold."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DOES IT MATTER THAT SHE LEFT?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why does it matter that she left? Part 2 is next."
+   }
+  }
+ ]
+}
