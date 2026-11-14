@@ -1,0 +1,74 @@
+CAST josiah | Josiah Moore | m | rich | brown
+CAST sarah | Sarah Moore | f | plain | brown
+CAST lena | Lena Stillinger | f | plain | blonde
+CAST ina | Ina Stillinger | f | plain | red
+CAST katherine | Katherine Moore | f | plain | brown
+CAST mary | Mary Peckham | f | plain | grey
+CAST ross | Ross Moore | m | worker | black
+CAST police | the town marshal | m | police | black
+CAST kelly | Reverend George Kelly | m | plain | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Friendliest Town
+PART
+street establish > nar: Villisca, Iowa. A small, friendly town where nobody locked their doors. [VILLISCA · 1912]
+street two josiah:smile,police > police: Morning, Josiah! How's the hardware business?
+street two josiah:smile,police:smile > josiah: Busy as ever, marshal.
+home three sarah:smile,josiah:smile,katherine:smile > sarah: Four children, a good house, a good town. We're blessed.
+home face katherine:smile > katherine: Mama, can Lena and Ina come to stay after church on Sunday?
+home establish > nar: A happy family. A peaceful town.
+home establish > nar: What could ever go wrong here?
+# TITLE 2: The Sleepover
+PART
+home establish > nar: Previously: the Moore family lived happily in the small town of Villisca.
+street two lena:smile,ina:smile > lena: The Children's Day program was wonderful! [9 JUNE 1912]
+street two katherine:smile,lena > katherine: Come stay at our house tonight! Please!
+street two ina:smile,sarah > ina: Can we, Mrs Moore? We'll be good.
+street two sarah:smile,ina > sarah: Of course, girls. Come along.
+home bed lena:sleep,ina > nar: Lena and Ina Stillinger slept in the downstairs bedroom. [THAT NIGHT]
+home establish > nar: Eight people went to sleep in the Moore house that night.
+home establish > nar: Can you feel what's coming?
+# TITLE 3: Silence
+PART
+home establish > nar: Previously: two young friends, Lena and Ina, stayed the night with the Moores.
+street two mary:think,police > mary: No smoke from their chimney. The chickens not let out. That's not like Sarah. [10 JUNE 1912 · MORNING]
+street face mary:think > mary: Something is wrong at the Moores'.
+street two mary:scared,ross > mary: Ross, your brother's house is all shut up. Nobody answers.
+street face ross:scared > ross: I have a key. I'll go in.
+home establish > nar: The house was dark and silent.
+home establish > nar: What do you think Ross found?
+# TITLE 4: Covered Mirrors
+PART
+home establish > nar: Previously: a neighbour noticed the Moore house was strangely silent.
+home face ross:scared > ross: Marshal! Come quick! Everybody's dead!
+home two police:scared,ross > police: All eight of them. The whole family. And the two girls.
+home face police:think > police: Every window shade is pulled down. And the mirrors are covered with cloth.
+home face police:scared > police: Who covers mirrors?
+home establish > nar: It was as if the killer did not want to be seen. Not even by himself.
+home establish > nar: Why would someone cover the mirrors?
+# TITLE 5: The Crowd
+PART
+home establish > nar: Previously: all eight people in the Moore house were found dead. Mirrors were covered.
+street establish > nar: Within hours, hundreds of people came to the house. [10 JUNE 1912]
+home two police:point,mary > police: Stay back! Don't touch anything!
+home establish > nar: People walked through every room. Some even took souvenirs.
+home face police:cross > police: Fingerprints. Footprints. All ruined.
+home establish > nar: Whatever clues the killer left were gone.
+home establish > nar: How could police solve it now?
+# TITLE 6: The Travelling Preacher
+PART
+home establish > nar: Previously: crowds walked through the crime scene and destroyed the evidence.
+street two police:think,mary > police: A travelling preacher was at the Children's Day program. He left town early that morning. [1917]
+street two police:point,kelly > police: Reverend George Kelly. You're charged with the Villisca murders.
+court face kelly > kelly: I confessed only because they pressured me.
+court court judge,kelly > judge: The first jury cannot agree. A second trial.
+court court judge,kelly > judge: The second jury says: not guilty.
+court establish > nar: Was the preacher guilty?
+# TITLE 7: The Haunted House
+PART
+court establish > nar: Previously: Reverend Kelly was tried twice and never convicted.
+street establish > nar: Many suspects were named over the years. No one was ever convicted. [VILLISCA · TODAY]
+home establish > nar: The Moore house still stands in Villisca.
+home establish > nar: Some say you can still hear children laughing inside.
+home establish > nar: Visitors say they've heard voices and seen doors move on their own.
+home establish > nar: It is now known as one of the most haunted houses in America.
+home establish > nar: Would you spend a night in the Villisca axe murder house?

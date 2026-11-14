@@ -1,0 +1,246 @@
+{
+ "key": "hinterkaifeck_p04",
+ "yt": {
+  "title": "The New Maid | Hinterkaifeck (True Story) Part 4 #shorts",
+  "description": "Part 4 of 8: Hinterkaifeck, an isolated farm near Munich, Germany, 1922. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "hinterkaifeck"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "andreas": {
+   "name": "Andreas Gruber",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "cazilia": {
+   "name": "Cäzilia Gruber",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#e0e0e0",
+   "voice": "af_bella",
+   "long": true
+  },
+  "viktoria": {
+   "name": "Viktoria Gabriel",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "little": {
+   "name": "little Cäzilia",
+   "skin": "#8a5232",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "oldmaid": {
+   "name": "the old maid",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_sky",
+   "long": true
+  },
+  "maria": {
+   "name": "Maria the new maid",
+   "skin": "#b9774a",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#a84a22",
+   "voice": "af_nova",
+   "long": true
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "HINTERKAIFECK",
+    "years": "BAVARIA · 1922",
+    "crime": "FOOTPRINTS IN THE SNOW",
+    "part": "PART 4 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: strange things kept happening at Hinterkaifeck: footsteps, a strange newspaper, missing keys."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "oldmaid",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "viktoria",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "oldmaid",
+    "text": "I'm leaving. This house is haunted. I hear voices in the night."
+   },
+   "title": "MONTHS EARLIER"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "viktoria",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "viktoria",
+    "text": "Haunted? Nonsense."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "maria",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "31 March 1922. A new maid, Maria, arrives at the farm with her bags."
+   },
+   "title": "31 MARCH 1922"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "viktoria",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "maria",
+    "text": "Good afternoon. I'm Maria. I start today."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "maria",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "viktoria",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "viktoria",
+    "text": "Welcome. Your room is just there."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "It was her first night on the farm."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK THE OLD MAID HEARD?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think the old maid heard? Part 5 is next."
+   }
+  }
+ ]
+}

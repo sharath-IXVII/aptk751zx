@@ -1,0 +1,251 @@
+{
+ "key": "villisca_p01",
+ "yt": {
+  "title": "The Friendliest Town | The Villisca Axe Murders (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: The Villisca Axe Murders, Villisca, Iowa, June 1912. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the villisca axe murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "josiah": {
+   "name": "Josiah Moore",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "sarah": {
+   "name": "Sarah Moore",
+   "skin": "#d9a882",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "lena": {
+   "name": "Lena Stillinger",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "ina": {
+   "name": "Ina Stillinger",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "katherine": {
+   "name": "Katherine Moore",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_sky",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Peckham",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nova",
+   "long": true
+  },
+  "ross": {
+   "name": "Ross Moore",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "the town marshal",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "kelly": {
+   "name": "Reverend George Kelly",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE VILLISCA AXE MURDERS",
+    "years": "IOWA · 1912",
+    "crime": "8 DEAD. NO ONE CAUGHT.",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Villisca, Iowa. A small, friendly town where nobody locked their doors."
+   },
+   "title": "VILLISCA · 1912"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "josiah",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Morning, Josiah! How's the hardware business?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "josiah",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "josiah",
+    "text": "Busy as ever, marshal."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "sarah",
+     "x": -1.2,
+     "z": 0.3,
+     "ry": 0.4,
+     "act": "smile"
+    },
+    {
+     "id": "josiah",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    },
+    {
+     "id": "katherine",
+     "x": 1.2,
+     "z": 0.3,
+     "ry": -0.4,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "sarah",
+    "text": "Four children, a good house, a good town. We're blessed."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "katherine",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "katherine",
+    "text": "Mama, can Lena and Ina come to stay after church on Sunday?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "A happy family. A peaceful town."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT COULD EVER GO WRONG HERE?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What could ever go wrong here? Part 2 is next."
+   }
+  }
+ ]
+}

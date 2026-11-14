@@ -1,0 +1,261 @@
+{
+ "key": "villisca_p06",
+ "yt": {
+  "title": "The Travelling Preacher | The Villisca Axe Murders (True Story) Part 6 #shorts",
+  "description": "Part 6 of 7: The Villisca Axe Murders, Villisca, Iowa, June 1912. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the villisca axe murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "josiah": {
+   "name": "Josiah Moore",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "sarah": {
+   "name": "Sarah Moore",
+   "skin": "#d9a882",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "lena": {
+   "name": "Lena Stillinger",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "ina": {
+   "name": "Ina Stillinger",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "katherine": {
+   "name": "Katherine Moore",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_sky",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Peckham",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nova",
+   "long": true
+  },
+  "ross": {
+   "name": "Ross Moore",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "the town marshal",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "kelly": {
+   "name": "Reverend George Kelly",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE VILLISCA AXE MURDERS",
+    "years": "IOWA · 1912",
+    "crime": "8 DEAD. NO ONE CAUGHT.",
+    "part": "PART 6 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: crowds walked through the crime scene and destroyed the evidence."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "A travelling preacher was at the Children's Day program. He left town early that morning."
+   },
+   "title": "1917",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "kelly",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Reverend George Kelly. You're charged with the Villisca murders."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "kelly",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "kelly",
+    "text": "I confessed only because they pressured me."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "kelly",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "The first jury cannot agree. A second trial."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "kelly",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "The second jury says: not guilty."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS THE PREACHER GUILTY?",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was the preacher guilty? Part 7 is next."
+   }
+  }
+ ]
+}

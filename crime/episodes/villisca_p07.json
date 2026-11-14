@@ -1,0 +1,194 @@
+{
+ "key": "villisca_p07",
+ "yt": {
+  "title": "The Haunted House | The Villisca Axe Murders (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: The Villisca Axe Murders, Villisca, Iowa, June 1912. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the villisca axe murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "josiah": {
+   "name": "Josiah Moore",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "sarah": {
+   "name": "Sarah Moore",
+   "skin": "#d9a882",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "lena": {
+   "name": "Lena Stillinger",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "ina": {
+   "name": "Ina Stillinger",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "katherine": {
+   "name": "Katherine Moore",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_sky",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Peckham",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nova",
+   "long": true
+  },
+  "ross": {
+   "name": "Ross Moore",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "the town marshal",
+   "skin": "#8a5232",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "kelly": {
+   "name": "Reverend George Kelly",
+   "skin": "#d9a882",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE VILLISCA AXE MURDERS",
+    "years": "IOWA · 1912",
+    "crime": "8 DEAD. NO ONE CAUGHT.",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Reverend Kelly was tried twice and never convicted."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Many suspects were named over the years. No one was ever convicted."
+   },
+   "title": "VILLISCA · TODAY"
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Moore house still stands in Villisca."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Some say you can still hear children laughing inside."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Visitors say they've heard voices and seen doors move on their own."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "It is now known as one of the most haunted houses in America."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD YOU SPEND A NIGHT IN THE VILLISCA AXE MURDER HOUSE?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would you spend a night in the Villisca axe murder house?"
+   }
+  }
+ ]
+}

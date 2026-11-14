@@ -1,0 +1,213 @@
+{
+ "key": "hinterkaifeck_p05",
+ "yt": {
+  "title": "That Night | Hinterkaifeck (True Story) Part 5 #shorts",
+  "description": "Part 5 of 8: Hinterkaifeck, an isolated farm near Munich, Germany, 1922. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "hinterkaifeck"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "andreas": {
+   "name": "Andreas Gruber",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "cazilia": {
+   "name": "Cäzilia Gruber",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#e0e0e0",
+   "voice": "af_bella",
+   "long": true
+  },
+  "viktoria": {
+   "name": "Viktoria Gabriel",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "little": {
+   "name": "little Cäzilia",
+   "skin": "#8a5232",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "oldmaid": {
+   "name": "the old maid",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_sky",
+   "long": true
+  },
+  "maria": {
+   "name": "Maria the new maid",
+   "skin": "#b9774a",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#a84a22",
+   "voice": "af_nova",
+   "long": true
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#a86a42",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "HINTERKAIFECK",
+    "years": "BAVARIA · 1922",
+    "crime": "FOOTPRINTS IN THE SNOW",
+    "part": "PART 5 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a new maid named Maria arrived at Hinterkaifeck."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "little",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "viktoria",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "viktoria",
+    "text": "Goodnight, little one. Sleep well."
+   },
+   "bed": true,
+   "title": "31 MARCH 1922 · NIGHT"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "andreas",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "cazilia",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "andreas",
+    "text": "Something is wrong in the barn. The animals are restless."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "andreas",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "andreas",
+    "text": "I'm going to look."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "That night, all six people on the farm were killed."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "And whoever did it... didn't leave."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY WOULD A KILLER STAY?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why would a killer stay? Part 6 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+CAST andreas | Andreas Gruber | m | worker | grey | beard
+CAST cazilia | Cäzilia Gruber | f | plain | white
+CAST viktoria | Viktoria Gabriel | f | plain | brown
+CAST little | little Cäzilia | f | plain | blonde
+CAST oldmaid | the old maid | f | worker | grey
+CAST maria | Maria the new maid | f | worker | red
+CAST neighbour | a neighbour | m | worker | brown
+CAST police | a police officer | m | police | black
+# TITLE 1: The Lonely Farm
+PART
+forest establish > nar: Hinterkaifeck. A lonely farm deep in the Bavarian countryside. [BAVARIA · 1922]
+home two andreas:cross,viktoria > andreas: We don't need neighbours. We keep to ourselves.
+home three viktoria,cazilia,little:smile > little: Mama, why does nobody ever visit us?
+home two viktoria:think,little > viktoria: Grandfather likes it quiet, sweetheart.
+forest establish > nar: Six people lived there: the old farmer, his wife, their widowed daughter, and her two children.
+forest establish > nar: Soon they would not be alone.
+forest establish > nar: Would you live on a farm this far from anyone?
+# TITLE 2: Footprints in the Snow
+PART
+forest establish > nar: Previously: the Gruber family lived alone on a remote farm.
+forest walk andreas > nar: Spring 1922. Snow still covers the ground. [MARCH 1922]
+forest face andreas:scared > andreas: Footprints. Coming from the forest. To the house.
+forest two neighbour,andreas:point > andreas: They lead to the farm. But none lead back.
+forest two neighbour:think,andreas > neighbour: Then whoever made them is still there, Andreas.
+forest establish > nar: The old farmer searched the whole farm. He found nobody.
+forest establish > nar: Where did the footprints go?
+# TITLE 3: Footsteps in the Attic
+PART
+forest establish > nar: Previously: Andreas found footprints going to the farm, but none coming back.
+home two andreas:scared,cazilia > andreas: Did you hear that? Footsteps. Up in the attic. [THAT NIGHT]
+home two cazilia:scared,andreas > cazilia: It's the wind. It must be.
+home two andreas:think,viktoria > andreas: And this newspaper on the table. None of us bought it.
+home face viktoria:scared > viktoria: The house keys are gone too, Father.
+street two neighbour,andreas > neighbour: Let us come and help you search.
+street face andreas:cross > andreas: No. I can look after my own family.
+home establish > nar: Should Andreas have accepted help?
+# TITLE 4: The New Maid
+PART
+home establish > nar: Previously: strange things kept happening at Hinterkaifeck: footsteps, a strange newspaper, missing keys.
+home two oldmaid:scared,viktoria > oldmaid: I'm leaving. This house is haunted. I hear voices in the night. [MONTHS EARLIER]
+home face viktoria:think > viktoria: Haunted? Nonsense.
+street walk maria > nar: 31 March 1922. A new maid, Maria, arrives at the farm with her bags. [31 MARCH 1922]
+home two maria:smile,viktoria:smile > maria: Good afternoon. I'm Maria. I start today.
+home two maria,viktoria > viktoria: Welcome. Your room is just there.
+home establish > nar: It was her first night on the farm.
+home establish > nar: What do you think the old maid heard?
+# TITLE 5: That Night
+PART
+home establish > nar: Previously: a new maid named Maria arrived at Hinterkaifeck.
+home bed little:sleep,viktoria > viktoria: Goodnight, little one. Sleep well. [31 MARCH 1922 · NIGHT]
+home two andreas:think,cazilia > andreas: Something is wrong in the barn. The animals are restless.
+home face andreas > andreas: I'm going to look.
+forest establish > nar: That night, all six people on the farm were killed.
+forest establish > nar: And whoever did it... didn't leave.
+forest establish > nar: Why would a killer stay?
+# TITLE 6: Smoke From the Chimney
+PART
+forest establish > nar: Previously: all six people at Hinterkaifeck were killed in one night.
+street two neighbour:think,police > neighbour: The children haven't been to school all week. [EARLY APRIL 1922]
+forest face neighbour:scared > neighbour: But look. Smoke from the chimney.
+forest two neighbour:scared,police > neighbour: And someone fed the animals. And ate food from the kitchen.
+forest establish > nar: For days, someone was living at the farm with the dead.
+forest establish > nar: Who was keeping the fire burning?
+# TITLE 7: Breaking In
+PART
+forest establish > nar: Previously: neighbours saw smoke from the chimney, though the family had not been seen for days.
+forest establish > nar: 4 April 1922. The neighbours go to the farm. [4 APRIL 1922]
+home face neighbour:scared > neighbour: The door is locked. We'll go through the barn.
+home establish > nar: Inside, they found the whole family. And the new maid.
+home two police:think,neighbour > police: Money is still here. This wasn't a robbery.
+home face police:scared > police: Then why?
+home establish > nar: What do you think the motive was?
+# TITLE 8: Never Solved
+PART
+home establish > nar: Previously: neighbours found all six victims at Hinterkaifeck.
+home two police:think,neighbour > police: Over a hundred suspects. Neighbours. Workers. Even the family's past. [1922 - 1980s]
+home face police > police: Every lead goes nowhere.
+forest establish > nar: The farmhouse was torn down in 1923.
+forest establish > nar: Police kept investigating for decades. No one was ever charged.
+forest establish > nar: It is still one of the darkest mysteries in history.
+forest establish > nar: Who do you think it was?
