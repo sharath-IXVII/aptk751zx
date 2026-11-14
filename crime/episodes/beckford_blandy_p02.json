@@ -1,0 +1,174 @@
+{
+ "key": "beckford_blandy_p02",
+ "yt": {
+  "title": "The Wife in Scotland | Mary Blandy (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: Mary Blandy, Henley-on-Thames, England, 1746-1752. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "mary blandy"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary Blandy",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "francis": {
+   "name": "Francis Blandy",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "am_adam"
+  },
+  "cranstoun": {
+   "name": "Captain William Cranstoun",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#a84a22",
+   "voice": "am_eric"
+  },
+  "servant": {
+   "name": "a servant",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "doctor": {
+   "name": "the doctor",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MARY BLANDY",
+    "years": "HENLEY · 1751",
+    "crime": "THE LOVE POWDER",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Captain Cranstoun began courting Mary Blandy and her large dowry."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "francis",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "francis",
+    "text": "Cranstoun already has a wife! And a child! In Scotland!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mary",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "cranstoun",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "cranstoun",
+    "text": "Lies, my love. That marriage was never real."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "francis",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "francis",
+    "text": "He's not welcome in this house again."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WOULD YOU BELIEVE?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who would you believe? Part 3 is next."
+   }
+  }
+ ]
+}

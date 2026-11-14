@@ -1,0 +1,206 @@
+{
+ "key": "aram_p03",
+ "yt": {
+  "title": "Thirteen Years Later | Eugene Aram (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Eugene Aram, Knaresborough, Yorkshire, 1745-1759. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "eugene aram"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "aram": {
+   "name": "Eugene Aram",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "clark": {
+   "name": "Daniel Clark",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "houseman": {
+   "name": "Richard Houseman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "trader": {
+   "name": "a shopkeeper",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "labourer": {
+   "name": "a labourer",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "constable": {
+   "name": "the constable",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "EUGENE ARAM",
+    "years": "KNARESBOROUGH · 1745",
+    "crime": "THE BONES IN THE CAVE",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Clark vanished. Eugene Aram left town and started a new life."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "labourer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "constable",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "labourer",
+    "text": "A skeleton! Digging near Thistle Hill!"
+   },
+   "title": "1758",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "constable",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "constable",
+    "text": "Could it be Daniel Clark, after all these years?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "constable",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "houseman",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "houseman",
+    "text": "That's not Clark's bones."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "constable",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "constable",
+    "text": "How can you be so sure?"
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY WOULD HOUSEMAN BE SO SURE?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why would Houseman be so sure? Part 4 is next."
+   }
+  }
+ ]
+}

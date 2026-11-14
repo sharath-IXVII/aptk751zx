@@ -1,0 +1,187 @@
+{
+ "key": "aram_p02",
+ "yt": {
+  "title": "The Schoolmaster Leaves | Eugene Aram (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: Eugene Aram, Knaresborough, Yorkshire, 1745-1759. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "eugene aram"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "aram": {
+   "name": "Eugene Aram",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "clark": {
+   "name": "Daniel Clark",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "houseman": {
+   "name": "Richard Houseman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "trader": {
+   "name": "a shopkeeper",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "labourer": {
+   "name": "a labourer",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "constable": {
+   "name": "the constable",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "EUGENE ARAM",
+    "years": "KNARESBOROUGH · 1745",
+    "crime": "THE BONES IN THE CAVE",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Daniel Clark borrowed goods from all over town, then vanished."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "trader",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "constable",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "trader",
+    "text": "He's run off with everything we lent him!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "constable",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "constable",
+    "text": "Clark is a thief. That's clear enough."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "aram",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Soon after, schoolmaster Eugene Aram left town too."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He started a new life far away, teaching boys. He became a respected scholar."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS IT A COINCIDENCE THAT HE LEFT?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is it a coincidence that he left? Part 3 is next."
+   }
+  }
+ ]
+}

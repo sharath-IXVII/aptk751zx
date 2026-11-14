@@ -1,0 +1,178 @@
+{
+ "key": "aram_p06",
+ "yt": {
+  "title": "The Famous Speech | Eugene Aram (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Eugene Aram, Knaresborough, Yorkshire, 1745-1759. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "eugene aram"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "aram": {
+   "name": "Eugene Aram",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "clark": {
+   "name": "Daniel Clark",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "houseman": {
+   "name": "Richard Houseman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "trader": {
+   "name": "a shopkeeper",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "labourer": {
+   "name": "a labourer",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "constable": {
+   "name": "the constable",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "EUGENE ARAM",
+    "years": "KNARESBOROUGH · 1745",
+    "crime": "THE BONES IN THE CAVE",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: schoolmaster Eugene Aram was arrested thirteen years after Clark vanished."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "aram",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "aram",
+    "text": "Bones are found in caves all over England. Hermits. Old graves. They prove nothing."
+   },
+   "title": "YORK · 1759"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "aram",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "An eloquent speech. But the jury finds you guilty."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Eugene Aram was hanged in 1759."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "His clever defence became famous, and inspired poems and novels."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS HIS SPEECH CONVINCING TO YOU?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was his speech convincing to you?"
+   }
+  }
+ ]
+}

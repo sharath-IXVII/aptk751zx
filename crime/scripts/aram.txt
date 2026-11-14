@@ -1,0 +1,54 @@
+CAST aram | Eugene Aram | m | plain | brown
+CAST clark | Daniel Clark | m | worker | black
+CAST houseman | Richard Houseman | m | worker | grey | beard
+CAST trader | a shopkeeper | m | rich | grey
+CAST labourer | a labourer | m | worker | brown
+CAST constable | the constable | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Borrower
+PART
+street establish > nar: Knaresborough, Yorkshire, 1745. [KNARESBOROUGH · 1745]
+street two clark:smile,trader > clark: Lend me silver plate, watches, cloth. I'll pay you next week.
+street two trader:think,clark > trader: Very well, Mr Clark. Next week.
+street two aram,clark:smile > clark: Eugene! Come for a walk tonight.
+street establish > nar: Daniel Clark borrowed goods from all over town. Then he disappeared.
+street establish > nar: Where do you think he went?
+# TITLE 2: The Schoolmaster Leaves
+PART
+street establish > nar: Previously: Daniel Clark borrowed goods from all over town, then vanished.
+street two trader:cross,constable > trader: He's run off with everything we lent him!
+street face constable:think > constable: Clark is a thief. That's clear enough.
+street walk aram > nar: Soon after, schoolmaster Eugene Aram left town too.
+street establish > nar: He started a new life far away, teaching boys. He became a respected scholar.
+street establish > nar: Is it a coincidence that he left?
+# TITLE 3: Thirteen Years Later
+PART
+street establish > nar: Previously: Clark vanished. Eugene Aram left town and started a new life.
+forest two labourer:scared,constable > labourer: A skeleton! Digging near Thistle Hill! [1758]
+forest face constable:think > constable: Could it be Daniel Clark, after all these years?
+street two constable,houseman > houseman: That's not Clark's bones.
+street face constable:think > constable: How can you be so sure?
+street establish > nar: Why would Houseman be so sure?
+# TITLE 4: St Robert's Cave
+PART
+street establish > nar: Previously: a skeleton was found. Richard Houseman said it wasn't Clark's.
+street two constable:point,houseman:scared > constable: You knew those bones weren't his. So where is Clark?
+street face houseman:scared > houseman: St Robert's Cave. That's where Clark lies. Aram did it. I only watched.
+forest two constable,labourer:scared > labourer: Bones. In the cave. Just where he said.
+forest face constable > constable: Find Eugene Aram.
+forest establish > nar: Will Aram be found after thirteen years?
+# TITLE 5: The Scholar Arrested
+PART
+forest establish > nar: Previously: bones were found in St Robert's Cave. Houseman blamed Aram.
+home two constable:point,aram:cuffed > constable: Eugene Aram, you're under arrest for the murder of Daniel Clark. [KING'S LYNN · 1758]
+home face aram > aram: Daniel Clark? I haven't heard that name in years.
+home establish > nar: He was a respected teacher. His pupils couldn't believe it.
+home establish > nar: Do you think a scholar could be a killer?
+# TITLE 6: The Famous Speech
+PART
+home establish > nar: Previously: schoolmaster Eugene Aram was arrested thirteen years after Clark vanished.
+court face aram > aram: Bones are found in caves all over England. Hermits. Old graves. They prove nothing. [YORK · 1759]
+court court judge,aram > judge: An eloquent speech. But the jury finds you guilty.
+prison establish > nar: Eugene Aram was hanged in 1759.
+prison establish > nar: His clever defence became famous, and inspired poems and novels.
+prison establish > nar: Was his speech convincing to you?

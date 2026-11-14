@@ -1,0 +1,54 @@
+CAST mary | Mary Blandy | f | rich | brown
+CAST francis | Francis Blandy | m | rich | white
+CAST cranstoun | Captain William Cranstoun | m | soldier | red
+CAST servant | a servant | f | worker | grey
+CAST doctor | the doctor | m | doctor | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Dowry
+PART
+home establish > nar: Henley-on-Thames, 1746. Mary Blandy, a lawyer's daughter. [HENLEY · 1746]
+home two francis:smile,mary > francis: Ten thousand pounds, Mary. Your dowry. For the right man.
+home face mary:smile > mary: The right man, Father.
+home two cranstoun:smile,mary:smile > cranstoun: Captain William Cranstoun. Of a noble Scottish family.
+home face mary:smile > mary: You may call on me, Captain.
+home establish > nar: Is the Captain what he seems?
+# TITLE 2: The Wife in Scotland
+PART
+home establish > nar: Previously: Captain Cranstoun began courting Mary Blandy and her large dowry.
+home two francis:cross,mary > francis: Cranstoun already has a wife! And a child! In Scotland!
+home two mary:scared,cranstoun > cranstoun: Lies, my love. That marriage was never real.
+home face francis:cross > francis: He's not welcome in this house again.
+home establish > nar: Who would you believe?
+# TITLE 3: The Love Powder
+PART
+home establish > nar: Previously: Mary's father found out the Captain already had a wife.
+home face cranstoun:smile > cranstoun: A special powder from Scotland, my love. A love powder.
+home face cranstoun > cranstoun: Put it in your father's food. He'll come to like me.
+home face mary:think > mary: And then we can marry?
+home face cranstoun:smile > cranstoun: And then we can marry.
+home establish > nar: Would you put it in his food?
+# TITLE 4: White Powder in the Pan
+PART
+home establish > nar: Previously: Cranstoun sent Mary a 'love powder' for her father.
+home two mary,francis > mary: Your tea, Father. [1751]
+home bed francis:sick,mary > francis: I've been so ill, Mary. Week after week.
+home two servant:think,doctor > servant: There's white powder at the bottom of the pan she uses for his gruel.
+home face doctor:scared > doctor: Bring it to me.
+home establish > nar: What do you think the powder was?
+# TITLE 5: Arsenic
+PART
+home establish > nar: Previously: a servant found white powder in the pan Mary used for her father's food.
+home face doctor > doctor: Arsenic. [AUGUST 1751]
+home bed francis:sick,mary:cry > francis: Poor girl. I forgive you.
+home establish > nar: Francis Blandy died in August 1751.
+home two doctor:point,mary:cuffed > doctor: You poisoned your father.
+home face mary:cry > mary: I thought it was a love potion!
+home establish > nar: Do you believe her?
+# TITLE 6: Don't Hang Me High
+PART
+home establish > nar: Previously: Mary's father died of arsenic. She said she thought it was a love potion.
+court court judge,mary > judge: Mary Blandy, guilty of murder. [OXFORD · MARCH 1752]
+prison face mary > mary: For the sake of decency, gentlemen, don't hang me high.
+prison establish > nar: Mary Blandy was hanged in April 1752.
+prison establish > nar: Cranstoun fled abroad and died months later. He was never tried.
+prison establish > nar: Who was really guilty: Mary, or Cranstoun?

@@ -1,0 +1,192 @@
+{
+ "key": "beckford_blandy_p01",
+ "yt": {
+  "title": "The Dowry | Mary Blandy (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Mary Blandy, Henley-on-Thames, England, 1746-1752. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "mary blandy"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary Blandy",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "francis": {
+   "name": "Francis Blandy",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "am_adam"
+  },
+  "cranstoun": {
+   "name": "Captain William Cranstoun",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#a84a22",
+   "voice": "am_eric"
+  },
+  "servant": {
+   "name": "a servant",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "doctor": {
+   "name": "the doctor",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MARY BLANDY",
+    "years": "HENLEY · 1751",
+    "crime": "THE LOVE POWDER",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Henley-on-Thames, 1746. Mary Blandy, a lawyer's daughter."
+   },
+   "title": "HENLEY · 1746"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "francis",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "francis",
+    "text": "Ten thousand pounds, Mary. Your dowry. For the right man."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "The right man, Father."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "cranstoun",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "cranstoun",
+    "text": "Captain William Cranstoun. Of a noble Scottish family."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "You may call on me, Captain."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS THE CAPTAIN WHAT HE SEEMS?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is the Captain what he seems? Part 2 is next."
+   }
+  }
+ ]
+}

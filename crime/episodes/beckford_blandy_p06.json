@@ -1,0 +1,171 @@
+{
+ "key": "beckford_blandy_p06",
+ "yt": {
+  "title": "Don't Hang Me High | Mary Blandy (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Mary Blandy, Henley-on-Thames, England, 1746-1752. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "mary blandy"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "mary": {
+   "name": "Mary Blandy",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "francis": {
+   "name": "Francis Blandy",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "am_adam"
+  },
+  "cranstoun": {
+   "name": "Captain William Cranstoun",
+   "skin": "#c99872",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#a84a22",
+   "voice": "am_eric"
+  },
+  "servant": {
+   "name": "a servant",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "doctor": {
+   "name": "the doctor",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MARY BLANDY",
+    "years": "HENLEY · 1751",
+    "crime": "THE LOVE POWDER",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Mary's father died of arsenic. She said she thought it was a love potion."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "judge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "mary",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Mary Blandy, guilty of murder."
+   },
+   "title": "OXFORD · MARCH 1752"
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "For the sake of decency, gentlemen, don't hang me high."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Mary Blandy was hanged in April 1752."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Cranstoun fled abroad and died months later. He was never tried."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WAS REALLY GUILTY: MARY, OR CRANSTOUN?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who was really guilty: Mary, or Cranstoun?"
+   }
+  }
+ ]
+}

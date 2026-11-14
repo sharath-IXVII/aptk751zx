@@ -1,0 +1,168 @@
+{
+ "key": "aram_p05",
+ "yt": {
+  "title": "The Scholar Arrested | Eugene Aram (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Eugene Aram, Knaresborough, Yorkshire, 1745-1759. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "eugene aram"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "aram": {
+   "name": "Eugene Aram",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "clark": {
+   "name": "Daniel Clark",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "houseman": {
+   "name": "Richard Houseman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "trader": {
+   "name": "a shopkeeper",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "labourer": {
+   "name": "a labourer",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "constable": {
+   "name": "the constable",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_daniel",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_fable",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "EUGENE ARAM",
+    "years": "KNARESBOROUGH · 1745",
+    "crime": "THE BONES IN THE CAVE",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: bones were found in St Robert's Cave. Houseman blamed Aram."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "constable",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "aram",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "constable",
+    "text": "Eugene Aram, you're under arrest for the murder of Daniel Clark."
+   },
+   "title": "KING'S LYNN · 1758"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "aram",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "aram",
+    "text": "Daniel Clark? I haven't heard that name in years."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He was a respected teacher. His pupils couldn't believe it."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK A SCHOLAR COULD BE A KILLER?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think a scholar could be a killer? Part 6 is next."
+   }
+  }
+ ]
+}
