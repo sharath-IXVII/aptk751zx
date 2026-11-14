@@ -1,0 +1,58 @@
+CAST ruth | Ruth Snyder | f | rich | blonde
+CAST albert | Albert Snyder | m | rich | brown
+CAST judd | Judd Gray | m | rich | black
+CAST agent | an insurance agent | m | plain | grey
+CAST police | a police detective | m | detective | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: A Bored Housewife
+PART
+home establish > nar: Ruth Snyder. A housewife in Queens, New York. And very, very unhappy. [QUEENS · 1925]
+home two ruth:cross,albert > ruth: Why do you keep that woman's picture, Albert? She's been dead ten years!
+home two ruth,albert:cross > albert: Because she was the love of my life.
+street two ruth:smile,judd:smile > judd: Judd Gray. I sell corsets. And you are...?
+street face ruth:smile > ruth: Lonely.
+street establish > nar: Ruth began a secret affair with Judd Gray.
+street establish > nar: Where do you think this affair was heading?
+# TITLE 2: Double Indemnity
+PART
+street establish > nar: Previously: unhappy Ruth Snyder began an affair with salesman Judd Gray.
+home two agent,albert > agent: Just sign here, Mr Snyder. A standard policy. [1926]
+home face ruth:smile > ruth: He didn't even read it.
+home two agent:smile,ruth > agent: Double indemnity, Mrs Snyder. If he dies violently, the company pays twice.
+home face ruth > ruth: Twice.
+home establish > nar: Ruth now had a big reason to want her husband gone.
+home establish > nar: What do you think she'd do next?
+# TITLE 3: That Night
+PART
+home establish > nar: Previously: Ruth tricked Albert into signing a large life insurance policy.
+home two ruth,judd:scared > ruth: Hide in the spare room. Wait until he's asleep. [MARCH 1927]
+home face judd:scared > judd: Ruth, I don't know if I can do this.
+home face ruth:cross > ruth: You promised me.
+home establish > nar: That night, Albert Snyder was killed in his bed.
+home establish > nar: Do you think they'll get away with it?
+# TITLE 4: The Fake Burglary
+PART
+home establish > nar: Previously: Albert Snyder was killed in his bed.
+home two police:think,ruth:scared > ruth: A big man with a moustache! He tied me up and robbed us!
+home two police:think,ruth > police: Robbed you? Your jewellery is under the mattress, Mrs Snyder.
+home face police > police: And there's no sign anyone broke in.
+home face ruth:scared > ruth: I... I don't know how it got there.
+home establish > nar: Her story was falling apart.
+home establish > nar: What would you ask her next?
+# TITLE 5: J.G.
+PART
+home establish > nar: Previously: police found the 'stolen' jewellery under Ruth's mattress.
+home two police:point,ruth > police: A tie pin with the initials J.G. Who is J.G.?
+home face ruth:scared > ruth: Judd. Judd Gray. He did it, not me!
+street two police:point,judd:cuffed > police: Judd Gray, you're under arrest.
+street face judd:cry > judd: It was Ruth's idea! All of it!
+street establish > nar: Each lover blamed the other.
+street establish > nar: Who do you think was more to blame?
+# TITLE 6: The Photograph
+PART
+street establish > nar: Previously: Ruth and Judd were arrested, each blaming the other.
+court court judge,ruth > judge: Both defendants are guilty. The sentence is death. [NEW YORK · 1927]
+prison establish > nar: Both were executed in January 1928.
+prison establish > nar: A reporter secretly took a photograph of Ruth's execution, with a camera strapped to his ankle.
+prison establish > nar: It appeared on the front page. The world was shocked.
+prison establish > nar: Should that photograph ever have been printed?

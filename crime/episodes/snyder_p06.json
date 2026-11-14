@@ -1,0 +1,167 @@
+{
+ "key": "snyder_p06",
+ "yt": {
+  "title": "The Photograph | Ruth Snyder (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Ruth Snyder, Queens, New York, 1925-1928. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "ruth snyder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ruth": {
+   "name": "Ruth Snyder",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "albert": {
+   "name": "Albert Snyder",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "judd": {
+   "name": "Judd Gray",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "agent": {
+   "name": "an insurance agent",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "police": {
+   "name": "a police detective",
+   "skin": "#8a5232",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RUTH SNYDER",
+    "years": "NEW YORK · 1927",
+    "crime": "DOUBLE INDEMNITY",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Ruth and Judd were arrested, each blaming the other."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "ruth",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Both defendants are guilty. The sentence is death."
+   },
+   "title": "NEW YORK · 1927"
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Both were executed in January 1928."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "A reporter secretly took a photograph of Ruth's execution, with a camera strapped to his ankle."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "It appeared on the front page. The world was shocked."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "SHOULD THAT PHOTOGRAPH EVER HAVE BEEN PRINTED?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Should that photograph ever have been printed?"
+   }
+  }
+ ]
+}

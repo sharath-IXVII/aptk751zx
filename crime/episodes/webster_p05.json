@@ -1,0 +1,193 @@
+{
+ "key": "webster_p05",
+ "yt": {
+  "title": "Flight to Ireland | Kate Webster (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Kate Webster, Richmond, London, 1879. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "kate webster"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "kate": {
+   "name": "Kate Webster",
+   "skin": "#d0a07c",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "julia": {
+   "name": "Julia Martha Thomas",
+   "skin": "#d0a07c",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "buyer": {
+   "name": "a furniture dealer",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "KATE WEBSTER",
+    "years": "RICHMOND · 1879",
+    "crime": "THE MAID WHO BECAME HER MISTRESS",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: remains were found by the Thames, and the furniture buyer grew suspicious."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "kate",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Kate fled across the sea to Ireland."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "neighbour",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Letters, papers, Mrs Thomas's things. She's not coming back."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "kate",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Kate Webster. You're under arrest."
+   },
+   "title": "IRELAND · MARCH 1879"
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "kate",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "kate",
+    "text": "It wasn't me. It was someone else."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE JURY BELIEVE HER?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the jury believe her? Part 6 is next."
+   }
+  }
+ ]
+}

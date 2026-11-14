@@ -1,0 +1,56 @@
+CAST kate | Kate Webster | f | worker | red
+CAST julia | Julia Martha Thomas | f | rich | grey
+CAST buyer | a furniture dealer | m | worker | brown
+CAST neighbour | a neighbour | f | plain | blonde
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The New Maid
+PART
+home establish > nar: Richmond, near London. A quiet street of neat villas. [RICHMOND · 1879]
+home two julia:think,kate > julia: You'll call me madam. Floors scrubbed by eight. Every day.
+home two julia,kate:smile > kate: Yes, madam. I'm a hard worker.
+home face julia:think > julia: We'll see.
+home establish > nar: Kate Webster had a criminal past. Mrs Thomas didn't know.
+home establish > nar: Do you think this will go well?
+# TITLE 2: Notice
+PART
+home establish > nar: Previously: strict widow Julia Thomas hired a new maid, Kate Webster.
+home two julia:point,kate > julia: You're late again. And you've been drinking. [FEBRUARY 1879]
+home two julia:cross,kate:cross > kate: Nothing I do is ever good enough for you!
+home face julia:cross > julia: Then you'll leave. You have until the end of the month.
+home face kate:cross > kate: We'll see who leaves.
+home establish > nar: What do you think Kate was planning?
+# TITLE 3: Mrs Thomas Disappears
+PART
+home establish > nar: Previously: Mrs Thomas gave Kate notice to leave.
+home establish > nar: In early March 1879, Mrs Thomas was never seen again. [MARCH 1879]
+street two neighbour:think,kate > neighbour: Where's Mrs Thomas? I haven't seen her in days.
+street two neighbour,kate:smile > kate: Gone away. And you can call me Mrs Thomas now. The house is mine.
+home two buyer,kate > kate: I'm selling all the furniture. Make me an offer.
+home establish > nar: Kate was wearing her employer's dresses, and calling herself by her name.
+home establish > nar: Would you buy that furniture?
+# TITLE 4: The Box by the River
+PART
+home establish > nar: Previously: Kate Webster pretended to be Mrs Thomas and tried to sell her furniture.
+dock walk police > nar: A box is found by the River Thames. [MARCH 1879]
+dock face police:scared > police: Human remains. Who could do this?
+home two buyer:think,neighbour > buyer: Something's not right about that 'Mrs Thomas'. Her Irish accent, for a start.
+home face buyer:scared > buyer: I'm going to the police.
+home establish > nar: How do you think Kate reacted?
+# TITLE 5: Flight to Ireland
+PART
+home establish > nar: Previously: remains were found by the Thames, and the furniture buyer grew suspicious.
+dock walk kate > nar: Kate fled across the sea to Ireland.
+home two police:think,neighbour > police: Letters, papers, Mrs Thomas's things. She's not coming back.
+street two police:point,kate:cuffed > police: Kate Webster. You're under arrest. [IRELAND · MARCH 1879]
+street face kate > kate: It wasn't me. It was someone else.
+street establish > nar: Will the jury believe her?
+# TITLE 6: The Skull
+PART
+street establish > nar: Previously: Kate Webster fled to Ireland, but was arrested.
+court court judge,kate > judge: Guilty. You will be hanged. [OLD BAILEY · JULY 1879]
+prison establish > nar: Kate Webster was hanged in July 1879.
+street establish > nar: But Mrs Thomas's skull was never found.
+street establish > nar: Until 2010, when workers digging in a Richmond garden found it.
+street establish > nar: After 131 years, she was identified.
+street establish > nar: How do you think it ended up there?

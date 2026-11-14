@@ -1,0 +1,176 @@
+{
+ "key": "webster_p06",
+ "yt": {
+  "title": "The Skull | Kate Webster (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Kate Webster, Richmond, London, 1879. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "kate webster"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "kate": {
+   "name": "Kate Webster",
+   "skin": "#d0a07c",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "julia": {
+   "name": "Julia Martha Thomas",
+   "skin": "#d0a07c",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "buyer": {
+   "name": "a furniture dealer",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "neighbour": {
+   "name": "a neighbour",
+   "skin": "#e0aa84",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "KATE WEBSTER",
+    "years": "RICHMOND · 1879",
+    "crime": "THE MAID WHO BECAME HER MISTRESS",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Kate Webster fled to Ireland, but was arrested."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "kate",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Guilty. You will be hanged."
+   },
+   "title": "OLD BAILEY · JULY 1879"
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Kate Webster was hanged in July 1879."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "But Mrs Thomas's skull was never found."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Until 2010, when workers digging in a Richmond garden found it."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "After 131 years, she was identified."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU THINK IT ENDED UP THERE?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you think it ended up there?"
+   }
+  }
+ ]
+}

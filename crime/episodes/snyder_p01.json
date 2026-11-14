@@ -1,0 +1,212 @@
+{
+ "key": "snyder_p01",
+ "yt": {
+  "title": "A Bored Housewife | Ruth Snyder (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Ruth Snyder, Queens, New York, 1925-1928. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "ruth snyder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ruth": {
+   "name": "Ruth Snyder",
+   "skin": "#e0aa84",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "albert": {
+   "name": "Albert Snyder",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "judd": {
+   "name": "Judd Gray",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "agent": {
+   "name": "an insurance agent",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "police": {
+   "name": "a police detective",
+   "skin": "#8a5232",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RUTH SNYDER",
+    "years": "NEW YORK · 1927",
+    "crime": "DOUBLE INDEMNITY",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Ruth Snyder. A housewife in Queens, New York. And very, very unhappy."
+   },
+   "title": "QUEENS · 1925"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "albert",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ruth",
+    "text": "Why do you keep that woman's picture, Albert? She's been dead ten years!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "albert",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "albert",
+    "text": "Because she was the love of my life."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "judd",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "judd",
+    "text": "Judd Gray. I sell corsets. And you are...?"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "ruth",
+    "text": "Lonely."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Ruth began a secret affair with Judd Gray."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHERE DO YOU THINK THIS AFFAIR WAS HEADING?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Where do you think this affair was heading? Part 2 is next."
+   }
+  }
+ ]
+}
