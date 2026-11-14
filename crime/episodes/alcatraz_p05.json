@@ -1,0 +1,176 @@
+{
+ "key": "alcatraz_p05",
+ "yt": {
+  "title": "The Raincoat Raft | Escape From Alcatraz (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: Escape From Alcatraz, Alcatraz prison, San Francisco Bay, 1960-1962. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "escape from alcatraz"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "frank": {
+   "name": "Frank Morris",
+   "skin": "#a86a42",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "john": {
+   "name": "John Anglin",
+   "skin": "#c99872",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "clarence": {
+   "name": "Clarence Anglin",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "allen": {
+   "name": "Allen West",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "warden": {
+   "name": "the warden",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "coat": true,
+   "hat": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ESCAPE FROM ALCATRAZ",
+    "years": "SAN FRANCISCO · 1962",
+    "crime": "THEY WERE NEVER FOUND",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the prisoners made dummy heads to fool the guards."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "allen",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "john",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "allen",
+    "text": "More than fifty raincoats, stolen one by one."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "john",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "john",
+    "text": "Glued together, they make a raft. And life jackets."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "frank",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "frank",
+    "text": "We'll pump it up with an accordion turned into bellows."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Everything was hidden above the cells, on top of the cell block."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHEN DO YOU THINK THEY'LL GO?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "When do you think they'll go? Part 6 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "key": "alcatraz_p04",
+ "yt": {
+  "title": "The Dummy Heads | Escape From Alcatraz (True Story) Part 4 #shorts",
+  "description": "Part 4 of 7: Escape From Alcatraz, Alcatraz prison, San Francisco Bay, 1960-1962. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "escape from alcatraz"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "frank": {
+   "name": "Frank Morris",
+   "skin": "#a86a42",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "john": {
+   "name": "John Anglin",
+   "skin": "#c99872",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "clarence": {
+   "name": "Clarence Anglin",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "allen": {
+   "name": "Allen West",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "warden": {
+   "name": "the warden",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "coat": true,
+   "hat": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ESCAPE FROM ALCATRAZ",
+    "years": "SAN FRANCISCO · 1962",
+    "crime": "THEY WERE NEVER FOUND",
+    "part": "PART 4 OF 7"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the prisoners secretly widened the air vents in their cells."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "clarence",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "clarence",
+    "text": "Soap. Toilet paper. Paint from the workshop. And real hair from the barber shop."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "frank",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "frank",
+    "text": "The guards count us at night. They'll see a head on the pillow."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "They made fake heads so realistic they would fool the night guards."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT ELSE WOULD THEY NEED TO CROSS THE BAY?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What else would they need to cross the bay? Part 5 is next."
+   }
+  }
+ ]
+}

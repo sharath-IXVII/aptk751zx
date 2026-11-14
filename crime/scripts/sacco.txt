@@ -1,0 +1,53 @@
+CAST nicola | Nicola Sacco | m | worker | black
+CAST bart | Bartolomeo Vanzetti | m | worker | brown | beard
+CAST police | a police officer | m | police | black
+CAST judge | Judge Webster Thayer | m | judge | white
+CAST protester | a protester | f | plain | red
+CAST governor | a governor | m | rich | grey
+# TITLE 1: The Robbery
+PART
+street establish > nar: South Braintree, Massachusetts. April 1920. Payday at the shoe factory. [SOUTH BRAINTREE · APRIL 1920]
+street establish > nar: Two men carrying the payroll were shot dead by robbers, who escaped in a car.
+street two police:think,protester > police: Witnesses say the robbers looked Italian.
+street face police > police: There are thousands of Italian workers around here.
+street establish > nar: How would police find the robbers?
+# TITLE 2: Two Anarchists
+PART
+street establish > nar: Previously: two men were killed in a payroll robbery.
+street two nicola,bart > bart: They're arresting anarchists everywhere, Nicola. Deporting them. [MAY 1920]
+street two police:point,nicola:cuffed > police: Nicola Sacco. Bartolomeo Vanzetti. You're under arrest.
+street face police:think > police: Both carrying guns. Both lying about where they've been.
+street face nicola:scared > nicola: We lied because we were scared. Not because we're guilty.
+street establish > nar: Why would innocent men lie?
+# TITLE 3: The Trial
+PART
+street establish > nar: Previously: Sacco and Vanzetti were arrested carrying guns.
+court two judge:cross,police > judge: These men are anarchists. Foreigners. [DEDHAM · 1921]
+court face bart > bart: I am suffering because I am an Italian. And I am an anarchist.
+court court judge,nicola > judge: Guilty. Both of you.
+court establish > nar: Many said the judge was openly hostile to the two men.
+court establish > nar: Was it a fair trial?
+# TITLE 4: The World Protests
+PART
+court establish > nar: Previously: Sacco and Vanzetti were found guilty.
+street two protester:point,police > protester: Free Sacco and Vanzetti! [1920s]
+street establish > nar: Protests spread across America, Europe, and South America.
+prison cell nicola > nicola: Another prisoner has confessed to the robbery. He says we weren't there.
+prison face bart > bart: Then they'll have to free us.
+prison establish > nar: Do you think the confession will save them?
+# TITLE 5: Appeals
+PART
+prison establish > nar: Previously: another prisoner confessed, saying Sacco and Vanzetti weren't involved.
+court court judge,bart > judge: Appeal denied.
+prison face bart > bart: If it had not been for this, I might have died unknown. Now we are remembered.
+prison establish > nar: In August 1927, Sacco and Vanzetti were executed. [AUGUST 1927]
+prison establish > nar: Crowds around the world wept.
+prison establish > nar: Were they guilty?
+# TITLE 6: Fifty Years Later
+PART
+prison establish > nar: Previously: Sacco and Vanzetti were executed in 1927.
+home face governor > governor: Any stigma and disgrace should be forever removed from their names. [1977]
+home establish > nar: Fifty years later, the Governor of Massachusetts declared their trial unfair.
+home establish > nar: He did not say they were innocent. He said they never had a fair chance.
+home establish > nar: Historians still argue about what really happened.
+home establish > nar: What matters more: guilt, or a fair trial?

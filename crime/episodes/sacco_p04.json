@@ -1,0 +1,177 @@
+{
+ "key": "sacco_p04",
+ "yt": {
+  "title": "The World Protests | Sacco & Vanzetti (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Sacco & Vanzetti, Massachusetts, 1920-1927. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "sacco & vanzetti"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "nicola": {
+   "name": "Nicola Sacco",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam"
+  },
+  "bart": {
+   "name": "Bartolomeo Vanzetti",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "Judge Webster Thayer",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "protester": {
+   "name": "a protester",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "governor": {
+   "name": "a governor",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "SACCO & VANZETTI",
+    "years": "MASSACHUSETTS · 1920",
+    "crime": "GUILTY OR FRAMED?",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Sacco and Vanzetti were found guilty."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "protester",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "protester",
+    "text": "Free Sacco and Vanzetti!"
+   },
+   "title": "1920S"
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Protests spread across America, Europe, and South America."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "nicola",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nicola",
+    "text": "Another prisoner has confessed to the robbery. He says we weren't there."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bart",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bart",
+    "text": "Then they'll have to free us."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK THE CONFESSION WILL SAVE THEM?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think the confession will save them? Part 5 is next."
+   }
+  }
+ ]
+}

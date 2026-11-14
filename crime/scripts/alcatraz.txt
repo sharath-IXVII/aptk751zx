@@ -1,0 +1,63 @@
+CAST frank | Frank Morris | m | prisoner | brown
+CAST john | John Anglin | m | prisoner | blonde
+CAST clarence | Clarence Anglin | m | prisoner | blonde
+CAST allen | Allen West | m | prisoner | black
+CAST guard | a prison guard | m | police | grey
+CAST warden | the warden | m | detective | white
+# TITLE 1: The Rock
+PART
+dock establish > nar: Alcatraz. An island prison in the freezing waters of San Francisco Bay. [ALCATRAZ · 1960]
+prison two guard,frank > guard: Welcome to the Rock. Nobody escapes from here.
+prison cell frank:think > frank: Cold water. Strong currents. Over a mile to shore.
+prison face frank > frank: Nobody has escaped... yet.
+prison establish > nar: Frank Morris was one of the smartest prisoners on Alcatraz.
+prison establish > nar: Do you think anyone could escape?
+# TITLE 2: The Team
+PART
+prison establish > nar: Previously: clever prisoner Frank Morris arrived at Alcatraz.
+prison two frank,john > john: My brother Clarence is here too. We've been planning. [1961]
+prison two allen,frank > allen: Four of us. Cells side by side.
+prison face frank:think > frank: Then we do this carefully. One step at a time.
+prison establish > nar: Frank Morris, the Anglin brothers, and Allen West began to plan.
+prison establish > nar: How would you escape an island prison?
+# TITLE 3: The Spoons
+PART
+prison establish > nar: Previously: four prisoners began planning an escape from Alcatraz.
+prison cell john:think > john: A sharpened spoon. And a drill from an old vacuum motor.
+prison face frank > frank: The air vent at the back of the cell. The concrete is crumbling from the salt air.
+prison establish > nar: Night after night, they chipped away at the vents.
+prison two guard:think,frank > guard: What's that noise?
+prison face frank:smile > frank: Music hour. Accordion practice.
+prison establish > nar: Would the guards ever notice?
+# TITLE 4: The Dummy Heads
+PART
+prison establish > nar: Previously: the prisoners secretly widened the air vents in their cells.
+prison cell clarence:smile > clarence: Soap. Toilet paper. Paint from the workshop. And real hair from the barber shop.
+prison face frank:smile > frank: The guards count us at night. They'll see a head on the pillow.
+prison establish > nar: They made fake heads so realistic they would fool the night guards.
+prison establish > nar: What else would they need to cross the bay?
+# TITLE 5: The Raincoat Raft
+PART
+prison establish > nar: Previously: the prisoners made dummy heads to fool the guards.
+prison two allen,john > allen: More than fifty raincoats, stolen one by one.
+prison face john:smile > john: Glued together, they make a raft. And life jackets.
+prison face frank > frank: We'll pump it up with an accordion turned into bellows.
+prison establish > nar: Everything was hidden above the cells, on top of the cell block.
+prison establish > nar: When do you think they'll go?
+# TITLE 6: The Night
+PART
+prison establish > nar: Previously: the prisoners built a raft from more than fifty raincoats.
+prison cell frank > frank: Tonight. [11 JUNE 1962]
+prison face allen:scared > allen: My vent! It's stuck! Wait for me!
+prison establish > nar: Three men climbed through the vents and up onto the roof.
+dock establish > nar: They launched their raft into the dark, freezing bay.
+prison face allen:cry > nar: Allen West was left behind.
+dock establish > nar: Do you think they made it?
+# TITLE 7: Never Found
+PART
+dock establish > nar: Previously: three men escaped Alcatraz on a raincoat raft.
+prison two guard:scared,warden > guard: Morris... it's a fake head! They're gone! [12 JUNE 1962]
+dock face warden:cross > warden: Search the whole bay.
+dock establish > nar: Paddles and a life jacket washed up. But no bodies were ever found.
+dock establish > nar: Officially, they drowned. But some evidence suggests they may have survived.
+dock establish > nar: Do you think they made it to freedom?

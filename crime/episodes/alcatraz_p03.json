@@ -1,0 +1,193 @@
+{
+ "key": "alcatraz_p03",
+ "yt": {
+  "title": "The Spoons | Escape From Alcatraz (True Story) Part 3 #shorts",
+  "description": "Part 3 of 7: Escape From Alcatraz, Alcatraz prison, San Francisco Bay, 1960-1962. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "escape from alcatraz"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "frank": {
+   "name": "Frank Morris",
+   "skin": "#a86a42",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "john": {
+   "name": "John Anglin",
+   "skin": "#c99872",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "clarence": {
+   "name": "Clarence Anglin",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "allen": {
+   "name": "Allen West",
+   "skin": "#8a5232",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george"
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#e0aa84",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "cap": true
+  },
+  "warden": {
+   "name": "the warden",
+   "skin": "#a86a42",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "coat": true,
+   "hat": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ESCAPE FROM ALCATRAZ",
+    "years": "SAN FRANCISCO · 1962",
+    "crime": "THEY WERE NEVER FOUND",
+    "part": "PART 3 OF 7"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: four prisoners began planning an escape from Alcatraz."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "john",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "john",
+    "text": "A sharpened spoon. And a drill from an old vacuum motor."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "frank",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "frank",
+    "text": "The air vent at the back of the cell. The concrete is crumbling from the salt air."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Night after night, they chipped away at the vents."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "frank",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "What's that noise?"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "frank",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "frank",
+    "text": "Music hour. Accordion practice."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD THE GUARDS EVER NOTICE?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would the guards ever notice? Part 4 is next."
+   }
+  }
+ ]
+}
