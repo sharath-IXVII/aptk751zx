@@ -151,3 +151,12 @@ jobs:
           gh api --paginate "repos/${{ github.repository }}/actions/artifacts?per_page=100" \
             --jq ".artifacts[] | select(.created_at < \"$cutoff\") | .id" |
             while read -r id; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" && echo "deleted $id"; done || true
+      - name: Start the next crime Short (backup for its own schedule)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last=$(gh api "repos/${{ github.repository }}/actions/workflows/crime.yml/runs?per_page=1" -q '.workflow_runs[0].created_at' || echo 1970-01-01T00:00:00Z)
+          if [ "$(date -u -d "$last" +%s)" -lt "$(date -u -d '50 minutes ago' +%s)" ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/crime.yml/dispatches" -f ref=main && echo "dispatched crime"
+          fi

@@ -1,7 +1,7 @@
 name: Crime Shorts (true horror stories)
 on:
-  # schedule (on after the Part 1 test passes):
-  #   - cron: "23 * * * *"
+  schedule:
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       preview: {description: "Only render Part 1 as an unlisted preview", type: boolean, default: false}
