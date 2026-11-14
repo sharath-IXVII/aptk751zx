@@ -123,6 +123,19 @@ Vocabulary:
 Total spoken words at most 190.
 The narrator speaks in the third person only. A person who has died in the facts never speaks or appears again.
 Characters only know what has happened so far; never let them describe events of later parts.
+EXAMPLE of a good part (different case, for style only):
+{{"title":"The Nurse Everyone Loved","shots":[
+{{"set":"ward","frame":"establish","who":[],"speaker":"nar","text":"Jane Toppan. The nurse everyone loved.","title":"CAMBRIDGE · 1885"}},
+{{"set":"ward","frame":"bed","who":["old","jane"],"acts":{{"old":"sick"}},"speaker":"old","text":"Nurse? I can't sleep."}},
+{{"set":"ward","frame":"bed","who":["old","jane"],"acts":{{"jane":"smile"}},"speaker":"jane","text":"Don't you worry, dear. Nurse Jane is here."}},
+{{"set":"ward","frame":"face","who":["jane"],"acts":{{"jane":"smile"}},"speaker":"jane","text":"They call me Jolly Jane."}},
+{{"set":"ward","frame":"two","who":["doc","jane"],"acts":{{"doc":"think"}},"speaker":"doc","text":"Strange. He was getting better yesterday.","title":"THE NEXT MORNING"}},
+{{"set":"ward","frame":"two","who":["doc","jane"],"acts":{{"jane":"smile"}},"speaker":"jane","text":"Poor man. I'll sit with him tonight, doctor."}},
+{{"set":"ward","frame":"bed","who":["anna","jane"],"acts":{{"anna":"peek"}},"speaker":"anna","text":"Why is she always at his bed at night?","title":"THAT NIGHT"}},
+{{"set":"ward","frame":"face","who":["jane"],"speaker":"jane","text":"Shh. Sleep now. Everyone sleep."}},
+{{"set":"ward","frame":"establish","who":[],"speaker":"nar","text":"And Anna had just seen something she should not have seen."}},
+{{"set":"ward","frame":"establish","who":[],"speaker":"nar","text":"Would you tell anyone?"}}]}}
+Notice: real conversation between characters, short natural lines, no labels like "Cliffhanger:", people only say what they could know at that moment.
 JSON: {{"title":"catchy part title, max 6 words","shots":[{{"set":"","frame":"","who":["ids"],"acts":{{"id":"act"}},"speaker":"nar or id","text":"","title":""}}]}}"""
     for attempt in range(3):
         d = llm.chat_json(prompt, system=SYSTEM, temperature=0.7, max_tokens=5000, prefer=WRITER)
@@ -201,13 +214,15 @@ def convert(case, k, cast, d) -> dict:
         if fr != "bed": acts = {x: ("idle" if a in ("sick", "sleep", "peek") else a) for x, a in acts.items()}
         if not ARREST.search(beat): acts = {x: ("idle" if a == "cuffed" else a) for x, a in acts.items()}
         ch, cam, extra = place(fr, who, st, acts)
-        text = " ".join(str(s["text"]).split()[:22])
+        text = re.sub(r"^\s*(cliffhanger|last shot|shot \d+|narrator|recap|question|hook)\s*:\s*", "", str(s["text"]), flags=re.I)
+        text = " ".join(text.split()[:22])
         sh = {"set": st, "cam": cam, "chars": ch, "line": {"who": spk, "text": text}, **extra}
         if s.get("title"): sh["title"] = str(s["title"]).upper()[:40]
         if st in ("street", "forest", "dock", "shore") and h(case["id"] + str(k) + str(i)) % 3 == 0: sh["fx"] = ["rain"]
         if st in ("ward", "asylum", "home", "prison") and spk == "nar" and i > 0: sh["flick"] = True
         if last:
-            if not text.endswith("?"): text = "What do you think happens next?"
+            if not text.endswith("?") or len(text.split()) > 10 or re.search(r"\b(will|found|remains)\b", text, re.I):
+                text = "What do you think happens next?" if k < n else "What do you think of this case?"
             q = text
             sh = {"set": st, "cam": "office", "chars": [],
                   "card": {"h": q.upper()[:60], "p": "Comment below 👇", "f": f"Part {k + 1} next" if k < n else "Next true story coming soon"},
