@@ -47,6 +47,8 @@ def _ig_graph() -> str:
 
 
 def _caption(meta: dict, video_id: str | None) -> str:
+    from pipeline.brandsafe import clean_meta
+    meta = clean_meta(meta)
     hook = meta.get("short_hook") or meta["title"]
     tags = meta.get("description", "").strip().split("\n")[-1]  # the hashtag line
     yt = "Full video on our YouTube channel - link in bio."

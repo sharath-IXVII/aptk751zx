@@ -43,6 +43,8 @@ def upload(video: Path, thumbnail: Path | None, meta: dict,
            publish_at: dt.datetime | None = None) -> str:
     """Upload and return the YouTube video id. With publish_at (and YT_PRIVACY public), the
     video is uploaded as private and YouTube makes it public at that time."""
+    from pipeline.brandsafe import clean_meta
+    meta = clean_meta(meta)  # never use other channels' names in our metadata
     youtube = _client()
     privacy = os.getenv("YT_PRIVACY") or "private"
     if privacy != "public":
