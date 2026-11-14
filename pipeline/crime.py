@@ -30,7 +30,8 @@ def upload(key, ep_path, video, preview=False):
         os.environ["YT_PRIVACY"] = "unlisted"
         print(f"PREVIEW https://youtu.be/{yt.upload(Path(video), None, meta)}"); return
     os.environ["YT_PRIVACY"] = "public"; when = slot(state)
-    vid = yt.upload(Path(video), None, meta, publish_at=when)
+    if os.getenv("CRIME_NOW") == "1": when = dt.datetime.now(IST)  # post straight away
+    vid = yt.upload(Path(video), None, meta, publish_at=None if os.getenv("CRIME_NOW") == "1" else when)
     try:
         from pipeline import social
         social.queue_short(state, Path(video), meta, None, None)  # Instagram: posts right away

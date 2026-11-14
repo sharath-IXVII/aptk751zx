@@ -1,7 +1,7 @@
 name: Crime Shorts (true horror stories)
 on:
-  # schedule (enabled after the owner approves Part 1):
-  #   - cron: "23 */3 * * *"
+  # schedule (on after the Part 1 test passes):
+  #   - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       preview: {description: "Only render Part 1 as an unlisted preview", type: boolean, default: false}
@@ -46,6 +46,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GH_ADMIN_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
           GH_TOKEN: ${{ github.token }}
+          CRIME_NOW: "1"
         run: |
           EP=${{ steps.ep.outputs.ep }}
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
