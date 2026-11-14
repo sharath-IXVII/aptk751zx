@@ -32,7 +32,9 @@ jobs:
             git add crime && git commit -qm "Crime: write next case [skip ci]"
             for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && break; sleep $((i*5)); done
           fi
-          if grep -q "cases left in library: [0-3]$\|CASE LIBRARY EMPTY" writer.log; then
+          left=$(python -c "import json,os;d=json.load(open('state/crime.json'))['done'] if os.path.exists('state/crime.json') else {};print(len([k for k in json.load(open('crime/episodes/order.json')) if k not in d]))")
+          echo "parts ready: $left"
+          if [ "$left" -lt 12 ]; then
             gh issue list --state open --search "Crime scripts" -q '.[].number' --json number | grep -q . || \
             gh issue create --title "Crime scripts are running out" --body "The ENT channel has fewer than 12 true-crime Shorts left to post (about 6 days). Ask Claude to write the next cases in crime/scripts/."
           fi
