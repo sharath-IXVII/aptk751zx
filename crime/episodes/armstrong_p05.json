@@ -1,0 +1,193 @@
+{
+ "key": "armstrong_p05",
+ "yt": {
+  "title": "Arsenic in His Pocket | Major Armstrong (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Major Armstrong, Hay-on-Wye on the Wales-England border, 1920-1922. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "major armstrong"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "armstrong": {
+   "name": "Major Herbert Armstrong",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "katharine": {
+   "name": "Katharine Armstrong",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "martin": {
+   "name": "Oswald Martin",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "chemist": {
+   "name": "the chemist",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MAJOR ARMSTRONG",
+    "years": "HAY-ON-WYE · 1921",
+    "crime": "THE POISONED SCONE",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the chemist remembered Armstrong buying arsenic."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "armstrong",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "Major Armstrong, you're under arrest."
+   },
+   "title": "31 DECEMBER 1921"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "police",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "And what's this in your pocket? A packet of arsenic."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "chemist",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "We're opening Mrs Armstrong's grave."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "chemist",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "chemist",
+    "text": "Full of arsenic."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "grave",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU THINK THE JURY WILL SEE IT?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you think the jury will see it? Part 6 is next."
+   }
+  }
+ ]
+}

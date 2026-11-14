@@ -1,0 +1,201 @@
+{
+ "key": "armstrong_p03",
+ "yt": {
+  "title": "Excuse Fingers | Major Armstrong (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Major Armstrong, Hay-on-Wye on the Wales-England border, 1920-1922. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "major armstrong"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "armstrong": {
+   "name": "Major Herbert Armstrong",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "katharine": {
+   "name": "Katharine Armstrong",
+   "skin": "#8a5232",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "martin": {
+   "name": "Oswald Martin",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "chemist": {
+   "name": "the chemist",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "MAJOR ARMSTRONG",
+    "years": "HAY-ON-WYE · 1921",
+    "crime": "THE POISONED SCONE",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Major Armstrong's wife died, and her death was blamed on illness."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "martin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "armstrong",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "armstrong",
+    "text": "Martin, come for tea. Let's settle this business dispute like gentlemen."
+   },
+   "title": "OCTOBER 1921"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "martin",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "armstrong",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "give"
+    }
+   ],
+   "line": {
+    "who": "armstrong",
+    "text": "A scone? Excuse fingers."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "martin",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "martin",
+    "text": "Thank you, Major."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "martin",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "chemist",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "martin",
+    "text": "I'm so ill. Since that tea."
+   },
+   "bed": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WAS IN THE SCONE?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What was in the scone? Part 4 is next."
+   }
+  }
+ ]
+}

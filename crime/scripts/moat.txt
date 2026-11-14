@@ -1,0 +1,53 @@
+CAST camille | Camille Holland | f | rich | grey
+CAST dougal | Samuel Dougal | m | soldier | brown | beard
+CAST maid | a young maid | f | worker | blonde
+CAST clerk | a bank clerk | m | plain | black
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: Moat Farm
+PART
+home establish > nar: Camille Holland. Wealthy, refined, and lonely. [LONDON · 1898]
+home two camille:smile,dougal:smile > dougal: Captain Samuel Dougal, retired soldier. May I say, you have lovely eyes.
+home two camille:smile,dougal > camille: You're very bold, Captain.
+forest establish > nar: Within months, she bought a farm in Essex. Moat Farm. And moved there with him. [ESSEX · 1899]
+home face camille:smile > camille: Our little paradise.
+home establish > nar: Would you move to a lonely farm with a man you just met?
+# TITLE 2: The Pony Trap
+PART
+home establish > nar: Previously: Camille Holland bought Moat Farm and moved there with charming Samuel Dougal.
+home two maid:scared,camille > maid: Miss Holland, the Captain tried to come into my room last night!
+home two camille:cross,dougal > camille: How dare you, Samuel! In my house!
+home two camille,dougal:smile > dougal: A misunderstanding, my dear. Come for a drive. We'll talk.
+forest walk dougal > nar: They drove off in the pony trap that evening. Only Dougal came back. [MAY 1899]
+home establish > nar: Where do you think Camille went?
+# TITLE 3: Four Years of Lies
+PART
+home establish > nar: Previously: Camille went for a drive with Dougal and never returned.
+street two maid:think,dougal > dougal: Miss Holland has gone on a long holiday. [1899 - 1903]
+home face dougal:smile > dougal: Her signature. Practise it. Again. Perfect.
+home establish > nar: For four years Dougal lived on her money, forging her name on cheques.
+home establish > nar: He bought a car, a bicycle for every girl he liked, and lived like a gentleman.
+home establish > nar: How long can a lie like this last?
+# TITLE 4: Gossip
+PART
+home establish > nar: Previously: Dougal lived on Camille's money for four years, forging her cheques.
+street two maid:think,police > maid: He's chasing every woman in the village. And no one's seen Miss Holland in years. [1903]
+street face police:think > police: Years? Not one letter?
+street establish > nar: The rumours reached the police.
+street establish > nar: What would you check first?
+# TITLE 5: The Signatures
+PART
+street establish > nar: Previously: village gossip about Dougal reached the police.
+home two clerk:think,police > clerk: These cheques from Miss Holland. The signatures don't quite match. [1903]
+home two police:point,dougal:cuffed > police: Samuel Dougal, you're under arrest for forgery.
+forest establish > nar: Police began digging at Moat Farm. For weeks.
+forest face police:scared > police: Here. In the filled-in ditch.
+forest establish > nar: Is it Camille?
+# TITLE 6: Her Shoes
+PART
+forest establish > nar: Previously: police dug at Moat Farm and found a body in a ditch.
+forest two police:think,clerk > police: The shoes. Made by her shoemaker in London. It's Camille Holland.
+court court judge,dougal > judge: Samuel Dougal, guilty of murder. [CHELMSFORD · 1903]
+prison establish > nar: Dougal was hanged in July 1903.
+prison establish > nar: She had been under the farm for four years.
+prison establish > nar: Who do you think should have noticed sooner?

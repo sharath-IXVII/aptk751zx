@@ -1,0 +1,55 @@
+CAST armstrong | Major Herbert Armstrong | m | rich | brown | beard
+CAST katharine | Katharine Armstrong | f | rich | grey
+CAST martin | Oswald Martin | m | rich | black
+CAST chemist | the chemist | m | worker | grey | beard
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Little Major
+PART
+street establish > nar: Hay-on-Wye. A small market town on the border of England and Wales. [HAY-ON-WYE · 1920]
+street two police:smile,armstrong:smile > police: Good morning, Major Armstrong.
+street face armstrong:smile > armstrong: A fine morning. Off to the office.
+home two katharine:cross,armstrong > katharine: Herbert, no smoking in the house. And no wine at dinner.
+home face armstrong > armstrong: Yes, dear.
+home establish > nar: The town's solicitor. Small, neat and very polite.
+home establish > nar: What do you think was going on inside his head?
+# TITLE 2: Katharine
+PART
+home establish > nar: Previously: polite solicitor Major Armstrong lived under his strict wife's rules.
+home bed katharine:sick,armstrong > katharine: Herbert, I feel so weak. [1920]
+home bed katharine:sick,armstrong:tuck > armstrong: Rest, my dear. I'll take care of everything.
+grave grave armstrong:cry > nar: In February 1921, Katharine died. Her death was blamed on illness. [FEBRUARY 1921]
+home face armstrong:smile > armstrong: Freedom.
+home establish > nar: Was it really illness?
+# TITLE 3: Excuse Fingers
+PART
+home establish > nar: Previously: Major Armstrong's wife died, and her death was blamed on illness.
+home two martin,armstrong:smile > armstrong: Martin, come for tea. Let's settle this business dispute like gentlemen. [OCTOBER 1921]
+home two martin,armstrong:give > armstrong: A scone? Excuse fingers.
+home face martin:smile > martin: Thank you, Major.
+home bed martin:sick,chemist > martin: I'm so ill. Since that tea.
+home establish > nar: What was in the scone?
+# TITLE 4: The Chemist Remembers
+PART
+home establish > nar: Previously: Oswald Martin fell violently ill after tea with Major Armstrong.
+home face chemist:think > chemist: Martin is my son-in-law. And I remember something. [HAY-ON-WYE]
+home two chemist:point,police > chemist: Major Armstrong bought arsenic from my shop. He said it was for weeds.
+home two police:think,chemist > police: Weeds? In winter?
+home face police > police: We'll test Martin. And we'll talk to the Major.
+home establish > nar: Will they find arsenic?
+# TITLE 5: Arsenic in His Pocket
+PART
+home establish > nar: Previously: the chemist remembered Armstrong buying arsenic.
+home two police:point,armstrong:cuffed > police: Major Armstrong, you're under arrest. [31 DECEMBER 1921]
+home face police:scared > police: And what's this in your pocket? A packet of arsenic.
+grave two police,chemist > police: We're opening Mrs Armstrong's grave.
+grave face chemist:scared > chemist: Full of arsenic.
+grave establish > nar: How do you think the jury will see it?
+# TITLE 6: The Only One
+PART
+grave establish > nar: Previously: Armstrong was arrested, and arsenic was found in his wife's body.
+court face armstrong > armstrong: The packet in my pocket? For a single dandelion. [HEREFORD · 1922]
+court court judge,armstrong > judge: Guilty. You will be hanged.
+prison establish > nar: Major Armstrong was hanged in May 1922.
+prison establish > nar: He is the only solicitor in Britain ever hanged for murder.
+prison establish > nar: Do you think he would have got away with it without the scone?
