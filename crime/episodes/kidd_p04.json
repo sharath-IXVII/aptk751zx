@@ -1,0 +1,155 @@
+{
+ "key": "kidd_p04",
+ "yt": {
+  "title": "Buried Treasure | Captain Kidd (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Captain Kidd, New York, the Indian Ocean and London, 1695-1701. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "captain kidd"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "kidd": {
+   "name": "Captain William Kidd",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "bellomont": {
+   "name": "Lord Bellomont",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "gunner": {
+   "name": "William Moore, the gunner",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "sailor": {
+   "name": "a sailor",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CAPTAIN KIDD",
+    "years": "LONDON · 1701",
+    "crime": "THE PIRATE HUNTER WHO BECAME A PIRATE",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Kidd captured a rich ship and was declared a pirate."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "kidd",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "kidd",
+    "text": "My backers will protect me. I'll go home and explain."
+   },
+   "title": "1699",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "kidd",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "On his way, Kidd buried some treasure on Gardiners Island, near New York."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "kidd",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "kidd",
+    "text": "Just in case."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WOULD HIS FRIENDS REALLY PROTECT HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Would his friends really protect him? Part 5 is next."
+   }
+  }
+ ]
+}

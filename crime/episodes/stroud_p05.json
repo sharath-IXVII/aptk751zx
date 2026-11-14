@@ -1,0 +1,153 @@
+{
+ "key": "stroud_p05",
+ "yt": {
+  "title": "The Scientist | The Birdman Of Alcatraz (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Birdman Of Alcatraz, US federal prisons, 1909-1963. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the birdman of alcatraz"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "stroud": {
+   "name": "Robert Stroud",
+   "skin": "#e0aa84",
+   "cloth": "#8a8a7a",
+   "cloth2": "#6a6a5e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "mother": {
+   "name": "Elizabeth Stroud",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "guard": {
+   "name": "a prison guard",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "warden": {
+   "name": "the warden",
+   "skin": "#e6b48e",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d9a882",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BIRDMAN OF ALCATRAZ",
+    "years": "LEAVENWORTH · 1920s",
+    "crime": "KILLER. PRISONER. SCIENTIST.",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Stroud began raising hundreds of canaries in his cell."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "stroud",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "stroud",
+    "text": "These birds have a disease. Nobody knows how to cure it. I'll find out."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "warden",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "He's writing a book. On bird diseases. Scientists are reading it."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "From his cell, Stroud became an expert on bird diseases."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "SHOULD A PRISONER BE ALLOWED TO DO THIS?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Should a prisoner be allowed to do this? Part 6 is next."
+   }
+  }
+ ]
+}

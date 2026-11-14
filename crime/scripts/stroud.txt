@@ -1,0 +1,49 @@
+CAST stroud | Robert Stroud | m | prisoner | brown
+CAST mother | Elizabeth Stroud | f | plain | grey
+CAST guard | a prison guard | m | police | black
+CAST warden | the warden | m | detective | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: Alaska
+PART
+street establish > nar: Alaska, 1909. Robert Stroud, eighteen years old. [JUNEAU · ALASKA · 1909]
+street face stroud:cross > stroud: He hurt someone I care about. So I shot him.
+court court judge,stroud > judge: Twelve years in federal prison.
+prison establish > nar: Robert Stroud went to prison. He would never leave.
+prison establish > nar: What do you think happened inside?
+# TITLE 2: The Guard
+PART
+prison establish > nar: Previously: Robert Stroud was sent to prison for killing a man in Alaska.
+prison two guard:point,stroud:cross > guard: Back to your cell, Stroud! [LEAVENWORTH · 1916]
+prison establish > nar: In the prison dining hall, Stroud killed a guard in front of hundreds of prisoners.
+court court judge,stroud > judge: The sentence is death.
+prison establish > nar: Will he hang?
+# TITLE 3: A Mother's Plea
+PART
+prison establish > nar: Previously: Stroud killed a prison guard and was sentenced to death.
+home face mother:cry > mother: Mr President, please. Spare my son's life. [1920]
+home establish > nar: His mother wrote to President Wilson and his wife.
+prison two warden,stroud > warden: Your sentence is changed to life. In solitary confinement.
+prison cell stroud > stroud: Alone. Forever.
+prison establish > nar: Is solitary confinement worse than death?
+# TITLE 4: Sparrows
+PART
+prison establish > nar: Previously: Stroud's death sentence became life in solitary confinement.
+prison cell stroud:think > stroud: A baby sparrow. Fell from its nest in the yard.
+prison cell stroud:smile > stroud: I'll look after you, little one.
+prison establish > nar: He began nursing injured birds. Then raising canaries. Hundreds of them.
+prison establish > nar: Could birds change a killer?
+# TITLE 5: The Scientist
+PART
+prison establish > nar: Previously: Stroud began raising hundreds of canaries in his cell.
+prison cell stroud:think > stroud: These birds have a disease. Nobody knows how to cure it. I'll find out.
+prison two guard:think,warden > guard: He's writing a book. On bird diseases. Scientists are reading it.
+prison establish > nar: From his cell, Stroud became an expert on bird diseases.
+prison establish > nar: Should a prisoner be allowed to do this?
+# TITLE 6: Alcatraz
+PART
+prison establish > nar: Previously: Stroud became a respected expert on bird diseases.
+prison two warden,stroud:cuffed > warden: You're going to Alcatraz. No birds allowed. [1942]
+prison cell stroud > stroud: My birds...
+prison establish > nar: He was called the Birdman of Alcatraz. But he never kept birds there.
+prison establish > nar: Robert Stroud died in prison in 1963, after more than fifty years inside.
+prison establish > nar: Was he a monster, or a man who changed?

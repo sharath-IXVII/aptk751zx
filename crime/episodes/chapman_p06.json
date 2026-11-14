@@ -1,0 +1,203 @@
+{
+ "key": "chapman_p06",
+ "yt": {
+  "title": "You've Got Jack the Ripper at Last | George Chapman (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: George Chapman, London, 1890s-1903. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "george chapman"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "chapman": {
+   "name": "George Chapman",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "mary": {
+   "name": "Mary Spink",
+   "skin": "#e0aa84",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "bessie": {
+   "name": "Bessie Taylor",
+   "skin": "#e0aa84",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "maud": {
+   "name": "Maud Marsh",
+   "skin": "#d9a882",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "mrsmarsh": {
+   "name": "Mrs Marsh",
+   "skin": "#8a5232",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#9a9a9a",
+   "voice": "af_sky",
+   "long": true
+  },
+  "doctor": {
+   "name": "Dr Grapel",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "glasses": true
+  },
+  "abberline": {
+   "name": "Inspector Frederick Abberline",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "detective": {
+   "name": "a detective",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "GEORGE CHAPMAN",
+    "years": "LONDON · 1903",
+    "crime": "THE POISONER PUBLICAN",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: antimony was found in the bodies of all three women."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "judge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "chapman",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "George Chapman, guilty of murder."
+   },
+   "title": "OLD BAILEY · 1903"
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He was hanged in April 1903."
+   },
+   "flick": true
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "abberline",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "abberline",
+    "text": "A surgeon. In Whitechapel in 1888. Hmm."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Inspector Abberline, who had hunted Jack the Ripper, is said to have suspected Chapman."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "COULD GEORGE CHAPMAN HAVE BEEN JACK THE RIPPER?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Could George Chapman have been Jack the Ripper?"
+   }
+  }
+ ]
+}

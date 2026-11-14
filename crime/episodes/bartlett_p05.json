@@ -1,0 +1,176 @@
+{
+ "key": "bartlett_p05",
+ "yt": {
+  "title": "The Trial | Adelaide Bartlett (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Adelaide Bartlett, Pimlico, London, 1885-1886. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "adelaide bartlett"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "adelaide": {
+   "name": "Adelaide Bartlett",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "edwin": {
+   "name": "Edwin Bartlett",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "dyson": {
+   "name": "Reverend George Dyson",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "doctor": {
+   "name": "Dr Leach",
+   "skin": "#8a5232",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "surgeon": {
+   "name": "a famous surgeon",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ADELAIDE BARTLETT",
+    "years": "LONDON · 1886",
+    "crime": "THE CHLOROFORM MYSTERY",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Edwin was found dead with chloroform in his stomach."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "dyson",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "dyson",
+    "text": "I bought it for her. I didn't know what she'd do with it."
+   },
+   "title": "OLD BAILEY · APRIL 1886"
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "adelaide",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "adelaide",
+    "text": "I am innocent."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "doctor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doctor",
+    "text": "Nobody can explain how it got into him. It burns the throat."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL THE JURY CONVICT WITHOUT KNOWING HOW?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will the jury convict without knowing how? Part 6 is next."
+   }
+  }
+ ]
+}

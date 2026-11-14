@@ -1,0 +1,176 @@
+{
+ "key": "blackbeard_p03",
+ "yt": {
+  "title": "Charleston | Blackbeard (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Blackbeard, the Caribbean and North Carolina, 1716-1718. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "blackbeard"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "teach": {
+   "name": "Blackbeard",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "pirate": {
+   "name": "a pirate",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "captive": {
+   "name": "a captive",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "spotswood": {
+   "name": "Governor Spotswood",
+   "skin": "#a86a42",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#e0e0e0",
+   "voice": "bm_george"
+  },
+  "maynard": {
+   "name": "Lieutenant Robert Maynard",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "sailor": {
+   "name": "a navy sailor",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#c8a050",
+   "voice": "bm_daniel"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "BLACKBEARD",
+    "years": "CAROLINA · 1718",
+    "crime": "THE MOST FEARED PIRATE",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Blackbeard captured a big ship and named it Queen Anne's Revenge."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "teach",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "captive",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "teach",
+    "text": "No ship leaves Charleston. Not until I get what I want."
+   },
+   "title": "CHARLESTON · MAY 1718"
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "captive",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "captive",
+    "text": "What do you want?"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "teach",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "teach",
+    "text": "A chest of medicine. Or your heads."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "For days, Blackbeard blockaded the whole port, holding hostages."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DO YOU THINK HE WANTED MEDICINE?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why do you think he wanted medicine? Part 4 is next."
+   }
+  }
+ ]
+}

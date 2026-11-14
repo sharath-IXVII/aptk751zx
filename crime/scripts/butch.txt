@@ -1,0 +1,58 @@
+CAST butch | Butch Cassidy | m | rich | blonde
+CAST sundance | the Sundance Kid | m | rich | brown | beard
+CAST etta | Etta Place | f | rich | brown
+CAST gang | a Wild Bunch member | m | worker | black | beard
+CAST pinkerton | a Pinkerton detective | m | detective | grey
+CAST guard | a train guard | m | police | brown
+CAST soldier | a Bolivian soldier | m | soldier | black
+# TITLE 1: A New Name
+PART
+forest establish > nar: Utah, the 1880s. A Mormon farm boy named Robert LeRoy Parker. [UTAH · 1880s]
+forest two gang,butch > gang: Parker? Too plain for an outlaw.
+forest face butch:smile > butch: I worked in a butcher's shop once. Call me Butch. Butch Cassidy.
+forest establish > nar: Robert LeRoy Parker became Butch Cassidy.
+forest establish > nar: What kind of outlaw would he be?
+# TITLE 2: Hole-in-the-Wall
+PART
+forest establish > nar: Previously: farm boy Robert LeRoy Parker became Butch Cassidy.
+forest two butch:smile,gang > butch: The Hole-in-the-Wall. One way in. No posse will ever find us. [WYOMING · 1890s]
+forest face gang:smile > gang: The Wild Bunch. That's what they call us.
+forest establish > nar: Butch led a gang of outlaws hiding in the mountains of Wyoming.
+forest establish > nar: Who would join him?
+# TITLE 3: Partners
+PART
+forest establish > nar: Previously: Butch Cassidy led the Wild Bunch from a mountain hideout.
+forest two sundance,butch:smile > sundance: Harry Longabaugh. They call me the Sundance Kid. I was in jail in Sundance, Wyoming.
+forest two sundance:smile,butch:smile > butch: Then let's go to work, Kid.
+street establish > nar: Banks. Trains. Butch was said to have avoided killing anyone.
+street establish > nar: Can an outlaw be a 'nice' outlaw?
+# TITLE 4: The Dynamite
+PART
+street establish > nar: Previously: Butch and Sundance became partners in crime.
+street two butch:point,guard:scared > butch: Open the express car, or we blow it open. [WILCOX · WYOMING · JUNE 1899]
+street face guard:scared > guard: I won't!
+street establish > nar: The gang used dynamite. The safe blew open. So did the whole car.
+street establish > nar: How do you think the railroad reacted?
+# TITLE 5: The Pinkertons
+PART
+street establish > nar: Previously: the Wild Bunch robbed a Union Pacific train with dynamite.
+home two pinkerton:point,guard > pinkerton: Pinkerton Detective Agency. We never sleep. And we never stop.
+forest two gang:scared,butch > gang: Half the gang's dead or in jail, Butch.
+forest face butch:think > butch: Then it's time to leave the country.
+forest establish > nar: Where would you go?
+# TITLE 6: South America
+PART
+forest establish > nar: Previously: with the Pinkertons closing in, the Wild Bunch broke up.
+dock three butch,etta:smile,sundance > etta: Argentina! A ranch of our own! [NEW YORK · 1901]
+dock face sundance:smile > sundance: A fresh start. No more running.
+dock face butch:smile > butch: Honest ranchers. Imagine that.
+dock establish > nar: Butch, Sundance and Etta Place sailed to South America.
+dock establish > nar: Could they really go straight?
+# TITLE 7: San Vicente
+PART
+dock establish > nar: Previously: Butch, Sundance and Etta sailed to Argentina to start again.
+street two soldier:point,sundance > soldier: Two American bandits. In that house. Surround it! [SAN VICENTE · BOLIVIA · 1908]
+street establish > nar: In 1908, two American bandits were killed in a shootout with soldiers in Bolivia.
+street establish > nar: Most people believe they were Butch Cassidy and the Sundance Kid.
+street establish > nar: But stories say Butch came home and lived quietly under another name.
+street establish > nar: Did Butch Cassidy die in Bolivia?

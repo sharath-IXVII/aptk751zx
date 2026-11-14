@@ -1,0 +1,53 @@
+CAST teach | Blackbeard | m | worker | black | beard
+CAST pirate | a pirate | m | worker | brown | beard
+CAST captive | a captive | m | rich | grey
+CAST spotswood | Governor Spotswood | m | royal | white
+CAST maynard | Lieutenant Robert Maynard | m | soldier | brown
+CAST sailor | a navy sailor | m | soldier | blonde
+# TITLE 1: The Beard
+PART
+dock establish > nar: The Caribbean, 1716. The golden age of piracy. [THE CARIBBEAN · 1716]
+dock face teach:cross > teach: Edward Teach is gone. Now I am Blackbeard.
+dock two pirate:scared,teach > pirate: They say you light fuses in your beard, Captain. Smoke all around your face.
+dock face teach:smile > teach: Fear wins battles before they start.
+dock establish > nar: Blackbeard became the most feared pirate on the seas.
+dock establish > nar: Was he as cruel as his legend?
+# TITLE 2: Queen Anne's Revenge
+PART
+dock establish > nar: Previously: Edward Teach became the feared pirate Blackbeard.
+dock two teach:point,pirate > teach: That French ship. Big. Heavy. Forty guns. She's ours. [1717]
+dock face pirate:smile > pirate: Captured without a fight!
+dock face teach:smile > teach: I'll call her Queen Anne's Revenge.
+dock establish > nar: Blackbeard now had one of the most powerful pirate ships in the Americas.
+dock establish > nar: What would he do with it?
+# TITLE 3: Charleston
+PART
+dock establish > nar: Previously: Blackbeard captured a big ship and named it Queen Anne's Revenge.
+dock two teach:point,captive:scared > teach: No ship leaves Charleston. Not until I get what I want. [CHARLESTON · MAY 1718]
+dock face captive:scared > captive: What do you want?
+dock face teach > teach: A chest of medicine. Or your heads.
+dock establish > nar: For days, Blackbeard blockaded the whole port, holding hostages.
+dock establish > nar: Why do you think he wanted medicine?
+# TITLE 4: The Pardon
+PART
+dock establish > nar: Previously: Blackbeard blockaded Charleston for a chest of medicine.
+dock face pirate:scared > pirate: Captain! Queen Anne's Revenge has run aground! [1718]
+home two teach:smile,captive > teach: I accept the King's pardon. No more piracy. I promise.
+dock face teach:smile > nar: Blackbeard settled in North Carolina. But soon, he was back to his old ways.
+dock establish > nar: Can a pirate ever really stop?
+# TITLE 5: The Secret Hunt
+PART
+dock establish > nar: Previously: Blackbeard took a pardon, then went back to piracy.
+home two spotswood,maynard > spotswood: Lieutenant Maynard. Find Blackbeard. Kill or capture him. [VIRGINIA · NOVEMBER 1718]
+home face maynard > maynard: Yes, Governor.
+home face spotswood > spotswood: Tell no one. Not even North Carolina.
+dock establish > nar: Two small sloops set out to hunt the most feared pirate alive.
+dock establish > nar: Could they win?
+# TITLE 6: Ocracoke
+PART
+dock establish > nar: Previously: Lieutenant Maynard was secretly sent to hunt Blackbeard.
+dock two maynard,sailor > maynard: Everyone below deck. Let him think we're beaten. [OCRACOKE INLET · 22 NOVEMBER 1718]
+dock face teach:smile > teach: They're all dead! Board her!
+dock face sailor > sailor: Now!
+dock establish > nar: Maynard's men burst out. Blackbeard fought hand to hand, and was killed.
+dock establish > nar: Was Blackbeard a monster, or just a legend?

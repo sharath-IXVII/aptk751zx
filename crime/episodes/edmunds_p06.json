@@ -1,0 +1,189 @@
+{
+ "key": "edmunds_p06",
+ "yt": {
+  "title": "Broadmoor | Christiana Edmunds (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: Christiana Edmunds, Brighton, England, 1870-1872. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "christiana edmunds"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "christiana": {
+   "name": "Christiana Edmunds",
+   "skin": "#b9774a",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "beard": {
+   "name": "Dr Charles Beard",
+   "skin": "#d0a07c",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true,
+   "glasses": true
+  },
+  "emily": {
+   "name": "Emily Beard",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "shop": {
+   "name": "the sweet shop owner",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "mother": {
+   "name": "Sidney's mother",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#c99872",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHRISTIANA EDMUNDS",
+    "years": "BRIGHTON · 1871",
+    "crime": "THE CHOCOLATE CREAM POISONER",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Christiana sent poisoned parcels, even to herself."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "christiana",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "The chemist says you bought poison. Again and again. You're under arrest."
+   },
+   "title": "AUGUST 1871"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "christiana",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Guilty. The sentence is death."
+   },
+   "title": "OLD BAILEY · 1872"
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She was found insane and sent to Broadmoor asylum instead."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "She died there in 1907. She became known as the Chocolate Cream Poisoner."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS SHE MAD, OR DID SHE KNOW EXACTLY WHAT SHE WAS DOING?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was she mad, or did she know exactly what she was doing?"
+   }
+  }
+ ]
+}

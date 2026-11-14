@@ -1,0 +1,195 @@
+{
+ "key": "bartlett_p04",
+ "yt": {
+  "title": "New Year | Adelaide Bartlett (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Adelaide Bartlett, Pimlico, London, 1885-1886. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "adelaide bartlett"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "adelaide": {
+   "name": "Adelaide Bartlett",
+   "skin": "#d9a882",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#1d1d1d",
+   "voice": "af_bella",
+   "long": true
+  },
+  "edwin": {
+   "name": "Edwin Bartlett",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "dyson": {
+   "name": "Reverend George Dyson",
+   "skin": "#b9774a",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "doctor": {
+   "name": "Dr Leach",
+   "skin": "#8a5232",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "surgeon": {
+   "name": "a famous surgeon",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ADELAIDE BARTLETT",
+    "years": "LONDON · 1886",
+    "crime": "THE CHLOROFORM MYSTERY",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Dyson bought chloroform for Adelaide."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "chars": [
+    {
+     "id": "edwin",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "adelaide",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "The night of 31 December 1885."
+   },
+   "bed": true,
+   "title": "31 DECEMBER 1885",
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "adelaide",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "adelaide",
+    "text": "Doctor! Come quickly! My husband is dead!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "doctor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "adelaide",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doctor",
+    "text": "His stomach is full of liquid chloroform. But his throat isn't burned."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "doctor",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "doctor",
+    "text": "How did he swallow it without screaming?"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW DO YOU THINK HE SWALLOWED IT?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How do you think he swallowed it? Part 5 is next."
+   }
+  }
+ ]
+}

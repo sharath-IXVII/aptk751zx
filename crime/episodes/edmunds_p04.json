@@ -1,0 +1,180 @@
+{
+ "key": "edmunds_p04",
+ "yt": {
+  "title": "Sidney | Christiana Edmunds (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Christiana Edmunds, Brighton, England, 1870-1872. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "christiana edmunds"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "christiana": {
+   "name": "Christiana Edmunds",
+   "skin": "#b9774a",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "beard": {
+   "name": "Dr Charles Beard",
+   "skin": "#d0a07c",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true,
+   "glasses": true
+  },
+  "emily": {
+   "name": "Emily Beard",
+   "skin": "#a86a42",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#c8a050",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "shop": {
+   "name": "the sweet shop owner",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "mother": {
+   "name": "Sidney's mother",
+   "skin": "#8a5232",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#a84a22",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#c99872",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CHRISTIANA EDMUNDS",
+    "years": "BRIGHTON · 1871",
+    "crime": "THE CHOCOLATE CREAM POISONER",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Christiana secretly put poisoned chocolate creams back on a sweet shop's shelves."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mother",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "shop",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "mother",
+    "text": "Some chocolate creams for my little Sidney, please. He's four."
+   },
+   "title": "JUNE 1871"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mother",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Four-year-old Sidney Barker ate a chocolate cream. He died soon after."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "christiana",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "christiana",
+    "text": "You see? Someone is poisoning sweets. It was never me."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL ANYONE SEE THROUGH HER?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will anyone see through her? Part 5 is next."
+   }
+  }
+ ]
+}

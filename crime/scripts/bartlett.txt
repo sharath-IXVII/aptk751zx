@@ -1,0 +1,52 @@
+CAST adelaide | Adelaide Bartlett | f | rich | black
+CAST edwin | Edwin Bartlett | m | rich | brown | beard
+CAST dyson | Reverend George Dyson | m | plain | blonde
+CAST doctor | Dr Leach | m | doctor | grey
+CAST surgeon | a famous surgeon | m | doctor | white
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Grocer's Wife
+PART
+home establish > nar: London, 1880s. Adelaide Bartlett, the young wife of a successful grocer. [LONDON · 1880s]
+home two adelaide,edwin:smile > edwin: Six shops now, Adelaide. You'll want for nothing.
+home face adelaide:think > adelaide: He's so much older. And he treats me like a pupil.
+home establish > nar: Edwin Bartlett was successful, kind, and very unusual.
+home establish > nar: What do you think was unusual about him?
+# TITLE 2: The Young Minister
+PART
+home establish > nar: Previously: Adelaide was married to Edwin Bartlett, a successful grocer.
+home two dyson:smile,adelaide:smile > dyson: Reverend George Dyson. I'll be your tutor, Mrs Bartlett. [1885]
+home two edwin:smile,dyson > edwin: Spend as much time with her as you like, George.
+home face edwin:smile > edwin: And if I die, you two should marry.
+home face dyson:scared > dyson: Mr Bartlett!
+home establish > nar: Why would a husband say that?
+# TITLE 3: Chloroform
+PART
+home establish > nar: Previously: Edwin encouraged Adelaide's friendship with the young minister.
+home two adelaide,dyson > adelaide: George, buy me some chloroform. To help Edwin sleep. [DECEMBER 1885]
+home face dyson:think > dyson: Chloroform? From several chemists? Why so secret?
+home two dyson:give,adelaide > dyson: Here.
+home establish > nar: Dyson bought her a bottle of chloroform.
+home establish > nar: What do you think she wanted it for?
+# TITLE 4: New Year
+PART
+home establish > nar: Previously: Dyson bought chloroform for Adelaide.
+home bed edwin:sleep,adelaide > nar: The night of 31 December 1885. [31 DECEMBER 1885]
+home face adelaide:scared > adelaide: Doctor! Come quickly! My husband is dead!
+home two doctor:think,adelaide > doctor: His stomach is full of liquid chloroform. But his throat isn't burned.
+home face doctor:scared > doctor: How did he swallow it without screaming?
+home establish > nar: How do you think he swallowed it?
+# TITLE 5: The Trial
+PART
+home establish > nar: Previously: Edwin was found dead with chloroform in his stomach.
+court two dyson:scared,judge > dyson: I bought it for her. I didn't know what she'd do with it. [OLD BAILEY · APRIL 1886]
+court face adelaide > adelaide: I am innocent.
+court two doctor,judge > doctor: Nobody can explain how it got into him. It burns the throat.
+court establish > nar: Will the jury convict without knowing how?
+# TITLE 6: For the Sake of Science
+PART
+court establish > nar: Previously: no one at the trial could explain how Edwin swallowed the chloroform.
+court court judge,adelaide > judge: The jury finds Adelaide Bartlett: not guilty.
+court face adelaide:smile > adelaide: Thank you.
+court face surgeon > surgeon: Now that she's acquitted, she should tell us how she did it. For the sake of science.
+court establish > nar: Adelaide vanished from public life. No one knows what became of her.
+court establish > nar: How do you think Edwin really died?

@@ -1,0 +1,165 @@
+{
+ "key": "bonnyread_p05",
+ "yt": {
+  "title": "The Last Fight | Anne Bonny & Mary Read (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: Anne Bonny & Mary Read, the Caribbean, 1718-1721. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "anne bonny & mary read"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "anne": {
+   "name": "Anne Bonny",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "mary": {
+   "name": "Mary Read",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "jack": {
+   "name": "Calico Jack Rackham",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "husband": {
+   "name": "Anne's husband",
+   "skin": "#e0aa84",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "barnet": {
+   "name": "Captain Jonathan Barnet",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "ANNE BONNY & MARY READ",
+    "years": "CARIBBEAN · 1720",
+    "crime": "THE WOMEN PIRATES",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Anne and Mary fought as fiercely as any pirate."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "barnet",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "point"
+    }
+   ],
+   "line": {
+    "who": "barnet",
+    "text": "Pirate hunter Jonathan Barnet. Surrender!"
+   },
+   "title": "JAMAICA · OCTOBER 1720"
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Most of Rackham's crew were drunk below deck."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mary",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "mary",
+    "text": "Come up and fight like men, you cowards!"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Only Anne and Mary fought back. The pirates were captured."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HAPPENED TO THEM?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think happened to them? Part 6 is next."
+   }
+  }
+ ]
+}

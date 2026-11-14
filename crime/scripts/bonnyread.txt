@@ -1,0 +1,52 @@
+CAST anne | Anne Bonny | f | worker | red
+CAST mary | Mary Read | f | soldier | brown
+CAST jack | Calico Jack Rackham | m | rich | black | beard
+CAST husband | Anne's husband | m | worker | brown
+CAST barnet | Captain Jonathan Barnet | m | soldier | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: Running Away to Sea
+PART
+dock establish > nar: Nassau, the Bahamas. 1718. A pirate town. [NASSAU · 1718]
+dock two anne:cross,husband > husband: You're my wife, Anne! You'll stay home!
+dock two anne:smile,jack:smile > jack: Calico Jack Rackham. Come away with me, Anne. The sea is free.
+dock face anne:smile > anne: Then I'm coming.
+dock establish > nar: Anne Bonny left her husband and joined Rackham's pirate crew.
+dock establish > nar: Would you run away to sea?
+# TITLE 2: The Secret Sailor
+PART
+dock establish > nar: Previously: Anne Bonny ran away to sea with pirate Calico Jack.
+dock face mary > mary: Mark Read. Sailor. Soldier. That's who they think I am.
+dock face mary:think > nar: Mary Read had lived most of her life dressed as a man.
+dock face mary > mary: A woman can't earn a living at sea. A man can.
+dock establish > nar: What do you think happens when Mary meets Anne?
+# TITLE 3: Two Secrets
+PART
+dock establish > nar: Previously: Mary Read had lived for years disguised as a man.
+dock two anne:smile,mary > anne: You're a woman, aren't you? Like me. [1720]
+dock two anne:smile,mary:smile > mary: Tell no one.
+dock face jack:cross > jack: Who's this new sailor you're always talking to, Anne?
+dock establish > nar: Anne and Mary discovered each other's secret and became close friends.
+dock establish > nar: Could two women pirates survive?
+# TITLE 4: Fierce
+PART
+dock establish > nar: Previously: Anne and Mary discovered each other's secret.
+dock two anne:point,mary:point > anne: Pistols and cutlasses! Board that ship!
+dock face mary:cross > mary: Nobody fights harder than us.
+dock establish > nar: Witnesses said Anne and Mary were as fierce as any man on the crew.
+dock establish > nar: Who do you think was the toughest pirate?
+# TITLE 5: The Last Fight
+PART
+dock establish > nar: Previously: Anne and Mary fought as fiercely as any pirate.
+dock face barnet:point > barnet: Pirate hunter Jonathan Barnet. Surrender! [JAMAICA · OCTOBER 1720]
+dock establish > nar: Most of Rackham's crew were drunk below deck.
+dock face mary:cross > mary: Come up and fight like men, you cowards!
+dock establish > nar: Only Anne and Mary fought back. The pirates were captured.
+dock establish > nar: What do you think happened to them?
+# TITLE 6: Pregnant
+PART
+dock establish > nar: Previously: only Anne and Mary fought when the pirates were captured.
+court court judge,jack > judge: John Rackham. Hanged. [JAMAICA · NOVEMBER 1720]
+prison face anne:cross > anne: If you'd fought like a man, you wouldn't hang like a dog.
+court court judge,mary > judge: Anne Bonny. Mary Read. Death.
+court face mary > mary: My lord, we are both with child.
+prison establish > nar: Their executions were delayed. Mary died in prison. What happened to Anne is unknown. What do you think?

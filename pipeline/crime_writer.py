@@ -12,10 +12,11 @@ sys.path.insert(0, "crime")
 from cases import CASES
 from cases2 import CASES2
 from cases3 import CASES3
+from cases4 import CASES4
 from pipeline import llm
 
 log = logging.getLogger("crime_writer")
-ALL = CASES + CASES2 + CASES3
+ALL = CASES + CASES2 + CASES3 + CASES4
 EP = Path("crime/episodes"); CAST = Path("crime/cast"); STATE = Path("state/crime.json")
 SETS = ["home", "street", "forest", "prison", "court", "grave", "ward", "asylum", "dock", "shore"]
 ACTS = ["idle", "smile", "think", "scared", "cry", "point", "give", "tuck", "cross", "cuffed", "kneel", "walk", "sick", "sleep", "peek"]

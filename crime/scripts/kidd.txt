@@ -1,0 +1,49 @@
+CAST kidd | Captain William Kidd | m | rich | brown | beard
+CAST bellomont | Lord Bellomont | m | royal | grey
+CAST gunner | William Moore, the gunner | m | worker | black
+CAST sailor | a sailor | m | worker | blonde
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Pirate Hunter
+PART
+dock establish > nar: New York, 1695. Captain William Kidd, a respected sea captain. [NEW YORK · 1695]
+home two bellomont,kidd > bellomont: Captain Kidd, we'll fund your ship. Hunt pirates. Bring us their treasure.
+home face kidd:smile > kidd: Pirates beware.
+dock establish > nar: Powerful men in England backed him. He sailed in the Adventure Galley.
+dock establish > nar: What could go wrong?
+# TITLE 2: No Pirates
+PART
+dock establish > nar: Previously: Captain Kidd was hired to hunt pirates.
+dock two sailor:cross,kidd > sailor: Months at sea! No pirates! No pay! [INDIAN OCEAN · 1697]
+dock two gunner:cross,kidd:cross > gunner: You're leading us nowhere, Captain!
+dock establish > nar: In a rage, Kidd struck his gunner with a bucket. The man died the next day.
+dock establish > nar: How far would an angry crew push him?
+# TITLE 3: The Quedagh Merchant
+PART
+dock establish > nar: Previously: Kidd's crew grew angry, and he killed his gunner in a rage.
+dock two kidd:point,sailor > kidd: That ship. The Quedagh Merchant. Silk, gold, silver. [JANUARY 1698]
+dock face sailor:smile > sailor: We're rich!
+dock establish > nar: But the ship's captain was English. In London, Kidd was now called a pirate.
+dock establish > nar: Was he a pirate, or a pirate hunter?
+# TITLE 4: Buried Treasure
+PART
+dock establish > nar: Previously: Kidd captured a rich ship and was declared a pirate.
+dock face kidd > kidd: My backers will protect me. I'll go home and explain. [1699]
+forest walk kidd > nar: On his way, Kidd buried some treasure on Gardiners Island, near New York.
+forest face kidd:smile > kidd: Just in case.
+forest establish > nar: Would his friends really protect him?
+# TITLE 5: Betrayed
+PART
+forest establish > nar: Previously: Kidd buried treasure and sailed home, trusting his backers.
+home two bellomont,kidd > bellomont: Welcome back, Captain. [BOSTON · 1699]
+home two bellomont:point,kidd:cuffed > bellomont: You're under arrest for piracy.
+home face kidd:scared > kidd: You sent me! You funded me!
+home establish > nar: Kidd was shipped to London in chains.
+home establish > nar: Should his backers have stood by him?
+# TITLE 6: The Rope Broke
+PART
+home establish > nar: Previously: his own backer arrested Kidd and sent him to London.
+court court judge,kidd > judge: William Kidd. Guilty of murder and piracy. [LONDON · MAY 1701]
+court face kidd:cross > kidd: I am the most innocent person of them all.
+street establish > nar: At his hanging, the rope broke. He was hanged a second time.
+street establish > nar: People still search for Captain Kidd's buried treasure.
+street establish > nar: Do you think there's still treasure out there?

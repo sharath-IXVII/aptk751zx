@@ -1,0 +1,160 @@
+{
+ "key": "kidd_p02",
+ "yt": {
+  "title": "No Pirates | Captain Kidd (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: Captain Kidd, New York, the Indian Ocean and London, 1695-1701. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "captain kidd"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "kidd": {
+   "name": "Captain William Kidd",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "bellomont": {
+   "name": "Lord Bellomont",
+   "skin": "#d9a882",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "gunner": {
+   "name": "William Moore, the gunner",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "sailor": {
+   "name": "a sailor",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CAPTAIN KIDD",
+    "years": "LONDON · 1701",
+    "crime": "THE PIRATE HUNTER WHO BECAME A PIRATE",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Captain Kidd was hired to hunt pirates."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "sailor",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "kidd",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "sailor",
+    "text": "Months at sea! No pirates! No pay!"
+   },
+   "title": "INDIAN OCEAN · 1697"
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "gunner",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cross"
+    },
+    {
+     "id": "kidd",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "gunner",
+    "text": "You're leading us nowhere, Captain!"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In a rage, Kidd struck his gunner with a bucket. The man died the next day."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW FAR WOULD AN ANGRY CREW PUSH HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How far would an angry crew push him? Part 3 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+CAST bob | Bob Dalton | m | rich | brown
+CAST grat | Grat Dalton | m | worker | black | beard
+CAST emmett | Emmett Dalton | m | worker | blonde
+CAST townsman | a Coffeyville man | m | worker | grey | beard
+CAST clerk | a hardware store clerk | m | plain | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: Lawmen
+PART
+forest establish > nar: Indian Territory, 1880s. The Dalton brothers wear badges. [INDIAN TERRITORY · 1880s]
+forest two bob,grat > bob: Lawmen get shot at for no pay. Outlaws get rich.
+forest face grat:smile > grat: So which side should we be on?
+forest establish > nar: The Daltons were lawmen. Then they switched sides.
+forest establish > nar: Why would lawmen become outlaws?
+# TITLE 2: Train Robbers
+PART
+forest establish > nar: Previously: the Dalton brothers went from lawmen to outlaws.
+street two bob:point,emmett > bob: Stop the train! Get the express car! [OKLAHOMA · 1891]
+street face emmett:smile > emmett: The Dalton Gang. Everyone's talking about us.
+street establish > nar: The gang robbed trains across Oklahoma.
+street establish > nar: How long could their luck last?
+# TITLE 3: Beat Jesse James
+PART
+street establish > nar: Previously: the Dalton Gang became famous train robbers.
+home face bob:smile > bob: Jesse James never robbed two banks at once. We will. [1892]
+home two grat:think,bob > grat: In Coffeyville? Bob, people there know us!
+home face bob:smile > bob: Fake beards. Nobody will recognise us.
+home establish > nar: Is this a good plan?
+# TITLE 4: Recognised
+PART
+home establish > nar: Previously: Bob Dalton planned to rob two banks in one town at once.
+street walk bob > nar: 5 October 1892. The gang rides into Coffeyville, Kansas. [COFFEYVILLE · 5 OCTOBER 1892]
+street face townsman:think > townsman: Those men... wearing fake beards. That's the Daltons!
+street two townsman:point,clerk > townsman: They're robbing the banks! Guns! Get guns!
+street establish > nar: What would the town do?
+# TITLE 5: The Town Fights Back
+PART
+street establish > nar: Previously: townspeople recognised the Dalton Gang in Coffeyville.
+street two clerk:give,townsman > clerk: Take these rifles from the store! Every one!
+street establish > nar: Townspeople fired from shop windows. The robbers fired back.
+street establish > nar: Four gang members were killed. So were four townspeople.
+street face emmett:scared > emmett: Bob! Grat!
+street establish > nar: Who do you think survived?
+# TITLE 6: The Survivor
+PART
+street establish > nar: Previously: the town fought back. Four of the gang died.
+court court judge,emmett > judge: Emmett Dalton. Life in prison. [1893]
+prison cell emmett > nar: Emmett had been shot many times. He survived.
+prison establish > nar: He was pardoned after fourteen years.
+street establish > nar: He moved to Hollywood, wrote about the Old West, and spoke out against crime.
+street establish > nar: Can someone really change after something like that?

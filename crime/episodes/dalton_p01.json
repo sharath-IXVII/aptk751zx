@@ -1,0 +1,162 @@
+{
+ "key": "dalton_p01",
+ "yt": {
+  "title": "Lawmen | The Dalton Gang (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: The Dalton Gang, Kansas and Oklahoma, 1890-1892. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the dalton gang"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "bob": {
+   "name": "Bob Dalton",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "grat": {
+   "name": "Grat Dalton",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "emmett": {
+   "name": "Emmett Dalton",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "townsman": {
+   "name": "a Coffeyville man",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "clerk": {
+   "name": "a hardware store clerk",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE DALTON GANG",
+    "years": "COFFEYVILLE · 1892",
+    "crime": "TWO BANKS AT ONCE",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Indian Territory, 1880s. The Dalton brothers wear badges."
+   },
+   "title": "INDIAN TERRITORY · 1880S",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "bob",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "grat",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bob",
+    "text": "Lawmen get shot at for no pay. Outlaws get rich."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "grat",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "grat",
+    "text": "So which side should we be on?"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Daltons were lawmen. Then they switched sides."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY WOULD LAWMEN BECOME OUTLAWS?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why would lawmen become outlaws? Part 2 is next."
+   }
+  }
+ ]
+}

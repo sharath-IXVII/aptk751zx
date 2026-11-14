@@ -1,0 +1,53 @@
+CAST christiana | Christiana Edmunds | f | rich | brown
+CAST beard | Dr Charles Beard | m | doctor | brown | beard
+CAST emily | Emily Beard | f | rich | blonde
+CAST shop | the sweet shop owner | m | worker | grey
+CAST mother | Sidney's mother | f | plain | red
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Doctor
+PART
+street establish > nar: Brighton, 1870. A seaside town. Christiana Edmunds, a single lady of forty. [BRIGHTON · 1870]
+home two christiana:smile,beard > christiana: Dear Charles. Your letters mean everything to me.
+home face beard:think > beard: Miss Edmunds, I'm a married man.
+home face christiana:think > christiana: For now.
+home establish > nar: Christiana became obsessed with her married doctor, Charles Beard.
+home establish > nar: What would she do about his wife?
+# TITLE 2: A Chocolate Cream
+PART
+home establish > nar: Previously: Christiana Edmunds was obsessed with her married doctor.
+home two christiana:give,emily:smile > christiana: A chocolate cream for you, Mrs Beard. A little gift. [SEPTEMBER 1870]
+home bed emily:sick,beard > emily: I feel sick, Charles. Ever since that chocolate.
+home two beard:cross,christiana > beard: I think you know why my wife is ill. Our friendship is over.
+home face christiana:cross > christiana: Then I'll prove it wasn't me.
+home establish > nar: How do you think she'll 'prove' it?
+# TITLE 3: Back on the Shelf
+PART
+home establish > nar: Previously: Dr Beard accused Christiana of making his wife ill.
+street two christiana:smile,shop > christiana: A bag of chocolate creams, please. [1871]
+home face christiana:think > christiana: A little poison in each. Then send a boy to return them to the shop.
+street two shop,christiana > shop: Returned? Odd. I'll put them back on the shelf.
+street establish > nar: Poisoned sweets were now for sale to anyone in Brighton.
+street establish > nar: Who do you think bought them?
+# TITLE 4: Sidney
+PART
+street establish > nar: Previously: Christiana secretly put poisoned chocolate creams back on a sweet shop's shelves.
+street two mother:smile,shop > mother: Some chocolate creams for my little Sidney, please. He's four. [JUNE 1871]
+home face mother:cry > nar: Four-year-old Sidney Barker ate a chocolate cream. He died soon after.
+street face christiana:smile > christiana: You see? Someone is poisoning sweets. It was never me.
+street establish > nar: Will anyone see through her?
+# TITLE 5: Parcels
+PART
+street establish > nar: Previously: a four-year-old boy died after eating a poisoned chocolate.
+home face christiana:smile > christiana: Poisoned parcels to Brighton's leading families. And one to me. [1871]
+home two police:think,beard > police: Miss Edmunds received a poisoned parcel too. A victim?
+home face beard > beard: Or the poisoner, trying to look like a victim.
+home establish > nar: Which do you think she was?
+# TITLE 6: Broadmoor
+PART
+home establish > nar: Previously: Christiana sent poisoned parcels, even to herself.
+home two police:point,christiana:cuffed > police: The chemist says you bought poison. Again and again. You're under arrest. [AUGUST 1871]
+court court judge,christiana > judge: Guilty. The sentence is death. [OLD BAILEY · 1872]
+court establish > nar: She was found insane and sent to Broadmoor asylum instead.
+prison establish > nar: She died there in 1907. She became known as the Chocolate Cream Poisoner.
+prison establish > nar: Was she mad, or did she know exactly what she was doing?

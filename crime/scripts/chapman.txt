@@ -1,0 +1,53 @@
+CAST chapman | George Chapman | m | worker | black | beard
+CAST mary | Mary Spink | f | plain | brown
+CAST bessie | Bessie Taylor | f | plain | blonde
+CAST maud | Maud Marsh | f | plain | red
+CAST mrsmarsh | Mrs Marsh | f | plain | grey
+CAST doctor | Dr Grapel | m | doctor | grey
+CAST abberline | Inspector Frederick Abberline | m | detective | grey | beard
+CAST judge | the judge | m | judge | white
+CAST detective | a detective | m | detective | brown
+# TITLE 1: The Barber
+PART
+street establish > nar: London, 1887. A young Polish barber-surgeon arrives in Whitechapel. [WHITECHAPEL · 1887]
+street face chapman > chapman: Severin Klosowski. A barber. A trained surgeon's assistant.
+street face chapman:smile > chapman: In England I'll be George Chapman. An English name.
+street establish > nar: Why do you think he changed his name?
+# TITLE 2: The Publican
+PART
+street establish > nar: Previously: Severin Klosowski came to London and called himself George Chapman.
+home two mary:smile,chapman:smile > mary: Our own pub, George! [1890s]
+home face chapman:smile > chapman: Call me your husband. Even if it's not quite legal.
+home establish > nar: He ran London pubs, living with a series of women he called his wives.
+home establish > nar: What do you think happened to them?
+# TITLE 3: Natural Causes
+PART
+home establish > nar: Previously: Chapman ran pubs and lived with women he called his wives.
+home bed mary:sick,chapman > mary: George, I've been sick for weeks. [1897]
+home establish > nar: Mary Spink died. Doctors said it was illness.
+home bed bessie:sick,chapman > bessie: I'm so ill, George. [1901]
+home establish > nar: Then Bessie Taylor died too. Doctors said it was natural causes.
+home establish > nar: How many 'natural' deaths before someone wonders?
+# TITLE 4: Maud
+PART
+home establish > nar: Previously: two women who lived with Chapman died of mysterious illnesses.
+home bed maud:sick,chapman > maud: Mother, I'm so ill. It's like the others. [1902]
+home two mrsmarsh:scared,doctor > mrsmarsh: Doctor, my daughter gets worse whenever he brings her food.
+home face doctor:think > doctor: I'm not happy with this. Not at all.
+home establish > nar: Will they save Maud in time?
+# TITLE 5: Antimony
+PART
+home establish > nar: Previously: Maud Marsh fell ill, and her mother and doctor grew suspicious.
+home establish > nar: In October 1902, Maud Marsh died. [OCTOBER 1902]
+home two doctor:scared,detective > doctor: Antimony. A poison.
+grave two detective,doctor > detective: Exhume Mary Spink and Bessie Taylor.
+grave face doctor:scared > doctor: Antimony. In both of them.
+grave establish > nar: Will Chapman face justice?
+# TITLE 6: You've Got Jack the Ripper at Last
+PART
+grave establish > nar: Previously: antimony was found in the bodies of all three women.
+court court judge,chapman > judge: George Chapman, guilty of murder. [OLD BAILEY · 1903]
+prison establish > nar: He was hanged in April 1903.
+prison face abberline:think > abberline: A surgeon. In Whitechapel in 1888. Hmm.
+prison establish > nar: Inspector Abberline, who had hunted Jack the Ripper, is said to have suspected Chapman.
+prison establish > nar: Could George Chapman have been Jack the Ripper?

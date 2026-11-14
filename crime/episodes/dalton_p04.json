@@ -1,0 +1,170 @@
+{
+ "key": "dalton_p04",
+ "yt": {
+  "title": "Recognised | The Dalton Gang (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: The Dalton Gang, Kansas and Oklahoma, 1890-1892. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the dalton gang"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "bob": {
+   "name": "Bob Dalton",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "grat": {
+   "name": "Grat Dalton",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "emmett": {
+   "name": "Emmett Dalton",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "townsman": {
+   "name": "a Coffeyville man",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "clerk": {
+   "name": "a hardware store clerk",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "bm_lewis"
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#8a5232",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE DALTON GANG",
+    "years": "COFFEYVILLE · 1892",
+    "crime": "TWO BANKS AT ONCE",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Bob Dalton planned to rob two banks in one town at once."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "bob",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "5 October 1892. The gang rides into Coffeyville, Kansas."
+   },
+   "title": "COFFEYVILLE · 5 OCTOBER 1892",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "townsman",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "townsman",
+    "text": "Those men... wearing fake beards. That's the Daltons!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "townsman",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "clerk",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "townsman",
+    "text": "They're robbing the banks! Guns! Get guns!"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WOULD THE TOWN DO?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What would the town do? Part 5 is next."
+   }
+  }
+ ]
+}
