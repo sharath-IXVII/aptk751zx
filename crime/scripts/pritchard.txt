@@ -1,0 +1,52 @@
+CAST pritchard | Dr Edward Pritchard | m | doctor | brown | beard
+CAST mary | Mary Jane Pritchard | f | rich | brown
+CAST jane | Jane Taylor | f | rich | grey
+CAST mourner | a mourner | f | plain | blonde
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Storyteller
+PART
+street establish > nar: Glasgow, 1865. Dr Edward Pritchard. Popular. Confident. And a terrible liar. [GLASGOW · 1865]
+street two mourner:smile,pritchard:smile > pritchard: I've climbed mountains, sailed the world, wrestled bears!
+street face mourner:smile > mourner: You're so charming, Doctor.
+home face pritchard:smile > pritchard: Every word true.
+street establish > nar: Dr Pritchard loved to tell tall tales about himself.
+street establish > nar: Can you trust a man who lies about small things?
+# TITLE 2: A Mysterious Illness
+PART
+street establish > nar: Previously: Dr Pritchard was a popular Glasgow doctor who told tall tales.
+home bed mary:sick,pritchard > mary: Edward, I'm sick again. Every day. [EARLY 1865]
+home bed mary:sick,pritchard:tuck > pritchard: I'll look after you myself, my dear. I'm a doctor.
+home face jane:scared > jane: My daughter is so ill. I'm coming to nurse her.
+home establish > nar: His wife's mother, Jane Taylor, came to help.
+home establish > nar: Is it a natural illness?
+# TITLE 3: Apoplexy
+PART
+home establish > nar: Previously: Pritchard's wife was ill, and her mother came to nurse her.
+home bed jane:sick,pritchard > jane: I feel strange. Dizzy. [FEBRUARY 1865]
+home establish > nar: Suddenly, Jane Taylor died.
+home face pritchard > pritchard: On the death certificate: apoplexy. A stroke. Very sad.
+home establish > nar: He signed the death certificate himself.
+home establish > nar: Should a doctor sign his own relative's death certificate?
+# TITLE 4: The Kiss
+PART
+home establish > nar: Previously: Pritchard's mother-in-law died suddenly. He signed it as a stroke.
+home establish > nar: Weeks later, his wife Mary Jane died. [MARCH 1865]
+home two pritchard:cry,mourner > pritchard: My darling. My sweet wife.
+home face mourner:scared > mourner: He's opened the coffin and kissed her. In front of everyone.
+home establish > nar: Was it grief? Or a performance?
+# TITLE 5: The Letter
+PART
+home establish > nar: Previously: Pritchard's wife died, and he kissed her in the coffin.
+home face police:think > police: An anonymous letter. 'Look into the deaths at Dr Pritchard's house.' [MARCH 1865]
+home two police,pritchard > police: We're examining both bodies, Doctor.
+home face police:scared > police: Antimony. In both of them.
+home two police:point,pritchard:cuffed > police: Dr Edward Pritchard, you're under arrest.
+home establish > nar: Who do you think wrote the letter?
+# TITLE 6: The Last Public Hanging
+PART
+home establish > nar: Previously: antimony was found in both bodies. Pritchard was arrested.
+court court judge,pritchard > judge: Dr Pritchard, guilty of murder. [EDINBURGH · JULY 1865]
+street establish > nar: In July 1865, Edward Pritchard was hanged before a crowd of tens of thousands.
+street establish > nar: It was the last public hanging in Glasgow.
+street establish > nar: How long could he have got away with it?

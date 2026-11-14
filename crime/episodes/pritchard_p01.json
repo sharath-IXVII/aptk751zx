@@ -1,0 +1,183 @@
+{
+ "key": "pritchard_p01",
+ "yt": {
+  "title": "The Storyteller | Dr. Edward Pritchard (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Dr. Edward Pritchard, Glasgow, Scotland, 1865. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dr. edward pritchard"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "pritchard": {
+   "name": "Dr Edward Pritchard",
+   "skin": "#c99872",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true,
+   "glasses": true
+  },
+  "mary": {
+   "name": "Mary Jane Pritchard",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "jane": {
+   "name": "Jane Taylor",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "mourner": {
+   "name": "a mourner",
+   "skin": "#b9774a",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#c8a050",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#b9774a",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DR. EDWARD PRITCHARD",
+    "years": "GLASGOW · 1865",
+    "crime": "THE DOCTOR WHO LIED",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Glasgow, 1865. Dr Edward Pritchard. Popular. Confident. And a terrible liar."
+   },
+   "title": "GLASGOW · 1865",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "mourner",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "pritchard",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "pritchard",
+    "text": "I've climbed mountains, sailed the world, wrestled bears!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mourner",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "mourner",
+    "text": "You're so charming, Doctor."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "pritchard",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "pritchard",
+    "text": "Every word true."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Dr Pritchard loved to tell tall tales about himself."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "CAN YOU TRUST A MAN WHO LIES ABOUT SMALL THINGS?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Can you trust a man who lies about small things? Part 2 is next."
+   }
+  }
+ ]
+}

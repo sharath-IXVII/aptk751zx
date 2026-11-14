@@ -1,0 +1,55 @@
+CAST mary | Mary Rogers | f | plain | brown
+CAST payne | Daniel Payne | m | worker | brown
+CAST owner | the cigar shop owner | m | rich | grey
+CAST customer | a customer | m | rich | black
+CAST loss | Frederica Loss | f | plain | grey
+CAST poe | Edgar Allan Poe | m | rich | black
+CAST police | a police officer | m | police | black
+# TITLE 1: The Beautiful Cigar Girl
+PART
+street establish > nar: New York, 1838. A cigar shop on Broadway. [NEW YORK · 1838]
+home two customer:smile,mary:smile > customer: I don't even smoke. I just come to see you, Miss Rogers.
+home two owner:smile,mary > owner: Customers come from all over the city to see my beautiful cigar girl.
+home face mary:smile > mary: I'm just doing my job, sir.
+home establish > nar: Mary Rogers was so famous for her beauty that newspapers wrote about her.
+home establish > nar: Is fame always a good thing?
+# TITLE 2: Sunday
+PART
+home establish > nar: Previously: Mary Rogers was famous in New York for her beauty.
+home two mary:smile,payne > mary: I'm going to visit my aunt today, Daniel. [25 JULY 1841]
+home two mary,payne:smile > payne: I'll meet you this evening, then.
+street walk mary > nar: Mary left home. She never arrived at her aunt's.
+street face payne:scared > payne: She's not back. It's late. Where is she?
+street establish > nar: Where do you think Mary went?
+# TITLE 3: The River
+PART
+street establish > nar: Previously: Mary Rogers left to visit her aunt and never arrived.
+dock walk police > nar: Three days later, a body was found in the Hudson River, near Hoboken. [HOBOKEN · 28 JULY 1841]
+dock face police:scared > police: It's Mary Rogers.
+street face customer:scared > customer: The cigar girl? Dead?
+street establish > nar: All of New York was shocked.
+street establish > nar: Who do you think did it?
+# TITLE 4: Rumours
+PART
+street establish > nar: Previously: Mary Rogers was found dead in the Hudson River.
+street two customer:scared,police > customer: The newspapers say it was a gang. They roam Hoboken on Sundays. [1841]
+street face police:think > police: Others suspect her fiancé.
+home face payne:cry > payne: I loved her. I would never hurt her.
+home establish > nar: Months later, Daniel Payne was found dead near the place where Mary was found. He had taken his own life.
+home establish > nar: Was it guilt, or grief?
+# TITLE 5: The Tavern
+PART
+home establish > nar: Previously: Mary's fiancé Daniel was found dead near where she died.
+home two loss:scared,police > loss: Mary came to my tavern with a young doctor. [1842]
+home face loss:scared > loss: There was a medical operation. Something went wrong.
+home face police:think > police: Then she didn't die at the hands of a gang at all?
+home establish > nar: The tavern keeper told a completely different story.
+home establish > nar: Which story do you believe?
+# TITLE 6: The Mystery of Marie Rogêt
+PART
+home establish > nar: Previously: a tavern keeper told a different story about Mary's death.
+home face poe:think > poe: I'll write a detective story. Set in Paris. With a girl named Marie Rogêt. [1842]
+home face poe > poe: And my detective will solve it.
+home establish > nar: Edgar Allan Poe based a famous mystery story on Mary's case.
+home establish > nar: But in real life, the case was never solved.
+home establish > nar: What really happened to Mary Rogers?

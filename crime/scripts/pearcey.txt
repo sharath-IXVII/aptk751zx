@@ -1,0 +1,43 @@
+CAST mary | Mary Eleanor Pearcey | f | plain | brown
+CAST frank | Frank Hogg | m | worker | brown
+CAST phoebe | Phoebe Hogg | f | plain | blonde
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Married Man
+PART
+home establish > nar: London, 1890. Mary Pearcey. And a man she can't have. [KENTISH TOWN · 1890]
+home two mary:smile,frank:smile > frank: I've given you a key to my house, Mary. Come whenever you like.
+home face mary:smile > mary: I love you, Frank.
+home face frank:think > frank: But I'm married. To Phoebe.
+home establish > nar: Mary Pearcey was in love with a married man.
+home establish > nar: What do you think she'll do?
+# TITLE 2: Tea
+PART
+home establish > nar: Previously: Mary Pearcey was in love with Frank Hogg, a married man.
+home face mary:smile > mary: Dear Phoebe, come to tea this afternoon. Bring the baby. [24 OCTOBER 1890]
+home two phoebe:smile,mary:smile > phoebe: How kind of you, Mary. The baby's in her pram.
+home establish > nar: Phoebe Hogg arrived for tea with her baby daughter.
+home establish > nar: Should Phoebe have gone?
+# TITLE 3: The Pram
+PART
+home establish > nar: Previously: Mary invited Phoebe Hogg and her baby to tea.
+street establish > nar: That night, a woman's body was found in Hampstead. The baby was found in another place. [THAT NIGHT]
+street face police:think > police: And an empty pram, a mile away. Covered in blood.
+home face frank:scared > frank: Phoebe hasn't come home. Nor the baby.
+home establish > nar: Where do you think police went next?
+# TITLE 4: Killing Mice
+PART
+home establish > nar: Previously: Phoebe and her baby were found dead, and the pram was found nearby.
+home two police:think,mary > police: Broken windows. Blood on the walls. Blood on the ceiling. [MARY'S KITCHEN]
+home face mary:smile > nar: Mary sat at the piano, playing and singing.
+home face mary > mary: Killing mice. Killing mice. Killing mice.
+home two police:point,mary:cuffed > police: Mary Pearcey, you're under arrest.
+home establish > nar: Would anyone believe her?
+# TITLE 5: The Verdict
+PART
+home establish > nar: Previously: police found blood everywhere in Mary's kitchen. She said she was killing mice.
+court court judge,mary > judge: Mary Pearcey, guilty of murder. [DECEMBER 1890]
+court face mary > mary: The sentence is just. But the evidence was false.
+prison establish > nar: Mary Pearcey was hanged in December 1890.
+prison establish > nar: Some later claimed she could have been Jack the Ripper. There's no evidence.
+prison establish > nar: What drove Mary Pearcey to do it?

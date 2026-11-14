@@ -1,0 +1,55 @@
+CAST marie | Marie Manning | f | rich | black
+CAST frederick | Frederick Manning | m | worker | brown
+CAST oconnor | Patrick O'Connor | m | rich | grey | beard
+CAST police | a police officer | m | police | black
+CAST dickens | Charles Dickens | m | rich | brown | beard
+CAST judge | the judge | m | judge | white
+# TITLE 1: Two Men
+PART
+home establish > nar: London, 1840s. Marie Manning, a Swiss former lady's maid. [LONDON · 1849]
+home two marie,frederick > frederick: You married me, Marie. Not him.
+home two marie:smile,oconnor:smile > oconnor: My dear Marie. I have shares, money, property. Anything you want.
+home face marie:think > marie: Frederick is my husband. But Patrick is rich.
+home establish > nar: Marie had married Frederick Manning, but kept a wealthy admirer.
+home establish > nar: Where could this lead?
+# TITLE 2: The Dinner Invitation
+PART
+home establish > nar: Previously: Marie Manning was married but kept a rich admirer, Patrick O'Connor.
+home two marie:smile,oconnor > marie: Come to dinner tomorrow, Patrick. [BERMONDSEY · AUGUST 1849]
+home face oconnor:smile > oconnor: I'll be there.
+home face frederick > frederick: Everything is ready.
+home establish > nar: Patrick O'Connor came to dinner. He never left.
+home establish > nar: What do you think happened that night?
+# TITLE 3: Under the Kitchen Floor
+PART
+home establish > nar: Previously: Patrick O'Connor came to dinner with the Mannings and never left.
+home establish > nar: O'Connor was buried under their kitchen floor, in quicklime.
+home two marie:smile,police > marie: I'm visiting Mr O'Connor's lodgings. He asked me to fetch some things.
+home face marie:smile > marie: His railway shares. His money. All of it.
+home establish > nar: Marie went to O'Connor's rooms and took everything of value.
+home establish > nar: Would anyone notice he was missing?
+# TITLE 4: Fresh Cement
+PART
+home establish > nar: Previously: Marie took O'Connor's shares and money from his lodgings.
+home two police:think,frederick > police: Mr O'Connor's friends say he came here for dinner. [AUGUST 1849]
+home face police:think > police: These kitchen flagstones. The cement looks new.
+home establish > nar: Police lifted the floor. O'Connor was underneath.
+home face police:scared > police: Where are the Mannings?
+home establish > nar: Where do you think they went?
+# TITLE 5: Caught
+PART
+home establish > nar: Previously: police found O'Connor under the Mannings' kitchen floor.
+dock face marie > nar: Marie had fled to Edinburgh, with the money. [EDINBURGH]
+dock two police:point,marie:cuffed > police: Marie Manning. You're under arrest.
+street two police:point,frederick:cuffed > police: And Frederick Manning, in Jersey.
+street face frederick:cross > frederick: She did it. Not me.
+street establish > nar: Each blamed the other.
+street establish > nar: Who do you believe?
+# TITLE 6: Dickens Watches
+PART
+street establish > nar: Previously: the Mannings were arrested separately and blamed each other.
+court court judge,marie > judge: Marie Manning. Frederick Manning. Guilty. Both will hang. [OCTOBER 1849]
+street establish > nar: In November 1849, the Mannings were hanged together before a huge crowd.
+street face dickens:cross > dickens: The wickedness of that crowd was worse than anything. Public executions must end.
+street establish > nar: Charles Dickens watched, and wrote to The Times against public hangings.
+street establish > nar: Should executions ever be public?
