@@ -23,7 +23,7 @@ for i, sh in enumerate(ep["shots"]):
     words = sh["line"]["text"].split(); chunks, cur = [], []
     for wd in words:
         cur.append(wd)
-        if len(cur) >= 3 or wd[-1] in ".,?!": chunks.append(" ".join(cur)); cur = []
+        if len(cur) >= 3 or (wd[-1] in ".,?!" and len(wd.strip(".,?!")) > 2): chunks.append(" ".join(cur)); cur = []
     if cur: chunks.append(" ".join(cur))
     tot = sum(len(c)+2 for c in chunks); span = len(a)/SR; caps, c0 = [], lead
     for c in chunks:
