@@ -7,7 +7,13 @@ canvas{display:block}
 #card .who{display:flex;gap:26px;margin-top:20px;font-size:48px;color:#ffd24a}
 </style></head><body>
 <div id="ttl" style="position:absolute;top:150px;left:0;right:0;text-align:center;color:#f3e6c8;font:700 46px Georgia,serif;letter-spacing:3px;text-shadow:0 2px 12px #000;display:none"></div>
-<div id="cap" style="position:absolute;bottom:300px;left:40px;right:40px;text-align:center;color:#fff;font:900 50px 'Arial Black',Impact,sans-serif;line-height:1.15;text-shadow:0 0 8px #000,0 4px 0 #000,3px 0 0 #000,-3px 0 0 #000;display:none"></div>
+<div id="cap" style="position:absolute;bottom:250px;left:0;right:0;text-align:center;display:none"><span id="capt" style="display:inline-block;max-width:560px;padding:10px 22px;border-radius:12px;background:rgba(0,0,0,.55);color:#fff;font:700 36px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.5px;line-height:1.25"></span></div>
+<div id="intro" style="position:absolute;inset:0;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:Georgia,serif">
+ <div style="font:600 30px 'Helvetica Neue',Arial,sans-serif;letter-spacing:8px;color:#bbb">BASED ON A REAL STORY</div>
+ <div id="in1" style="font:700 108px Georgia,serif;margin:30px 0 10px;letter-spacing:2px"></div>
+ <div id="in2" style="font:400 36px Georgia,serif;color:#cfc4a8;letter-spacing:4px"></div>
+ <div id="in3" style="font:900 74px 'Arial Black',Impact,sans-serif;color:#e01b1b;margin-top:60px;letter-spacing:3px;text-shadow:0 0 30px #800"></div>
+ <div id="in4" style="font:600 32px 'Helvetica Neue',Arial,sans-serif;color:#888;margin-top:70px;letter-spacing:6px"></div></div>
 <div id="card"><h1 id="ch"></h1><p id="cp"></p><p id="cf" style="font-size:40px;color:#bbb"></p></div>
 <script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
 <script type="module">
@@ -185,7 +191,8 @@ window.renderAt=(i,t,talk)=>{
   if(ctx.bigLamp)ctx.bigLamp.intensity=t>1.8?120:0;
   if(ctx.sil)ctx.sil.root.visible=(t>1.2&&t<1.6)||t>2.4;
   ttl.style.display=sh.title&&t<3.2?'block':'none';if(sh.title)ttl.textContent=sh.title;
-  const cp=(sh.caps||[]).find(c=>t>=c[0]&&t<c[1]);cap.style.display=cp&&!sh.card?'block':'none';if(cp)cap.textContent=cp[2];
+  const cp=(sh.caps||[]).find(c=>t>=c[0]&&t<c[1]);cap.style.display=cp&&!sh.card&&!sh.intro?'block':'none';if(cp)capt.textContent=cp[2];
+  intro.style.display=sh.intro?'flex':'none';if(sh.intro){in1.textContent=sh.intro.name;in2.textContent=sh.intro.years;in3.textContent=sh.intro.crime;in4.textContent=sh.intro.part}
   const [p,l]=CAMS[sh.cam](t);cam.position.set(...p);ctx.fill.position.set(p[0]*.6,p[1]+1,p[2]*.6);cam.lookAt(...l);
   R.render(S,cam);
 };

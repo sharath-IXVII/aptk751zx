@@ -126,6 +126,18 @@
   {
    "set": "ward",
    "cam": "ward",
+   "intro": {
+    "name": "JOLLY JANE",
+    "years": "MASSACHUSETTS \u00b7 1885\u20131901",
+    "crime": "31 MURDERS",
+    "part": "PART 1 OF 5"
+   },
+   "chars": [],
+   "hold": 2.8
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
    "chars": [
     {
      "id": "jane",
@@ -151,7 +163,7 @@
    ],
    "line": {
     "who": "nar",
-    "text": "This is based on the real story of Jane Toppan. A nurse everyone loved."
+    "text": "Jane Toppan. The nurse everyone loved."
    }
   },
   {
@@ -411,7 +423,7 @@
    ],
    "line": {
     "who": "nar",
-    "text": "Years later, she would confess to thirty one murders."
+    "text": "And Anna had just seen something she should not have seen."
    }
   },
   {
@@ -425,7 +437,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Would you have told anyone? Part two is next."
+    "text": "What would you do if you saw this? Part two is next."
    }
   }
  ]

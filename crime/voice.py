@@ -47,7 +47,7 @@ for sh, tl in zip(ep["shots"], timeline):
     if "lightning" in (sh.get("fx") or []):
         j = int((tl["start"]+1.2)*SR); m = min(n-j, int(2.5*SR)); x = np.arange(m)/SR
         bed[j:j+m] += np.convolve(rng.standard_normal(m), np.ones(60)/60, "same")*np.exp(-x*1.6)*1.2
-    if sh.get("card"):
+    if sh.get("card") or sh.get("intro"):
         j = int(tl["start"]*SR); m = min(n-j, int(2*SR)); x = np.arange(m)/SR
         bed[j:j+m] += 0.5*np.sin(2*np.pi*40*x)*np.exp(-x*2.5)
 mix = v + 0.55*bed; mix /= max(1.0, np.abs(mix).max()/0.95)

@@ -126,6 +126,18 @@
   {
    "set": "ward",
    "cam": "ward",
+   "intro": {
+    "name": "JOLLY JANE",
+    "years": "MASSACHUSETTS \u00b7 1885\u20131901",
+    "crime": "31 MURDERS",
+    "part": "PART 2 OF 5"
+   },
+   "chars": [],
+   "hold": 2.8
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
    "flick": true,
    "chars": [
     {
