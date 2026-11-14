@@ -76,5 +76,5 @@ jobs:
             b=preview-crime-${{ github.run_id }}; git checkout -q -b $b; mkdir -p previews; cp build/short.mp4 previews/; git add -f previews && git commit -qm "preview" && git push -q origin $b; exit 0
           fi
           python -m pipeline.crime upload "$EP" "crime/episodes/$EP.json" build/short.mp4
-          git add state/ && git commit -qm "Crime: $EP [skip ci]"
+          git add state/; git diff --cached --quiet && exit 0; git commit -qm "Crime: $EP [skip ci]"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i*5)); done
