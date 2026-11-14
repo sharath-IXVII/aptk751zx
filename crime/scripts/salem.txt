@@ -1,0 +1,95 @@
+CAST betty | Betty Parris | f | plain | blonde
+CAST abigail | Abigail Williams | f | plain | brown
+CAST parris | Reverend Samuel Parris | m | judge | grey
+CAST tituba | Tituba | f | worker | black
+CAST good | Sarah Good | f | plain | grey
+CAST nurse | Rebecca Nurse | f | plain | white
+CAST corey | Giles Corey | m | worker | white | beard
+CAST bishop | Bridget Bishop | f | rich | red
+CAST doctor | the village doctor | m | doctor | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Fits
+PART
+home establish > nar: Salem Village, Massachusetts. The winter of 1692. [SALEM · JANUARY 1692]
+home two betty:scared,abigail:scared > abigail: Betty? Betty, what's wrong with you?
+home bed betty:sick,parris > betty: It hurts! Something is pinching me! Make it stop!
+home two abigail:scared,parris > abigail: I feel it too, Uncle! Invisible hands!
+home face parris:scared > parris: Lord, what is happening in my house?
+home establish > nar: The minister's daughter and niece were having strange fits. Screaming. Twisting.
+home establish > nar: What do you think was wrong with them?
+# TITLE 2: Bewitched
+PART
+home establish > nar: Previously: two girls in the minister's house began having terrifying fits.
+home two doctor:think,parris > doctor: I can find no illness, Reverend. [FEBRUARY 1692]
+home face doctor > doctor: The evil hand is upon them. They are bewitched.
+home face parris:scared > parris: Witchcraft. In my own house.
+home two parris:point,betty > parris: Who is doing this to you, child? Tell me!
+home establish > nar: Now the whole village wanted to know: who is the witch?
+home establish > nar: Who would they name?
+# TITLE 3: Three Women
+PART
+home establish > nar: Previously: a doctor said the girls were bewitched.
+home two abigail:point,parris > abigail: Tituba! And Sarah Good! And Sarah Osborne! [FEBRUARY 1692]
+home face tituba:scared > tituba: Me? I cook. I look after the children.
+street face good:cross > good: I'm poor, not a witch. You only blame me because I beg.
+street establish > nar: The first accused were outsiders. An enslaved woman. A beggar. A woman who rarely went to church.
+street establish > nar: Why do you think the girls chose them?
+# TITLE 4: Tituba's Confession
+PART
+street establish > nar: Previously: the girls accused Tituba, Sarah Good and Sarah Osborne.
+court two judge,tituba:scared > judge: Tituba, are you a witch? Have you seen the Devil? [MARCH 1692]
+court face tituba:scared > tituba: Yes. A tall man from Boston. He made me sign his book.
+court face tituba:scared > tituba: And there are others. Many others in Salem.
+court face judge:scared > judge: Others?
+court establish > nar: Tituba's confession turned fear into panic.
+court establish > nar: Why do you think she confessed?
+# TITLE 5: Even the Good
+PART
+court establish > nar: Previously: Tituba confessed, and said there were more witches in Salem.
+street two abigail:point,nurse > abigail: Rebecca Nurse is a witch! Her spirit attacked me!
+street face nurse:scared > nurse: I'm seventy-one. I've gone to church my whole life. I'm as innocent as a baby.
+home two betty,abigail:scared > betty: More girls are seeing them now. More and more names.
+street establish > nar: Now even the most respected people in the village were being accused.
+street establish > nar: Is anyone safe?
+# TITLE 6: Spectral Evidence
+PART
+street establish > nar: Previously: even respected church members like Rebecca Nurse were accused.
+court two judge,abigail > judge: You say her spirit came to you? In a dream? [MAY 1692]
+court two judge:think,abigail > abigail: Yes, sir. She pinched me and choked me.
+court face judge > judge: Then we accept it as evidence.
+court establish > nar: A special court was set up. Dreams and visions counted as proof.
+court establish > nar: How do you defend yourself against a dream?
+# TITLE 7: The First Hanging
+PART
+court establish > nar: Previously: the court accepted dreams and visions as evidence.
+court court judge,bishop > judge: Bridget Bishop, you are guilty of witchcraft. [JUNE 1692]
+court face bishop:cross > bishop: I am no witch. I don't even know what a witch is.
+forest establish > nar: On 10 June 1692, Bridget Bishop was hanged.
+forest establish > nar: She was the first. She would not be the last.
+forest establish > nar: Can anything stop this now?
+# TITLE 8: Not Guilty... Then Guilty
+PART
+forest establish > nar: Previously: Bridget Bishop became the first person hanged.
+court court judge,nurse > judge: The jury finds Rebecca Nurse... not guilty. [JUNE 1692]
+court two abigail:scared,betty:scared > abigail: Aaaah! She's attacking us! Her spirit!
+court face judge:think > judge: Jury, go back and think again.
+court court judge,nurse > judge: Guilty.
+forest establish > nar: Rebecca Nurse was hanged in July 1692.
+forest establish > nar: What would you have done on that jury?
+# TITLE 9: More Weight
+PART
+forest establish > nar: Previously: Rebecca Nurse was found not guilty, then guilty, and hanged.
+court face corey:cross > corey: I won't plead. Not guilty, not guilty. Nothing. [SEPTEMBER 1692]
+forest establish > nar: Giles Corey, eighty years old, was pressed under heavy stones for two days.
+forest face corey > corey: More weight.
+forest establish > nar: He died without ever giving them a plea.
+forest establish > nar: Why do you think he refused to plead?
+# TITLE 10: Twenty Innocent People
+PART
+forest establish > nar: Previously: Giles Corey died refusing to plead.
+court establish > nar: By autumn 1692, twenty people had been executed. [AUTUMN 1692]
+court face judge:think > judge: The Governor has stopped the trials. Dreams are no longer evidence.
+home face betty > betty: Were we wrong?
+home establish > nar: Years later, one accuser, Ann Putnam, publicly apologised.
+home establish > nar: In 1711 Massachusetts began to clear names and pay families.
+home establish > nar: How could a whole village believe this?

@@ -1,0 +1,221 @@
+{
+ "key": "salem_p05",
+ "yt": {
+  "title": "Even the Good | The Salem Witch Trials (True Story) Part 5 #shorts",
+  "description": "Part 5 of 10: The Salem Witch Trials, Salem Village and Salem Town, Massachusetts, 1692-1693. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the salem witch trials"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "betty": {
+   "name": "Betty Parris",
+   "skin": "#a86a42",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "abigail": {
+   "name": "Abigail Williams",
+   "skin": "#d0a07c",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "parris": {
+   "name": "Reverend Samuel Parris",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "glasses": true
+  },
+  "tituba": {
+   "name": "Tituba",
+   "skin": "#8a5232",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#1d1d1d",
+   "voice": "af_sarah",
+   "long": true
+  },
+  "good": {
+   "name": "Sarah Good",
+   "skin": "#a86a42",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_sky",
+   "long": true
+  },
+  "nurse": {
+   "name": "Rebecca Nurse",
+   "skin": "#b9774a",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#e0e0e0",
+   "voice": "af_nova",
+   "long": true
+  },
+  "corey": {
+   "name": "Giles Corey",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "bishop": {
+   "name": "Bridget Bishop",
+   "skin": "#d0a07c",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#a84a22",
+   "voice": "bf_emma",
+   "long": true
+  },
+  "doctor": {
+   "name": "the village doctor",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE SALEM WITCH TRIALS",
+    "years": "MASSACHUSETTS · 1692",
+    "crime": "20 INNOCENT PEOPLE",
+    "part": "PART 5 OF 10"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Tituba confessed, and said there were more witches in Salem."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "abigail",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "nurse",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "abigail",
+    "text": "Rebecca Nurse is a witch! Her spirit attacked me!"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "nurse",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "nurse",
+    "text": "I'm seventy-one. I've gone to church my whole life. I'm as innocent as a baby."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "betty",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "abigail",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "betty",
+    "text": "More girls are seeing them now. More and more names."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Now even the most respected people in the village were being accused."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS ANYONE SAFE?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is anyone safe? Part 6 is next."
+   }
+  }
+ ]
+}
