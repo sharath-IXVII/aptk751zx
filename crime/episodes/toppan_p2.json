@@ -1,0 +1,379 @@
+{
+ "key": "toppan_p2",
+ "yt": {
+  "title": "Fired\u2026 Then Hired by Families | Jolly Jane (True Story) Part 2 #shorts",
+  "description": "Part 2 of 5. A dramatised retelling of the real story of Jane Toppan, a nurse in Massachusetts (1880s\u20131901) who later confessed to 31 murders. Dialogue and some scenes are imagined; the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "jane toppan",
+   "jolly jane",
+   "horror story",
+   "history",
+   "nurse",
+   "shorts"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "jane": {
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#3a2418",
+   "long": true,
+   "nurse": true,
+   "voice": "af_bella"
+  },
+  "jane2": {
+   "skin": "#e2b08a",
+   "cloth": "#3a3a3a",
+   "cloth2": "#2a2a2a",
+   "hair": "#5a4a40",
+   "long": true,
+   "voice": "af_bella"
+  },
+  "old": {
+   "skin": "#d9a882",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#b0b0b0",
+   "beard": true,
+   "voice": "am_adam"
+  },
+  "anna": {
+   "skin": "#c99872",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#6a4a30",
+   "long": true,
+   "voice": "af_nicole"
+  },
+  "doc": {
+   "skin": "#d8a07a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#8a8a8a",
+   "glasses": true,
+   "voice": "bm_george"
+  },
+  "israel": {
+   "skin": "#d0a07c",
+   "cloth": "#4a3a2a",
+   "cloth2": "#3a2a1a",
+   "hair": "#d8d8d8",
+   "beard": true,
+   "voice": "bm_lewis"
+  },
+  "lovey": {
+   "skin": "#d6a684",
+   "cloth": "#5a3a5a",
+   "cloth2": "#432a43",
+   "hair": "#d0d0d0",
+   "long": true,
+   "voice": "af_sarah"
+  },
+  "eliz": {
+   "skin": "#e0ae88",
+   "cloth": "#3a5a4a",
+   "cloth2": "#2a4436",
+   "hair": "#7a5030",
+   "long": true,
+   "voice": "af_sky"
+  },
+  "alden": {
+   "skin": "#d4a07a",
+   "cloth": "#3a3a46",
+   "cloth2": "#2a2a34",
+   "hair": "#e0e0e0",
+   "beard": true,
+   "voice": "am_eric"
+  },
+  "minnie": {
+   "skin": "#e0aa84",
+   "cloth": "#6a4a6a",
+   "cloth2": "#523852",
+   "hair": "#4a3020",
+   "long": true,
+   "voice": "af_nova"
+  },
+  "rel": {
+   "skin": "#c8946c",
+   "cloth": "#2a3a2a",
+   "cloth2": "#1e2a1e",
+   "hair": "#3a3a3a",
+   "coat": true,
+   "hat": true,
+   "voice": "bm_daniel"
+  },
+  "cop": {
+   "skin": "#c48a60",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#2a2a2a",
+   "cap": true,
+   "voice": "am_liam"
+  },
+  "judge": {
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e8e8e8",
+   "glasses": true,
+   "voice": "bm_fable"
+  }
+ },
+ "shots": [
+  {
+   "set": "ward",
+   "cam": "ward",
+   "flick": true,
+   "chars": [
+    {
+     "id": "jane",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "give",
+     "prop": "cup"
+    },
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "sleep"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Previously: patients loved Jolly Jane. But at night, they grew worse."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "title": "THE DOCTOR'S OFFICE",
+   "chars": [
+    {
+     "id": "doc",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "jane",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doc",
+    "text": "Nurse Toppan, you gave the wrong medicine. Again."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "doc",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "jane",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane",
+    "text": "A small mistake, doctor. The patients adore me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "doc",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "jane",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doc",
+    "text": "You are dismissed. Leave this hospital today."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "hold": 1.0,
+   "line": {
+    "who": "jane",
+    "text": "Hospitals have rules. Families don't."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "title": "CAMBRIDGE \u00b7 1895",
+   "chars": [
+    {
+     "id": "israel",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "israel",
+    "text": "Our lodger is a trained nurse? We are lucky, Jane."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "cupTable": true,
+   "chars": [
+    {
+     "id": "lovey",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "give",
+     "prop": "cup"
+    }
+   ],
+   "line": {
+    "who": "jane2",
+    "text": "Your tea, Mrs Dunham. Just how you like it."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "chars": [
+    {
+     "id": "israel",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "israel",
+    "text": "Jane... I feel so tired."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "title": "1895",
+   "chars": [
+    {
+     "id": "lovey",
+     "x": -0.8,
+     "z": 1.6,
+     "ry": 0.3,
+     "act": "cry"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 1.6,
+     "ry": -0.3,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "lovey",
+    "text": "The doctor says it was just old age."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "title": "1897",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0.6,
+     "z": 1.6,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "hold": 1.2,
+   "line": {
+    "who": "nar",
+    "text": "Two years later, his wife was buried beside him."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "card": {
+    "h": "WHY DID NO ONE CHECK?",
+    "p": "Comment below \ud83d\udc47",
+    "f": "Part 3 next"
+   },
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Why did no doctor ever check? Part three is next."
+   }
+  }
+ ]
+}

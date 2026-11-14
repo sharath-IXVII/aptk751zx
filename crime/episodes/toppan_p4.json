@@ -1,0 +1,362 @@
+{
+ "key": "toppan_p4",
+ "yt": {
+  "title": "One Summer. One Family. | Jolly Jane (True Story) Part 4 #shorts",
+  "description": "Part 4 of 5. A dramatised retelling of the real story of Jane Toppan, a nurse in Massachusetts (1880s\u20131901) who later confessed to 31 murders. Dialogue and some scenes are imagined; the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "jane toppan",
+   "jolly jane",
+   "horror story",
+   "history",
+   "nurse",
+   "shorts"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "jane": {
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#3a2418",
+   "long": true,
+   "nurse": true,
+   "voice": "af_bella"
+  },
+  "jane2": {
+   "skin": "#e2b08a",
+   "cloth": "#3a3a3a",
+   "cloth2": "#2a2a2a",
+   "hair": "#5a4a40",
+   "long": true,
+   "voice": "af_bella"
+  },
+  "old": {
+   "skin": "#d9a882",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#b0b0b0",
+   "beard": true,
+   "voice": "am_adam"
+  },
+  "anna": {
+   "skin": "#c99872",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#6a4a30",
+   "long": true,
+   "voice": "af_nicole"
+  },
+  "doc": {
+   "skin": "#d8a07a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#8a8a8a",
+   "glasses": true,
+   "voice": "bm_george"
+  },
+  "israel": {
+   "skin": "#d0a07c",
+   "cloth": "#4a3a2a",
+   "cloth2": "#3a2a1a",
+   "hair": "#d8d8d8",
+   "beard": true,
+   "voice": "bm_lewis"
+  },
+  "lovey": {
+   "skin": "#d6a684",
+   "cloth": "#5a3a5a",
+   "cloth2": "#432a43",
+   "hair": "#d0d0d0",
+   "long": true,
+   "voice": "af_sarah"
+  },
+  "eliz": {
+   "skin": "#e0ae88",
+   "cloth": "#3a5a4a",
+   "cloth2": "#2a4436",
+   "hair": "#7a5030",
+   "long": true,
+   "voice": "af_sky"
+  },
+  "alden": {
+   "skin": "#d4a07a",
+   "cloth": "#3a3a46",
+   "cloth2": "#2a2a34",
+   "hair": "#e0e0e0",
+   "beard": true,
+   "voice": "am_eric"
+  },
+  "minnie": {
+   "skin": "#e0aa84",
+   "cloth": "#6a4a6a",
+   "cloth2": "#523852",
+   "hair": "#4a3020",
+   "long": true,
+   "voice": "af_nova"
+  },
+  "rel": {
+   "skin": "#c8946c",
+   "cloth": "#2a3a2a",
+   "cloth2": "#1e2a1e",
+   "hair": "#3a3a3a",
+   "coat": true,
+   "hat": true,
+   "voice": "bm_daniel"
+  },
+  "cop": {
+   "skin": "#c48a60",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#2a2a2a",
+   "cap": true,
+   "voice": "am_liam"
+  },
+  "judge": {
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e8e8e8",
+   "glasses": true,
+   "voice": "bm_fable"
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "chars": [
+    {
+     "id": "eliz",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "tuck"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Jane's own foster sister died in her care. Now, a new family."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "title": "CATAUMET, CAPE COD \u00b7 1901",
+   "chars": [
+    {
+     "id": "alden",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "alden",
+    "text": "My wife Mattie is gone. I can't manage alone."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "alden",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane2",
+    "text": "Mister Davis, I'll stay as long as you need me."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "cupTable": true,
+   "chars": [
+    {
+     "id": "minnie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "give",
+     "prop": "cup"
+    }
+   ],
+   "line": {
+    "who": "minnie",
+    "text": "Thank you, Jane. Father trusts you completely."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "title": "WEEKS LATER",
+   "chars": [
+    {
+     "id": "alden",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "alden",
+    "text": "Jane... I can't feel my hands."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "chars": [
+    {
+     "id": "minnie",
+     "x": -0.8,
+     "z": 1.6,
+     "ry": 0.3,
+     "act": "cry"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 1.6,
+     "ry": -0.3,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "minnie",
+    "text": "First mother. Now father. What is happening to us?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "chars": [
+    {
+     "id": "minnie",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "tuck"
+    }
+   ],
+   "hold": 1.0,
+   "line": {
+    "who": "jane2",
+    "text": "Shh. Sleep, Minnie. Just like your father."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "title": "THAT SUMMER",
+   "chars": [
+    {
+     "id": "rel",
+     "x": -0.6,
+     "z": 1.6,
+     "ry": 0.2,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "rel",
+    "text": "Four funerals in a few weeks. This is not bad luck."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "rel",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "doc",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "rel",
+    "text": "I want tests on Minnie's body. Now."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "card": {
+    "h": "WHAT WILL THE TESTS SHOW?",
+    "p": "Comment below \ud83d\udc47",
+    "f": "Final part next"
+   },
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "What will the tests show? The final part is next."
+   }
+  }
+ ]
+}

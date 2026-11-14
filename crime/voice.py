@@ -13,10 +13,22 @@ def tts(text, voice):
     return np.concatenate([a.numpy() if hasattr(a, "numpy") else a for _, _, a in pipes[lang](text, voice=voice, speed=speed)])
 voice, timeline, t = [], [], 0.0
 for i, sh in enumerate(ep["shots"]):
+    lead, tail = 0.25, 0.35
+    if not sh.get("line"):
+        seg = np.zeros(int(sh.get("hold", 2.0)*SR)); timeline.append({"start": t, "dur": len(seg)/SR, "talk0": 0, "talk1": 0, "caps": []})
+        voice.append(seg); t += len(seg)/SR; continue
     w = sh["line"]["who"]; v = ep["narrator"] if w == "nar" else ep["cast"][w]["voice"]
-    a = tts(sh["line"]["text"], v); lead, tail = 0.25, 0.35
+    a = tts(sh["line"]["text"], v); tail = max(tail, sh.get("hold", 0))
     seg = np.concatenate([np.zeros(int(lead*SR)), a, np.zeros(int(tail*SR))])
-    timeline.append({"start": t, "dur": len(seg)/SR, "talk0": lead, "talk1": lead+len(a)/SR})
+    words = sh["line"]["text"].split(); chunks, cur = [], []
+    for wd in words:
+        cur.append(wd)
+        if len(cur) >= 3 or wd[-1] in ".,?!": chunks.append(" ".join(cur)); cur = []
+    if cur: chunks.append(" ".join(cur))
+    tot = sum(len(c)+2 for c in chunks); span = len(a)/SR; caps, c0 = [], lead
+    for c in chunks:
+        d = span*(len(c)+2)/tot; caps.append([round(c0, 3), round(c0+d, 3), c.upper()]); c0 += d
+    timeline.append({"start": t, "dur": len(seg)/SR, "talk0": lead, "talk1": lead+len(a)/SR, "caps": caps})
     voice.append(seg); t += len(seg)/SR
 v = np.concatenate(voice).astype(np.float32); n = len(v); tt = np.arange(n)/SR
 rng = np.random.default_rng(3)

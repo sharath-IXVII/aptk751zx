@@ -1,0 +1,341 @@
+{
+ "key": "toppan_p3",
+ "yt": {
+  "title": "She Even Visited Her Sister | Jolly Jane (True Story) Part 3 #shorts",
+  "description": "Part 3 of 5. A dramatised retelling of the real story of Jane Toppan, a nurse in Massachusetts (1880s\u20131901) who later confessed to 31 murders. Dialogue and some scenes are imagined; the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "jane toppan",
+   "jolly jane",
+   "horror story",
+   "history",
+   "nurse",
+   "shorts"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "jane": {
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#3a2418",
+   "long": true,
+   "nurse": true,
+   "voice": "af_bella"
+  },
+  "jane2": {
+   "skin": "#e2b08a",
+   "cloth": "#3a3a3a",
+   "cloth2": "#2a2a2a",
+   "hair": "#5a4a40",
+   "long": true,
+   "voice": "af_bella"
+  },
+  "old": {
+   "skin": "#d9a882",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#b0b0b0",
+   "beard": true,
+   "voice": "am_adam"
+  },
+  "anna": {
+   "skin": "#c99872",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#6a4a30",
+   "long": true,
+   "voice": "af_nicole"
+  },
+  "doc": {
+   "skin": "#d8a07a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#8a8a8a",
+   "glasses": true,
+   "voice": "bm_george"
+  },
+  "israel": {
+   "skin": "#d0a07c",
+   "cloth": "#4a3a2a",
+   "cloth2": "#3a2a1a",
+   "hair": "#d8d8d8",
+   "beard": true,
+   "voice": "bm_lewis"
+  },
+  "lovey": {
+   "skin": "#d6a684",
+   "cloth": "#5a3a5a",
+   "cloth2": "#432a43",
+   "hair": "#d0d0d0",
+   "long": true,
+   "voice": "af_sarah"
+  },
+  "eliz": {
+   "skin": "#e0ae88",
+   "cloth": "#3a5a4a",
+   "cloth2": "#2a4436",
+   "hair": "#7a5030",
+   "long": true,
+   "voice": "af_sky"
+  },
+  "alden": {
+   "skin": "#d4a07a",
+   "cloth": "#3a3a46",
+   "cloth2": "#2a2a34",
+   "hair": "#e0e0e0",
+   "beard": true,
+   "voice": "am_eric"
+  },
+  "minnie": {
+   "skin": "#e0aa84",
+   "cloth": "#6a4a6a",
+   "cloth2": "#523852",
+   "hair": "#4a3020",
+   "long": true,
+   "voice": "af_nova"
+  },
+  "rel": {
+   "skin": "#c8946c",
+   "cloth": "#2a3a2a",
+   "cloth2": "#1e2a1e",
+   "hair": "#3a3a3a",
+   "coat": true,
+   "hat": true,
+   "voice": "bm_daniel"
+  },
+  "cop": {
+   "skin": "#c48a60",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#2a2a2a",
+   "cap": true,
+   "voice": "am_liam"
+  },
+  "judge": {
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e8e8e8",
+   "glasses": true,
+   "voice": "bm_fable"
+  }
+ },
+ "shots": [
+  {
+   "set": "grave",
+   "cam": "grave",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0.6,
+     "z": 1.6,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Jane was fired, then hired by families. And the Dunhams died."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "title": "CAPE COD \u00b7 1899",
+   "chars": [
+    {
+     "id": "eliz",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "eliz",
+    "text": "Jane! My sister! Come, stay with us this summer."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane2",
+    "text": "I would love to, Elizabeth. You look so tired."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "cupTable": true,
+   "chars": [
+    {
+     "id": "eliz",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "give",
+     "prop": "cup"
+    }
+   ],
+   "line": {
+    "who": "jane2",
+    "text": "Here. Let me take care of you, like always."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "title": "DAYS LATER",
+   "chars": [
+    {
+     "id": "eliz",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "eliz",
+    "text": "Jane... why do I feel worse every day?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "bedroom",
+   "bed": true,
+   "flick": true,
+   "chars": [
+    {
+     "id": "eliz",
+     "x": 2.2,
+     "z": -0.2,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "jane2",
+     "x": 1.1,
+     "z": -2.0,
+     "ry": 0.5,
+     "act": "tuck"
+    }
+   ],
+   "hold": 1.0,
+   "line": {
+    "who": "jane2",
+    "text": "Rest, sister. I'm right here."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "grave",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0.8,
+     "z": 1.6,
+     "ry": -0.3,
+     "act": "cry"
+    },
+    {
+     "id": "rel",
+     "x": -0.8,
+     "z": 1.6,
+     "ry": 0.3,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "rel",
+    "text": "She was healthy last month. I don't understand."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "hold": 1.2,
+   "line": {
+    "who": "jane2",
+    "text": "Some people are just... unlucky."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "title": "1901",
+   "chars": [
+    {
+     "id": "jane2",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "idle",
+     "prop": "paper"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Then, in 1901, a letter came. A family in Cataumet needed a nurse."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "card": {
+    "h": "SHOULD THEY LET HER IN?",
+    "p": "Comment below \ud83d\udc47",
+    "f": "Part 4 next"
+   },
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Should the family let her in? Part four is next."
+   }
+  }
+ ]
+}

@@ -1,30 +1,432 @@
 {
  "key": "toppan_p1",
- "yt": {"title": "The Nurse Everyone Loved… (True Story) | Part 1 #shorts",
-        "description": "Jolly Jane: the true story of Jane Toppan, a nurse in 1880s-1900s Massachusetts who later confessed to 31 murders. Dramatised retelling; dialogue is imagined. Part 1 of 5.\n\n#truecrime #horror #history #shorts",
-        "tags": ["true crime", "jane toppan", "jolly jane", "horror stories", "history", "nurse", "shorts"]},
+ "yt": {
+  "title": "The Nurse Everyone Loved | Jolly Jane (True Story) Part 1 #shorts",
+  "description": "Part 1 of 5. A dramatised retelling of the real story of Jane Toppan, a nurse in Massachusetts (1880s\u20131901) who later confessed to 31 murders. Dialogue and some scenes are imagined; the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "jane toppan",
+   "jolly jane",
+   "horror story",
+   "history",
+   "nurse",
+   "shorts"
+  ]
+ },
  "narrator": "am_michael",
  "cast": {
-  "jane": {"skin":"#e6b48e","cloth":"#2a2f45","cloth2":"#232838","hair":"#3a2418","long":true,"nurse":true,"voice":"af_bella"},
-  "pat":  {"skin":"#d9a882","cloth":"#e8e4d8","cloth2":"#cfcbbd","hair":"#9a9a9a","beard":true},
-  "pat2": {"skin":"#c99872","cloth":"#e8e4d8","cloth2":"#cfcbbd","hair":"#5a4030"}
+  "jane": {
+   "skin": "#e6b48e",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#3a2418",
+   "long": true,
+   "nurse": true,
+   "voice": "af_bella"
+  },
+  "jane2": {
+   "skin": "#e2b08a",
+   "cloth": "#3a3a3a",
+   "cloth2": "#2a2a2a",
+   "hair": "#5a4a40",
+   "long": true,
+   "voice": "af_bella"
+  },
+  "old": {
+   "skin": "#d9a882",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#b0b0b0",
+   "beard": true,
+   "voice": "am_adam"
+  },
+  "anna": {
+   "skin": "#c99872",
+   "cloth": "#e8e4d8",
+   "cloth2": "#cfcbbd",
+   "hair": "#6a4a30",
+   "long": true,
+   "voice": "af_nicole"
+  },
+  "doc": {
+   "skin": "#d8a07a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#8a8a8a",
+   "glasses": true,
+   "voice": "bm_george"
+  },
+  "israel": {
+   "skin": "#d0a07c",
+   "cloth": "#4a3a2a",
+   "cloth2": "#3a2a1a",
+   "hair": "#d8d8d8",
+   "beard": true,
+   "voice": "bm_lewis"
+  },
+  "lovey": {
+   "skin": "#d6a684",
+   "cloth": "#5a3a5a",
+   "cloth2": "#432a43",
+   "hair": "#d0d0d0",
+   "long": true,
+   "voice": "af_sarah"
+  },
+  "eliz": {
+   "skin": "#e0ae88",
+   "cloth": "#3a5a4a",
+   "cloth2": "#2a4436",
+   "hair": "#7a5030",
+   "long": true,
+   "voice": "af_sky"
+  },
+  "alden": {
+   "skin": "#d4a07a",
+   "cloth": "#3a3a46",
+   "cloth2": "#2a2a34",
+   "hair": "#e0e0e0",
+   "beard": true,
+   "voice": "am_eric"
+  },
+  "minnie": {
+   "skin": "#e0aa84",
+   "cloth": "#6a4a6a",
+   "cloth2": "#523852",
+   "hair": "#4a3020",
+   "long": true,
+   "voice": "af_nova"
+  },
+  "rel": {
+   "skin": "#c8946c",
+   "cloth": "#2a3a2a",
+   "cloth2": "#1e2a1e",
+   "hair": "#3a3a3a",
+   "coat": true,
+   "hat": true,
+   "voice": "bm_daniel"
+  },
+  "cop": {
+   "skin": "#c48a60",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#2a2a2a",
+   "cap": true,
+   "voice": "am_liam"
+  },
+  "judge": {
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e8e8e8",
+   "glasses": true,
+   "voice": "bm_fable"
+  }
  },
  "shots": [
-  {"set":"ward","cam":"ward","chars":[{"id":"jane","x":0,"z":-2,"ry":0,"act":"walk"},{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"pat2","x":2.8,"z":-5.8,"ry":0,"act":"lie"}],
-   "line":{"who":"nar","text":"Massachusetts, the eighteen eighties. In a quiet hospital ward, one young nurse was loved by everyone."}},
-  {"set":"ward","cam":"two","chars":[{"id":"jane","x":0.3,"z":0.4,"ry":-0.2,"act":"smile"}],
-   "line":{"who":"jane","text":"Don't you worry, dear. Nurse Jane will take good care of you."}},
-  {"set":"ward","cam":"bed","chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"jane","x":-1.5,"z":-3.0,"ry":-1.2,"act":"idle"}],
-   "line":{"who":"nar","text":"Patients called her Jolly Jane. Always smiling. Always kind."}},
-  {"set":"ward","cam":"ward","flick":true,"chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"pat2","x":2.8,"z":-5.8,"ry":0,"act":"lie"}],
-   "line":{"who":"nar","text":"But on the nights she worked, something strange kept happening. Some of her patients grew worse."}},
-  {"set":"ward","cam":"bed","flick":true,"chars":[{"id":"pat","x":-2.8,"z":-2.4,"ry":0,"act":"lie"},{"id":"jane","x":-1.5,"z":-3.0,"ry":-1.2,"act":"idle"}],
-   "line":{"who":"nar","text":"No one suspected the friendly nurse. Not yet."}},
-  {"set":"ward","cam":"close","flick":true,"chars":[{"id":"jane","x":0,"z":0,"ry":0,"act":"smile"}],
-   "line":{"who":"jane","text":"Shh. Sleep now, dear. Just sleep."}},
-  {"set":"ward","cam":"ward","fx":["lightning"],"chars":[{"id":"jane","x":0,"z":0,"ry":0,"act":"idle"}],
-   "line":{"who":"nar","text":"Years later, she would confess to thirty one murders. This is the true story of Jane Toppan."}},
-  {"set":"ward","cam":"ward","card":{"h":"WHY DID NO ONE STOP HER?","p":"Tell me in the comments 👇","f":"Part 2 coming next"},"chars":[],
-   "line":{"who":"nar","text":"Why did no one stop her? Tell me in the comments. Part two is next."}}
+  {
+   "set": "ward",
+   "cam": "ward",
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    },
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    },
+    {
+     "id": "anna",
+     "x": 2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "This is based on the real story of Jane Toppan. A nurse everyone loved."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "title": "CAMBRIDGE, MASSACHUSETTS \u00b7 1885",
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": -1.5,
+     "ry": 0,
+     "act": "walk"
+    },
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    },
+    {
+     "id": "anna",
+     "x": 2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    }
+   ],
+   "hold": 1.2,
+   "line": {
+    "who": "old",
+    "text": "Nurse? I can't sleep."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "over",
+   "chars": [
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    },
+    {
+     "id": "jane",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane",
+    "text": "Don't you worry, dear. Nurse Jane is here."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "over",
+   "chars": [
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    },
+    {
+     "id": "jane",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "tuck"
+    }
+   ],
+   "line": {
+    "who": "old",
+    "text": "Everyone says you're the kindest nurse here."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane",
+    "text": "They call me Jolly Jane."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "title": "THE NEXT MORNING",
+   "chars": [
+    {
+     "id": "doc",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "think"
+    },
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "sick"
+    },
+    {
+     "id": "jane",
+     "x": 0.6,
+     "z": -1.0,
+     "ry": -0.3,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "doc",
+    "text": "Strange. He was getting better yesterday."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "two",
+   "chars": [
+    {
+     "id": "doc",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "jane",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "jane",
+    "text": "Poor man. I'll sit with him tonight, doctor."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "flick": true,
+   "title": "THAT NIGHT",
+   "chars": [
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "anna",
+     "x": 2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "lie"
+    },
+    {
+     "id": "jane",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "give",
+     "prop": "cup"
+    }
+   ],
+   "line": {
+    "who": "jane",
+    "text": "Drink this, dear. It will help you sleep."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "flick": true,
+   "chars": [
+    {
+     "id": "old",
+     "x": -2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "sleep"
+    },
+    {
+     "id": "anna",
+     "x": 2.8,
+     "z": -2.4,
+     "ry": 0,
+     "act": "peek"
+    },
+    {
+     "id": "jane",
+     "x": -1.6,
+     "z": -4.5,
+     "ry": -0.8,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "anna",
+    "text": "Why is she always at his bed at night?"
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "face",
+   "flick": true,
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": 0,
+     "ry": -1.6,
+     "act": "idle",
+     "turn": 0.6
+    }
+   ],
+   "hold": 1.0,
+   "line": {
+    "who": "jane",
+    "text": "Shh. Sleep now. Everyone sleep."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "fx": [
+    "lightning"
+   ],
+   "chars": [
+    {
+     "id": "jane",
+     "x": 0,
+     "z": -1,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Years later, she would confess to thirty one murders."
+   }
+  },
+  {
+   "set": "ward",
+   "cam": "ward",
+   "card": {
+    "h": "WOULD YOU TELL ANYONE?",
+    "p": "Comment below \ud83d\udc47",
+    "f": "Part 2 next"
+   },
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Would you have told anyone? Part two is next."
+   }
+  }
  ]
 }
