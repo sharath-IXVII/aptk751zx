@@ -1,0 +1,102 @@
+2026-11-14 10:03:29,432 INFO Already scheduled: ['2026-11-09T12:00:00+05:30', '2026-11-09T15:00:00+05:30', '2026-11-09T18:00:00+05:30', '2026-11-10T12:00:00+05:30', '2026-11-10T15:00:00+05:30', '2026-11-10T18:00:00+05:30', '2026-11-11T12:00:00+05:30', '2026-11-11T18:00:00+05:30', '2026-11-12T12:00:00+05:30', '2026-11-12T18:00:00+05:30', '2026-11-13T12:00:00+05:30', '2026-11-13T18:00:00+05:30', '2026-11-14T12:00:00+05:30', '2026-11-14T18:00:00+05:30', '2026-11-15T12:00:00+05:30', '2026-11-15T18:00:00+05:30', '2026-11-16T12:00:00+05:30', '2026-11-16T18:00:00+05:30', '2026-11-17T12:00:00+05:30', '2026-11-17T18:00:00+05:30', '2026-11-18T12:00:00+05:30', '2026-11-18T18:00:00+05:30', '2026-11-19T12:00:00+05:30', '2026-11-19T18:00:00+05:30', '2026-11-20T12:00:00+05:30', '2026-11-20T18:00:00+05:30', '2026-11-21T12:00:00+05:30']
+2026-11-14 10:03:31,188 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 10:03:31,188 INFO News story: Microsoft outage affects Outlook, Teams and other services globally. Company says no ETA yet on full recovery. (search 'Microsoft outage status')
+2026-11-14 10:03:33,567 INFO News research: 22 headlines, 4 full articles
+2026-11-14 10:03:44,280 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 10:03:47,019 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 10:03:47,126 INFO People search for: microsoft outage status
+2026-11-14 10:03:47,833 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 10:03:47,833 WARNING Polished title has numbers not in the video (100) - keeping the original: Microsoft 365 Down: Why 100k Users Lost Access
+2026-11-14 10:03:47,834 INFO YouTube title: Microsoft Outage: Why Services Are Down and When They Will Be Fixed
+2026-11-14 10:03:49,324 INFO Created notebook b4c60fcf-2650-4765-8f2d-b8091e3fdcb2
+2026-11-14 10:03:53,474 INFO Script added as source
+2026-11-14 10:03:57,666 INFO Started cinematic video generation (task aee4739a-73a3-46a9-bb31-c94e29eff1d0)
+2026-11-14 10:03:57,666 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-14 10:29:04,174 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-14 10:29:07,827 INFO Started NotebookLM Short (task ed51d951-a475-4eea-9330-34cc3ac27761)
+2026-11-14 10:38:37,789 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-14 10:38:40,981 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-14 10:38:42,696 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-14 10:38:43,701 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-14 10:39:02,078 INFO Watermark removal: 2%
+2026-11-14 10:39:07,085 INFO Watermark removal: 4%
+2026-11-14 10:39:12,092 INFO Watermark removal: 6%
+2026-11-14 10:39:17,098 INFO Watermark removal: 8%
+2026-11-14 10:39:22,104 INFO Watermark removal: 11%
+2026-11-14 10:39:27,110 INFO Watermark removal: 14%
+2026-11-14 10:39:32,115 INFO Watermark removal: 17%
+2026-11-14 10:39:37,121 INFO Watermark removal: 20%
+2026-11-14 10:39:42,127 INFO Watermark removal: 23%
+2026-11-14 10:39:47,134 INFO Watermark removal: 26%
+2026-11-14 10:39:52,455 INFO Watermark removal: 28%
+2026-11-14 10:39:57,462 INFO Watermark removal: 29%
+2026-11-14 10:40:02,468 INFO Watermark removal: 32%
+2026-11-14 10:40:07,473 INFO Watermark removal: 35%
+2026-11-14 10:40:12,480 INFO Watermark removal: 38%
+2026-11-14 10:40:17,487 INFO Watermark removal: 40%
+2026-11-14 10:40:22,493 INFO Watermark removal: 43%
+2026-11-14 10:40:27,499 INFO Watermark removal: 46%
+2026-11-14 10:40:32,505 INFO Watermark removal: 49%
+2026-11-14 10:40:37,511 INFO Watermark removal: 52%
+2026-11-14 10:40:42,518 INFO Watermark removal: 55%
+2026-11-14 10:40:47,524 INFO Watermark removal: 57%
+2026-11-14 10:40:52,842 INFO Watermark removal: 61%
+2026-11-14 10:40:57,848 INFO Watermark removal: 64%
+2026-11-14 10:41:02,854 INFO Watermark removal: 67%
+2026-11-14 10:41:07,859 INFO Watermark removal: 69%
+2026-11-14 10:41:12,865 INFO Watermark removal: 70%
+2026-11-14 10:41:17,871 INFO Watermark removal: 72%
+2026-11-14 10:41:22,877 INFO Watermark removal: 74%
+2026-11-14 10:41:27,882 INFO Watermark removal: 77%
+2026-11-14 10:41:32,889 INFO Watermark removal: 80%
+2026-11-14 10:41:37,894 INFO Watermark removal: 83%
+2026-11-14 10:41:42,901 INFO Watermark removal: 85%
+2026-11-14 10:41:47,907 INFO Watermark removal: 86%
+2026-11-14 10:41:53,256 INFO Watermark removal: 89%
+2026-11-14 10:41:58,264 INFO Watermark removal: 91%
+2026-11-14 10:42:03,270 INFO Watermark removal: 93%
+2026-11-14 10:42:08,275 INFO Watermark removal: 94%
+2026-11-14 10:42:13,281 INFO Watermark removal: 97%
+2026-11-14 10:42:18,286 INFO Clicking 'Download Clean Video'
+2026-11-14 10:42:26,350 INFO Downloaded clean video after 222s
+2026-11-14 10:42:26,511 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 219.683991, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 222.725805, 'has_audio': True})
+2026-11-14 10:42:26,558 INFO Adding channel name watermark: GetYr_ENT
+2026-11-14 10:44:16,098 INFO Added intro + video_final_main + outro
+2026-11-14 10:44:16,098 INFO Edited video saved to output/video_final.mp4
+2026-11-14 10:44:16,237 INFO Thumbnail candidate at 0.5s: detail 13.9
+2026-11-14 10:44:16,380 INFO Thumbnail candidate at 1.0s: detail 13.9
+2026-11-14 10:44:16,528 INFO Thumbnail candidate at 1.5s: detail 13.9
+2026-11-14 10:44:16,682 INFO Thumbnail candidate at 2.0s: detail 13.9
+2026-11-14 10:44:16,844 INFO Thumbnail candidate at 2.5s: detail 13.9
+2026-11-14 10:44:17,019 INFO Thumbnail candidate at 3.0s: detail 13.9
+2026-11-14 10:44:17,200 INFO Thumbnail candidate at 3.5s: detail 13.9
+2026-11-14 10:44:17,384 INFO Thumbnail candidate at 4.0s: detail 13.9
+2026-11-14 10:44:17,585 INFO Thumbnail candidate at 5.0s: detail 13.9
+2026-11-14 10:44:17,633 INFO Thumbnail taken from the video at 2.0s -> output/thumbnail.jpg
+2026-11-14 10:44:19,284 INFO Upload 28%
+2026-11-14 10:44:19,422 INFO Upload 57%
+2026-11-14 10:44:19,558 INFO Upload 85%
+2026-11-14 10:44:20,172 INFO Uploaded: https://youtu.be/bDpZVxkujX0 (public)
+2026-11-14 10:44:22,421 INFO Thumbnail set
+2026-11-14 10:44:25,423 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-14 10:44:27,179 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-14 10:44:28,184 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-14 10:44:31,258 INFO Watermark removal: 0%
+2026-11-14 10:44:36,847 INFO Watermark removal: 11%
+2026-11-14 10:44:41,853 INFO Watermark removal: 21%
+2026-11-14 10:44:46,859 INFO Watermark removal: 31%
+2026-11-14 10:44:51,864 INFO Watermark removal: 43%
+2026-11-14 10:44:56,870 INFO Watermark removal: 54%
+2026-11-14 10:45:01,876 INFO Watermark removal: 65%
+2026-11-14 10:45:06,883 INFO Watermark removal: 75%
+2026-11-14 10:45:11,889 INFO Watermark removal: 86%
+2026-11-14 10:45:16,893 INFO Clicking 'Download Clean Video'
+2026-11-14 10:45:24,937 INFO Downloaded clean video after 56s
+2026-11-14 10:45:25,114 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 57.748027, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 60.789841, 'has_audio': True})
+2026-11-14 10:45:36,242 INFO Using NotebookLM's Short (watermark removed)
+2026-11-14 10:45:37,736 INFO Uploaded: https://youtu.be/H8iCy82xZbk (public)
+2026-11-14 10:45:37,738 INFO Short uploaded: https://youtu.be/H8iCy82xZbk
+2026-11-14 10:46:36,584 WARNING Instagram direct upload failed: Instagram upload failed (400): {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} - trying the public-link method
+2026-11-14 10:47:32,363 INFO Instagram Reel posted via link (id 18132451657785107)
+2026-11-14 10:47:33,750 INFO Done: Microsoft Outage: Why Services Are Down and When They Will Be Fixed
+2026-11-14 10:47:36,625 INFO Deleted old NotebookLM notebook b4c60fcf-2650-4765-8f2d-b8091e3fdcb2
