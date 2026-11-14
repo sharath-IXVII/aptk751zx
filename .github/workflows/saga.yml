@@ -35,6 +35,7 @@ jobs:
           pip install -q edge-tts "kokoro>=0.9.4" soundfile
           python voice.py "episodes/${{ steps.ep.outputs.ep }}" public props.json
           npx remotion render src/index.ts Short out/short.mp4 --props=props_short.json --concurrency=4 --crf=18
+          ffmpeg -y -loglevel error -i out/short.mp4 -i public/music_short.wav -filter_complex "[1:a]volume=0.55[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]" -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k out/mixed.mp4 && mv out/mixed.mp4 out/short.mp4
           d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/short.mp4); echo "duration $d s"
           if python -c "import sys; sys.exit(0 if float('$d') > 59 else 1)"; then
             r=$(python -c "print(min(1.25, float('$d')/58))")
