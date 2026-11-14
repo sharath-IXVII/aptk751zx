@@ -1,0 +1,70 @@
+CAST peace | Charles Peace | m | rich | grey
+CAST katherine | Katherine Dyson | f | plain | brown
+CAST arthur | Arthur Dyson | m | rich | brown | beard
+CAST constable | a police constable | m | police | black
+CAST neighbour | a neighbour | f | plain | blonde
+CAST guard | a prison guard | m | police | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Violinist
+PART
+street establish > nar: Sheffield, the 1870s. Charles Peace. A small man who plays the violin. [SHEFFIELD · 1870s]
+home two neighbour:smile,peace:smile > neighbour: Such lovely music, Mr Peace.
+home face peace:smile > peace: I sell picture frames. And I play a little.
+home face peace > peace: And I can change my face. Watch.
+home establish > nar: He could twist his face so much that people didn't recognise him.
+home establish > nar: Why would a harmless man need to change his face?
+# TITLE 2: The Burglar
+PART
+home establish > nar: Previously: Charles Peace seemed harmless, a violinist who sold picture frames.
+street face peace > peace: At night, I go to work.
+home establish > nar: Charles Peace was a master burglar. He carried his tools in a violin case.
+street two constable:think,neighbour > constable: Another house robbed. No one saw a thing.
+street establish > nar: How long can a double life last?
+# TITLE 3: Obsession
+PART
+street establish > nar: Previously: Charles Peace lived a double life as a master burglar.
+home two katherine:think,peace > peace: Mrs Dyson, you're the loveliest woman in Sheffield.
+home two arthur:cross,peace > arthur: Stay away from my wife, Peace!
+home face peace:cross > peace: Nobody tells Charles Peace what to do.
+home establish > nar: Peace became obsessed with his neighbour's wife, Katherine Dyson.
+home establish > nar: What would the Dysons do?
+# TITLE 4: The Shot
+PART
+home establish > nar: Previously: Peace became obsessed with his neighbour's wife.
+street two arthur,katherine:scared > katherine: Arthur, we've moved house. And he's found us again! [BANNER CROSS · NOVEMBER 1876]
+street face peace:cross > peace: You can't hide from me.
+street establish > nar: In a quarrel, Peace shot Arthur Dyson dead.
+street face katherine:scared > katherine: Murderer!
+street establish > nar: Peace vanished.
+street establish > nar: Where would he go?
+# TITLE 5: The Gentleman
+PART
+street establish > nar: Previously: Peace shot Arthur Dyson and vanished.
+home face peace:smile > peace: Mr Thompson. A respectable gentleman in Peckham. [LONDON · 1877]
+home two neighbour:smile,peace:smile > neighbour: Such a polite gentleman. He even has a pet parrot.
+street establish > nar: In London, Peace lived as a gentleman by day. By night, he burgled rich houses.
+street establish > nar: Will London catch him?
+# TITLE 6: Caught in the Act
+PART
+street establish > nar: Previously: Peace lived as a gentleman in London while burgling at night.
+street two constable:point,peace > constable: Stop! Thief! [BLACKHEATH · OCTOBER 1878]
+street establish > nar: A constable caught him in the middle of a burglary. There was a struggle and a shot, but the officer held on.
+street two constable:point,peace:cuffed > constable: Got you!
+street face peace:smile > peace: You've caught Mr Thompson. Nobody important.
+street establish > nar: Will they discover who he really is?
+# TITLE 7: Out of the Window
+PART
+street establish > nar: Previously: a London constable caught Peace during a burglary.
+home two guard,peace:cuffed > guard: Your real name is Charles Peace. You're wanted in Sheffield for murder. [JANUARY 1879]
+home face peace > peace: Then take me to Sheffield.
+street walk peace > nar: On the train to his trial, Peace threw himself out of the window.
+street two guard:scared,constable > guard: He jumped! He's on the tracks!
+street establish > nar: Will he get away?
+# TITLE 8: The Last Words
+PART
+street establish > nar: Previously: Peace jumped from a moving train, trying to escape.
+street face constable > constable: Badly hurt. Unconscious. He's not going anywhere. [1879]
+court court judge,peace > judge: Charles Peace, guilty of murder.
+prison establish > nar: Charles Peace was hanged in February 1879.
+prison establish > nar: Before he died, he confessed to another killing. An innocent man had been jailed for it. He was freed.
+prison establish > nar: Was Charles Peace a monster, or a clever rogue?

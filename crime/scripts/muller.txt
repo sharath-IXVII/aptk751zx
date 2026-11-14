@@ -1,0 +1,57 @@
+CAST briggs | Thomas Briggs | m | rich | white | beard
+CAST muller | Franz Müller | m | worker | blonde
+CAST passenger | a passenger | m | rich | brown
+CAST cabman | a cab driver | m | worker | black | beard
+CAST daughter | the cabman's daughter | f | plain | blonde
+CAST tanner | Inspector Richard Tanner | m | detective | grey | beard
+CAST judge | the judge | m | judge | white
+# TITLE 1: First Class
+PART
+street establish > nar: London, July 1864. Steam trains. Compartments with no corridors. [LONDON · JULY 1864]
+street walk briggs > briggs: Home to Hackney. A quiet first-class compartment. Lovely.
+street face briggs:smile > briggs: Nobody can disturb you in here.
+street establish > nar: In those days, once a train left the station, nobody could reach you. And you couldn't reach anyone.
+street establish > nar: Why does that matter?
+# TITLE 2: Blood in the Carriage
+PART
+street establish > nar: Previously: banker Thomas Briggs boarded a train in a closed first-class compartment.
+street two passenger:scared,tanner > passenger: The compartment was empty. But blood everywhere. On the seats. On the window. [9 JULY 1864]
+street establish > nar: Thomas Briggs was found beside the tracks. He died soon after.
+street face tanner:think > tanner: The first murder on a British railway.
+street establish > nar: Who do you think did it?
+# TITLE 3: The Wrong Hat
+PART
+street establish > nar: Previously: Thomas Briggs was attacked on a train and died.
+home two tanner:think,passenger > tanner: His gold watch and chain are missing.
+home face tanner > tanner: And this hat left in the carriage. It isn't his. A cheap hat.
+home face tanner:think > tanner: The killer took Briggs's hat by mistake. Or on purpose.
+home establish > nar: A hat. A missing watch.
+home establish > nar: How would you use those clues?
+# TITLE 4: The Jeweller's Box
+PART
+home establish > nar: Previously: police found a hat that wasn't Briggs's, and his gold watch was missing.
+home two daughter:smile,cabman > daughter: A German tailor gave me this little jeweller's box. His name is Franz Müller.
+home face cabman:scared > cabman: Müller... That's the name on the box from the jeweller where the chain was swapped!
+home two cabman:point,tanner > cabman: And he had a hat just like that one. I bought it for him myself.
+home establish > nar: Where do you think Müller was now?
+# TITLE 5: The Slow Ship
+PART
+home establish > nar: Previously: a cab driver linked the hat and a jeweller's box to tailor Franz Müller.
+dock walk muller > nar: Franz Müller had already sailed for New York. On a slow sailing ship.
+dock two tanner:point,cabman > tanner: Then we take a steamship. A fast one. We'll be waiting when he lands.
+dock establish > nar: A race across the Atlantic began.
+dock establish > nar: Who would reach New York first?
+# TITLE 6: Waiting at the Dock
+PART
+dock establish > nar: Previously: detectives raced Müller across the Atlantic on a faster ship.
+dock two tanner,muller > tanner: Franz Müller? Welcome to New York. [NEW YORK · AUGUST 1864]
+dock face tanner:think > tanner: And what's in your bag? Mr Briggs's gold watch. And his hat.
+dock two tanner:point,muller:cuffed > tanner: You're coming back to London.
+dock establish > nar: Will the evidence be enough?
+# TITLE 7: Communication Cords
+PART
+dock establish > nar: Previously: detectives arrested Müller in New York with Briggs's watch and hat.
+court court judge,muller > judge: Franz Müller, guilty of murder. [OLD BAILEY · 1864]
+street establish > nar: Müller was hanged in November 1864.
+street establish > nar: After his crime, railways added communication cords and windows between compartments.
+street establish > nar: Do you feel safe on trains today?

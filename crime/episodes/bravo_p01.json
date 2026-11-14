@@ -1,0 +1,180 @@
+{
+ "key": "bravo_p01",
+ "yt": {
+  "title": "The Scandal | The Bravo Mystery (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: The Bravo Mystery, The Priory, Balham, London, 1876. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the bravo mystery"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "florence": {
+   "name": "Florence Bravo",
+   "skin": "#b9774a",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "charles": {
+   "name": "Charles Bravo",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "cox": {
+   "name": "Jane Cox",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "gully": {
+   "name": "Dr James Gully",
+   "skin": "#e0aa84",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#e0e0e0",
+   "voice": "am_eric",
+   "beard": true,
+   "glasses": true
+  },
+  "doctor": {
+   "name": "the doctor",
+   "skin": "#b9774a",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "coroner": {
+   "name": "the coroner",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BRAVO MYSTERY",
+    "years": "LONDON · 1876",
+    "crime": "WHO POISONED CHARLES?",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "London, the 1870s. Florence, a rich young widow."
+   },
+   "title": "LONDON · 1870S"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "florence",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "gully",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "gully",
+    "text": "My dear Florence. People are talking about us."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "florence",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "florence",
+    "text": "Let them talk, James."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "cox",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "cox",
+    "text": "An affair with a married doctor, more than thirty years older. Society will never forgive her."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Florence had a scandalous affair with Dr James Gully."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT WOULD SOCIETY DO TO HER?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What would society do to her? Part 2 is next."
+   }
+  }
+ ]
+}

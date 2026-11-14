@@ -1,0 +1,171 @@
+{
+ "key": "muller_p05",
+ "yt": {
+  "title": "The Slow Ship | The First Railway Murder (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: The First Railway Murder, London and New York, 1864. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the first railway murder"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "briggs": {
+   "name": "Thomas Briggs",
+   "skin": "#e0aa84",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "muller": {
+   "name": "Franz Müller",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "am_eric"
+  },
+  "passenger": {
+   "name": "a passenger",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "cabman": {
+   "name": "a cab driver",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "daughter": {
+   "name": "the cabman's daughter",
+   "skin": "#d0a07c",
+   "cloth": "#3a5a4a",
+   "cloth2": "#3a5a4a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "tanner": {
+   "name": "Inspector Richard Tanner",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "beard": true,
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE FIRST RAILWAY MURDER",
+    "years": "LONDON · 1864",
+    "crime": "CAUGHT BY A HAT",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: a cab driver linked the hat and a jeweller's box to tailor Franz Müller."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "muller",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Franz Müller had already sailed for New York. On a slow sailing ship."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "tanner",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "cabman",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "tanner",
+    "text": "Then we take a steamship. A fast one. We'll be waiting when he lands."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "A race across the Atlantic began."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO WOULD REACH NEW YORK FIRST?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who would reach New York first? Part 6 is next."
+   }
+  }
+ ]
+}

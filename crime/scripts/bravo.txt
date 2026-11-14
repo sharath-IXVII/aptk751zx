@@ -1,0 +1,54 @@
+CAST florence | Florence Bravo | f | rich | blonde
+CAST charles | Charles Bravo | m | rich | brown
+CAST cox | Jane Cox | f | plain | grey
+CAST gully | Dr James Gully | m | doctor | white | beard
+CAST doctor | the doctor | m | doctor | grey
+CAST coroner | the coroner | m | judge | grey
+# TITLE 1: The Scandal
+PART
+home establish > nar: London, the 1870s. Florence, a rich young widow. [LONDON · 1870s]
+home two florence:smile,gully:smile > gully: My dear Florence. People are talking about us.
+home face florence:smile > florence: Let them talk, James.
+home face cox:think > cox: An affair with a married doctor, more than thirty years older. Society will never forgive her.
+home establish > nar: Florence had a scandalous affair with Dr James Gully.
+home establish > nar: What would society do to her?
+# TITLE 2: The New Husband
+PART
+home establish > nar: Previously: wealthy widow Florence had a scandalous affair with an older doctor.
+home two florence:smile,charles:smile > charles: Charles Bravo. Barrister. Will you marry me, Florence? [1875]
+home two florence,charles > charles: Of course, your money becomes mine. That's the law.
+home face charles:cross > charles: And your companion, Mrs Cox, costs too much. She must go.
+home face cox:scared > cox: Go? Where would I go?
+home establish > nar: Would you marry Charles?
+# TITLE 3: The Scream
+PART
+home establish > nar: Previously: Florence married Charles Bravo, a controlling man.
+home bed charles:sleep,florence > nar: The Priory, Balham. A quiet April night. [18 APRIL 1876]
+home face charles:scared > charles: Florence! Florence! Hot water!
+home two cox:scared,florence:scared > cox: He's being sick! Get the doctors!
+home establish > nar: Charles Bravo had swallowed poison.
+home establish > nar: Who do you think gave it to him?
+# TITLE 4: Three Days
+PART
+home establish > nar: Previously: Charles Bravo screamed for help in the night. He had been poisoned.
+home bed charles:sick,doctor > doctor: Antimony. A poison. What did you take, Mr Bravo?
+home bed charles:sick,doctor > charles: Only laudanum. For my teeth. Nothing else.
+home establish > nar: After three days of agony, Charles Bravo died.
+home face florence:cry > florence: Charles!
+home establish > nar: Did Charles poison himself? Or did someone else?
+# TITLE 5: Two Inquests
+PART
+home establish > nar: Previously: Charles Bravo died of antimony poisoning.
+court two coroner,cox > coroner: Mrs Cox. What did Mr Bravo say that night? [1876]
+court face cox > cox: He said: 'I've taken poison. Don't tell Florence.'
+court face florence:scared > florence: Why didn't you tell anyone that before?
+court face coroner > coroner: Wilful murder. By person or persons unknown.
+court establish > nar: Who do you think did it?
+# TITLE 6: Unsolved
+PART
+court establish > nar: Previously: the inquest ruled it was murder by someone unknown.
+home face cox > cox: I had my reasons to hate him.
+home face gully > gully: And I had mine.
+home face florence > florence: And so did I.
+home establish > nar: No one was ever charged. Florence died two years later.
+home establish > nar: Florence? Mrs Cox? Dr Gully? Or Charles himself? What do you think?
