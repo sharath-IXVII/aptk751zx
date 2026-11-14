@@ -1,0 +1,165 @@
+{
+ "key": "bentley_p03",
+ "yt": {
+  "title": "Let Him Have It | Derek Bentley (True Story) Part 3 #shorts",
+  "description": "Part 3 of 7: Derek Bentley, Croydon, England, 1952-1953. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "derek bentley"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "derek": {
+   "name": "Derek Bentley",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "chris": {
+   "name": "Christopher Craig",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "fairfax": {
+   "name": "Detective Sergeant Fairfax",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "miles": {
+   "name": "PC Sidney Miles",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "iris": {
+   "name": "Iris Bentley",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DEREK BENTLEY",
+    "years": "CROYDON · 1952",
+    "crime": "'LET HIM HAVE IT'",
+    "part": "PART 3 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Derek was caught by police. Chris was still free, with a gun."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "derek",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "According to police, Derek then shouted: 'Let him have it, Chris.'"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "fairfax",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "fairfax",
+    "text": "Did he mean shoot him? Or give him the gun?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Derek later denied saying it at all."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Those five words would decide his fate."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HE MEANT?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think he meant? Part 4 is next."
+   }
+  }
+ ]
+}

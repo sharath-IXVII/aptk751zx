@@ -1,0 +1,81 @@
+CAST christie | John Christie | m | plain | grey
+CAST ethel | Ethel Christie | f | plain | brown
+CAST evans | Timothy Evans | m | worker | black
+CAST beryl | Beryl Evans | f | plain | blonde
+CAST tenant | a new tenant | m | worker | brown
+CAST police | a police officer | m | police | black
+CAST detective | a detective | m | detective | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Quiet Neighbour
+PART
+street establish > nar: 10 Rillington Place, London. A shabby little house in a dead-end street. [NOTTING HILL · 1948]
+home two christie:smile,ethel > christie: Mind the stairs, Ethel. They're so steep.
+home face christie:smile > christie: I was a special constable in the war, you know. People trust me.
+home two ethel:think,christie > ethel: The new couple upstairs seem nice, Reg.
+home establish > nar: John Christie. Polite. Quiet. Softly spoken.
+home establish > nar: Would you trust your neighbour?
+# TITLE 2: Upstairs
+PART
+home establish > nar: Previously: polite John Christie lived on the ground floor of 10 Rillington Place.
+home two evans:smile,beryl:smile > beryl: A home of our own, Tim. And our baby Geraldine.
+home two evans,beryl:think > evans: Money's tight, Beryl. And another baby on the way.
+home two christie:smile,beryl > christie: If you ever need help, Mrs Evans, I know about medicine.
+home face beryl:think > beryl: Thank you, Mr Christie.
+home establish > nar: Should Beryl accept his help?
+# TITLE 3: Gone
+PART
+home establish > nar: Previously: young Timothy and Beryl Evans lived upstairs with their baby.
+home two christie,evans:scared > christie: Your wife's gone, Tim. And the baby's gone to friends. Best you go away for a while. [NOVEMBER 1949]
+street walk evans > nar: Beryl and baby Geraldine disappeared.
+home two evans:scared,police > evans: I want to give myself up. My wife is dead. [WALES · 30 NOVEMBER 1949]
+home face police:think > police: Tell us what happened, Mr Evans.
+home establish > nar: What do you think happened to Beryl?
+# TITLE 4: The Star Witness
+PART
+home establish > nar: Previously: Timothy Evans walked into a police station and said his wife was dead.
+home two evans:scared,detective > evans: I... I don't know. First I said one thing. Then another.
+home two detective:point,evans:cuffed > detective: We found your wife and baby at Rillington Place. You're under arrest.
+court two christie,judge > christie: I heard nothing unusual, my lord. Mr Evans had a temper.
+court face evans:scared > evans: It was Christie! Christie did it!
+court establish > nar: Who would the jury believe? The polite former policeman, or the confused young man?
+# TITLE 5: The Wrong Man
+PART
+court establish > nar: Previously: Christie testified against Timothy Evans.
+court court judge,evans > judge: Timothy Evans, guilty of murdering your daughter. [JANUARY 1950]
+prison cell evans:cry > evans: I didn't do it. I didn't do it.
+prison establish > nar: Timothy Evans was hanged in March 1950.
+home face christie:smile > christie: Such a tragedy.
+home establish > nar: Was justice done?
+# TITLE 6: Behind the Wallpaper
+PART
+home establish > nar: Previously: Timothy Evans was hanged for his daughter's murder.
+home establish > nar: March 1953. Christie has moved out. A new tenant moves in. [MARCH 1953]
+home two tenant:think,police > tenant: I wanted to put up a shelf. The kitchen wall sounds hollow.
+home face tenant:scared > tenant: There's a cupboard behind the wallpaper. And... oh God.
+home establish > nar: Behind the papered-over cupboard were hidden remains.
+home establish > nar: What do you think police found next?
+# TITLE 7: More
+PART
+home establish > nar: Previously: a tenant found a hidden cupboard with remains behind the wallpaper.
+home two police:scared,detective > detective: More here. And under the floorboards in the front room.
+home face detective:scared > detective: It's his wife. Ethel Christie.
+home two detective:point,police > detective: And in the garden. Find John Christie. Now.
+home establish > nar: The house of horrors at Rillington Place.
+home establish > nar: Where do you think Christie was?
+# TITLE 8: The Confession
+PART
+home establish > nar: Previously: police found several women's bodies at Rillington Place, including Christie's wife.
+street two police:point,christie:cuffed > police: John Christie? You're under arrest. [PUTNEY · 31 MARCH 1953]
+prison cell christie > christie: Yes. I did it. Many of them.
+prison face detective:scared > detective: And Beryl Evans?
+prison cell christie > christie: Yes. Her too.
+prison establish > nar: Christie was hanged in July 1953.
+prison establish > nar: So what about Timothy Evans?
+# TITLE 9: The Pardon
+PART
+prison establish > nar: Previously: Christie confessed to many murders, including Beryl Evans.
+court face judge:think > judge: An innocent man may have been hanged. [1966]
+court establish > nar: In 1966, Timothy Evans was given a pardon. Sixteen years too late.
+court establish > nar: The case helped end the death penalty in Britain.
+street establish > nar: 10 Rillington Place was later knocked down. The street no longer exists.
+street establish > nar: How should a country make up for hanging an innocent man?

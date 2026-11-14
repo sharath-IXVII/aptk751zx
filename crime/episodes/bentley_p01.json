@@ -1,0 +1,176 @@
+{
+ "key": "bentley_p01",
+ "yt": {
+  "title": "The Roof | Derek Bentley (True Story) Part 1 #shorts",
+  "description": "Part 1 of 7: Derek Bentley, Croydon, England, 1952-1953. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "derek bentley"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "derek": {
+   "name": "Derek Bentley",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "chris": {
+   "name": "Christopher Craig",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "fairfax": {
+   "name": "Detective Sergeant Fairfax",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "miles": {
+   "name": "PC Sidney Miles",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "iris": {
+   "name": "Iris Bentley",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DEREK BENTLEY",
+    "years": "CROYDON · 1952",
+    "crime": "'LET HIM HAVE IT'",
+    "part": "PART 1 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Croydon, November 1952. Two young men climb onto a warehouse roof."
+   },
+   "title": "CROYDON · NOVEMBER 1952"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "chris",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "derek",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "chris",
+    "text": "Come on, Derek. Easy job. Nobody's watching."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "derek",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "derek",
+    "text": "I don't like this, Chris."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Derek Bentley was nineteen. He had learning difficulties and a reading age of a young child."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Christopher Craig was sixteen. And he had a gun."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "SHOULD DEREK HAVE GONE HOME?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Should Derek have gone home? Part 2 is next."
+   }
+  }
+ ]
+}

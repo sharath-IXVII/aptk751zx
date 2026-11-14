@@ -1,0 +1,62 @@
+CAST derek | Derek Bentley | m | plain | brown
+CAST chris | Christopher Craig | m | plain | black
+CAST fairfax | Detective Sergeant Fairfax | m | detective | brown
+CAST miles | PC Sidney Miles | m | police | grey
+CAST iris | Iris Bentley | f | plain | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Roof
+PART
+street establish > nar: Croydon, November 1952. Two young men climb onto a warehouse roof. [CROYDON · NOVEMBER 1952]
+street two chris:smile,derek:scared > chris: Come on, Derek. Easy job. Nobody's watching.
+street face derek:scared > derek: I don't like this, Chris.
+street establish > nar: Derek Bentley was nineteen. He had learning difficulties and a reading age of a young child.
+street establish > nar: Christopher Craig was sixteen. And he had a gun.
+street establish > nar: Should Derek have gone home?
+# TITLE 2: Caught
+PART
+street establish > nar: Previously: Derek Bentley and Christopher Craig climbed onto a warehouse roof to break in.
+street two fairfax:point,derek:cuffed > fairfax: Police! Got you!
+street face derek:scared > derek: Don't hurt me.
+street establish > nar: Derek was caught almost immediately. He was under arrest.
+street face chris:cross > chris: You'll never take me!
+street establish > nar: What would Derek say next?
+# TITLE 3: Let Him Have It
+PART
+street establish > nar: Previously: Derek was caught by police. Chris was still free, with a gun.
+street face derek:scared > nar: According to police, Derek then shouted: 'Let him have it, Chris.'
+street face fairfax:think > fairfax: Did he mean shoot him? Or give him the gun?
+street establish > nar: Derek later denied saying it at all.
+street establish > nar: Those five words would decide his fate.
+street establish > nar: What do you think he meant?
+# TITLE 4: A Policeman Dies
+PART
+street establish > nar: Previously: police say Derek shouted 'Let him have it, Chris.'
+street two miles,fairfax > miles: I'm going up. Stay down, Sergeant.
+street establish > nar: Chris fired. PC Sidney Miles was killed.
+street face chris > chris: I'm only sixteen!
+street establish > nar: Chris jumped from the roof and was caught.
+street establish > nar: Who do you think should be blamed?
+# TITLE 5: Too Young to Hang
+PART
+street establish > nar: Previously: Chris shot and killed PC Sidney Miles.
+court two fairfax,judge > fairfax: Bentley said, 'Let him have it, Chris.' [OLD BAILEY · DECEMBER 1952]
+court court judge,chris > judge: Christopher Craig. You are too young to hang. You'll be detained.
+court court judge,derek > judge: Derek Bentley. You will hang.
+court face derek:scared > derek: But I didn't shoot anyone.
+court establish > nar: Is that fair?
+# TITLE 6: The Protests
+PART
+court establish > nar: Previously: Craig, who fired the shot, was too young to hang. Bentley was sentenced to death.
+street two iris:cry,fairfax > iris: My brother was already under arrest when the shot was fired! [JANUARY 1953]
+street establish > nar: Thousands protested. Members of Parliament begged for mercy.
+prison establish > nar: On 28 January 1953, Derek Bentley was hanged.
+street face iris:cry > iris: I will clear his name. However long it takes.
+street establish > nar: Do you think she managed it?
+# TITLE 7: Forty-Five Years
+PART
+street establish > nar: Previously: Derek Bentley was hanged. His sister Iris vowed to clear his name.
+street face iris > iris: Every year, every letter, every campaign. For Derek.
+street establish > nar: Iris Bentley campaigned for decades.
+court establish > nar: In 1998, the Court of Appeal quashed Derek's conviction. [1998]
+court establish > nar: Iris had died the year before. She never saw it.
+court establish > nar: How should the law treat someone who didn't fire the shot?

@@ -1,0 +1,160 @@
+{
+ "key": "ellis_p03",
+ "yt": {
+  "title": "Easter | Ruth Ellis (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Ruth Ellis, London, 1955. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "ruth ellis"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ruth": {
+   "name": "Ruth Ellis",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "david": {
+   "name": "David Blakely",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "friend": {
+   "name": "a friend",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RUTH ELLIS",
+    "years": "LONDON · 1955",
+    "crime": "THE LAST WOMAN HANGED",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Ruth and David had a stormy, violent relationship."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "friend",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ruth",
+    "text": "He won't answer my calls. His friends say he's not there."
+   },
+   "title": "EASTER 1955"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "ruth",
+    "text": "I know he's there."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "On Easter Sunday 1955, Ruth waited outside the Magdala pub in Hampstead."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK SHE WAS PLANNING?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think she was planning? Part 4 is next."
+   }
+  }
+ ]
+}

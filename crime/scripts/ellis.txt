@@ -1,0 +1,51 @@
+CAST ruth | Ruth Ellis | f | rich | blonde
+CAST david | David Blakely | m | rich | brown
+CAST friend | a friend | f | plain | brown
+CAST police | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Club Manager
+PART
+street establish > nar: London, the 1950s. Ruth Ellis runs a nightclub in Knightsbridge. [LONDON · 1953]
+home two ruth:smile,david:smile > david: David Blakely. Racing driver. Can I buy you a drink?
+home two ruth:smile,david > ruth: I'm the manager, darling. Drinks are on me.
+home face friend:think > friend: Be careful, Ruth. He's trouble.
+home establish > nar: Would you listen to her friend?
+# TITLE 2: Stormy
+PART
+home establish > nar: Previously: club manager Ruth Ellis met racing driver David Blakely.
+home two ruth:cross,david:cross > ruth: Where were you last night?
+home two ruth:cry,david:cross > david: That's none of your business!
+home face friend:scared > friend: Ruth, you've got bruises again.
+home establish > nar: They broke up, made up, and broke up again. Ruth later said he was violent.
+home establish > nar: Why do people stay in relationships like this?
+# TITLE 3: Easter
+PART
+home establish > nar: Previously: Ruth and David had a stormy, violent relationship.
+home two ruth:cry,friend > ruth: He won't answer my calls. His friends say he's not there. [EASTER 1955]
+home face ruth:cross > ruth: I know he's there.
+street walk ruth > nar: On Easter Sunday 1955, Ruth waited outside the Magdala pub in Hampstead.
+street establish > nar: What do you think she was planning?
+# TITLE 4: The Magdala
+PART
+street establish > nar: Previously: Ruth waited outside a pub in Hampstead for David.
+street walk david > nar: David came out of the pub. [10 APRIL 1955]
+street face ruth > nar: Ruth shot him.
+street two police,ruth > ruth: Will you call the police?
+street face police > police: I am the police.
+street establish > nar: Why do you think she didn't run?
+# TITLE 5: Twenty Minutes
+PART
+street establish > nar: Previously: Ruth Ellis shot David Blakely and waited calmly for police.
+court two police,judge > judge: When you fired, what did you intend? [OLD BAILEY · JUNE 1955]
+court face ruth > ruth: It's obvious that when I shot him, I intended to kill him.
+court court judge,ruth > judge: Guilty. The sentence is death.
+court establish > nar: The jury took just twenty minutes.
+court establish > nar: Should she have been shown mercy?
+# TITLE 6: The Last One
+PART
+court establish > nar: Previously: Ruth Ellis was sentenced to death.
+street establish > nar: Thousands signed petitions to spare her life.
+prison establish > nar: On 13 July 1955, Ruth Ellis was hanged. [13 JULY 1955]
+prison establish > nar: She was the last woman executed in Britain.
+prison establish > nar: Public shock helped bring an end to the death penalty.
+prison establish > nar: Should Ruth Ellis have been hanged?

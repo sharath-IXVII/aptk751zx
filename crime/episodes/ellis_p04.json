@@ -1,0 +1,180 @@
+{
+ "key": "ellis_p04",
+ "yt": {
+  "title": "The Magdala | Ruth Ellis (True Story) Part 4 #shorts",
+  "description": "Part 4 of 6: Ruth Ellis, London, 1955. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "ruth ellis"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "ruth": {
+   "name": "Ruth Ellis",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "david": {
+   "name": "David Blakely",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "friend": {
+   "name": "a friend",
+   "skin": "#c99872",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#4a3020",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "police": {
+   "name": "a police officer",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_liam",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "RUTH ELLIS",
+    "years": "LONDON · 1955",
+    "crime": "THE LAST WOMAN HANGED",
+    "part": "PART 4 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Ruth waited outside a pub in Hampstead for David."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "david",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "David came out of the pub."
+   },
+   "title": "10 APRIL 1955",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ruth",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Ruth shot him."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "ruth",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "ruth",
+    "text": "Will you call the police?"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "police",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "I am the police."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DO YOU THINK SHE DIDN'T RUN?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why do you think she didn't run? Part 5 is next."
+   }
+  }
+ ]
+}

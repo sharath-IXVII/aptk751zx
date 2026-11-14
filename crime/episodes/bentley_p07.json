@@ -1,0 +1,155 @@
+{
+ "key": "bentley_p07",
+ "yt": {
+  "title": "Forty-Five Years | Derek Bentley (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: Derek Bentley, Croydon, England, 1952-1953. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "derek bentley"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "derek": {
+   "name": "Derek Bentley",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "chris": {
+   "name": "Christopher Craig",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "fairfax": {
+   "name": "Detective Sergeant Fairfax",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "miles": {
+   "name": "PC Sidney Miles",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "iris": {
+   "name": "Iris Bentley",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DEREK BENTLEY",
+    "years": "CROYDON · 1952",
+    "crime": "'LET HIM HAVE IT'",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Derek Bentley was hanged. His sister Iris vowed to clear his name."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "iris",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "iris",
+    "text": "Every year, every letter, every campaign. For Derek."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Iris Bentley campaigned for decades."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In 1998, the Court of Appeal quashed Derek's conviction."
+   },
+   "title": "1998"
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Iris had died the year before. She never saw it."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "HOW SHOULD THE LAW TREAT SOMEONE WHO DIDN'T FIRE THE SHOT?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "How should the law treat someone who didn't fire the shot?"
+   }
+  }
+ ]
+}

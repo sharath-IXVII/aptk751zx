@@ -1,0 +1,200 @@
+{
+ "key": "bentley_p05",
+ "yt": {
+  "title": "Too Young to Hang | Derek Bentley (True Story) Part 5 #shorts",
+  "description": "Part 5 of 7: Derek Bentley, Croydon, England, 1952-1953. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "derek bentley"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "derek": {
+   "name": "Derek Bentley",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "chris": {
+   "name": "Christopher Craig",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "fairfax": {
+   "name": "Detective Sergeant Fairfax",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "miles": {
+   "name": "PC Sidney Miles",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "iris": {
+   "name": "Iris Bentley",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DEREK BENTLEY",
+    "years": "CROYDON · 1952",
+    "crime": "'LET HIM HAVE IT'",
+    "part": "PART 5 OF 7"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Chris shot and killed PC Sidney Miles."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "fairfax",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "fairfax",
+    "text": "Bentley said, 'Let him have it, Chris.'"
+   },
+   "title": "OLD BAILEY · DECEMBER 1952"
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "chris",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Christopher Craig. You are too young to hang. You'll be detained."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "derek",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Derek Bentley. You will hang."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "derek",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "derek",
+    "text": "But I didn't shoot anyone."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS THAT FAIR?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is that fair? Part 6 is next."
+   }
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "key": "bentley_p06",
+ "yt": {
+  "title": "The Protests | Derek Bentley (True Story) Part 6 #shorts",
+  "description": "Part 6 of 7: Derek Bentley, Croydon, England, 1952-1953. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "derek bentley"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "derek": {
+   "name": "Derek Bentley",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "chris": {
+   "name": "Christopher Craig",
+   "skin": "#c99872",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "fairfax": {
+   "name": "Detective Sergeant Fairfax",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "am_liam",
+   "coat": true,
+   "hat": true
+  },
+  "miles": {
+   "name": "PC Sidney Miles",
+   "skin": "#a86a42",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "iris": {
+   "name": "Iris Bentley",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DEREK BENTLEY",
+    "years": "CROYDON · 1952",
+    "crime": "'LET HIM HAVE IT'",
+    "part": "PART 6 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Craig, who fired the shot, was too young to hang. Bentley was sentenced to death."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "iris",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "fairfax",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "iris",
+    "text": "My brother was already under arrest when the shot was fired!"
+   },
+   "title": "JANUARY 1953"
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Thousands protested. Members of Parliament begged for mercy."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "On 28 January 1953, Derek Bentley was hanged."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "iris",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "iris",
+    "text": "I will clear his name. However long it takes."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU THINK SHE MANAGED IT?",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you think she managed it? Part 7 is next."
+   }
+  }
+ ]
+}
