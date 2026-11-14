@@ -1,0 +1,190 @@
+{
+ "key": "duval_p04",
+ "yt": {
+  "title": "The Tavern | Claude Duval (True Story) Part 4 #shorts",
+  "description": "Part 4 of 5: Claude Duval, England, 1660s-1670. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "claude duval"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "duval": {
+   "name": "Claude Duval",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lady": {
+   "name": "a lady in the coach",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "husband": {
+   "name": "her husband",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "barmaid": {
+   "name": "a tavern girl",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "guard": {
+   "name": "a constable",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CLAUDE DUVAL",
+    "years": "LONDON · 1670",
+    "crime": "THE GENTLEMAN HIGHWAYMAN",
+    "part": "PART 4 OF 5"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: legend says Duval danced with a lady by the roadside."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "barmaid",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "duval",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "duval",
+    "text": "More wine! For everyone!"
+   },
+   "title": "THE HOLE IN THE WALL · LONDON · 1670"
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "guard",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "duval",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cuffed"
+    }
+   ],
+   "line": {
+    "who": "guard",
+    "text": "Claude Duval. You're under arrest."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "duval",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "duval",
+    "text": "Ah. Too much wine."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Caught drunk in a London tavern."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WILL HIS CHARM SAVE HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Will his charm save him? Part 5 is next."
+   }
+  }
+ ]
+}

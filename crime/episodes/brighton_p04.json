@@ -1,0 +1,194 @@
+{
+ "key": "brighton_p04",
+ "yt": {
+  "title": "The Stairs | The Brighton Trunk Murders (True Story) Part 4 #shorts",
+  "description": "Part 4 of 5: The Brighton Trunk Murders, Brighton, England, 1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the brighton trunk murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "porter": {
+   "name": "a station porter",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "police": {
+   "name": "a detective",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "coat": true,
+   "hat": true
+  },
+  "mancini": {
+   "name": "Tony Mancini",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "violette": {
+   "name": "Violette Kaye",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "landlady": {
+   "name": "a landlady",
+   "skin": "#b9774a",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "lawyer": {
+   "name": "Norman Birkett",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BRIGHTON TRUNK MURDERS",
+    "years": "BRIGHTON · 1934",
+    "crime": "TWO TRUNKS, TWO MYSTERIES",
+    "part": "PART 4 OF 5"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Tony Mancini was arrested for Violette Kaye's murder."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "lawyer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "lawyer",
+    "text": "She fell down the stairs. Mancini panicked. That's all."
+   },
+   "title": "LEWES · DECEMBER 1934"
+  },
+  {
+   "set": "court",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "mancini",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "mancini",
+    "text": "I came home and found her dead. I was scared nobody would believe me."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "mancini",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "The jury finds Tony Mancini: not guilty."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He walked free."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "DO YOU BELIEVE HIS STORY?",
+    "p": "Comment below 👇",
+    "f": "Part 5 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Do you believe his story? Part 5 is next."
+   }
+  }
+ ]
+}

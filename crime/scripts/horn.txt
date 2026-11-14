@@ -1,0 +1,50 @@
+CAST horn | Tom Horn | m | worker | brown
+CAST baron | a cattle baron | m | rich | grey | beard
+CAST willie | Willie Nickell | m | plain | blonde
+CAST father | Kels Nickell | m | worker | black | beard
+CAST lefors | Joe LeFors | m | detective | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Scout
+PART
+forest establish > nar: The Wild West. Tom Horn, army scout. He helped track down Geronimo. [ARIZONA · 1880s]
+forest face horn:smile > horn: I know the land. I know how to track a man.
+home two baron,horn > baron: Then work for us, Horn. In Wyoming. As a range detective. [WYOMING · 1890s]
+home face horn > horn: What's the job?
+home establish > nar: What do you think the cattle barons wanted?
+# TITLE 2: The Rifle
+PART
+home establish > nar: Previously: former army scout Tom Horn went to work for Wyoming cattle barons.
+home two baron,horn > baron: Cattle thieves are robbing us blind. Stop them.
+home face horn > horn: I'll stop them.
+forest establish > nar: Rumours spread: suspected cattle thieves were being shot from far away.
+forest establish > nar: Was Horn a detective, or a hired gun?
+# TITLE 3: Willie
+PART
+forest establish > nar: Previously: rumours spread that Tom Horn shot cattle thieves from a distance.
+home two willie:smile,father > willie: I'll open the gate, Pa. [JULY 1901]
+forest walk willie > nar: Fourteen-year-old Willie Nickell went out wearing his father's coat and hat.
+forest establish > nar: He was shot dead near his home.
+home face father:cry > father: My boy! Who would shoot my boy?
+home establish > nar: Was Willie the real target?
+# TITLE 4: The Confession
+PART
+home establish > nar: Previously: fourteen-year-old Willie Nickell was shot near his home.
+home two lefors:smile,horn:smile > lefors: Have another drink, Tom. Tell me about your best shot. [CHEYENNE · JANUARY 1902]
+home face horn:smile > horn: Three hundred yards. Best shot I ever made.
+home establish > nar: Behind a door, a deputy and a stenographer were writing down every word.
+home two lefors:point,horn:cuffed > lefors: Tom Horn. You're under arrest.
+home establish > nar: Was it a real confession, or drunken boasting?
+# TITLE 5: The Trial
+PART
+home establish > nar: Previously: Horn was arrested after a drunken 'confession'.
+court face horn > horn: I was drunk. I was bragging. I never shot that boy. [CHEYENNE · 1902]
+court court judge,horn > judge: Tom Horn, guilty of murder.
+court establish > nar: Many people believed Horn was framed to protect the cattle barons.
+court establish > nar: Do you think Horn was guilty?
+# TITLE 6: One Day Before His Birthday
+PART
+court establish > nar: Previously: Tom Horn was found guilty, though many doubted it.
+prison cell horn > nar: In his cell, Horn braided his own rope. [1903]
+prison face horn > horn: Write my life story for me. Let people know.
+prison establish > nar: Tom Horn was hanged in Cheyenne in November 1903, one day before his 43rd birthday.
+prison establish > nar: Guilty, or a scapegoat for powerful men?

@@ -1,0 +1,52 @@
+CAST adams | Dr John Bodkin Adams | m | doctor | grey
+CAST morrell | Edith Morrell | f | rich | white
+CAST widow | a wealthy patient | f | rich | grey
+CAST nurse | a nurse | f | nurse | brown
+CAST hannam | Herbert Hannam | m | detective | black
+CAST lawyer | the defence lawyer | m | judge | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Popular Doctor
+PART
+street establish > nar: Eastbourne, England. A seaside town full of wealthy retired people. [EASTBOURNE · 1940s]
+home two widow:smile,adams:smile > widow: Dr Adams, you're the only doctor I trust.
+home face adams:smile > adams: I'll always look after you, my dear.
+home establish > nar: Dr John Bodkin Adams had many rich, elderly patients. They adored him.
+home establish > nar: Is that a problem?
+# TITLE 2: The Wills
+PART
+home establish > nar: Previously: Dr Adams was a popular doctor to many wealthy elderly patients.
+home two widow:smile,adams > widow: I've put you in my will, Doctor. My silver. And my car.
+home face adams:smile > adams: You're too kind.
+home establish > nar: Over the years, many patients left him money, cars and valuables.
+home establish > nar: Is it normal for a doctor to receive so much?
+# TITLE 3: Rumours
+PART
+home establish > nar: Previously: many of Dr Adams's patients left him gifts in their wills.
+street two nurse:think,widow > nurse: Some of his patients die not long after changing their wills. [1950s]
+street face widow:scared > widow: People are talking.
+street establish > nar: Rumours spread around Eastbourne.
+street establish > nar: Are rumours enough to accuse someone?
+# TITLE 4: Scotland Yard
+PART
+street establish > nar: Previously: rumours spread about Dr Adams and his patients.
+home two hannam,nurse > hannam: Detective Superintendent Herbert Hannam. Scotland Yard. Tell me about the doctor. [1956]
+home face hannam:think > hannam: Edith Morrell. She died in 1950. He prescribed large amounts of drugs.
+home two hannam:point,adams > hannam: Dr Adams, you're charged with the murder of Edith Morrell.
+home face adams:scared > adams: Easing the passing of a dying person is not wicked. I didn't want to murder anybody.
+home establish > nar: What would the jury decide?
+# TITLE 5: The Nurses' Notebooks
+PART
+home establish > nar: Previously: Dr Adams was charged with the murder of a patient, Edith Morrell.
+court two nurse,lawyer > nurse: The doctor gave her large injections. [OLD BAILEY · 1957]
+court two lawyer:point,nurse:scared > lawyer: Then why do your own notebooks, written at the time, say something different?
+court face nurse:scared > nurse: I... don't remember.
+court court judge,adams > judge: The jury finds Dr John Bodkin Adams: not guilty.
+court establish > nar: Was the jury right?
+# TITLE 6: Still Debated
+PART
+court establish > nar: Previously: Dr Adams was found not guilty.
+court establish > nar: He was later convicted of other offences, including prescription fraud, and struck off.
+home face adams:smile > nar: A few years later, he was allowed to practise again.
+home establish > nar: He died in 1983. He was never convicted of harming any patient.
+home establish > nar: Historians still debate whether he was a killer, or a doctor who eased suffering.
+home establish > nar: What do you think?

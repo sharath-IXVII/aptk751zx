@@ -1,0 +1,173 @@
+{
+ "key": "bodkin_p02",
+ "yt": {
+  "title": "The Wills | Dr. John Bodkin Adams (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: Dr. John Bodkin Adams, Eastbourne, England, 1940s-1957. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "dr. john bodkin adams"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "adams": {
+   "name": "Dr John Bodkin Adams",
+   "skin": "#e0aa84",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "am_adam",
+   "glasses": true
+  },
+  "morrell": {
+   "name": "Edith Morrell",
+   "skin": "#c99872",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#e0e0e0",
+   "voice": "af_bella",
+   "long": true
+  },
+  "widow": {
+   "name": "a wealthy patient",
+   "skin": "#d9a882",
+   "cloth": "#6a4a2a",
+   "cloth2": "#6a4a2a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "nurse": {
+   "name": "a nurse",
+   "skin": "#a86a42",
+   "cloth": "#2a2f45",
+   "cloth2": "#232838",
+   "hair": "#4a3020",
+   "voice": "af_sarah",
+   "long": true,
+   "nurse": true
+  },
+  "hannam": {
+   "name": "Herbert Hannam",
+   "skin": "#c99872",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#1d1d1d",
+   "voice": "am_eric",
+   "coat": true,
+   "hat": true
+  },
+  "lawyer": {
+   "name": "the defence lawyer",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "am_liam",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#d0a07c",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "DR. JOHN BODKIN ADAMS",
+    "years": "EASTBOURNE · 1957",
+    "crime": "THE DOCTOR AND THE WILLS",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Dr Adams was a popular doctor to many wealthy elderly patients."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "widow",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "adams",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "widow",
+    "text": "I've put you in my will, Doctor. My silver. And my car."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "adams",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "adams",
+    "text": "You're too kind."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Over the years, many patients left him money, cars and valuables."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "IS IT NORMAL FOR A DOCTOR TO RECEIVE SO MUCH?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Is it normal for a doctor to receive so much? Part 3 is next."
+   }
+  }
+ ]
+}

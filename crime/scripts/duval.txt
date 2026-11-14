@@ -1,0 +1,43 @@
+CAST duval | Claude Duval | m | rich | brown
+CAST lady | a lady in the coach | f | rich | blonde
+CAST husband | her husband | m | rich | grey
+CAST barmaid | a tavern girl | f | plain | red
+CAST guard | a constable | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The French Servant
+PART
+street establish > nar: England, 1660. King Charles the Second returns to the throne. [ENGLAND · 1660]
+street face duval:smile > duval: Claude Duval. From France. A servant, for now.
+street face duval:think > duval: But servants are poor. And gentlemen ride in coaches full of gold.
+street establish > nar: What do you think he decided to do?
+# TITLE 2: The Gentleman Highwayman
+PART
+street establish > nar: Previously: young Frenchman Claude Duval came to England as a servant.
+forest face duval:smile > duval: Stand and deliver! Please. [1660s]
+forest two husband:scared,duval:smile > duval: Your purse, sir. And may I say, what a beautiful coat.
+forest establish > nar: Duval became a highwayman, famous for fine clothes and perfect manners.
+forest establish > nar: Can a robber be polite?
+# TITLE 3: The Dance
+PART
+forest establish > nar: Previously: Claude Duval became a famously polite highwayman.
+forest two lady:smile,duval:smile > duval: Madame, you play the flageolet beautifully. Will you dance with me?
+forest face husband:scared > husband: Dance? On the road?
+forest two lady:smile,duval:smile > duval: Dance with me, and I'll give back most of your money.
+forest establish > nar: Legend says they danced by the roadside in the moonlight.
+forest establish > nar: Would you dance with a highwayman?
+# TITLE 4: The Tavern
+PART
+forest establish > nar: Previously: legend says Duval danced with a lady by the roadside.
+street two barmaid:smile,duval:smile > duval: More wine! For everyone! [THE HOLE IN THE WALL · LONDON · 1670]
+street two guard:point,duval:cuffed > guard: Claude Duval. You're under arrest.
+street face duval:smile > duval: Ah. Too much wine.
+street establish > nar: Caught drunk in a London tavern.
+street establish > nar: Will his charm save him?
+# TITLE 5: Tyburn
+PART
+street establish > nar: Previously: Duval was arrested drunk in a London tavern.
+court court judge,duval > judge: Claude Duval. Guilty. You will hang. [JANUARY 1670]
+street two lady:cry,barmaid:cry > lady: Please, the king must spare him!
+street establish > nar: Many ladies begged the king for mercy. He refused.
+street establish > nar: Claude Duval was hanged at Tyburn. Crowds of women came to his funeral.
+street establish > nar: Was he a romantic hero, or just a thief with good manners?

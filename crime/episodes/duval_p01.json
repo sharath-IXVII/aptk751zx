@@ -1,0 +1,147 @@
+{
+ "key": "duval_p01",
+ "yt": {
+  "title": "The French Servant | Claude Duval (True Story) Part 1 #shorts",
+  "description": "Part 1 of 5: Claude Duval, England, 1660s-1670. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "claude duval"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "duval": {
+   "name": "Claude Duval",
+   "skin": "#a86a42",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lady": {
+   "name": "a lady in the coach",
+   "skin": "#c99872",
+   "cloth": "#2a2f45",
+   "cloth2": "#2a2f45",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "husband": {
+   "name": "her husband",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric"
+  },
+  "barmaid": {
+   "name": "a tavern girl",
+   "skin": "#c99872",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#a84a22",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "guard": {
+   "name": "a constable",
+   "skin": "#d0a07c",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#1d1d1d",
+   "voice": "am_liam",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#c99872",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_george",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "CLAUDE DUVAL",
+    "years": "LONDON · 1670",
+    "crime": "THE GENTLEMAN HIGHWAYMAN",
+    "part": "PART 1 OF 5"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "England, 1660. King Charles the Second returns to the throne."
+   },
+   "title": "ENGLAND · 1660"
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "duval",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "duval",
+    "text": "Claude Duval. From France. A servant, for now."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "duval",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "duval",
+    "text": "But servants are poor. And gentlemen ride in coaches full of gold."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HE DECIDED TO DO?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think he decided to do? Part 2 is next."
+   }
+  }
+ ]
+}

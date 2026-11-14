@@ -1,0 +1,147 @@
+{
+ "key": "catostreet_p05",
+ "yt": {
+  "title": "A Trap | The Cato Street Conspiracy (True Story) Part 5 #shorts",
+  "description": "Part 5 of 6: The Cato Street Conspiracy, London, 1820. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the cato street conspiracy"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "thistlewood": {
+   "name": "Arthur Thistlewood",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "edwards": {
+   "name": "George Edwards",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "plotter": {
+   "name": "a plotter",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "runner": {
+   "name": "a Bow Street Runner",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE CATO STREET CONSPIRACY",
+    "years": "LONDON · 1820",
+    "crime": "A PLOT TO KILL THE CABINET",
+    "part": "PART 5 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: police raided the hayloft and caught the plotters."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "thistlewood",
+     "x": 0,
+     "z": 0.3,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "thistlewood",
+    "text": "The dinner. The newspaper. It was a trap."
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "thistlewood",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "thistlewood",
+    "text": "And Edwards... Edwards was a spy!"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The dinner had never been planned. It was invented to catch them."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT FAIR TO TRAP THEM LIKE THIS?",
+    "p": "Comment below 👇",
+    "f": "Part 6 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it fair to trap them like this? Part 6 is next."
+   }
+  }
+ ]
+}

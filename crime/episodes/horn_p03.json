@@ -1,0 +1,181 @@
+{
+ "key": "horn_p03",
+ "yt": {
+  "title": "Willie | Tom Horn (True Story) Part 3 #shorts",
+  "description": "Part 3 of 6: Tom Horn, Wyoming, 1890s-1903. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "tom horn"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "horn": {
+   "name": "Tom Horn",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "baron": {
+   "name": "a cattle baron",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "willie": {
+   "name": "Willie Nickell",
+   "skin": "#e6b48e",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "father": {
+   "name": "Kels Nickell",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "lefors": {
+   "name": "Joe LeFors",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "TOM HORN",
+    "years": "WYOMING · 1903",
+    "crime": "THE HIRED GUN",
+    "part": "PART 3 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: rumours spread that Tom Horn shot cattle thieves from a distance."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "willie",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "father",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "willie",
+    "text": "I'll open the gate, Pa."
+   },
+   "title": "JULY 1901"
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [
+    {
+     "id": "willie",
+     "x": 0,
+     "z": -2,
+     "ry": 0,
+     "act": "walk"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "Fourteen-year-old Willie Nickell went out wearing his father's coat and hat."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He was shot dead near his home."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "father",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "father",
+    "text": "My boy! Who would shoot my boy?"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS WILLIE THE REAL TARGET?",
+    "p": "Comment below 👇",
+    "f": "Part 4 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was Willie the real target? Part 4 is next."
+   }
+  }
+ ]
+}

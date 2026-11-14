@@ -1,0 +1,170 @@
+{
+ "key": "horn_p01",
+ "yt": {
+  "title": "The Scout | Tom Horn (True Story) Part 1 #shorts",
+  "description": "Part 1 of 6: Tom Horn, Wyoming, 1890s-1903. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "tom horn"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "horn": {
+   "name": "Tom Horn",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "baron": {
+   "name": "a cattle baron",
+   "skin": "#8a5232",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "willie": {
+   "name": "Willie Nickell",
+   "skin": "#e6b48e",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "am_liam"
+  },
+  "father": {
+   "name": "Kels Nickell",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#1d1d1d",
+   "voice": "bm_george",
+   "beard": true
+  },
+  "lefors": {
+   "name": "Joe LeFors",
+   "skin": "#e0aa84",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "TOM HORN",
+    "years": "WYOMING · 1903",
+    "crime": "THE HIRED GUN",
+    "part": "PART 1 OF 6"
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Wild West. Tom Horn, army scout. He helped track down Geronimo."
+   },
+   "title": "ARIZONA · 1880S"
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "horn",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "horn",
+    "text": "I know the land. I know how to track a man."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "baron",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "horn",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "baron",
+    "text": "Then work for us, Horn. In Wyoming. As a range detective."
+   },
+   "title": "WYOMING · 1890S"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "horn",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "horn",
+    "text": "What's the job?"
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK THE CATTLE BARONS WANTED?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think the cattle barons wanted? Part 2 is next."
+   }
+  }
+ ]
+}

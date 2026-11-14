@@ -1,0 +1,177 @@
+{
+ "key": "brighton_p01",
+ "yt": {
+  "title": "The Left-Luggage Trunk | The Brighton Trunk Murders (True Story) Part 1 #shorts",
+  "description": "Part 1 of 5: The Brighton Trunk Murders, Brighton, England, 1934. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the brighton trunk murders"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "porter": {
+   "name": "a station porter",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "police": {
+   "name": "a detective",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "am_eric",
+   "coat": true,
+   "hat": true
+  },
+  "mancini": {
+   "name": "Tony Mancini",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_liam"
+  },
+  "violette": {
+   "name": "Violette Kaye",
+   "skin": "#e0aa84",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#c8a050",
+   "voice": "af_bella",
+   "long": true
+  },
+  "landlady": {
+   "name": "a landlady",
+   "skin": "#b9774a",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "lawyer": {
+   "name": "Norman Birkett",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#9a9a9a",
+   "voice": "bm_george",
+   "glasses": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#b9774a",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE BRIGHTON TRUNK MURDERS",
+    "years": "BRIGHTON · 1934",
+    "crime": "TWO TRUNKS, TWO MYSTERIES",
+    "part": "PART 1 OF 5"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Brighton railway station. June 1934. A hot summer."
+   },
+   "title": "BRIGHTON · JUNE 1934"
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "porter",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "porter",
+    "text": "That trunk in left luggage. It's been there over a week. And the smell..."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "porter",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "police",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "porter",
+    "text": "Open it. Please, open it."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Inside the trunk were human remains. A woman. No name."
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO DO YOU THINK SHE WAS?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who do you think she was? Part 2 is next."
+   }
+  }
+ ]
+}

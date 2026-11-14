@@ -31,7 +31,7 @@ home establish > nar: How many 'natural' deaths before someone wonders?
 # TITLE 4: Maud
 PART
 home establish > nar: Previously: two women who lived with Chapman died of mysterious illnesses.
-home bed maud:sick,chapman > maud: Mother, I'm so ill. It's like the others. [1902]
+home bed maud:sick,chapman > maud: Mother, I'm so ill. And it keeps getting worse. [1902]
 home two mrsmarsh:scared,doctor > mrsmarsh: Doctor, my daughter gets worse whenever he brings her food.
 home face doctor:think > doctor: I'm not happy with this. Not at all.
 home establish > nar: Will they save Maud in time?

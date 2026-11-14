@@ -1,0 +1,50 @@
+CAST thistlewood | Arthur Thistlewood | m | worker | brown | beard
+CAST edwards | George Edwards | m | plain | black
+CAST plotter | a plotter | m | worker | grey
+CAST runner | a Bow Street Runner | m | police | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: Hungry and Angry
+PART
+street establish > nar: London, 1820. Bread is expensive. Workers are starving. Protesters have been killed. [LONDON · 1820]
+home two thistlewood:cross,plotter > thistlewood: The government doesn't care if we starve.
+home face thistlewood > thistlewood: Then we'll strike at the government itself. The whole cabinet.
+home face plotter:scared > plotter: All of them?
+home establish > nar: Arthur Thistlewood began planning a revolution.
+home establish > nar: Can violence ever fix injustice?
+# TITLE 2: The Helpful Friend
+PART
+home establish > nar: Previously: Arthur Thistlewood planned to strike at the British government.
+home two edwards:smile,thistlewood > edwards: George Edwards. I believe in your cause. I'll help. Money, weapons, anything.
+home face thistlewood:smile > thistlewood: Thank you, friend.
+home two edwards,runner > edwards: They're ready to act, sir. Just as you wanted.
+home establish > nar: George Edwards was secretly a government spy.
+home establish > nar: Why would the government want the plot to go ahead?
+# TITLE 3: The Dinner
+PART
+home establish > nar: Previously: a government spy secretly encouraged the plotters.
+home two edwards:point,thistlewood > edwards: Look! The newspaper. The whole cabinet dining together. Tomorrow night. [22 FEBRUARY 1820]
+home face thistlewood:smile > thistlewood: All in one house. It's our chance.
+home establish > nar: The plotters gathered weapons in a hayloft on Cato Street.
+home establish > nar: Was the dinner real?
+# TITLE 4: The Hayloft
+PART
+home establish > nar: Previously: the plotters gathered weapons in a hayloft on Cato Street.
+home two runner:point,plotter:scared > runner: Bow Street! Nobody move! [CATO STREET · 23 FEBRUARY 1820]
+home establish > nar: In the struggle, a Runner was killed. Thistlewood escaped into the night.
+street two runner:point,thistlewood:cuffed > runner: Arthur Thistlewood. Caught you.
+street establish > nar: How did the police know exactly where to go?
+# TITLE 5: A Trap
+PART
+street establish > nar: Previously: police raided the hayloft and caught the plotters.
+prison cell thistlewood:cross > thistlewood: The dinner. The newspaper. It was a trap.
+prison face thistlewood:cross > thistlewood: And Edwards... Edwards was a spy!
+prison establish > nar: The dinner had never been planned. It was invented to catch them.
+prison establish > nar: Was it fair to trap them like this?
+# TITLE 6: The Last Beheading
+PART
+prison establish > nar: Previously: the plotters discovered the cabinet dinner was a trap.
+court court judge,thistlewood > judge: Guilty of high treason. [MAY 1820]
+street establish > nar: Five plotters were hanged, and then beheaded, in May 1820.
+street establish > nar: They were the last people in Britain sentenced to that punishment.
+street establish > nar: George Edwards, the spy, was quietly sent abroad.
+street establish > nar: Who was more guilty: the plotters, or the spy?

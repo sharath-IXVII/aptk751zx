@@ -1,0 +1,175 @@
+{
+ "key": "catostreet_p02",
+ "yt": {
+  "title": "The Helpful Friend | The Cato Street Conspiracy (True Story) Part 2 #shorts",
+  "description": "Part 2 of 6: The Cato Street Conspiracy, London, 1820. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the cato street conspiracy"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "thistlewood": {
+   "name": "Arthur Thistlewood",
+   "skin": "#b9774a",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "edwards": {
+   "name": "George Edwards",
+   "skin": "#e0aa84",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "plotter": {
+   "name": "a plotter",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "runner": {
+   "name": "a Bow Street Runner",
+   "skin": "#e6b48e",
+   "cloth": "#1e2a4a",
+   "cloth2": "#16203a",
+   "hair": "#4a3020",
+   "voice": "bm_george",
+   "cap": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_lewis",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE CATO STREET CONSPIRACY",
+    "years": "LONDON · 1820",
+    "crime": "A PLOT TO KILL THE CABINET",
+    "part": "PART 2 OF 6"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Arthur Thistlewood planned to strike at the British government."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edwards",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "thistlewood",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edwards",
+    "text": "George Edwards. I believe in your cause. I'll help. Money, weapons, anything."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "thistlewood",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "thistlewood",
+    "text": "Thank you, friend."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "edwards",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "runner",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "edwards",
+    "text": "They're ready to act, sir. Just as you wanted."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "George Edwards was secretly a government spy."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY WOULD THE GOVERNMENT WANT THE PLOT TO GO AHEAD?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why would the government want the plot to go ahead? Part 3 is next."
+   }
+  }
+ ]
+}

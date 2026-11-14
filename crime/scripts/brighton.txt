@@ -1,0 +1,46 @@
+CAST porter | a station porter | m | worker | brown
+CAST police | a detective | m | detective | grey
+CAST mancini | Tony Mancini | m | plain | black
+CAST violette | Violette Kaye | f | rich | blonde
+CAST landlady | a landlady | f | plain | grey
+CAST lawyer | Norman Birkett | m | judge | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Left-Luggage Trunk
+PART
+street establish > nar: Brighton railway station. June 1934. A hot summer. [BRIGHTON · JUNE 1934]
+street face porter:think > porter: That trunk in left luggage. It's been there over a week. And the smell...
+street two porter:scared,police > porter: Open it. Please, open it.
+street establish > nar: Inside the trunk were human remains. A woman. No name.
+street establish > nar: Who do you think she was?
+# TITLE 2: House to House
+PART
+street establish > nar: Previously: a trunk with human remains was found at Brighton station.
+street two police,landlady > police: We're searching every house. Every lodging. Every missing woman. [JULY 1934]
+home face landlady:think > landlady: There's a trunk in Mr Mancini's room. He never opens it.
+home face police:scared > police: Another trunk. Another body.
+home establish > nar: In a lodging house, police found a second trunk, with the body of Violette Kaye.
+home establish > nar: Is it the same killer?
+# TITLE 3: Weeks With a Trunk
+PART
+home establish > nar: Previously: police found a second trunk, with the body of Violette Kaye.
+home two violette:smile,mancini > violette: Tony, you're so young. And so handsome. [MAY 1934]
+home face mancini > mancini: She went to Paris. That's what I told everyone.
+home face landlady:scared > landlady: He kept that trunk in his room for weeks. He even used it as a table.
+home two police:point,mancini:cuffed > police: Tony Mancini. You're under arrest.
+home establish > nar: How could he live with that trunk?
+# TITLE 4: The Stairs
+PART
+home establish > nar: Previously: Tony Mancini was arrested for Violette Kaye's murder.
+court two lawyer,judge > lawyer: She fell down the stairs. Mancini panicked. That's all. [LEWES · DECEMBER 1934]
+court face mancini:scared > mancini: I came home and found her dead. I was scared nobody would believe me.
+court court judge,mancini > judge: The jury finds Tony Mancini: not guilty.
+court establish > nar: He walked free.
+court establish > nar: Do you believe his story?
+# TITLE 5: Forty-Two Years Later
+PART
+court establish > nar: Previously: Tony Mancini was found not guilty.
+home face mancini > mancini: I did it. I killed her. [1976]
+home establish > nar: In 1976, Mancini told a newspaper he had killed Violette after all.
+home establish > nar: The woman in the first trunk was never identified.
+home establish > nar: Two trunks. Two mysteries. Only one answer.
+home establish > nar: Who do you think the first woman was?
