@@ -1,0 +1,93 @@
+CAST lincoln | President Abraham Lincoln | m | rich | black | beard
+CAST mary | Mary Lincoln | f | rich | brown
+CAST booth | John Wilkes Booth | m | rich | black
+CAST powell | Lewis Powell | m | worker | brown
+CAST herold | David Herold | m | worker | blonde
+CAST mudd | Dr Samuel Mudd | m | doctor | brown
+CAST seward | William Seward | m | rich | white
+CAST soldier | a Union soldier | m | soldier | brown
+CAST surratt | Mary Surratt | f | plain | grey
+CAST judge | a military judge | m | judge | white
+# TITLE 1: The Angry Actor
+PART
+street establish > nar: April 1865. The American Civil War is ending. The South is losing. [WASHINGTON · APRIL 1865]
+street two soldier:smile,lincoln:smile > soldier: The war's nearly over, Mr President!
+home face booth:cross > booth: The South has lost. And Lincoln is to blame.
+home two booth,herold > booth: I'm the most famous actor in America. Now I'll play my greatest role.
+home establish > nar: John Wilkes Booth was handsome, famous, and full of hate.
+home establish > nar: What do you think he was planning?
+# TITLE 2: Three Targets
+PART
+home establish > nar: Previously: actor John Wilkes Booth blamed Lincoln for the South's defeat.
+home three booth:point,powell,herold > booth: One night. Three targets. The President, the Vice President, the Secretary of State. [SURRATT BOARDING HOUSE]
+home two powell,booth > powell: I'll take Secretary Seward.
+home two herold:think,booth > herold: And who takes the President?
+home face booth:smile > booth: I do.
+home establish > nar: Can a small group of men bring down a government?
+# TITLE 3: Good Friday
+PART
+home establish > nar: Previously: Booth's group planned to kill three leaders on the same night.
+home two mary:smile,lincoln:smile > mary: A comedy at Ford's Theatre tonight. You need to laugh, Abraham. [14 APRIL 1865]
+home two mary,lincoln:smile > lincoln: I suppose a night out would do me good.
+street walk lincoln > nar: That evening, the President and Mrs Lincoln arrived at Ford's Theatre.
+street face booth > booth: Our American Cousin. I know every line. I know every door.
+street establish > nar: Should Lincoln have stayed home?
+# TITLE 4: The President's Box
+PART
+street establish > nar: Previously: the Lincolns went to see a comedy at Ford's Theatre.
+home two mary:smile,lincoln:smile > mary: Everyone is laughing, Abraham.
+home face booth > nar: Booth knew the play. He waited for the biggest laugh.
+home establish > nar: He slipped into the President's box and fired one shot.
+home face mary:scared > mary: Abraham! Somebody help!
+home establish > nar: The President had been shot.
+home establish > nar: Would Booth get away?
+# TITLE 5: The Leap
+PART
+home establish > nar: Previously: Booth shot President Lincoln in his box at the theatre.
+home face booth:point > nar: Booth leapt from the box down onto the stage. [FORD'S THEATRE]
+home face booth > booth: Sic semper tyrannis!
+street walk booth > nar: He had broken his leg. But he limped out the back and rode away on a horse.
+home two soldier:scared,mary:cry > soldier: Stop him! Stop that man!
+street establish > nar: Where do you think he would go?
+# TITLE 6: The Other Attack
+PART
+street establish > nar: Previously: Booth leapt to the stage and escaped on horseback.
+home bed seward:sick,powell > powell: I have medicine for the Secretary. [SEWARD'S HOUSE · SAME NIGHT]
+home establish > nar: Lewis Powell forced his way into Secretary Seward's home and attacked him.
+home face seward > nar: Seward was badly hurt. But he survived.
+home face herold:scared > herold: The man meant to attack the Vice President... lost his nerve.
+home establish > nar: Only one part of the plot had fully succeeded.
+home establish > nar: Will the President survive?
+# TITLE 7: The House Across the Street
+PART
+home establish > nar: Previously: Seward survived his attack. The President was badly wounded.
+home bed lincoln:sleep,mary > nar: Lincoln was carried to a house across the street. [PETERSEN HOUSE]
+home bed lincoln:sleep,mary:cry > mary: Please, Abraham. Wake up.
+home face soldier:cry > soldier: The doctors say there's no hope.
+home establish > nar: On the morning of 15 April 1865, Abraham Lincoln died. [15 APRIL 1865]
+home establish > nar: Who would catch his killer?
+# TITLE 8: The Doctor
+PART
+home establish > nar: Previously: President Lincoln died the morning after he was shot.
+forest two herold,booth > herold: My leg, David. I can't go on like this. [MARYLAND · 15 APRIL 1865]
+home two mudd,booth > mudd: Your leg is broken, sir. I'll set it and make a splint.
+home face mudd:think > mudd: You haven't told me your name.
+forest walk herold > nar: Booth and Herold hid in the woods and swamps, as thousands of soldiers searched.
+forest establish > nar: How long could a famous face stay hidden?
+# TITLE 9: The Tobacco Barn
+PART
+forest establish > nar: Previously: Dr Mudd set Booth's leg. Booth and Herold fled into the woods.
+forest two soldier:point,herold:cuffed > soldier: Come out! Hands up! [VIRGINIA · 26 APRIL 1865]
+forest face herold:scared > herold: I surrender! Don't shoot!
+forest face booth > booth: I'll never surrender.
+forest establish > nar: Soldiers set the barn on fire. Booth was shot, and died hours later.
+forest establish > nar: Twelve days on the run were over.
+forest establish > nar: What should happen to the others?
+# TITLE 10: The First Woman
+PART
+forest establish > nar: Previously: Booth was shot after twelve days on the run.
+court two surratt,judge > surratt: I ran a boarding house. People met there. That's all I know. [WASHINGTON · 1865]
+court court judge,surratt > judge: Guilty. Death by hanging.
+prison establish > nar: Four conspirators were hanged in July 1865, including Mary Surratt.
+prison establish > nar: She was the first woman ever executed by the United States government.
+prison establish > nar: Was Mary Surratt really guilty?

@@ -1,0 +1,221 @@
+{
+ "key": "lincoln_p01",
+ "yt": {
+  "title": "The Angry Actor | The Lincoln Assassination (True Story) Part 1 #shorts",
+  "description": "Part 1 of 10: The Lincoln Assassination, Washington DC, Maryland and Virginia, April 1865. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the lincoln assassination"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "lincoln": {
+   "name": "President Abraham Lincoln",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "mary": {
+   "name": "Mary Lincoln",
+   "skin": "#b9774a",
+   "cloth": "#7a2f3a",
+   "cloth2": "#7a2f3a",
+   "hair": "#4a3020",
+   "voice": "af_bella",
+   "long": true
+  },
+  "booth": {
+   "name": "John Wilkes Booth",
+   "skin": "#b9774a",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_eric"
+  },
+  "powell": {
+   "name": "Lewis Powell",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_liam"
+  },
+  "herold": {
+   "name": "David Herold",
+   "skin": "#d0a07c",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "mudd": {
+   "name": "Dr Samuel Mudd",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#4a3020",
+   "voice": "bm_lewis",
+   "glasses": true
+  },
+  "seward": {
+   "name": "William Seward",
+   "skin": "#d0a07c",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel"
+  },
+  "soldier": {
+   "name": "a Union soldier",
+   "skin": "#8a5232",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
+  },
+  "surratt": {
+   "name": "Mary Surratt",
+   "skin": "#e6b48e",
+   "cloth": "#5a3a5a",
+   "cloth2": "#5a3a5a",
+   "hair": "#9a9a9a",
+   "voice": "af_nicole",
+   "long": true
+  },
+  "judge": {
+   "name": "a military judge",
+   "skin": "#e6b48e",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "am_echo",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE LINCOLN ASSASSINATION",
+    "years": "WASHINGTON · 1865",
+    "crime": "12 DAYS ON THE RUN",
+    "part": "PART 1 OF 10"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "April 1865. The American Civil War is ending. The South is losing."
+   },
+   "title": "WASHINGTON · APRIL 1865",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "soldier",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "lincoln",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "soldier",
+    "text": "The war's nearly over, Mr President!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "booth",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "booth",
+    "text": "The South has lost. And Lincoln is to blame."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "booth",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "herold",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "booth",
+    "text": "I'm the most famous actor in America. Now I'll play my greatest role."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "John Wilkes Booth was handsome, famous, and full of hate."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHAT DO YOU THINK HE WAS PLANNING?",
+    "p": "Comment below 👇",
+    "f": "Part 2 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "What do you think he was planning? Part 2 is next."
+   }
+  }
+ ]
+}
