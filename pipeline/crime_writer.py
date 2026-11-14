@@ -75,13 +75,37 @@ SYSTEM = ("You write scripts for 60-90 second animated YouTube Shorts that drama
           "amounts - the worst moments happen off-screen or are implied. Simple English a 12-year-old understands.")
 
 
+WRITER = os.getenv("CRIME_WRITER_MODEL") or "qwen/qwen3-235b-a22b"
+ROLES = {"police": r"police|officer|detective|constable|inspector|agent|fbi|lawm|mount|sheriff|ranger",
+         "judge": r"trial|court|judge|jury|verdict|guilty|acquit", "doctor": r"doctor|dr |pathologist|nurse|hospital"}
+
+
+def present(case, k, cast):
+    """Characters who belong in part k: people named in this or the previous beat, plus roles the beat mentions."""
+    text = (case["parts"][k - 1] + " " + (case["parts"][k - 2] if k > 1 else "")).lower()
+    out = []
+    for cid, v in cast.items():
+        words = []
+        for seg in v["name"].lower().split("/"):
+            ws = [w for w in re.findall(r"[a-z']+", seg) if w not in ("the", "mr", "mrs", "dr", "officer", "police", "detective", "doctor", "judge", "neighbour", "neighbor", "sir", "lady", "lord", "king", "queen", "captain", "inspector", "agent")]
+            if ws: words.append(ws[0] if len(ws[0]) > 3 else ws[-1])
+        if any(re.search(r"\b" + re.escape(w) + r"\b", text) for w in words): out.append(cid); continue
+        nm = v["name"].lower()
+        for role, rx in ROLES.items():
+            if role in nm or (role == "police" and re.search(rx, nm)):
+                if re.search(rx, text): out.append(cid)
+                break
+    return out or list(cast)[:2]
+
+
 def write_part(case, k, cast) -> dict:
     n = len(case["parts"]); beat = case["parts"][k - 1]
     prev = case["parts"][k - 2] if k > 1 else ""
-    ids = {cid: v["name"] for cid, v in cast.items()}
+    allowed = present(case, k, cast)
+    ids = {cid: cast[cid]["name"] for cid in allowed}
     prompt = f"""Case: {case['name']} - {case['setting']}
 People: {case['people']}
-Characters you may use (id: name): {json.dumps(ids)}
+Characters you may use in THIS part (id: name), no one else: {json.dumps(ids)}
 Part {k} of {n}. THIS PART'S FACTS (dramatise only these): {beat}
 {"Previous part's facts (for the recap only): " + prev if prev else "This is the first part."}
 {"Next part's facts (do NOT reveal, only tease): " + case['parts'][k] if k < n else "This is the final part: end with the outcome."}
@@ -97,9 +121,11 @@ Vocabulary:
 - frame: one of {FRAMES}. two = 2 characters talking; solo = 1 character; face = close-up of 1 character's face (for strong emotion); three = 3 characters; bed = 1st character ill/asleep in bed, 2nd standing by (set home or ward); grave = 1-2 mourners at a graveside (set grave); court = [judge id, accused id] (set court); cell = 1 prisoner behind bars (set prison); walk = 1 character walking; establish = empty scene, no characters (narrator lines only).
 - acts per character: one of {ACTS} (sick/sleep only for the bed character; peek = in bed pretending to sleep; cuffed = arrested; give = handing something).
 Total spoken words at most 190.
+The narrator speaks in the third person only. A person who has died in the facts never speaks or appears again.
+Characters only know what has happened so far; never let them describe events of later parts.
 JSON: {{"title":"catchy part title, max 6 words","shots":[{{"set":"","frame":"","who":["ids"],"acts":{{"id":"act"}},"speaker":"nar or id","text":"","title":""}}]}}"""
     for attempt in range(3):
-        d = llm.chat_json(prompt, system=SYSTEM, temperature=0.75, max_tokens=5000)
+        d = llm.chat_json(prompt, system=SYSTEM, temperature=0.7, max_tokens=5000, prefer=WRITER)
         if check(case, beat, d): return d
         log.warning("checker rejected part %s of %s, retrying", k, case["id"])
     return d
@@ -113,9 +139,10 @@ def check(case, beat, d) -> bool:
         r = llm.chat_json(f"Facts allowed: {beat}\nPeople in the case: {case['people']}\nScript:\n{lines}\n\n"
                           "The script may ONLY show the allowed facts above. Reject it (ok=false) if it: invents a new fact (name, date, number, place, event); "
                           "shows anything that is not in the allowed facts, like an arrest, trial, verdict, death or discovery from another part of the story; "
+                          "has a dead person speak or appear, has the narrator speak as a character, "
                           "has a person do something the facts say someone else did (e.g. a detective being arrested, a victim planning the crime); "
                           "or shows gore or a killing method in detail. Imagined dialogue and feelings are fine. "
-                          'JSON: {"ok": true|false, "why": ""}', temperature=0, max_tokens=400, prefer=os.getenv("CHECKER_MODEL") or "qwen/qwen3-235b-a22b")
+                          'JSON: {"ok": true|false, "why": ""}', temperature=0, max_tokens=400, prefer=os.getenv("CHECKER_MODEL") or "deepseek-ai/deepseek-v4.1-flash")
         if not r.get("ok", True): log.warning("checker: %s", r.get("why"))
         return bool(r.get("ok", True))
     except Exception as exc:
@@ -162,8 +189,9 @@ def convert(case, k, cast, d) -> dict:
         st = s.get("set") if s.get("set") in SETS else "home"
         fr = s.get("frame") if s.get("frame") in FRAMES else "two"
         if fr in SAFE and st not in SAFE[fr]: st = sorted(SAFE[fr])[0] if fr != "bed" else "home"
-        who = [x for x in s.get("who", []) if x in cast][:3]
-        spk = s.get("speaker") if s.get("speaker") in cast else "nar"
+        ok = set(present(case, k, cast))
+        who = [x for x in s.get("who", []) if x in ok][:3]
+        spk = s.get("speaker") if s.get("speaker") in ok else "nar"
         if spk != "nar" and spk not in who: who = [spk] + who
         if fr == "court" and (len(who) < 2 or not TRIAL.search(beat)): fr = "two"; st = "home" if st == "court" else st
         if fr == "cell" and not ARREST.search(beat): fr = "solo"; st = "home" if st in ("prison", "asylum") else st
