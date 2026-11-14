@@ -1,0 +1,62 @@
+CAST roger | Roger Tichborne | m | rich | brown
+CAST lady | Lady Tichborne | f | royal | grey
+CAST claimant | the Claimant | m | worker | brown | beard
+CAST bogle | Andrew Bogle | m | worker | white
+CAST relative | a Tichborne relative | m | rich | grey
+CAST lawyer | a lawyer | m | detective | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: Lost at Sea
+PART
+dock establish > nar: 1854. Roger Tichborne, heir to a huge English estate, sails from South America. [1854]
+dock two lady:cry,relative > relative: The ship, the Bella. Lost at sea. No survivors.
+dock face lady:cry > lady: No. My son is alive. I know it.
+dock establish > nar: Roger Tichborne was declared dead. His mother refused to believe it.
+dock establish > nar: Can a mother's hope go too far?
+# TITLE 2: The Advertisements
+PART
+dock establish > nar: Previously: Roger Tichborne was lost at sea. His mother refused to believe he was dead.
+home face lady:think > lady: An advert. In newspapers around the world. A reward for news of my son. [1863]
+home two lady,relative:cross > relative: He's gone. You must let him go.
+home face lady > lady: Never.
+home establish > nar: Years passed. The adverts spread as far as Australia.
+home establish > nar: Who do you think answered?
+# TITLE 3: The Butcher of Wagga Wagga
+PART
+home establish > nar: Previously: Lady Tichborne advertised around the world for news of her son.
+street face claimant:smile > claimant: I'm Roger Tichborne. I survived the shipwreck. [WAGGA WAGGA · AUSTRALIA · 1866]
+street two bogle:smile,claimant > bogle: I was a servant in the Tichborne family for years. Yes... I believe it's you, Sir Roger.
+street face claimant:smile > claimant: Years in the bush change a man. But I never forgot home.
+street establish > nar: A butcher in Australia said he was the lost heir.
+street establish > nar: Would you believe him?
+# TITLE 4: A Mother's Embrace
+PART
+street establish > nar: Previously: a butcher in Australia said he was Roger Tichborne.
+home two lady:smile,claimant > lady: Roger? Is it really you? [PARIS · 1867]
+home face claimant:smile > claimant: Mother. I've come home.
+home face lady:cry > lady: My son. My son.
+home establish > nar: Lady Tichborne accepted him as her son.
+home establish > nar: Do you think she really believed it?
+# TITLE 5: The Family Disagrees
+PART
+home establish > nar: Previously: Lady Tichborne accepted the Claimant as her son.
+home two relative:cross,claimant > relative: You don't speak French. Roger grew up speaking French! [1867 - 1871]
+home face claimant > claimant: I've forgotten it.
+home two relative:point,lawyer > relative: He doesn't even remember his own school.
+home establish > nar: The family refused to accept him. The Claimant sued for the estate.
+home establish > nar: Who would the court believe?
+# TITLE 6: Arthur Orton
+PART
+home establish > nar: Previously: the Claimant sued the Tichborne family for the estate.
+court two lawyer,judge > lawyer: This man is not Roger Tichborne. He is Arthur Orton, a butcher's son from Wapping in London. [1871 - 1872]
+court face claimant:scared > claimant: Lies!
+court establish > nar: The court case lasted more than a hundred days. The Claimant lost.
+court establish > nar: But many ordinary people still believed in him.
+court establish > nar: Why do you think people supported him?
+# TITLE 7: Fourteen Years
+PART
+court establish > nar: Previously: the court ruled the Claimant was really Arthur Orton.
+court court judge,claimant > judge: Guilty of perjury. Fourteen years. [1874]
+prison cell claimant > nar: He served ten years.
+street establish > nar: Later, he confessed he was Arthur Orton. Then took the confession back.
+street establish > nar: He died poor in 1898. His coffin said: Sir Roger Charles Doughty Tichborne.
+street establish > nar: Was he a con man, or did he start to believe his own story?

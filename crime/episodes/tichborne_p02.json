@@ -1,0 +1,187 @@
+{
+ "key": "tichborne_p02",
+ "yt": {
+  "title": "The Advertisements | The Tichborne Claimant (True Story) Part 2 #shorts",
+  "description": "Part 2 of 7: The Tichborne Claimant, England and Australia, 1854-1874. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the tichborne claimant"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "roger": {
+   "name": "Roger Tichborne",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lady": {
+   "name": "Lady Tichborne",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "claimant": {
+   "name": "the Claimant",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "bogle": {
+   "name": "Andrew Bogle",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_liam"
+  },
+  "relative": {
+   "name": "a Tichborne relative",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "lawyer": {
+   "name": "a lawyer",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE TICHBORNE CLAIMANT",
+    "years": "ENGLAND · 1866",
+    "crime": "THE MAN WHO CAME BACK",
+    "part": "PART 2 OF 7"
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: Roger Tichborne was lost at sea. His mother refused to believe he was dead."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "lady",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "lady",
+    "text": "An advert. In newspapers around the world. A reward for news of my son."
+   },
+   "title": "1863"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "lady",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "relative",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "relative",
+    "text": "He's gone. You must let him go."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "lady",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "lady",
+    "text": "Never."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Years passed. The adverts spread as far as Australia."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHO DO YOU THINK ANSWERED?",
+    "p": "Comment below 👇",
+    "f": "Part 3 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Who do you think answered? Part 3 is next."
+   }
+  }
+ ]
+}

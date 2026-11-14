@@ -1,0 +1,182 @@
+{
+ "key": "tichborne_p07",
+ "yt": {
+  "title": "Fourteen Years | The Tichborne Claimant (True Story) Part 7 #shorts",
+  "description": "Part 7 of 7: The Tichborne Claimant, England and Australia, 1854-1874. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the tichborne claimant"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "roger": {
+   "name": "Roger Tichborne",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lady": {
+   "name": "Lady Tichborne",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "claimant": {
+   "name": "the Claimant",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "bogle": {
+   "name": "Andrew Bogle",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_liam"
+  },
+  "relative": {
+   "name": "a Tichborne relative",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "lawyer": {
+   "name": "a lawyer",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE TICHBORNE CLAIMANT",
+    "years": "ENGLAND · 1866",
+    "crime": "THE MAN WHO CAME BACK",
+    "part": "PART 7 OF 7"
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the court ruled the Claimant was really Arthur Orton."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "courtw",
+   "chars": [
+    {
+     "id": "judge",
+     "x": 0,
+     "z": -8.9,
+     "ry": 0,
+     "act": "idle"
+    },
+    {
+     "id": "claimant",
+     "x": 1.0,
+     "z": -4.5,
+     "ry": 3.14,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Guilty of perjury. Fourteen years."
+   },
+   "title": "1874"
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "claimant",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "He served ten years."
+   },
+   "flick": true
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Later, he confessed he was Arthur Orton. Then took the confession back."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "He died poor in 1898. His coffin said: Sir Roger Charles Doughty Tichborne."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS HE A CON MAN, OR DID HE START TO BELIEVE HIS OWN STORY?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was he a con man, or did he start to believe his own story?"
+   }
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "key": "tichborne_p06",
+ "yt": {
+  "title": "Arthur Orton | The Tichborne Claimant (True Story) Part 6 #shorts",
+  "description": "Part 6 of 7: The Tichborne Claimant, England and Australia, 1854-1874. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the tichborne claimant"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "roger": {
+   "name": "Roger Tichborne",
+   "skin": "#c99872",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#4a3020",
+   "voice": "am_adam"
+  },
+  "lady": {
+   "name": "Lady Tichborne",
+   "skin": "#b9774a",
+   "cloth": "#6a1a2a",
+   "cloth2": "#4a1220",
+   "hair": "#9a9a9a",
+   "voice": "af_bella",
+   "long": true
+  },
+  "claimant": {
+   "name": "the Claimant",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric",
+   "beard": true
+  },
+  "bogle": {
+   "name": "Andrew Bogle",
+   "skin": "#c99872",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#e0e0e0",
+   "voice": "am_liam"
+  },
+  "relative": {
+   "name": "a Tichborne relative",
+   "skin": "#d9a882",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#9a9a9a",
+   "voice": "bm_george"
+  },
+  "lawyer": {
+   "name": "a lawyer",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#1d1d1d",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#a86a42",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE TICHBORNE CLAIMANT",
+    "years": "ENGLAND · 1866",
+    "crime": "THE MAN WHO CAME BACK",
+    "part": "PART 6 OF 7"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the Claimant sued the Tichborne family for the estate."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "lawyer",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "lawyer",
+    "text": "This man is not Roger Tichborne. He is Arthur Orton, a butcher's son from Wapping in London."
+   },
+   "title": "1871 - 1872"
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "claimant",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
+   "line": {
+    "who": "claimant",
+    "text": "Lies!"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The court case lasted more than a hundred days. The Claimant lost."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "But many ordinary people still believed in him."
+   },
+   "flick": true,
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WHY DO YOU THINK PEOPLE SUPPORTED HIM?",
+    "p": "Comment below 👇",
+    "f": "Part 7 next"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Why do you think people supported him? Part 7 is next."
+   }
+  }
+ ]
+}

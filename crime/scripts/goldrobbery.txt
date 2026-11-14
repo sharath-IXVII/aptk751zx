@@ -1,0 +1,52 @@
+CAST agar | Edward Agar | m | rich | black | beard
+CAST pierce | William Pierce | m | worker | brown
+CAST burgess | James Burgess | m | worker | grey
+CAST tester | William Tester | m | plain | blonde
+CAST fanny | Fanny Kay | f | plain | red
+CAST police | a detective | m | detective | grey
+CAST judge | the judge | m | judge | white
+# TITLE 1: Gold by Train
+PART
+street establish > nar: London, 1855. Gold for Paris travels by train in iron safes. [LONDON · 1855]
+street two pierce,agar > pierce: Each safe has two locks. Different keys. Kept in different places.
+street face agar:smile > agar: Then we get copies of both.
+street establish > nar: Edward Agar, a professional criminal, planned the impossible.
+street establish > nar: Can you steal from a locked safe on a moving train?
+# TITLE 2: Inside Men
+PART
+street establish > nar: Previously: Edward Agar planned to steal gold from locked safes on a train.
+home two pierce,agar > pierce: I used to print railway tickets. I know the system.
+home two burgess,agar > burgess: I'm a guard on the train. I can let you into the van.
+home two tester,agar > tester: And I'm a clerk. I can get near the keys.
+home establish > nar: Agar recruited men who worked for the railway.
+home establish > nar: Would you trust this many people with a secret?
+# TITLE 3: The Keys
+PART
+home establish > nar: Previously: Agar recruited railway workers to help him.
+home face tester:think > tester: The keys are here. Just for a minute. [1854 - 1855]
+home face agar > agar: A wax impression. Quick. Before anyone sees.
+home establish > nar: Over many months, they secretly copied every key.
+home establish > nar: Will anyone notice?
+# TITLE 4: The Swap
+PART
+home establish > nar: Previously: the gang secretly copied the safe keys.
+street walk agar > nar: May 1855. Agar and Pierce board the train to Folkestone. [15 MAY 1855]
+home two agar,burgess > burgess: The van's yours. Go.
+home face agar:smile > agar: Open the safes. Out with the gold. In with the lead shot. Same weight.
+home establish > nar: They swapped the gold for lead, and locked the safes again.
+home establish > nar: When do you think it was discovered?
+# TITLE 5: Discovered in Paris
+PART
+home establish > nar: Previously: the gang swapped the gold for lead shot on a moving train.
+street two police:scared,tester > police: The safes arrived in Paris locked. Correct weight. But full of lead! [PARIS · 1855]
+street face police:think > police: No broken locks. Nobody saw anything.
+street establish > nar: Nobody could explain how the gold vanished.
+street establish > nar: How do you think they were caught?
+# TITLE 6: Betrayed
+PART
+street establish > nar: Previously: the gold theft was discovered in Paris, but nobody knew how.
+prison cell agar > agar: Jailed for a different crime. But my share of the gold will look after Fanny. [1855 - 1856]
+home two fanny:cry,pierce > fanny: Pierce has taken all of Edward's money! I have nothing!
+prison face agar:cross > agar: He cheated Fanny? Then I'll tell the police everything.
+court court judge,burgess > judge: Burgess and Tester, guilty. Transportation to Australia.
+court establish > nar: Was it greed or loyalty that brought them down?

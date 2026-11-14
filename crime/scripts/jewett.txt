@@ -1,0 +1,52 @@
+CAST helen | Helen Jewett | f | rich | brown
+CAST robinson | Richard Robinson | m | rich | blonde
+CAST rosina | the house owner | f | rich | grey
+CAST police | a watchman | m | police | black
+CAST reporter | a newspaper editor | m | plain | brown
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Famous Helen
+PART
+street establish > nar: New York, 1836. Helen Jewett. Clever. Elegant. Famous in the city's nightlife. [NEW YORK · 1836]
+home two helen:smile,rosina > rosina: You've had so many letters today, Helen.
+home face helen:smile > helen: I read every one. I love books more than anything.
+home establish > nar: Helen lived in a fashionable boarding house. She was known all over the city.
+home establish > nar: Who do you think was writing to her?
+# TITLE 2: Richard
+PART
+home establish > nar: Previously: Helen Jewett was a clever, famous young woman in New York.
+home two helen:smile,robinson:smile > robinson: Richard Robinson. I'm nineteen. I work in a store on Maiden Lane.
+home face helen:smile > helen: You're very young, Richard.
+home two helen:cross,robinson:cross > helen: You promised to marry me! Or I'll tell your employer everything.
+home face robinson:cross > robinson: Don't threaten me, Helen.
+home establish > nar: Their relationship turned stormy.
+home establish > nar: What do you think Richard will do?
+# TITLE 3: Fire
+PART
+home establish > nar: Previously: Helen threatened to expose Richard Robinson.
+home two rosina:scared,police > rosina: Smoke! From Helen's room! [10 APRIL 1836 · NIGHT]
+home face police:scared > police: The bed is on fire. And Helen... she's dead.
+home establish > nar: Helen Jewett had been killed. Her room was set on fire.
+home establish > nar: Who was the last person to see her?
+# TITLE 4: The Cloak
+PART
+home establish > nar: Previously: Helen was found dead in her burning room.
+street face police:think > police: A cloak in the back yard. And a hatchet. [11 APRIL 1836]
+home face rosina > rosina: Richard Robinson visited her last night. He came in a cloak.
+home two police:point,robinson:cuffed > police: Richard Robinson. You're under arrest.
+home face robinson > robinson: I'm innocent.
+home establish > nar: Will the evidence hold up?
+# TITLE 5: The Press
+PART
+home establish > nar: Previously: Richard Robinson was arrested for Helen's murder.
+street two reporter:smile,police > reporter: The Helen Jewett murder! Extra! Extra! [NEW YORK · 1836]
+street face reporter > reporter: We'll print every detail. Every rumour.
+street establish > nar: Newspapers fought over the story. It was America's first true-crime media frenzy.
+street establish > nar: Is that kind of attention fair to anyone?
+# TITLE 6: Not Guilty
+PART
+street establish > nar: Previously: newspapers turned Helen's murder into a sensation.
+court court judge,robinson > judge: The jury finds Richard Robinson: not guilty. [JUNE 1836]
+court face robinson:smile > robinson: Thank you.
+court establish > nar: The jury took less than half an hour.
+court establish > nar: Many people believed he was guilty. He moved west and lived the rest of his life quietly.
+court establish > nar: Was justice done for Helen Jewett?

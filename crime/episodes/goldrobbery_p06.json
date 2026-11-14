@@ -1,0 +1,204 @@
+{
+ "key": "goldrobbery_p06",
+ "yt": {
+  "title": "Betrayed | The Great Gold Robbery (True Story) Part 6 #shorts",
+  "description": "Part 6 of 6: The Great Gold Robbery, London to Folkestone railway, 1855. A dramatised retelling of a real case; dialogue and some scenes are imagined, the key events are real.\n\n#truecrime #horror #history #shorts",
+  "tags": [
+   "true crime",
+   "horror story",
+   "history",
+   "shorts",
+   "the great gold robbery"
+  ]
+ },
+ "narrator": "am_michael",
+ "cast": {
+  "agar": {
+   "name": "Edward Agar",
+   "skin": "#e6b48e",
+   "cloth": "#3a2a4a",
+   "cloth2": "#2a1e36",
+   "hair": "#1d1d1d",
+   "voice": "am_adam",
+   "beard": true
+  },
+  "pierce": {
+   "name": "William Pierce",
+   "skin": "#8a5232",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#4a3020",
+   "voice": "am_eric"
+  },
+  "burgess": {
+   "name": "James Burgess",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_liam"
+  },
+  "tester": {
+   "name": "William Tester",
+   "skin": "#8a5232",
+   "cloth": "#5a4a3a",
+   "cloth2": "#43372b",
+   "hair": "#c8a050",
+   "voice": "bm_george"
+  },
+  "fanny": {
+   "name": "Fanny Kay",
+   "skin": "#e6b48e",
+   "cloth": "#2f5a6a",
+   "cloth2": "#2f5a6a",
+   "hair": "#a84a22",
+   "voice": "af_bella",
+   "long": true
+  },
+  "police": {
+   "name": "a detective",
+   "skin": "#d0a07c",
+   "cloth": "#3b3f4a",
+   "cloth2": "#2a2d35",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "coat": true,
+   "hat": true
+  },
+  "judge": {
+   "name": "the judge",
+   "skin": "#e0aa84",
+   "cloth": "#151515",
+   "cloth2": "#101010",
+   "hair": "#e0e0e0",
+   "voice": "bm_daniel",
+   "glasses": true
+  }
+ },
+ "shots": [
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "hold": 2.8,
+   "intro": {
+    "name": "THE GREAT GOLD ROBBERY",
+    "years": "ENGLAND · 1855",
+    "crime": "THE TRAIN HEIST",
+    "part": "PART 6 OF 6"
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Previously: the gold theft was discovered in Paris, but nobody knew how."
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "prison",
+   "cam": "cell",
+   "chars": [
+    {
+     "id": "agar",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "agar",
+    "text": "Jailed for a different crime. But my share of the gold will look after Fanny."
+   },
+   "title": "1855 - 1856"
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "fanny",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "cry"
+    },
+    {
+     "id": "pierce",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "fanny",
+    "text": "Pierce has taken all of Edward's money! I have nothing!"
+   }
+  },
+  {
+   "set": "prison",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "agar",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "agar",
+    "text": "He cheated Fanny? Then I'll tell the police everything."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "judge",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "burgess",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "judge",
+    "text": "Burgess and Tester, guilty. Transportation to Australia."
+   },
+   "fx": [
+    "lightning"
+   ]
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [],
+   "card": {
+    "h": "WAS IT GREED OR LOYALTY THAT BROUGHT THEM DOWN?",
+    "p": "Comment below 👇",
+    "f": "Next true story coming soon"
+   },
+   "line": {
+    "who": "nar",
+    "text": "Was it greed or loyalty that brought them down?"
+   }
+  }
+ ]
+}
