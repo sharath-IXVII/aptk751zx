@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Prince Yusupov and others plotted to kill Rasputin."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

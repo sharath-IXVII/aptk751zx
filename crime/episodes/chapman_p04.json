@@ -113,15 +113,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two women who lived with Chapman died of mysterious illnesses."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {

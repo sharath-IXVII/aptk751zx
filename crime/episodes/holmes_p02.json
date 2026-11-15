@@ -155,15 +155,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a charming stranger arrived in Chicago as Doctor H. H. Holmes."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -235,10 +226,7 @@
     "who": "nar",
     "text": "Soon after, Holmes owned the pharmacy."
    },
-   "title": "WEEKS LATER",
-   "fx": [
-    "rain"
-   ]
+   "title": "WEEKS LATER"
   },
   {
    "set": "street",
@@ -289,7 +277,10 @@
    "line": {
     "who": "holmes",
     "text": "She moved away. California, I believe. She deserved a rest."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

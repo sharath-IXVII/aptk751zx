@@ -113,19 +113,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: the family fell ill, and a clerk said Lizzie tried to buy poison."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "The morning of the fourth of August, 1892. Very hot."
    },
-   "title": "4 AUGUST 1892",
-   "flick": true
+   "title": "4 AUGUST 1892"
   },
   {
    "set": "home",

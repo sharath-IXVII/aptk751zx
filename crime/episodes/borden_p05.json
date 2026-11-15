@@ -109,15 +109,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Abby Borden was killed upstairs while the maid washed windows."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

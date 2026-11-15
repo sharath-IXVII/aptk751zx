@@ -79,15 +79,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lustig told scrap dealers the Eiffel Tower was for sale."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

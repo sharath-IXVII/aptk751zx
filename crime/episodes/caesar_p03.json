@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Brutus joined the plot against his friend Caesar."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

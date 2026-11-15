@@ -88,15 +88,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a skeleton was found. Richard Houseman said it wasn't Clark's."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -117,10 +108,7 @@
    "line": {
     "who": "constable",
     "text": "You knew those bones weren't his. So where is Clark?"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -137,7 +125,10 @@
    "line": {
     "who": "houseman",
     "text": "St Robert's Cave. That's where Clark lies. Aram did it. I only watched."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

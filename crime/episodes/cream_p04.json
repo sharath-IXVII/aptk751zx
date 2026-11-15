@@ -110,15 +110,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two young women died in agony after taking pills from a stranger."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

@@ -91,15 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a trunk with human remains was found at Brighton station."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {

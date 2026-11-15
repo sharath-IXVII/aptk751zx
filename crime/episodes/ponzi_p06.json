@@ -90,15 +90,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a newspaper showed Ponzi's numbers couldn't work."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -173,6 +164,7 @@
     "text": "He died poor in Brazil in 1949. His name lives on: a Ponzi scheme."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

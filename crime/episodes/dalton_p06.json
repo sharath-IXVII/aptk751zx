@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the town fought back. Four of the gang died."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -149,6 +140,7 @@
     "text": "He moved to Hollywood, wrote about the Old West, and spoke out against crime."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

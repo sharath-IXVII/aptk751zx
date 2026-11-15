@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Thomas Farrow was killed and his wife badly hurt in a robbery."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

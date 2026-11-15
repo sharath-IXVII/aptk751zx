@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: people removed letters and papers before police arrived."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

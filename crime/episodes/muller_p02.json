@@ -92,15 +92,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: banker Thomas Briggs boarded a train in a closed first-class compartment."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -131,10 +122,7 @@
    "line": {
     "who": "nar",
     "text": "Thomas Briggs was found beside the tracks. He died soon after."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -153,6 +141,7 @@
     "text": "The first murder on a British railway."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

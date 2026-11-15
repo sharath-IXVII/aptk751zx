@@ -106,15 +106,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: seven men were killed in the St Valentine's Day Massacre."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

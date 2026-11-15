@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ponzi found a way to profit from international postal coupons."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -120,10 +111,7 @@
     "who": "ponzi",
     "text": "Give me your money. In forty-five days, I'll give you fifty percent profit."
    },
-   "title": "DECEMBER 1919",
-   "fx": [
-    "rain"
-   ]
+   "title": "DECEMBER 1919"
   },
   {
    "set": "street",
@@ -140,7 +128,10 @@
    "line": {
     "who": "investor",
     "text": "Fifty percent? In forty-five days? Sign me up!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -151,7 +142,6 @@
     "text": "Word spread fast. Money started pouring in."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

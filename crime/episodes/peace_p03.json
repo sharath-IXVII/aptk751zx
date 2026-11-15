@@ -90,18 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charles Peace lived a double life as a master burglar."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

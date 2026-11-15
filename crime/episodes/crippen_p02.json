@@ -112,15 +112,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: quiet Dr Crippen lived with his loud, glamorous wife Cora."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

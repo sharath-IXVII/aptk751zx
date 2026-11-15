@@ -72,18 +72,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruth Ellis shot David Blakely and waited calmly for police."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

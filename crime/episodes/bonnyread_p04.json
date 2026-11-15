@@ -81,15 +81,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Anne and Mary discovered each other's secret."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -110,10 +101,7 @@
    "line": {
     "who": "anne",
     "text": "Pistols and cutlasses! Board that ship!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -130,7 +118,10 @@
    "line": {
     "who": "mary",
     "text": "Nobody fights harder than us."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

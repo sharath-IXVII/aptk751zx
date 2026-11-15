@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Tony Mancini was arrested for Violette Kaye's murder."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

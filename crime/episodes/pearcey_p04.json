@@ -73,15 +73,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Phoebe and her baby were found dead, and the pram was found nearby."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

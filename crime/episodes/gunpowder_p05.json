@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lord Monteagle received a letter warning him to stay away from Parliament."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

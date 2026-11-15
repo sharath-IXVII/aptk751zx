@@ -106,15 +106,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Prohibition made Chicago's gangsters rich."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -170,10 +161,7 @@
     "who": "nar",
     "text": "Then rivals shot Johnny Torrio. He survived. But he'd had enough."
    },
-   "title": "1925",
-   "fx": [
-    "rain"
-   ]
+   "title": "1925"
   },
   {
    "set": "home",

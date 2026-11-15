@@ -99,15 +99,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Christie testified against Timothy Evans."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {

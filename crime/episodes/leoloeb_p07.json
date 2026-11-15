@@ -105,15 +105,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the rare glasses near the body belonged to Nathan Leopold."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

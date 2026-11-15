@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Taylor was found dead. A stranger said it was natural causes."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

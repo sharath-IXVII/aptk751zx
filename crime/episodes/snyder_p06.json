@@ -80,18 +80,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruth and Judd were arrested, each blaming the other."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

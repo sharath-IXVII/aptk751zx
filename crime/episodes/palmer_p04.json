@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: John Cook won big at the races, then fell ill after drinking with Palmer."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {

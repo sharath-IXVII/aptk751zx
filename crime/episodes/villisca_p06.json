@@ -115,15 +115,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: crowds walked through the crime scene and destroyed the evidence."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -146,10 +137,7 @@
     "who": "police",
     "text": "A travelling preacher was at the Children's Day program. He left town early that morning."
    },
-   "title": "1917",
-   "fx": [
-    "rain"
-   ]
+   "title": "1917"
   },
   {
    "set": "street",
@@ -173,7 +161,10 @@
    "line": {
     "who": "police",
     "text": "Reverend George Kelly. You're charged with the Villisca murders."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "court",

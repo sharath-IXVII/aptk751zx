@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Bender inn was found abandoned."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -135,10 +126,7 @@
    "line": {
     "who": "york",
     "text": "In the orchard. Graves. And... my brother."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -149,6 +137,7 @@
     "text": "Searchers found many graves in the Benders' orchard."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

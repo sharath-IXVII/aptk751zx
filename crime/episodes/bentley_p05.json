@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Chris shot and killed PC Sidney Miles."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

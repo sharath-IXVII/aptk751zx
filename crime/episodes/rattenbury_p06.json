@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alma was acquitted. George was sentenced to death."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

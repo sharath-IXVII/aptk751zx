@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Dalton brothers went from lawmen to outlaws."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -110,10 +101,7 @@
     "who": "bob",
     "text": "Stop the train! Get the express car!"
    },
-   "title": "OKLAHOMA · 1891",
-   "fx": [
-    "rain"
-   ]
+   "title": "OKLAHOMA · 1891"
   },
   {
    "set": "street",
@@ -130,7 +118,10 @@
    "line": {
     "who": "emmett",
     "text": "The Dalton Gang. Everyone's talking about us."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

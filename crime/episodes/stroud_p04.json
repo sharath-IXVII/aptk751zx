@@ -74,15 +74,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Stroud's death sentence became life in solitary confinement."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "cell",
    "chars": [
     {

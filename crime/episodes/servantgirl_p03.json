@@ -82,18 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: servant women were being attacked at night in Austin."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -115,7 +103,10 @@
     "who": "marshal",
     "text": "Always at night. Always in the servants' rooms. Always gone before anyone wakes."
    },
-   "title": "1885"
+   "title": "1885",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

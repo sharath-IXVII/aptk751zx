@@ -142,15 +142,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Burke and Hare kept selling bodies to Dr Knox's school."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

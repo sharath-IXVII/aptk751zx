@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Peace shot Arthur Dyson and vanished."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

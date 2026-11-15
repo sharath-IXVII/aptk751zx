@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: President Garfield died after eighty days, mainly from infection."
-   }
-  },
-  {
    "set": "court",
    "cam": "face",
    "chars": [

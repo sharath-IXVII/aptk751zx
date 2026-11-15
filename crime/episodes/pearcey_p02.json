@@ -73,15 +73,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Pearcey was in love with Frank Hogg, a married man."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

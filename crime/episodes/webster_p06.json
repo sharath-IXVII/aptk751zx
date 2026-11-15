@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kate Webster fled to Ireland, but was arrested."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [
@@ -131,7 +122,10 @@
    "line": {
     "who": "nar",
     "text": "But Mrs Thomas's skull was never found."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -140,10 +134,7 @@
    "line": {
     "who": "nar",
     "text": "Until 2010, when workers digging in a Richmond garden found it."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

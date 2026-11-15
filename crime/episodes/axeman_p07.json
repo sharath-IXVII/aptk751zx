@@ -90,18 +90,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: on the night of the letter, the city played jazz and no one was attacked."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -122,7 +110,10 @@
    "line": {
     "who": "police",
     "text": "More attacks after that night. Then, late in 1919, they just stopped."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -139,10 +130,7 @@
    "line": {
     "who": "police",
     "text": "No arrest. No name."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -165,6 +153,7 @@
     "text": "The Axeman of New Orleans was never identified."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

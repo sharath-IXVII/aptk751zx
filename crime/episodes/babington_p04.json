@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary's secret letters were secretly passed to Walsingham."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

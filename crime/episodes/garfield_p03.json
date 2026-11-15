@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Guiteau bought a gun and began following the President."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -115,7 +106,10 @@
     "who": "nar",
     "text": "2 July 1881. A Washington railway station. The President is going on holiday."
    },
-   "title": "2 JULY 1881"
+   "title": "2 JULY 1881",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -102,21 +102,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Petiot talked his way out and disappeared."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "August 1944. Paris is freed. The Nazis are gone."
    },
-   "title": "AUGUST 1944",
-   "fx": [
-    "rain"
-   ]
+   "title": "AUGUST 1944"
   },
   {
    "set": "street",
@@ -160,7 +148,10 @@
    "line": {
     "who": "nar",
     "text": "Petiot had joined the Resistance under a false name."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

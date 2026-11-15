@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the King ordered Count Thurzó to investigate the Countess."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [
@@ -114,10 +105,7 @@
     "who": "nar",
     "text": "December 1610. Thurzó's men ride to Čachtice castle."
    },
-   "title": "DECEMBER 1610",
-   "fx": [
-    "rain"
-   ]
+   "title": "DECEMBER 1610"
   },
   {
    "set": "home",

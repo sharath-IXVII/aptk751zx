@@ -72,15 +72,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edith Thompson was stuck in a dull, unhappy marriage."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

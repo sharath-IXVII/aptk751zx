@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the prisoners secretly widened the air vents in their cells."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

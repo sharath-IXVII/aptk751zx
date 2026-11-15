@@ -91,15 +91,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Turpin became a highwayman after his gang was caught."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -149,7 +140,6 @@
     "text": "Now they'll hunt me everywhere. I need to go north."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

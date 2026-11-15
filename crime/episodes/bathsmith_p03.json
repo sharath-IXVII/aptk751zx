@@ -111,15 +111,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Smith's wife Bessie was found dead in the bath. A doctor called it a fit."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

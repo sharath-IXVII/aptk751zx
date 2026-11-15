@@ -114,15 +114,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Mudd set Booth's leg. Booth and Herold fled into the woods."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -161,10 +152,7 @@
    "line": {
     "who": "herold",
     "text": "I surrender! Don't shoot!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -181,7 +169,10 @@
    "line": {
     "who": "booth",
     "text": "I'll never surrender."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

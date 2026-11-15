@@ -150,32 +150,6 @@
   },
   {
    "set": "home",
-   "cam": "bedroom",
-   "bed": true,
-   "flick": true,
-   "chars": [
-    {
-     "id": "eliz",
-     "x": 2.2,
-     "z": -0.2,
-     "ry": 0,
-     "act": "sleep"
-    },
-    {
-     "id": "jane2",
-     "x": 1.1,
-     "z": -2.0,
-     "ry": 0.5,
-     "act": "tuck"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jane's own foster sister died in her care. Now, a new family."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "title": "CATAUMET, CAPE COD · 1901",
    "chars": [

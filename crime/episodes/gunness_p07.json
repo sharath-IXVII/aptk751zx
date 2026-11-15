@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Belle's farmhouse burned down. A headless woman's body was found."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -129,10 +120,7 @@
     "who": "asle",
     "text": "Dig by the pig pen. Where the ground is soft."
    },
-   "title": "MAY 1908",
-   "fx": [
-    "rain"
-   ]
+   "title": "MAY 1908"
   },
   {
    "set": "forest",
@@ -176,7 +164,10 @@
    "line": {
     "who": "police",
     "text": "And more. Many more."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -187,7 +178,6 @@
     "text": "Body after body was found buried on the farm."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

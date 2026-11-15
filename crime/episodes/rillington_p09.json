@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Christie confessed to many murders, including Beryl Evans."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [
@@ -153,6 +144,7 @@
     "text": "10 Rillington Place was later knocked down. The street no longer exists."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

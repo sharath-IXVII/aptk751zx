@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a map in Doc's apartment pointed to Lake Weir, Florida."
-   }
-  },
-  {
    "set": "forest",
    "cam": "face",
    "chars": [
@@ -102,10 +93,7 @@
     "who": "agent",
     "text": "Surround the house. Ma Barker and Fred are inside."
    },
-   "title": "LAKE WEIR · 16 JANUARY 1935",
-   "fx": [
-    "rain"
-   ]
+   "title": "LAKE WEIR · 16 JANUARY 1935"
   },
   {
    "set": "forest",
@@ -134,7 +122,10 @@
    "line": {
     "who": "agent",
     "text": "It's over."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

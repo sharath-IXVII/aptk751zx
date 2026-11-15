@@ -149,23 +149,6 @@
    "hold": 2.8
   },
   {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "jane2",
-     "x": 0.6,
-     "z": 1.6,
-     "ry": 0,
-     "act": "smile"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jane was fired, then hired by families. And the Dunhams died."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "title": "CAPE COD · 1899",

@@ -155,18 +155,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Holmes took over the pharmacy. Its owner was said to have moved away."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -187,7 +175,10 @@
    "line": {
     "who": "holmes",
     "text": "Three storeys. Shops below, rooms above."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -252,10 +243,7 @@
    "line": {
     "who": "holmes",
     "text": "You're slow. You're fired. Send in the next man."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -272,7 +260,10 @@
    "line": {
     "who": "builder",
     "text": "Fired again. No one stays long enough to see the whole building."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

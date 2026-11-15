@@ -73,15 +73,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Johnson refused to talk to the Mounties."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {

@@ -102,15 +102,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: three-year-old Saville vanished from his cot in the night."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -132,7 +123,10 @@
    "line": {
     "who": "police",
     "text": "Sir... we found him. In the outdoor privy."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

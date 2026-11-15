@@ -96,15 +96,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rouse planned to fake his own death in a burning car."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -160,10 +151,7 @@
    "line": {
     "who": "nar",
     "text": "It was Bonfire Night. Fireworks lit the sky."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

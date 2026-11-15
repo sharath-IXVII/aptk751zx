@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: New Orleans was terrified of the Axeman."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

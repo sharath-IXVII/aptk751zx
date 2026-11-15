@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ponzi promised investors fifty percent profit in forty-five days."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

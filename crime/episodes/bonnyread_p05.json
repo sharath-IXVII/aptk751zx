@@ -81,15 +81,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Anne and Mary fought as fiercely as any pirate."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "face",
    "chars": [
     {
@@ -130,10 +121,7 @@
    "line": {
     "who": "mary",
     "text": "Come up and fight like men, you cowards!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -144,6 +132,7 @@
     "text": "Only Anne and Mary fought back. The pirates were captured."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

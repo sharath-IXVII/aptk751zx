@@ -82,15 +82,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Marie took O'Connor's shares and money from his lodgings."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

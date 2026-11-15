@@ -92,15 +92,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Amelia Dyer moved often, changing her name. Babies in her care died."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -116,10 +107,7 @@
     "who": "nar",
     "text": "March 1896. A bargeman is working on the River Thames at Reading."
    },
-   "title": "READING · MARCH 1896",
-   "fx": [
-    "rain"
-   ]
+   "title": "READING · MARCH 1896"
   },
   {
    "set": "dock",
@@ -136,7 +124,10 @@
    "line": {
     "who": "bargeman",
     "text": "What's that parcel in the water?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: poor families hid Floyd and called him a hero."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -112,7 +103,10 @@
     "who": "agent",
     "text": "Union Station, Kansas City. Gunmen ambushed officers transporting a prisoner."
    },
-   "title": "17 JUNE 1933"
+   "title": "17 JUNE 1933",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

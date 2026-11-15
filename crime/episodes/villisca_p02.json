@@ -115,15 +115,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Moore family lived happily in the small town of Villisca."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -170,10 +161,7 @@
    "line": {
     "who": "katherine",
     "text": "Come stay at our house tonight! Please!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

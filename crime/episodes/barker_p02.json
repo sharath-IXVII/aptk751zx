@@ -80,15 +80,6 @@
   {
    "set": "home",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kate 'Ma' Barker raised four sons who all got into crime."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
    "chars": [
     {
      "id": "fred",

@@ -71,18 +71,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Captain Kidd was hired to hunt pirates."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -104,7 +92,10 @@
     "who": "sailor",
     "text": "Months at sea! No pirates! No pay!"
    },
-   "title": "INDIAN OCEAN · 1697"
+   "title": "INDIAN OCEAN · 1697",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

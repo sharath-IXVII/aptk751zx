@@ -109,15 +109,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Andrew and Abby Borden were found killed in their home."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

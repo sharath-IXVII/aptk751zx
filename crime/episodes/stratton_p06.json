@@ -98,18 +98,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: brothers Alfred and Albert Stratton were arrested."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

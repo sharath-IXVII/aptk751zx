@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Haigh believed that without a body there could be no murder charge."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

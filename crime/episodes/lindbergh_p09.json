@@ -115,15 +115,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a petrol station attendant's note led police to Bruno Richard Hauptmann."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

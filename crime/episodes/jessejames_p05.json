@@ -96,15 +96,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jesse recruited the young Ford brothers into a new gang."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

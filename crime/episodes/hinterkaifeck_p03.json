@@ -99,15 +99,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Andreas found footprints going to the farm, but none coming back."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -219,10 +210,7 @@
    "line": {
     "who": "neighbour",
     "text": "Let us come and help you search."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -241,6 +229,7 @@
     "text": "No. I can look after my own family."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

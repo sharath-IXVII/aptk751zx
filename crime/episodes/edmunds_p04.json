@@ -92,15 +92,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Christiana secretly put poisoned chocolate creams back on a sweet shop's shelves."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -159,6 +150,7 @@
     "text": "You see? Someone is poisoning sweets. It was never me."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

@@ -101,15 +101,6 @@
   {
    "set": "forest",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Gruber family lived alone on a remote farm."
-   }
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
    "chars": [
     {
      "id": "andreas",

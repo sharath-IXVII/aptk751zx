@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Agar recruited railway workers to help him."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

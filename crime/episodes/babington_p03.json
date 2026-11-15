@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: spymaster Walsingham wanted proof against Mary."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

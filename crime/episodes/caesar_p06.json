@@ -83,18 +83,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: the senators attacked Caesar in the Senate meeting."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Caesar fell at the foot of a statue of his old rival, Pompey."
-   },
-   "flick": true
+   }
   },
   {
    "set": "home",

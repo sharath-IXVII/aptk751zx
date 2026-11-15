@@ -85,19 +85,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: McDermott and Grace both resented Nancy."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "July 1843. Nancy Montgomery was killed. Then Thomas Kinnear was shot."
    },
-   "title": "JULY 1843",
-   "flick": true
+   "title": "JULY 1843"
   },
   {
    "set": "home",
@@ -140,6 +130,7 @@
     "text": "Grace and McDermott fled across Lake Ontario to Lewiston, New York."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

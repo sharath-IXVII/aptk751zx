@@ -116,18 +116,6 @@
   {
    "set": "forest",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the ransom was paid, but the baby was not where the kidnapper said."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
    "chars": [
     {
      "id": "police",
@@ -141,7 +129,10 @@
     "who": "nar",
     "text": "May 1932. A truck driver stopped in woods a few miles from the Lindbergh house."
    },
-   "title": "MAY 1932"
+   "title": "MAY 1932",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

@@ -118,18 +118,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Bridget Bishop became the first person hanged."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

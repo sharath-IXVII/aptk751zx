@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police discovered Taylor had been shot in the back."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

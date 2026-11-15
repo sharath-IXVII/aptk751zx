@@ -114,15 +114,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Lindbergh baby was kidnapped and a ransom note was left."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -145,10 +136,7 @@
     "who": "condon",
     "text": "I'm a retired teacher. I've offered in the newspaper to help."
    },
-   "title": "THE BRONX",
-   "fx": [
-    "rain"
-   ]
+   "title": "THE BRONX"
   },
   {
    "set": "home",

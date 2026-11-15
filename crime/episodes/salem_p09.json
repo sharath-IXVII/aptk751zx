@@ -118,18 +118,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rebecca Nurse was found not guilty, then guilty, and hanged."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [
@@ -154,10 +142,7 @@
    "line": {
     "who": "nar",
     "text": "Giles Corey, eighty years old, was pressed under heavy stones for two days."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -174,7 +159,10 @@
    "line": {
     "who": "corey",
     "text": "More weight."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -185,7 +173,6 @@
     "text": "He died without ever giving them a plea."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

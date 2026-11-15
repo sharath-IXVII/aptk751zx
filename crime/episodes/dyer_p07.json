@@ -93,15 +93,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a name on the wrapping paper led police to Amelia Dyer."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

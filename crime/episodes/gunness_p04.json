@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: men arrived at Belle's farm with their savings and were never seen again."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -179,10 +170,7 @@
    "line": {
     "who": "nar",
     "text": "Soon after, Andrew Helgelien vanished too."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",

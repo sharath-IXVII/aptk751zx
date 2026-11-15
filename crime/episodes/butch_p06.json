@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: with the Pinkertons closing in, the Wild Bunch broke up."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -145,10 +136,7 @@
    "line": {
     "who": "sundance",
     "text": "A fresh start. No more running."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -179,6 +167,7 @@
     "text": "Butch, Sundance and Etta Place sailed to South America."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

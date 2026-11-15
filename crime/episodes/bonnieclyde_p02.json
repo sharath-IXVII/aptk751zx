@@ -107,15 +107,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Bonnie Parker met Clyde Barrow and fell in love fast."
-   }
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [
@@ -221,10 +212,7 @@
    "line": {
     "who": "police",
     "text": "Not for long, Barrow. Caught again."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

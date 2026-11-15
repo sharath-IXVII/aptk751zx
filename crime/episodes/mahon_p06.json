@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Spilsbury examined the cottage and found Emily's remains."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

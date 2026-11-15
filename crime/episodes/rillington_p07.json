@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a tenant found a hidden cupboard with remains behind the wallpaper."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

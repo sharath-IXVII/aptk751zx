@@ -91,15 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Butch and Sundance became partners in crime."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -149,7 +140,6 @@
     "text": "The gang used dynamite. The safe blew open. So did the whole car."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

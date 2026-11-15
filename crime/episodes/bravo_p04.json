@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charles Bravo screamed for help in the night. He had been poisoned."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {

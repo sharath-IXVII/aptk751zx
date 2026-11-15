@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Felix says the poisoned cakes and wine did not affect Rasputin."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -111,8 +102,7 @@
    "line": {
     "who": "nar",
     "text": "Felix shot him. Rasputin fell."
-   },
-   "flick": true
+   }
   },
   {
    "set": "home",
@@ -165,6 +155,7 @@
     "text": "He staggered out into the snowy courtyard. More shots rang out."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

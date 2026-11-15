@@ -73,18 +73,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Johnson ran for weeks and killed a Mountie."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -106,7 +94,10 @@
     "who": "wop",
     "text": "I'm Wop May. Bush pilot. I'll find him from the air."
    },
-   "title": "FEBRUARY 1932"
+   "title": "FEBRUARY 1932",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -123,10 +114,7 @@
    "line": {
     "who": "wop",
     "text": "Tracks in the snow. Leading over the mountains toward Yukon."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",

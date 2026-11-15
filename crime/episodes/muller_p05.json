@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a cab driver linked the hat and a jeweller's box to tailor Franz Müller."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -149,7 +140,6 @@
     "text": "A race across the Atlantic began."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

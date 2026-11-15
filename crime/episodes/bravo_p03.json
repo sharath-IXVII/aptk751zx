@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Florence married Charles Bravo, a controlling man."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -114,8 +105,7 @@
     "text": "The Priory, Balham. A quiet April night."
    },
    "bed": true,
-   "title": "18 APRIL 1876",
-   "flick": true
+   "title": "18 APRIL 1876"
   },
   {
    "set": "home",

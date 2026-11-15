@@ -93,21 +93,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Rasputin gained huge influence over the royal family."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "1916. Russia is losing the First World War. People blame Rasputin."
    },
-   "title": "1916",
-   "fx": [
-    "rain"
-   ]
+   "title": "1916"
   },
   {
    "set": "home",

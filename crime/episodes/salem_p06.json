@@ -118,15 +118,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: even respected church members like Rebecca Nurse were accused."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dougal lived on Camille's money for four years, forging her cheques."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -140,7 +131,6 @@
     "text": "The rumours reached the police."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

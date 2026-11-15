@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alfred Stratton's thumb matched the print on the cash box."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

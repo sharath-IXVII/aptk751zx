@@ -112,15 +112,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Crippen told Inspector Dew his wife had left him."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

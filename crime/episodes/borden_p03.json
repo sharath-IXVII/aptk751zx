@@ -109,15 +109,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Bordens argued bitterly about money and property."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {

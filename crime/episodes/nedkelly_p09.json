@@ -97,18 +97,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ned was shot in the legs and captured. The rest of the gang died."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

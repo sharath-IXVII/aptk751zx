@@ -110,15 +110,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dillinger was locked in the escape-proof jail at Crown Point."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "office",
    "chars": [
     {

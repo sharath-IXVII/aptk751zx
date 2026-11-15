@@ -82,15 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Derek was caught by police. Chris was still free, with a gun."
-   }
-  },
-  {
-   "set": "street",
    "cam": "face",
    "chars": [
     {
@@ -104,10 +95,7 @@
    "line": {
     "who": "nar",
     "text": "According to police, Derek then shouted: 'Let him have it, Chris.'"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -124,7 +112,10 @@
    "line": {
     "who": "fairfax",
     "text": "Did he mean shoot him? Or give him the gun?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -90,18 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Billy escaped, killing his two guards."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

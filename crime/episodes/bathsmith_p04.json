@@ -111,15 +111,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Smith's second wife, Alice, also died in the bath."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

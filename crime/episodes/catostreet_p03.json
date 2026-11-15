@@ -72,15 +72,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a government spy secretly encouraged the plotters."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

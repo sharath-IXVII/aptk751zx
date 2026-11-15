@@ -103,19 +103,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Timothy Evans was hanged for his daughter's murder."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "March 1953. Christie has moved out. A new tenant moves in."
    },
-   "title": "MARCH 1953",
-   "flick": true
+   "title": "MARCH 1953"
   },
   {
    "set": "home",

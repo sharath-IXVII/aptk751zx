@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: housekeeper Nancy, Kinnear's lover, gave Grace orders."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

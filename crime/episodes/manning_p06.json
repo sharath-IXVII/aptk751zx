@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Mannings were arrested separately and blamed each other."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -121,7 +112,10 @@
    "line": {
     "who": "nar",
     "text": "In November 1849, the Mannings were hanged together before a huge crowd."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -138,10 +132,7 @@
    "line": {
     "who": "dickens",
     "text": "The wickedness of that crowd was worse than anything. Public executions must end."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -152,6 +143,7 @@
     "text": "Charles Dickens watched, and wrote to The Times against public hangings."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

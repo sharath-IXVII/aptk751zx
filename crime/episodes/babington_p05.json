@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Babington wrote to Mary about a plan to free her and kill Elizabeth."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

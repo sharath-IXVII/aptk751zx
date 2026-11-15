@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: James Maybrick died, and his brothers suspected Florence."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

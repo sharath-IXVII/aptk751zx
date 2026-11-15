@@ -82,15 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Eliot Ness took charge of the hunt."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -129,10 +120,7 @@
    "line": {
     "who": "cop",
     "text": "The faces of unknown victims. Someone might recognise them."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -143,6 +131,7 @@
     "text": "Thousands of people looked. Nobody came forward with a name."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

@@ -79,18 +79,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Princip shot the Archduke and his wife."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

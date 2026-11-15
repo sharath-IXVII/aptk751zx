@@ -93,15 +93,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Amelia Dyer promised mothers a loving home for their babies."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

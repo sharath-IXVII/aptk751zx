@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: newspapers turned Helen's murder into a sensation."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

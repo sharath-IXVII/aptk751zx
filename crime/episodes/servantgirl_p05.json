@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: citizens patrolled Austin at night, but the fear continued."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

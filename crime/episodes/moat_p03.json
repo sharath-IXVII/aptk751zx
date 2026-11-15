@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Camille went for a drive with Dougal and never returned."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -112,10 +103,7 @@
     "who": "dougal",
     "text": "Miss Holland has gone on a long holiday."
    },
-   "title": "1899 - 1903",
-   "fx": [
-    "rain"
-   ]
+   "title": "1899 - 1903"
   },
   {
    "set": "home",

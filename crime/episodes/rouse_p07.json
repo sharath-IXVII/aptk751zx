@@ -96,15 +96,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rouse was hanged for the blazing car murder."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [],
@@ -112,10 +103,7 @@
     "who": "nar",
     "text": "But who was the man in the car?"
    },
-   "title": "1931 - TODAY",
-   "fx": [
-    "rain"
-   ]
+   "title": "1931 - TODAY"
   },
   {
    "set": "forest",
@@ -124,7 +112,10 @@
    "line": {
     "who": "nar",
     "text": "Rouse said he never asked his name."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -144,7 +135,6 @@
     "text": "He died nameless, because one man wanted a new life."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

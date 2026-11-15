@@ -95,15 +95,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the raid on Northfield destroyed the James gang."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

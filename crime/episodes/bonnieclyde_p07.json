@@ -107,15 +107,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Clyde's brother Buck died and Blanche was captured."
-   }
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [
@@ -204,7 +195,10 @@
    "line": {
     "who": "clyde",
     "text": "That'll show them."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -215,7 +209,6 @@
     "text": "Texas had had enough. It was time to send a hunter."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

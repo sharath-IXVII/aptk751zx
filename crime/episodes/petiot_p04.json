@@ -98,15 +98,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Petiot told his clients they needed a vaccination before the journey."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

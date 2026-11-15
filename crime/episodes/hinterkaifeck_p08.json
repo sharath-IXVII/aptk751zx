@@ -100,15 +100,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: neighbours found all six victims at Hinterkaifeck."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -168,7 +159,10 @@
    "line": {
     "who": "nar",
     "text": "Police kept investigating for decades. No one was ever charged."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -179,7 +173,6 @@
     "text": "It is still one of the darkest mysteries in history."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

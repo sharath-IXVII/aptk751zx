@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Haigh told police that Olive no longer existed."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [

@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: travellers kept disappearing on the trail near the Bender inn."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

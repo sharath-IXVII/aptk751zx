@@ -71,15 +71,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: his own backer arrested Kidd and sent him to London."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -127,10 +118,7 @@
    "line": {
     "who": "nar",
     "text": "At his hanging, the rope broke. He was hanged a second time."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -141,6 +129,7 @@
     "text": "People still search for Captain Kidd's buried treasure."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

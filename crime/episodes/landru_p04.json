@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Landru took the women to his villa at Gambais. They vanished."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

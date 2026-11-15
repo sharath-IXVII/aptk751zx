@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Florence was sentenced to death, then life in prison."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -113,8 +104,7 @@
     "who": "nar",
     "text": "Fifteen years later, Florence Maybrick was released."
    },
-   "title": "1904",
-   "flick": true
+   "title": "1904"
   },
   {
    "set": "dock",

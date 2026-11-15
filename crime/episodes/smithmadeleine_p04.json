@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Madeleine got engaged to a wealthy man and asked Emile for her letters back."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

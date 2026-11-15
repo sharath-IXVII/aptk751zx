@@ -79,18 +79,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lieutenant Maynard was secretly sent to hunt Blackbeard."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -112,7 +100,10 @@
     "who": "maynard",
     "text": "Everyone below deck. Let him think we're beaten."
    },
-   "title": "OCRACOKE INLET · 22 NOVEMBER 1718"
+   "title": "OCRACOKE INLET · 22 NOVEMBER 1718",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",
@@ -129,10 +120,7 @@
    "line": {
     "who": "teach",
     "text": "They're all dead! Board her!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -149,7 +137,10 @@
    "line": {
     "who": "sailor",
     "text": "Now!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

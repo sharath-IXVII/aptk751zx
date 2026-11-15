@@ -96,15 +96,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rouse kept changing his story."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Bender family opened a small inn on a lonely prairie trail."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -111,10 +102,7 @@
    "line": {
     "who": "kate",
     "text": "Professor Kate Bender. I can heal the sick. I can speak to spirits."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -138,7 +126,10 @@
    "line": {
     "who": "neighbour",
     "text": "She's very charming. And very strange."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

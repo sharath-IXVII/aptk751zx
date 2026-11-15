@@ -115,15 +115,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Lindbergh baby was found dead in the woods."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -169,7 +160,10 @@
    "line": {
     "who": "police",
     "text": "Watch for gold certificates. Banks, shops, petrol stations."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

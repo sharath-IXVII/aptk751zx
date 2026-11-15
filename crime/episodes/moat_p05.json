@@ -81,18 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: village gossip about Dougal reached the police."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -148,10 +136,7 @@
    "line": {
     "who": "nar",
     "text": "Police began digging at Moat Farm. For weeks."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -170,6 +155,7 @@
     "text": "Here. In the filled-in ditch."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

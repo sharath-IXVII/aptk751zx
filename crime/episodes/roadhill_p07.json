@@ -102,15 +102,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Constance Kent confessed to killing her brother."
-   }
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [
@@ -126,8 +117,7 @@
     "who": "nar",
     "text": "She spent twenty years in prison."
    },
-   "title": "1865 - 1885",
-   "flick": true
+   "title": "1865 - 1885"
   },
   {
    "set": "prison",

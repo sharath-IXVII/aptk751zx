@@ -155,18 +155,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Holmes was arrested for fraud. Three Pitezel children were still missing."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -188,7 +176,10 @@
     "who": "police",
     "text": "Detective Geyer, Holmes won't say where the children are."
    },
-   "title": "PHILADELPHIA · 1895"
+   "title": "PHILADELPHIA · 1895",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -273,10 +264,7 @@
     "who": "nar",
     "text": "Geyer went from house to house, asking about a man with three children."
    },
-   "title": "TORONTO",
-   "fx": [
-    "rain"
-   ]
+   "title": "TORONTO"
   },
   {
    "set": "street",
@@ -287,6 +275,7 @@
     "text": "And one landlord remembered something."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

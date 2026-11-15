@@ -98,15 +98,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ned's mother was jailed. Ned and Dan fled to the bush."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -128,10 +119,7 @@
     "who": "trooper",
     "text": "A police search party is out looking for the Kelly brothers."
    },
-   "title": "STRINGYBARK CREEK · OCTOBER 1878",
-   "fx": [
-    "rain"
-   ]
+   "title": "STRINGYBARK CREEK · OCTOBER 1878"
   },
   {
    "set": "forest",
@@ -148,7 +136,10 @@
    "line": {
     "who": "ned",
     "text": "They've come to kill us. Bail up!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -174,10 +165,7 @@
    "line": {
     "who": "ned",
     "text": "There's no going back now."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",

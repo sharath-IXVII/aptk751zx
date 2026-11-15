@@ -94,15 +94,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Adams was a popular doctor to many wealthy elderly patients."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

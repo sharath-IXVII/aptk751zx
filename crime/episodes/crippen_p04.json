@@ -111,15 +111,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: after a party at the Crippens' house, Cora disappeared."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -141,10 +132,7 @@
    "line": {
     "who": "friend",
     "text": "Where is Belle? She's missed every meeting!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -168,7 +156,10 @@
    "line": {
     "who": "crippen",
     "text": "She's gone to America. Family trouble."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -202,10 +193,7 @@
    "line": {
     "who": "crippen",
     "text": "Terrible news. Cora died in America."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

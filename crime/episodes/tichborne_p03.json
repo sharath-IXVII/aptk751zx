@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lady Tichborne advertised around the world for news of her son."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -113,10 +104,7 @@
     "who": "claimant",
     "text": "I'm Roger Tichborne. I survived the shipwreck."
    },
-   "title": "WAGGA WAGGA · AUSTRALIA · 1866",
-   "fx": [
-    "rain"
-   ]
+   "title": "WAGGA WAGGA · AUSTRALIA · 1866"
   },
   {
    "set": "street",
@@ -140,7 +128,10 @@
    "line": {
     "who": "bogle",
     "text": "I was a servant in the Tichborne family for years. Yes... I believe it's you, Sir Roger."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -168,7 +159,6 @@
     "text": "A butcher in Australia said he was the lost heir."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

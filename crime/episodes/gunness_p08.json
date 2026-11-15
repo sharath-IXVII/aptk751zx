@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: many bodies were found buried on Belle's farm."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -155,7 +146,10 @@
    "line": {
     "who": "nar",
     "text": "Some believed Belle faked her death and escaped with her money."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -166,7 +160,6 @@
     "text": "For years, people claimed they had seen her."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

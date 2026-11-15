@@ -98,15 +98,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: poor families protected the Kelly Gang for nearly two years."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -145,10 +136,7 @@
    "line": {
     "who": "joe",
     "text": "Helmets, chest plates. Bullets will bounce off."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -165,7 +153,10 @@
    "line": {
     "who": "ned",
     "text": "Let them try to shoot us now."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

@@ -81,18 +81,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two men were killed in a payroll robbery."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -141,7 +129,10 @@
    "line": {
     "who": "police",
     "text": "Nicola Sacco. Bartolomeo Vanzetti. You're under arrest."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -158,10 +149,7 @@
    "line": {
     "who": "police",
     "text": "Both carrying guns. Both lying about where they've been."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -180,6 +168,7 @@
     "text": "We lied because we were scared. Not because we're guilty."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

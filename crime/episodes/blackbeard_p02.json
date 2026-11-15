@@ -79,15 +79,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edward Teach became the feared pirate Blackbeard."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -109,10 +100,7 @@
     "who": "teach",
     "text": "That French ship. Big. Heavy. Forty guns. She's ours."
    },
-   "title": "1717",
-   "fx": [
-    "rain"
-   ]
+   "title": "1717"
   },
   {
    "set": "dock",
@@ -129,7 +117,10 @@
    "line": {
     "who": "pirate",
     "text": "Captured without a fight!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

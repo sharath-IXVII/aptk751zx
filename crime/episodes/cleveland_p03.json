@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: more and more unidentified victims were found in Cleveland."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -129,10 +120,7 @@
    "line": {
     "who": "ness",
     "text": "I'm Cleveland's Safety Director now. And I'll catch this killer."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -158,6 +146,7 @@
     "text": "Every lead. Every name. Every shack."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

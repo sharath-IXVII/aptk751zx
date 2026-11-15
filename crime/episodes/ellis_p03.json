@@ -73,15 +73,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruth and David had a stormy, violent relationship."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -139,6 +130,7 @@
     "text": "On Easter Sunday 1955, Ruth waited outside the Magdala pub in Hampstead."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

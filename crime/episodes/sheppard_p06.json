@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jack escaped from the condemned cell at Newgate."
-   }
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [

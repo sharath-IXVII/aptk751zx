@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: both Alma and George confessed."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

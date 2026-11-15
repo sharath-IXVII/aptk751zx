@@ -111,15 +111,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: pathologist Bernard Spilsbury showed how the brides were drowned."
-   }
-  },
-  {
-   "set": "court",
    "cam": "office",
    "chars": [
     {

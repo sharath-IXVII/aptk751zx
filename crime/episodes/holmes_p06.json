@@ -155,15 +155,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Holmes lived on fraud, and women close to him vanished."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

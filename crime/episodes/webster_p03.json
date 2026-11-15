@@ -86,19 +86,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Mrs Thomas gave Kate notice to leave."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "In early March 1879, Mrs Thomas was never seen again."
    },
-   "title": "MARCH 1879",
-   "flick": true
+   "title": "MARCH 1879"
   },
   {
    "set": "street",
@@ -122,7 +112,10 @@
    "line": {
     "who": "neighbour",
     "text": "Where's Mrs Thomas? I haven't seen her in days."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

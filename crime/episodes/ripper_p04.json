@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Annie Chapman was killed. Whitechapel was in panic."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

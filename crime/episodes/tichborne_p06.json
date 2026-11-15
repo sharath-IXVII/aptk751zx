@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Claimant sued the Tichborne family for the estate."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

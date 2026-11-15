@@ -71,15 +71,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: four knights killed Thomas Becket in Canterbury Cathedral."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [],

@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Ann told Thomas Riley her stepson was in her way."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -186,6 +177,7 @@
     "text": "Then we need a proper examination."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

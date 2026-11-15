@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Caesar was killed by senators, including Brutus."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -101,15 +92,6 @@
    "line": {
     "who": "antony",
     "text": "Friends, Romans, countrymen! See what they did to him!"
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "The people of Rome turned against the killers."
    },
    "fx": [
     "rain"
@@ -121,8 +103,20 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Civil war followed. Brutus and Cassius both died."
+    "text": "The people of Rome turned against the killers."
    }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Civil war followed. Brutus and Cassius both died."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

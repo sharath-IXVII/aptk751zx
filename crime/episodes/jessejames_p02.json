@@ -95,18 +95,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jesse and Frank James turned to robbing banks and trains."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -176,7 +164,10 @@
    "line": {
     "who": "banker",
     "text": "Robs from the rich? People died in those robberies!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Francis Rattenbury was attacked in his armchair."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

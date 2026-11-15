@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: more people were attacked at night. Survivors saw only a dark figure."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -120,10 +111,7 @@
     "who": "grocer",
     "text": "I sit up all night with my gun. I can't sleep."
    },
-   "title": "1919",
-   "fx": [
-    "rain"
-   ]
+   "title": "1919"
   },
   {
    "set": "street",
@@ -147,7 +135,10 @@
    "line": {
     "who": "wife",
     "text": "Every noise, every creak. Is that him?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: unhappy Ruth Snyder began an affair with salesman Judd Gray."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

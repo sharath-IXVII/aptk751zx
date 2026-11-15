@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a servant found white powder in the pan Mary used for her father's food."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

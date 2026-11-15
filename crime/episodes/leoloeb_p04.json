@@ -104,15 +104,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Bobby Franks got into a car with Leopold and Loeb and never came home."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [],

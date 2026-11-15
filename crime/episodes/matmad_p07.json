@@ -73,15 +73,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: pilot Wop May tracked Johnson from the air."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -103,10 +94,7 @@
     "who": "mountie",
     "text": "There! On the frozen river!"
    },
-   "title": "EAGLE RIVER · 17 FEBRUARY 1932",
-   "fx": [
-    "rain"
-   ]
+   "title": "EAGLE RIVER · 17 FEBRUARY 1932"
   },
   {
    "set": "forest",
@@ -115,7 +103,10 @@
    "line": {
     "who": "nar",
     "text": "Surrounded, Johnson fought until he was killed."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

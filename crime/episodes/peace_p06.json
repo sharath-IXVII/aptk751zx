@@ -91,15 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Peace lived as a gentleman in London while burgling at night."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {

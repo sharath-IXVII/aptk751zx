@@ -87,15 +87,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: schoolmaster Eugene Aram was arrested thirteen years after Clark vanished."
-   }
-  },
-  {
    "set": "court",
    "cam": "face",
    "chars": [

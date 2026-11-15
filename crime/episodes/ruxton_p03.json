@@ -101,15 +101,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Isabella Ruxton and the maid Mary vanished. Ruxton said they were in Scotland."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

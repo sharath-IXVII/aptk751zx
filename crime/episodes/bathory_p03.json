@@ -91,18 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: young servant girls who went to the Countess's castles did not come back."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -123,7 +111,10 @@
    "line": {
     "who": "mother",
     "text": "Please, sir! My daughter is missing from the castle!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -45,6 +45,7 @@ def parse_part(lines):
         m = LINE.match(ln)
         if not m: raise ValueError(f"bad line: {ln}")
         st, fr, who, spk, text, title = m.groups()
+        if spk == "nar" and text.startswith("Previously"): continue  # no recaps
         ids, acts = [], {}
         for w in [x.strip() for x in who.split(",") if x.strip()]:
             i, _, a = w.partition(":"); ids.append(i)

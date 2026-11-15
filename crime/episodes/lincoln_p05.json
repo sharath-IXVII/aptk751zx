@@ -114,15 +114,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Booth shot President Lincoln in his box at the theatre."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -137,8 +128,7 @@
     "who": "nar",
     "text": "Booth leapt from the box down onto the stage."
    },
-   "title": "FORD'S THEATRE",
-   "flick": true
+   "title": "FORD'S THEATRE"
   },
   {
    "set": "home",

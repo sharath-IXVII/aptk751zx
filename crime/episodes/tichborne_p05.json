@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lady Tichborne accepted the Claimant as her son."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

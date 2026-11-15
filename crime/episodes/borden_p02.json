@@ -109,15 +109,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Andrew Borden was rich but tight with money. His daughters resented their stepmother."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

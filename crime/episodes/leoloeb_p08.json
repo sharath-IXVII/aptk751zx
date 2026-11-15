@@ -105,15 +105,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Leopold and Loeb confessed, each blaming the other."
-   }
-  },
-  {
-   "set": "court",
    "cam": "office",
    "chars": [
     {

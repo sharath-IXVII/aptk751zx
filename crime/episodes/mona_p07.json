@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Peruggia tried to sell the Mona Lisa in Florence and was arrested."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -138,6 +129,7 @@
     "text": "Before the theft, she was a famous painting. After it, she was the most famous painting in the world."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

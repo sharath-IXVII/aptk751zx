@@ -154,18 +154,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Detective Geyer followed Holmes's route city by city to Toronto."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -270,7 +258,6 @@
     "text": "The children never saw their father again."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

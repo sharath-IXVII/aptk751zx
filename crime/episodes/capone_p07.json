@@ -105,15 +105,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the government decided to go after Capone's money."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -160,10 +151,7 @@
    "line": {
     "who": "agent",
     "text": "He tried to bribe me with two thousand dollars, sir. I said no."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -194,6 +182,7 @@
     "text": "Every raid cost Capone money."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

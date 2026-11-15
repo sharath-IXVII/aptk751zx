@@ -88,15 +88,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary's fiancé Daniel was found dead near where she died."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

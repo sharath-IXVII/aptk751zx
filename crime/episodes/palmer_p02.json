@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Palmer was deep in gambling debt."
-   }
-  },
-  {
    "set": "grave",
    "cam": "grave",
    "chars": [

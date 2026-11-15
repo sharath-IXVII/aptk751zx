@@ -87,15 +87,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Rogers left to visit her aunt and never arrived."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -111,10 +102,7 @@
     "who": "nar",
     "text": "Three days later, a body was found in the Hudson River, near Hoboken."
    },
-   "title": "HOBOKEN · 28 JULY 1841",
-   "fx": [
-    "rain"
-   ]
+   "title": "HOBOKEN · 28 JULY 1841"
   },
   {
    "set": "dock",
@@ -131,7 +119,10 @@
    "line": {
     "who": "police",
     "text": "It's Mary Rogers."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

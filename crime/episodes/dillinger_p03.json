@@ -110,15 +110,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dillinger's gang robbed banks across the Midwest."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -140,10 +131,7 @@
     "who": "agent",
     "text": "John Dillinger, you're under arrest."
    },
-   "title": "TUCSON · JANUARY 1934",
-   "fx": [
-    "rain"
-   ]
+   "title": "TUCSON · JANUARY 1934"
   },
   {
    "set": "prison",

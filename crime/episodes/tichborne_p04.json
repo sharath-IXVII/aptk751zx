@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a butcher in Australia said he was Roger Tichborne."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

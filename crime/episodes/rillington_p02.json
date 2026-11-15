@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: polite John Christie lived on the ground floor of 10 Rillington Place."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

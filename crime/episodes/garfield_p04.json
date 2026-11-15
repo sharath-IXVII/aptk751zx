@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Guiteau shot President Garfield in the back."
-   }
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [

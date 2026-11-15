@@ -73,18 +73,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a silent stranger called Albert Johnson built a cabin by the Rat River."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -106,7 +94,10 @@
     "who": "trapper",
     "text": "Someone's been tampering with our traplines. It's that Johnson."
    },
-   "title": "DECEMBER 1931"
+   "title": "DECEMBER 1931",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

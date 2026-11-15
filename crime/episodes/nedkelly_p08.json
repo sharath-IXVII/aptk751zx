@@ -98,15 +98,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a teacher warned the police train. Police surrounded the hotel."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "face",
    "chars": [
     {
@@ -121,10 +112,7 @@
     "who": "nar",
     "text": "Dawn. A huge figure walks out of the mist toward the police."
    },
-   "title": "GLENROWAN · DAWN",
-   "fx": [
-    "rain"
-   ]
+   "title": "GLENROWAN · DAWN"
   },
   {
    "set": "forest",

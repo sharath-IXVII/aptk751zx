@@ -106,15 +106,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: tax investigator Frank Wilson found ledgers proving Capone's income."
-   }
-  },
-  {
-   "set": "court",
    "cam": "office",
    "chars": [
     {

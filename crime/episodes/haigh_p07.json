@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Keith Simpson found Olive's gallstones and false teeth."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

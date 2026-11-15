@@ -109,15 +109,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dillinger escaped an FBI raid at the Little Bohemia lodge."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

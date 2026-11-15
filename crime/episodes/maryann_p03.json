@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "grave",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: many of Mary Ann's children died of 'gastric fever'."
-   }
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [

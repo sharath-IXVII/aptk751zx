@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a letter signed 'Jack the Ripper' made the killer famous."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [],
@@ -175,7 +166,6 @@
     "text": "The newspapers called it the double event."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

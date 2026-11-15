@@ -71,15 +71,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Becket spent six years in exile in France."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -95,10 +86,7 @@
     "who": "nar",
     "text": "In 1170, Becket returned to Canterbury. And immediately punished the king's supporters."
    },
-   "title": "DECEMBER 1170",
-   "fx": [
-    "rain"
-   ]
+   "title": "DECEMBER 1170"
   },
   {
    "set": "home",

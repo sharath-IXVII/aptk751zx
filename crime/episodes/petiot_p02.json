@@ -98,15 +98,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: people hunted by the Nazis desperately wanted to escape Paris."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

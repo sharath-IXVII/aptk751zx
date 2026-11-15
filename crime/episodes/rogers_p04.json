@@ -88,15 +88,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Rogers was found dead in the Hudson River."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -118,10 +109,7 @@
     "who": "customer",
     "text": "The newspapers say it was a gang. They roam Hoboken on Sundays."
    },
-   "title": "1841",
-   "fx": [
-    "rain"
-   ]
+   "title": "1841"
   },
   {
    "set": "street",
@@ -138,7 +126,10 @@
    "line": {
     "who": "police",
     "text": "Others suspect her fiancé."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

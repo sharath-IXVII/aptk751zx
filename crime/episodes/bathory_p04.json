@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: girls from noble families began to disappear too."
-   }
-  },
-  {
    "set": "grave",
    "cam": "office",
    "chars": [

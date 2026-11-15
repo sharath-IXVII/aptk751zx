@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Peace became obsessed with his neighbour's wife."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -121,7 +112,10 @@
     "who": "katherine",
     "text": "Arthur, we've moved house. And he's found us again!"
    },
-   "title": "BANNER CROSS · NOVEMBER 1876"
+   "title": "BANNER CROSS · NOVEMBER 1876",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -147,10 +141,7 @@
    "line": {
     "who": "nar",
     "text": "In a quarrel, Peace shot Arthur Dyson dead."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -167,7 +158,10 @@
    "line": {
     "who": "katherine",
     "text": "Murderer!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

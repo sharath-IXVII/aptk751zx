@@ -88,15 +88,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Rogers was famous in New York for her beauty."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

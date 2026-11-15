@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found the 'stolen' jewellery under Ruth's mattress."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -151,7 +142,10 @@
    "line": {
     "who": "police",
     "text": "Judd Gray, you're under arrest."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -168,10 +162,7 @@
    "line": {
     "who": "judd",
     "text": "It was Ruth's idea! All of it!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -182,6 +173,7 @@
     "text": "Each lover blamed the other."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

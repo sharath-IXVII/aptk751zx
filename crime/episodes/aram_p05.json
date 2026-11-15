@@ -87,15 +87,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: bones were found in St Robert's Cave. Houseman blamed Aram."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

@@ -112,15 +112,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Crippen fell in love with his typist, Ethel."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

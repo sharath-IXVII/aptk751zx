@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary, Queen of Scots had been Elizabeth's prisoner for eighteen years."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

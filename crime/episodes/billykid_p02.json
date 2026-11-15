@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: orphan Billy found work and kindness with rancher John Tunstall."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [
@@ -123,10 +114,7 @@
    "line": {
     "who": "nar",
     "text": "John Tunstall was shot dead on the road."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -150,7 +138,10 @@
    "line": {
     "who": "billy",
     "text": "They killed the only man who ever treated me right."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -178,7 +169,6 @@
     "text": "The Lincoln County War had begun."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

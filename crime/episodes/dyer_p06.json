@@ -92,18 +92,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a bargeman pulled a parcel with a baby inside from the Thames."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

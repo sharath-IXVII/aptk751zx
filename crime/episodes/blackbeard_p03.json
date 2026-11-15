@@ -79,15 +79,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Blackbeard captured a big ship and named it Queen Anne's Revenge."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -154,7 +145,6 @@
     "text": "For days, Blackbeard blockaded the whole port, holding hostages."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

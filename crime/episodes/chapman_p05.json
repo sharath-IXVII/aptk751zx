@@ -117,19 +117,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Maud Marsh fell ill, and her mother and doctor grew suspicious."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "In October 1902, Maud Marsh died."
    },
-   "title": "OCTOBER 1902",
-   "flick": true
+   "title": "OCTOBER 1902"
   },
   {
    "set": "home",

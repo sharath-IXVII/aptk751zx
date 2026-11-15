@@ -72,15 +72,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: angry King Henry seemed to wish Becket gone. Four knights rode to Canterbury."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -108,15 +108,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gang robbed and fought their way across several states."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

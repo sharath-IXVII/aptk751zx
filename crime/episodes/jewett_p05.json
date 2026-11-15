@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Richard Robinson was arrested for Helen's murder."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -128,10 +119,7 @@
    "line": {
     "who": "reporter",
     "text": "We'll print every detail. Every rumour."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -142,6 +130,7 @@
     "text": "Newspapers fought over the story. It was America's first true-crime media frenzy."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

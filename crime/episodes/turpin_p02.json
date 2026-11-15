@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dick Turpin joined the Essex Gang, who terrorised farmhouses."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -121,7 +112,10 @@
     "who": "catcher",
     "text": "Another one caught. Another one hanged."
    },
-   "title": "1735"
+   "title": "1735",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -166,7 +160,6 @@
     "text": "Turpin turned to highway robbery, stopping coaches on lonely roads."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

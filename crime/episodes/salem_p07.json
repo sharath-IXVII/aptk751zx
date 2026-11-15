@@ -119,15 +119,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the court accepted dreams and visions as evidence."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -186,7 +177,6 @@
     "text": "She was the first. She would not be the last."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

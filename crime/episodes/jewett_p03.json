@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Helen threatened to expose Richard Robinson."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

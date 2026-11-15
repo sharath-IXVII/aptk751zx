@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found a second trunk, with the body of Violette Kaye."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

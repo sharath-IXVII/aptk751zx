@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Raymond and Martha were arrested in Michigan."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

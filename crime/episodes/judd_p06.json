@@ -82,15 +82,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Winnie surrendered and said it was self-defence."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

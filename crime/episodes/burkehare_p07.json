@@ -142,15 +142,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a student recognised a victim, Mary Paterson, but said nothing."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -188,10 +179,7 @@
    "line": {
     "who": "burke",
     "text": "Come with me, Jamie. I'll take you to her."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -201,7 +189,10 @@
     "who": "nar",
     "text": "Daft Jamie was a gentle young man everyone in Edinburgh knew."
    },
-   "title": "EDINBURGH"
+   "title": "EDINBURGH",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

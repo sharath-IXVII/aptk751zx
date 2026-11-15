@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Archduke decided to visit people hurt by the bomb."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -130,7 +121,10 @@
    "line": {
     "who": "driver",
     "text": "Wrong way! I have to stop and reverse!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

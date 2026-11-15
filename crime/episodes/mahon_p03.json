@@ -91,18 +91,6 @@
    }
   },
   {
-   "set": "shore",
-   "cam": "wide",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Emily Kaye went to a seaside cottage with Mahon, and never left."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

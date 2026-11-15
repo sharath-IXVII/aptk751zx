@@ -87,18 +87,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Clark vanished. Eugene Aram left town and started a new life."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -141,7 +129,10 @@
    "line": {
     "who": "constable",
     "text": "Could it be Daniel Clark, after all these years?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -184,7 +175,6 @@
     "text": "How can you be so sure?"
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

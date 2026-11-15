@@ -74,15 +74,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Robert Stroud was sent to prison for killing a man in Alaska."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "office",
    "chars": [
     {

@@ -95,19 +95,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: the Countess was walled into her castle."
-   }
-  },
-  {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "In August 1614, Elizabeth Báthory died in her prison."
    },
-   "title": "AUGUST 1614",
-   "flick": true
+   "title": "AUGUST 1614"
   },
   {
    "set": "forest",
@@ -116,10 +106,7 @@
    "line": {
     "who": "nar",
     "text": "Later legends said she bathed in the blood of girls to stay young."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -128,7 +115,10 @@
    "line": {
     "who": "nar",
     "text": "Historians say there's no evidence for that. It was added a century later."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

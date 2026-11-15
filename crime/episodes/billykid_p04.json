@@ -91,15 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Billy became a wanted outlaw, accused of killing a sheriff."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -138,10 +129,7 @@
    "line": {
     "who": "garrett",
     "text": "Now I'm the sheriff. And it's my job to bring him in."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -166,7 +154,10 @@
     "who": "garrett",
     "text": "Stinking Springs. You're surrounded, Kid. Come out."
    },
-   "title": "DECEMBER 1880"
+   "title": "DECEMBER 1880",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -185,7 +176,6 @@
     "text": "Got any food, Pat?"
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

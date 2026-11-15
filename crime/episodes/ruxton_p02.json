@@ -101,15 +101,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Ruxton was loved by patients but violent at home."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

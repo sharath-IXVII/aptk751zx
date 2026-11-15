@@ -81,15 +81,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Read had lived for years disguised as a man."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -111,10 +102,7 @@
     "who": "anne",
     "text": "You're a woman, aren't you? Like me."
    },
-   "title": "1720",
-   "fx": [
-    "rain"
-   ]
+   "title": "1720"
   },
   {
    "set": "dock",
@@ -138,7 +126,10 @@
    "line": {
     "who": "mary",
     "text": "Tell no one."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",
@@ -155,10 +146,7 @@
    "line": {
     "who": "jack",
     "text": "Who's this new sailor you're always talking to, Anne?"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",

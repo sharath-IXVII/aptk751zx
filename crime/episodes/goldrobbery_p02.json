@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edward Agar planned to steal gold from locked safes on a train."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

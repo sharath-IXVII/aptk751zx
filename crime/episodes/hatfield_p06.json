@@ -91,18 +91,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Hatfields attacked the McCoy cabin on New Year's night."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -124,7 +112,10 @@
     "who": "deputy",
     "text": "Kentucky wants Hatfields for trial. We're crossing into West Virginia."
    },
-   "title": "1888"
+   "title": "1888",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

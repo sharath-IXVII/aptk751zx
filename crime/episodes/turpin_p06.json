@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Turpin's old teacher recognised his handwriting."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -130,10 +121,7 @@
    "line": {
     "who": "nar",
     "text": "Turpin was hanged at York in April 1739."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

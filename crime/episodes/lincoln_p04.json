@@ -113,15 +113,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Lincolns went to see a comedy at Ford's Theatre."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

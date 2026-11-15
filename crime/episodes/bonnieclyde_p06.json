@@ -107,18 +107,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found Bonnie and Clyde's photos. They became famous overnight."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -141,7 +129,10 @@
     "who": "buck",
     "text": "Clyde's my brother, Blanche. Where he goes, we go."
    },
-   "title": "JULY 1933"
+   "title": "JULY 1933",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -174,10 +165,7 @@
    "line": {
     "who": "nar",
     "text": "Police surrounded the gang's camp. Another shootout."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -201,7 +189,10 @@
    "line": {
     "who": "blanche",
     "text": "Buck! Buck, stay with me!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

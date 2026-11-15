@@ -83,18 +83,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Winnie took two heavy trunks on a train to Los Angeles."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -143,7 +131,10 @@
    "line": {
     "who": "police",
     "text": "Can you open this trunk, ma'am?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

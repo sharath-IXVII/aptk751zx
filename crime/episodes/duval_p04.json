@@ -80,18 +80,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: legend says Duval danced with a lady by the roadside."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -114,7 +102,10 @@
     "who": "duval",
     "text": "More wine! For everyone!"
    },
-   "title": "THE HOLE IN THE WALL · LONDON · 1670"
+   "title": "THE HOLE IN THE WALL · LONDON · 1670",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -138,10 +129,7 @@
    "line": {
     "who": "guard",
     "text": "Claude Duval. You're under arrest."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -158,7 +146,10 @@
    "line": {
     "who": "duval",
     "text": "Ah. Too much wine."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

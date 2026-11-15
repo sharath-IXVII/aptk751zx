@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Countess Elizabeth Báthory ruled vast lands while her husband was at war."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

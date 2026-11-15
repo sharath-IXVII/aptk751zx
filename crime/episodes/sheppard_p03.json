@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jack refused to work for crime boss Jonathan Wild."
-   }
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [
@@ -165,7 +156,6 @@
     "text": "He's gone!"
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

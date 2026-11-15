@@ -104,21 +104,12 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: neighbours saw smoke from the chimney, though the family had not been seen for days."
+    "text": "4 April 1922. The neighbours go to the farm."
    },
+   "title": "4 APRIL 1922",
    "fx": [
     "rain"
    ]
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "4 April 1922. The neighbours go to the farm."
-   },
-   "title": "4 APRIL 1922"
   },
   {
    "set": "home",

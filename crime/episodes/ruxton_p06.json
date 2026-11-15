@@ -101,15 +101,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a newspaper wrapped around the remains pointed to Lancaster."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

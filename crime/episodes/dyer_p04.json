@@ -93,15 +93,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: mothers gave Amelia Dyer their babies and their money. Few ever heard from her again."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

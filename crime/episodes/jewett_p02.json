@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Helen Jewett was a clever, famous young woman in New York."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

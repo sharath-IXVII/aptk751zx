@@ -100,15 +100,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruxton asked a cleaner to scrub blood-stained carpets."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [
@@ -144,7 +135,10 @@
    "line": {
     "who": "walker",
     "text": "What's down in the ravine? Wrapped in newspaper."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

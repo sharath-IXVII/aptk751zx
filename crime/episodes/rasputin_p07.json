@@ -88,18 +88,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rasputin was shot again as he fled into the courtyard."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "dock",
    "cam": "office",
    "chars": [
@@ -122,7 +110,10 @@
     "who": "dmitri",
     "text": "The river. Through the ice. No one will ever know."
    },
-   "title": "DECEMBER 1916"
+   "title": "DECEMBER 1916",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

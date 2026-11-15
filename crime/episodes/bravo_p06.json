@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the inquest ruled it was murder by someone unknown."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

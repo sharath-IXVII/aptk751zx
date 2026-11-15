@@ -98,15 +98,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: firemen broke into Petiot's building and found horrors in the basement."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

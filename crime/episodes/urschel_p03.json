@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Urschel was held blindfolded on a remote farm."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

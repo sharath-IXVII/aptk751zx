@@ -89,18 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: London panicked. There was no real police force to catch the killer."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [
@@ -117,8 +105,7 @@
     "text": "Twelve days later. A pub called the King's Arms."
    },
    "bed": true,
-   "title": "19 DECEMBER 1811",
-   "flick": true
+   "title": "19 DECEMBER 1811"
   },
   {
    "set": "home",
@@ -193,6 +180,7 @@
     "text": "The publican and his family were killed. The young lodger survived."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

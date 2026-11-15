@@ -84,15 +84,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Pritchard's wife died, and he kissed her in the coffin."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

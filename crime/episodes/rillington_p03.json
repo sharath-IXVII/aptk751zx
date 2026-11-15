@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: young Timothy and Beryl Evans lived upstairs with their baby."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -146,10 +137,7 @@
    "line": {
     "who": "nar",
     "text": "Beryl and baby Geraldine disappeared."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

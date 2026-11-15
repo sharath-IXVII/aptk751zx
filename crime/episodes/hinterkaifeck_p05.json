@@ -100,15 +100,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a new maid named Maria arrived at Hinterkaifeck."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -181,7 +172,10 @@
    "line": {
     "who": "nar",
     "text": "That night, all six people on the farm were killed."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

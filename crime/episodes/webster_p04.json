@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kate Webster pretended to be Mrs Thomas and tried to sell her furniture."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -122,10 +113,7 @@
    "line": {
     "who": "police",
     "text": "Human remains. Who could do this?"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

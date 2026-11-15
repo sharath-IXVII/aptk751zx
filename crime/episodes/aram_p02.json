@@ -88,18 +88,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Daniel Clark borrowed goods from all over town, then vanished."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -120,7 +108,10 @@
    "line": {
     "who": "trader",
     "text": "He's run off with everything we lent him!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -165,7 +156,6 @@
     "text": "He started a new life far away, teaching boys. He became a respected scholar."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

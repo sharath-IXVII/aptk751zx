@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edwin was found dead with chloroform in his stomach."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

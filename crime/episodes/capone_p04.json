@@ -106,15 +106,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Capone became a celebrity while paying off police and politicians."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -162,7 +153,10 @@
    "line": {
     "who": "nar",
     "text": "Shootouts in the streets. Bombs in shops. Hundreds died in Chicago's gang wars."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -197,7 +191,6 @@
     "text": "Everyone waited for the next strike."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

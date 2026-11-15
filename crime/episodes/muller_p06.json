@@ -92,15 +92,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: detectives raced Müller across the Atlantic on a faster ship."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -139,10 +130,7 @@
    "line": {
     "who": "tanner",
     "text": "And what's in your bag? Mr Briggs's gold watch. And his hat."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -168,6 +156,7 @@
     "text": "You're coming back to London."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

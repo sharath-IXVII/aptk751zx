@@ -71,15 +71,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edith fell in love with Freddy Bywaters, a ship's steward."
-   }
-  },
-  {
    "set": "dock",
    "cam": "face",
    "chars": [

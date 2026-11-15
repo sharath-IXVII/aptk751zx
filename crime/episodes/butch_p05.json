@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Wild Bunch robbed a Union Pacific train with dynamite."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -144,10 +135,7 @@
    "line": {
     "who": "gang",
     "text": "Half the gang's dead or in jail, Butch."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -166,6 +154,7 @@
     "text": "Then it's time to leave the country."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

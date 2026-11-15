@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: sailor John Williams was arrested after a tool was linked to his lodging house."
-   }
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [
@@ -113,8 +104,7 @@
     "who": "nar",
     "text": "Before his trial, Williams was found hanged in his cell."
    },
-   "title": "28 DECEMBER 1811",
-   "flick": true
+   "title": "28 DECEMBER 1811"
   },
   {
    "set": "prison",

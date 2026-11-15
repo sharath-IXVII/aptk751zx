@@ -155,18 +155,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Detective Geyer found the remains of the three Pitezel children."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -188,7 +176,10 @@
     "who": "police",
     "text": "Chicago police are searching Holmes's Castle."
    },
-   "title": "CHICAGO · 1895"
+   "title": "CHICAGO · 1895",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

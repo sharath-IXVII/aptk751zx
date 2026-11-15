@@ -115,15 +115,6 @@
    }
   },
   {
-   "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Reverend Kelly was tried twice and never convicted."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [],

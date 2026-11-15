@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a letter claiming to be from the Axeman was printed in the newspaper."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -182,6 +173,7 @@
     "text": "Real or not, I'm playing all night!"
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

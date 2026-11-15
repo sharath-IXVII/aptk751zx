@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Haigh invited Olive Durand-Deacon to his workshop in Crawley."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -115,7 +106,10 @@
     "who": "nar",
     "text": "18 February 1949. Olive drives off with Haigh."
    },
-   "title": "18 FEBRUARY 1949"
+   "title": "18 FEBRUARY 1949",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

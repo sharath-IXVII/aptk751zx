@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Mona Lisa vanished and the Louvre closed for a week."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -137,7 +128,10 @@
    "line": {
     "who": "woman",
     "text": "Crowds are queueing at the Louvre to look at an empty wall!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -156,7 +150,6 @@
     "text": "A fingerprint on the frame. But we can't match it."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

@@ -79,15 +79,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Blackbeard blockaded Charleston for a chest of medicine."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "face",
    "chars": [
     {
@@ -145,7 +136,6 @@
     "text": "Blackbeard settled in North Carolina. But soon, he was back to his old ways."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

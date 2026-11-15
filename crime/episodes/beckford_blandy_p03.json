@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary's father found out the Captain already had a wife."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

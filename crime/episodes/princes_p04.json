@@ -82,19 +82,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: both princes were living in the Tower of London."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Parliament declared that the boys' parents' marriage was not valid. So the boys could not inherit the crown."
    },
-   "title": "JUNE 1483",
-   "flick": true
+   "title": "JUNE 1483"
   },
   {
    "set": "home",

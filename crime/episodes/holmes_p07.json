@@ -154,15 +154,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Holmes and his partner Benjamin Pitezel planned to fake Ben's death for insurance."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

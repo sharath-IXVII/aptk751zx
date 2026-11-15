@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Sacco and Vanzetti were executed in 1927."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

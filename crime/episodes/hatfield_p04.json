@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Johnse Hatfield and Roseanna McCoy fell in love, angering both families."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -147,10 +138,7 @@
    "line": {
     "who": "anse",
     "text": "They killed my brother. Now we take three for one."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",

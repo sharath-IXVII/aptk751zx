@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charlotte killed Marat, and did not try to escape."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

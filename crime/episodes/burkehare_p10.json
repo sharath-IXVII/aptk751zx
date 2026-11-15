@@ -142,15 +142,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Hare agreed to testify against Burke in exchange for freedom."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {
@@ -199,10 +190,7 @@
     "who": "nar",
     "text": "In January 1829 Burke was hanged before a huge crowd."
    },
-   "title": "JANUARY 1829",
-   "fx": [
-    "rain"
-   ]
+   "title": "JANUARY 1829"
   },
   {
    "set": "home",

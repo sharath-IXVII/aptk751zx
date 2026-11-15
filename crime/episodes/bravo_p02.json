@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: wealthy widow Florence had a scandalous affair with an older doctor."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

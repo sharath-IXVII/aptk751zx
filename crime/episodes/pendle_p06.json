@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: ten people were hanged, and later Jennet herself was accused."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [],
@@ -119,7 +110,10 @@
    "line": {
     "who": "nar",
     "text": "More than four hundred years later, people still visit, and some campaign for the accused to be pardoned."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

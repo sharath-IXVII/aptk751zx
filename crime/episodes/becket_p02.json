@@ -72,15 +72,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: King Henry made his friend Thomas Becket Archbishop of Canterbury."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Urschel was released and gave the FBI every detail he'd noticed."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -179,7 +170,6 @@
     "text": "The squeaky pump. The iron water. This is it."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

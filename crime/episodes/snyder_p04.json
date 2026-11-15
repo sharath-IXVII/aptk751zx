@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Albert Snyder was killed in his bed."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

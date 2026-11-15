@@ -109,15 +109,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Cream boasted about the murders to a former New York policeman."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

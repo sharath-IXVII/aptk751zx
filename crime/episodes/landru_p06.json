@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Landru kept careful notebooks, including one-way tickets for each woman."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -181,7 +172,6 @@
     "text": "Henri Landru. You're under arrest."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

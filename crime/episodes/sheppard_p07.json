@@ -82,15 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jack broke through six locked doors to escape Newgate again."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -112,10 +103,7 @@
     "who": "jack",
     "text": "One more drink! Who'll catch me now?"
    },
-   "title": "NOVEMBER 1724",
-   "fx": [
-    "rain"
-   ]
+   "title": "NOVEMBER 1724"
   },
   {
    "set": "street",
@@ -151,7 +139,10 @@
    "line": {
     "who": "nar",
     "text": "On 16 November 1724, Jack Sheppard was hanged."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -162,7 +153,6 @@
     "text": "Around two hundred thousand people came to watch. A third of London."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

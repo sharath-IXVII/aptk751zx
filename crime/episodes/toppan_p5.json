@@ -149,23 +149,6 @@
    "hold": 2.8
   },
   {
-   "set": "grave",
-   "cam": "grave",
-   "chars": [
-    {
-     "id": "rel",
-     "x": -0.6,
-     "z": 1.6,
-     "ry": 0.2,
-     "act": "think"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Previously: one family lost four people in one summer. A relative demanded tests."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "title": "THE RESULTS",

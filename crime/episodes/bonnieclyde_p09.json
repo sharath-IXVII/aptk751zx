@@ -107,15 +107,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: former Texas Ranger Frank Hamer studied every move Bonnie and Clyde made."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -171,6 +162,15 @@
    "line": {
     "who": "bonnie",
     "text": "Nearly home, Clyde."
+   }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Their car slowed. And then the shooting started."
    },
    "fx": [
     "rain"
@@ -182,19 +182,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Their car slowed. And then the shooting started."
-   }
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Bonnie was twenty-three. Clyde was twenty-five. Both died on that road."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

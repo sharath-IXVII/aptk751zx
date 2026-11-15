@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Madeleine and Emile wrote hundreds of passionate letters."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

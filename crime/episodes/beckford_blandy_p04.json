@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Cranstoun sent Mary a 'love powder' for her father."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

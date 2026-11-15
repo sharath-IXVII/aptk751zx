@@ -82,15 +82,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dyson bought chloroform for Adelaide."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -113,8 +104,7 @@
     "text": "The night of 31 December 1885."
    },
    "bed": true,
-   "title": "31 DECEMBER 1885",
-   "flick": true
+   "title": "31 DECEMBER 1885"
   },
   {
    "set": "home",

@@ -89,18 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gold theft was discovered in Paris, but nobody knew how."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [

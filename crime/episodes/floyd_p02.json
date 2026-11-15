@@ -81,18 +81,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charles Floyd grew up poor in Oklahoma."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -115,7 +103,10 @@
     "who": "floyd",
     "text": "Put the money in the bag. And the mortgage papers too."
    },
-   "title": "1930S"
+   "title": "1930S",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -143,7 +134,6 @@
     "text": "Legend says he tore up mortgages to help poor farmers. Nobody knows if it's true."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

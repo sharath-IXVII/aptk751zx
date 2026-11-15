@@ -111,15 +111,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alice's father saw a newspaper story and went to the police."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

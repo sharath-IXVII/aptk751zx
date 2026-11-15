@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Duval was arrested drunk in a London tavern."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -144,10 +135,7 @@
    "line": {
     "who": "nar",
     "text": "Many ladies begged the king for mercy. He refused."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

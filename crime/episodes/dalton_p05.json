@@ -80,15 +80,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: townspeople recognised the Dalton Gang in Coffeyville."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -109,10 +100,7 @@
    "line": {
     "who": "clerk",
     "text": "Take these rifles from the store! Every one!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -121,7 +109,10 @@
    "line": {
     "who": "nar",
     "text": "Townspeople fired from shop windows. The robbers fired back."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

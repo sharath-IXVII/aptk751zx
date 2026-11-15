@@ -71,15 +71,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edith wrote passionate letters to Freddy, imagining a life without her husband."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -102,7 +93,10 @@
     "who": "percy",
     "text": "Good play tonight, I suppose."
    },
-   "title": "3 OCTOBER 1922"
+   "title": "3 OCTOBER 1922",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -111,10 +105,7 @@
    "line": {
     "who": "nar",
     "text": "Walking home from the theatre, a man rushed out of the dark."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -131,7 +122,10 @@
    "line": {
     "who": "edith",
     "text": "Oh don't! Oh don't!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -142,7 +136,6 @@
     "text": "Freddy Bywaters attacked Percy. Percy died on the pavement."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

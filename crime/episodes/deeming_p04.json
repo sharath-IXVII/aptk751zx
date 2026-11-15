@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Deeming married Emily Mather and sailed with her to Australia."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

@@ -119,15 +119,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a doctor said the girls were bewitched."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

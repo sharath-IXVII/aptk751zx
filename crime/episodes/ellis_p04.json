@@ -74,15 +74,6 @@
   {
    "set": "street",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruth waited outside a pub in Hampstead for David."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
    "chars": [
     {
      "id": "david",
@@ -96,10 +87,7 @@
     "who": "nar",
     "text": "David came out of the pub."
    },
-   "title": "10 APRIL 1955",
-   "fx": [
-    "rain"
-   ]
+   "title": "10 APRIL 1955"
   },
   {
    "set": "street",
@@ -116,7 +104,10 @@
    "line": {
     "who": "nar",
     "text": "Ruth shot him."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

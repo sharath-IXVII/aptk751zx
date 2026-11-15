@@ -103,15 +103,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Constance Kent felt unloved since her father remarried."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -134,8 +125,7 @@
     "text": "29 June 1860. The nursemaid Elizabeth Gough wakes at dawn."
    },
    "bed": true,
-   "title": "29 JUNE 1860",
-   "flick": true
+   "title": "29 JUNE 1860"
   },
   {
    "set": "home",

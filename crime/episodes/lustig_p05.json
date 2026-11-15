@@ -79,15 +79,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the dealer was too embarrassed to report the Eiffel Tower con."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

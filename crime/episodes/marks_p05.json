@@ -81,18 +81,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Nancy and Kinnear were killed. Grace and McDermott fled to the United States."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -114,7 +102,10 @@
     "who": "police",
     "text": "James McDermott. Grace Marks. You're under arrest."
    },
-   "title": "LEWISTON · JULY 1843"
+   "title": "LEWISTON · JULY 1843",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

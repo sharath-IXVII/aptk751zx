@@ -112,15 +112,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Cora vanished, and Ethel moved in wearing her jewellery."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -142,10 +133,7 @@
     "who": "friend",
     "text": "Inspector, Belle would never leave without a word."
    },
-   "title": "SCOTLAND YARD",
-   "fx": [
-    "rain"
-   ]
+   "title": "SCOTLAND YARD"
   },
   {
    "set": "home",

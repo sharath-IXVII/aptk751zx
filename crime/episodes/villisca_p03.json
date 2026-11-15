@@ -115,15 +115,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two young friends, Lena and Ina, stayed the night with the Moores."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -166,7 +157,10 @@
    "line": {
     "who": "mary",
     "text": "Something is wrong at the Moores'."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -190,10 +184,7 @@
    "line": {
     "who": "mary",
     "text": "Ross, your brother's house is all shut up. Nobody answers."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -210,7 +201,10 @@
    "line": {
     "who": "ross",
     "text": "I have a key. I'll go in."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

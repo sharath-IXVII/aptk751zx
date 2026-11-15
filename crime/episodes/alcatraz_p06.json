@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the prisoners built a raft from more than fifty raincoats."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

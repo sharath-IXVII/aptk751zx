@@ -74,18 +74,6 @@
   {
    "set": "forest",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Johnson escaped the siege into the snow."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
    "chars": [
     {
      "id": "johnson",
@@ -98,7 +86,10 @@
    "line": {
     "who": "nar",
     "text": "For forty-eight days he ran, through blizzards, over mountains."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

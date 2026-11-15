@@ -103,15 +103,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Inspector Whicher learned that one of Constance's nightdresses was missing."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

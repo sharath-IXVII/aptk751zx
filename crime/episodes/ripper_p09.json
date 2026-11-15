@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Jane Kelly was killed in her room in Miller's Court."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

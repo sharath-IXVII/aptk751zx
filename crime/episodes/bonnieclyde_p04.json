@@ -108,18 +108,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Bonnie joined Clyde's gang as they began robbing shops and banks."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -141,7 +129,10 @@
     "who": "clyde",
     "text": "Another stolen Ford. The fastest car on the road."
    },
-   "title": "TEXAS · OKLAHOMA · MISSOURI"
+   "title": "TEXAS · OKLAHOMA · MISSOURI",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -174,10 +165,7 @@
    "line": {
     "who": "nar",
     "text": "In their shootouts, police officers lost their lives."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

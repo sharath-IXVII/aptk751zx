@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alizon confessed to witchcraft and accused her grandmother and others."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -122,8 +113,7 @@
     "who": "nar",
     "text": "Demdike and Chattox were arrested."
    },
-   "title": "APRIL 1612",
-   "flick": true
+   "title": "APRIL 1612"
   },
   {
    "set": "home",

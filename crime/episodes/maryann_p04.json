@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Ann's husbands died, and she collected the insurance."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -102,15 +102,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Whicher accused Constance, but she was released and he was disgraced."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

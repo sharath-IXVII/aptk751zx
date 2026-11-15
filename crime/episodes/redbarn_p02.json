@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Maria Marten fell in love with William Corder, a rich farmer's son."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

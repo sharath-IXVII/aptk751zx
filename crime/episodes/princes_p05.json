@@ -82,19 +82,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: the princes' uncle was crowned King Richard the Third."
-   }
-  },
-  {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "At first the boys were seen playing in the Tower gardens."
    },
-   "title": "SUMMER 1483",
-   "flick": true
+   "title": "SUMMER 1483"
   },
   {
    "set": "prison",

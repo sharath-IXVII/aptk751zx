@@ -155,15 +155,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Holmes travelled with three of the Pitezel children."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "office",
    "chars": [
     {
@@ -275,7 +266,10 @@
     "who": "police",
     "text": "H. H. Holmes, you're under arrest for fraud."
    },
-   "title": "BOSTON · NOV 1894"
+   "title": "BOSTON · NOV 1894",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -303,7 +297,6 @@
     "text": "Holmes was in custody. But where were the children?"
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

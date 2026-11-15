@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a soothsayer warned Caesar of danger by the Ides of March."
-   }
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [
@@ -110,8 +101,7 @@
     "text": "The night before the Ides of March."
    },
    "bed": true,
-   "title": "14 MARCH · 44 BC",
-   "flick": true
+   "title": "14 MARCH · 44 BC"
   },
   {
    "set": "home",

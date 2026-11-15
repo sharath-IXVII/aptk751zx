@@ -93,18 +93,6 @@
   {
    "set": "street",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Whitechapel in 1888. Poor, crowded and dark."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
-   "cam": "scene",
    "chars": [
     {
      "id": "constable",
@@ -138,7 +126,10 @@
    "line": {
     "who": "constable",
     "text": "There's a woman lying in the street! Fetch help!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -162,10 +153,7 @@
    "line": {
     "who": "inspector",
     "text": "Her name was Mary Ann Nichols. Polly, her friends called her."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -182,7 +170,10 @@
    "line": {
     "who": "inspector",
     "text": "No one heard a thing. No one saw a thing."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -193,7 +184,6 @@
     "text": "It was the first of the murders most linked to the Whitechapel killer."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

@@ -79,15 +79,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Victor Lustig had an idea about the Eiffel Tower."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

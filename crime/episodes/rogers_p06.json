@@ -88,15 +88,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a tavern keeper told a different story about Mary's death."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

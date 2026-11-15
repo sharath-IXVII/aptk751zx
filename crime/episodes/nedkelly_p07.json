@@ -97,18 +97,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gang made suits of iron armour."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -165,10 +153,7 @@
    "line": {
     "who": "nar",
     "text": "Schoolteacher Thomas Curnow slipped away and stopped the train with a red scarf and a candle."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -187,6 +172,7 @@
     "text": "The Kelly Gang is at Glenrowan! Surround the hotel!"
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

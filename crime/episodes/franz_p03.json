@@ -81,15 +81,6 @@
   {
    "set": "street",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a bomb missed the Archduke's car."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
    "chars": [
     {
      "id": "princip",

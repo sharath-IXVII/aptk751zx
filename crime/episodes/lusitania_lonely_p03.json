@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: nurse Martha Beck joined Raymond's scams, posing as his sister."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

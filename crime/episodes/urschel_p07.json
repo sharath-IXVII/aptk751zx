@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: George and Kathryn Kelly were arrested."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

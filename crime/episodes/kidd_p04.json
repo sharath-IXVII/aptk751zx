@@ -71,15 +71,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kidd captured a rich ship and was declared a pirate."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "face",
    "chars": [
     {
@@ -94,10 +85,7 @@
     "who": "kidd",
     "text": "My backers will protect me. I'll go home and explain."
    },
-   "title": "1699",
-   "fx": [
-    "rain"
-   ]
+   "title": "1699"
   },
   {
    "set": "forest",
@@ -114,7 +102,10 @@
    "line": {
     "who": "nar",
     "text": "On his way, Kidd buried some treasure on Gardiners Island, near New York."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -133,7 +124,6 @@
     "text": "Just in case."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

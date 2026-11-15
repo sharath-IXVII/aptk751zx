@@ -91,15 +91,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Billy was sentenced to hang and guarded in the Lincoln courthouse."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "office",
    "chars": [
     {
@@ -167,7 +158,6 @@
     "text": "He's gone again."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

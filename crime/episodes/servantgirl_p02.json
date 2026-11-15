@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Austin was a growing city. Servant women slept in small rooms behind the houses."
-   }
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [
@@ -106,8 +97,7 @@
     "text": "December 1884. Late at night, someone enters a servant's quarters."
    },
    "bed": true,
-   "title": "DECEMBER 1884",
-   "flick": true
+   "title": "DECEMBER 1884"
   },
   {
    "set": "home",
@@ -155,6 +145,7 @@
     "text": "Then another attack. And another."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

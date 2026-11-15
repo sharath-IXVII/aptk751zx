@@ -110,15 +110,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Cream moved into rooms in Lambeth, London."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -140,10 +131,7 @@
     "who": "cream",
     "text": "Take these pills, my dear. They'll make your skin glow."
    },
-   "title": "OCTOBER 1891",
-   "fx": [
-    "rain"
-   ]
+   "title": "OCTOBER 1891"
   },
   {
    "set": "street",
@@ -179,7 +167,10 @@
    "line": {
     "who": "nar",
     "text": "Hours later, Ellen Donworth collapsed in agony in the street."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

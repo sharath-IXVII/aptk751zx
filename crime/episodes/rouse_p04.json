@@ -96,15 +96,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rouse picked up a stranger on Bonfire Night."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [],
@@ -121,10 +112,7 @@
    "line": {
     "who": "nar",
     "text": "Rouse's car burst into flames with the stranger inside."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -148,7 +136,10 @@
    "line": {
     "who": "youth",
     "text": "Look! A fire, up the lane!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

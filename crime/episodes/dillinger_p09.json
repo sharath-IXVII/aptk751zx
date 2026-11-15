@@ -110,15 +110,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Anna Sage told the FBI where Dillinger would be."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -157,10 +148,7 @@
    "line": {
     "who": "nar",
     "text": "Dillinger walked out of a gangster movie with two women."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -177,7 +165,10 @@
    "line": {
     "who": "nar",
     "text": "Purvis lit his cigar."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -186,10 +177,7 @@
    "line": {
     "who": "nar",
     "text": "Dillinger sensed the trap and ran toward an alley. Agents opened fire."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: remains were found by the Thames, and the furniture buyer grew suspicious."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [

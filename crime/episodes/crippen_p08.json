@@ -112,18 +112,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Crippen and Ethel sailed for Canada, disguised as father and son."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -145,7 +133,10 @@
     "who": "kendall",
     "text": "That boy has the figure of a woman. And they hold hands."
    },
-   "title": "SS MONTROSE"
+   "title": "SS MONTROSE",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",
@@ -186,10 +177,7 @@
    "line": {
     "who": "kendall",
     "text": "Send a wireless message to London. Now."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "dock",
@@ -198,7 +186,10 @@
    "line": {
     "who": "nar",
     "text": "For the first time, radio was used to catch a fleeing killer."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

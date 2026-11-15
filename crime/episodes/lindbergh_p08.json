@@ -115,18 +115,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: investigators tracked the ransom's serial numbers for two years."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -148,7 +136,10 @@
     "who": "attendant",
     "text": "A ten-dollar gold certificate? We hardly see those any more."
    },
-   "title": "SEPTEMBER 1934"
+   "title": "SEPTEMBER 1934",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -165,10 +156,7 @@
    "line": {
     "who": "attendant",
     "text": "I'll just write your licence plate on the back."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -192,7 +180,10 @@
    "line": {
     "who": "police",
     "text": "That's ransom money! Whose car is this?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -216,10 +207,7 @@
    "line": {
     "who": "police",
     "text": "Bruno Richard Hauptmann, you're under arrest."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -238,6 +226,7 @@
     "text": "I'm a carpenter. I did nothing."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

@@ -115,15 +115,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: all eight people in the Moore house were found dead. Mirrors were covered."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [],

@@ -109,15 +109,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lizzie Borden was tried for the murders of her father and stepmother."
-   }
-  },
-  {
-   "set": "court",
    "cam": "office",
    "chars": [
     {

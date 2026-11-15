@@ -112,15 +112,6 @@
    }
   },
   {
-   "set": "grave",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: antimony was found in the bodies of all three women."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

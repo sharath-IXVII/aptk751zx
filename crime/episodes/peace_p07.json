@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a London constable caught Peace during a burglary."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -155,10 +146,7 @@
    "line": {
     "who": "nar",
     "text": "On the train to his trial, Peace threw himself out of the window."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -184,6 +172,7 @@
     "text": "He jumped! He's on the tracks!"
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

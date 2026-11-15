@@ -111,15 +111,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Smith's third wife, Margaret, drowned in the bath the day after the wedding."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

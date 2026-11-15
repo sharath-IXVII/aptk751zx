@@ -72,15 +72,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary invited Phoebe Hogg and her baby to tea."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [],
@@ -88,10 +79,7 @@
     "who": "nar",
     "text": "That night, a woman's body was found in Hampstead. The baby was found in another place."
    },
-   "title": "THAT NIGHT",
-   "fx": [
-    "rain"
-   ]
+   "title": "THAT NIGHT"
   },
   {
    "set": "street",
@@ -108,7 +96,10 @@
    "line": {
     "who": "police",
     "text": "And an empty pram, a mile away. Covered in blood."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

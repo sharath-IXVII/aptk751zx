@@ -142,15 +142,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: lodgers James and Ann Gray found a body and went to the police."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

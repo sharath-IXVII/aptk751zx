@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: elderly Thomas and Ann Farrow ran a paint shop in Deptford."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -122,7 +113,10 @@
     "who": "boy",
     "text": "The shop's still locked. Mr Farrow always opens at seven."
    },
-   "title": "27 MARCH 1905"
+   "title": "27 MARCH 1905",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -146,10 +140,7 @@
    "line": {
     "who": "boy",
     "text": "Sir! Come quick! Mr Farrow's on the floor!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

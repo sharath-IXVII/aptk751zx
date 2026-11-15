@@ -79,15 +79,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Fred Barker and Alvin Karpis formed a gang. Ma travelled with them."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

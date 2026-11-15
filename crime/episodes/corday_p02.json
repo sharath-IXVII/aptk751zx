@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jean-Paul Marat wrote articles demanding executions."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

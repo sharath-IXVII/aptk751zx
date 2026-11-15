@@ -74,15 +74,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Stroud began raising hundreds of canaries in his cell."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "cell",
    "chars": [
     {

@@ -149,32 +149,6 @@
    "hold": 2.8
   },
   {
-   "set": "ward",
-   "cam": "ward",
-   "flick": true,
-   "chars": [
-    {
-     "id": "jane",
-     "x": -1.6,
-     "z": -4.5,
-     "ry": -0.8,
-     "act": "give",
-     "prop": "cup"
-    },
-    {
-     "id": "old",
-     "x": -2.8,
-     "z": -2.4,
-     "ry": 0,
-     "act": "sleep"
-    }
-   ],
-   "line": {
-    "who": "nar",
-    "text": "Previously: patients loved Jolly Jane. But at night, they grew worse."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "title": "THE DOCTOR'S OFFICE",

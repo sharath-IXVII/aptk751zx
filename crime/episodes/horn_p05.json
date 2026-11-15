@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Horn was arrested after a drunken 'confession'."
-   }
-  },
-  {
    "set": "court",
    "cam": "face",
    "chars": [

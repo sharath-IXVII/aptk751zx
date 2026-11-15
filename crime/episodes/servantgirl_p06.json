@@ -86,21 +86,12 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: two women were killed on Christmas Eve 1885."
+    "text": "After that night, the killings stopped."
    },
+   "title": "1886",
    "fx": [
     "rain"
    ]
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "After that night, the killings stopped."
-   },
-   "title": "1886"
   },
   {
    "set": "street",
@@ -133,10 +124,7 @@
    "line": {
     "who": "nar",
     "text": "In the 1890s, Austin built tall 'moonlight towers' that lit the whole city at night. Some still stand today."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

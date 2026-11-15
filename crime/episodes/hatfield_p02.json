@@ -91,18 +91,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Hatfields and McCoys lived on opposite sides of the Tug Fork river."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -124,7 +112,10 @@
     "who": "randolph",
     "text": "That's my pig! Look at the ear marks!"
    },
-   "title": "1878"
+   "title": "1878",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Maria's stepmother dreamed that Maria was buried in the Red Barn."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [
@@ -146,7 +137,10 @@
    "line": {
     "who": "nar",
     "text": "Under the floor of the barn, he found Maria's body."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -165,7 +159,6 @@
     "text": "My girl. My poor girl."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

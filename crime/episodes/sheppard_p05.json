@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jack and Bess escaped over a prison wall."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [
@@ -172,6 +163,7 @@
     "text": "Days before his hanging, he escaped from Newgate's condemned cell."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

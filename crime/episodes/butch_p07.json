@@ -90,18 +90,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Butch, Sundance and Etta sailed to Argentina to start again."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -124,7 +112,10 @@
     "who": "soldier",
     "text": "Two American bandits. In that house. Surround it!"
    },
-   "title": "SAN VICENTE · BOLIVIA · 1908"
+   "title": "SAN VICENTE · BOLIVIA · 1908",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -153,7 +144,6 @@
     "text": "But stories say Butch came home and lived quietly under another name."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

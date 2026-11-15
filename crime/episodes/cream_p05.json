@@ -109,15 +109,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: famous people received letters accusing them of the Lambeth murders."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

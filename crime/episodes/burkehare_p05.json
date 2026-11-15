@@ -142,15 +142,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Burke and Hare began killing lodgers to sell their bodies."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

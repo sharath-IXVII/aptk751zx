@@ -82,15 +82,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: no one at the trial could explain how Edwin swallowed the chloroform."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {

@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Catesby and Percy died in a shootout."
-   }
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [

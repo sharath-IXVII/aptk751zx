@@ -82,15 +82,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Floyd became Public Enemy Number One."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -138,10 +129,7 @@
    "line": {
     "who": "nar",
     "text": "Floyd ran across a field. Agents opened fire."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",

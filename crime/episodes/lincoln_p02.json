@@ -115,15 +115,6 @@
   {
    "set": "home",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: actor John Wilkes Booth blamed Lincoln for the South's defeat."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
    "chars": [
     {
      "id": "booth",

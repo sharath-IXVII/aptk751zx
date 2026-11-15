@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Bob Dalton planned to rob two banks in one town at once."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -123,7 +114,10 @@
    "line": {
     "who": "townsman",
     "text": "Those men... wearing fake beards. That's the Daltons!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

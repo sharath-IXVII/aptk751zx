@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: songwriter Alma Rattenbury lived unhappily with her older husband."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

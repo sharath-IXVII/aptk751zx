@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Captain Cranstoun began courting Mary Blandy and her large dowry."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

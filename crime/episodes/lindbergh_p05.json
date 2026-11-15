@@ -115,15 +115,6 @@
   },
   {
    "set": "grave",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: retired teacher Dr Condon became the go-between, calling himself Jafsie."
-   }
-  },
-  {
-   "set": "grave",
    "cam": "office",
    "chars": [
     {

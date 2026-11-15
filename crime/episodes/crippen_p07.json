@@ -112,15 +112,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found human remains in Crippen's cellar. He had fled with Ethel."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -142,10 +133,7 @@
     "who": "crippen",
     "text": "From now on I'm Mr Robinson. And you are my son."
    },
-   "title": "ANTWERP · JULY 1910",
-   "fx": [
-    "rain"
-   ]
+   "title": "ANTWERP · JULY 1910"
   },
   {
    "set": "dock",
@@ -169,7 +157,10 @@
    "line": {
     "who": "ethel",
     "text": "A boy? In these trousers? Will anyone believe it?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",

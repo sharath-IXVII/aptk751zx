@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: William Desmond Taylor was one of Hollywood's top directors."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -162,10 +153,7 @@
    "line": {
     "who": "nar",
     "text": "Actress Mabel Normand left at about quarter to eight. Taylor waved goodbye."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -176,6 +164,7 @@
     "text": "She was the last person known to see him alive."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

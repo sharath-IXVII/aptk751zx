@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alma began an affair with the young chauffeur, George Stoner."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

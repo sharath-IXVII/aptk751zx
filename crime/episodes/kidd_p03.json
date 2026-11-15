@@ -71,15 +71,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kidd's crew grew angry, and he killed his gunner in a rage."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "office",
    "chars": [
     {

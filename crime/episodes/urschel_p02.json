@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: oil millionaire Charles Urschel was kidnapped from his home."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -120,8 +111,7 @@
     "who": "nar",
     "text": "Urschel was taken to a farm far away. Blindfolded. Chained."
    },
-   "bed": true,
-   "flick": true
+   "bed": true
   },
   {
    "set": "home",

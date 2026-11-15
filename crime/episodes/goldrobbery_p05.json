@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gang swapped the gold for lead shot on a moving train."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -137,10 +128,7 @@
    "line": {
     "who": "police",
     "text": "No broken locks. Nobody saw anything."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -151,6 +139,7 @@
     "text": "Nobody could explain how the gold vanished."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

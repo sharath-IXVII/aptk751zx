@@ -113,15 +113,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Booth leapt to the stage and escaped on horseback."
-   }
-  },
-  {
    "set": "home",
    "cam": "bedroom",
    "chars": [

@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Emile threatened to show Madeleine's letters to her father."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -119,10 +110,7 @@
     "who": "madeleine",
     "text": "Arsenic, please. For the rats."
    },
-   "title": "FEBRUARY 1857",
-   "fx": [
-    "rain"
-   ]
+   "title": "FEBRUARY 1857"
   },
   {
    "set": "home",

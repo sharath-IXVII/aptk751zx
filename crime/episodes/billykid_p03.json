@@ -91,15 +91,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Tunstall was killed, and Billy swore revenge."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -147,10 +138,7 @@
    "line": {
     "who": "nar",
     "text": "Billy was accused of killing several men, including a sheriff."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

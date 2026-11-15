@@ -83,15 +83,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Mona Lisa was hidden in Peruggia's room for two years."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

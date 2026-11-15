@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Olive vanished, and Haigh helped report her missing."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

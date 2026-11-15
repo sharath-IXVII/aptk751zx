@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: McDermott and Grace each blamed the other."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

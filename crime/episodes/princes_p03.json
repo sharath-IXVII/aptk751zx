@@ -77,15 +77,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: young King Edward was taken to the Tower of London."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

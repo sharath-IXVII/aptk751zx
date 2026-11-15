@@ -105,15 +105,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Leopold and Loeb hid Bobby's body and sent a ransom letter."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -193,7 +184,10 @@
    "line": {
     "who": "police",
     "text": "Whoever dropped these glasses was right here."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

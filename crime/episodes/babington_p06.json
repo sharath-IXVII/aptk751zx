@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: code breaker Phelippes cracked Mary's code. She had approved the plot."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -131,7 +122,10 @@
    "line": {
     "who": "nar",
     "text": "Babington and the plotters were executed."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "court",

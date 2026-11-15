@@ -103,15 +103,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Saville's body was found. The house had been locked from the inside."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

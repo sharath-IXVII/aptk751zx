@@ -93,18 +93,6 @@
   {
    "set": "street",
    "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary Ann Nichols was found dead in Buck's Row."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
-   "cam": "scene",
    "chars": [
     {
      "id": "constable",
@@ -118,7 +106,10 @@
     "who": "nar",
     "text": "8 September 1888. Just one week later."
    },
-   "title": "8 SEPTEMBER 1888"
+   "title": "8 SEPTEMBER 1888",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -166,10 +157,7 @@
    "line": {
     "who": "friend",
     "text": "Two in one week? He's out there among us!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -186,7 +174,10 @@
    "line": {
     "who": "inspector",
     "text": "The same way. The same kind of victim. It's the same man."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

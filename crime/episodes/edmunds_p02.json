@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Christiana Edmunds was obsessed with her married doctor."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

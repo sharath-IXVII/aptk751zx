@@ -159,15 +159,6 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Holmes built a huge, strange building. Locals called it the Castle."
-   }
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "1893. The World's Fair opens. Millions come to Chicago."
    },
    "title": "CHICAGO · 1893"
@@ -218,10 +209,7 @@
    "line": {
     "who": "holmes",
     "text": "You're in luck. I have rooms right upstairs. Very private."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

@@ -71,15 +71,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the plotters discovered the cabinet dinner was a trap."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [
@@ -111,7 +102,10 @@
    "line": {
     "who": "nar",
     "text": "Five plotters were hanged, and then beheaded, in May 1820."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -120,10 +114,7 @@
    "line": {
     "who": "nar",
     "text": "They were the last people in Britain sentenced to that punishment."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

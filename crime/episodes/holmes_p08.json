@@ -155,15 +155,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Benjamin Pitezel was found dead, and Holmes collected the insurance."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

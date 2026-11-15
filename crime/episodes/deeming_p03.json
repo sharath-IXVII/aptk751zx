@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Deeming's family vanished and he had the kitchen floor cemented."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

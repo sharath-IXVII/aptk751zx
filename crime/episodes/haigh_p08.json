@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Haigh confessed to six murders and claimed he was insane."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

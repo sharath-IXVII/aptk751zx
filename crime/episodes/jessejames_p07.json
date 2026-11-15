@@ -96,15 +96,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Robert Ford shot Jesse James in his own home."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -91,18 +91,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: farm boy Robert LeRoy Parker became Butch Cassidy."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -124,7 +112,10 @@
     "who": "butch",
     "text": "The Hole-in-the-Wall. One way in. No posse will ever find us."
    },
-   "title": "WYOMING · 1890S"
+   "title": "WYOMING · 1890S",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

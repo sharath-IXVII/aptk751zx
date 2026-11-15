@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: guests at the Bender inn sat with their backs to a canvas curtain."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -119,7 +110,10 @@
     "who": "neighbour",
     "text": "Travellers go missing on this trail. Bandits, people say."
    },
-   "title": "1872"
+   "title": "1872",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

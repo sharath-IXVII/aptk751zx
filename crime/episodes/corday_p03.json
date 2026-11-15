@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charlotte Corday decided she would stop Marat herself."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -130,7 +121,10 @@
    "line": {
     "who": "seller",
     "text": "A kitchen knife, mademoiselle? This one. Very sharp."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

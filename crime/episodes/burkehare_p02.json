@@ -141,15 +141,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Edinburgh's doctors paid well for bodies to study."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

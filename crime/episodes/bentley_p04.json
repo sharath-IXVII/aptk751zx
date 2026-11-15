@@ -82,18 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police say Derek shouted 'Let him have it, Chris.'"
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -114,7 +102,10 @@
    "line": {
     "who": "miles",
     "text": "I'm going up. Stay down, Sergeant."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

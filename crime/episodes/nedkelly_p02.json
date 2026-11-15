@@ -97,15 +97,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the poor Kelly family clashed again and again with police."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -186,10 +177,7 @@
    "line": {
     "who": "ned",
     "text": "They've jailed our mother. With a baby in her arms."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -208,6 +196,7 @@
     "text": "Then we live in the bush. They'll never find us."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

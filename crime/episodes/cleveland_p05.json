@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: masks of victims' faces were displayed at a fair. No one recognised them."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [

@@ -82,15 +82,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Agnes and Sammy were killed in their home."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -106,10 +97,7 @@
     "who": "nar",
     "text": "Winnie took a train to Los Angeles. With two heavy trunks."
    },
-   "title": "18 OCTOBER 1931",
-   "fx": [
-    "rain"
-   ]
+   "title": "18 OCTOBER 1931"
   },
   {
    "set": "street",
@@ -133,7 +121,10 @@
    "line": {
     "who": "porter",
     "text": "These trunks are very heavy, ma'am. What's in them?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

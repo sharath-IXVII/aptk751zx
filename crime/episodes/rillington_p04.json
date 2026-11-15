@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Timothy Evans walked into a police station and said his wife was dead."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

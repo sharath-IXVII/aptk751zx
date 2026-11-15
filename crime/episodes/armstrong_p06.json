@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "grave",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Armstrong was arrested, and arsenic was found in his wife's body."
-   }
-  },
-  {
    "set": "court",
    "cam": "face",
    "chars": [

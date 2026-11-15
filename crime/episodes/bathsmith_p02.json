@@ -110,15 +110,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: conman George Smith married women under false names for their money."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

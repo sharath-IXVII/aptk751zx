@@ -86,21 +86,12 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: remains were found in Kingsbury Run, where poor people lived."
+    "text": "Over the next three years, more victims were found."
    },
+   "title": "1935 - 1938",
    "fx": [
     "rain"
    ]
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Over the next three years, more victims were found."
-   },
-   "title": "1935 - 1938"
   },
   {
    "set": "forest",
@@ -117,10 +108,7 @@
    "line": {
     "who": "cop",
     "text": "No ID. No fingerprints on file. No one reported them missing."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -131,6 +119,7 @@
     "text": "Most victims were never identified."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

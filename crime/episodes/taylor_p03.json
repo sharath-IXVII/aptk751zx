@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: actress Mabel Normand visited Taylor and left that evening."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

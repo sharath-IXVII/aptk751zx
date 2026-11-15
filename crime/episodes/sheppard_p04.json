@@ -81,18 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Jack escaped through a prison roof using bedsheets."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [
@@ -175,7 +163,6 @@
     "text": "Jack and Bess escaped together, climbing a twenty-two foot wall."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

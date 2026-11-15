@@ -118,15 +118,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Tituba confessed, and said there were more witches in Salem."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -148,7 +139,10 @@
    "line": {
     "who": "abigail",
     "text": "Rebecca Nurse is a witch! Her spirit attacked me!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

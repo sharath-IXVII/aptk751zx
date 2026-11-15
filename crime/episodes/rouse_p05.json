@@ -96,15 +96,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rouse walked away from his burning car, past two young men."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -179,7 +170,6 @@
     "text": "The two young men had seen his face. The newspapers carried his name."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

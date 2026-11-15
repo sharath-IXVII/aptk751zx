@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Landru courted many widows under false names."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

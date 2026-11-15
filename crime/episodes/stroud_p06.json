@@ -74,15 +74,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Stroud became a respected expert on bird diseases."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "office",
    "chars": [
     {

@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Madeleine Smith began a secret romance with a poor clerk, Emile."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

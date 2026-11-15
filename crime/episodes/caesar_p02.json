@@ -79,15 +79,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Caesar was named dictator for life. Some senators feared he wanted to be king."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -142,15 +142,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Daft Jamie disappeared, and people began to notice."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

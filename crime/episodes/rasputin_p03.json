@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Rasputin seemed to calm the prince's bleeding when doctors could not."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Emily's body was found under a hearth in Melbourne."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

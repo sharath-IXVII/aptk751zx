@@ -100,15 +100,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a photo technique matched the skull to Isabella Ruxton."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

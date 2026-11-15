@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Colonel York came looking for his brother and questioned the Benders."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -119,7 +110,10 @@
     "who": "neighbour",
     "text": "The Bender place is empty! The animals are starving!"
    },
-   "title": "MAY 1873"
+   "title": "MAY 1873",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

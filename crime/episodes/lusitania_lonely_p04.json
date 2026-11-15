@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Martha's jealousy grew more and more extreme."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

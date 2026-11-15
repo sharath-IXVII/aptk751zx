@@ -91,15 +91,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Butch Cassidy led the Wild Bunch from a mountain hideout."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -144,10 +135,7 @@
    "line": {
     "who": "butch",
     "text": "Then let's go to work, Kid."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -158,6 +146,7 @@
     "text": "Banks. Trains. Butch was said to have avoided killing anyone."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

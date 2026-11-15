@@ -100,15 +100,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: strange things kept happening at Hinterkaifeck: footsteps, a strange newspaper, missing keys."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Marr family was found killed in their shop."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -120,10 +111,7 @@
     "who": "watchman",
     "text": "I'm one old watchman with a lantern. I can't protect a whole street."
    },
-   "title": "LONDON · 1811",
-   "fx": [
-    "rain"
-   ]
+   "title": "LONDON · 1811"
   },
   {
    "set": "street",
@@ -132,7 +120,10 @@
    "line": {
     "who": "nar",
     "text": "London had no real police force. Only night watchmen."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -168,7 +159,6 @@
     "text": "The killer is still out there."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

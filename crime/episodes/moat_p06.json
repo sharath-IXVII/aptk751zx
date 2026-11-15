@@ -82,18 +82,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police dug at Moat Farm and found a body in a ditch."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -114,7 +102,10 @@
    "line": {
     "who": "police",
     "text": "The shoes. Made by her shoemaker in London. It's Camille Holland."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

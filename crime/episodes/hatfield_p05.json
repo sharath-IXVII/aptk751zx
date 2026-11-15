@@ -95,21 +95,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: after Ellison Hatfield died, the Hatfields killed three McCoy brothers."
-   }
-  },
-  {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "New Year's night, 1888. Hatfield men surround the McCoy cabin."
    },
-   "title": "1 JANUARY 1888",
-   "fx": [
-    "rain"
-   ]
+   "title": "1 JANUARY 1888"
   },
   {
    "set": "home",
@@ -155,7 +143,6 @@
     "text": "They burned my home. They killed my children."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

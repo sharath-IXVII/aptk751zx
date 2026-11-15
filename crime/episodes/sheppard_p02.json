@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: carpenter Jack Sheppard turned to burglary."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

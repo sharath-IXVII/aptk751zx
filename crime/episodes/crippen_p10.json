@@ -112,15 +112,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Inspector Dew arrested Crippen on board the ship."
-   }
-  },
-  {
-   "set": "court",
    "cam": "office",
    "chars": [
     {

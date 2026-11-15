@@ -89,18 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ponzi became a millionaire as crowds rushed to invest."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -164,7 +152,10 @@
    "line": {
     "who": "reporter",
     "text": "Mr Ponzi, the numbers don't add up."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

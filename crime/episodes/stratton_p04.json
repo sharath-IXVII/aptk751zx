@@ -99,15 +99,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a thumbprint was found on the empty cash box."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

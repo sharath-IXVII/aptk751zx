@@ -82,15 +82,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Marie Manning was married but kept a rich admirer, Patrick O'Connor."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

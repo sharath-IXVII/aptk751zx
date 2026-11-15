@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: John Cook died after Palmer nursed him. His winnings were missing."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

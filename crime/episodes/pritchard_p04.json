@@ -88,19 +88,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Pritchard's mother-in-law died suddenly. He signed it as a stroke."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Weeks later, his wife Mary Jane died."
    },
-   "title": "MARCH 1865",
-   "flick": true
+   "title": "MARCH 1865"
   },
   {
    "set": "home",

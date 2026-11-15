@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ruth tricked Albert into signing a large life insurance policy."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

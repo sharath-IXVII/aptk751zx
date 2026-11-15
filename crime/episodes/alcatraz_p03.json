@@ -80,15 +80,6 @@
   },
   {
    "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: four prisoners began planning an escape from Alcatraz."
-   }
-  },
-  {
-   "set": "prison",
    "cam": "cell",
    "chars": [
     {

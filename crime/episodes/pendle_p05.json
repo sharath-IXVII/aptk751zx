@@ -92,15 +92,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: nine-year-old Jennet testified against her own family."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {

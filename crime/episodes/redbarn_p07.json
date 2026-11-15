@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Corder was arrested in London, where he had a new wife."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [
@@ -156,10 +147,7 @@
    "line": {
     "who": "nar",
     "text": "The rope was sold by the inch. The barn was taken apart for souvenirs."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -170,6 +158,7 @@
     "text": "The story became plays and songs for a hundred years."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

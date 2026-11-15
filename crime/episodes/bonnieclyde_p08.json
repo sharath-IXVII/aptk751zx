@@ -107,15 +107,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Clyde broke his gang members out of a Texas prison farm."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -196,7 +187,10 @@
    "line": {
     "who": "nar",
     "text": "For months Hamer followed their trail, studying every move."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -207,7 +201,6 @@
     "text": "He was waiting for the right road."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

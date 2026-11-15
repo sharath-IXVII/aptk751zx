@@ -86,18 +86,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Patrick O'Connor came to dinner with the Mannings and never left."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "O'Connor was buried under their kitchen floor, in quicklime."
-   },
-   "flick": true
+   }
   },
   {
    "set": "home",

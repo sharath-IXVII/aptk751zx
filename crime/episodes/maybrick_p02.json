@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Florence married wealthy cotton merchant James Maybrick."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

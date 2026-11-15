@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charles Peace seemed harmless, a violinist who sold picture frames."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -149,7 +140,6 @@
     "text": "Another house robbed. No one saw a thing."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

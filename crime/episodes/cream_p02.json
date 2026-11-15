@@ -109,15 +109,6 @@
    }
   },
   {
-   "set": "prison",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Cream served ten years in a Chicago prison for poisoning a man."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -133,7 +124,10 @@
     "who": "nar",
     "text": "1891. Cream sails to London."
    },
-   "title": "LONDON · OCTOBER 1891"
+   "title": "LONDON · OCTOBER 1891",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -174,10 +168,7 @@
    "line": {
     "who": "cream",
     "text": "London is so full of opportunity."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -188,6 +179,7 @@
     "text": "Lambeth. Crowded, foggy streets beside the Thames."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

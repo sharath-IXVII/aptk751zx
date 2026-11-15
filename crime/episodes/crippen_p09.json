@@ -112,15 +112,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Captain Kendall recognised Crippen and sent a radio message."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "face",
    "chars": [
     {
@@ -228,7 +219,6 @@
     "text": "Crippen and Ethel were taken back to London."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

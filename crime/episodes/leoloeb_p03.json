@@ -104,15 +104,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Leopold and Loeb planned a kidnapping they believed could never be solved."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -128,10 +119,7 @@
     "who": "nar",
     "text": "21 May 1924. Fourteen-year-old Bobby Franks walks home from school."
    },
-   "title": "21 MAY 1924",
-   "fx": [
-    "rain"
-   ]
+   "title": "21 MAY 1924"
   },
   {
    "set": "street",
@@ -155,7 +143,10 @@
    "line": {
     "who": "richard",
     "text": "Bobby! Want a ride home? I want to ask about your tennis racket."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -188,10 +179,7 @@
    "line": {
     "who": "nar",
     "text": "Bobby knew Richard Loeb. He was a distant cousin."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

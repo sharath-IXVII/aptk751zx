@@ -89,15 +89,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mary was found guilty of plotting against Elizabeth."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

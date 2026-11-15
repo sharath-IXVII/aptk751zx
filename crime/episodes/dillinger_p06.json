@@ -109,15 +109,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the FBI named Dillinger Public Enemy Number One."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -140,7 +131,10 @@
     "who": "agent",
     "text": "The gang is at the Little Bohemia lodge. Tonight."
    },
-   "title": "WISCONSIN · APRIL 1934"
+   "title": "WISCONSIN · APRIL 1934",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -207,10 +201,7 @@
    "line": {
     "who": "purvis",
     "text": "Gone. Every one of them."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -221,6 +212,7 @@
     "text": "A huge embarrassment for the FBI."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

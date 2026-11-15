@@ -90,15 +90,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the letter said the Axeman would spare every house playing jazz."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -120,10 +111,7 @@
     "who": "girl",
     "text": "Every house on the street has music!"
    },
-   "title": "19 MARCH 1919",
-   "fx": [
-    "rain"
-   ]
+   "title": "19 MARCH 1919"
   },
   {
    "set": "street",
@@ -167,7 +155,10 @@
    "line": {
     "who": "musician",
     "text": "Play it louder!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -176,10 +167,7 @@
    "line": {
     "who": "nar",
     "text": "The whole city played jazz until dawn."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

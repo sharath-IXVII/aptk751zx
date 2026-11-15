@@ -82,15 +82,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the chemist remembered Armstrong buying arsenic."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

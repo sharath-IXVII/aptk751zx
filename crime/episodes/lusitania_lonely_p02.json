@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Raymond Fernandez courted lonely women by letter and stole their money."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

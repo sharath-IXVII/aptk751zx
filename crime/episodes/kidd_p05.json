@@ -70,15 +70,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Kidd buried treasure and sailed home, trusting his backers."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

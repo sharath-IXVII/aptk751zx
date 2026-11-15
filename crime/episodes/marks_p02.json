@@ -81,15 +81,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: sixteen-year-old Grace Marks began work on Thomas Kinnear's farm."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

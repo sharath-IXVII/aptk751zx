@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: graves were found in the Benders' orchard, including Dr York's."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

@@ -91,15 +91,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Landru joked through his trial and admitted nothing."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {

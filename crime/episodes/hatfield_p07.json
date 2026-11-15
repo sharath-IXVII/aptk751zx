@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: several Hatfields were tried and one was hanged."
-   }
-  },
-  {
    "set": "forest",
    "cam": "scene",
    "chars": [],

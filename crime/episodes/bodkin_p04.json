@@ -93,15 +93,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: rumours spread about Dr Adams and his patients."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

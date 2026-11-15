@@ -82,15 +82,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Oswald Martin fell violently ill after tea with Major Armstrong."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

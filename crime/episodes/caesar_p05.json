@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Caesar's wife begged him to stay home. A friend persuaded him to go."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -109,10 +100,7 @@
     "who": "caesar",
     "text": "The Ides of March have come."
    },
-   "title": "15 MARCH · 44 BC",
-   "fx": [
-    "rain"
-   ]
+   "title": "15 MARCH · 44 BC"
   },
   {
    "set": "street",
@@ -129,7 +117,10 @@
    "line": {
     "who": "seer",
     "text": "Yes, Caesar. But they have not gone."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

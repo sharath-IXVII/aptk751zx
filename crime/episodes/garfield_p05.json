@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: doctors searched for the bullet with unwashed fingers."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

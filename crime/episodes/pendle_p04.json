@@ -96,19 +96,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: more people were arrested after a gathering at Malkin Tower."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Lancaster Castle, August 1612."
    },
-   "title": "LANCASTER · AUGUST 1612",
-   "flick": true
+   "title": "LANCASTER · AUGUST 1612"
   },
   {
    "set": "home",

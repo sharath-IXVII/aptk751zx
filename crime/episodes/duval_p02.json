@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: young Frenchman Claude Duval came to England as a servant."
-   }
-  },
-  {
    "set": "forest",
    "cam": "face",
    "chars": [
@@ -128,10 +119,7 @@
    "line": {
     "who": "duval",
     "text": "Your purse, sir. And may I say, what a beautiful coat."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -142,6 +130,7 @@
     "text": "Duval became a highwayman, famous for fine clothes and perfect manners."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

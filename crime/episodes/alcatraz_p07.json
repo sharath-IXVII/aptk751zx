@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: three men escaped Alcatraz on a raincoat raft."
-   }
-  },
-  {
    "set": "prison",
    "cam": "office",
    "chars": [

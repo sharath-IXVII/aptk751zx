@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: 'John Palmer' was jailed for shooting a cockerel."
-   }
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [

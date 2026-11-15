@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Guy Fawkes and others joined the plot."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

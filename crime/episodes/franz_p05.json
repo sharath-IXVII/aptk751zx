@@ -84,18 +84,6 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: the driver took a wrong turn and stopped right in front of Princip."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "Princip stepped forward and fired two shots."
    },
    "fx": [
@@ -124,7 +112,10 @@
    "line": {
     "who": "franz",
     "text": "Sophie, don't die. Stay alive for our children."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -133,10 +124,7 @@
    "line": {
     "who": "nar",
     "text": "Within minutes, both Franz Ferdinand and Sophie were dead."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

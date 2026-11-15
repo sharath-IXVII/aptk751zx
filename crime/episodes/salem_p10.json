@@ -118,18 +118,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Giles Corey died refusing to plead."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
    "set": "court",
    "cam": "scene",
    "chars": [],

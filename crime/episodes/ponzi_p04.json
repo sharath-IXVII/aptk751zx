@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Ponzi used new investors' money to pay old investors."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -137,10 +128,7 @@
    "line": {
     "who": "investor2",
     "text": "The queue outside his office goes around the block!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

@@ -93,15 +93,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: many of Dr Adams's patients left him gifts in their wills."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -124,7 +115,10 @@
     "who": "nurse",
     "text": "Some of his patients die not long after changing their wills."
    },
-   "title": "1950S"
+   "title": "1950S",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -152,7 +146,6 @@
     "text": "Rumours spread around Eastbourne."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

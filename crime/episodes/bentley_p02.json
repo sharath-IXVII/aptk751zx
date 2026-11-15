@@ -82,15 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Derek Bentley and Christopher Craig climbed onto a warehouse roof to break in."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -111,10 +102,7 @@
    "line": {
     "who": "fairfax",
     "text": "Police! Got you!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -131,7 +119,10 @@
    "line": {
     "who": "derek",
     "text": "Don't hurt me."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -116,15 +116,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a neighbour noticed the Moore house was strangely silent."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

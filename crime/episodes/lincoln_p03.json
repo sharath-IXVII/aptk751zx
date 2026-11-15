@@ -114,15 +114,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Booth's group planned to kill three leaders on the same night."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -204,7 +195,6 @@
     "text": "Our American Cousin. I know every line. I know every door."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

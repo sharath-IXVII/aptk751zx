@@ -105,15 +105,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Al Capone took over Chicago's biggest gang at twenty-six."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -136,10 +127,7 @@
     "who": "al",
     "text": "I'm just a businessman. I give the people what they want."
    },
-   "title": "CHICAGO · 1926",
-   "fx": [
-    "rain"
-   ]
+   "title": "CHICAGO · 1926"
   },
   {
    "set": "street",
@@ -163,7 +151,10 @@
    "line": {
     "who": "al",
     "text": "And free soup for the poor. Write that down."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

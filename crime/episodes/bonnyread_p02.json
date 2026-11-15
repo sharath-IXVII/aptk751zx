@@ -81,15 +81,6 @@
   },
   {
    "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Anne Bonny ran away to sea with pirate Calico Jack."
-   }
-  },
-  {
-   "set": "dock",
    "cam": "face",
    "chars": [
     {

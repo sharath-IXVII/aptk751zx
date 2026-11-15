@@ -96,18 +96,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: newspapers made Jesse a folk hero despite the killings."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -129,7 +117,10 @@
     "who": "jesse",
     "text": "Northfield, Minnesota. A rich bank. Easy job."
    },
-   "title": "NORTHFIELD · SEPTEMBER 1876"
+   "title": "NORTHFIELD · SEPTEMBER 1876",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

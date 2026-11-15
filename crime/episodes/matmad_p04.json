@@ -73,15 +73,6 @@
   },
   {
    "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Johnson shot a Mountie through his cabin door."
-   }
-  },
-  {
-   "set": "forest",
    "cam": "office",
    "chars": [
     {
@@ -103,10 +94,7 @@
     "who": "mountie",
     "text": "Forty below zero. And he's dug in under the floor."
    },
-   "title": "JANUARY 1932",
-   "fx": [
-    "rain"
-   ]
+   "title": "JANUARY 1932"
   },
   {
    "set": "forest",
@@ -115,7 +103,10 @@
    "line": {
     "who": "nar",
     "text": "For hours, they fired at the cabin. Even dynamite didn't stop him."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

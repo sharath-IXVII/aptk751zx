@@ -92,15 +92,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: desperate mothers paid baby farmers to look after their children."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

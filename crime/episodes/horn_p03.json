@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: rumours spread that Tom Horn shot cattle thieves from a distance."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -129,10 +120,7 @@
    "line": {
     "who": "nar",
     "text": "Fourteen-year-old Willie Nickell went out wearing his father's coat and hat."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -141,7 +129,10 @@
    "line": {
     "who": "nar",
     "text": "He was shot dead near his home."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

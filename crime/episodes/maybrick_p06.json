@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: arsenic was found in the house, but James had taken it as a tonic for years."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

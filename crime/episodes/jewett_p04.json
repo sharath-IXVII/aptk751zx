@@ -80,15 +80,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Helen was found dead in her burning room."
-   }
-  },
-  {
    "set": "street",
    "cam": "face",
    "chars": [
@@ -104,10 +95,7 @@
     "who": "police",
     "text": "A cloak in the back yard. And a hatchet."
    },
-   "title": "11 APRIL 1836",
-   "fx": [
-    "rain"
-   ]
+   "title": "11 APRIL 1836"
   },
   {
    "set": "home",

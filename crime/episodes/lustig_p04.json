@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a scrap dealer paid Lustig for the Eiffel Tower, plus a bribe."
-   }
-  },
-  {
    "set": "dock",
    "cam": "scene",
    "chars": [
@@ -101,10 +92,7 @@
    "line": {
     "who": "nar",
     "text": "Lustig fled to Austria with a suitcase of cash."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

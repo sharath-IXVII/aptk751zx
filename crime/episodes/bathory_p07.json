@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the Countess's servants were tried and executed."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

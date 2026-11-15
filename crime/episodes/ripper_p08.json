@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: George Lusk received a parcel and a letter headed 'From Hell'."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -167,7 +158,6 @@
     "text": "Mary Jane Kelly was the last of the five murders most linked to the Ripper."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

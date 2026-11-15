@@ -90,15 +90,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Urschel memorised every sound, including a plane that didn't fly in a storm."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

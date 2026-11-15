@@ -77,15 +77,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: twelve-year-old Edward became King, protected by his uncle Richard."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -108,10 +99,7 @@
     "who": "uncle",
     "text": "You'll stay at the Tower of London until your coronation. Royal tradition."
    },
-   "title": "LONDON · MAY 1483",
-   "fx": [
-    "rain"
-   ]
+   "title": "LONDON · MAY 1483"
   },
   {
    "set": "street",
@@ -155,7 +143,10 @@
    "line": {
     "who": "uncle",
     "text": "Very safe. No one goes in or out without my say."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "prison",

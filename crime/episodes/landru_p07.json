@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: a missing woman's sister spotted Landru in Paris, and he was arrested."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

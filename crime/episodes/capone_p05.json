@@ -110,18 +110,6 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Previously: Capone and Bugs Moran were at war."
-   },
-   "fx": [
-    "rain"
-   ]
-  },
-  {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
     "text": "14 February 1929. Seven men wait in a North Side garage."
    },
    "title": "14 FEBRUARY 1929",
@@ -136,7 +124,10 @@
    "line": {
     "who": "nar",
     "text": "Men dressed as police officers walk in."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -100,15 +100,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: human remains were found in a ravine in Scotland, wrapped in newspaper."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

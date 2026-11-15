@@ -91,15 +91,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: detectives arrested Müller in New York with Briggs's watch and hat."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

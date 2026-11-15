@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gang secretly copied the safe keys."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [

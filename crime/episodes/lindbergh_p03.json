@@ -115,15 +115,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: nurse Betty put baby Charlie to bed. Charles heard a strange sound."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

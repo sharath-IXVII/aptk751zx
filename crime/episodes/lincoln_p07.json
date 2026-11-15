@@ -114,15 +114,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Seward survived his attack. The President was badly wounded."
-   }
-  },
-  {
-   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -145,8 +136,7 @@
     "text": "Lincoln was carried to a house across the street."
    },
    "bed": true,
-   "title": "PETERSEN HOUSE",
-   "flick": true
+   "title": "PETERSEN HOUSE"
   },
   {
    "set": "home",

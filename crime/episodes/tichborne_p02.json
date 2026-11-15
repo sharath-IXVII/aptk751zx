@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Roger Tichborne was lost at sea. His mother refused to believe he was dead."
-   }
-  },
-  {
    "set": "home",
    "cam": "face",
    "chars": [

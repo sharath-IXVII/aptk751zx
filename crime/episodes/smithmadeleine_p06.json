@@ -88,15 +88,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Emile died of arsenic poisoning, and Madeleine had bought arsenic."
-   }
-  },
-  {
    "set": "court",
    "cam": "face",
    "chars": [

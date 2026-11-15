@@ -90,15 +90,6 @@
   },
   {
    "set": "court",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the court ruled the Claimant was really Arthur Orton."
-   }
-  },
-  {
-   "set": "court",
    "cam": "courtw",
    "chars": [
     {
@@ -147,10 +138,7 @@
    "line": {
     "who": "nar",
     "text": "Later, he confessed he was Arthur Orton. Then took the confession back."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -161,6 +149,7 @@
     "text": "He died poor in 1898. His coffin said: Sir Roger Charles Doughty Tichborne."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

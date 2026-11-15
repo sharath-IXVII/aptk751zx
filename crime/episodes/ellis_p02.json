@@ -73,15 +73,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: club manager Ruth Ellis met racing driver David Blakely."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

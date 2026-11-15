@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Palmer was caught interfering with Cook's post-mortem."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -143,10 +134,7 @@
    "line": {
     "who": "lender",
     "text": "Everyone in Staffordshire hates him now. No jury here will be fair."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -170,6 +158,7 @@
     "text": "It became known as Palmer's Act."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

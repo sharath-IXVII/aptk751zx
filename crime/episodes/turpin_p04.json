@@ -90,15 +90,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Turpin killed a man and fled north."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -121,10 +112,7 @@
     "who": "turpin",
     "text": "John Palmer. Horse dealer. Fine horses, cheap."
    },
-   "title": "YORKSHIRE · 1738",
-   "fx": [
-    "rain"
-   ]
+   "title": "YORKSHIRE · 1738"
   },
   {
    "set": "street",
@@ -141,7 +129,10 @@
    "line": {
     "who": "turpin",
     "text": "That cockerel's in my way."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

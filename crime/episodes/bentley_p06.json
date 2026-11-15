@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Craig, who fired the shot, was too young to hang. Bentley was sentenced to death."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -112,7 +103,10 @@
     "who": "iris",
     "text": "My brother was already under arrest when the shot was fired!"
    },
-   "title": "JANUARY 1953"
+   "title": "JANUARY 1953",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -150,6 +144,7 @@
     "text": "I will clear his name. However long it takes."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

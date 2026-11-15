@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Tom Horn was found guilty, though many doubted it."
-   }
-  },
-  {
    "set": "prison",
    "cam": "cell",
    "chars": [
@@ -105,8 +96,7 @@
     "who": "nar",
     "text": "In his cell, Horn braided his own rope."
    },
-   "title": "1903",
-   "flick": true
+   "title": "1903"
   },
   {
    "set": "prison",

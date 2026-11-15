@@ -81,15 +81,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found O'Connor under the Mannings' kitchen floor."
-   }
-  },
-  {
    "set": "dock",
    "cam": "face",
    "chars": [
@@ -181,7 +172,6 @@
     "text": "Each blamed the other."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

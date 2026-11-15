@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: the gang kidnapped two wealthy businessmen for huge ransoms."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -109,7 +100,10 @@
     "who": "agent",
     "text": "Doc Barker. You're under arrest."
    },
-   "title": "CHICAGO · JANUARY 1935"
+   "title": "CHICAGO · JANUARY 1935",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -143,10 +137,7 @@
    "line": {
     "who": "agent",
     "text": "And a lake circled. Lake Weir."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -157,6 +148,7 @@
     "text": "The map led straight to the rest of the family."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

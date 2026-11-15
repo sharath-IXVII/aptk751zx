@@ -79,15 +79,6 @@
    }
   },
   {
-   "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Charlotte bought a kitchen knife in Paris."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

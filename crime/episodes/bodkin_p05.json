@@ -93,15 +93,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Dr Adams was charged with the murder of a patient, Edith Morrell."
-   }
-  },
-  {
    "set": "court",
    "cam": "office",
    "chars": [

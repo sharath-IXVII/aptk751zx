@@ -99,15 +99,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: all six people at Hinterkaifeck were killed in one night."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -147,10 +138,7 @@
    "line": {
     "who": "neighbour",
     "text": "But look. Smoke from the chimney."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "forest",
@@ -174,7 +162,10 @@
    "line": {
     "who": "neighbour",
     "text": "And someone fed the animals. And ate food from the kitchen."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",

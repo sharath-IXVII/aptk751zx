@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "dock",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Blackbeard took a pardon, then went back to piracy."
-   }
-  },
-  {
    "set": "home",
    "cam": "office",
    "chars": [

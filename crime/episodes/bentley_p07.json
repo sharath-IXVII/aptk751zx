@@ -82,15 +82,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Derek Bentley was hanged. His sister Iris vowed to clear his name."
-   }
-  },
-  {
-   "set": "street",
    "cam": "face",
    "chars": [
     {

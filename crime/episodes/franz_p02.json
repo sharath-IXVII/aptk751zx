@@ -80,15 +80,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: six young conspirators waited along the Archduke's route."
-   }
-  },
-  {
-   "set": "street",
    "cam": "face",
    "chars": [
     {
@@ -111,10 +102,7 @@
    "line": {
     "who": "nar",
     "text": "The bomb bounced off the Archduke's car and exploded under the car behind. People were hurt."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -138,7 +126,10 @@
    "line": {
     "who": "franz",
     "text": "I come here as a guest and they throw bombs at me!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

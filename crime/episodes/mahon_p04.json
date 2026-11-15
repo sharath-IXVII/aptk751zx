@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Mahon returned home as if nothing had happened."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {

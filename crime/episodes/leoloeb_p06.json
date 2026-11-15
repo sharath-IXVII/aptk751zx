@@ -104,15 +104,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found Bobby's body, and a pair of glasses nearby."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -135,10 +126,7 @@
     "who": "optician",
     "text": "This hinge is very rare. Only three pairs like this were sold in all of Chicago."
    },
-   "title": "THE OPTICIAN",
-   "fx": [
-    "rain"
-   ]
+   "title": "THE OPTICIAN"
   },
   {
    "set": "street",
@@ -162,7 +150,10 @@
    "line": {
     "who": "police",
     "text": "Who bought them?"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -179,10 +170,7 @@
    "line": {
     "who": "optician",
     "text": "One pair was sold to... Nathan Leopold."
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "home",

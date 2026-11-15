@@ -119,15 +119,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two girls in the minister's house began having terrifying fits."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

@@ -72,15 +72,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found blood everywhere in Mary's kitchen. She said she was killing mice."
-   }
-  },
-  {
    "set": "court",
    "cam": "courtw",
    "chars": [

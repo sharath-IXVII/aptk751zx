@@ -155,15 +155,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: during the World's Fair, Holmes rented rooms in his Castle to visitors."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -276,7 +267,10 @@
    "line": {
     "who": "holmes",
     "text": "A misunderstanding, officer. I'll sort it out."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

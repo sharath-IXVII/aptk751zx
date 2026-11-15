@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found a hat that wasn't Briggs's, and his gold watch was missing."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

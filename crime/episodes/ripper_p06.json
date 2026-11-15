@@ -92,15 +92,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: two women were killed on the same night."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -122,10 +113,7 @@
     "who": "constable",
     "text": "A piece of her apron. In a doorway on Goulston Street."
    },
-   "title": "30 SEPTEMBER 1888",
-   "fx": [
-    "rain"
-   ]
+   "title": "30 SEPTEMBER 1888"
   },
   {
    "set": "street",
@@ -142,7 +130,10 @@
    "line": {
     "who": "constable",
     "text": "And chalk writing on the wall above it."
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -183,10 +174,7 @@
    "line": {
     "who": "constable",
     "text": "Shouldn't we photograph it first, sir?"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -197,6 +185,7 @@
     "text": "The writing was wiped away. A clue, lost forever."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

@@ -97,15 +97,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: people who went with Doctor Eugène were never heard from again."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -145,10 +136,7 @@
    "line": {
     "who": "neighbour",
     "text": "And the smell! It's unbearable!"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",

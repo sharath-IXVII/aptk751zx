@@ -109,15 +109,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lizzie's stories changed, and a friend saw her burn a dress."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

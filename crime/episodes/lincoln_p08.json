@@ -113,15 +113,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: President Lincoln died the morning after he was shot."
-   }
-  },
-  {
    "set": "forest",
    "cam": "office",
    "chars": [
@@ -144,10 +135,7 @@
     "who": "herold",
     "text": "My leg, David. I can't go on like this."
    },
-   "title": "MARYLAND · 15 APRIL 1865",
-   "fx": [
-    "rain"
-   ]
+   "title": "MARYLAND · 15 APRIL 1865"
   },
   {
    "set": "home",

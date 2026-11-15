@@ -98,15 +98,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police found several women's bodies at Rillington Place, including Christie's wife."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

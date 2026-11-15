@@ -97,15 +97,6 @@
    }
   },
   {
-   "set": "forest",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: three police were killed at Stringybark Creek. The gang were declared outlaws."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -128,10 +119,7 @@
     "who": "ned",
     "text": "Hands up! We're the Kelly Gang. We only want the bank's money."
    },
-   "title": "EUROA · JERILDERIE",
-   "fx": [
-    "rain"
-   ]
+   "title": "EUROA · JERILDERIE"
   },
   {
    "set": "home",

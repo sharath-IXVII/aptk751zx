@@ -78,15 +78,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Lustig sold fake money boxes and even fooled Al Capone."
-   }
-  },
-  {
    "set": "street",
    "cam": "office",
    "chars": [

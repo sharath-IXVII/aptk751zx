@@ -91,15 +91,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Henri Landru placed adverts as a widower seeking a wife."
-   }
-  },
-  {
-   "set": "home",
    "cam": "office",
    "chars": [
     {

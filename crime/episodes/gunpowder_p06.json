@@ -89,15 +89,6 @@
    }
   },
   {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Guy Fawkes was caught guarding the gunpowder at midnight."
-   }
-  },
-  {
    "set": "street",
    "cam": "scene",
    "chars": [
@@ -113,7 +104,10 @@
     "who": "nar",
     "text": "The other plotters fled from London."
    },
-   "title": "HOLBECHE HOUSE · 8 NOVEMBER 1605"
+   "title": "HOLBECHE HOUSE · 8 NOVEMBER 1605",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",

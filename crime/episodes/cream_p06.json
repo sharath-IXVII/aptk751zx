@@ -110,15 +110,6 @@
   },
   {
    "set": "street",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: Alice Marsh and Emma Shrivell died on the same night."
-   }
-  },
-  {
-   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -181,10 +172,7 @@
    "line": {
     "who": "mcintyre",
     "text": "How does he know so much?"
-   },
-   "fx": [
-    "rain"
-   ]
+   }
   },
   {
    "set": "street",
@@ -208,7 +196,10 @@
    "line": {
     "who": "cream",
     "text": "And I'm being followed. I want it stopped!"
-   }
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",

@@ -92,15 +92,6 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "Previously: police caught Mahon collecting a bag of blood-stained clothes."
-   }
-  },
-  {
-   "set": "home",
    "cam": "face",
    "chars": [
     {
