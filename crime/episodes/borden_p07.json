@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -106,6 +115,16 @@
     "crime": "THE AXE MYSTERY",
     "part": "PART 7 OF 8"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Alice told the police about the dress. A week after the murders, Lizzie was arrested."
+   },
+   "title": "AUGUST 1892"
   },
   {
    "set": "home",
@@ -128,9 +147,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "Lizzie Borden, you are under arrest."
-   },
-   "title": "AUGUST 1892"
+    "text": "Lizzie Borden, you are under arrest for the murder of your father."
+   }
   },
   {
    "set": "court",
@@ -138,7 +156,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Reporters came from all over America."
+    "text": "Ten months later, the trial began. Reporters came from all over America."
    },
    "title": "NEW BEDFORD · JUNE 1893"
   },
@@ -163,7 +181,7 @@
    ],
    "line": {
     "who": "alice",
-    "text": "She said it had paint on it. And she burned it."
+    "text": "She said the dress had paint on it. And she burned it in the kitchen stove."
    }
   },
   {
@@ -189,7 +207,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The whole country argued. Could a quiet church lady do something like this?"
+    "text": "The judge refused to let the jury hear about the poison story, or Lizzie's confused first statements."
    },
    "fx": [
     "lightning"

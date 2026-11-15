@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -106,6 +115,16 @@
     "crime": "THE AXE MYSTERY",
     "part": "PART 2 OF 8"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "That anger grew worse when Andrew made a decision about property."
+   },
+   "title": "1887 - 1892"
   },
   {
    "set": "home",
@@ -128,7 +147,7 @@
    ],
    "line": {
     "who": "andrew",
-    "text": "I've put the house in your sister's name, Abby. Your family needs it."
+    "text": "I've bought your sister's half of her house, Abby. Now she can live there safely."
    }
   },
   {
@@ -152,7 +171,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "He gives property to her family and nothing to us!"
+    "text": "He buys houses for HER family. And nothing for us!"
    }
   },
   {
@@ -176,7 +195,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "You care more about her than your own daughters!"
+    "text": "You care more about her relatives than your own daughters!"
    }
   },
   {
@@ -193,7 +212,7 @@
    ],
    "line": {
     "who": "abby",
-    "text": "Lizzie, please. I've never hurt you."
+    "text": "Lizzie, please. I've never tried to hurt you."
    }
   },
   {
@@ -202,7 +221,34 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The sisters stopped eating meals with their parents."
+    "text": "The sisters stopped eating meals with their father and stepmother. Doors in the house were kept locked."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "lizzie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "lizzie",
+    "text": "Even our bedrooms have locks now. That's how this family lives."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Then, in the summer of 1892, something strange happened in the house."
    },
    "flick": true,
    "fx": [

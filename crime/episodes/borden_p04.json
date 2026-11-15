@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -113,9 +122,19 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The morning of the fourth of August, 1892. Very hot."
+    "text": "The morning after Lizzie's warning to her friend Alice. 4 August 1892. A very hot day."
    },
    "title": "4 AUGUST 1892"
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Emma was away visiting friends. Andrew went into town on business."
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -164,7 +183,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Emma was away visiting friends. Andrew went into town."
+    "text": "Bridget went outside with a bucket. Abby went upstairs to tidy the guest room."
    },
    "flick": true
   },
@@ -174,9 +193,26 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Upstairs, in the guest room, Abby Borden was killed."
+    "text": "There, in the guest room, Abby Borden was killed."
    },
    "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bridget",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "bridget",
+    "text": "Outside, washing windows, I heard nothing at all."
+   }
   },
   {
    "set": "home",
@@ -184,7 +220,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "No one heard a thing."
+    "text": "No one raised the alarm. And Andrew was on his way home."
    },
    "flick": true,
    "fx": [

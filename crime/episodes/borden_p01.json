@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -108,12 +117,12 @@
    }
   },
   {
-   "set": "home",
+   "set": "street",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Lizzie Borden. A name America would never forget."
+    "text": "Fall River, Massachusetts. 1892. A busy mill town."
    },
    "title": "FALL RIVER · 1892"
   },
@@ -138,7 +147,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "Father, we're rich. Why do we live like this? No electric light. No bathroom upstairs."
+    "text": "Father, we're one of the richest families in town. Why do we live like this? No electric lights. No bathroom upstairs."
    }
   },
   {
@@ -186,7 +195,7 @@
    ],
    "line": {
     "who": "emma",
-    "text": "He'll give everything to her. Not to us."
+    "text": "We're grown women, and we still live like poor girls in his house."
    }
   },
   {
@@ -203,7 +212,31 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "Don't call her Mother. She is Mrs Borden."
+    "text": "And she eats at our table. Don't call her Mother, Emma. She is Mrs Borden."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "abby",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "andrew",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "abby",
+    "text": "The girls barely speak to me, Andrew. Twenty-seven years married, and still."
    }
   },
   {
@@ -212,7 +245,17 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "A wealthy family. A tense house."
+    "text": "Andrew Borden: rich, strict, and tight with money. His second wife Abby. His grown daughters Lizzie and Emma."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "A wealthy family. And a house full of anger."
    },
    "flick": true,
    "fx": [

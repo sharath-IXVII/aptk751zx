@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -106,6 +115,16 @@
     "crime": "THE AXE MYSTERY",
     "part": "PART 8 OF 8"
    }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "After two weeks of evidence, the jury went out to decide."
+   },
+   "title": "JUNE 1893"
   },
   {
    "set": "court",
@@ -128,7 +147,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "No bloody clothes. No clear weapon. No witness."
+    "text": "No bloody clothes. No clear weapon. No witness who saw it happen."
    }
   },
   {
@@ -153,8 +172,7 @@
    "line": {
     "who": "judge",
     "text": "The jury finds the defendant: not guilty."
-   },
-   "title": "JUNE 1893"
+   }
   },
   {
    "set": "court",
@@ -179,7 +197,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Lizzie stayed in Fall River, shunned by her neighbours, until she died in 1927."
+    "text": "Lizzie stayed in Fall River, bought a bigger house, and lived there, shunned by neighbours, until 1927."
    }
   },
   {

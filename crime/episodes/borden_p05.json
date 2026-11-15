@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -105,6 +114,15 @@
     "years": "FALL RIVER · 1892",
     "crime": "THE AXE MYSTERY",
     "part": "PART 5 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "About an hour after Abby was killed, Andrew came home. He didn't know his wife was dead upstairs."
    }
   },
   {
@@ -128,9 +146,8 @@
    ],
    "line": {
     "who": "andrew",
-    "text": "Too hot. I'll rest on the sofa."
-   },
-   "title": "ABOUT AN HOUR LATER"
+    "text": "Too hot. I'll rest on the sofa. Where is Mrs Borden?"
+   }
   },
   {
    "set": "home",
@@ -146,7 +163,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "Rest well, Father."
+    "text": "She had a note. Someone was sick. She went out."
    }
   },
   {
@@ -170,7 +187,7 @@
    ],
    "line": {
     "who": "bridget",
-    "text": "Miss Lizzie? I'm lying down for a minute."
+    "text": "Miss Lizzie, I'm going up for a little rest."
    },
    "bed": true
   },
@@ -180,7 +197,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Minutes later, Lizzie's voice rang through the house."
+    "text": "A few minutes later, Lizzie's voice rang through the house."
    },
    "flick": true
   },
@@ -210,11 +227,43 @@
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "bridget",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "And where is Mrs Borden?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "bridget",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "scared"
+    }
+   ],
    "line": {
     "who": "nar",
-    "text": "And upstairs, Abby was still lying where she fell."
+    "text": "The neighbour went upstairs. Abby was in the guest room."
    },
    "flick": true,
    "fx": [

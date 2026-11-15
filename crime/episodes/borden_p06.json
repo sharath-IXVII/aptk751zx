@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -105,6 +114,15 @@
     "years": "FALL RIVER · 1892",
     "crime": "THE AXE MYSTERY",
     "part": "PART 6 OF 8"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Both Bordens were dead. Police filled the house, looking for an intruder."
    }
   },
   {
@@ -152,7 +170,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "In the barn. No, in the yard. Eating pears."
+    "text": "In the barn. Looking for iron for fishing weights. And eating pears."
    }
   },
   {
@@ -169,8 +187,18 @@
    ],
    "line": {
     "who": "police",
-    "text": "Her story keeps changing."
+    "text": "In that barn? In this heat? Her story keeps changing."
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "And the note that called Abby away? It was never found. Nobody ever came forward."
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -211,7 +239,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "Burning it. It has paint on it."
+    "text": "Burning it. It's an old one. Covered in paint."
    }
   },
   {
@@ -228,7 +256,7 @@
    ],
    "line": {
     "who": "alice",
-    "text": "I wouldn't let anybody see you do that."
+    "text": "I wouldn't let anybody see you do that, Lizzie."
    },
    "fx": [
     "lightning"

@@ -92,6 +92,15 @@
    "hair": "#e0e0e0",
    "voice": "bm_george",
    "glasses": true
+  },
+  "doctor": {
+   "name": "Dr Bowen",
+   "skin": "#d9a882",
+   "cloth": "#e8e8e8",
+   "cloth2": "#bdbdbd",
+   "hair": "#9a9a9a",
+   "voice": "bm_lewis",
+   "glasses": true
   }
  },
  "shots": [
@@ -106,6 +115,16 @@
     "crime": "THE AXE MYSTERY",
     "part": "PART 3 OF 8"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Early August, 1892. The whole household suddenly fell ill."
+   },
+   "title": "2 AUGUST 1892"
   },
   {
    "set": "home",
@@ -128,10 +147,50 @@
    ],
    "line": {
     "who": "abby",
-    "text": "We're all so sick, Bridget. Was it the mutton?"
+    "text": "We're all so sick, Bridget. Andrew too. Was it the mutton? We've eaten it for days."
    },
-   "bed": true,
-   "title": "AUGUST 1892"
+   "bed": true
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "abby",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "doctor",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "abby",
+    "text": "Doctor, I think someone is poisoning us."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "doctor",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "doctor",
+    "text": "Food poisoning, Mrs Borden. In this heat, meat spoils quickly."
+   }
   },
   {
    "set": "home",
@@ -154,7 +213,7 @@
    ],
    "line": {
     "who": "clerk",
-    "text": "You want prussic acid, miss? For a sealskin cape? Not without a prescription."
+    "text": "Prussic acid, miss? For a sealskin cape? I can't sell that without a prescription."
    },
    "title": "THE DRUG STORE"
   },
@@ -171,9 +230,10 @@
     }
    ],
    "line": {
-    "who": "lizzie",
-    "text": "I've never been in that shop in my life."
-   }
+    "who": "nar",
+    "text": "The clerk later said Lizzie tried to buy poison. Lizzie said she had never been in that shop."
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -196,7 +256,7 @@
    ],
    "line": {
     "who": "lizzie",
-    "text": "Alice, I feel something terrible is going to happen."
+    "text": "Alice, I feel something terrible is going to happen. I'm afraid somebody will do something."
    }
   },
   {
@@ -205,7 +265,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Lizzie later said the clerk was mistaken."
+    "text": "The next morning, it did."
    },
    "flick": true,
    "fx": [
@@ -217,13 +277,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "DO YOU BELIEVE HER?",
+    "h": "DO YOU BELIEVE THE CLERK, OR LIZZIE?",
     "p": "Comment below 👇",
     "f": "Part 4 next"
    },
    "line": {
     "who": "nar",
-    "text": "Do you believe her? Part 4 is next."
+    "text": "Do you believe the clerk, or Lizzie? Part 4 is next."
    }
   }
  ]

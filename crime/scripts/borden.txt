@@ -7,78 +7,88 @@ CAST alice | Alice Russell | f | rich | blonde
 CAST clerk | the drug store clerk | m | plain | black
 CAST police | a police officer | m | police | black
 CAST judge | the judge | m | judge | white
+CAST doctor | Dr Bowen | m | doctor | grey
 # TITLE 1: The Richest Miser in Town
 PART
-home establish > nar: Lizzie Borden. A name America would never forget. [FALL RIVER · 1892]
-home two lizzie:think,andrew > lizzie: Father, we're rich. Why do we live like this? No electric light. No bathroom upstairs.
+street establish > nar: Fall River, Massachusetts. 1892. A busy mill town. [FALL RIVER · 1892]
+home two lizzie:think,andrew > lizzie: Father, we're one of the richest families in town. Why do we live like this? No electric lights. No bathroom upstairs.
 home two lizzie,andrew:cross > andrew: Money is for keeping, Lizzie. Not for wasting.
-home two emma:think,lizzie > emma: He'll give everything to her. Not to us.
-home face lizzie:cross > lizzie: Don't call her Mother. She is Mrs Borden.
-home establish > nar: A wealthy family. A tense house.
+home two emma:think,lizzie > emma: We're grown women, and we still live like poor girls in his house.
+home face lizzie:cross > lizzie: And she eats at our table. Don't call her Mother, Emma. She is Mrs Borden.
+home two abby:think,andrew > abby: The girls barely speak to me, Andrew. Twenty-seven years married, and still.
+home establish > nar: Andrew Borden: rich, strict, and tight with money. His second wife Abby. His grown daughters Lizzie and Emma.
+home establish > nar: A wealthy family. And a house full of anger.
 home establish > nar: Who do you think was the problem in this house?
 # TITLE 2: The Feud Over Money
 PART
-home establish > nar: Previously: Andrew Borden was rich but tight with money. His daughters resented their stepmother.
-home two andrew,abby:smile > andrew: I've put the house in your sister's name, Abby. Your family needs it.
-home two emma:cross,lizzie:cross > lizzie: He gives property to her family and nothing to us!
-home two lizzie:point,andrew > lizzie: You care more about her than your own daughters!
-home face abby:scared > abby: Lizzie, please. I've never hurt you.
-home establish > nar: The sisters stopped eating meals with their parents.
+home establish > nar: That anger grew worse when Andrew made a decision about property. [1887 - 1892]
+home two andrew,abby:smile > andrew: I've bought your sister's half of her house, Abby. Now she can live there safely.
+home two emma:cross,lizzie:cross > lizzie: He buys houses for HER family. And nothing for us!
+home two lizzie:point,andrew > lizzie: You care more about her relatives than your own daughters!
+home face abby:scared > abby: Lizzie, please. I've never tried to hurt you.
+home establish > nar: The sisters stopped eating meals with their father and stepmother. Doors in the house were kept locked.
+home face lizzie:cross > lizzie: Even our bedrooms have locks now. That's how this family lives.
+home establish > nar: Then, in the summer of 1892, something strange happened in the house.
 home establish > nar: How long can a family live with this much anger?
 # TITLE 3: A Strange Sickness
 PART
-home establish > nar: Previously: the Bordens argued bitterly about money and property.
-home bed abby:sick,bridget > abby: We're all so sick, Bridget. Was it the mutton? [AUGUST 1892]
-home two clerk,lizzie > clerk: You want prussic acid, miss? For a sealskin cape? Not without a prescription. [THE DRUG STORE]
-home face lizzie > lizzie: I've never been in that shop in my life.
-home two alice:think,lizzie > lizzie: Alice, I feel something terrible is going to happen.
-home establish > nar: Lizzie later said the clerk was mistaken.
-home establish > nar: Do you believe her?
+home establish > nar: Early August, 1892. The whole household suddenly fell ill. [2 AUGUST 1892]
+home bed abby:sick,bridget > abby: We're all so sick, Bridget. Andrew too. Was it the mutton? We've eaten it for days.
+home two abby:scared,doctor > abby: Doctor, I think someone is poisoning us.
+home face doctor:think > doctor: Food poisoning, Mrs Borden. In this heat, meat spoils quickly.
+home two clerk,lizzie > clerk: Prussic acid, miss? For a sealskin cape? I can't sell that without a prescription. [THE DRUG STORE]
+home face lizzie > nar: The clerk later said Lizzie tried to buy poison. Lizzie said she had never been in that shop.
+home two alice:think,lizzie > lizzie: Alice, I feel something terrible is going to happen. I'm afraid somebody will do something.
+home establish > nar: The next morning, it did.
+home establish > nar: Do you believe the clerk, or Lizzie?
 # TITLE 4: A Hot Morning
 PART
-home establish > nar: Previously: the family fell ill, and a clerk said Lizzie tried to buy poison.
-home establish > nar: The morning of the fourth of August, 1892. Very hot. [4 AUGUST 1892]
+home establish > nar: The morning after Lizzie's warning to her friend Alice. 4 August 1892. A very hot day. [4 AUGUST 1892]
+home establish > nar: Emma was away visiting friends. Andrew went into town on business.
 home two bridget:think,abby > abby: The windows need washing, Bridget. Inside and out.
 home face bridget > bridget: Yes, ma'am. In this heat.
-home establish > nar: Emma was away visiting friends. Andrew went into town.
-home establish > nar: Upstairs, in the guest room, Abby Borden was killed.
-home establish > nar: No one heard a thing.
+home establish > nar: Bridget went outside with a bucket. Abby went upstairs to tidy the guest room.
+home establish > nar: There, in the guest room, Abby Borden was killed.
+home face bridget > bridget: Outside, washing windows, I heard nothing at all.
+home establish > nar: No one raised the alarm. And Andrew was on his way home.
 home establish > nar: How could no one hear?
 # TITLE 5: Father's Dead
 PART
-home establish > nar: Previously: Abby Borden was killed upstairs while the maid washed windows.
-home two andrew,lizzie > andrew: Too hot. I'll rest on the sofa. [ABOUT AN HOUR LATER]
-home face lizzie > lizzie: Rest well, Father.
-home bed bridget,lizzie > bridget: Miss Lizzie? I'm lying down for a minute.
-home establish > nar: Minutes later, Lizzie's voice rang through the house.
+home establish > nar: About an hour after Abby was killed, Andrew came home. He didn't know his wife was dead upstairs.
+home two andrew,lizzie > andrew: Too hot. I'll rest on the sofa. Where is Mrs Borden?
+home face lizzie > lizzie: She had a note. Someone was sick. She went out.
+home bed bridget,lizzie > bridget: Miss Lizzie, I'm going up for a little rest.
+home establish > nar: A few minutes later, Lizzie's voice rang through the house.
 home two lizzie:scared,bridget:scared > lizzie: Bridget, come down quick! Father's dead! Somebody came in and killed him!
-home establish > nar: And upstairs, Abby was still lying where she fell.
+home two police:scared,bridget > police: And where is Mrs Borden?
+home face bridget:scared > nar: The neighbour went upstairs. Abby was in the guest room.
 home establish > nar: Who do you think did it?
 # TITLE 6: The Burned Dress
 PART
-home establish > nar: Previously: Andrew and Abby Borden were found killed in their home.
+home establish > nar: Both Bordens were dead. Police filled the house, looking for an intruder.
 home two police:think,lizzie > police: No door forced. Nothing stolen. Where were you, Miss Borden?
-home two police,lizzie > lizzie: In the barn. No, in the yard. Eating pears.
-home face police:think > police: Her story keeps changing.
+home two police,lizzie > lizzie: In the barn. Looking for iron for fishing weights. And eating pears.
+home face police:think > police: In that barn? In this heat? Her story keeps changing.
+home establish > nar: And the note that called Abby away? It was never found. Nobody ever came forward.
 home two alice:scared,lizzie > alice: Lizzie, what are you doing with that dress? [THREE DAYS LATER]
-home face lizzie > lizzie: Burning it. It has paint on it.
-home face alice:scared > alice: I wouldn't let anybody see you do that.
+home face lizzie > lizzie: Burning it. It's an old one. Covered in paint.
+home face alice:scared > alice: I wouldn't let anybody see you do that, Lizzie.
 home establish > nar: Would you burn a dress after your parents were killed?
 # TITLE 7: The Trial of the Century
 PART
-home establish > nar: Previously: Lizzie's stories changed, and a friend saw her burn a dress.
-home two police:point,lizzie:cuffed > police: Lizzie Borden, you are under arrest. [AUGUST 1892]
-court establish > nar: Reporters came from all over America. [NEW BEDFORD · JUNE 1893]
-court two alice:scared,judge > alice: She said it had paint on it. And she burned it.
+home establish > nar: Alice told the police about the dress. A week after the murders, Lizzie was arrested. [AUGUST 1892]
+home two police:point,lizzie:cuffed > police: Lizzie Borden, you are under arrest for the murder of your father.
+court establish > nar: Ten months later, the trial began. Reporters came from all over America. [NEW BEDFORD · JUNE 1893]
+court two alice:scared,judge > alice: She said the dress had paint on it. And she burned it in the kitchen stove.
 court face lizzie > lizzie: I am innocent.
-court establish > nar: The whole country argued. Could a quiet church lady do something like this?
+court establish > nar: The judge refused to let the jury hear about the poison story, or Lizzie's confused first statements.
 court establish > nar: What would your verdict be?
 # TITLE 8: Not Guilty
 PART
-court establish > nar: Previously: Lizzie Borden was tried for the murders of her father and stepmother.
-court two police:think,judge > police: No bloody clothes. No clear weapon. No witness.
-court court judge,lizzie > judge: The jury finds the defendant: not guilty. [JUNE 1893]
+court establish > nar: After two weeks of evidence, the jury went out to decide. [JUNE 1893]
+court two police:think,judge > police: No bloody clothes. No clear weapon. No witness who saw it happen.
+court court judge,lizzie > judge: The jury finds the defendant: not guilty.
 court face lizzie:cry > lizzie: Take me home. I want to go home.
-street establish > nar: Lizzie stayed in Fall River, shunned by her neighbours, until she died in 1927.
+street establish > nar: Lizzie stayed in Fall River, bought a bigger house, and lived there, shunned by neighbours, until 1927.
 street establish > nar: No one else was ever charged. The case is still unsolved.
 street establish > nar: Lizzie Borden: guilty or innocent?
