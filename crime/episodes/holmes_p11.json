@@ -154,6 +154,19 @@
    }
   },
   {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In Toronto, a neighbour told Detective Geyer about a man with two girls and a spade."
+   },
+   "title": "TORONTO · 1895",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -174,9 +187,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "A man rented this house with two girls. He borrowed a spade."
-   },
-   "title": "TORONTO · 1895"
+    "text": "He rented this house in October. He borrowed a spade from the neighbour."
+   }
   },
   {
    "set": "home",
@@ -192,7 +204,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "A spade? Show me the cellar."
+    "text": "A spade. Show me the cellar."
    }
   },
   {
@@ -201,7 +213,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "In the cellar, Geyer found the remains of Alice and Nellie."
+    "text": "In the cellar, Geyer found the remains of Alice and Nellie Pitezel."
    },
    "flick": true
   },
@@ -236,7 +248,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "And Howard? I'm not stopping until I find him."
+    "text": "Howard. Where is little Howard? I won't stop until I find him."
    }
   },
   {
@@ -245,9 +257,29 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Later, near Indianapolis, Geyer found Howard's remains too."
+    "text": "Weeks later, near Indianapolis, Geyer found Howard's remains in a house Holmes had rented."
    },
-   "title": "INDIANAPOLIS"
+   "title": "INDIANAPOLIS · AUGUST 1895"
+  },
+  {
+   "set": "forest",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "geyer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cry"
+    }
+   ],
+   "line": {
+    "who": "geyer",
+    "text": "All three. He promised them they'd see their father."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "forest",
@@ -255,9 +287,10 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The children never saw their father again."
+    "text": "Now the whole country wanted to know what else Holmes had done."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

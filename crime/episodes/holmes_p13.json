@@ -154,14 +154,14 @@
    }
   },
   {
-   "set": "court",
+   "set": "street",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Philadelphia, 1895. Holmes is tried for killing Benjamin Pitezel."
+    "text": "The country was horrified by the Murder Castle. Holmes went on trial in Philadelphia, for killing Benjamin Pitezel."
    },
-   "title": "PHILADELPHIA · 1895"
+   "title": "PHILADELPHIA · OCTOBER 1895"
   },
   {
    "set": "court",
@@ -184,7 +184,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "He promised a family their father was alive. He knew he wasn't."
+    "text": "He told Carrie Pitezel her husband was alive. He knew he was dead."
    }
   },
   {
@@ -201,7 +201,16 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "I am an innocent man. A businessman, nothing more."
+    "text": "I'm an innocent businessman. A victim of the newspapers."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Holmes even fired his lawyers and defended himself for a while."
    }
   },
   {
@@ -225,7 +234,7 @@
    ],
    "line": {
     "who": "judge",
-    "text": "The jury finds you guilty of murder."
+    "text": "The jury finds you guilty of murder in the first degree."
    }
   },
   {
@@ -242,7 +251,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Guilty? We'll see about that."
+    "text": "Guilty. Then let's see how much my story is worth."
    }
   },
   {

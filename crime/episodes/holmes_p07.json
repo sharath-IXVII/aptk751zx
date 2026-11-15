@@ -154,6 +154,16 @@
    }
   },
   {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Philadelphia, 1894. Ben rents a small house under a fake name, just as Holmes told him."
+   },
+   "title": "PHILADELPHIA · 1894"
+  },
+  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -174,9 +184,8 @@
    ],
    "line": {
     "who": "ben",
-    "text": "Philadelphia. So this is where I disappear?"
-   },
-   "title": "PHILADELPHIA · 1894"
+    "text": "B. F. Perry, patent dealer. That's me now."
+   }
   },
   {
    "set": "home",
@@ -199,7 +208,24 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Leave everything to me, Ben. Rest tonight."
+    "text": "Perfect, Ben. Rest tonight. I'll handle everything."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ben",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "ben",
+    "text": "You'll tell Carrie I'm all right?"
    }
   },
   {
@@ -208,8 +234,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Days later, Benjamin Pitezel was found dead in that house."
+    "text": "Days later, a man was found dead in that house. It was Benjamin Pitezel himself."
    },
+   "title": "SEPTEMBER 1894",
    "flick": true
   },
   {
@@ -233,7 +260,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "The insurance company will pay ten thousand dollars."
+    "text": "The insurance company says the dead man is Pitezel. They'll pay ten thousand dollars."
    }
   },
   {
@@ -257,7 +284,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Poor Ben. I'll make sure his family is looked after."
+    "text": "Poor Ben. Such a tragedy. I'll make sure his family is looked after."
    }
   },
   {
@@ -283,7 +310,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "But was it really a fake death?"
+    "text": "The fake death was never fake."
    },
    "flick": true,
    "fx": [
@@ -295,13 +322,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHAT DO YOU THINK HAPPENED TO BEN?",
+    "h": "WHAT DO YOU THINK HAPPENED TO BEN'S FAMILY NEXT?",
     "p": "Comment below 👇",
     "f": "Part 8 next"
    },
    "line": {
     "who": "nar",
-    "text": "What do you think happened to Ben? Part 8 is next."
+    "text": "What do you think happened to Ben's family next? Part 8 is next."
    }
   }
  ]

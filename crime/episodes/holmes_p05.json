@@ -155,6 +155,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "After the Fair, Holmes's money was running out. So he did what he did best. Lie."
+   },
+   "title": "1893 - 1894"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -174,7 +184,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Sign here. A new company. Our secret."
+    "text": "Sign these papers, my dear. A new company. Our little secret."
    }
   },
   {
@@ -198,7 +208,7 @@
    ],
    "line": {
     "who": "clerk",
-    "text": "The supplier came again. He says you never paid for the furniture."
+    "text": "The furniture man came again. He says you never paid. Not one dollar."
    }
   },
   {
@@ -215,7 +225,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Suppliers always say that. Smile, my dear."
+    "text": "Furniture men always say that. Smile."
    }
   },
   {
@@ -239,7 +249,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "Another complaint about unpaid bills, Doctor."
+    "text": "Another complaint about unpaid bills, Doctor. And an insurance company is asking questions."
    },
    "fx": [
     "rain"
@@ -266,11 +276,8 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "A misunderstanding, officer. I'll sort it out."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "A misunderstanding, officer. I'll sort it out personally."
+   }
   },
   {
    "set": "home",
@@ -278,9 +285,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "He lived on lies, fake companies and insurance."
+    "text": "He built fake companies, cheated suppliers, and claimed insurance on fires and accidents."
    },
-   "title": "CHICAGO",
    "flick": true
   },
   {
@@ -291,7 +297,24 @@
     "who": "nar",
     "text": "And several women who worked for him, or loved him, were never seen again."
    },
-   "flick": true,
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "I need one big payment. Then I'll disappear for good."
+   },
    "fx": [
     "lightning"
    ]
@@ -301,13 +324,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "HOW LONG CAN A MAN HIDE BEHIND A SMILE?",
+    "h": "WHO DO YOU THINK HE'D USE FOR THAT BIG PAYMENT?",
     "p": "Comment below 👇",
     "f": "Part 6 next"
    },
    "line": {
     "who": "nar",
-    "text": "How long can a man hide behind a smile? Part 6 is next."
+    "text": "Who do you think he'd use for that big payment? Part 6 is next."
    }
   }
  ]

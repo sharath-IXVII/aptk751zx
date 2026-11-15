@@ -155,6 +155,16 @@
   },
   {
    "set": "prison",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Found guilty and waiting to hang, Holmes sold his story to the newspapers."
+   },
+   "title": "PRISON · 1896"
+  },
+  {
+   "set": "prison",
    "cam": "cell",
    "chars": [
     {
@@ -167,9 +177,8 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Newspapers will pay a fortune for my story."
-   },
-   "title": "PRISON · 1896"
+    "text": "Ten thousand dollars for my confession? Then I'll give them something worth reading."
+   }
   },
   {
    "set": "prison",
@@ -209,7 +218,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "Some of the people he named are still alive!"
+    "text": "Some of the people he says he killed are still alive!"
    }
   },
   {
@@ -226,7 +235,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "Even his confession is a lie."
+    "text": "Even his confession is a lie. That's who he is."
    }
   },
   {
@@ -235,9 +244,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Holmes was hanged in May 1896."
+    "text": "On 7 May 1896, H. H. Holmes was hanged."
    },
-   "title": "MAY 1896",
+   "title": "7 MAY 1896",
    "flick": true
   },
   {
@@ -246,7 +255,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "How many people he really killed is still unknown."
+    "text": "How many people he really killed is still unknown. Some say nine. Some say far more."
    },
    "flick": true,
    "fx": [

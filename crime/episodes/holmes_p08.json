@@ -155,6 +155,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Ben was dead. And Holmes went straight to see his widow, Carrie."
+   },
+   "title": "ST LOUIS · 1894"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -174,7 +184,7 @@
    ],
    "line": {
     "who": "carrie",
-    "text": "My Ben... and now I have five children to feed."
+    "text": "My Ben's gone. And I've got five children to feed."
    }
   },
   {
@@ -198,7 +208,24 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Let me help. I'll take Alice, Nellie and Howard. They'll see their father soon."
+    "text": "Ben is hiding, Carrie. He's alive. Let me take three of the children to him."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "carrie",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "carrie",
+    "text": "Alive? Then take them. Alice, Nellie, Howard. Go with Mr Holmes."
    }
   },
   {
@@ -253,7 +280,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Of course. Pack your things, children."
+    "text": "Of course. Pack your things."
    }
   },
   {
@@ -270,9 +297,8 @@
    ],
    "line": {
     "who": "nar",
-    "text": "Holmes took the children across the United States and into Canada."
-   },
-   "title": "1894"
+    "text": "Holmes took the children from city to city. Cincinnati. Indianapolis. Detroit. Toronto."
+   }
   },
   {
    "set": "home",
@@ -295,7 +321,7 @@
    ],
    "line": {
     "who": "alice",
-    "text": "Nellie, why do we keep moving to new cities?"
+    "text": "Nellie, why do we keep moving? Why doesn't Papa come?"
    }
   },
   {
@@ -312,7 +338,7 @@
    ],
    "line": {
     "who": "nellie",
-    "text": "I miss Mama. When will we see Papa?"
+    "text": "I miss Mama. I want to go home."
    }
   },
   {
@@ -321,7 +347,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Their letters home were never sent."
+    "text": "Alice wrote letters home. Holmes promised to post them. He never did."
    },
    "flick": true,
    "fx": [

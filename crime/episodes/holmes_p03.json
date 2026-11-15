@@ -155,6 +155,19 @@
   },
   {
    "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "With the pharmacy making money, Holmes bought the empty land across the street."
+   },
+   "title": "1887",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -174,11 +187,8 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Three storeys. Shops below, rooms above."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "Three storeys. Shops on the ground floor. Rooms above. Lots of rooms."
+   }
   },
   {
    "set": "street",
@@ -201,7 +211,7 @@
    ],
    "line": {
     "who": "builder",
-    "text": "These plans are strange, sir. Doors that open onto walls? Stairs to nowhere?"
+    "text": "These plans are strange, sir. Doors that open onto brick walls? Stairs that lead nowhere?"
    }
   },
   {
@@ -230,20 +240,23 @@
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
-     "act": "scared"
+     "act": "idle"
     },
     {
      "id": "holmes",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
-     "act": "point"
+     "act": "cross"
     }
    ],
    "line": {
     "who": "holmes",
-    "text": "You're slow. You're fired. Send in the next man."
-   }
+    "text": "You're too slow. You're fired. Next man!"
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -259,11 +272,8 @@
    ],
    "line": {
     "who": "builder",
-    "text": "Fired again. No one stays long enough to see the whole building."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "Fired after two weeks. Like everyone else. Nobody stays long enough to see the whole building."
+   }
   },
   {
    "set": "street",
@@ -271,17 +281,41 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Builders came and went. Only Holmes knew every room."
+    "text": "Workers came and went. Many were never paid. Only Holmes knew how every room connected."
    },
    "title": "1887 - 1892"
   },
   {
    "set": "street",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "clerk",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "builder",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "clerk",
+    "text": "People around here have a name for it. The Castle."
+   }
+  },
+  {
+   "set": "street",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Locals gave the strange building a name. They called it the Castle."
+    "text": "And soon, the whole world would be coming to Chicago."
    },
    "fx": [
     "lightning"
@@ -292,13 +326,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHY WOULD A MAN BUILD A HOUSE NO ONE ELSE COULD UNDERSTAND?",
+    "h": "WHY WOULD A MAN BUILD A HOUSE NOBODY ELSE COULD UNDERSTAND?",
     "p": "Comment below 👇",
     "f": "Part 4 next"
    },
    "line": {
     "who": "nar",
-    "text": "Why would a man build a house no one else could understand? Part 4 is next."
+    "text": "Why would a man build a house nobody else could understand? Part 4 is next."
    }
   }
  ]

@@ -155,6 +155,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Weeks later, Holmes was running the little pharmacy on the corner of 63rd Street."
+   },
+   "title": "ENGLEWOOD · 1886"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -174,7 +184,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Business is booming, isn't it? Customers adore us."
+    "text": "Business is booming, isn't it, ma'am? Customers adore us."
    }
   },
   {
@@ -203,6 +213,47 @@
   },
   {
    "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "widow",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Then let me take the worry off your shoulders. I could buy the shop. Pay you a little each month."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "widow",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "widow",
+    "text": "Sell my husband's shop? I don't know..."
+   }
+  },
+  {
+   "set": "home",
    "cam": "face",
    "chars": [
     {
@@ -210,12 +261,12 @@
      "x": 0,
      "z": 0,
      "ry": 0,
-     "act": "idle"
+     "act": "smile"
     }
    ],
    "line": {
     "who": "holmes",
-    "text": "Then perhaps it should be my shop."
+    "text": "Think about it. You deserve a rest."
    }
   },
   {
@@ -224,9 +275,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Soon after, Holmes owned the pharmacy."
+    "text": "Soon after, Holmes owned the pharmacy. And the widow was gone."
    },
-   "title": "WEEKS LATER"
+   "title": "MONTHS LATER"
   },
   {
    "set": "street",
@@ -244,16 +295,13 @@
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
-     "act": "smile"
+     "act": "idle"
     }
    ],
    "line": {
     "who": "clerk",
-    "text": "Where is the old lady who ran this place?"
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "Doctor, where is the old lady who ran this place? She used to give me sweets."
+   }
   },
   {
    "set": "street",
@@ -276,11 +324,8 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "She moved away. California, I believe. She deserved a rest."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "She moved away. California, I believe. She deserved the sunshine."
+   }
   },
   {
    "set": "street",
@@ -296,8 +341,11 @@
    ],
    "line": {
     "who": "clerk",
-    "text": "She never said goodbye to anyone."
-   }
+    "text": "She never said goodbye. Not to anyone."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -305,7 +353,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "No letter ever came from California."
+    "text": "No letter ever came from California. And Holmes was already planning something much bigger."
    },
    "flick": true,
    "fx": [

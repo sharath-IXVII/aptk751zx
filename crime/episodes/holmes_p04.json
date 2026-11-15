@@ -159,9 +159,18 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "1893. The World's Fair opens. Millions come to Chicago."
+    "text": "1893. The Castle is finished just in time. Chicago hosts the World's Fair."
    },
    "title": "CHICAGO · 1893"
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Twenty-seven million visitors pour into the city. Every hotel is full."
+   }
   },
   {
    "set": "street",
@@ -184,7 +193,7 @@
    ],
    "line": {
     "who": "guest",
-    "text": "Every hotel is full! Do you have a room?"
+    "text": "Please tell me you have a room. I've tried everywhere!"
    }
   },
   {
@@ -208,8 +217,11 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "You're in luck. I have rooms right upstairs. Very private."
-   }
+    "text": "You're in luck. Rooms upstairs. Private. Very quiet."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -232,7 +244,7 @@
    ],
    "line": {
     "who": "guest",
-    "text": "Your hallways are like a maze, Doctor."
+    "text": "Your hallways twist like a maze, Doctor. I got lost twice."
    }
   },
   {
@@ -249,7 +261,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "You get used to it. Sleep well."
+    "text": "Everyone does at first. Sleep well."
    }
   },
   {
@@ -258,20 +270,51 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Visitors came from all over the world. Rooms filled up night after night."
+    "text": "Guests checked in from all over the world."
    },
-   "title": "THAT NIGHT",
+   "title": "THAT SUMMER",
    "flick": true
   },
   {
    "set": "home",
-   "cam": "scene",
-   "chars": [],
+   "cam": "office",
+   "chars": [
+    {
+     "id": "clerk",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "holmes",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
    "line": {
-    "who": "nar",
-    "text": "Nobody checked who checked out."
+    "who": "clerk",
+    "text": "Doctor, the lady in room twelve left without paying. And her trunk is still here."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "holmes",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "holmes",
+    "text": "Guests leave in a hurry sometimes. I'll take care of it."
    },
-   "flick": true,
    "fx": [
     "lightning"
    ]

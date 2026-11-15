@@ -155,6 +155,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Holmes needed one big payment. So he turned to his most loyal friend."
+   },
+   "title": "1894"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -174,7 +184,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Ben, you're my most loyal friend. And I have a plan to make us rich."
+    "text": "Ben, you've stood by me for years. Now I'll make us both rich."
    }
   },
   {
@@ -198,7 +208,7 @@
    ],
    "line": {
     "who": "ben",
-    "text": "What kind of plan?"
+    "text": "You always say that, Holmes. What is it this time?"
    }
   },
   {
@@ -239,7 +249,7 @@
    ],
    "line": {
     "who": "ben",
-    "text": "Fake my death? And Carrie, my children?"
+    "text": "Fake my death? What about Carrie? My children?"
    }
   },
   {
@@ -263,7 +273,24 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "They'll get their share. A body, a new name, and we split the money."
+    "text": "We find a body that looks like you. You hide for a while. Then we split the money. Carrie gets her share."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ben",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "ben",
+    "text": "I've got five children and no money."
    }
   },
   {
@@ -280,7 +307,7 @@
    ],
    "line": {
     "who": "ben",
-    "text": "All right, Holmes. I trust you."
+    "text": "All right, Holmes. I'll do it."
    }
   },
   {
@@ -289,7 +316,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Benjamin Pitezel agreed to the plan."
+    "text": "Benjamin Pitezel trusted Holmes completely. They moved to Philadelphia to carry out the plan."
    },
    "flick": true,
    "fx": [
@@ -301,13 +328,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "SHOULD HE HAVE TRUSTED HOLMES?",
+    "h": "SHOULD BEN HAVE TRUSTED HIM?",
     "p": "Comment below 👇",
     "f": "Part 7 next"
    },
    "line": {
     "who": "nar",
-    "text": "Should he have trusted Holmes? Part 7 is next."
+    "text": "Should Ben have trusted him? Part 7 is next."
    }
   }
  ]

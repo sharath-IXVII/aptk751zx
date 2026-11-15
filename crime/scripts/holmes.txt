@@ -25,143 +25,153 @@ street establish > nar: But who was the real man behind that smile?
 home establish > nar: Would you trust a stranger with a brand new name?
 # TITLE 2: The Widow Who Moved Away
 PART
-home establish > nar: Previously: a charming stranger arrived in Chicago as Doctor H. H. Holmes.
-home two widow,holmes:smile > holmes: Business is booming, isn't it? Customers adore us.
+home establish > nar: Weeks later, Holmes was running the little pharmacy on the corner of 63rd Street. [ENGLEWOOD · 1886]
+home two widow,holmes:smile > holmes: Business is booming, isn't it, ma'am? Customers adore us.
 home two widow:think,holmes > widow: Customers adore you, Doctor. Sometimes I feel like a guest in my own shop.
-home face holmes > holmes: Then perhaps it should be my shop.
-street establish > nar: Soon after, Holmes owned the pharmacy. [WEEKS LATER]
-street two clerk:think,holmes:smile > clerk: Where is the old lady who ran this place?
-street two clerk,holmes:smile > holmes: She moved away. California, I believe. She deserved a rest.
-street face clerk:think > clerk: She never said goodbye to anyone.
-home establish > nar: No letter ever came from California.
+home two widow:think,holmes:smile > holmes: Then let me take the worry off your shoulders. I could buy the shop. Pay you a little each month.
+home face widow:think > widow: Sell my husband's shop? I don't know...
+home face holmes:smile > holmes: Think about it. You deserve a rest.
+street establish > nar: Soon after, Holmes owned the pharmacy. And the widow was gone. [MONTHS LATER]
+street two clerk:think,holmes > clerk: Doctor, where is the old lady who ran this place? She used to give me sweets.
+street two clerk,holmes:smile > holmes: She moved away. California, I believe. She deserved the sunshine.
+street face clerk:think > clerk: She never said goodbye. Not to anyone.
+home establish > nar: No letter ever came from California. And Holmes was already planning something much bigger.
 home establish > nar: Where do you think the widow really went?
 # TITLE 3: The Castle Rises
 PART
-street establish > nar: Previously: Holmes took over the pharmacy. Its owner was said to have moved away.
-street two builder,holmes:point > holmes: Three storeys. Shops below, rooms above.
-street two builder:think,holmes > builder: These plans are strange, sir. Doors that open onto walls? Stairs to nowhere?
+street establish > nar: With the pharmacy making money, Holmes bought the empty land across the street. [1887]
+street two builder,holmes:point > holmes: Three storeys. Shops on the ground floor. Rooms above. Lots of rooms.
+street two builder:think,holmes > builder: These plans are strange, sir. Doors that open onto brick walls? Stairs that lead nowhere?
 street face holmes:smile > holmes: Just build what I draw. And don't ask questions.
-street two builder:scared,holmes:point > holmes: You're slow. You're fired. Send in the next man.
-street walk builder > builder: Fired again. No one stays long enough to see the whole building.
-street establish > nar: Builders came and went. Only Holmes knew every room. [1887 - 1892]
-street establish > nar: Locals gave the strange building a name. They called it the Castle.
-street establish > nar: Why would a man build a house no one else could understand?
+street two builder,holmes:cross > holmes: You're too slow. You're fired. Next man!
+street walk builder > builder: Fired after two weeks. Like everyone else. Nobody stays long enough to see the whole building.
+street establish > nar: Workers came and went. Many were never paid. Only Holmes knew how every room connected. [1887 - 1892]
+street two clerk:think,builder > clerk: People around here have a name for it. The Castle.
+street establish > nar: And soon, the whole world would be coming to Chicago.
+street establish > nar: Why would a man build a house nobody else could understand?
 # TITLE 4: The World's Fair Guests
 PART
-street establish > nar: Previously: Holmes built a huge, strange building. Locals called it the Castle.
-street establish > nar: 1893. The World's Fair opens. Millions come to Chicago. [CHICAGO · 1893]
-street two guest,holmes:smile > guest: Every hotel is full! Do you have a room?
-street two guest:smile,holmes:give > holmes: You're in luck. I have rooms right upstairs. Very private.
-home two guest:think,holmes > guest: Your hallways are like a maze, Doctor.
-home face holmes:smile > holmes: You get used to it. Sleep well.
-home establish > nar: Visitors came from all over the world. Rooms filled up night after night. [THAT NIGHT]
-home establish > nar: Nobody checked who checked out.
+street establish > nar: 1893. The Castle is finished just in time. Chicago hosts the World's Fair. [CHICAGO · 1893]
+street establish > nar: Twenty-seven million visitors pour into the city. Every hotel is full.
+street two guest,holmes:smile > guest: Please tell me you have a room. I've tried everywhere!
+street two guest:smile,holmes:give > holmes: You're in luck. Rooms upstairs. Private. Very quiet.
+home two guest:think,holmes > guest: Your hallways twist like a maze, Doctor. I got lost twice.
+home face holmes:smile > holmes: Everyone does at first. Sleep well.
+home establish > nar: Guests checked in from all over the world. [THAT SUMMER]
+home two clerk:think,holmes > clerk: Doctor, the lady in room twelve left without paying. And her trunk is still here.
+home face holmes > holmes: Guests leave in a hurry sometimes. I'll take care of it.
 home establish > nar: Would you stay a night in the Castle?
 # TITLE 5: Debts, Lies and Missing Women
 PART
-home establish > nar: Previously: during the World's Fair, Holmes rented rooms in his Castle to visitors.
-home two clerk,holmes:give > holmes: Sign here. A new company. Our secret.
-home two clerk:think,holmes > clerk: The supplier came again. He says you never paid for the furniture.
-home face holmes:smile > holmes: Suppliers always say that. Smile, my dear.
-street two police:think,holmes > police: Another complaint about unpaid bills, Doctor.
-street two police,holmes:smile > holmes: A misunderstanding, officer. I'll sort it out.
-home establish > nar: He lived on lies, fake companies and insurance. [CHICAGO]
+home establish > nar: After the Fair, Holmes's money was running out. So he did what he did best. Lie. [1893 - 1894]
+home two clerk,holmes:give > holmes: Sign these papers, my dear. A new company. Our little secret.
+home two clerk:think,holmes > clerk: The furniture man came again. He says you never paid. Not one dollar.
+home face holmes:smile > holmes: Furniture men always say that. Smile.
+street two police:think,holmes > police: Another complaint about unpaid bills, Doctor. And an insurance company is asking questions.
+street two police,holmes:smile > holmes: A misunderstanding, officer. I'll sort it out personally.
+home establish > nar: He built fake companies, cheated suppliers, and claimed insurance on fires and accidents.
 home establish > nar: And several women who worked for him, or loved him, were never seen again.
-home establish > nar: How long can a man hide behind a smile?
+home face holmes > holmes: I need one big payment. Then I'll disappear for good.
+home establish > nar: Who do you think he'd use for that big payment?
 # TITLE 6: The Insurance Plan
 PART
-home establish > nar: Previously: Holmes lived on fraud, and women close to him vanished.
-home two ben,holmes:smile > holmes: Ben, you're my most loyal friend. And I have a plan to make us rich.
-home two ben:think,holmes > ben: What kind of plan?
+home establish > nar: Holmes needed one big payment. So he turned to his most loyal friend. [1894]
+home two ben,holmes:smile > holmes: Ben, you've stood by me for years. Now I'll make us both rich.
+home two ben:think,holmes > ben: You always say that, Holmes. What is it this time?
 home two ben,holmes:point > holmes: We insure your life for ten thousand dollars. Then we fake your death.
-home face ben:scared > ben: Fake my death? And Carrie, my children?
-home two ben:think,holmes:smile > holmes: They'll get their share. A body, a new name, and we split the money.
-home face ben > ben: All right, Holmes. I trust you.
-home establish > nar: Benjamin Pitezel agreed to the plan.
-home establish > nar: Should he have trusted Holmes?
+home face ben:scared > ben: Fake my death? What about Carrie? My children?
+home two ben:think,holmes:smile > holmes: We find a body that looks like you. You hide for a while. Then we split the money. Carrie gets her share.
+home face ben:think > ben: I've got five children and no money.
+home face ben > ben: All right, Holmes. I'll do it.
+home establish > nar: Benjamin Pitezel trusted Holmes completely. They moved to Philadelphia to carry out the plan.
+home establish > nar: Should Ben have trusted him?
 # TITLE 7: Philadelphia, 1894
 PART
-street establish > nar: Previously: Holmes and his partner Benjamin Pitezel planned to fake Ben's death for insurance.
-home two ben,holmes > ben: Philadelphia. So this is where I disappear? [PHILADELPHIA · 1894]
-home two ben:think,holmes:smile > holmes: Leave everything to me, Ben. Rest tonight.
-home establish > nar: Days later, Benjamin Pitezel was found dead in that house.
-street two police:think,holmes > police: The insurance company will pay ten thousand dollars.
-street two police,holmes:smile > holmes: Poor Ben. I'll make sure his family is looked after.
+street establish > nar: Philadelphia, 1894. Ben rents a small house under a fake name, just as Holmes told him. [PHILADELPHIA · 1894]
+home two ben,holmes > ben: B. F. Perry, patent dealer. That's me now.
+home two ben:think,holmes:smile > holmes: Perfect, Ben. Rest tonight. I'll handle everything.
+home face ben:think > ben: You'll tell Carrie I'm all right?
+home establish > nar: Days later, a man was found dead in that house. It was Benjamin Pitezel himself. [SEPTEMBER 1894]
+street two police:think,holmes > police: The insurance company says the dead man is Pitezel. They'll pay ten thousand dollars.
+street two police,holmes:smile > holmes: Poor Ben. Such a tragedy. I'll make sure his family is looked after.
 street face holmes:smile > holmes: Every dollar.
-home establish > nar: But was it really a fake death?
-home establish > nar: What do you think happened to Ben?
+home establish > nar: The fake death was never fake.
+home establish > nar: What do you think happened to Ben's family next?
 # TITLE 8: Three Children on the Road
 PART
-home establish > nar: Previously: Benjamin Pitezel was found dead, and Holmes collected the insurance.
-home two carrie:cry,holmes > carrie: My Ben... and now I have five children to feed.
-home two carrie,holmes:smile > holmes: Let me help. I'll take Alice, Nellie and Howard. They'll see their father soon.
+home establish > nar: Ben was dead. And Holmes went straight to see his widow, Carrie. [ST LOUIS · 1894]
+home two carrie:cry,holmes > carrie: My Ben's gone. And I've got five children to feed.
+home two carrie,holmes:smile > holmes: Ben is hiding, Carrie. He's alive. Let me take three of the children to him.
+home face carrie:think > carrie: Alive? Then take them. Alice, Nellie, Howard. Go with Mr Holmes.
 home three alice,nellie,howard:smile > howard: Are we really going to see Papa?
-home two alice:smile,holmes:smile > holmes: Of course. Pack your things, children.
-street walk holmes > nar: Holmes took the children across the United States and into Canada. [1894]
-home two alice:think,nellie > alice: Nellie, why do we keep moving to new cities?
-home face nellie:scared > nellie: I miss Mama. When will we see Papa?
-home establish > nar: Their letters home were never sent.
+home two alice:smile,holmes:smile > holmes: Of course. Pack your things.
+street walk holmes > nar: Holmes took the children from city to city. Cincinnati. Indianapolis. Detroit. Toronto.
+home two alice:think,nellie > alice: Nellie, why do we keep moving? Why doesn't Papa come?
+home face nellie:scared > nellie: I miss Mama. I want to go home.
+home establish > nar: Alice wrote letters home. Holmes promised to post them. He never did.
 home establish > nar: Where do you think Holmes was taking them?
 # TITLE 9: A Tip From a Train Robber
 PART
-prison establish > nar: Previously: Holmes travelled with three of the Pitezel children.
-prison two hedge,holmes > holmes: Do you know a crooked lawyer? I need one for an insurance job. [ST LOUIS JAIL]
-prison two hedge:think,holmes:smile > hedge: For a share? I know just the man.
-prison face hedge:cross > hedge: But you never paid me, Holmes. So now I talk.
-prison two hedge:point,police > hedge: Officer, that insurance death? It was a fraud.
-street two police:point,holmes:cuffed > police: H. H. Holmes, you're under arrest for fraud. [BOSTON · NOV 1894]
-street face holmes:smile > holmes: Fraud? Just a misunderstanding.
-street establish > nar: Holmes was in custody. But where were the children?
-street establish > nar: Would you believe anything Holmes says?
+home establish > nar: While Holmes moved the children from city to city, a man he'd met in jail was talking. [ST LOUIS JAIL]
+prison two hedge,holmes > nar: Months earlier, Holmes had spent a few days in jail for fraud. He shared a cell with train robber Marion Hedgepeth.
+prison two hedge:think,holmes:smile > holmes: Find me a crooked lawyer for an insurance job, and I'll give you five hundred dollars.
+prison face hedge:cross > hedge: He never paid me. Not one cent.
+prison two hedge:point,police > hedge: Officer, that insurance death in Philadelphia? It was a fraud. Holmes planned it.
+street two police:point,holmes:cuffed > police: H. H. Holmes, you're under arrest for insurance fraud. [BOSTON · NOVEMBER 1894]
+street face holmes:smile > holmes: Fraud? A misunderstanding, officer.
+street establish > nar: Holmes was finally behind bars. But he still wouldn't say where the children were.
+street establish > nar: Would you believe anything Holmes said?
 # TITLE 10: The Detective Begins
 PART
-street establish > nar: Previously: Holmes was arrested for fraud. Three Pitezel children were still missing.
-street two geyer,police > police: Detective Geyer, Holmes won't say where the children are. [PHILADELPHIA · 1895]
-street face geyer:think > geyer: Then I'll follow his trail myself. Every city. Every hotel.
-street walk geyer > geyer: Cincinnati. Indianapolis. Detroit. He moved them again and again.
-home two geyer:think,police > geyer: He rented houses for just a few days. Why?
-home face geyer > geyer: Next stop, Toronto.
-street establish > nar: Geyer went from house to house, asking about a man with three children. [TORONTO]
-street establish > nar: And one landlord remembered something.
+street establish > nar: Holmes sat in jail, refusing to say where the Pitezel children were. Philadelphia sent its best detective. [PHILADELPHIA · 1895]
+street two geyer,police > police: Detective Geyer, Holmes says the children are in London with a woman. He's lying.
+street face geyer:think > geyer: Then I'll follow his trail myself. Every city. Every hotel. Every house he rented.
+street walk geyer > geyer: Cincinnati. Indianapolis. Detroit. Hotel after hotel, the same man with three children.
+home two geyer:think,police > geyer: He rented houses for only a few days at a time. Why rent a house for three days?
+home face geyer > geyer: The trail leads to Toronto.
+street establish > nar: In Toronto, Geyer went from door to door with photographs of Holmes and the girls. [TORONTO · JULY 1895]
+street establish > nar: And one neighbour remembered a man with two girls. And a spade.
 street establish > nar: What do you think Geyer found in Toronto?
 # TITLE 11: The Cellar in Toronto
 PART
-street establish > nar: Previously: Detective Geyer followed Holmes's route city by city to Toronto.
-home two geyer,police > police: A man rented this house with two girls. He borrowed a spade. [TORONTO · 1895]
-home face geyer:scared > geyer: A spade? Show me the cellar.
-home establish > nar: In the cellar, Geyer found the remains of Alice and Nellie.
+street establish > nar: In Toronto, a neighbour told Detective Geyer about a man with two girls and a spade. [TORONTO · 1895]
+home two geyer,police > police: He rented this house in October. He borrowed a spade from the neighbour.
+home face geyer:scared > geyer: A spade. Show me the cellar.
+home establish > nar: In the cellar, Geyer found the remains of Alice and Nellie Pitezel.
 grave grave geyer:cry > geyer: I'm so sorry, girls. I came too late.
-grave face geyer > geyer: And Howard? I'm not stopping until I find him.
-forest establish > nar: Later, near Indianapolis, Geyer found Howard's remains too. [INDIANAPOLIS]
-forest establish > nar: The children never saw their father again.
+grave face geyer > geyer: Howard. Where is little Howard? I won't stop until I find him.
+forest establish > nar: Weeks later, near Indianapolis, Geyer found Howard's remains in a house Holmes had rented. [INDIANAPOLIS · AUGUST 1895]
+forest face geyer:cry > geyer: All three. He promised them they'd see their father.
+forest establish > nar: Now the whole country wanted to know what else Holmes had done.
 forest establish > nar: How should Holmes be punished?
 # TITLE 12: Inside the Murder Castle
 PART
-street establish > nar: Previously: Detective Geyer found the remains of the three Pitezel children.
-street two police:point,geyer > police: Chicago police are searching Holmes's Castle. [CHICAGO · 1895]
-home two police:scared,geyer > police: Hidden rooms. Secret passages. A huge vault.
-home face geyer:think > geyer: Doors that open onto walls. Who builds a house like this?
+forest establish > nar: After the Pitezel children were found, Chicago police turned to Holmes's building. The Castle. [CHICAGO · JULY 1895]
+street two police:point,geyer > police: We're searching every inch of it. Every wall. Every floor.
+home two police:scared,geyer > police: Hidden rooms. Secret passages. A huge vault. A chute down to the basement.
+home face geyer:think > geyer: Doors that open onto walls. Rooms with no windows. Who builds a house like this?
 home two police:scared,geyer > police: And the basement. You need to see the basement.
-street establish > nar: What they found shocked the city.
-street establish > nar: Newspapers gave it a new name. The Murder Castle.
-street establish > nar: Would you dare to walk through the Castle?
+street establish > nar: What they found shocked the whole country. Newspapers gave the building a new name.
+street establish > nar: The Murder Castle.
+street establish > nar: Some stories about it were exaggerated over time. But the evidence was real enough.
+street establish > nar: Would you dare walk through the Castle?
 # TITLE 13: The Trial
 PART
-court establish > nar: Previously: police searched Holmes's Castle and called it the Murder Castle.
-court establish > nar: Philadelphia, 1895. Holmes is tried for killing Benjamin Pitezel. [PHILADELPHIA · 1895]
-court two geyer,judge > geyer: He promised a family their father was alive. He knew he wasn't.
-court face holmes:smile > holmes: I am an innocent man. A businessman, nothing more.
-court court judge,holmes > judge: The jury finds you guilty of murder.
-court face holmes:think > holmes: Guilty? We'll see about that.
+street establish > nar: The country was horrified by the Murder Castle. Holmes went on trial in Philadelphia, for killing Benjamin Pitezel. [PHILADELPHIA · OCTOBER 1895]
+court two geyer,judge > geyer: He told Carrie Pitezel her husband was alive. He knew he was dead.
+court face holmes:smile > holmes: I'm an innocent businessman. A victim of the newspapers.
+court establish > nar: Holmes even fired his lawyers and defended himself for a while.
+court court judge,holmes > judge: The jury finds you guilty of murder in the first degree.
+court face holmes:think > holmes: Guilty. Then let's see how much my story is worth.
 prison establish > nar: Holmes had one more trick to play.
 prison establish > nar: What do you think his final trick was?
 # TITLE 14: The Confession
 PART
-prison establish > nar: Previously: Holmes was found guilty of murdering Benjamin Pitezel.
-prison cell holmes:smile > holmes: Newspapers will pay a fortune for my story. [PRISON · 1896]
+prison establish > nar: Found guilty and waiting to hang, Holmes sold his story to the newspapers. [PRISON · 1896]
+prison cell holmes:smile > holmes: Ten thousand dollars for my confession? Then I'll give them something worth reading.
 prison cell holmes > holmes: I confess to twenty-seven murders.
-prison two police:think,geyer > police: Some of the people he named are still alive!
-prison face geyer > geyer: Even his confession is a lie.
-prison establish > nar: Holmes was hanged in May 1896. [MAY 1896]
-prison establish > nar: How many people he really killed is still unknown.
+prison two police:think,geyer > police: Some of the people he says he killed are still alive!
+prison face geyer > geyer: Even his confession is a lie. That's who he is.
+prison establish > nar: On 7 May 1896, H. H. Holmes was hanged. [7 MAY 1896]
+prison establish > nar: How many people he really killed is still unknown. Some say nine. Some say far more.
 prison establish > nar: What do you think: how many victims were there?

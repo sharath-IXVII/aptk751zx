@@ -154,6 +154,19 @@
    }
   },
   {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "After the Pitezel children were found, Chicago police turned to Holmes's building. The Castle."
+   },
+   "title": "CHICAGO · JULY 1895",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
    "set": "street",
    "cam": "office",
    "chars": [
@@ -174,12 +187,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "Chicago police are searching Holmes's Castle."
-   },
-   "title": "CHICAGO · 1895",
-   "fx": [
-    "rain"
-   ]
+    "text": "We're searching every inch of it. Every wall. Every floor."
+   }
   },
   {
    "set": "home",
@@ -202,7 +211,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "Hidden rooms. Secret passages. A huge vault."
+    "text": "Hidden rooms. Secret passages. A huge vault. A chute down to the basement."
    }
   },
   {
@@ -219,7 +228,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "Doors that open onto walls. Who builds a house like this?"
+    "text": "Doors that open onto walls. Rooms with no windows. Who builds a house like this?"
    }
   },
   {
@@ -252,7 +261,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "What they found shocked the city."
+    "text": "What they found shocked the whole country. Newspapers gave the building a new name."
    }
   },
   {
@@ -261,9 +270,19 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Newspapers gave it a new name. The Murder Castle."
+    "text": "The Murder Castle."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Some stories about it were exaggerated over time. But the evidence was real enough."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },
@@ -272,13 +291,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WOULD YOU DARE TO WALK THROUGH THE CASTLE?",
+    "h": "WOULD YOU DARE WALK THROUGH THE CASTLE?",
     "p": "Comment below 👇",
     "f": "Part 13 next"
    },
    "line": {
     "who": "nar",
-    "text": "Would you dare to walk through the Castle? Part 13 is next."
+    "text": "Would you dare walk through the Castle? Part 13 is next."
    }
   }
  ]

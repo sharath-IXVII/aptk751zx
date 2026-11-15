@@ -154,6 +154,16 @@
    }
   },
   {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "While Holmes moved the children from city to city, a man he'd met in jail was talking."
+   },
+   "title": "ST LOUIS JAIL"
+  },
+  {
    "set": "prison",
    "cam": "office",
    "chars": [
@@ -173,10 +183,10 @@
     }
    ],
    "line": {
-    "who": "holmes",
-    "text": "Do you know a crooked lawyer? I need one for an insurance job."
+    "who": "nar",
+    "text": "Months earlier, Holmes had spent a few days in jail for fraud. He shared a cell with train robber Marion Hedgepeth."
    },
-   "title": "ST LOUIS JAIL"
+   "flick": true
   },
   {
    "set": "prison",
@@ -198,8 +208,8 @@
     }
    ],
    "line": {
-    "who": "hedge",
-    "text": "For a share? I know just the man."
+    "who": "holmes",
+    "text": "Find me a crooked lawyer for an insurance job, and I'll give you five hundred dollars."
    }
   },
   {
@@ -216,7 +226,7 @@
    ],
    "line": {
     "who": "hedge",
-    "text": "But you never paid me, Holmes. So now I talk."
+    "text": "He never paid me. Not one cent."
    }
   },
   {
@@ -240,7 +250,7 @@
    ],
    "line": {
     "who": "hedge",
-    "text": "Officer, that insurance death? It was a fraud."
+    "text": "Officer, that insurance death in Philadelphia? It was a fraud. Holmes planned it."
    }
   },
   {
@@ -264,12 +274,9 @@
    ],
    "line": {
     "who": "police",
-    "text": "H. H. Holmes, you're under arrest for fraud."
+    "text": "H. H. Holmes, you're under arrest for insurance fraud."
    },
-   "title": "BOSTON · NOV 1894",
-   "fx": [
-    "rain"
-   ]
+   "title": "BOSTON · NOVEMBER 1894"
   },
   {
    "set": "street",
@@ -285,7 +292,7 @@
    ],
    "line": {
     "who": "holmes",
-    "text": "Fraud? Just a misunderstanding."
+    "text": "Fraud? A misunderstanding, officer."
    }
   },
   {
@@ -294,9 +301,10 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Holmes was in custody. But where were the children?"
+    "text": "Holmes was finally behind bars. But he still wouldn't say where the children were."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },
@@ -305,13 +313,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WOULD YOU BELIEVE ANYTHING HOLMES SAYS?",
+    "h": "WOULD YOU BELIEVE ANYTHING HOLMES SAID?",
     "p": "Comment below 👇",
     "f": "Part 10 next"
    },
    "line": {
     "who": "nar",
-    "text": "Would you believe anything Holmes says? Part 10 is next."
+    "text": "Would you believe anything Holmes said? Part 10 is next."
    }
   }
  ]

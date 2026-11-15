@@ -155,6 +155,19 @@
   },
   {
    "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Holmes sat in jail, refusing to say where the Pitezel children were. Philadelphia sent its best detective."
+   },
+   "title": "PHILADELPHIA · 1895",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -174,12 +187,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "Detective Geyer, Holmes won't say where the children are."
-   },
-   "title": "PHILADELPHIA · 1895",
-   "fx": [
-    "rain"
-   ]
+    "text": "Detective Geyer, Holmes says the children are in London with a woman. He's lying."
+   }
   },
   {
    "set": "street",
@@ -195,7 +204,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "Then I'll follow his trail myself. Every city. Every hotel."
+    "text": "Then I'll follow his trail myself. Every city. Every hotel. Every house he rented."
    }
   },
   {
@@ -212,7 +221,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "Cincinnati. Indianapolis. Detroit. He moved them again and again."
+    "text": "Cincinnati. Indianapolis. Detroit. Hotel after hotel, the same man with three children."
    }
   },
   {
@@ -236,7 +245,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "He rented houses for just a few days. Why?"
+    "text": "He rented houses for only a few days at a time. Why rent a house for three days?"
    }
   },
   {
@@ -253,7 +262,7 @@
    ],
    "line": {
     "who": "geyer",
-    "text": "Next stop, Toronto."
+    "text": "The trail leads to Toronto."
    }
   },
   {
@@ -262,9 +271,12 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Geyer went from house to house, asking about a man with three children."
+    "text": "In Toronto, Geyer went from door to door with photographs of Holmes and the girls."
    },
-   "title": "TORONTO"
+   "title": "TORONTO · JULY 1895",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -272,10 +284,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "And one landlord remembered something."
+    "text": "And one neighbour remembered a man with two girls. And a spade."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },
