@@ -168,7 +168,7 @@ prison establish > nar: What do you think his final trick was?
 # TITLE 14: The Confession
 PART
 prison establish > nar: Found guilty and waiting to hang, Holmes sold his story to the newspapers. [PRISON · 1896]
-prison cell holmes:smile > holmes: Ten thousand dollars for my confession? Then I'll give them something worth reading.
+prison cell holmes:smile > holmes: Seven and a half thousand dollars for my confession? Then I'll give them something worth reading.
 prison cell holmes > holmes: I confess to twenty-seven murders.
 prison two police:think,geyer > police: Some of the people he says he killed are still alive!
 prison face geyer > geyer: Even his confession is a lie. That's who he is.
