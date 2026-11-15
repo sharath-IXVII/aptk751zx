@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "One of Hare's lodgers was an old army pensioner named Donald. And he was very ill."
+   },
+   "title": "NOVEMBER 1827"
+  },
+  {
+   "set": "home",
    "cam": "bedroom",
    "chars": [
     {
@@ -161,7 +171,7 @@
    ],
    "line": {
     "who": "old",
-    "text": "I'm sorry, Hare. I can't pay the rent this week."
+    "text": "I'm sorry, Hare. I can't pay the rent this week. I'll pay you when my pension comes."
    },
    "bed": true
   },
@@ -171,9 +181,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Days later, the old lodger died of illness."
+    "text": "Days later, the old man died of his illness. He still owed four pounds."
    },
-   "title": "1827",
    "flick": true
   },
   {
@@ -185,7 +194,7 @@
      "x": -0.8,
      "z": 0.4,
      "ry": 0.5,
-     "act": "think"
+     "act": "cross"
     },
     {
      "id": "burke",
@@ -197,7 +206,7 @@
    ],
    "line": {
     "who": "hare",
-    "text": "He owed me four pounds. Who'll pay that now?"
+    "text": "Four pounds! And now the parish will just bury him. Who pays me?"
    }
   },
   {
@@ -216,6 +225,16 @@
     "who": "burke",
     "text": "The doctors. They pay for bodies."
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "They filled the coffin with bark, and carried Donald's body to Dr Knox's anatomy school."
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -238,7 +257,7 @@
    ],
    "line": {
     "who": "knox",
-    "text": "Seven pounds ten shillings. Bring me more, gentlemen."
+    "text": "Seven pounds ten shillings. And there's more where that came from, gentlemen. Come back any time."
    }
   },
   {
@@ -262,18 +281,8 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Seven pounds for one night's work."
-   }
-  },
-  {
-   "set": "home",
-   "cam": "scene",
-   "chars": [],
-   "line": {
-    "who": "nar",
-    "text": "They had found easy money."
+    "text": "Seven pounds for one night's work. William, we're rich."
    },
-   "flick": true,
    "fx": [
     "lightning"
    ]

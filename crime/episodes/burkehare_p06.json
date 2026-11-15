@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "One morning, a new body was laid on Dr Knox's dissecting table. A young woman."
+   },
+   "title": "THE ANATOMY ROOM · 1828"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -161,9 +171,8 @@
    ],
    "line": {
     "who": "student",
-    "text": "Sir, I know this girl! It's Mary Paterson. I saw her alive last week!"
-   },
-   "title": "THE ANATOMY ROOM"
+    "text": "Sir, I know this girl! It's Mary Paterson. I saw her alive last week! In the Canongate!"
+   }
   },
   {
    "set": "home",
@@ -203,7 +212,7 @@
    ],
    "line": {
     "who": "student",
-    "text": "I'm not mistaken."
+    "text": "I'm not mistaken. She was healthy. Laughing."
    }
   },
   {
@@ -212,7 +221,17 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The student kept quiet. And the killers kept going."
+    "text": "Knox didn't report it. The student was too afraid to speak."
+   },
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "And the killers kept going."
    },
    "flick": true,
    "fx": [
@@ -224,13 +243,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "SHOULD HE HAVE GONE TO THE POLICE?",
+    "h": "SHOULD THE STUDENT HAVE GONE TO THE POLICE?",
     "p": "Comment below 👇",
     "f": "Part 7 next"
    },
    "line": {
     "who": "nar",
-    "text": "Should he have gone to the police? Part 7 is next."
+    "text": "Should the student have gone to the police? Part 7 is next."
    }
   }
  ]

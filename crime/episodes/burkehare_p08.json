@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Then came Halloween, 1828. Burke met an old Irish woman in a shop."
+   },
+   "title": "31 OCTOBER 1828"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -161,9 +171,8 @@
    ],
    "line": {
     "who": "burke",
-    "text": "Mrs Docherty! An Irish lady, like my own mother. Come, stay for the party."
-   },
-   "title": "HALLOWEEN · 1828"
+    "text": "Mrs Docherty! You're from Ireland, just like my mother. Come to my house. Stay for the party."
+   }
   },
   {
    "set": "home",
@@ -186,7 +195,7 @@
    ],
    "line": {
     "who": "ann",
-    "text": "Why did Burke move us out for the night?"
+    "text": "Why did Burke ask us to sleep somewhere else tonight, James?"
    }
   },
   {
@@ -195,9 +204,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The next morning, Margaret Docherty was gone."
+    "text": "The next morning, Margaret Docherty was gone. Burke said he'd thrown her out."
    },
-   "title": "THE NEXT MORNING",
+   "title": "1 NOVEMBER 1828",
    "flick": true
   },
   {
@@ -221,7 +230,7 @@
    ],
    "line": {
     "who": "ann",
-    "text": "James... there's a woman under the straw. It's the old lady!"
+    "text": "James... there's someone under the straw. It's the old lady!"
    }
   },
   {
@@ -269,8 +278,18 @@
    ],
    "line": {
     "who": "gray",
-    "text": "No. We're going to the police."
+    "text": "No. Not for any money. We're going to the police."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The Grays walked out of the house. Behind them, Burke and Hare panicked."
    },
+   "flick": true,
    "fx": [
     "lightning"
    ]

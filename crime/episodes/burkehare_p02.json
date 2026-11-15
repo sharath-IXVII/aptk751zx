@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -141,6 +141,16 @@
    }
   },
   {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In Edinburgh's poor West Port district, William Hare ran a cheap lodging house with his wife Margaret."
+   },
+   "title": "WEST PORT · 1827"
+  },
+  {
    "set": "home",
    "cam": "office",
    "chars": [
@@ -161,9 +171,8 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Our lodging house in the West Port. Cheap beds, cheap whisky."
-   },
-   "title": "WEST PORT"
+    "text": "Cheap beds, cheap whisky. Travellers, beggars, anyone with a few pennies."
+   }
   },
   {
    "set": "home",
@@ -186,7 +195,7 @@
    ],
    "line": {
     "who": "burke",
-    "text": "A room for me and Helen, Mr Hare?"
+    "text": "Have you a room for me and Helen, Mr Hare?"
    }
   },
   {
@@ -210,7 +219,7 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Call me William. You're one of us now, Burke."
+    "text": "Another Irishman! Call me William. You're one of us now, Burke."
    }
   },
   {
@@ -250,9 +259,26 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Two Irish labourers. Two Williams. They became close friends."
+    "text": "William Burke and his partner Helen McDougal moved in. The two Williams became close friends."
    },
    "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "burke",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "burke",
+    "text": "We work hard and we're still poor. There must be an easier way."
+   }
   },
   {
    "set": "home",
@@ -260,7 +286,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Soon they would become partners in something terrible."
+    "text": "Soon an old lodger would give them an idea."
    },
    "flick": true,
    "fx": [

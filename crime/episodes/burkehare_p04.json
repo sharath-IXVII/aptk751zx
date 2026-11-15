@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Seven pounds was more than months of work. Burke and Hare wanted more."
+   },
+   "title": "EARLY 1828"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -161,7 +171,7 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Waiting for people to die is slow, William."
+    "text": "Waiting for lodgers to die is slow, William."
    }
   },
   {
@@ -202,11 +212,8 @@
    ],
    "line": {
     "who": "burke",
-    "text": "Need a bed and a drink, friend? Come with me."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "Need a bed and a drink, friend? Come with me. My treat."
+   }
   },
   {
    "set": "home",
@@ -214,9 +221,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "They lured poor travellers in, gave them drink, and made sure no marks were left."
+    "text": "They lured poor travellers and lodgers in, gave them drink, and smothered them so no marks were left."
    },
-   "title": "1828",
    "flick": true
   },
   {
@@ -240,7 +246,31 @@
    ],
    "line": {
     "who": "knox",
-    "text": "Fresh, and not a mark on them. Excellent."
+    "text": "Fresh, and not a mark on them. Excellent specimens."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "helen",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "think"
+    },
+    {
+     "id": "maggie",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "helen",
+    "text": "More money than we've ever had. Don't ask where it comes from."
    }
   },
   {
@@ -249,7 +279,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Their partners, Helen and Margaret, knew too."
+    "text": "Helen and Margaret knew what was happening. They said nothing."
    },
    "flick": true,
    "fx": [

@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Police went to the house. The body was gone, already sold to Knox. But they found it at the school."
+   },
+   "title": "NOVEMBER 1828"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -161,9 +171,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "William Burke, you're under arrest. And Hare too."
-   },
-   "title": "NOVEMBER 1828"
+    "text": "William Burke, Helen McDougal, William Hare, Margaret Hare. You're all under arrest."
+   }
   },
   {
    "set": "prison",
@@ -186,7 +195,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "The evidence is thin, my lord. We need a witness."
+    "text": "The evidence is thin, my lord. Without a confession, they may all walk free."
    }
   },
   {
@@ -203,7 +212,7 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Let me go free and I'll tell you everything."
+    "text": "Let me go free, and I'll tell you everything about Burke."
    }
   },
   {
@@ -220,7 +229,7 @@
    ],
    "line": {
     "who": "burke",
-    "text": "He's selling me out. Just like the bodies."
+    "text": "He's selling me. Just like we sold the bodies."
    }
   },
   {
@@ -229,7 +238,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Hare was given immunity to testify against his friend."
+    "text": "Hare was given immunity. He would testify against his friend."
    },
    "flick": true,
    "fx": [

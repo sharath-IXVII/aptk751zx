@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Their next victim was someone the whole city knew."
+   },
+   "title": "EDINBURGH · OCTOBER 1828"
+  },
+  {
+   "set": "street",
    "cam": "office",
    "chars": [
     {
@@ -161,7 +171,7 @@
    ],
    "line": {
     "who": "jamie",
-    "text": "Hello, Mr Burke! Are you looking for my mother?"
+    "text": "Hello, Mr Burke! Have you seen my mother? I'm looking for her."
    }
   },
   {
@@ -178,8 +188,11 @@
    ],
    "line": {
     "who": "burke",
-    "text": "Come with me, Jamie. I'll take you to her."
-   }
+    "text": "I know where she is, Jamie. Come with me. I'll take you to her."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -187,12 +200,8 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Daft Jamie was a gentle young man everyone in Edinburgh knew."
-   },
-   "title": "EDINBURGH",
-   "fx": [
-    "rain"
-   ]
+    "text": "Jamie Wilson was a gentle young man who wandered the streets. People called him Daft Jamie."
+   }
   },
   {
    "set": "street",
@@ -232,7 +241,24 @@
    ],
    "line": {
     "who": "student",
-    "text": "Doctor, that's Jamie. Everyone knows that face."
+    "text": "Doctor, that's Jamie. Everyone in Edinburgh knows that face."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "knox",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "cross"
+    }
+   ],
+   "line": {
+    "who": "knox",
+    "text": "Then we work quickly. Before anyone else sees."
    }
   },
   {
@@ -241,7 +267,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "People began to ask where the missing were going."
+    "text": "People began asking where the missing were going."
    },
    "flick": true,
    "fx": [

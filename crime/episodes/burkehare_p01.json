@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -146,7 +146,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Edinburgh, 1827. The finest medical schools in the world."
+    "text": "Edinburgh, 1827. Home to some of the finest medical schools in the world."
    },
    "title": "EDINBURGH · 1827"
   },
@@ -171,7 +171,7 @@
    ],
    "line": {
     "who": "knox",
-    "text": "To teach anatomy, I need bodies. Many bodies."
+    "text": "Gentlemen, you cannot learn surgery from books. You must see the human body."
    }
   },
   {
@@ -195,7 +195,24 @@
    ],
    "line": {
     "who": "student",
-    "text": "The law only gives us the bodies of hanged criminals, sir. It's never enough."
+    "text": "But the law only gives us the bodies of hanged criminals, sir. There are never enough."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "knox",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "knox",
+    "text": "Then we must find them elsewhere. I pay well. I ask no questions."
    }
   },
   {
@@ -204,7 +221,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "So at night, grave robbers dug up the newly buried."
+    "text": "So at night, grave robbers dug up the newly buried and sold them to the doctors."
    },
    "title": "THAT NIGHT"
   },
@@ -229,24 +246,24 @@
    ],
    "line": {
     "who": "police",
-    "text": "Another empty grave! Families are hiring guards now."
+    "text": "Another empty grave! Families are paying men to guard their dead now."
    }
   },
   {
-   "set": "home",
+   "set": "grave",
    "cam": "face",
    "chars": [
     {
-     "id": "knox",
+     "id": "student",
      "x": 0,
      "z": 0,
      "ry": 0,
-     "act": "idle"
+     "act": "think"
     }
    ],
    "line": {
-    "who": "knox",
-    "text": "I pay well. I ask no questions."
+    "who": "student",
+    "text": "Fresh bodies are worth a lot of money in this city."
    }
   },
   {
@@ -255,7 +272,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "In a poor lodging house nearby, two men were listening."
+    "text": "In a poor lodging house nearby, two men were about to discover just how much."
    },
    "fx": [
     "rain",

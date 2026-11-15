@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Over the following months, body after body was carried to Dr Knox's school."
+   },
+   "title": "1828"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -161,7 +171,7 @@
    ],
    "line": {
     "who": "student",
-    "text": "Another delivery, sir? That's the fourth this month."
+    "text": "Another delivery, sir? That's the fourth this month. From the same two men."
    }
   },
   {
@@ -209,7 +219,7 @@
    ],
    "line": {
     "who": "burke",
-    "text": "Here's the next one, Doctor."
+    "text": "Here's another, Doctor. Brought in a tea chest."
    }
   },
   {
@@ -233,7 +243,7 @@
    ],
    "line": {
     "who": "hare",
-    "text": "Ten pounds. We're rich, William!"
+    "text": "Ten pounds this time. Good business, eh?"
    }
   },
   {
@@ -242,7 +252,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Victim after victim was carried through Edinburgh in tea chests."
+    "text": "Knox never asked how two poor men found so many fresh bodies."
    },
    "flick": true,
    "fx": [
@@ -254,13 +264,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WHO DO YOU THINK WAS MORE GUILTY: THE KILLERS OR THE DOCTOR?",
+    "h": "WHO DO YOU THINK WAS MORE GUILTY: THE KILLERS, OR THE DOCTOR",
     "p": "Comment below 👇",
     "f": "Part 6 next"
    },
    "line": {
     "who": "nar",
-    "text": "Who do you think was more guilty: the killers or the doctor? Part 6 is next."
+    "text": "Who do you think was more guilty: the killers, or the doctor? Part 6 is next."
    }
   }
  ]

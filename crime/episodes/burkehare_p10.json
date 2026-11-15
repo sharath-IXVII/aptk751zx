@@ -66,7 +66,7 @@
    "voice": "bm_george"
   },
   "old": {
-   "name": "an old lodger",
+   "name": "Donald, an old lodger",
    "skin": "#e0aa84",
    "cloth": "#5a4a3a",
    "cloth2": "#43372b",
@@ -142,6 +142,40 @@
   },
   {
    "set": "court",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "On Christmas Eve 1828, William Burke went on trial. Hare was the star witness."
+   },
+   "title": "DECEMBER 1828"
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "hare",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "hare",
+    "text": "It was Burke. He did it."
+   }
+  },
+  {
+   "set": "court",
    "cam": "courtw",
    "chars": [
     {
@@ -161,25 +195,24 @@
    ],
    "line": {
     "who": "judge",
-    "text": "William Burke, you are guilty. You will hang, and your body will be dissected."
-   },
-   "title": "DECEMBER 1828"
+    "text": "William Burke, guilty. You will hang, and your body will be dissected."
+   }
   },
   {
    "set": "court",
    "cam": "face",
    "chars": [
     {
-     "id": "hare",
+     "id": "helen",
      "x": 0,
      "z": 0,
      "ry": 0,
-     "act": "smile"
+     "act": "idle"
     }
    ],
    "line": {
-    "who": "hare",
-    "text": "I walk free."
+    "who": "nar",
+    "text": "Helen McDougal's charge was found 'not proven'. She walked free."
    }
   },
   {
@@ -188,7 +221,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "In January 1829 Burke was hanged before a huge crowd."
+    "text": "In January 1829 Burke was hanged before a crowd of about twenty-five thousand."
    },
    "title": "JANUARY 1829"
   },
@@ -208,7 +241,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "William Hare was released, and vanished into history."
+    "text": "Hare was released and vanished. Dr Knox was never charged."
    },
    "flick": true,
    "fx": [
@@ -220,13 +253,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "SHOULD HARE HAVE WALKED FREE? WHAT DO YOU THINK?",
+    "h": "SHOULD HARE AND DR KNOX HAVE WALKED FREE?",
     "p": "Comment below 👇",
     "f": "Next true story coming soon"
    },
    "line": {
     "who": "nar",
-    "text": "Should Hare have walked free? What do you think?"
+    "text": "Should Hare and Dr Knox have walked free?"
    }
   }
  ]
