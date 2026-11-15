@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -109,6 +117,16 @@
     "crime": "CAUGHT BY RADIO",
     "part": "PART 5 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Cora's friends didn't believe Crippen's story. They went to Scotland Yard."
+   },
+   "title": "SCOTLAND YARD · JUNE 1910"
   },
   {
    "set": "street",
@@ -131,9 +149,28 @@
    ],
    "line": {
     "who": "friend",
-    "text": "Inspector, Belle would never leave without a word."
+    "text": "Inspector, Belle would never leave without a word. And now he says she's dead?"
    },
-   "title": "SCOTLAND YARD"
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dew",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "dew",
+    "text": "I'll speak to the doctor myself."
+   }
   },
   {
    "set": "home",
@@ -173,7 +210,7 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "I lied, Inspector. She left me for another man. I was ashamed."
+    "text": "I lied, Inspector. She didn't die. She left me for another man. I was ashamed, so I said she was dead."
    }
   },
   {
@@ -197,7 +234,24 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Thank you for being honest, Doctor."
+    "text": "May I look around the house?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "crippen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "crippen",
+    "text": "Of course. Look wherever you like."
    }
   },
   {
@@ -214,7 +268,7 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Almost everything fits. Almost."
+    "text": "Thank you, Doctor. It all seems to fit. Almost."
    }
   },
   {
@@ -223,7 +277,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Inspector Walter Dew was nearly satisfied."
+    "text": "Inspector Walter Dew left, nearly satisfied."
    },
    "flick": true,
    "fx": [

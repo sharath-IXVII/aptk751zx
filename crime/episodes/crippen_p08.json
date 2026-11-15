@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -112,6 +120,19 @@
   },
   {
    "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "On the Montrose, Captain Henry Kendall had read about the Crippen case in the newspapers."
+   },
+   "title": "SS MONTROSE",
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
    "cam": "office",
    "chars": [
     {
@@ -122,7 +143,7 @@
      "act": "think"
     },
     {
-     "id": "police",
+     "id": "officer",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -131,12 +152,8 @@
    ],
    "line": {
     "who": "kendall",
-    "text": "That boy has the figure of a woman. And they hold hands."
-   },
-   "title": "SS MONTROSE",
-   "fx": [
-    "rain"
-   ]
+    "text": "That boy. He has the figure of a woman. And look, they hold hands."
+   }
   },
   {
    "set": "dock",
@@ -152,7 +169,7 @@
    ],
    "line": {
     "who": "kendall",
-    "text": "Mr Robinson. Or should I say Dr Crippen?"
+    "text": "Mr Robinson. Or should I say, Dr Crippen?"
    }
   },
   {
@@ -167,7 +184,7 @@
      "act": "point"
     },
     {
-     "id": "police",
+     "id": "officer",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -176,7 +193,27 @@
    ],
    "line": {
     "who": "kendall",
-    "text": "Send a wireless message to London. Now."
+    "text": "Send a wireless message to London. 'Have strong suspicions Crippen is aboard.'"
+   },
+   "fx": [
+    "rain"
+   ]
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "officer",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "officer",
+    "text": "Sent, Captain."
    }
   },
   {
@@ -185,11 +222,25 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "For the first time, radio was used to catch a fleeing killer."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "It was one of the first times radio was used to catch a fugitive."
+   }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "crippen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "crippen",
+    "text": "What a marvellous invention, the wireless."
+   }
   },
   {
    "set": "dock",
@@ -197,9 +248,10 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "But the ship was still days from land."
+    "text": "Crippen had no idea the message was about him."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },

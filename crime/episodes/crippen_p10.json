@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -109,6 +117,16 @@
     "crime": "CAUGHT BY RADIO",
     "part": "PART 10 OF 10"
    }
+  },
+  {
+   "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Back in London, Crippen went on trial at the Old Bailey."
+   },
+   "title": "OLD BAILEY · OCTOBER 1910"
   },
   {
    "set": "court",
@@ -131,9 +149,8 @@
    ],
    "line": {
     "who": "spilsbury",
-    "text": "There is a scar on the remains. Cora had a scar just like it."
-   },
-   "title": "OLD BAILEY · OCT 1910"
+    "text": "There is a scar on the remains. Cora Crippen had an operation scar in exactly that place."
+   }
   },
   {
    "set": "court",
@@ -149,7 +166,7 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "I never harmed my wife."
+    "text": "I never harmed my wife. I don't know whose remains those are."
    }
   },
   {
@@ -173,7 +190,7 @@
    ],
    "line": {
     "who": "judge",
-    "text": "Guilty. The sentence is death."
+    "text": "The jury finds you guilty. The sentence is death."
    }
   },
   {
@@ -206,7 +223,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Crippen was hanged in November 1910. His last wish was to be buried with Ethel's photograph."
+    "text": "Crippen was hanged in November 1910. His last wish was to be buried with Ethel's photograph and letters."
    },
    "flick": true,
    "fx": [

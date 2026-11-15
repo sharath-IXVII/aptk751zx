@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -109,6 +117,16 @@
     "crime": "CAUGHT BY RADIO",
     "part": "PART 4 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Cora's friends waited for her call the next day. It never came."
+   },
+   "title": "FEBRUARY 1910"
   },
   {
    "set": "street",
@@ -131,8 +149,11 @@
    ],
    "line": {
     "who": "friend",
-    "text": "Where is Belle? She's missed every meeting!"
-   }
+    "text": "Where is Belle? She's missed every meeting of the Music Hall Ladies' Guild!"
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -155,11 +176,25 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "She's gone to America. Family trouble."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "She's gone to America. Family trouble. She left in a hurry."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "friend",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "friend",
+    "text": "Without a word to any of us?"
+   }
   },
   {
    "set": "street",
@@ -167,9 +202,12 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Weeks later, he had more news."
+    "text": "Weeks later, Crippen had more news."
    },
-   "title": "WEEKS LATER"
+   "title": "MARCH 1910",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "street",
@@ -192,8 +230,11 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "Terrible news. Cora died in America."
-   }
+    "text": "Terrible news. Cora died in America. Pneumonia."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -242,7 +283,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Cora's friends began to ask questions."
+    "text": "Ethel moved into Hilldrop Crescent. Cora's friends began asking questions."
    },
    "flick": true,
    "fx": [

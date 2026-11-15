@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -111,12 +119,12 @@
    }
   },
   {
-   "set": "home",
+   "set": "street",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Doctor Hawley Crippen. The quietest man in London."
+    "text": "London, 1910. 39 Hilldrop Crescent. The home of Dr Hawley Crippen and his wife Cora."
    },
    "title": "LONDON · 1910"
   },
@@ -141,7 +149,7 @@
    ],
    "line": {
     "who": "cora",
-    "text": "Hawley! Another dull night at home? I'm a star, I need the stage!"
+    "text": "Hawley! Another dull night at home? I'm a star! I need the stage!"
    }
   },
   {
@@ -182,7 +190,7 @@
    ],
    "line": {
     "who": "cora",
-    "text": "The world knows me as Belle Elmore. Don't forget it."
+    "text": "On stage I'm Belle Elmore. The whole music-hall world knows that name."
    }
   },
   {
@@ -198,9 +206,10 @@
     }
    ],
    "line": {
-    "who": "crippen",
-    "text": "How could I ever forget?"
-   }
+    "who": "nar",
+    "text": "Crippen was a small, quiet American who sold medicines. Cora was loud, glamorous, and loved attention."
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -223,7 +232,65 @@
    ],
    "line": {
     "who": "cora",
-    "text": "And sell more of your silly medicines. My dresses aren't cheap."
+    "text": "And sell more of your silly pills. My dresses aren't cheap."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "crippen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "crippen",
+    "text": "There's never enough money for you, is there, Cora?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "friend",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "cora",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "friend",
+    "text": "Belle, darling! Is your husband always this quiet?"
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "cora",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "cora",
+    "text": "Always. Like a little mouse."
    }
   },
   {
@@ -232,7 +299,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Behind the door of 39 Hilldrop Crescent, the marriage was falling apart."
+    "text": "Behind the door of Hilldrop Crescent, the marriage was falling apart."
    },
    "flick": true,
    "fx": [

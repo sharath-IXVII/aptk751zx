@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -109,6 +117,16 @@
     "crime": "CAUGHT BY RADIO",
     "part": "PART 2 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Every morning, Crippen escaped that unhappy home and went to his office."
+   },
+   "title": "THE OFFICE · ALBION HOUSE"
   },
   {
    "set": "home",
@@ -132,8 +150,7 @@
    "line": {
     "who": "ethel",
     "text": "Your letters are typed, Doctor. Shall I bring tea?"
-   },
-   "title": "THE OFFICE"
+   }
   },
   {
    "set": "home",
@@ -156,7 +173,7 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "Ethel, you're the only kind voice in my day."
+    "text": "Ethel, you're the only kind voice in my whole day."
    }
   },
   {
@@ -173,7 +190,7 @@
    ],
    "line": {
     "who": "ethel",
-    "text": "You deserve kindness, Hawley."
+    "text": "You deserve kindness, Hawley. Everyone can see how she treats you."
    }
   },
   {
@@ -197,7 +214,24 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "If only I were free."
+    "text": "If only I were free. We could be together, properly."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "ethel",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "ethel",
+    "text": "But you're married. And she would never let you go."
    }
   },
   {
@@ -206,9 +240,26 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The doctor had fallen in love with his young typist, Ethel Le Neve."
+    "text": "The doctor had fallen in love with his young typist, Ethel Le Neve. For years they met in secret."
    },
-   "flick": true,
+   "flick": true
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "crippen",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "crippen",
+    "text": "There must be a way."
+   },
    "fx": [
     "lightning"
    ]
@@ -218,13 +269,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "WOULD YOU BLAME HIM?",
+    "h": "WOULD YOU BLAME HIM FOR FALLING IN LOVE?",
     "p": "Comment below 👇",
     "f": "Part 3 next"
    },
    "line": {
     "who": "nar",
-    "text": "Would you blame him? Part 3 is next."
+    "text": "Would you blame him for falling in love? Part 3 is next."
    }
   }
  ]

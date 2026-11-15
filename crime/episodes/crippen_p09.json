@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -112,6 +120,16 @@
   },
   {
    "set": "dock",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In London, Inspector Dew read the captain's message."
+   },
+   "title": "LONDON · JULY 1910"
+  },
+  {
+   "set": "dock",
    "cam": "face",
    "chars": [
     {
@@ -124,9 +142,8 @@
    ],
    "line": {
     "who": "dew",
-    "text": "A faster ship. We'll reach Canada before the Montrose."
-   },
-   "title": "CANADA · JULY 1910"
+    "text": "The Montrose is slow. I'll take a faster ship. I'll be waiting when it reaches Canada."
+   }
   },
   {
    "set": "dock",
@@ -142,8 +159,26 @@
    ],
    "line": {
     "who": "nar",
-    "text": "Inspector Dew boarded the Montrose dressed as a ship's pilot."
+    "text": "Dew crossed the Atlantic on the faster Laurentic and arrived first."
    }
+  },
+  {
+   "set": "dock",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "dew",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "nar",
+    "text": "He boarded the Montrose near Canada dressed as a ship's pilot."
+   },
+   "title": "CANADA · 31 JULY 1910"
   },
   {
    "set": "dock",
@@ -166,7 +201,7 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Good morning, Dr Crippen. Do you know me?"
+    "text": "Good morning, Dr Crippen. Do you know me? I'm Inspector Dew of Scotland Yard."
    }
   },
   {
@@ -183,7 +218,7 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "Thank God it's over. The suspense was too much."
+    "text": "Thank God it's over. The suspense has been too great. I couldn't stand it any longer."
    }
   },
   {
@@ -207,8 +242,11 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Hawley Crippen, you're under arrest."
-   }
+    "text": "Hawley Crippen, you're under arrest for the murder of your wife."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",
@@ -216,7 +254,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Crippen and Ethel were taken back to London."
+    "text": "Crippen and Ethel were taken back to London to stand trial."
    },
    "fx": [
     "lightning"

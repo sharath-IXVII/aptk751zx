@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -112,6 +120,16 @@
   },
   {
    "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "A few days after his visit, Dew came back with a few more questions."
+   },
+   "title": "JULY 1910"
+  },
+  {
+   "set": "home",
    "cam": "office",
    "chars": [
     {
@@ -122,7 +140,7 @@
      "act": "scared"
     },
     {
-     "id": "ethel",
+     "id": "police",
      "x": 0.8,
      "z": 0.4,
      "ry": -0.5,
@@ -132,8 +150,7 @@
    "line": {
     "who": "dew",
     "text": "The doctor's gone? And the typist with him?"
-   },
-   "title": "DAYS LATER"
+   }
   },
   {
    "set": "home",
@@ -149,7 +166,7 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Innocent men don't run. Search the house again."
+    "text": "Innocent men don't run. Search the house again. Every room."
    }
   },
   {
@@ -172,8 +189,8 @@
     }
    ],
    "line": {
-    "who": "dew",
-    "text": "These cellar bricks are loose."
+    "who": "police",
+    "text": "Sir, down in the cellar. These bricks are loose."
    }
   },
   {
@@ -200,8 +217,18 @@
    ],
    "line": {
     "who": "dew",
-    "text": "Find Crippen. Every port. Every ship."
+    "text": "Find Crippen. Watch every port. Every ship leaving England."
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Newspapers everywhere printed Crippen's and Ethel's faces."
+   },
+   "flick": true
   },
   {
    "set": "home",

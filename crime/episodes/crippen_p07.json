@@ -95,6 +95,14 @@
    "hair": "#1d1d1d",
    "voice": "bm_daniel",
    "cap": true
+  },
+  "officer": {
+   "name": "the ship's radio officer",
+   "skin": "#e6b48e",
+   "cloth": "#4a5a3a",
+   "cloth2": "#36422a",
+   "hair": "#4a3020",
+   "voice": "bm_fable"
   }
  },
  "shots": [
@@ -109,6 +117,16 @@
     "crime": "CAUGHT BY RADIO",
     "part": "PART 7 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "While police searched England, Crippen and Ethel had already crossed to Belgium."
+   },
+   "title": "ANTWERP · JULY 1910"
   },
   {
    "set": "dock",
@@ -131,9 +149,11 @@
    ],
    "line": {
     "who": "crippen",
-    "text": "From now on I'm Mr Robinson. And you are my son."
+    "text": "From now on I'm Mr John Robinson. And you are my son."
    },
-   "title": "ANTWERP · JULY 1910"
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "dock",
@@ -156,11 +176,8 @@
    ],
    "line": {
     "who": "ethel",
-    "text": "A boy? In these trousers? Will anyone believe it?"
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "A boy? With my hair cut short, in these trousers? Will anyone believe it?"
+   }
   },
   {
    "set": "dock",
@@ -198,13 +215,38 @@
   },
   {
    "set": "dock",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "ethel",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "smile"
+    },
+    {
+     "id": "crippen",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "smile"
+    }
+   ],
+   "line": {
+    "who": "ethel",
+    "text": "Canada. A new life. Nobody knows us there."
+   }
+  },
+  {
+   "set": "dock",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "But one man on board was looking very closely."
+    "text": "But one man on board was watching them very closely."
    },
    "fx": [
+    "rain",
     "lightning"
    ]
   },
