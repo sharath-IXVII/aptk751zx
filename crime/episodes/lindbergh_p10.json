@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -114,12 +123,12 @@
    }
   },
   {
-   "set": "court",
+   "set": "home",
    "cam": "scene",
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "1935. Reporters and crowds packed the town of Flemington."
+    "text": "In January 1935, Hauptmann went on trial in the small town of Flemington. Crowds and reporters filled the streets."
    },
    "title": "FLEMINGTON · 1935"
   },
@@ -144,7 +153,31 @@
    ],
    "line": {
     "who": "charles",
-    "text": "That's the voice. The man in the cemetery."
+    "text": "That's the voice. The man in the cemetery that night."
+   }
+  },
+  {
+   "set": "court",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "expert",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "idle"
+    },
+    {
+     "id": "judge",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "expert",
+    "text": "The handwriting on the ransom notes matches Hauptmann's."
    }
   },
   {
@@ -161,7 +194,7 @@
    ],
    "line": {
     "who": "hauptmann",
-    "text": "I am innocent!"
+    "text": "I am innocent! I never saw that child!"
    }
   },
   {
@@ -185,7 +218,7 @@
    ],
    "line": {
     "who": "judge",
-    "text": "Guilty. The sentence is death."
+    "text": "Guilty of murder. The sentence is death."
    }
   },
   {
@@ -194,7 +227,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Hauptmann was executed in April 1936, still saying he was innocent."
+    "text": "Hauptmann was executed in April 1936. He insisted he was innocent until the very end."
    },
    "flick": true
   },
@@ -204,7 +237,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "To this day, some people argue about his guilt."
+    "text": "To this day, some people still argue about the evidence."
    },
    "flick": true,
    "fx": [

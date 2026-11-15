@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 8 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Two and a half years after the kidnapping, a man pulled into a petrol station in the Bronx."
+   },
+   "title": "SEPTEMBER 1934"
   },
   {
    "set": "street",
@@ -135,8 +154,24 @@
    "line": {
     "who": "attendant",
     "text": "A ten-dollar gold certificate? We hardly see those any more."
+   }
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "hauptmann",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "hauptmann",
+    "text": "I have only about a hundred left."
    },
-   "title": "SEPTEMBER 1934",
    "fx": [
     "rain"
    ]
@@ -179,7 +214,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "That's ransom money! Whose car is this?"
+    "text": "That's ransom money! The plate belongs to Bruno Richard Hauptmann. A carpenter."
    },
    "fx": [
     "rain"
@@ -226,7 +261,6 @@
     "text": "I'm a carpenter. I did nothing."
    },
    "fx": [
-    "rain",
     "lightning"
    ]
   },

@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 5 OF 10"
    }
+  },
+  {
+   "set": "grave",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Late at night, Dr Condon waited at Woodlawn Cemetery. A man appeared from the shadows."
+   },
+   "title": "WOODLAWN CEMETERY · MARCH 1932"
   },
   {
    "set": "grave",
@@ -135,8 +154,7 @@
    "line": {
     "who": "john",
     "text": "You gotted my note? Stay back."
-   },
-   "title": "WOODLAWN CEMETERY · NIGHT"
+   }
   },
   {
    "set": "grave",
@@ -159,7 +177,7 @@
    ],
    "line": {
     "who": "condon",
-    "text": "Is the baby alive? How do we know you have him?"
+    "text": "Is the baby alive? How do we know you really have him?"
    }
   },
   {
@@ -183,7 +201,7 @@
    ],
    "line": {
     "who": "john",
-    "text": "The baby is fine. You will get his sleeping suit."
+    "text": "The baby is well. I will send you his sleeping suit."
    }
   },
   {
@@ -192,9 +210,18 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Weeks later, the ransom was paid in gold certificates in another cemetery."
+    "text": "Days later, a baby's sleeping suit arrived. The Lindberghs said it was his."
+   }
+  },
+  {
+   "set": "grave",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "In April, at another cemetery, Condon handed over the ransom in gold certificates."
    },
-   "title": "APRIL 1932"
+   "title": "ST RAYMOND'S CEMETERY · APRIL 1932"
   },
   {
    "set": "grave",
@@ -210,7 +237,7 @@
    ],
    "line": {
     "who": "condon",
-    "text": "Cemetery John. I'll never forget that voice."
+    "text": "He says the baby is on a boat called Nelly, near Martha's Vineyard."
    }
   },
   {
@@ -219,7 +246,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "But the baby was not where the note said."
+    "text": "Charles Lindbergh flew over the sea for days. There was no boat called Nelly."
    },
    "fx": [
     "lightning"
@@ -230,13 +257,13 @@
    "cam": "office",
    "chars": [],
    "card": {
-    "h": "DO YOU THINK THEY GOT THE BABY BACK?",
+    "h": "DO YOU THINK THEY'LL GET THE BABY BACK?",
     "p": "Comment below 👇",
     "f": "Part 6 next"
    },
    "line": {
     "who": "nar",
-    "text": "Do you think they got the baby back? Part 6 is next."
+    "text": "Do you think they'll get the baby back? Part 6 is next."
    }
   }
  ]

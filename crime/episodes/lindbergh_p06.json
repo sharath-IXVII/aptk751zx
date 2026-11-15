@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -114,11 +123,21 @@
    }
   },
   {
+   "set": "grave",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "The boat was never found. Weeks went by. Then, on 12 May 1932, a truck driver stopped by the road."
+   },
+   "title": "12 MAY 1932"
+  },
+  {
    "set": "forest",
    "cam": "scene",
    "chars": [
     {
-     "id": "police",
+     "id": "driver",
      "x": 0,
      "z": -2,
      "ry": 0,
@@ -127,19 +146,15 @@
    ],
    "line": {
     "who": "nar",
-    "text": "May 1932. A truck driver stopped in woods a few miles from the Lindbergh house."
-   },
-   "title": "MAY 1932",
-   "fx": [
-    "rain"
-   ]
+    "text": "Just a few miles from the Lindbergh house, he walked into the woods."
+   }
   },
   {
    "set": "forest",
    "cam": "face",
    "chars": [
     {
-     "id": "police",
+     "id": "driver",
      "x": 0,
      "z": 0,
      "ry": 0,
@@ -147,9 +162,36 @@
     }
    ],
    "line": {
-    "who": "police",
-    "text": "Sir... we've found the baby."
+    "who": "driver",
+    "text": "Police! There's... there's a child here."
    }
+  },
+  {
+   "set": "forest",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "scared"
+    },
+    {
+     "id": "driver",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "It's the Lindbergh baby. He's been here a long time."
+   },
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -189,7 +231,7 @@
    ],
    "line": {
     "who": "charles",
-    "text": "Find who did this."
+    "text": "Find who did this. Whatever it takes."
    }
   },
   {
@@ -198,7 +240,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Now it was a murder case."
+    "text": "Now it was a murder case. And the trail was two months cold."
    },
    "fx": [
     "lightning"

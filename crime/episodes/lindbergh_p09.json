@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,19 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 9 OF 10"
    }
+  },
+  {
+   "set": "street",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Police searched Hauptmann's home in the Bronx."
+   },
+   "title": "THE BRONX · SEPTEMBER 1934",
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -134,9 +156,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "In his garage. Over fourteen thousand dollars of the ransom!"
-   },
-   "title": "THE BRONX"
+    "text": "In his garage. Hidden in the walls. Over fourteen thousand dollars of the ransom!"
+   }
   },
   {
    "set": "home",
@@ -152,7 +173,7 @@
    ],
    "line": {
     "who": "hauptmann",
-    "text": "A friend left it with me. A box. I didn't know."
+    "text": "A friend left a box with me before he went back to Germany. He died. I didn't know what was in it."
    }
   },
   {
@@ -176,7 +197,24 @@
    ],
    "line": {
     "who": "expert",
-    "text": "This rail of the ladder came from wood in Hauptmann's attic. The grain matches."
+    "text": "This rail of the ladder came from a floorboard in Hauptmann's attic. The grain matches. The nail holes match."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "police",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "And Dr Condon's phone number was written on the wall inside his closet."
    }
   },
   {

@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -119,9 +128,9 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Charles Lindbergh. The most famous man in the world."
+    "text": "May 1927. A young pilot lands in Paris after flying alone across the Atlantic."
    },
-   "title": "NEW YORK · 1927"
+   "title": "PARIS · 1927"
   },
   {
    "set": "street",
@@ -144,11 +153,28 @@
    ],
    "line": {
     "who": "police",
-    "text": "The first man to fly alone across the Atlantic! Welcome home, hero!"
+    "text": "Thirty-three hours in the air, alone! You're the most famous man in the world, Mr Lindbergh!"
    },
    "fx": [
     "rain"
    ]
+  },
+  {
+   "set": "street",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "charles",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "charles",
+    "text": "I just wanted to fly."
+   }
   },
   {
    "set": "home",
@@ -171,7 +197,24 @@
    ],
    "line": {
     "who": "anne",
-    "text": "Our own house in the countryside at last. Hopewell, New Jersey."
+    "text": "Reporters follow us everywhere, Charles. Even on our wedding day."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "face",
+   "chars": [
+    {
+     "id": "charles",
+     "x": 0,
+     "z": 0,
+     "ry": 0,
+     "act": "think"
+    }
+   ],
+   "line": {
+    "who": "charles",
+    "text": "Then we'll build a house far away from them. In the countryside. Hopewell, New Jersey."
    }
   },
   {
@@ -202,7 +245,7 @@
    ],
    "line": {
     "who": "betty",
-    "text": "And little Charlie is twenty months old. Such a happy boy."
+    "text": "And little Charlie is twenty months old now. Such a happy boy."
    }
   },
   {
@@ -219,7 +262,7 @@
    ],
    "line": {
     "who": "charles",
-    "text": "Out here, no reporters, no crowds. Just us."
+    "text": "Out here, no reporters. No crowds. Just us."
    }
   },
   {
@@ -228,7 +271,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "They thought they'd found peace."
+    "text": "Fame had followed them everywhere. They thought they had finally escaped it."
    },
    "flick": true,
    "fx": [

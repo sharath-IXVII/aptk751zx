@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 7 OF 10"
    }
+  },
+  {
+   "set": "forest",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Police had one clue left. The ransom money."
+   },
+   "title": "1932 - 1934"
   },
   {
    "set": "home",
@@ -134,9 +153,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "Every ransom note has a serial number. We wrote them all down."
-   },
-   "title": "1932 - 1934"
+    "text": "Every ransom bill was a gold certificate. And we wrote down every serial number."
+   }
   },
   {
    "set": "street",
@@ -159,11 +177,8 @@
    ],
    "line": {
     "who": "police",
-    "text": "Watch for gold certificates. Banks, shops, petrol stations."
-   },
-   "fx": [
-    "rain"
-   ]
+    "text": "Banks, shops, petrol stations. Watch for gold certificates. Check the numbers."
+   }
   },
   {
    "set": "home",
@@ -179,7 +194,7 @@
    ],
    "line": {
     "who": "police",
-    "text": "They keep turning up in New York. Always the Bronx."
+    "text": "They keep turning up. Always in New York. Mostly the Bronx."
    }
   },
   {
@@ -188,7 +203,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Two years passed. Investigators tracked every bill that appeared."
+    "text": "In 1933, the government took gold certificates out of use. Anyone still spending them would stand out."
    },
    "flick": true
   },
@@ -198,7 +213,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "The killer was spending the money. Slowly."
+    "text": "Two years passed. The killer was spending the money slowly."
    },
    "flick": true,
    "fx": [

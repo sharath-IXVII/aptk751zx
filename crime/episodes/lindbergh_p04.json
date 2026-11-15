@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 4 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Days passed. Newspapers printed every rumour. Then a retired teacher in the Bronx made an offer."
+   },
+   "title": "THE BRONX · MARCH 1932"
   },
   {
    "set": "street",
@@ -134,9 +153,11 @@
    ],
    "line": {
     "who": "condon",
-    "text": "I'm a retired teacher. I've offered in the newspaper to help."
+    "text": "I wrote to the newspaper. I'll add a thousand dollars of my own, and act as go-between."
    },
-   "title": "THE BRONX"
+   "fx": [
+    "rain"
+   ]
   },
   {
    "set": "home",
@@ -152,7 +173,7 @@
    ],
    "line": {
     "who": "condon",
-    "text": "And the kidnapper wrote back. To me."
+    "text": "And the kidnapper wrote back. To me. With the same strange symbol."
    }
   },
   {
@@ -176,7 +197,7 @@
    ],
    "line": {
     "who": "charles",
-    "text": "Then you'll be our go-between, Dr Condon."
+    "text": "That symbol was never made public. It's really him. You'll be our go-between, Dr Condon."
    }
   },
   {
@@ -200,7 +221,7 @@
    ],
    "line": {
     "who": "condon",
-    "text": "In the newspaper I'll sign my messages Jafsie. My initials."
+    "text": "In the newspapers I'll sign my messages 'Jafsie'. From my initials. J. F. C."
    }
   },
   {
@@ -209,7 +230,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "More notes arrived, with the same strange symbol on each."
+    "text": "Messages went back and forth through newspaper adverts. Then came a meeting."
    },
    "flick": true,
    "fx": [

@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 2 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "Their new house was almost finished. On 1 March 1932, they stayed there because the baby had a cold."
+   },
+   "title": "1 MARCH 1932"
   },
   {
    "set": "home",
@@ -134,10 +153,9 @@
    ],
    "line": {
     "who": "betty",
-    "text": "Little Charlie has a cold. I'll tuck him in tight tonight."
+    "text": "Little Charlie has a cold. I've made him a flannel shirt. Tucked in nice and warm."
    },
-   "bed": true,
-   "title": "1 MARCH 1932"
+   "bed": true
   },
   {
    "set": "home",
@@ -160,8 +178,18 @@
    ],
    "line": {
     "who": "anne",
-    "text": "Thank you, Betty. Goodnight."
+    "text": "Thank you, Betty. Goodnight, sweetheart."
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "At about eight o'clock, the baby was asleep in his cot upstairs. The window shutter in his room was warped and wouldn't"
+   },
+   "flick": true
   },
   {
    "set": "home",
@@ -184,7 +212,7 @@
    ],
    "line": {
     "who": "charles",
-    "text": "Did you hear that? Like wood cracking outside."
+    "text": "Did you hear that? Like a crate falling. Or wood cracking."
    }
   },
   {
@@ -208,7 +236,7 @@
    ],
    "line": {
     "who": "anne",
-    "text": "Probably the wind."
+    "text": "Probably something in the kitchen. Or the wind."
    }
   },
   {
@@ -217,7 +245,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "It was a windy night. Nobody went to check."
+    "text": "It was a windy night. Nobody went upstairs to check."
    },
    "flick": true,
    "fx": [

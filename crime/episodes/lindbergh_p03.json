@@ -98,6 +98,15 @@
    "hair": "#e0e0e0",
    "voice": "am_echo",
    "glasses": true
+  },
+  "driver": {
+   "name": "a truck driver",
+   "skin": "#d9a882",
+   "cloth": "#4a5a6a",
+   "cloth2": "#36424e",
+   "hair": "#9a9a9a",
+   "voice": "am_puck",
+   "beard": true
   }
  },
  "shots": [
@@ -112,6 +121,16 @@
     "crime": "THE CRIME OF THE CENTURY",
     "part": "PART 3 OF 10"
    }
+  },
+  {
+   "set": "home",
+   "cam": "scene",
+   "chars": [],
+   "line": {
+    "who": "nar",
+    "text": "At ten o'clock, nurse Betty went upstairs to check on the baby."
+   },
+   "title": "10 PM · 1 MARCH 1932"
   },
   {
    "set": "home",
@@ -135,8 +154,7 @@
    "line": {
     "who": "betty",
     "text": "Mrs Lindbergh, do you have the baby? He's not in his cot!"
-   },
-   "title": "10 PM"
+   }
   },
   {
    "set": "home",
@@ -176,7 +194,7 @@
    ],
    "line": {
     "who": "charles",
-    "text": "There's a note on the windowsill."
+    "text": "There's an envelope on the windowsill."
    }
   },
   {
@@ -200,7 +218,31 @@
    ],
    "line": {
     "who": "police",
-    "text": "Fifty thousand dollars ransom. And outside, a broken home-made ladder."
+    "text": "A ransom note. Fifty thousand dollars. With strange circles and holes as a signature."
+   }
+  },
+  {
+   "set": "home",
+   "cam": "office",
+   "chars": [
+    {
+     "id": "police",
+     "x": -0.8,
+     "z": 0.4,
+     "ry": 0.5,
+     "act": "point"
+    },
+    {
+     "id": "charles",
+     "x": 0.8,
+     "z": 0.4,
+     "ry": -0.5,
+     "act": "idle"
+    }
+   ],
+   "line": {
+    "who": "police",
+    "text": "And outside, a broken, home-made ladder. And muddy footprints."
    }
   },
   {
@@ -226,7 +268,7 @@
    "chars": [],
    "line": {
     "who": "nar",
-    "text": "Within hours, the whole country was searching."
+    "text": "Within hours, the whole country was searching for the Lindbergh baby."
    },
    "flick": true,
    "fx": [
