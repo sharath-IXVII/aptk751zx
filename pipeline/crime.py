@@ -1,4 +1,4 @@
-"""ENT true-crime Shorts: 6 a day (CRIME_TIMES, IST); YouTube and Instagram post when a part is rendered.
+"""ENT true-crime Shorts: 2 a day (CRIME_TIMES, IST); YouTube and Instagram post when a part is rendered.
 python -m pipeline.crime next <order.json>      -> next key, or nothing if no slot is due yet
 python -m pipeline.crime upload <key> <ep.json> <video> [preview]"""
 import datetime as dt, json, os, sys
@@ -26,7 +26,7 @@ def slot(state):
 def due(key, state) -> bool:
     """Jolly Jane (the launch story) posts hourly; everything else at the daily slot times."""
     if key.startswith("toppan"): return True
-    times = [tuple(map(int, t.split(":"))) for t in (os.getenv("CRIME_TIMES") or "08:47,11:17,13:47,16:17,18:47,21:17").split(",")]
+    times = [tuple(map(int, t.split(":"))) for t in (os.getenv("CRIME_TIMES") or "12:47,19:43").split(",")]
     now = dt.datetime.now(IST)
     last = dt.datetime.fromisoformat(state["last_slot"]) if state.get("last_slot") else now - dt.timedelta(days=1)
     day = last.date()
