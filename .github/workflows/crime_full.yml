@@ -1,0 +1,53 @@
+name: Crime full-story documentaries (long videos)
+on:
+  schedule:
+    - cron: "11 9 * * *"     # daily check; posts Mon/Wed/Fri 14:30 IST when a case is complete
+  workflow_dispatch:
+    inputs:
+      case: {description: "Case id to build (preview only, no upload)", type: string, default: ""}
+concurrency: {group: crime-full, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Which case?
+        id: c
+        run: |
+          pip install -q python-dotenv google-api-python-client google-auth httpx
+          if [ -n "${{ inputs.case }}" ]; then c="${{ inputs.case }}"; else c=$(python -m pipeline.crime_full next); fi
+          echo "case=$c" >> $GITHUB_OUTPUT; echo "case: ${c:-none}"
+      - name: Build, voice and render (landscape)
+        if: steps.c.outputs.case != ''
+        run: |
+          mkdir -p build
+          python -m pipeline.crime_full build ${{ steps.c.outputs.case }} build/full.json
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+          pip install -q "kokoro>=0.9.4" soundfile numpy
+          python crime/voice.py build/full.json build
+          cd crime && npm install --no-audit --no-fund && npx playwright install --with-deps chromium && cd ..
+          LAND=1 node crime/render.js build/full.json build/timeline.json build/frames
+          ffmpeg -y -loglevel error -framerate 24 -i build/frames/f%05d.jpg -i build/audio.wav -vf "scale=1920:1080:flags=lanczos,format=yuv420p" -c:v libx264 -crf 20 -preset veryfast -c:a aac -b:a 192k -shortest build/full.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 build/full.mp4
+      - name: Post
+        if: steps.c.outputs.case != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "${{ inputs.case }}" ]; then
+            b=preview-full-${{ github.run_id }}; git checkout -q -b $b; mkdir -p previews
+            ffmpeg -y -loglevel error -i build/full.mp4 -t 90 -c copy previews/full_head.mp4
+            git add -f previews && git commit -qm preview && git push -q origin $b; exit 0
+          fi
+          python -m pipeline.crime_full upload ${{ steps.c.outputs.case }} build/full.mp4
+          git add state/; git diff --cached --quiet && exit 0; git commit -qm "Crime full story: ${{ steps.c.outputs.case }} [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i*5)); done

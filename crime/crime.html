@@ -18,7 +18,8 @@ canvas{display:block}
 <script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
 <script type="module">
 import * as THREE from 'three';
-const W=720,H=1280;
+const LAND=location.search.includes('land');const W=LAND?1280:720,H=LAND?720:1280;
+if(LAND){document.documentElement.style.width=document.body.style.width='1280px';document.documentElement.style.height=document.body.style.height='720px';document.getElementById('cap').style.bottom='60px';document.getElementById('ttl').style.top='50px';document.getElementById('in1').style.margin='14px 0 6px';document.getElementById('in3').style.marginTop='30px';document.getElementById('in4').style.marginTop='30px'}
 const R=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
 R.setSize(W,H);R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
 R.toneMapping=THREE.ACESFilmicToneMapping;R.outputColorSpace=THREE.SRGBColorSpace;
