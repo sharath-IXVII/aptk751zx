@@ -48,8 +48,34 @@ def next_case():
     return ""
 
 
+def extra_eps(case):
+    """A rewritten long-form script (crime/scripts_extra/<case>.txt) replaces the Shorts' scripts."""
+    p = Path(f"crime/scripts_extra/{case}.txt")
+    if not p.exists(): return None
+    import re, sys as _s
+    _s.path.insert(0, "crime")
+    from pipeline import crime_scripts as CS, crime_writer as W
+    W.TRUSTED = True; W.present = lambda c, k, cast: list(cast)
+    lines = [l.strip() for l in p.read_text().splitlines() if l.strip() and not l.strip().startswith("#")]
+    cast = CS.cast_from([l for l in lines if l.startswith("CAST ")], case)
+    groups, cur = [], None
+    for l in lines:
+        if l.startswith("CAST "): continue
+        if l == "PART": cur = []; groups.append(cur); continue
+        cur.append(l)
+    first = json.loads((EP / f"{parts(case)[0]}.json").read_text())
+    intro = next(s for s in first["shots"] if s.get("intro"))["intro"]
+    fake = {"id": case, "name": intro["name"], "years": intro["years"], "tag": intro["crime"], "setting": "", "people": "",
+            "parts": ["trial court guilty arrest jail prison"] * len(groups)}
+    eps = []
+    for k, g in enumerate(groups, 1):
+        ep = W.convert(fake, k, cast, CS.parse_part(g)); ep["yt"] = first["yt"]; eps.append(ep)
+    return eps
+
+
 def build(case, out):
-    ks = parts(case); eps = [json.loads((EP / f"{k}.json").read_text()) for k in ks]
+    ks = parts(case)
+    eps = extra_eps(case) or [json.loads((EP / f"{k}.json").read_text()) for k in ks]
     first = eps[0]; shots = []
     for i, e in enumerate(eps):
         for sh in e["shots"]:

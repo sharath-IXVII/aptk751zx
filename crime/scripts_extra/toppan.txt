@@ -1,0 +1,89 @@
+CAST jane | Nurse Jane | f | nurse | brown
+CAST jane2 | Jane Toppan | f | plain | brown
+CAST young | young Honora | f | plain | brown
+CAST mrstoppan | Mrs Toppan | f | rich | grey
+CAST eliz | Elizabeth Toppan | f | rich | blonde
+CAST old | an old patient | m | plain | white | beard
+CAST anna | a young patient | f | plain | red
+CAST doc | the hospital doctor | m | doctor | grey
+CAST israel | Israel Dunham | m | rich | white | beard
+CAST lovey | Lovey Dunham | f | rich | white
+CAST mattie | Mattie Davis | f | rich | grey
+CAST alden | Alden Davis | m | rich | white | beard
+CAST minnie | Minnie Gibbs | f | rich | brown
+CAST gibbs | Captain Paul Gibbs | m | rich | grey | beard
+CAST cop | a police officer | m | police | black
+CAST judge | the judge | m | judge | white
+# TITLE 1: The Girl Nobody Wanted
+PART
+street establish > nar: Boston, 1850s. A little girl named Honora Kelley. Her mother has died. Her father can't look after her. [BOSTON · 1860]
+home two young:cry,mrstoppan > nar: Honora is sent to an orphanage. Then given as a servant to a family called the Toppans, in Lowell.
+home two mrstoppan:cross,young > mrstoppan: From now on your name is Jane. Jane Toppan. Now scrub that floor.
+home two eliz:smile,young > eliz: I'm Elizabeth. You can be like my sister, Jane.
+home face young:think > young: She has everything. A real family. Pretty dresses. I have nothing.
+home establish > nar: Jane grew up as a servant in the Toppan house. Elizabeth was kind to her. But Jane never felt loved.
+home establish > nar: As a young woman, Jane decided to become a nurse.
+home establish > nar: What kind of nurse do you think she became?
+# TITLE 2: The Nurse Everyone Loved
+PART
+home establish > nar: In 1885, Jane Toppan began training as a nurse at Cambridge Hospital. [CAMBRIDGE HOSPITAL · 1885]
+home two jane:smile,doc > doc: The patients adore you, Nurse Toppan. They call you Jolly Jane.
+ward bed old:sick,jane > old: Nurse? I can't sleep. Everything hurts.
+ward bed old:sick,jane:smile > jane: Don't you worry, dear. Nurse Jane is here. I'll give you something to help.
+ward face jane > nar: But Jane was secretly changing her patients' medicine. Giving them more than the doctors ordered. Watching what happened.
+ward bed anna:peek,jane > anna: Why is she always standing at his bed at night?
+ward two doc:think,jane > doc: Strange. He was getting better yesterday.
+ward establish > nar: Several of her patients died. Nobody suspected the cheerful nurse.
+ward establish > nar: How long could she hide it?
+# TITLE 3: Fired, Then Trusted Again
+PART
+ward establish > nar: But other nurses noticed Jane was careless with medicine. [1889]
+home two doc:point,jane > doc: Nurse Toppan, you gave a patient the wrong medicine. Again. We can't trust you.
+home two doc,jane:cross > doc: You are dismissed from this hospital.
+home face jane:think > jane: Hospitals have rules. And doctors watching. But families...
+home establish > nar: Jane became a private nurse. Families paid her to care for sick relatives in their own homes. Nobody checked her past.
+home two israel:smile,jane2:smile > israel: You'll rent a room with us, Jane? A nurse in the house! We're lucky. [CAMBRIDGE · 1895]
+home two lovey:smile,jane2 > lovey: Israel and I are getting old. It's good to have a nurse near.
+home establish > nar: Israel and Lovey Dunham were her landlords. An elderly couple who trusted her completely.
+home establish > nar: What do you think happened to them?
+# TITLE 4: Her Own Sister
+PART
+home establish > nar: In 1895, Israel Dunham died. Two years later, his wife Lovey died too. The doctors said it was old age. [1895 - 1897]
+home face jane2 > nar: Jane had nursed them both.
+home two eliz:smile,jane2:smile > eliz: Jane! Come and stay with me on Cape Cod this summer. Like when we were girls. [CAPE COD · 1899]
+home face jane2:smile > jane2: I'd love to, Elizabeth.
+home bed eliz:sick,jane2 > eliz: Jane... why do I feel worse every day?
+home establish > nar: Elizabeth Toppan, the girl who had been kind to her, the closest thing to a sister she had, died in Jane's care.
+grave grave jane2:cry > jane2: Poor Elizabeth.
+grave establish > nar: And then, Jane met the Davis family.
+grave establish > nar: Who do you think the Davis family were?
+# TITLE 5: The Davis Family
+PART
+grave establish > nar: The Davis family owned a summer hotel on Cape Cod. Jane had stayed there for years. And owed them money. [CATAUMET · 1901]
+home two mattie,jane2 > mattie: Jane, you owe us five hundred dollars. I've come all the way to Cambridge to collect it.
+home bed mattie:sick,jane2 > jane2: You look unwell, Mrs Davis. Let me nurse you.
+home establish > nar: Mattie Davis died in Jane's care. Her family, heartbroken, asked Jane to come and help them.
+home two alden:cry,jane2 > alden: Mattie's gone. Please stay with us, Jane. We need you.
+home bed alden:sick,jane2 > nar: Within weeks, Alden Davis died. Then his daughter Genevieve. Then his daughter Minnie.
+home establish > nar: Four people from one family. In one summer. All cared for by the same nurse.
+home establish > nar: Would anyone notice?
+# TITLE 6: The Captain Asks Questions
+PART
+home establish > nar: Minnie's father-in-law, Captain Paul Gibbs, was not convinced it was bad luck. [CATAUMET · 1901]
+grave two gibbs:think,cop > gibbs: Four funerals in a few weeks. The same nurse at every bedside.
+grave face gibbs:cross > gibbs: I want a doctor to test Minnie's body. Properly.
+home two cop:scared,gibbs > cop: The tests are back, Captain. Minnie was poisoned. With morphine and atropine.
+home face gibbs > gibbs: Then find Jane Toppan.
+home two cop:point,jane2:cuffed > cop: Jane Toppan, you're under arrest for murder. [AMHERST, NEW HAMPSHIRE · OCTOBER 1901]
+home face jane2:smile > jane2: Murder? Me? I'm the kindest nurse you'll ever meet.
+home establish > nar: Will she ever tell the truth?
+# TITLE 7: Thirty-One
+PART
+home establish > nar: In jail, Jane Toppan began to talk to her lawyers. [1902]
+prison cell jane2:smile > jane2: Minnie Gibbs. Alden Davis. Mattie. Elizabeth. The Dunhams. And my patients at the hospital.
+prison face cop:scared > cop: How many, Jane?
+prison cell jane2 > jane2: Thirty-one.
+court court judge,jane2 > judge: Not guilty, by reason of insanity. Committed to a mental hospital for life. [JUNE 1902]
+prison establish > nar: Jane Toppan spent the rest of her life at Taunton State Hospital. She died there in 1938.
+prison establish > nar: The girl nobody wanted. The nurse everyone loved.
+prison establish > nar: Was she evil, or ill?

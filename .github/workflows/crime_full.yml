@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       case: {description: "Case id to build (preview only, no upload)", type: string, default: ""}
+      upload: {description: "Upload the given case even if it was posted before (a rewritten version)", type: boolean, default: false}
 concurrency: {group: crime-full, cancel-in-progress: false}
 permissions: {contents: write}
 jobs:
@@ -43,7 +44,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "${{ inputs.case }}" ]; then
+          if [ -n "${{ inputs.case }}" ] && [ "${{ inputs.upload }}" != "true" ]; then
             b=preview-full-${{ github.run_id }}; git checkout -q -b $b; mkdir -p previews
             ffmpeg -y -loglevel error -i build/full.mp4 -t 90 -c copy previews/full_head.mp4
             git add -f previews && git commit -qm preview && git push -q origin $b; exit 0
